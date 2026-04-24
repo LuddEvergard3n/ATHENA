@@ -1,0 +1,619 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-22",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "Russian MoD"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "ru-ka52",
+      "name": "Ka-52 Alligator",
+      "nato_name": "Hokum-B",
+      "type": "attack_helicopter",
+      "country_of_origin": "RU",
+      "manufacturer": "Kamov",
+      "service_history": {
+        "introduced": 2011,
+        "first_flight": 1997,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 140,
+            "status": "active",
+            "notes": "Heavy losses in Ukraine (30+)"
+          },
+          {
+            "country": "EG",
+            "quantity": 46,
+            "status": "active",
+            "notes": "First export customer"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "seating_configuration": "side-by-side",
+        "length_m": 16.0,
+        "rotor_diameter_m": 14.5,
+        "height_m": 4.9,
+        "empty_weight_kg": 7800,
+        "max_takeoff_weight_kg": 12200,
+        "internal_fuel_kg": 1870
+      },
+      "performance": {
+        "max_speed_kmh": 300,
+        "cruise_speed_kmh": 260,
+        "combat_radius_km": 520,
+        "ferry_range_km": 1160,
+        "service_ceiling_m": 5500,
+        "rate_of_climb_mps": 16,
+        "notes": "Coaxial rotors - no tail rotor vulnerability"
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Klimov VK-2500",
+        "power_shp": 2400
+      },
+      "avionics": {
+        "radar": "Arbalet/FH-01 (mast-mounted option)",
+        "radar_range_km": 20,
+        "flir": "GOES-451 day/night sight",
+        "ew_suite": "L370 Vitebsk (President-S)",
+        "helmet_mounted_display": true,
+        "datalink": "Russian tactical network"
+      },
+      "armament": {
+        "gun": {
+          "type": "2A42 Shipunov",
+          "caliber_mm": 30,
+          "rounds": 460,
+          "rate_of_fire_rpm": 550,
+          "notes": "Fixed mount, limited traverse"
+        },
+        "missiles": {
+          "atgm": [
+            "9M120 Ataka (12)",
+            "9K121 Vikhr-1 (12)",
+            "LMUR (product 305)"
+          ],
+          "aam": [
+            "9M39 Igla-V (4)"
+          ]
+        },
+        "rockets": {
+          "type": "S-8 80mm / S-13 122mm",
+          "total_rockets": 80
+        },
+        "hardpoints": 6
+      },
+      "survivability": {
+        "armor": "Steel/composite crew protection",
+        "ejection_seats": true,
+        "ejection_system": "K-37-800",
+        "notes": "Only attack helicopter with ejection seats, saved crews in Ukraine"
+      },
+      "variants": [
+        {
+          "designation": "Ka-52",
+          "notes": "Standard production"
+        },
+        {
+          "designation": "Ka-52K Katran",
+          "notes": "Navalized for Mistral carriers (cancelled)"
+        },
+        {
+          "designation": "Ka-52M",
+          "notes": "Modernized with improved sensors, LMUR missile"
+        }
+      ],
+      "unit_cost_usd": 16000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Kamov",
+        "Russian MoD",
+        "Jane's"
+      ],
+      "notes": "Russia's primary attack helicopter. Unique coaxial rotors (no tail rotor). Only attack helo with ejection seats. Side-by-side seating. Ukraine: heavy losses but ejection saved crews. Egypt first export customer (46).",
+      "year": 2011
+    },
+    {
+      "id": "ru-mi28n",
+      "name": "Mi-28N Night Hunter",
+      "nato_name": "Havoc",
+      "type": "attack_helicopter",
+      "country_of_origin": "RU",
+      "manufacturer": "Mil Moscow Helicopter Plant",
+      "service_history": {
+        "introduced": 2009,
+        "first_flight": 1996,
+        "retired": null,
+        "production_count": 150,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 120,
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "quantity": 15,
+            "status": "active"
+          },
+          {
+            "country": "DZ",
+            "quantity": 42,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "seating_configuration": "tandem",
+        "length_m": 17.0,
+        "rotor_diameter_m": 17.2,
+        "height_m": 4.7,
+        "empty_weight_kg": 8095,
+        "max_takeoff_weight_kg": 11500,
+        "internal_fuel_kg": 1500
+      },
+      "performance": {
+        "max_speed_kmh": 324,
+        "cruise_speed_kmh": 265,
+        "combat_radius_km": 450,
+        "ferry_range_km": 1100,
+        "service_ceiling_m": 5700,
+        "rate_of_climb_mps": 13.6
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Klimov VK-2500-02",
+        "power_shp": 2200
+      },
+      "avionics": {
+        "radar": "N025 (mast-mounted)",
+        "radar_range_km": 15,
+        "flir": "GOES-342 day/night sight",
+        "ew_suite": "Vitebsk (President-S)",
+        "helmet_mounted_display": true
+      },
+      "armament": {
+        "gun": {
+          "type": "2A42 Shipunov",
+          "caliber_mm": 30,
+          "rounds": 250,
+          "turret_traverse": "\u00b1110\u00b0"
+        },
+        "missiles": {
+          "atgm": [
+            "9M120 Ataka (16)",
+            "9K121 Vikhr"
+          ],
+          "aam": [
+            "9M39 Igla-V (4)"
+          ]
+        },
+        "rockets": {
+          "type": "S-8 / S-13",
+          "total_rockets": 80
+        },
+        "hardpoints": 4
+      },
+      "survivability": {
+        "armor": "Composite/ceramic, withstands 12.7mm",
+        "crash_worthy_design": true,
+        "notes": "No ejection seats unlike Ka-52"
+      },
+      "variants": [
+        {
+          "designation": "Mi-28N",
+          "notes": "Night capable"
+        },
+        {
+          "designation": "Mi-28NM",
+          "notes": "Modernized, LMUR missile, improved radar"
+        },
+        {
+          "designation": "Mi-28UB",
+          "notes": "Combat trainer, dual controls"
+        }
+      ],
+      "unit_cost_usd": 18000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Mil",
+        "Russian MoD",
+        "Jane's"
+      ],
+      "notes": "Russia's Apache equivalent. Tandem seating. Mi-28NM is latest with improved radar and LMUR standoff missile. Iraq and Algeria are export operators. Ukraine: significant losses.",
+      "year": 2009
+    },
+    {
+      "id": "ru-mi24v",
+      "name": "Mi-24V/VP Hind-E",
+      "nato_name": "Hind",
+      "type": "attack_transport",
+      "country_of_origin": "SU",
+      "manufacturer": "Mil Moscow Helicopter Plant",
+      "service_history": {
+        "introduced": 1976,
+        "first_flight": 1972,
+        "retired": null,
+        "production_count": 2600,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 300,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 35,
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 28,
+            "status": "active"
+          },
+          {
+            "country": "CZ",
+            "quantity": 17,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 15,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "KZ",
+            "quantity": 20,
+            "status": "active"
+          },
+          {
+            "country": "UZ",
+            "quantity": 29,
+            "status": "active"
+          },
+          {
+            "country": "AZ",
+            "quantity": 15,
+            "status": "active"
+          },
+          {
+            "country": "AM",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "AF",
+            "quantity": 7,
+            "status": "active"
+          },
+          {
+            "country": "DZ",
+            "quantity": 39,
+            "status": "active"
+          },
+          {
+            "country": "AO",
+            "quantity": 20,
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "quantity": 36,
+            "status": "active"
+          },
+          {
+            "country": "LY",
+            "quantity": 14,
+            "status": "active"
+          },
+          {
+            "country": "CU",
+            "quantity": 10,
+            "status": "active"
+          },
+          {
+            "country": "VE",
+            "quantity": 10,
+            "status": "active"
+          },
+          {
+            "country": "NG",
+            "quantity": 5,
+            "status": "active"
+          }
+        ],
+        "notes": "2600+ built, 50+ operators, most produced attack helicopter"
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 8,
+        "length_m": 17.5,
+        "rotor_diameter_m": 17.3,
+        "height_m": 6.5,
+        "empty_weight_kg": 8500,
+        "max_takeoff_weight_kg": 12000,
+        "internal_fuel_kg": 1500
+      },
+      "performance": {
+        "max_speed_kmh": 335,
+        "cruise_speed_kmh": 270,
+        "combat_radius_km": 450,
+        "ferry_range_km": 1000,
+        "service_ceiling_m": 4500,
+        "rate_of_climb_mps": 12.5,
+        "notes": "Fastest helicopter when introduced"
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Klimov TV3-117V",
+        "power_shp": 2200
+      },
+      "avionics": {
+        "targeting": "USPU-24 gyro-stabilized sight",
+        "ew_suite": "L-166V1A Lipa IR jammer"
+      },
+      "armament": {
+        "gun": {
+          "type": "YakB-12.7 four-barrel rotary (Mi-24V)",
+          "caliber_mm": 12.7,
+          "rounds": 1470,
+          "rate_of_fire_rpm": 4500,
+          "notes": "Mi-24P has fixed twin GSh-30K 30mm"
+        },
+        "missiles": {
+          "atgm": [
+            "9M114 Shturm (8)",
+            "9M120 Ataka"
+          ],
+          "aam": [
+            "9M39 Igla"
+          ]
+        },
+        "rockets": {
+          "type": "S-8 80mm",
+          "total_rockets": 128
+        },
+        "bombs": [
+          "FAB-250",
+          "FAB-500"
+        ],
+        "hardpoints": 6
+      },
+      "survivability": {
+        "armor": "Titanium/steel cockpit tub",
+        "crew_protection": "Withstands 12.7mm from any angle",
+        "notes": "'Flying Tank' - heavily armored"
+      },
+      "variants": [
+        {
+          "designation": "Mi-24D Hind-D",
+          "notes": "Tandem cockpit, most common"
+        },
+        {
+          "designation": "Mi-24V Hind-E",
+          "notes": "Improved AT missiles"
+        },
+        {
+          "designation": "Mi-24P Hind-F",
+          "notes": "Fixed 30mm cannon"
+        },
+        {
+          "designation": "Mi-24VP",
+          "notes": "30mm in turret"
+        }
+      ],
+      "unit_cost_usd": 12000000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Mil",
+        "Jane's"
+      ],
+      "notes": "Iconic Soviet gunship. UNIQUE: carries 8 troops while armed. 'Flying Tank', 'Devil's Chariot'. Afghanistan: feared by Mujahideen. 2600+ built, 50+ countries. Both sides heavy use in Ukraine.",
+      "year": 1976
+    },
+    {
+      "id": "ru-mi35m",
+      "name": "Mi-35M Hind-E Mod",
+      "nato_name": "Hind",
+      "type": "attack_transport",
+      "country_of_origin": "RU",
+      "manufacturer": "Rostvertol",
+      "service_history": {
+        "introduced": 2005,
+        "first_flight": 1999,
+        "retired": null,
+        "production_count": 150,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "BR",
+            "quantity": 12,
+            "variants": [
+              "AH-2 Sabre"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "AZ",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "VE",
+            "quantity": 10,
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "quantity": 28,
+            "status": "active"
+          },
+          {
+            "country": "NG",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "ML",
+            "quantity": 2,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "KZ",
+            "quantity": 4,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 8,
+        "length_m": 17.5,
+        "rotor_diameter_m": 17.2,
+        "height_m": 5.2,
+        "empty_weight_kg": 8360,
+        "max_takeoff_weight_kg": 11500
+      },
+      "performance": {
+        "max_speed_kmh": 310,
+        "cruise_speed_kmh": 260,
+        "combat_radius_km": 450,
+        "service_ceiling_m": 5400
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Klimov VK-2500",
+        "power_shp": 2200
+      },
+      "avionics": {
+        "flir": "OPS-24N day/night sight",
+        "ew_suite": "President-S (optional)",
+        "glass_cockpit": true
+      },
+      "armament": {
+        "gun": {
+          "type": "GSh-23V twin-barrel",
+          "caliber_mm": 23,
+          "rounds": 450
+        },
+        "missiles": {
+          "atgm": [
+            "9M120 Ataka (16)",
+            "9K121 Vikhr"
+          ],
+          "aam": [
+            "9M39 Igla-V"
+          ]
+        },
+        "rockets": {
+          "type": "S-8 / S-13",
+          "total_rockets": 80
+        }
+      },
+      "unit_cost_usd": 15000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Rostvertol",
+        "Jane's"
+      ],
+      "notes": "Modernized Mi-24 export variant. Fixed landing gear (vs retractable). Shortened wings, new rotor. Brazil: 12 as AH-2 Sabre. Iraq: 28 for ISIS combat. Popular export platform.",
+      "year": 2005
+    },
+    {
+      "id": "ru-ka50",
+      "name": "Ka-50 Black Shark",
+      "nato_name": "Hokum-A",
+      "type": "attack_helicopter",
+      "country_of_origin": "RU",
+      "manufacturer": "Kamov",
+      "service_history": {
+        "introduced": 1995,
+        "first_flight": 1982,
+        "retired": null,
+        "production_count": 32,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 10,
+            "status": "limited",
+            "notes": "Largely replaced by Ka-52"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 16.0,
+        "rotor_diameter_m": 14.5,
+        "empty_weight_kg": 7700,
+        "max_takeoff_weight_kg": 10800
+      },
+      "performance": {
+        "max_speed_kmh": 310,
+        "combat_radius_km": 470,
+        "service_ceiling_m": 5500
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Klimov TV3-117VMA",
+        "power_shp": 2200
+      },
+      "armament": {
+        "gun": {
+          "type": "2A42",
+          "caliber_mm": 30,
+          "rounds": 460
+        },
+        "missiles": {
+          "atgm": [
+            "9K121 Vikhr (12)"
+          ],
+          "aam": [
+            "Igla"
+          ]
+        }
+      },
+      "survivability": {
+        "ejection_seats": true,
+        "notes": "World's first single-seat attack helicopter with ejection seat"
+      },
+      "unit_cost_usd": 14000000,
+      "cost_year": 2000,
+      "confidence": "medium",
+      "sources": [
+        "Kamov",
+        "Jane's"
+      ],
+      "notes": "Single-seat attack helicopter. Coaxial rotors. World's first ejection seat on attack helo. Chechnya combat (2001). Led to Ka-52 development. Limited production (32).",
+      "year": 1995
+    }
+  ]
+}

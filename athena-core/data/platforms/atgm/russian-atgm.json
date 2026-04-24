@@ -1,0 +1,619 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-19",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Infantry Weapons",
+      "Army Recognition"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "ru-kornet",
+      "name": "9M133 Kornet (AT-14 Spriggan)",
+      "type": "atgm",
+      "country_of_origin": "RU",
+      "manufacturer": "KBP Instrument Design Bureau",
+      "service_history": {
+        "introduced": 1998,
+        "retired": null,
+        "production_count": 50000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 20000,
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "quantity": 5000,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "status": "active"
+          },
+          {
+            "country": "DZ",
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 3000,
+            "status": "active"
+          },
+          {
+            "country": "GR",
+            "quantity": 900,
+            "status": "active"
+          },
+          {
+            "country": "TR",
+            "quantity": 800,
+            "status": "active"
+          },
+          {
+            "country": "JO",
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "status": "active"
+          },
+          {
+            "country": "AZ",
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 100,
+            "status": "captured"
+          }
+        ],
+        "notes": "20+ operators"
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_missile_kg": 29,
+        "weight_launcher_kg": 25,
+        "weight_total_kg": 54,
+        "length_missile_mm": 1200,
+        "diameter_mm": 152
+      },
+      "performance": {
+        "range_min_m": 100,
+        "range_max_m": 5500,
+        "flight_time_max_sec": 18,
+        "speed_mps": 300,
+        "guidance": "laser_beam_riding",
+        "attack_modes": [
+          "direct_attack"
+        ],
+        "fire_and_forget": false
+      },
+      "warhead": {
+        "type": "tandem_heat",
+        "diameter_mm": 152,
+        "penetration_mm_rha": 1200,
+        "penetration_era_mm_rha": 1000
+      },
+      "variants": [
+        {
+          "designation": "9M133-1 Kornet",
+          "range_m": 5500,
+          "penetration_mm_rha": 1200,
+          "notes": "Original version"
+        },
+        {
+          "designation": "9M133F-1 Kornet",
+          "warhead_type": "thermobaric",
+          "notes": "Anti-bunker/fortification"
+        },
+        {
+          "designation": "9M133FM-3 Kornet-D",
+          "range_m": 8000,
+          "penetration_mm_rha": 1300,
+          "guidance": "laser + IR_terminal",
+          "notes": "Vehicle-mounted, improved seeker"
+        },
+        {
+          "designation": "9M133M Kornet-M",
+          "range_m": 10000,
+          "penetration_mm_rha": 1400,
+          "notes": "Export version, 10km range"
+        },
+        {
+          "designation": "Kornet-EM",
+          "range_m": 10000,
+          "penetration_mm_rha": 1300,
+          "notes": "Automatic target tracking"
+        }
+      ],
+      "platforms": [
+        "ground_tripod",
+        "BMP-3",
+        "Tigr",
+        "BRDM-2"
+      ],
+      "unit_cost_usd": 40000,
+      "cost_year": 2020,
+      "cost_notes": "Per missile",
+      "confidence": "high",
+      "sources": [
+        "Wikipedia 9M133 Kornet",
+        "Army Recognition"
+      ],
+      "notes": "Russia's most potent man-portable ATGM. Laser beam riding (jam-resistant). 1200mm+ penetration defeats all Western tanks. Hezbollah used vs IDF Merkava (2006). Syria: extensively used. Claims vs M1 Abrams.",
+      "year": 1998
+    },
+    {
+      "id": "ru-metis-m",
+      "name": "9M131 Metis-M (AT-13 Saxhorn-2)",
+      "type": "atgm",
+      "country_of_origin": "RU",
+      "manufacturer": "KBP Instrument Design Bureau",
+      "service_history": {
+        "introduced": 1992,
+        "retired": null,
+        "production_count": 30000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 15000,
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "status": "active"
+          },
+          {
+            "country": "DZ",
+            "status": "active"
+          },
+          {
+            "country": "KP",
+            "status": "active"
+          },
+          {
+            "country": "VN",
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_missile_kg": 13.8,
+        "weight_launcher_kg": 10,
+        "weight_total_kg": 24,
+        "length_missile_mm": 980,
+        "diameter_mm": 130
+      },
+      "performance": {
+        "range_min_m": 80,
+        "range_max_m": 1500,
+        "flight_time_max_sec": 9,
+        "speed_mps": 220,
+        "guidance": "wire_guided_saclos",
+        "attack_modes": [
+          "direct_attack"
+        ],
+        "fire_and_forget": false
+      },
+      "warhead": {
+        "type": "tandem_heat",
+        "diameter_mm": 130,
+        "penetration_mm_rha": 900,
+        "penetration_era_mm_rha": 750
+      },
+      "variants": [
+        {
+          "designation": "9M131 Metis-M",
+          "range_m": 1500,
+          "penetration_mm_rha": 900,
+          "notes": "Standard"
+        },
+        {
+          "designation": "9M131M Metis-M1",
+          "range_m": 2000,
+          "penetration_mm_rha": 950,
+          "notes": "Extended range"
+        }
+      ],
+      "unit_cost_usd": 25000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia 9M131 Metis-M",
+        "Army Recognition"
+      ],
+      "notes": "Lightweight Russian ATGM. Wire-guided SACLOS. Tandem warhead defeats ERA. Short range limits utility. Popular for asymmetric warfare.",
+      "year": 1992
+    },
+    {
+      "id": "ru-konkurs",
+      "name": "9M113 Konkurs (AT-5 Spandrel)",
+      "type": "atgm",
+      "country_of_origin": "SU",
+      "manufacturer": "KBP Instrument Design Bureau",
+      "service_history": {
+        "introduced": 1974,
+        "retired": null,
+        "production_count": 100000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 20000,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 3000,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "status": "active"
+          },
+          {
+            "country": "KZ",
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "status": "active"
+          },
+          {
+            "country": "RO",
+            "status": "active"
+          },
+          {
+            "country": "CZ",
+            "status": "active"
+          }
+        ],
+        "notes": "30+ operators, former Soviet bloc"
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_missile_kg": 14.5,
+        "weight_launcher_kg": 22,
+        "length_missile_mm": 1150,
+        "diameter_mm": 135
+      },
+      "performance": {
+        "range_min_m": 70,
+        "range_max_m": 4000,
+        "flight_time_max_sec": 20,
+        "speed_mps": 200,
+        "guidance": "wire_guided_saclos",
+        "attack_modes": [
+          "direct_attack"
+        ],
+        "fire_and_forget": false
+      },
+      "warhead": {
+        "type": "heat",
+        "diameter_mm": 135,
+        "penetration_mm_rha": 600
+      },
+      "variants": [
+        {
+          "designation": "9M113 Konkurs",
+          "penetration_mm_rha": 600,
+          "notes": "Original"
+        },
+        {
+          "designation": "9M113M Konkurs-M",
+          "penetration_mm_rha": 750,
+          "notes": "Improved warhead"
+        }
+      ],
+      "platforms": [
+        "ground_tripod",
+        "BMP-2",
+        "BRDM-2",
+        "MT-LB"
+      ],
+      "unit_cost_usd": 15000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia 9M113 Konkurs",
+        "Army Recognition"
+      ],
+      "notes": "Soviet-era ATGM, still widespread. Wire-guided. Standard on BMP-2. Afghanistan, Chechnya, Syria, Ukraine combat use. Being replaced by Kornet.",
+      "year": 1974
+    },
+    {
+      "id": "ru-fagot",
+      "name": "9M111 Fagot (AT-4 Spigot)",
+      "type": "atgm",
+      "country_of_origin": "SU",
+      "manufacturer": "KBP Instrument Design Bureau",
+      "service_history": {
+        "introduced": 1970,
+        "retired": null,
+        "production_count": 200000,
+        "operators": [
+          {
+            "country": "RU",
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "status": "reserve"
+          },
+          {
+            "country": "RO",
+            "status": "reserve"
+          },
+          {
+            "country": "SY",
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "status": "active"
+          },
+          {
+            "country": "AF",
+            "status": "active"
+          }
+        ],
+        "notes": "40+ operators, obsolescent"
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_missile_kg": 10.3,
+        "weight_launcher_kg": 22,
+        "length_missile_mm": 870,
+        "diameter_mm": 120
+      },
+      "performance": {
+        "range_min_m": 70,
+        "range_max_m": 2500,
+        "flight_time_max_sec": 13,
+        "speed_mps": 186,
+        "guidance": "wire_guided_saclos",
+        "attack_modes": [
+          "direct_attack"
+        ],
+        "fire_and_forget": false
+      },
+      "warhead": {
+        "type": "heat",
+        "diameter_mm": 120,
+        "penetration_mm_rha": 400
+      },
+      "variants": [
+        {
+          "designation": "9M111 Fagot",
+          "penetration_mm_rha": 400,
+          "notes": "Original"
+        },
+        {
+          "designation": "9M111-2 Fagot",
+          "penetration_mm_rha": 460,
+          "notes": "Improved"
+        },
+        {
+          "designation": "9M111M Faktoriya",
+          "penetration_mm_rha": 600,
+          "notes": "Tandem warhead"
+        }
+      ],
+      "platforms": [
+        "ground_tripod",
+        "BMP-1"
+      ],
+      "unit_cost_usd": 8000,
+      "cost_year": 1990,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia 9M111 Fagot",
+        "Army Recognition"
+      ],
+      "notes": "Early Soviet man-portable ATGM. Wire-guided. Obsolete against modern armor but still in service. Afghanistan War debut. Very cheap and widespread.",
+      "year": 1970
+    },
+    {
+      "id": "ru-shturm",
+      "name": "9M114 Shturm (AT-6 Spiral)",
+      "type": "atgm",
+      "country_of_origin": "SU",
+      "manufacturer": "KBP Instrument Design Bureau",
+      "service_history": {
+        "introduced": 1976,
+        "retired": null,
+        "production_count": 50000,
+        "operators": [
+          {
+            "country": "RU",
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "weight_missile_kg": 31.4,
+        "length_missile_mm": 1625,
+        "diameter_mm": 130
+      },
+      "performance": {
+        "range_min_m": 400,
+        "range_max_m": 5000,
+        "speed_mps": 400,
+        "guidance": "radio_command",
+        "attack_modes": [
+          "direct_attack"
+        ],
+        "fire_and_forget": false
+      },
+      "warhead": {
+        "type": "heat",
+        "diameter_mm": 130,
+        "penetration_mm_rha": 560
+      },
+      "variants": [
+        {
+          "designation": "9M114 Shturm-V",
+          "platforms": [
+            "Mi-24V"
+          ],
+          "notes": "Helicopter version"
+        },
+        {
+          "designation": "9M114M Shturm-VM",
+          "penetration_mm_rha": 800,
+          "notes": "Tandem warhead"
+        },
+        {
+          "designation": "9M120 Ataka",
+          "range_m": 6000,
+          "penetration_mm_rha": 950,
+          "notes": "Modern successor"
+        }
+      ],
+      "platforms": [
+        "Mi-24",
+        "Mi-28",
+        "Ka-50/52",
+        "BMP-3"
+      ],
+      "unit_cost_usd": 35000,
+      "cost_year": 2000,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia 9M114 Shturm",
+        "Army Recognition"
+      ],
+      "notes": "Helicopter-launched ATGM. Radio command guidance. Standard on Mi-24 Hind. 9M120 Ataka is modern successor with tandem warhead.",
+      "year": 1979
+    },
+    {
+      "id": "ru-khrizantema",
+      "name": "9M123 Khrizantema (AT-15 Springer)",
+      "type": "atgm",
+      "country_of_origin": "RU",
+      "manufacturer": "KBP Instrument Design Bureau",
+      "service_history": {
+        "introduced": 2005,
+        "retired": null,
+        "production_count": 3000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 2500,
+            "status": "active"
+          },
+          {
+            "country": "AZ",
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "weight_missile_kg": 46,
+        "length_missile_mm": 2040,
+        "diameter_mm": 152
+      },
+      "performance": {
+        "range_min_m": 400,
+        "range_max_m": 6000,
+        "speed_mps": 400,
+        "guidance": "radar_beam_riding",
+        "attack_modes": [
+          "direct_attack"
+        ],
+        "fire_and_forget": false,
+        "notes": "Millimeter-wave radar guidance - works in smoke/dust/night"
+      },
+      "warhead": {
+        "type": "tandem_heat",
+        "diameter_mm": 152,
+        "penetration_mm_rha": 1200,
+        "penetration_era_mm_rha": 1000
+      },
+      "variants": [
+        {
+          "designation": "9M123 Khrizantema-S",
+          "notes": "Tank destroyer (BMP-3 chassis)"
+        },
+        {
+          "designation": "9M123F",
+          "warhead_type": "thermobaric",
+          "notes": "Anti-bunker"
+        }
+      ],
+      "platforms": [
+        "9P157-2 Khrizantema-S (BMP-3 chassis)"
+      ],
+      "unit_cost_usd": 80000,
+      "cost_year": 2010,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia 9M123 Khrizantema",
+        "Army Recognition"
+      ],
+      "notes": "Vehicle-mounted tank destroyer ATGM. Unique MMW radar guidance - effective in all weather/smoke. 1200mm penetration. Limited production.",
+      "year": 2005
+    }
+  ]
+}

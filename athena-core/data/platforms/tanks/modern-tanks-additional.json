@@ -1,0 +1,318 @@
+{
+  "platforms": [
+    {
+      "id": "ru-t-14-armata",
+      "name": "T-14 Armata",
+      "type": "mbt",
+      "country_of_origin": "RU",
+      "manufacturer": "Uralvagonzavod",
+      "service_entry": 2021,
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 55000,
+        "length_gun_forward_m": 10.8,
+        "width_m": 3.5,
+        "height_m": 3.3,
+        "max_speed_kmh": 80,
+        "range_km": 500
+      },
+      "powerplant": {
+        "engine": "A-85-3A (ChTZ 12N360)",
+        "type": "diesel",
+        "power_hp": 1500
+      },
+      "armament": {
+        "main_gun": {
+          "type": "2A82-1M",
+          "caliber_mm": 125,
+          "autoloader": true,
+          "ammunition": 45
+        },
+        "secondary": "Kord 12.7mm RWS",
+        "coax": "PKTM 7.62mm",
+        "atgm": "3UBK21 Sprinter (gun-launched)"
+      },
+      "protection": {
+        "armor": "Composite + ERA (Malachit)",
+        "aps": "Afghanit hard-kill",
+        "unmanned_turret": true,
+        "crew_pod": "Armored capsule"
+      },
+      "avionics": {
+        "fcs": "Kalina",
+        "radar": "AESA mini-radar",
+        "hunter_killer": true
+      },
+      "service_history": {
+        "introduced": 2021,
+        "status": "limited production",
+        "quantity": 20,
+        "note": "Not deployed in Ukraine"
+      },
+      "unit_cost_usd": 5000000,
+      "notes": "Revolutionary design with unmanned turret. Afghanit APS. Not combat-deployed. Limited production due to cost."
+    },
+    {
+      "id": "jp-type-10-hitomaru",
+      "name": "Type 10 Hitomaru",
+      "type": "mbt",
+      "country_of_origin": "JP",
+      "manufacturer": "Mitsubishi Heavy Industries",
+      "service_entry": 2012,
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 44000,
+        "length_m": 9.42,
+        "width_m": 3.24,
+        "height_m": 2.3,
+        "max_speed_kmh": 70,
+        "range_km": 500
+      },
+      "powerplant": {
+        "engine": "Mitsubishi 8VA34WTK",
+        "power_hp": 1200
+      },
+      "armament": {
+        "main_gun": {
+          "type": "Japan Steel Works 120mm",
+          "caliber_mm": 120,
+          "barrel_length": "L/44",
+          "autoloader": true
+        },
+        "secondary": "M2HB 12.7mm",
+        "coax": "Type 74 7.62mm"
+      },
+      "protection": {
+        "modular_armor": true,
+        "ceramic_composite": true
+      },
+      "features": {
+        "c4i_system": true,
+        "hunter_killer": true,
+        "hydropneumatic_suspension": true
+      },
+      "service_history": {
+        "introduced": 2012,
+        "status": "active",
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 116
+          }
+        ]
+      },
+      "unit_cost_usd": 8400000,
+      "notes": "Designed for Japan's terrain. Light weight for bridges. Modular armor. Advanced C4I integration."
+    },
+    {
+      "id": "tr-altay-t1",
+      "name": "Altay T1",
+      "type": "mbt",
+      "country_of_origin": "TR",
+      "manufacturer": "BMC",
+      "service_entry": 2023,
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 65000,
+        "max_speed_kmh": 65,
+        "range_km": 450
+      },
+      "powerplant": {
+        "engine": "Doosan DV27K (interim)",
+        "power_hp": 1500
+      },
+      "armament": {
+        "main_gun": {
+          "type": "MKEK 120mm",
+          "caliber_mm": 120,
+          "barrel_length": "L/55"
+        },
+        "secondary": "12.7mm",
+        "coax": "7.62mm"
+      },
+      "protection": {
+        "composite": true,
+        "era": true,
+        "aps": "AKKOR Pulat (planned)"
+      },
+      "service_history": {
+        "introduced": 2023,
+        "status": "production",
+        "ordered": 250
+      },
+      "notes": "Turkish indigenous MBT. K2 technology transfer. Domestic engine in development."
+    },
+    {
+      "id": "in-arjun-mk2",
+      "name": "Arjun Mk.2",
+      "type": "mbt",
+      "country_of_origin": "IN",
+      "manufacturer": "DRDO/CVRDE",
+      "service_entry": 2022,
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 68000,
+        "max_speed_kmh": 60,
+        "range_km": 450
+      },
+      "powerplant": {
+        "engine": "MTU MB 838 Ka-501",
+        "power_hp": 1400
+      },
+      "armament": {
+        "main_gun": {
+          "type": "120mm rifled",
+          "caliber_mm": 120,
+          "atgm": "LAHAT gun-launched"
+        },
+        "secondary": "NSVT 12.7mm",
+        "coax": "7.62mm"
+      },
+      "protection": {
+        "kanchan_armor": true,
+        "era": true
+      },
+      "service_history": {
+        "introduced": 2022,
+        "status": "active",
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 118
+          }
+        ]
+      },
+      "notes": "Indigenous Indian MBT. Heaviest tank in service. LAHAT missile capability. Desert optimized."
+    },
+    {
+      "id": "cn-type-99a2",
+      "name": "Type 99A2",
+      "type": "mbt",
+      "country_of_origin": "CN",
+      "manufacturer": "Norinco",
+      "service_entry": 2019,
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 58000,
+        "max_speed_kmh": 80,
+        "range_km": 600
+      },
+      "powerplant": {
+        "engine": "150HB",
+        "power_hp": 1500
+      },
+      "armament": {
+        "main_gun": {
+          "type": "ZPT-98",
+          "caliber_mm": 125,
+          "autoloader": true,
+          "atgm": "GP125 gun-launched"
+        }
+      },
+      "protection": {
+        "composite": true,
+        "era": "FY-4",
+        "aps": "GL5"
+      },
+      "service_history": {
+        "introduced": 2019,
+        "status": "active",
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 600
+          }
+        ]
+      },
+      "notes": "Latest Chinese MBT. GL5 APS similar to Arena. 125mm gun with ATGM capability."
+    },
+    {
+      "id": "pl-pt-91-twardy",
+      "name": "PT-91 Twardy",
+      "type": "mbt",
+      "country_of_origin": "PL",
+      "manufacturer": "Bumar Labedy",
+      "service_entry": 1995,
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 45900,
+        "max_speed_kmh": 60,
+        "range_km": 650
+      },
+      "armament": {
+        "main_gun": {
+          "caliber_mm": 125,
+          "autoloader": true
+        }
+      },
+      "protection": {
+        "era": "ERAWA-1/2"
+      },
+      "service_history": {
+        "introduced": 1995,
+        "status": "active",
+        "operators": [
+          {
+            "country": "PL",
+            "quantity": 232
+          },
+          {
+            "country": "MY",
+            "quantity": 48
+          },
+          {
+            "country": "UA",
+            "quantity": 60,
+            "donated": true
+          }
+        ]
+      },
+      "notes": "Polish T-72 upgrade with ERA. Donated to Ukraine. Being replaced by K2 and M1A2."
+    },
+    {
+      "id": "ua-t-84-oplot",
+      "name": "T-84 Oplot",
+      "type": "mbt",
+      "country_of_origin": "UA",
+      "manufacturer": "Kharkiv Morozov Machine Building",
+      "service_entry": 1999,
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 48000,
+        "max_speed_kmh": 70,
+        "range_km": 540
+      },
+      "powerplant": {
+        "engine": "6TD-2",
+        "power_hp": 1200
+      },
+      "armament": {
+        "main_gun": {
+          "type": "KBA-3",
+          "caliber_mm": 125,
+          "autoloader": true,
+          "atgm": "Kombat (gun-launched)"
+        }
+      },
+      "protection": {
+        "era": "Nozh reactive armor",
+        "aps": "Varta (Oplot-M)"
+      },
+      "service_history": {
+        "introduced": 1999,
+        "status": "active",
+        "operators": [
+          {
+            "country": "UA",
+            "quantity": 10
+          },
+          {
+            "country": "TH",
+            "quantity": 49
+          }
+        ]
+      },
+      "notes": "Ukrainian indigenous tank. Advanced ERA. Limited numbers due to production constraints during war."
+    }
+  ]
+}

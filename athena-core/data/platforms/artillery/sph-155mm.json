@@ -1,0 +1,333 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "us-m109a7",
+      "name": "M109A7 Paladin PIM",
+      "type": "sph",
+      "country_of_origin": "US",
+      "manufacturer": "BAE Systems",
+      "service_history": {
+        "introduced": 2015,
+        "retired": null,
+        "production_count": 580,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 580,
+            "status": "delivering"
+          },
+          {
+            "country": "TW",
+            "quantity": 168,
+            "status": "ordered",
+            "notes": "Approved 2025"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 36290,
+        "length_m": 6.19,
+        "length_gun_forward_m": 9.7,
+        "width_m": 3.15,
+        "height_m": 3.24,
+        "ground_clearance_m": 0.43
+      },
+      "mobility": {
+        "engine": {
+          "model": "Cummins VTA-903",
+          "type": "diesel",
+          "power_hp": 675,
+          "power_kw": 503
+        },
+        "power_to_weight_hp_ton": 18.6,
+        "transmission": "L3 HMPT-800 automatic",
+        "suspension": "torsion bar (Bradley common)",
+        "max_speed_road_kmh": 61,
+        "max_speed_offroad_kmh": 35,
+        "range_road_km": 350,
+        "fuel_capacity_liters": 568,
+        "fording_depth_m": 1.07,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 1.83,
+        "vertical_obstacle_m": 0.53
+      },
+      "armament": {
+        "main": {
+          "designation": "M284 155mm",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 39,
+          "type": "howitzer",
+          "elevation_min_deg": -3,
+          "elevation_max_deg": 75,
+          "traverse_deg": 360,
+          "loading": "assisted (electric rammer)",
+          "rate_of_fire_sustained_rpm": 1,
+          "rate_of_fire_burst_rpm": 4,
+          "range_standard_km": 22,
+          "range_rap_km": 30,
+          "range_excalibur_km": 40,
+          "ammunition_carried": 39,
+          "ammunition_types": [
+            {
+              "type": "HE",
+              "designation": "M795",
+              "range_km": 22
+            },
+            {
+              "type": "RAP",
+              "designation": "M549A1",
+              "range_km": 30
+            },
+            {
+              "type": "GPS-Guided",
+              "designation": "M982 Excalibur",
+              "range_km": 40,
+              "cep_m": 2
+            },
+            {
+              "type": "PGK",
+              "designation": "M1156 Precision Guidance Kit"
+            },
+            {
+              "type": "Smoke",
+              "designation": "M825A1"
+            },
+            {
+              "type": "Illumination",
+              "designation": "M485A2"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "M2HB",
+            "caliber_mm": 12.7,
+            "mount": "commander cupola",
+            "ammunition_carried": 500
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "armor_composition": "All-welded aluminum/steel",
+        "protection_front_mm_rha": 20,
+        "protection_upgrade": "GPK (Gunner Protection Kit), Enhanced Applied Armor",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "AFCS (Automatic Fire Control System)",
+        "navigation": "GPS/INS",
+        "muzzle_velocity_radar": true,
+        "digital_fire_control": true,
+        "automatic_gun_laying": true,
+        "shoot_and_scoot": true,
+        "power_system": "600V onboard",
+        "electric_drives": true
+      },
+      "unit_cost_usd": 7000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia M109",
+        "Army Technology Paladin M109A7",
+        "BAE Systems M109A7",
+        "Army Recognition"
+      ],
+      "notes": "Bradley-common chassis. 600V electric power system. Shoot-and-scoot capability. ERCA program (XM1299 70km range) cancelled 2024. Supports M992A3 CAT ammunition carrier. PIM = Paladin Integrated Management.",
+      "year": 2015
+    },
+    {
+      "id": "de-pzh2000",
+      "name": "PzH 2000 (Panzerhaubitze 2000)",
+      "type": "sph",
+      "country_of_origin": "DE",
+      "manufacturer": "KNDS (KMW/Rheinmetall)",
+      "service_history": {
+        "introduced": 1998,
+        "retired": null,
+        "production_count": 450,
+        "operators": [
+          {
+            "country": "DE",
+            "quantity": 185,
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "quantity": 70,
+            "status": "active"
+          },
+          {
+            "country": "NL",
+            "quantity": 57,
+            "status": "active"
+          },
+          {
+            "country": "GR",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 22,
+            "status": "active",
+            "notes": "DE/NL/IT donations"
+          },
+          {
+            "country": "HU",
+            "quantity": 24,
+            "status": "delivering"
+          },
+          {
+            "country": "HR",
+            "quantity": 12,
+            "status": "ordered"
+          },
+          {
+            "country": "LT",
+            "quantity": 18,
+            "status": "active"
+          },
+          {
+            "country": "QA",
+            "quantity": 24,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 5,
+        "weight_kg": 55000,
+        "length_m": 7.92,
+        "length_gun_forward_m": 11.67,
+        "width_m": 3.58,
+        "height_m": 3.46,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU MT 881 Ka-500",
+          "type": "diesel",
+          "power_hp": 986,
+          "power_kw": 736
+        },
+        "power_to_weight_hp_ton": 17.9,
+        "transmission": "Renk HSWL 284 automatic, 4F/2R",
+        "suspension": "torsion bar (Leopard 1 derived)",
+        "max_speed_road_kmh": 60,
+        "max_speed_offroad_kmh": 45,
+        "range_road_km": 420,
+        "fuel_capacity_liters": 1000,
+        "fording_depth_m": 1.5,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 3.0,
+        "vertical_obstacle_m": 1.1
+      },
+      "armament": {
+        "main": {
+          "designation": "Rheinmetall L52",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 52,
+          "barrel_length_m": 8.0,
+          "type": "howitzer",
+          "elevation_min_deg": -2.5,
+          "elevation_max_deg": 65,
+          "traverse_deg": 360,
+          "loading": "automatic (fully)",
+          "autoloader_capacity": 60,
+          "rate_of_fire_burst_rpm": 10,
+          "rate_of_fire_burst_3_sec": 3,
+          "rate_of_fire_sustained_rpm": 8,
+          "range_standard_km": 30,
+          "range_basebleed_km": 40,
+          "range_rap_km": 56,
+          "range_record_km": 67,
+          "range_vulcano_km": 70,
+          "ammunition_carried": 60,
+          "charges_carried": 288,
+          "ammunition_types": [
+            {
+              "type": "HE-ER",
+              "designation": "DM121",
+              "range_km": 30
+            },
+            {
+              "type": "Base-bleed",
+              "designation": "DM131 BB",
+              "range_km": 40
+            },
+            {
+              "type": "Smoke",
+              "designation": "DM105"
+            },
+            {
+              "type": "Illumination",
+              "designation": "DM106"
+            },
+            {
+              "type": "GPS-Guided",
+              "designation": "SMArt 155",
+              "range_km": 30
+            },
+            {
+              "type": "Vulcano GLR",
+              "designation": "155 Vulcano",
+              "range_km": 70,
+              "guidance": "GPS/SAL"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "MG3",
+            "caliber_mm": 7.62,
+            "mount": "commander cupola",
+            "ammunition_carried": 1500
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "armor_composition": "All-welded steel",
+        "protection_front_mm_rha": 25,
+        "protection_splinter": "All-around against artillery fragments",
+        "stanag_level": "Level 2",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "MICMOS (upgrading to KNDS Centurion)",
+        "navigation": "Hybrid GPS/INS",
+        "muzzle_velocity_radar": true,
+        "automatic_gun_laying": true,
+        "digital_fire_control": true,
+        "mrsi_capability": {
+          "rounds": 5,
+          "impact_window_sec": 1.5
+        },
+        "auto_fuze_setting": true,
+        "ammunition_management": true,
+        "shoot_and_scoot": true,
+        "deploy_fire_time_sec": 120
+      },
+      "unit_cost_usd": 8000000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia PzH 2000",
+        "Army Technology PzH 2000",
+        "KNDS",
+        "Army Recognition",
+        "GlobalSecurity"
+      ],
+      "notes": "World's most capable SPH. 52-caliber L52 gun. 60-round autoloader. 3 rounds in 9 seconds burst. MRSI 5 rounds. 67km record range (SA Assegai). Ukraine: barrel life exceeded 20,000 rounds (expected 4,500). PzH 2000 A5 MLU variant coming 2028. RCH 155 wheeled derivative.",
+      "year": 1998
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "category": "engineering",
+  "subcategory": "combat-engineering",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31"
+  },
+  "platforms": [
+    {
+      "id": "us-m9-ace",
+      "name": "M9 ACE (Armored Combat Earthmover)",
+      "type": "combat-dozer",
+      "country": "US",
+      "year": 1986,
+      "manufacturer": "BAE Systems",
+      "specifications": {
+        "weight_tons": 24.7,
+        "blade_width_m": 3.5,
+        "max_speed_kmh": 50,
+        "armor": "Small arms protection"
+      },
+      "operators": ["US"],
+      "notes": "Armored earthmoving vehicle"
+    },
+    {
+      "id": "us-m1150-abv",
+      "name": "M1150 ABV (Assault Breacher Vehicle)",
+      "type": "breacher",
+      "country": "US",
+      "year": 2009,
+      "manufacturer": "General Dynamics",
+      "specifications": {
+        "chassis": "M1A1 Abrams",
+        "mine_plow": "Full-width plow",
+        "line_charge": "2x MICLIC",
+        "crew": 2
+      },
+      "operators": ["US Army", "USMC"],
+      "notes": "Abrams-based assault breacher"
+    },
+    {
+      "id": "us-m1074-jab",
+      "name": "M1074/M1075 JABS",
+      "type": "bridge-layer",
+      "country": "US",
+      "year": 2003,
+      "manufacturer": "General Dynamics",
+      "specifications": {
+        "chassis": "M1 Abrams",
+        "bridge_length_m": 26,
+        "capacity_tons": 70
+      },
+      "operators": ["US"],
+      "notes": "Abrams-based bridge layer"
+    },
+    {
+      "id": "us-m104-wolverine",
+      "name": "M104 Wolverine HAB",
+      "type": "bridge-layer",
+      "country": "US",
+      "year": 2003,
+      "manufacturer": "General Dynamics",
+      "specifications": {
+        "chassis": "M1A2",
+        "bridge_length_m": 26,
+        "deploy_time_min": 5
+      },
+      "operators": ["US"],
+      "notes": "Heavy Assault Bridge"
+    },
+    {
+      "id": "de-dachs",
+      "name": "Dachs AEV",
+      "type": "combat-engineering",
+      "country": "DE",
+      "year": 1990,
+      "manufacturer": "MaK/Rheinmetall",
+      "specifications": {
+        "chassis": "Leopard 1",
+        "dozer": true,
+        "excavator": true,
+        "crane_tons": 20
+      },
+      "operators": ["DE", "CA", "NL"],
+      "notes": "Leopard 1-based AEV"
+    },
+    {
+      "id": "de-kodiak",
+      "name": "Kodiak AEV",
+      "type": "combat-engineering",
+      "country": "DE",
+      "year": 2013,
+      "manufacturer": "Rheinmetall",
+      "specifications": {
+        "chassis": "Leopard 2",
+        "dozer": true,
+        "mine_plow": true,
+        "excavator": true
+      },
+      "operators": ["DE", "CH", "SE", "SG", "NL"],
+      "notes": "Leopard 2-based modern AEV"
+    },
+    {
+      "id": "de-pzschnbrleg",
+      "name": "Biber AVLB",
+      "type": "bridge-layer",
+      "country": "DE",
+      "year": 1973,
+      "manufacturer": "MaK",
+      "specifications": {
+        "chassis": "Leopard 1",
+        "bridge_length_m": 22,
+        "capacity_tons": 60
+      },
+      "operators": ["DE", "AU", "CA", "IT", "NL"],
+      "notes": "Leopard 1-based bridge layer"
+    },
+    {
+      "id": "uk-trojan",
+      "name": "Trojan AVRE",
+      "type": "combat-engineering",
+      "country": "GB",
+      "year": 2007,
+      "manufacturer": "BAE Systems",
+      "specifications": {
+        "chassis": "Challenger 2",
+        "dozer": "Full-width Python",
+        "mine_plow": true,
+        "fascine": true
+      },
+      "operators": ["GB"],
+      "notes": "Challenger 2-based AVRE"
+    },
+    {
+      "id": "uk-titan",
+      "name": "Titan AVLB",
+      "type": "bridge-layer",
+      "country": "GB",
+      "year": 2006,
+      "manufacturer": "BAE Systems/WFEL",
+      "specifications": {
+        "chassis": "Challenger 2",
+        "bridges": 2,
+        "span_m": 26,
+        "capacity_tons": 72
+      },
+      "operators": ["GB"],
+      "notes": "Challenger 2-based bridge layer"
+    },
+    {
+      "id": "ru-imr2",
+      "name": "IMR-2 Combat Engineering Vehicle",
+      "type": "combat-engineering",
+      "country": "RU",
+      "year": 1982,
+      "manufacturer": "UVZ",
+      "specifications": {
+        "chassis": "T-72",
+        "crane_tons": 2,
+        "dozer": true,
+        "mine_clearing": "KMT-7 plow"
+      },
+      "operators": ["RU", "UA", "SY"],
+      "notes": "T-72 based CEV"
+    },
+    {
+      "id": "ru-imr3",
+      "name": "IMR-3M",
+      "type": "combat-engineering",
+      "country": "RU",
+      "year": 2014,
+      "manufacturer": "UVZ",
+      "specifications": {
+        "chassis": "T-90",
+        "crane_tons": 2,
+        "excavator": true
+      },
+      "operators": ["RU"],
+      "notes": "T-90 based modern CEV"
+    },
+    {
+      "id": "ru-mtu90",
+      "name": "MTU-90",
+      "type": "bridge-layer",
+      "country": "RU",
+      "year": 2001,
+      "manufacturer": "UVZ",
+      "specifications": {
+        "chassis": "T-90",
+        "bridge_length_m": 24,
+        "capacity_tons": 60
+      },
+      "operators": ["RU"],
+      "notes": "T-90 based AVLB"
+    },
+    {
+      "id": "ru-ur77",
+      "name": "UR-77 Meteorit",
+      "type": "mine-clearing",
+      "country": "RU",
+      "year": 1978,
+      "manufacturer": "UVZ",
+      "specifications": {
+        "chassis": "2S1 Gvozdika",
+        "line_charge": "2x UZP-77",
+        "clearing_width_m": 6,
+        "clearing_length_m": 90
+      },
+      "operators": ["RU", "UA"],
+      "notes": "Tracked mine-clearing system"
+    },
+    {
+      "id": "il-namer-apc-eng",
+      "name": "Namer CEV",
+      "type": "combat-engineering",
+      "country": "IL",
+      "year": 2018,
+      "manufacturer": "IMI",
+      "specifications": {
+        "chassis": "Namer (Merkava)",
+        "dozer": true,
+        "crane": true
+      },
+      "operators": ["IL"],
+      "notes": "Namer-based engineering variant"
+    },
+    {
+      "id": "de-wisent2",
+      "name": "Wisent 2 AEV",
+      "type": "combat-engineering",
+      "country": "DE",
+      "year": 2012,
+      "manufacturer": "FFG",
+      "specifications": {
+        "chassis": "Leopard 2",
+        "crane_tons": 30,
+        "excavator": true,
+        "dozer": true
+      },
+      "operators": ["CA", "NO", "SE"],
+      "notes": "Leopard 2-based CEV"
+    }
+  ]
+}

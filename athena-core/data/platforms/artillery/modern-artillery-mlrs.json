@@ -1,0 +1,567 @@
+{
+  "platforms": [
+    {
+      "id": "us-m270-himars",
+      "name": "M142 HIMARS",
+      "type": "mlrs",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "service_entry": 2005,
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 16250,
+        "length_m": 7.0,
+        "width_m": 2.4,
+        "height_m": 3.2,
+        "max_speed_kmh": 85,
+        "range_km": 480
+      },
+      "chassis": "FMTV 5-ton truck",
+      "armament": {
+        "launcher_pods": 1,
+        "rockets_per_pod": 6,
+        "rocket_options": [
+          {
+            "type": "M30/M31 GMLRS",
+            "range_km": 84,
+            "cep_m": 5
+          },
+          {
+            "type": "ER-GMLRS",
+            "range_km": 150,
+            "cep_m": 5
+          },
+          {
+            "type": "PrSM",
+            "range_km": 499,
+            "cep_m": 3
+          }
+        ],
+        "atacms_capacity": 1,
+        "atacms_range_km": 300,
+        "reload_time_min": 5
+      },
+      "c4i": {
+        "fire_control": "AFATDS",
+        "gps_inertial": true,
+        "digital_fire_control": true
+      },
+      "service_history": {
+        "introduced": 2005,
+        "status": "active",
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 414
+          },
+          {
+            "country": "UA",
+            "quantity": 40
+          },
+          {
+            "country": "RO",
+            "quantity": 54
+          },
+          {
+            "country": "PL",
+            "quantity": 500,
+            "status": "ordered"
+          },
+          {
+            "country": "AU",
+            "quantity": 30
+          }
+        ]
+      },
+      "combat_use": [
+        {
+          "conflict": "Iraq",
+          "year": 2007
+        },
+        {
+          "conflict": "Afghanistan",
+          "year": 2010
+        },
+        {
+          "conflict": "Ukraine",
+          "year": 2022
+        }
+      ],
+      "unit_cost_usd": 5000000,
+      "notes": "Game-changer in Ukraine. GPS-guided rockets highly accurate. C-130 transportable. PrSM extends range to 499km."
+    },
+    {
+      "id": "us-m270a2-mlrs",
+      "name": "M270A2 MLRS",
+      "type": "mlrs",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "service_entry": 2023,
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 25191,
+        "length_m": 6.97,
+        "width_m": 2.97,
+        "height_m": 2.62,
+        "max_speed_kmh": 64,
+        "range_km": 480
+      },
+      "chassis": "M270 tracked (Bradley-derived)",
+      "armament": {
+        "launcher_pods": 2,
+        "rockets_per_pod": 6,
+        "total_rockets": 12,
+        "atacms_capacity": 2,
+        "munitions": [
+          "M30A1/A2 GMLRS",
+          "ER-GMLRS",
+          "PrSM",
+          "M48/M57 ATACMS"
+        ]
+      },
+      "service_history": {
+        "introduced": 2023,
+        "status": "active",
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 225
+          },
+          {
+            "country": "GB",
+            "quantity": 44
+          },
+          {
+            "country": "DE",
+            "quantity": 38
+          },
+          {
+            "country": "FR",
+            "quantity": 13
+          }
+        ]
+      },
+      "unit_cost_usd": 8000000,
+      "notes": "Upgraded MLRS with improved cab and fire control. Double HIMARS firepower. Tracked for cross-country mobility."
+    },
+    {
+      "id": "us-m109a7-paladin",
+      "name": "M109A7 Paladin PIM",
+      "type": "self_propelled_howitzer",
+      "country_of_origin": "US",
+      "manufacturer": "BAE Systems",
+      "service_entry": 2015,
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 36400,
+        "length_m": 9.7,
+        "width_m": 3.15,
+        "height_m": 3.24,
+        "max_speed_kmh": 61,
+        "range_km": 350
+      },
+      "armament": {
+        "main_gun": {
+          "type": "M284 howitzer",
+          "caliber_mm": 155,
+          "barrel_length": "L/39"
+        },
+        "range_conventional_km": 22,
+        "range_rac_km": 30,
+        "range_excalibur_km": 40,
+        "range_erca_km": 70,
+        "rate_of_fire_rpm": 4,
+        "ammunition_carried": 36,
+        "secondary": "M2 .50 cal"
+      },
+      "service_history": {
+        "introduced": 2015,
+        "status": "active",
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 580
+          }
+        ]
+      },
+      "unit_cost_usd": 13000000,
+      "notes": "Bradley chassis components. Paladin Integrated Management. ERCA XM1299 extended range version tested."
+    },
+    {
+      "id": "de-pzh-2000",
+      "name": "Panzerhaubitze 2000",
+      "type": "self_propelled_howitzer",
+      "country_of_origin": "DE",
+      "manufacturer": "KMW/Rheinmetall",
+      "service_entry": 1998,
+      "specifications": {
+        "crew": 5,
+        "weight_kg": 55800,
+        "length_m": 11.67,
+        "width_m": 3.58,
+        "height_m": 3.46,
+        "max_speed_kmh": 60,
+        "range_km": 420
+      },
+      "armament": {
+        "main_gun": {
+          "type": "Rheinmetall L52",
+          "caliber_mm": 155,
+          "barrel_length": "L/52"
+        },
+        "range_conventional_km": 30,
+        "range_bb_km": 40,
+        "range_vulcano_km": 56,
+        "range_excalibur_km": 40,
+        "rate_of_fire_rpm": 9,
+        "burst_rate": "3 rounds in 9 seconds",
+        "mrsi_rounds": 5,
+        "ammunition_carried": 60
+      },
+      "features": {
+        "autoloader": true,
+        "autonomous_operation": true,
+        "into_action_seconds": 60,
+        "out_of_action_seconds": 30
+      },
+      "service_history": {
+        "introduced": 1998,
+        "status": "active",
+        "production_count": 350,
+        "operators": [
+          {
+            "country": "DE",
+            "quantity": 108
+          },
+          {
+            "country": "NL",
+            "quantity": 24
+          },
+          {
+            "country": "IT",
+            "quantity": 70
+          },
+          {
+            "country": "GR",
+            "quantity": 24
+          },
+          {
+            "country": "HR",
+            "quantity": 12
+          },
+          {
+            "country": "UA",
+            "quantity": 22
+          }
+        ]
+      },
+      "combat_use": [
+        {
+          "conflict": "Afghanistan",
+          "year": 2006
+        },
+        {
+          "conflict": "Ukraine",
+          "year": 2022
+        }
+      ],
+      "unit_cost_usd": 17000000,
+      "notes": "One of best SPHs globally. MRSI (Multiple Round Simultaneous Impact). Very high rate of fire. Proven in Ukraine."
+    },
+    {
+      "id": "kr-k9-thunder",
+      "name": "K9 Thunder",
+      "type": "self_propelled_howitzer",
+      "country_of_origin": "KR",
+      "manufacturer": "Hanwha Defense",
+      "service_entry": 1999,
+      "specifications": {
+        "crew": 5,
+        "weight_kg": 47000,
+        "length_m": 12.0,
+        "width_m": 3.4,
+        "height_m": 2.73,
+        "max_speed_kmh": 67,
+        "range_km": 480
+      },
+      "armament": {
+        "main_gun": {
+          "type": "CN98",
+          "caliber_mm": 155,
+          "barrel_length": "L/52"
+        },
+        "range_conventional_km": 40,
+        "range_bb_km": 54,
+        "rate_of_fire_rpm": 6,
+        "burst_rate": "3 rounds in 15 seconds",
+        "ammunition_carried": 48
+      },
+      "variants": [
+        "K9 - Standard (Korea)",
+        "K9A1 - Upgraded fire control",
+        "K9A2 - Fully automated",
+        "AS-9 Krab - Polish variant"
+      ],
+      "service_history": {
+        "introduced": 1999,
+        "status": "active",
+        "production_count": 1700,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 1136
+          },
+          {
+            "country": "TR",
+            "quantity": 350,
+            "name": "T-155 Firtina"
+          },
+          {
+            "country": "IN",
+            "quantity": 100,
+            "name": "K9 Vajra"
+          },
+          {
+            "country": "PL",
+            "quantity": 212,
+            "name": "Krab"
+          },
+          {
+            "country": "FI",
+            "quantity": 48
+          },
+          {
+            "country": "NO",
+            "quantity": 24
+          },
+          {
+            "country": "EE",
+            "quantity": 18
+          },
+          {
+            "country": "AU",
+            "quantity": 30
+          },
+          {
+            "country": "EG",
+            "quantity": 200
+          }
+        ]
+      },
+      "unit_cost_usd": 6000000,
+      "notes": "Most exported SPH in 21st century. Excellent reliability. K9A2 is fully automated (3 crew). Polish Krab combat proven."
+    },
+    {
+      "id": "ru-2s19m2-msta-s",
+      "name": "2S19M2 Msta-S",
+      "type": "self_propelled_howitzer",
+      "country_of_origin": "RU",
+      "manufacturer": "Uraltransmash",
+      "service_entry": 2012,
+      "specifications": {
+        "crew": 5,
+        "weight_kg": 43000,
+        "length_m": 11.9,
+        "width_m": 3.38,
+        "height_m": 2.99,
+        "max_speed_kmh": 60,
+        "range_km": 500
+      },
+      "armament": {
+        "main_gun": {
+          "type": "2A64M2",
+          "caliber_mm": 152,
+          "barrel_length": "L/47"
+        },
+        "range_conventional_km": 25,
+        "range_rac_km": 29,
+        "range_krasnopol_km": 25,
+        "rate_of_fire_rpm": 8,
+        "ammunition_carried": 50
+      },
+      "service_history": {
+        "introduced": 2012,
+        "status": "active",
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 600
+          }
+        ]
+      },
+      "combat_use": [
+        {
+          "conflict": "Ukraine",
+          "year": 2022
+        }
+      ],
+      "unit_cost_usd": 3000000,
+      "notes": "M2 variant with digital fire control. Krasnopol laser-guided round. T-80 chassis. Heavy use in Ukraine."
+    },
+    {
+      "id": "ru-2s35-koalitsiya-sv",
+      "name": "2S35 Koalitsiya-SV",
+      "type": "self_propelled_howitzer",
+      "country_of_origin": "RU",
+      "manufacturer": "Uraltransmash",
+      "service_entry": 2020,
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 55000,
+        "max_speed_kmh": 60
+      },
+      "armament": {
+        "main_gun": {
+          "type": "2A88",
+          "caliber_mm": 152,
+          "barrel_length": "L/52"
+        },
+        "range_conventional_km": 40,
+        "range_rac_km": 70,
+        "rate_of_fire_rpm": 16,
+        "ammunition_carried": 70
+      },
+      "features": {
+        "fully_automated": true,
+        "unmanned_turret": true
+      },
+      "service_history": {
+        "introduced": 2020,
+        "status": "limited production"
+      },
+      "notes": "Next-gen Russian SPH. Unmanned turret. Very high rate of fire. Limited numbers produced."
+    },
+    {
+      "id": "cn-plz-05a",
+      "name": "PLZ-05A",
+      "type": "self_propelled_howitzer",
+      "country_of_origin": "CN",
+      "manufacturer": "Norinco",
+      "service_entry": 2008,
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 35000,
+        "max_speed_kmh": 55
+      },
+      "armament": {
+        "main_gun": {
+          "caliber_mm": 155,
+          "barrel_length": "L/52"
+        },
+        "range_conventional_km": 39,
+        "range_bb_km": 53,
+        "rate_of_fire_rpm": 8,
+        "ammunition_carried": 30
+      },
+      "service_history": {
+        "introduced": 2008,
+        "status": "active",
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 400
+          }
+        ]
+      },
+      "notes": "Chinese 155mm SPH. NATO-standard caliber. Based on PLZ-45 export version."
+    },
+    {
+      "id": "il-atmos-2000",
+      "name": "ATMOS 2000",
+      "type": "self_propelled_howitzer",
+      "country_of_origin": "IL",
+      "manufacturer": "Elbit Systems",
+      "service_entry": 2001,
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 22000,
+        "max_speed_kmh": 80
+      },
+      "armament": {
+        "main_gun": {
+          "caliber_mm": 155,
+          "barrel_length": "L/52"
+        },
+        "range_conventional_km": 41,
+        "range_bb_km": 56,
+        "rate_of_fire_rpm": 5,
+        "mrsi_rounds": 4
+      },
+      "chassis": "6x6 or 8x8 truck",
+      "service_history": {
+        "introduced": 2001,
+        "status": "active",
+        "operators": [
+          {
+            "country": "RO",
+            "quantity": 18
+          },
+          {
+            "country": "AZ",
+            "quantity": 36
+          },
+          {
+            "country": "PH",
+            "quantity": 12
+          },
+          {
+            "country": "TH",
+            "quantity": 6
+          }
+        ]
+      },
+      "unit_cost_usd": 4500000,
+      "notes": "Truck-mounted howitzer. MRSI capable. Various chassis options. Autonomous operation."
+    },
+    {
+      "id": "se-archer-fh77",
+      "name": "Archer FH77BW L52",
+      "type": "self_propelled_howitzer",
+      "country_of_origin": "SE",
+      "manufacturer": "BAE Systems Bofors",
+      "service_entry": 2013,
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 30000,
+        "max_speed_kmh": 70
+      },
+      "armament": {
+        "main_gun": {
+          "caliber_mm": 155,
+          "barrel_length": "L/52"
+        },
+        "range_bb_km": 50,
+        "range_excalibur_km": 60,
+        "rate_of_fire_rpm": 8,
+        "mrsi_rounds": 6,
+        "ammunition_carried": 21
+      },
+      "features": {
+        "fully_automated": true,
+        "armored_cabin": true,
+        "shoot_and_scoot_seconds": 30
+      },
+      "service_history": {
+        "introduced": 2013,
+        "status": "active",
+        "operators": [
+          {
+            "country": "SE",
+            "quantity": 48
+          },
+          {
+            "country": "NO",
+            "quantity": 24
+          },
+          {
+            "country": "GB",
+            "quantity": 14,
+            "status": "ordered"
+          }
+        ]
+      },
+      "unit_cost_usd": 8000000,
+      "notes": "Fully automated, operated from cabin. 30 second shoot-and-scoot. Excellent protection. 6-round MRSI."
+    }
+  ]
+}

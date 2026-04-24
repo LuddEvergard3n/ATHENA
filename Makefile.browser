@@ -1,0 +1,77 @@
+# ATHENA Platform Browser - Makefile
+# Cross-platform build (Windows/macOS/Linux)
+#
+# Usage:
+#   make            - Build browser
+#   make clean      - Remove build artifacts
+#   make run        - Build and run
+#
+# SPDX-License-Identifier: Proprietary
+# Copyright (c) 2026 ATHENA Project
+
+# Compiler settings
+CXX := g++
+CXXFLAGS := -std=c++17 -Wall -Wextra -O2
+INCLUDES := -I include
+
+# Detect OS
+ifeq ($(OS),Windows_NT)
+    TARGET := athena-browser.exe
+    RM := del /Q
+    MKDIR := mkdir
+else
+    TARGET := athena-browser
+    RM := rm -f
+    MKDIR := mkdir -p
+endif
+
+# Source files
+TUI_SRCS := \
+    src/tui/terminal.cpp \
+    src/tui/widgets.cpp \
+    src/tui/browser.cpp \
+    src/tui/browser_main.cpp
+
+CORE_SRCS := \
+    src/platform_loader.cpp \
+    src/json.cpp
+
+SRCS := $(TUI_SRCS) $(CORE_SRCS)
+OBJS := $(SRCS:.cpp=.o)
+
+# Default target
+all: $(TARGET)
+
+# Link
+$(TARGET): $(OBJS)
+	$(CXX) $(CXXFLAGS) -o $@ $^
+
+# Compile
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c -o $@ $<
+
+# Dependencies (simplified)
+src/tui/terminal.o: include/athena/tui/terminal.hpp
+src/tui/widgets.o: include/athena/tui/widgets.hpp include/athena/tui/terminal.hpp
+src/tui/browser.o: include/athena/tui/browser.hpp include/athena/tui/widgets.hpp include/athena/platform_loader.hpp
+src/tui/browser_main.o: include/athena/tui/browser.hpp
+src/platform_loader.o: include/athena/platform_loader.hpp include/athena/json.hpp
+src/json.o: include/athena/json.hpp
+
+# Clean
+clean:
+	$(RM) $(OBJS) $(TARGET)
+
+# Run
+run: $(TARGET)
+	./$(TARGET) data/platforms
+
+# Debug build
+debug: CXXFLAGS += -g -O0 -DDEBUG
+debug: clean all
+
+# Release build
+release: CXXFLAGS += -O3 -DNDEBUG
+release: clean all
+
+.PHONY: all clean run debug release

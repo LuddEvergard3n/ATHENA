@@ -1,0 +1,483 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition",
+      "FAS"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-m113a3",
+      "name": "M113A3",
+      "type": "apc",
+      "country_of_origin": "US",
+      "manufacturer": "BAE Systems (FMC)",
+      "service_history": {
+        "introduced": 1987,
+        "retired": null,
+        "production_count": 80000,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 6000,
+            "variants": [
+              "M113A2",
+              "M113A3"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 400,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 2500,
+            "status": "active"
+          },
+          {
+            "country": "IL",
+            "quantity": 6000,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 3000,
+            "status": "active"
+          },
+          {
+            "country": "TR",
+            "quantity": 2800,
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "quantity": 2400,
+            "status": "active"
+          },
+          {
+            "country": "GR",
+            "quantity": 2000,
+            "status": "active"
+          },
+          {
+            "country": "TW",
+            "quantity": 1200,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 800,
+            "status": "active"
+          }
+        ],
+        "notes": "Most produced armored vehicle in Western history"
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 11,
+        "weight_kg": 12310,
+        "length_m": 4.86,
+        "width_m": 2.69,
+        "height_m": 2.52,
+        "ground_clearance_m": 0.43
+      },
+      "mobility": {
+        "engine": {
+          "model": "Detroit Diesel 6V53T",
+          "type": "diesel_turbocharged",
+          "power_hp": 275,
+          "power_kw": 205
+        },
+        "power_to_weight_hp_ton": 22.3,
+        "transmission": "Allison X-200-4 automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 68,
+        "max_speed_offroad_kmh": 40,
+        "max_speed_water_kmh": 5.8,
+        "range_road_km": 480,
+        "fuel_capacity_liters": 360,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "fording_depth_m": 1.02,
+        "trench_crossing_m": 1.68,
+        "vertical_obstacle_m": 0.61,
+        "amphibious": true,
+        "propulsion_water": "tracks"
+      },
+      "armament": {
+        "main": {
+          "designation": "M2HB",
+          "caliber_mm": 12.7,
+          "type": "heavy_machine_gun",
+          "mount": "cupola",
+          "ammunition_carried": 2000,
+          "effective_range_m": 1500
+        }
+      },
+      "protection": {
+        "armor_type": "aluminum",
+        "armor_composition": "5083 aluminum alloy",
+        "protection_front_mm_rha": 38,
+        "protection_side_mm_rha": 32,
+        "protection_rating": "Small arms and shell fragments",
+        "nbc_protection": false,
+        "fire_suppression": false,
+        "spall_liner": false,
+        "notes": "Thin armor - vulnerable to RPGs, heavy MGs"
+      },
+      "sensors_and_fcs": {
+        "commander_sight": {
+          "type": "M27 cupola periscope",
+          "thermal": false
+        },
+        "night_vision": "AN/VVS-2 driver scope"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 0
+      },
+      "unit_cost_usd": 300000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia M113",
+        "FAS M113",
+        "Army Recognition"
+      ],
+      "notes": "Battlefield taxi. 80,000+ produced. 50+ countries. 40+ variants. Being replaced by AMPV in US. Still backbone of many armies. 400+ sent to Ukraine 2022-2024.",
+      "year": 1987
+    },
+    {
+      "id": "us-stryker-m1126",
+      "name": "M1126 Stryker ICV",
+      "type": "apc",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics Land Systems",
+      "service_history": {
+        "introduced": 2002,
+        "retired": null,
+        "production_count": 4466,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 4466,
+            "variants": [
+              "M1126",
+              "M1127",
+              "M1128",
+              "M1129",
+              "M1130",
+              "M1131",
+              "M1132",
+              "M1133",
+              "M1134",
+              "M1135"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "TH",
+            "quantity": 70,
+            "status": "active"
+          },
+          {
+            "country": "PH",
+            "quantity": 20,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 9,
+        "weight_kg": 16470,
+        "weight_combat_kg": 19000,
+        "length_m": 6.95,
+        "width_m": 2.72,
+        "height_m": 2.64,
+        "ground_clearance_m": 0.52
+      },
+      "mobility": {
+        "engine": {
+          "model": "Caterpillar C7",
+          "type": "diesel_turbocharged",
+          "power_hp": 350,
+          "power_kw": 261
+        },
+        "power_to_weight_hp_ton": 21.3,
+        "drivetrain": "8x8",
+        "transmission": "Allison 3200SP automatic",
+        "suspension": "independent double wishbone",
+        "max_speed_road_kmh": 97,
+        "max_speed_offroad_kmh": 50,
+        "range_road_km": 500,
+        "fuel_capacity_liters": 200,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "fording_depth_m": 1.22,
+        "vertical_obstacle_m": 0.58,
+        "amphibious": false,
+        "tyre_pressure_central": true,
+        "run_flat_tires": true
+      },
+      "armament": {
+        "main": {
+          "designation": "M2HB or Mk 19",
+          "caliber_mm": 12.7,
+          "type": "heavy_machine_gun",
+          "mount": "RWS Protector",
+          "ammunition_carried": 400,
+          "effective_range_m": 1500
+        }
+      },
+      "protection": {
+        "armor_type": "steel_ceramic",
+        "stanag_level": "4569 Level 3",
+        "protection_front_mm_rha": 14.5,
+        "protection_upgrade": "Slat armor, MEXAS ceramic",
+        "mine_protection": "V-hull double floor",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "RWS Protector",
+        "commander_sight": {
+          "type": "Day/thermal",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "battle_management_system": "FBCB2",
+        "gps": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 0
+      },
+      "unit_cost_usd": 4900000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Stryker",
+        "Army Recognition",
+        "GDLS"
+      ],
+      "notes": "LAV III derivative. Iraq/Afghanistan proven. 10 variants. Stryker Double-V Hull (DVH) improved mine protection. Air-transportable C-130. 90+ mph road speed.",
+      "year": 2002
+    },
+    {
+      "id": "us-stryker-dragoon",
+      "name": "M1296 Stryker Dragoon",
+      "type": "ifv",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics Land Systems",
+      "service_history": {
+        "introduced": 2018,
+        "retired": null,
+        "production_count": 170,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 170,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 6,
+        "weight_kg": 20000,
+        "length_m": 7.16,
+        "width_m": 2.72,
+        "height_m": 2.85,
+        "ground_clearance_m": 0.52
+      },
+      "mobility": {
+        "engine": {
+          "model": "Caterpillar C9",
+          "type": "diesel_turbocharged",
+          "power_hp": 450,
+          "power_kw": 336
+        },
+        "power_to_weight_hp_ton": 22.5,
+        "drivetrain": "8x8",
+        "max_speed_road_kmh": 97,
+        "range_road_km": 500,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "XM813 (Mk44 derivative)",
+          "caliber_mm": 30,
+          "type": "autocannon",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 60,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 200,
+          "effective_range_m": 3000,
+          "ammunition_carried": 150,
+          "ammunition_types": [
+            {
+              "type": "APFSDS-T",
+              "designation": "Mk258",
+              "penetration_mm_rha": 70,
+              "penetration_range_m": 1000
+            },
+            {
+              "type": "HEI-T",
+              "designation": "Mk266"
+            },
+            {
+              "type": "ABM",
+              "notes": "Airburst programmable"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "M240",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 400
+          }
+        ],
+        "atgm": {
+          "designation": "Javelin (optional)",
+          "missiles_carried": 2,
+          "range_m": 4750,
+          "penetration_mm_rha": 800
+        }
+      },
+      "protection": {
+        "armor_type": "steel_ceramic",
+        "stanag_level": "4569 Level 4",
+        "protection_upgrade": "MEXAS + slat armor",
+        "mine_protection": "Double-V Hull",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Kongsberg MCT-30",
+        "commander_sight": {
+          "type": "Panoramic",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true
+        },
+        "gunner_sight": {
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true,
+        "automatic_target_tracker": true,
+        "battle_management_system": "FBCB2"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8
+      },
+      "unit_cost_usd": 7000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia M1296 Stryker",
+        "Army Recognition",
+        "GDLS"
+      ],
+      "notes": "Upgunned Stryker. MCT-30 turret. Europe deployment for Russia deterrence. 30mm provides anti-IFV capability. Named after Dragoons cavalry.",
+      "year": 2017
+    },
+    {
+      "id": "us-ampv",
+      "name": "M1283 AMPV",
+      "type": "apc",
+      "country_of_origin": "US",
+      "manufacturer": "BAE Systems",
+      "service_history": {
+        "introduced": 2020,
+        "retired": null,
+        "production_count": 2897,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 2897,
+            "status": "entering service"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 6,
+        "weight_kg": 30000,
+        "length_m": 6.3,
+        "width_m": 3.3,
+        "height_m": 2.68,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Cummins VTA-903",
+          "type": "diesel_turbocharged",
+          "power_hp": 600,
+          "power_kw": 447
+        },
+        "power_to_weight_hp_ton": 20.0,
+        "transmission": "HMPT-500",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 61,
+        "max_speed_offroad_kmh": 38,
+        "range_road_km": 350,
+        "gradient_percent": 60,
+        "fording_depth_m": 1.2,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "M2HB or Mk 19",
+          "caliber_mm": 12.7,
+          "type": "heavy_machine_gun",
+          "mount": "RWS CROWS-J",
+          "ammunition_carried": 400
+        }
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 4",
+        "mine_protection": "STANAG 4569 Level 4a/4b",
+        "ied_protection": "EFP resistant",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true,
+        "notes": "Bradley hull-derived, enhanced protection"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "CROWS-J RWS",
+        "commander_sight": {
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "battle_management_system": "FBCB2-JCR"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8
+      },
+      "unit_cost_usd": 3000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia AMPV",
+        "Army Recognition",
+        "BAE Systems"
+      ],
+      "notes": "M113 replacement. Bradley chassis. 5 variants: General Purpose, Medical Evac, Medical Treatment, Mortar Carrier, Mission Command. $6B+ contract.",
+      "year": 2020
+    }
+  ]
+}

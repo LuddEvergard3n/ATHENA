@@ -1,0 +1,609 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "ru-btr80",
+      "name": "BTR-80",
+      "type": "apc",
+      "country_of_origin": "SU",
+      "manufacturer": "Arzamas Machine-Building Plant",
+      "service_history": {
+        "introduced": 1986,
+        "retired": null,
+        "production_count": 5000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 2000,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "KZ",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "TR",
+            "quantity": 220,
+            "status": "active"
+          },
+          {
+            "country": "HU",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "RO",
+            "quantity": 180,
+            "status": "active"
+          },
+          {
+            "country": "ID",
+            "quantity": 150,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 100,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 7,
+        "weight_kg": 13600,
+        "length_m": 7.65,
+        "width_m": 2.9,
+        "height_m": 2.41,
+        "ground_clearance_m": 0.48
+      },
+      "mobility": {
+        "engine": {
+          "model": "KamAZ-7403",
+          "type": "diesel_turbocharged",
+          "power_hp": 260,
+          "power_kw": 194
+        },
+        "power_to_weight_hp_ton": 19.1,
+        "drivetrain": "8x8",
+        "transmission": "Manual 5F/1R",
+        "suspension": "independent torsion bar",
+        "max_speed_road_kmh": 80,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_water_kmh": 9,
+        "range_road_km": 600,
+        "fuel_capacity_liters": 300,
+        "gradient_percent": 60,
+        "fording_depth_m": 0,
+        "amphibious": true,
+        "propulsion_water": "single waterjet",
+        "tyre_pressure_central": true
+      },
+      "armament": {
+        "main": {
+          "designation": "KPVT",
+          "caliber_mm": 14.5,
+          "type": "heavy_machine_gun",
+          "elevation_min_deg": -4,
+          "elevation_max_deg": 60,
+          "traverse_deg": 360,
+          "rate_of_fire_rpm": 600,
+          "effective_range_m": 2000,
+          "ammunition_carried": 500
+        },
+        "secondary": [
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 10,
+        "protection_side_mm_rha": 7,
+        "protection_rating": "Small arms 7.62mm, fragments",
+        "nbc_protection": true,
+        "fire_suppression": false
+      },
+      "sensors_and_fcs": {
+        "commander_sight": {
+          "type": "TKN-3",
+          "thermal": false
+        },
+        "gunner_sight": {
+          "type": "1PZ-2",
+          "thermal": false
+        },
+        "night_vision": "Active IR"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 6
+      },
+      "unit_cost_usd": 500000,
+      "cost_year": 1995,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia BTR-80",
+        "Army Recognition",
+        "Military Today"
+      ],
+      "notes": "Workhorse 8x8. Improved BTR-70. Side doors for dismount under armor. Chechnya, Georgia, Ukraine combat. 1000+ lost in Ukraine war.",
+      "year": 1986
+    },
+    {
+      "id": "ru-btr82a",
+      "name": "BTR-82A",
+      "type": "apc",
+      "country_of_origin": "RU",
+      "manufacturer": "Arzamas Machine-Building Plant",
+      "service_history": {
+        "introduced": 2013,
+        "retired": null,
+        "production_count": 1500,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 1200,
+            "status": "active"
+          },
+          {
+            "country": "KZ",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "AZ",
+            "quantity": 100,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 7,
+        "weight_kg": 15400,
+        "length_m": 7.65,
+        "width_m": 2.9,
+        "height_m": 2.75,
+        "ground_clearance_m": 0.48
+      },
+      "mobility": {
+        "engine": {
+          "model": "KamAZ-740.14",
+          "type": "diesel_turbocharged",
+          "power_hp": 300,
+          "power_kw": 224
+        },
+        "power_to_weight_hp_ton": 19.5,
+        "drivetrain": "8x8",
+        "transmission": "Manual 5F/1R",
+        "max_speed_road_kmh": 80,
+        "max_speed_water_kmh": 9,
+        "range_road_km": 600,
+        "amphibious": true,
+        "propulsion_water": "single waterjet"
+      },
+      "armament": {
+        "main": {
+          "designation": "2A72",
+          "caliber_mm": 30,
+          "type": "autocannon",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 70,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 330,
+          "effective_range_m": 2000,
+          "ammunition_carried": 300,
+          "ammunition_types": [
+            {
+              "type": "AP-T",
+              "penetration_mm_rha": 25,
+              "penetration_range_m": 1000
+            },
+            {
+              "type": "HEI-T"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "PKTM",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 10,
+        "protection_side_mm_rha": 7,
+        "protection_upgrade": "Spall liner, slat armor optional",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "TKN-4GA-02",
+        "commander_sight": {
+          "type": "TKN-4GA-02",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "gunner_sight": {
+          "type": "Combined",
+          "thermal": true
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 6
+      },
+      "unit_cost_usd": 1000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia BTR-82",
+        "Army Recognition",
+        "Military Today"
+      ],
+      "notes": "BTR-80 modernization. 30mm autocannon upgrade from 14.5mm. Better FCS. Syria, Ukraine deployed. 600+ lost in Ukraine.",
+      "year": 2013
+    },
+    {
+      "id": "ru-btr90",
+      "name": "BTR-90 Rostok",
+      "type": "apc",
+      "country_of_origin": "RU",
+      "manufacturer": "Arzamas Machine-Building Plant",
+      "service_history": {
+        "introduced": 2008,
+        "retired": 2011,
+        "production_count": 12,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 12,
+            "status": "cancelled"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 7,
+        "weight_kg": 20900,
+        "length_m": 8.2,
+        "width_m": 3.2,
+        "height_m": 3.0,
+        "ground_clearance_m": 0.51
+      },
+      "mobility": {
+        "engine": {
+          "model": "2V-06-2S",
+          "type": "diesel_turbocharged",
+          "power_hp": 510,
+          "power_kw": 380
+        },
+        "power_to_weight_hp_ton": 24.4,
+        "drivetrain": "8x8",
+        "transmission": "Automatic",
+        "suspension": "independent hydropneumatic",
+        "max_speed_road_kmh": 100,
+        "max_speed_water_kmh": 9,
+        "range_road_km": 800,
+        "amphibious": true,
+        "propulsion_water": "twin waterjets"
+      },
+      "armament": {
+        "main": {
+          "designation": "2A42",
+          "caliber_mm": 30,
+          "type": "autocannon",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 75,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 550,
+          "effective_range_m": 2500,
+          "ammunition_carried": 500
+        },
+        "secondary": [
+          {
+            "designation": "AGS-17",
+            "caliber_mm": 30,
+            "mount": "turret",
+            "ammunition_carried": 400,
+            "notes": "Grenade launcher"
+          },
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "9M133 Kornet",
+          "missiles_carried": 4,
+          "range_m": 5500,
+          "penetration_mm_rha": 1200
+        }
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "protection_front_mm_rha": 14,
+        "protection_side_mm_rha": 9,
+        "stanag_level": "4569 Level 2",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Digital",
+        "commander_sight": {
+          "type": "Panoramic",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true
+        },
+        "gunner_sight": {
+          "thermal": true
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12
+      },
+      "unit_cost_usd": 3000000,
+      "cost_year": 2010,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia BTR-90",
+        "Army Recognition"
+      ],
+      "notes": "Advanced BTR. Cancelled in favor of Boomerang. BMP-2 turret. 100 km/h road speed. Only 12 built. Too expensive.",
+      "year": 2008
+    },
+    {
+      "id": "ru-bumerang",
+      "name": "Bumerang (K-17)",
+      "type": "apc",
+      "country_of_origin": "RU",
+      "manufacturer": "VPK (Military Industrial Company)",
+      "service_history": {
+        "introduced": 2025,
+        "retired": null,
+        "production_count": 50,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 50,
+            "status": "entering service"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 8,
+        "weight_kg": 25000,
+        "weight_combat_kg": 28000,
+        "length_m": 8.5,
+        "width_m": 3.3,
+        "height_m": 3.0,
+        "ground_clearance_m": 0.5
+      },
+      "mobility": {
+        "engine": {
+          "model": "YaMZ-780",
+          "type": "diesel_turbocharged",
+          "power_hp": 750,
+          "power_kw": 559
+        },
+        "power_to_weight_hp_ton": 30.0,
+        "drivetrain": "8x8",
+        "transmission": "Automatic hydromechanical",
+        "suspension": "independent hydropneumatic",
+        "max_speed_road_kmh": 100,
+        "max_speed_water_kmh": 12,
+        "range_road_km": 800,
+        "amphibious": true,
+        "propulsion_water": "twin waterjets",
+        "tyre_pressure_central": true
+      },
+      "armament": {
+        "main": {
+          "designation": "2A42 (K-17 variant)",
+          "caliber_mm": 30,
+          "type": "autocannon",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 70,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 550,
+          "effective_range_m": 2500,
+          "ammunition_carried": 500
+        },
+        "secondary": [
+          {
+            "designation": "PKTM",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "Kornet-EM",
+          "missiles_carried": 4,
+          "range_m": 8000,
+          "penetration_mm_rha": 1300
+        }
+      },
+      "protection": {
+        "armor_type": "ceramic_composite",
+        "stanag_level": "4569 Level 5",
+        "mine_protection": "STANAG 4569 Level 4a/4b",
+        "aps": {
+          "system": "Afghanit (planned)",
+          "type": "hard-kill"
+        },
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Epoch unmanned turret",
+        "commander_sight": {
+          "type": "Panoramic",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_warning_receiver": true,
+        "ballistic_computer": true,
+        "automatic_target_tracker": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "ir_signature_reduction": true
+      },
+      "unit_cost_usd": 5000000,
+      "cost_year": 2023,
+      "confidence": "low",
+      "sources": [
+        "Wikipedia Bumerang",
+        "Army Recognition",
+        "Military Today"
+      ],
+      "notes": "Next-gen Russian 8x8. BTR-80/82 replacement. Epoch remote turret. First Russian monocoque hull. Development delayed by Ukraine war. Limited production.",
+      "year": 2015
+    },
+    {
+      "id": "ru-btr70",
+      "name": "BTR-70",
+      "type": "apc",
+      "country_of_origin": "SU",
+      "manufacturer": "GAZ",
+      "service_history": {
+        "introduced": 1972,
+        "retired": null,
+        "production_count": 8000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 100,
+            "status": "reserve"
+          },
+          {
+            "country": "UA",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "AF",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 100,
+            "status": "reserve"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 7,
+        "weight_kg": 11500,
+        "length_m": 7.54,
+        "width_m": 2.8,
+        "height_m": 2.32,
+        "ground_clearance_m": 0.48
+      },
+      "mobility": {
+        "engine": {
+          "model": "2x GAZ-49B",
+          "type": "gasoline",
+          "power_hp": 240,
+          "power_kw": 179,
+          "notes": "Twin engine"
+        },
+        "power_to_weight_hp_ton": 20.9,
+        "drivetrain": "8x8",
+        "max_speed_road_kmh": 80,
+        "max_speed_water_kmh": 10,
+        "range_road_km": 400,
+        "amphibious": true
+      },
+      "armament": {
+        "main": {
+          "designation": "KPVT",
+          "caliber_mm": 14.5,
+          "type": "heavy_machine_gun",
+          "ammunition_carried": 500
+        },
+        "secondary": [
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 9,
+        "protection_side_mm_rha": 7,
+        "nbc_protection": true
+      },
+      "sensors_and_fcs": {
+        "commander_sight": {
+          "type": "TKN-3",
+          "thermal": false
+        }
+      },
+      "signature": {
+        "smoke_grenade_launchers": 6
+      },
+      "unit_cost_usd": 250000,
+      "cost_year": 1985,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia BTR-70",
+        "Military Factory"
+      ],
+      "notes": "Afghanistan war veteran. Twin gasoline engines (poor design). Small side exit hatches problematic. Largely replaced by BTR-80.",
+      "year": 1972
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "br-guarani",
+      "name": "VBTP-MR Guarani",
+      "type": "apc",
+      "country_of_origin": "BR",
+      "manufacturer": "Iveco Defence Vehicles / CTEx",
+      "service_history": {
+        "introduced": 2012,
+        "retired": null,
+        "production_count": 700,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 700,
+            "variants": [
+              "VBTP",
+              "VBCI"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "LB",
+            "quantity": 10,
+            "variants": [
+              "VBTP"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "PH",
+            "quantity": 28,
+            "variants": [
+              "VBTP"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "GH",
+            "quantity": 11,
+            "variants": [
+              "VBTP"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "AR",
+            "quantity": 156,
+            "variants": [
+              "Guarani 6x6"
+            ],
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 8,
+        "weight_kg": 18000,
+        "weight_amphibious_kg": 17500,
+        "length_m": 6.91,
+        "width_m": 2.7,
+        "height_m": 2.34,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Iveco FPT Cursor 9",
+          "type": "diesel",
+          "power_hp": 383,
+          "power_kw": 286
+        },
+        "power_to_weight_hp_ton": 21.3,
+        "transmission": "ZF automatic, 6 forward, 1 reverse",
+        "suspension": "hydropneumatic independent",
+        "drive_configuration": "6x6",
+        "max_speed_road_kmh": 105,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_water_kmh": 10,
+        "range_road_km": 600,
+        "fuel_capacity_liters": 400,
+        "fording_depth_m": 1.5,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 1.5,
+        "vertical_obstacle_m": 0.5,
+        "amphibious": true,
+        "propulsion_water": "twin rear propellers"
+      },
+      "armament": {
+        "main": {
+          "designation": "Variable (modular)",
+          "options": [
+            {
+              "turret": "REMAX RWS",
+              "weapon": "M2HB 12.7mm or MAG 7.62mm",
+              "manufacturer": "ARES/CTEx"
+            },
+            {
+              "turret": "UT30BR",
+              "weapon": "Mk44 Bushmaster II 30mm + MAG 7.62mm",
+              "manufacturer": "Elbit/AEL"
+            },
+            {
+              "turret": "Manual",
+              "weapon": "M2HB 12.7mm",
+              "manufacturer": "Various"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "Smoke launchers",
+            "caliber_mm": 76,
+            "quantity": 8
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "armor_composition": "High-hardness monocoque steel (USI-PROT-500)",
+        "stanag_level": "4569 Level 2",
+        "stanag_mine_level": "4569 Level 2a/2b",
+        "protection_upgrade": "Add-on armor kits available",
+        "mine_protection_kg_tnt": 6,
+        "hull_shape": "V-hull",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Elbit TORCH-X",
+        "commander_sight": {
+          "type": "Elbit",
+          "thermal": true
+        },
+        "gunner_sight": {
+          "type": "Elbit",
+          "thermal": true
+        },
+        "battle_management_system": "TORCH-X",
+        "communications": "E-LynX SDR",
+        "gps": true,
+        "laser_warning_receiver": true
+      },
+      "variants": [
+        {
+          "designation": "VBTP",
+          "role": "Armored Personnel Carrier",
+          "status": "in_service"
+        },
+        {
+          "designation": "VBCI",
+          "role": "Infantry Fighting Vehicle (30mm)",
+          "status": "in_service"
+        },
+        {
+          "designation": "VBE PC",
+          "role": "Command Post",
+          "status": "in_service"
+        },
+        {
+          "designation": "VBTE Amb",
+          "role": "Ambulance",
+          "status": "in_service"
+        },
+        {
+          "designation": "VBC Mrt",
+          "role": "Mortar Carrier (81/120mm)",
+          "status": "development"
+        },
+        {
+          "designation": "VBE Soc",
+          "role": "Recovery",
+          "status": "development"
+        },
+        {
+          "designation": "VBE Eng",
+          "role": "Combat Engineer",
+          "status": "development"
+        },
+        {
+          "designation": "VB AA",
+          "role": "Air Defense (RBS 70 NG)",
+          "status": "development"
+        }
+      ],
+      "unit_cost_usd": 1500000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia VBTP-MR Guarani",
+        "Army Technology Guarani",
+        "Tank Encyclopedia Guarani",
+        "GlobalSecurity Guarani"
+      ],
+      "notes": "Replaces EE-11 Urutu and EE-9 Cascavel. Contract for 2,044 units (scaled to ~900). 60%+ local content. Modular design allows multiple turret options. 8x8 variant (Superav basis) also planned. Air-transportable by KC-390/C-130.",
+      "year": 2012
+    },
+    {
+      "id": "br-guarani-vbci",
+      "name": "VBCI Guarani (UT30BR)",
+      "type": "ifv",
+      "country_of_origin": "BR",
+      "manufacturer": "Iveco Defence Vehicles / Elbit / AEL Sistemas",
+      "service_history": {
+        "introduced": 2018,
+        "retired": null,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 100,
+            "variants": [
+              "VBCI UT30BR"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 6,
+        "weight_kg": 20000,
+        "length_m": 6.91,
+        "width_m": 2.7,
+        "height_m": 2.8,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Iveco FPT Cursor 9",
+          "type": "diesel",
+          "power_hp": 383,
+          "power_kw": 286
+        },
+        "power_to_weight_hp_ton": 19.2,
+        "transmission": "ZF automatic, 6 forward, 1 reverse",
+        "suspension": "hydropneumatic independent",
+        "drive_configuration": "6x6",
+        "max_speed_road_kmh": 100,
+        "max_speed_offroad_kmh": 45,
+        "max_speed_water_kmh": 8,
+        "range_road_km": 550,
+        "fuel_capacity_liters": 400,
+        "amphibious": true
+      },
+      "armament": {
+        "main": {
+          "designation": "Mk44 Bushmaster II",
+          "caliber_mm": 30,
+          "barrel_length_calibers": 70,
+          "type": "autocannon",
+          "elevation_min_deg": -15,
+          "elevation_max_deg": 60,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 200,
+          "effective_range_m": 3000,
+          "ammunition_carried": 200,
+          "ammunition_types": [
+            {
+              "type": "APFSDS-T",
+              "designation": "Mk258 Mod1",
+              "penetration_mm_rha": 70,
+              "penetration_range_m": 1000
+            },
+            {
+              "type": "HEI-T",
+              "designation": "Mk266",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 3000
+            },
+            {
+              "type": "APBC-HEI-T",
+              "designation": "Mk264",
+              "penetration_mm_rha": 25,
+              "penetration_range_m": 2000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "FN MAG",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 1000
+          }
+        ],
+        "atgm": {
+          "designation": "Spike LR (planned)",
+          "missiles_carried": 2,
+          "launch_method": "turret-mounted"
+        }
+      },
+      "protection": {
+        "armor_type": "steel",
+        "armor_composition": "High-hardness steel with add-on",
+        "stanag_level": "4569 Level 3",
+        "stanag_mine_level": "4569 Level 2a/2b",
+        "hull_shape": "V-hull",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Elbit UT30BR integrated",
+        "commander_sight": {
+          "type": "Elbit panoramic",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "Elbit",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 5000,
+        "ballistic_computer": true,
+        "battle_management_system": "TORCH-X",
+        "automatic_target_tracking": true,
+        "gps": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8
+      },
+      "unit_cost_usd": 2500000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia VBTP-MR Guarani",
+        "Army Recognition Guarani",
+        "War Thunder Forum"
+      ],
+      "notes": "Infantry Fighting Vehicle variant. UT30BR turret by Elbit/AEL with hunter-killer capability. Anti-drone upgrade kit in development. Can engage low-flying aircraft/drones with 60\u00b0 elevation.",
+      "year": 2018
+    }
+  ]
+}

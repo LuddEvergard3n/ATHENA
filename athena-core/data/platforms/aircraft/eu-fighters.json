@@ -1,0 +1,465 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-22",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "Eurofighter GmbH",
+      "Dassault",
+      "Saab"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "eu-eurofighter",
+      "name": "Eurofighter Typhoon",
+      "nato_name": null,
+      "type": "multirole_fighter",
+      "generation": "4.5",
+      "country_of_origin": "EU",
+      "manufacturer": "Eurofighter GmbH (Airbus/BAE/Leonardo)",
+      "service_history": {
+        "introduced": 2003,
+        "first_flight": 1994,
+        "retired": null,
+        "production_count": 680,
+        "operators": [
+          {
+            "country": "DE",
+            "quantity": 143,
+            "status": "active"
+          },
+          {
+            "country": "UK",
+            "quantity": 160,
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "quantity": 96,
+            "status": "active"
+          },
+          {
+            "country": "ES",
+            "quantity": 73,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 72,
+            "status": "active"
+          },
+          {
+            "country": "QA",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "KW",
+            "quantity": 28,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 15.96,
+        "wingspan_m": 10.95,
+        "empty_weight_kg": 11000,
+        "max_takeoff_weight_kg": 23500,
+        "hardpoints": 13
+      },
+      "performance": {
+        "max_speed_kmh": 2495,
+        "max_speed_mach": 2.0,
+        "supercruise_mach": 1.5,
+        "combat_radius_km": 1389,
+        "ferry_range_km": 3790,
+        "service_ceiling_m": 19812,
+        "max_g_load": 9,
+        "thrust_to_weight": 1.15
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Eurojet EJ200",
+        "thrust_dry_kn": 60,
+        "thrust_afterburner_kn": 90
+      },
+      "avionics": {
+        "radar": "Captor-E AESA (Tranche 3)",
+        "radar_range_km": 200,
+        "irst": "PIRATE",
+        "ew_suite": "Praetorian DASS",
+        "datalink": "Link 16, MIDS",
+        "helmet_mounted_display": "Striker II"
+      },
+      "armament": {
+        "gun": {
+          "type": "Mauser BK-27",
+          "caliber_mm": 27,
+          "rounds": 150
+        },
+        "air_to_air": [
+          "AIM-120 AMRAAM",
+          "MBDA Meteor",
+          "IRIS-T",
+          "ASRAAM"
+        ],
+        "air_to_ground": [
+          "Paveway",
+          "Storm Shadow",
+          "Taurus KEPD 350",
+          "Brimstone"
+        ],
+        "nuclear": "B61 capable (Germany)",
+        "max_payload_kg": 9000
+      },
+      "variants": [
+        {
+          "designation": "Tranche 1",
+          "notes": "Initial production"
+        },
+        {
+          "designation": "Tranche 2",
+          "notes": "Full multirole"
+        },
+        {
+          "designation": "Tranche 3/3A",
+          "radar": "Captor-E AESA"
+        }
+      ],
+      "unit_cost_usd": 115000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Eurofighter",
+        "Jane's"
+      ],
+      "notes": "Europe's premier air superiority fighter. Canard-delta, supercruise capable. Meteor missile integration key advantage. 680+ delivered.",
+      "year": 2003
+    },
+    {
+      "id": "fr-rafale",
+      "name": "Dassault Rafale",
+      "nato_name": null,
+      "type": "omnirole_fighter",
+      "generation": "4.5",
+      "country_of_origin": "FR",
+      "manufacturer": "Dassault Aviation",
+      "service_history": {
+        "introduced": 2001,
+        "first_flight": 1986,
+        "retired": null,
+        "production_count": 300,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 225,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 54,
+            "status": "active"
+          },
+          {
+            "country": "QA",
+            "quantity": 36,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 36,
+            "status": "active"
+          },
+          {
+            "country": "GR",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 80,
+            "status": "ordered"
+          },
+          {
+            "country": "ID",
+            "quantity": 42,
+            "status": "ordered"
+          },
+          {
+            "country": "SA",
+            "quantity": 54,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 15.27,
+        "wingspan_m": 10.8,
+        "empty_weight_kg": 9850,
+        "max_takeoff_weight_kg": 24500,
+        "hardpoints": 14
+      },
+      "performance": {
+        "max_speed_kmh": 1912,
+        "max_speed_mach": 1.8,
+        "combat_radius_km": 1850,
+        "service_ceiling_m": 15235,
+        "max_g_load": 9,
+        "thrust_to_weight": 1.1
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Snecma M88-2",
+        "thrust_afterburner_kn": 75
+      },
+      "avionics": {
+        "radar": "RBE2-AA AESA",
+        "radar_range_km": 200,
+        "irst": "OSF",
+        "ew_suite": "SPECTRA",
+        "sensor_fusion": true,
+        "notes": "SPECTRA: integrated EW with active jamming"
+      },
+      "armament": {
+        "gun": {
+          "type": "Nexter DEFA 791B",
+          "caliber_mm": 30,
+          "rounds": 125
+        },
+        "air_to_air": [
+          "MICA EM/IR",
+          "MBDA Meteor"
+        ],
+        "air_to_ground": [
+          "AASM Hammer",
+          "SCALP EG"
+        ],
+        "nuclear": "ASMP-A (French only)",
+        "max_payload_kg": 9500
+      },
+      "variants": [
+        {
+          "designation": "Rafale C",
+          "crew": 1,
+          "notes": "Single-seat land-based"
+        },
+        {
+          "designation": "Rafale B",
+          "crew": 2,
+          "notes": "Two-seat land-based"
+        },
+        {
+          "designation": "Rafale M",
+          "crew": 1,
+          "notes": "Naval carrier variant"
+        }
+      ],
+      "unit_cost_usd": 100000000,
+      "cost_year": 2023,
+      "confidence": "high",
+      "sources": [
+        "Dassault",
+        "Jane's"
+      ],
+      "notes": "France's 'omnirole' fighter. Nuclear strike capable. SPECTRA EW highly regarded. Mali, Libya, Syria combat. Export breakthrough 2015+.",
+      "year": 2001
+    },
+    {
+      "id": "se-gripen-cd",
+      "name": "JAS 39C/D Gripen",
+      "nato_name": null,
+      "type": "light_multirole",
+      "generation": "4",
+      "country_of_origin": "SE",
+      "manufacturer": "Saab AB",
+      "service_history": {
+        "introduced": 1996,
+        "first_flight": 1988,
+        "retired": null,
+        "production_count": 270,
+        "operators": [
+          {
+            "country": "SE",
+            "quantity": 96,
+            "status": "active"
+          },
+          {
+            "country": "CZ",
+            "quantity": 14,
+            "status": "leased"
+          },
+          {
+            "country": "HU",
+            "quantity": 14,
+            "status": "leased"
+          },
+          {
+            "country": "ZA",
+            "quantity": 26,
+            "status": "active"
+          },
+          {
+            "country": "TH",
+            "quantity": 11,
+            "status": "active"
+          }
+        ],
+        "notes": "See br-gripen-e for E/F variant"
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 14.1,
+        "wingspan_m": 8.4,
+        "empty_weight_kg": 6800,
+        "max_takeoff_weight_kg": 14000,
+        "hardpoints": 8
+      },
+      "performance": {
+        "max_speed_kmh": 2204,
+        "max_speed_mach": 2.0,
+        "combat_radius_km": 800,
+        "ferry_range_km": 3200,
+        "service_ceiling_m": 15240,
+        "max_g_load": 9,
+        "thrust_to_weight": 0.97
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Volvo RM12 (GE F404 derivative)",
+        "thrust_afterburner_kn": 80.5
+      },
+      "avionics": {
+        "radar": "PS-05/A Mk 4",
+        "radar_range_km": 120,
+        "ew_suite": "Saab EWS-39",
+        "datalink": "Link 16"
+      },
+      "armament": {
+        "gun": {
+          "type": "Mauser BK-27",
+          "caliber_mm": 27,
+          "rounds": 120
+        },
+        "air_to_air": [
+          "AIM-120 AMRAAM",
+          "AIM-9 Sidewinder",
+          "IRIS-T"
+        ],
+        "air_to_ground": [
+          "GBU-12",
+          "Rb 75 (Maverick)"
+        ],
+        "anti_ship": [
+          "RBS-15F"
+        ],
+        "max_payload_kg": 5300
+      },
+      "unit_cost_usd": 60000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Saab",
+        "Jane's"
+      ],
+      "notes": "Swedish light fighter. Low operating cost, short runway ops, rapid turnaround. Road-base capable.",
+      "year": 1996
+    },
+    {
+      "id": "eu-tornado",
+      "name": "Panavia Tornado",
+      "nato_name": null,
+      "type": "interdictor_strike",
+      "generation": "4",
+      "country_of_origin": "EU",
+      "manufacturer": "Panavia (BAE/Airbus/Leonardo)",
+      "service_history": {
+        "introduced": 1979,
+        "first_flight": 1974,
+        "retired": null,
+        "production_count": 992,
+        "operators": [
+          {
+            "country": "DE",
+            "quantity": 93,
+            "variants": [
+              "IDS",
+              "ECR"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "quantity": 52,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 80,
+            "status": "active"
+          }
+        ],
+        "notes": "UK retired 2019"
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 16.72,
+        "wingspan_m": 13.91,
+        "wingspan_swept_m": 8.6,
+        "empty_weight_kg": 14091,
+        "max_takeoff_weight_kg": 28000,
+        "hardpoints": 9
+      },
+      "performance": {
+        "max_speed_kmh": 2400,
+        "max_speed_mach": 2.2,
+        "combat_radius_km": 1390,
+        "service_ceiling_m": 15240,
+        "max_g_load": 7.5
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Turbo-Union RB199",
+        "thrust_afterburner_kn": 73.5
+      },
+      "armament": {
+        "gun": {
+          "type": "Mauser BK-27",
+          "caliber_mm": 27,
+          "rounds": 180
+        },
+        "air_to_ground": [
+          "Paveway",
+          "AGM-88 HARM",
+          "Storm Shadow",
+          "KEPD 350"
+        ],
+        "nuclear": "B61 capable",
+        "max_payload_kg": 9000
+      },
+      "variants": [
+        {
+          "designation": "Tornado IDS",
+          "role": "Interdictor/Strike"
+        },
+        {
+          "designation": "Tornado ECR",
+          "role": "SEAD/DEAD"
+        }
+      ],
+      "unit_cost_usd": 50000000,
+      "cost_year": 1998,
+      "confidence": "high",
+      "sources": [
+        "Jane's",
+        "Panavia"
+      ],
+      "notes": "Variable-geometry strike aircraft. Swing-wing design. Gulf War: extensive low-level missions. 992 built. Being replaced by Typhoon/F-35.",
+      "year": 1979
+    }
+  ]
+}

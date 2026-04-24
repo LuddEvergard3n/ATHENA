@@ -1,0 +1,819 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "cn-phl03",
+      "name": "PHL-03 (Type 03)",
+      "type": "mlrs",
+      "country_of_origin": "CN",
+      "manufacturer": "Norinco",
+      "service_history": {
+        "introduced": 2004,
+        "retired": null,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 400,
+            "status": "active"
+          },
+          {
+            "country": "MA",
+            "quantity": 36,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 52,
+            "variants": [
+              "A-100"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "BD",
+            "quantity": 16,
+            "status": "active"
+          },
+          {
+            "country": "SD",
+            "quantity": 10,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 33000,
+        "weight_combat_kg": 42000,
+        "length_m": 11.0,
+        "width_m": 3.0,
+        "height_m": 3.2
+      },
+      "mobility": {
+        "engine": {
+          "model": "WD615",
+          "type": "diesel_turbocharged",
+          "power_hp": 420,
+          "power_kw": 313
+        },
+        "power_to_weight_hp_ton": 12.7,
+        "drivetrain": "8x8",
+        "chassis": "WS-2400",
+        "max_speed_road_kmh": 60,
+        "range_road_km": 650
+      },
+      "armament": {
+        "main": {
+          "designation": "PHL-03 Launcher",
+          "type": "mlrs",
+          "tubes": 12,
+          "traverse_deg": 180,
+          "elevation_max_deg": 55,
+          "rocket_options": [
+            {
+              "designation": "BRC3",
+              "caliber_mm": 300,
+              "rockets": 12,
+              "range_min_km": 20,
+              "range_max_km": 70,
+              "warhead_kg": 235,
+              "warhead_type": "HE-FRAG",
+              "guidance": "inertial"
+            },
+            {
+              "designation": "BRE2",
+              "caliber_mm": 300,
+              "rockets": 12,
+              "range_max_km": 130,
+              "warhead_kg": 200,
+              "guidance": "BeiDou/INS",
+              "cep_m": 30
+            },
+            {
+              "designation": "BRE3",
+              "caliber_mm": 300,
+              "rockets": 12,
+              "range_max_km": 150,
+              "guidance": "BeiDou/INS",
+              "cep_m": 30
+            }
+          ],
+          "salvo_time_sec": 60,
+          "reload_time_minutes": 20
+        }
+      },
+      "protection": {
+        "armor_type": "soft_skin",
+        "armor_composition": "Armored cab"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Digital automated",
+        "navigation": "BeiDou/INS",
+        "ballistic_computer": true
+      },
+      "unit_cost_usd": 2500000,
+      "cost_year": 2015,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia PHL-03",
+        "Army Recognition",
+        "Sinodefense"
+      ],
+      "notes": "Chinese Smerch equivalent. 300mm. BeiDou-guided variants up to 150km range. A-100 export version for Pakistan. Export success Africa/Asia.",
+      "year": 2004
+    },
+    {
+      "id": "cn-phl16",
+      "name": "PHL-16 (PCL-191)",
+      "type": "mlrs",
+      "country_of_origin": "CN",
+      "manufacturer": "Norinco",
+      "service_history": {
+        "introduced": 2019,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 200,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 30000,
+        "weight_combat_kg": 42000,
+        "length_m": 12.0,
+        "width_m": 3.0,
+        "height_m": 3.3
+      },
+      "mobility": {
+        "engine": {
+          "model": "Diesel turbocharged",
+          "type": "diesel_turbocharged",
+          "power_hp": 500,
+          "power_kw": 373
+        },
+        "power_to_weight_hp_ton": 16.7,
+        "drivetrain": "8x8",
+        "max_speed_road_kmh": 70,
+        "range_road_km": 650
+      },
+      "armament": {
+        "main": {
+          "designation": "PHL-16 Modular Launcher",
+          "type": "mlrs",
+          "traverse_deg": 180,
+          "elevation_max_deg": 60,
+          "rocket_options": [
+            {
+              "designation": "370mm guided rocket",
+              "caliber_mm": 370,
+              "rockets": 8,
+              "range_max_km": 220,
+              "guidance": "BeiDou/INS",
+              "cep_m": 10
+            },
+            {
+              "designation": "750mm tactical missile",
+              "caliber_mm": 750,
+              "missiles": 2,
+              "range_max_km": 500,
+              "guidance": "BeiDou/INS + terminal seeker",
+              "cep_m": 5,
+              "notes": "PrSM equivalent"
+            },
+            {
+              "designation": "300mm guided rocket",
+              "caliber_mm": 300,
+              "rockets": 12,
+              "range_max_km": 150,
+              "guidance": "BeiDou/INS"
+            }
+          ],
+          "reload_time_minutes": 15
+        }
+      },
+      "protection": {
+        "armor_type": "armored_cab",
+        "stanag_level": "4569 Level 2"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Digital automated",
+        "navigation": "BeiDou/INS",
+        "ballistic_computer": true,
+        "data_link": true,
+        "automatic_gun_laying": true
+      },
+      "unit_cost_usd": 5000000,
+      "cost_year": 2022,
+      "confidence": "medium",
+      "sources": [
+        "Army Recognition",
+        "CSIS Missile Defense"
+      ],
+      "notes": "Most advanced Chinese MLRS. Modular launcher (rockets or tactical missiles). 500km range with tactical missile (China's HIMARS equivalent). Taiwan threat capability.",
+      "year": 2019
+    },
+    {
+      "id": "kr-k239",
+      "name": "K239 Chunmoo",
+      "type": "mlrs",
+      "country_of_origin": "KR",
+      "manufacturer": "Hanwha Defense",
+      "service_history": {
+        "introduced": 2015,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 176,
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 290,
+            "status": "ordered"
+          },
+          {
+            "country": "RO",
+            "quantity": 54,
+            "status": "ordered"
+          },
+          {
+            "country": "AU",
+            "quantity": 30,
+            "status": "ordered"
+          },
+          {
+            "country": "AE",
+            "quantity": 50,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 25000,
+        "weight_combat_kg": 35000,
+        "length_m": 9.5,
+        "width_m": 2.8,
+        "height_m": 3.2
+      },
+      "mobility": {
+        "engine": {
+          "model": "Doosan DV15T",
+          "type": "diesel_turbocharged",
+          "power_hp": 520,
+          "power_kw": 388
+        },
+        "power_to_weight_hp_ton": 20.8,
+        "drivetrain": "8x8",
+        "transmission": "Allison automatic",
+        "max_speed_road_kmh": 80,
+        "range_road_km": 500,
+        "gradient_percent": 60
+      },
+      "armament": {
+        "main": {
+          "designation": "Chunmoo Modular Launcher",
+          "type": "mlrs",
+          "traverse_deg": 360,
+          "elevation_max_deg": 60,
+          "rocket_options": [
+            {
+              "designation": "K33",
+              "caliber_mm": 130,
+              "rockets_per_pod": 20,
+              "pods": 2,
+              "total_rockets": 40,
+              "range_max_km": 36,
+              "warhead_type": "HE-FRAG",
+              "guidance": "unguided"
+            },
+            {
+              "designation": "KGGR",
+              "caliber_mm": 227,
+              "rockets_per_pod": 6,
+              "pods": 2,
+              "total_rockets": 12,
+              "range_max_km": 80,
+              "guidance": "GPS/INS",
+              "cep_m": 10,
+              "notes": "GMLRS equivalent"
+            },
+            {
+              "designation": "CTM-290",
+              "caliber_mm": 400,
+              "missiles_per_pod": 1,
+              "pods": 2,
+              "total_missiles": 2,
+              "range_max_km": 290,
+              "guidance": "GPS/INS",
+              "cep_m": 3,
+              "notes": "ATACMS equivalent"
+            },
+            {
+              "designation": "KTSSM",
+              "caliber_mm": 600,
+              "missiles": 2,
+              "range_max_km": 500,
+              "guidance": "GPS/INS + seeker",
+              "cep_m": 3,
+              "notes": "Korea Tactical Surface-to-Surface Missile"
+            }
+          ],
+          "reload_time_minutes": 10
+        }
+      },
+      "protection": {
+        "armor_type": "armored_cab",
+        "stanag_level": "4569 Level 2"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Hanwha digital",
+        "navigation": "GPS/INS",
+        "ballistic_computer": true,
+        "automatic_gun_laying": true,
+        "data_link": true,
+        "shoot_and_scoot": true
+      },
+      "unit_cost_usd": 8000000,
+      "cost_year": 2023,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia K239 Chunmoo",
+        "Army Recognition",
+        "Hanwha Defense"
+      ],
+      "notes": "Korean HIMARS competitor. Modular pods. 360\u00b0 turret. KTSSM 500km range. Poland mega-order 290 systems (HOMAR-K). Export success. Counters DPRK artillery.",
+      "year": 2015
+    },
+    {
+      "id": "il-lynx",
+      "name": "LYNX (EXTRA/PREDATOR)",
+      "type": "mlrs",
+      "country_of_origin": "IL",
+      "manufacturer": "IMI / Elbit",
+      "service_history": {
+        "introduced": 2006,
+        "retired": null,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "AZ",
+            "quantity": 50,
+            "variants": [
+              "LORA"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 20000,
+        "weight_combat_kg": 28000,
+        "length_m": 9.5,
+        "width_m": 2.5,
+        "height_m": 3.2
+      },
+      "mobility": {
+        "drivetrain": "6x6 or 8x8",
+        "max_speed_road_kmh": 80,
+        "range_road_km": 500
+      },
+      "armament": {
+        "main": {
+          "designation": "LYNX Launcher",
+          "type": "mlrs",
+          "traverse_deg": 180,
+          "elevation_max_deg": 60,
+          "rocket_options": [
+            {
+              "designation": "EXTRA",
+              "caliber_mm": 306,
+              "rockets": 8,
+              "range_min_km": 20,
+              "range_max_km": 150,
+              "warhead_kg": 125,
+              "guidance": "GPS/INS",
+              "cep_m": 10,
+              "notes": "Extended Range Artillery rocket"
+            },
+            {
+              "designation": "PREDATOR HAWK",
+              "caliber_mm": 370,
+              "rockets": 4,
+              "range_max_km": 300,
+              "warhead_kg": 140,
+              "guidance": "GPS/INS + terminal seeker",
+              "cep_m": 3
+            },
+            {
+              "designation": "LORA",
+              "caliber_mm": 625,
+              "missiles": 2,
+              "range_max_km": 430,
+              "warhead_kg": 600,
+              "guidance": "GPS/INS + scene matching",
+              "cep_m": 10,
+              "notes": "Long Range Attack missile"
+            }
+          ],
+          "reload_time_minutes": 15
+        }
+      },
+      "protection": {
+        "armor_type": "armored_cab"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Elbit digital",
+        "navigation": "GPS/INS",
+        "automatic_gun_laying": true,
+        "data_link": true
+      },
+      "unit_cost_usd": 6000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia IMI EXTRA",
+        "Army Recognition",
+        "IMI Systems"
+      ],
+      "notes": "Israeli precision MLRS. EXTRA 150km range. LORA 430km quasi-ballistic missile. Azerbaijan used LORA in Nagorno-Karabakh 2020. Export-focused.",
+      "year": 2007
+    },
+    {
+      "id": "tr-t300",
+      "name": "T-300 Kasirga",
+      "type": "mlrs",
+      "country_of_origin": "TR",
+      "manufacturer": "Roketsan",
+      "service_history": {
+        "introduced": 1997,
+        "retired": null,
+        "production_count": 150,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 80,
+            "status": "active"
+          },
+          {
+            "country": "AZ",
+            "quantity": 30,
+            "status": "active"
+          },
+          {
+            "country": "KZ",
+            "quantity": 20,
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 20,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 33000,
+        "weight_combat_kg": 42000,
+        "length_m": 10.5,
+        "width_m": 3.0,
+        "height_m": 3.1
+      },
+      "mobility": {
+        "engine": {
+          "model": "MAN D2866",
+          "type": "diesel",
+          "power_hp": 400,
+          "power_kw": 298
+        },
+        "power_to_weight_hp_ton": 12.1,
+        "drivetrain": "8x8",
+        "chassis": "MAN 26.372",
+        "max_speed_road_kmh": 60,
+        "range_road_km": 600
+      },
+      "armament": {
+        "main": {
+          "designation": "T-300 Launcher",
+          "type": "mlrs",
+          "tubes": 4,
+          "traverse_deg": 180,
+          "elevation_max_deg": 55,
+          "rocket_options": [
+            {
+              "designation": "TR-300",
+              "caliber_mm": 302,
+              "rockets": 4,
+              "range_min_km": 10,
+              "range_max_km": 100,
+              "warhead_kg": 150,
+              "guidance": "unguided"
+            },
+            {
+              "designation": "TRG-300",
+              "caliber_mm": 302,
+              "rockets": 4,
+              "range_max_km": 120,
+              "warhead_kg": 150,
+              "guidance": "GPS/INS",
+              "cep_m": 10
+            }
+          ],
+          "salvo_time_sec": 8,
+          "reload_time_minutes": 15
+        }
+      },
+      "protection": {
+        "armor_type": "soft_skin",
+        "armor_composition": "Armored cab"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Aselsan",
+        "navigation": "GPS/INS",
+        "ballistic_computer": true
+      },
+      "unit_cost_usd": 3000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia T-300 Kasirga",
+        "Army Recognition",
+        "Roketsan"
+      ],
+      "notes": "Chinese WS-1 derivative. 4 large rockets. TRG-300 GPS-guided variant. Azerbaijan used against Armenia 2020. Part of Turkish defense export success.",
+      "year": 1997
+    },
+    {
+      "id": "tr-bora",
+      "name": "Bora MLRS",
+      "type": "mlrs",
+      "country_of_origin": "TR",
+      "manufacturer": "Roketsan",
+      "service_history": {
+        "introduced": 2017,
+        "retired": null,
+        "production_count": 50,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 50,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 30000,
+        "weight_combat_kg": 40000,
+        "length_m": 10.0,
+        "width_m": 2.9,
+        "height_m": 3.3
+      },
+      "mobility": {
+        "drivetrain": "8x8",
+        "max_speed_road_kmh": 70,
+        "range_road_km": 550
+      },
+      "armament": {
+        "main": {
+          "designation": "Bora Launcher",
+          "type": "mlrs",
+          "traverse_deg": 180,
+          "elevation_max_deg": 60,
+          "rocket_options": [
+            {
+              "designation": "J-600T Yildirim",
+              "caliber_mm": 610,
+              "missiles": 2,
+              "range_max_km": 150,
+              "warhead_kg": 480,
+              "guidance": "GPS/INS",
+              "cep_m": 50
+            },
+            {
+              "designation": "Yildirim IV",
+              "caliber_mm": 610,
+              "missiles": 2,
+              "range_max_km": 300,
+              "warhead_kg": 450,
+              "guidance": "GPS/INS",
+              "cep_m": 30
+            }
+          ]
+        }
+      },
+      "protection": {
+        "armor_type": "armored_cab"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Digital automated",
+        "navigation": "GPS/INS"
+      },
+      "unit_cost_usd": 4000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Army Recognition",
+        "Roketsan"
+      ],
+      "notes": "Turkish tactical ballistic missile launcher. Yildirim family (150-300km range). Originally Chinese DF-11 technology. Kurdish operations use.",
+      "year": 2017
+    },
+    {
+      "id": "in-pinaka",
+      "name": "Pinaka Mk1",
+      "type": "mlrs",
+      "country_of_origin": "IN",
+      "manufacturer": "DRDO / Tata / L&T",
+      "service_history": {
+        "introduced": 1998,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 200,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 28000,
+        "weight_combat_kg": 36000,
+        "length_m": 10.0,
+        "width_m": 2.8,
+        "height_m": 3.0
+      },
+      "mobility": {
+        "engine": {
+          "model": "Tatra T815",
+          "type": "diesel",
+          "power_hp": 365,
+          "power_kw": 272
+        },
+        "power_to_weight_hp_ton": 13.0,
+        "drivetrain": "8x8",
+        "chassis": "Tatra T815-7",
+        "max_speed_road_kmh": 60,
+        "range_road_km": 500
+      },
+      "armament": {
+        "main": {
+          "designation": "Pinaka Launcher",
+          "type": "mlrs",
+          "tubes": 12,
+          "traverse_deg": 180,
+          "elevation_max_deg": 55,
+          "rocket_options": [
+            {
+              "designation": "Pinaka Mk1",
+              "caliber_mm": 214,
+              "rockets": 12,
+              "range_min_km": 20,
+              "range_max_km": 40,
+              "warhead_kg": 100,
+              "warhead_type": "HE-FRAG",
+              "guidance": "unguided"
+            },
+            {
+              "designation": "Pinaka Mk1 Enhanced",
+              "caliber_mm": 214,
+              "rockets": 12,
+              "range_max_km": 45,
+              "guidance": "GPS/INS",
+              "cep_m": 30
+            },
+            {
+              "designation": "Pinaka Mk2",
+              "caliber_mm": 214,
+              "rockets": 12,
+              "range_max_km": 75,
+              "guidance": "GPS/INS",
+              "cep_m": 30
+            }
+          ],
+          "salvo_time_sec": 44,
+          "reload_time_minutes": 15
+        }
+      },
+      "protection": {
+        "armor_type": "soft_skin",
+        "armor_composition": "Armored cab"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "DRDO digital",
+        "navigation": "NavIC/GPS/INS",
+        "ballistic_computer": true
+      },
+      "unit_cost_usd": 2500000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Pinaka MLRS",
+        "Army Recognition",
+        "DRDO"
+      ],
+      "notes": "Indigenous Indian MLRS. Kargil War combat proven 1999. Mk2 guided version 75km range. 12 rockets in 44 seconds. LAC deployment vs China. Pranash guided variant in development.",
+      "year": 1998
+    },
+    {
+      "id": "jp-mlrs",
+      "name": "Type 75 MLRS",
+      "type": "mlrs",
+      "country_of_origin": "JP",
+      "manufacturer": "Komatsu / IHI",
+      "service_history": {
+        "introduced": 1975,
+        "retired": null,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 99,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 16500,
+        "length_m": 5.8,
+        "width_m": 2.9,
+        "height_m": 2.7
+      },
+      "mobility": {
+        "engine": {
+          "model": "Mitsubishi 4ZF",
+          "type": "diesel",
+          "power_hp": 360,
+          "power_kw": 269
+        },
+        "power_to_weight_hp_ton": 21.8,
+        "max_speed_road_kmh": 50,
+        "range_road_km": 300,
+        "notes": "Tracked chassis"
+      },
+      "armament": {
+        "main": {
+          "designation": "Type 75 Launcher",
+          "type": "mlrs",
+          "tubes": 30,
+          "traverse_deg": 50,
+          "elevation_max_deg": 50,
+          "rocket_options": [
+            {
+              "designation": "Type 75 130mm",
+              "caliber_mm": 130,
+              "rockets": 30,
+              "range_min_km": 4,
+              "range_max_km": 15,
+              "warhead_kg": 23,
+              "guidance": "unguided"
+            }
+          ],
+          "salvo_time_sec": 20
+        }
+      },
+      "protection": {
+        "armor_type": "aluminum",
+        "protection_front_mm_rha": 15
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Basic"
+      },
+      "unit_cost_usd": 3000000,
+      "cost_year": 1990,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Type 75 MLRS",
+        "Military Factory"
+      ],
+      "notes": "Tracked MLRS. 130mm (unusual caliber). Short range. Being supplemented by M270 MLRS. Japanese-only system.",
+      "year": 1975
+    }
+  ]
+}

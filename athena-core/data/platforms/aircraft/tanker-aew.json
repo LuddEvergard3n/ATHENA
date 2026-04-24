@@ -1,0 +1,781 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-23",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "Boeing",
+      "Airbus",
+      "Northrop Grumman"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-kc46a",
+      "name": "KC-46A Pegasus",
+      "nato_name": null,
+      "type": "tanker",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 2019,
+        "first_flight": 2014,
+        "retired": null,
+        "production_count": 90,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 90,
+            "status": "active/delivering",
+            "notes": "179 ordered"
+          },
+          {
+            "country": "JP",
+            "quantity": 4,
+            "status": "active",
+            "notes": "KC-46A"
+          },
+          {
+            "country": "IL",
+            "quantity": 4,
+            "status": "ordered"
+          }
+        ],
+        "notes": "KC-135 replacement"
+      },
+      "specifications": {
+        "crew": 3,
+        "length_m": 50.5,
+        "wingspan_m": 48.1,
+        "height_m": 15.9,
+        "empty_weight_kg": 82377,
+        "max_takeoff_weight_kg": 188240,
+        "fuel_capacity_kg": 96300
+      },
+      "performance": {
+        "max_speed_kmh": 913,
+        "cruise_speed_kmh": 851,
+        "range_km": 12200,
+        "service_ceiling_m": 12200
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Pratt & Whitney PW4062",
+        "thrust_kn": 282
+      },
+      "refueling": {
+        "boom": "USAF Flying Boom",
+        "drogue": "Centerline + wing hose-drogue units",
+        "fuel_offload_kg": 87000,
+        "fuel_offload_1000nm_kg": 64600,
+        "receivers": "Can refuel all US/NATO aircraft"
+      },
+      "cargo": {
+        "pallets_463l": 18,
+        "passengers": 114,
+        "stretchers": 58,
+        "notes": "Dual-role tanker/transport"
+      },
+      "unit_cost_usd": 147000000,
+      "cost_year": 2021,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "USAF"
+      ],
+      "notes": "767-based tanker. Troubled Remote Vision System (RVS). Boom + drogue capability. 179 on order for USAF. Dual-role tanker/transport.",
+      "year": 2019
+    },
+    {
+      "id": "us-kc135r",
+      "name": "KC-135R Stratotanker",
+      "nato_name": null,
+      "type": "tanker",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 1957,
+        "first_flight": 1956,
+        "retired": null,
+        "production_count": 732,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 396,
+            "status": "active"
+          },
+          {
+            "country": "FR",
+            "quantity": 14,
+            "status": "active",
+            "notes": "C-135FR"
+          },
+          {
+            "country": "TR",
+            "quantity": 7,
+            "status": "active"
+          },
+          {
+            "country": "SG",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "CL",
+            "quantity": 1,
+            "status": "active"
+          }
+        ],
+        "notes": "USAF's primary tanker for 60+ years"
+      },
+      "specifications": {
+        "crew": 3,
+        "length_m": 41.53,
+        "wingspan_m": 39.88,
+        "height_m": 12.7,
+        "empty_weight_kg": 44663,
+        "max_takeoff_weight_kg": 146285,
+        "fuel_capacity_kg": 90700
+      },
+      "performance": {
+        "max_speed_kmh": 933,
+        "cruise_speed_kmh": 853,
+        "range_km": 2419,
+        "max_range_km": 14800,
+        "service_ceiling_m": 15200
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "CFM56-2B-1",
+        "thrust_kn": 98
+      },
+      "refueling": {
+        "boom": "Flying Boom",
+        "fuel_offload_1000nm_kg": 68000
+      },
+      "variants": [
+        {
+          "designation": "KC-135R",
+          "notes": "Re-engined standard"
+        },
+        {
+          "designation": "KC-135T",
+          "notes": "JP-7 capable (SR-71 support)"
+        },
+        {
+          "designation": "RC-135",
+          "notes": "Reconnaissance variants"
+        }
+      ],
+      "unit_cost_usd": 39600000,
+      "cost_year": 1992,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "USAF"
+      ],
+      "notes": "707-based. 60+ years service. 396 still active. Being replaced by KC-46A. Re-engined (CFM56) for improved performance. Average age 60+ years.",
+      "year": 1957
+    },
+    {
+      "id": "eu-a330mrtt",
+      "name": "Airbus A330 MRTT",
+      "nato_name": null,
+      "type": "tanker",
+      "country_of_origin": "EU",
+      "manufacturer": "Airbus Defence and Space",
+      "service_history": {
+        "introduced": 2011,
+        "first_flight": 2007,
+        "retired": null,
+        "production_count": 70,
+        "operators": [
+          {
+            "country": "AU",
+            "quantity": 7,
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 3,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "UK",
+            "quantity": 14,
+            "status": "active",
+            "notes": "Voyager"
+          },
+          {
+            "country": "FR",
+            "quantity": 15,
+            "status": "active",
+            "notes": "Ph\u00e9nix"
+          },
+          {
+            "country": "SG",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "NATO",
+            "quantity": 9,
+            "status": "active",
+            "notes": "MMF"
+          },
+          {
+            "country": "NL",
+            "quantity": 2,
+            "status": "active"
+          },
+          {
+            "country": "BE",
+            "quantity": 1,
+            "status": "active"
+          },
+          {
+            "country": "ES",
+            "quantity": 3,
+            "status": "active"
+          }
+        ],
+        "notes": "Leading Western tanker outside US"
+      },
+      "specifications": {
+        "crew": 3,
+        "length_m": 58.82,
+        "wingspan_m": 60.3,
+        "height_m": 17.4,
+        "empty_weight_kg": 115000,
+        "max_takeoff_weight_kg": 233000,
+        "fuel_capacity_kg": 111000
+      },
+      "performance": {
+        "max_speed_mach": 0.86,
+        "cruise_speed_kmh": 860,
+        "range_km": 14800,
+        "service_ceiling_m": 12500
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Rolls-Royce Trent 772B or GE CF6-80E1",
+        "thrust_kn": 320
+      },
+      "refueling": {
+        "boom": "Airbus Aerial Refueling Boom System (ARBS)",
+        "drogue": "Under-wing hose-drogue (x2)",
+        "fuel_offload_kg": 65000,
+        "notes": "Boom + drogue simultaneously"
+      },
+      "cargo": {
+        "passengers": 300,
+        "notes": "Can convert to transport role"
+      },
+      "unit_cost_usd": 270000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Airbus",
+        "Jane's"
+      ],
+      "notes": "A330-200 based. More fuel than KC-46. Boom + drogue capability. NATO MMF pooling program. Auto-AAR trials.",
+      "year": 2011
+    },
+    {
+      "id": "ru-il78m",
+      "name": "Ilyushin Il-78M Midas",
+      "nato_name": "Midas",
+      "type": "tanker",
+      "country_of_origin": "RU",
+      "manufacturer": "Ilyushin",
+      "service_history": {
+        "introduced": 1987,
+        "first_flight": 1983,
+        "retired": null,
+        "production_count": 45,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 20,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 5,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "CN",
+            "quantity": 3,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 4,
+            "status": "active"
+          }
+        ],
+        "notes": "Il-76 tanker variant"
+      },
+      "specifications": {
+        "crew": 6,
+        "length_m": 46.6,
+        "wingspan_m": 50.5,
+        "height_m": 14.8,
+        "max_takeoff_weight_kg": 210000,
+        "fuel_capacity_kg": 106000
+      },
+      "performance": {
+        "max_speed_kmh": 850,
+        "cruise_speed_kmh": 750,
+        "range_km": 7300,
+        "service_ceiling_m": 12000
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "Aviadvigatel D-30KP-2",
+        "thrust_kn": 117
+      },
+      "refueling": {
+        "drogue": "UPAZ units (3x)",
+        "fuel_offload_kg": 85720,
+        "notes": "Probe-and-drogue only (no boom)"
+      },
+      "unit_cost_usd": 70000000,
+      "cost_year": 2015,
+      "confidence": "medium",
+      "sources": [
+        "Ilyushin",
+        "Jane's"
+      ],
+      "notes": "Il-76 based. 3-point drogue refueling. Russia: only 20 operational (major limitation). New Il-78M-90A in development.",
+      "year": 1987
+    },
+    {
+      "id": "us-e3g",
+      "name": "E-3G Sentry (AWACS)",
+      "nato_name": null,
+      "type": "aew",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 1977,
+        "first_flight": 1975,
+        "retired": null,
+        "production_count": 68,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 31,
+            "status": "active"
+          },
+          {
+            "country": "NATO",
+            "quantity": 14,
+            "status": "active"
+          },
+          {
+            "country": "UK",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "FR",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 5,
+            "status": "active"
+          },
+          {
+            "country": "JP",
+            "quantity": 4,
+            "status": "active"
+          }
+        ],
+        "notes": "Western AWACS standard for 45+ years"
+      },
+      "specifications": {
+        "crew": 19,
+        "length_m": 46.6,
+        "wingspan_m": 44.4,
+        "height_m": 12.7,
+        "empty_weight_kg": 77996,
+        "max_takeoff_weight_kg": 151315
+      },
+      "performance": {
+        "max_speed_kmh": 853,
+        "cruise_speed_kmh": 760,
+        "endurance_hours": 11,
+        "service_ceiling_m": 12500,
+        "mission_radius_km": 1600
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "Pratt & Whitney TF33-PW-100A",
+        "thrust_kn": 93.4
+      },
+      "sensors": {
+        "radar": "AN/APY-2 (rotodome)",
+        "radar_range_km": 400,
+        "targets_tracked": 600,
+        "notes": "360\u00b0 coverage, pulse-Doppler"
+      },
+      "communications": {
+        "datalinks": "Link 16, JTIDS, TADIL-A/B/J",
+        "notes": "Airborne command and control"
+      },
+      "unit_cost_usd": 270000000,
+      "cost_year": 1998,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "USAF"
+      ],
+      "notes": "707-based. Iconic rotodome. 400km radar range. Being replaced by E-7A Wedgetail. 45+ years of service.",
+      "year": 1977
+    },
+    {
+      "id": "us-e7a",
+      "name": "E-7A Wedgetail",
+      "nato_name": null,
+      "type": "aew",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 2009,
+        "first_flight": 2004,
+        "retired": null,
+        "production_count": 18,
+        "operators": [
+          {
+            "country": "AU",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "TR",
+            "quantity": 4,
+            "status": "active",
+            "notes": "Peace Eagle"
+          },
+          {
+            "country": "KR",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "UK",
+            "quantity": 5,
+            "status": "ordered",
+            "notes": "E-3D replacement"
+          },
+          {
+            "country": "US",
+            "quantity": 26,
+            "status": "ordered",
+            "notes": "E-3 replacement"
+          },
+          {
+            "country": "NATO",
+            "quantity": 6,
+            "status": "ordered"
+          }
+        ],
+        "notes": "E-3 replacement"
+      },
+      "specifications": {
+        "crew": 12,
+        "length_m": 54.3,
+        "wingspan_m": 52.0,
+        "height_m": 13.6,
+        "max_takeoff_weight_kg": 171000
+      },
+      "performance": {
+        "max_speed_kmh": 900,
+        "cruise_speed_kmh": 850,
+        "endurance_hours": 10,
+        "service_ceiling_m": 12200,
+        "mission_radius_km": 4000
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "CFM56-7B27",
+        "thrust_kn": 121
+      },
+      "sensors": {
+        "radar": "Northrop Grumman MESA AESA",
+        "radar_range_km": 600,
+        "targets_tracked": 3000,
+        "notes": "Fixed dorsal antenna, electronic scanning"
+      },
+      "communications": {
+        "datalinks": "Link 16, MADL, satellite",
+        "notes": "Network-centric warfare"
+      },
+      "unit_cost_usd": 340000000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "RAAF",
+        "USAF"
+      ],
+      "notes": "737-based. MESA AESA radar (no rotodome). 600km range. USAF ordered 26 to replace E-3. NATO ordering 6.",
+      "year": 2009
+    },
+    {
+      "id": "ru-a50u",
+      "name": "Beriev A-50U Mainstay",
+      "nato_name": "Mainstay",
+      "type": "aew",
+      "country_of_origin": "RU",
+      "manufacturer": "Beriev/TANTK",
+      "service_history": {
+        "introduced": 2011,
+        "first_flight": 2008,
+        "retired": null,
+        "production_count": 10,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 10,
+            "status": "active",
+            "notes": "Some lost in Ukraine"
+          }
+        ],
+        "notes": "Russian AWACS"
+      },
+      "specifications": {
+        "crew": 15,
+        "length_m": 46.6,
+        "wingspan_m": 50.5,
+        "height_m": 14.8,
+        "max_takeoff_weight_kg": 190000
+      },
+      "performance": {
+        "max_speed_kmh": 800,
+        "cruise_speed_kmh": 700,
+        "endurance_hours": 9,
+        "service_ceiling_m": 10000
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "Aviadvigatel D-30KP",
+        "thrust_kn": 117
+      },
+      "sensors": {
+        "radar": "Shmel-M",
+        "radar_range_km": 650,
+        "targets_tracked": 300,
+        "notes": "Upgraded radar vs original A-50"
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Ukraine",
+            "year": 2024,
+            "notes": "At least 2 destroyed by Ukrainian attacks"
+          }
+        ]
+      },
+      "unit_cost_usd": 330000000,
+      "cost_year": 2015,
+      "confidence": "medium",
+      "sources": [
+        "Beriev",
+        "Russian MoD"
+      ],
+      "notes": "Il-76 based. Russia had ~9 A-50/A-50U. Ukraine destroyed at least 2 (Machulishchy attack, shootdown). Critical asset loss.",
+      "year": 2011
+    },
+    {
+      "id": "cn-kj500",
+      "name": "KJ-500",
+      "nato_name": null,
+      "type": "aew",
+      "country_of_origin": "CN",
+      "manufacturer": "Shaanxi Aircraft Corporation",
+      "service_history": {
+        "introduced": 2015,
+        "first_flight": 2014,
+        "retired": null,
+        "production_count": 15,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 15,
+            "status": "active"
+          }
+        ],
+        "notes": "China's primary AEW platform"
+      },
+      "specifications": {
+        "crew": 12,
+        "length_m": 34.2,
+        "wingspan_m": 38.0,
+        "max_takeoff_weight_kg": 77000
+      },
+      "performance": {
+        "cruise_speed_kmh": 550,
+        "endurance_hours": 10,
+        "service_ceiling_m": 10000
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "WJ-6C turboprop",
+        "power_shp": 5100
+      },
+      "sensors": {
+        "radar": "AESA array (fixed arrays)",
+        "radar_range_km": 470,
+        "targets_tracked": 100,
+        "notes": "Three fixed AESA arrays for 360\u00b0 coverage"
+      },
+      "unit_cost_usd": 200000000,
+      "cost_year": 2018,
+      "confidence": "low",
+      "sources": [
+        "Chinese media",
+        "Jane's"
+      ],
+      "notes": "Y-9 based. Three-sided AESA arrays. More modern than E-3/A-50 rotodome concept. Supports J-20/J-16 operations.",
+      "year": 2015
+    },
+    {
+      "id": "cn-kj2000",
+      "name": "KJ-2000",
+      "nato_name": null,
+      "type": "aew",
+      "country_of_origin": "CN",
+      "manufacturer": "CETC/Xian",
+      "service_history": {
+        "introduced": 2007,
+        "first_flight": 2003,
+        "retired": null,
+        "production_count": 5,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 5,
+            "status": "active"
+          }
+        ],
+        "notes": "China's first operational AWACS"
+      },
+      "specifications": {
+        "crew": 15,
+        "length_m": 46.6,
+        "wingspan_m": 50.5,
+        "max_takeoff_weight_kg": 175000
+      },
+      "performance": {
+        "cruise_speed_kmh": 700,
+        "endurance_hours": 10,
+        "service_ceiling_m": 10000
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "D-30KP-2 (Russian)",
+        "thrust_kn": 117
+      },
+      "sensors": {
+        "radar": "AESA rotodome",
+        "radar_range_km": 470,
+        "notes": "Three AESA arrays in rotodome"
+      },
+      "unit_cost_usd": 300000000,
+      "cost_year": 2007,
+      "confidence": "low",
+      "sources": [
+        "Chinese media",
+        "Jane's"
+      ],
+      "notes": "Il-76 based (bought A-50 airframes from Russia). Only 5 built. Three-array AESA in rotodome. Being supplemented by KJ-500.",
+      "year": 2003
+    },
+    {
+      "id": "il-g550aew",
+      "name": "G550 CAEW (Eitam/Nachshon)",
+      "nato_name": null,
+      "type": "aew",
+      "country_of_origin": "IL",
+      "manufacturer": "IAI/Gulfstream",
+      "service_history": {
+        "introduced": 2008,
+        "first_flight": 2006,
+        "retired": null,
+        "production_count": 10,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 3,
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "quantity": 2,
+            "status": "active"
+          },
+          {
+            "country": "SG",
+            "quantity": 4,
+            "status": "active"
+          }
+        ],
+        "notes": "Business jet-based AEW"
+      },
+      "specifications": {
+        "crew": 6,
+        "length_m": 29.4,
+        "wingspan_m": 28.5,
+        "max_takeoff_weight_kg": 41277
+      },
+      "performance": {
+        "max_speed_kmh": 941,
+        "cruise_speed_kmh": 850,
+        "endurance_hours": 9,
+        "service_ceiling_m": 13716,
+        "range_km": 6750
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Rolls-Royce BR710",
+        "thrust_kn": 68.5
+      },
+      "sensors": {
+        "radar": "IAI/Elta EL/W-2085 AESA",
+        "radar_range_km": 370,
+        "notes": "Conformal AESA arrays"
+      },
+      "unit_cost_usd": 300000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "IAI",
+        "Jane's"
+      ],
+      "notes": "Gulfstream G550 based. Conformal arrays (no rotodome). High altitude, long endurance. Israeli 'Nachshon' variants include SIGINT.",
+      "year": 2006
+    }
+  ]
+}

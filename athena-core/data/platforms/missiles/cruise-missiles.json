@@ -1,0 +1,329 @@
+{
+  "category": "missiles",
+  "subcategory": "cruise",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": ["Jane's Air-Launched Weapons", "CSIS Missile Threat"]
+  },
+  "platforms": [
+    {
+      "id": "us-tomahawk",
+      "name": "BGM/RGM/UGM-109 Tomahawk",
+      "type": "lacm",
+      "country": "US",
+      "year": 1983,
+      "manufacturer": "Raytheon",
+      "specifications": {
+        "range_km": 2500,
+        "speed_kmh": 880,
+        "warhead_kg": 450,
+        "guidance": "GPS/INS/TERCOM/DSMAC",
+        "cep_m": 10,
+        "length_m": 6.25,
+        "diameter_mm": 518,
+        "launch_weight_kg": 1440
+      },
+      "variants": ["Block IV", "Block V (MST)", "Block Va (JMEWS)"],
+      "service_history": {
+        "operators": [
+          {"country": "US", "quantity": 4000, "status": "active"},
+          {"country": "GB", "quantity": 65, "status": "active"}
+        ]
+      },
+      "notes": "Most widely used cruise missile"
+    },
+    {
+      "id": "us-jassm-er",
+      "name": "AGM-158B JASSM-ER",
+      "type": "alcm",
+      "country": "US",
+      "year": 2014,
+      "manufacturer": "Lockheed Martin",
+      "specifications": {
+        "range_km": 925,
+        "speed": "High subsonic",
+        "warhead_kg": 450,
+        "guidance": "GPS/INS + IIR terminal",
+        "length_m": 4.27,
+        "launch_weight_kg": 1021,
+        "stealth": true
+      },
+      "service_history": {
+        "operators": [
+          {"country": "US", "quantity": 2000, "status": "active"},
+          {"country": "PL", "quantity": 40, "status": "ordered"},
+          {"country": "FI", "quantity": 70, "status": "ordered"}
+        ]
+      },
+      "notes": "Primary USAF standoff weapon"
+    },
+    {
+      "id": "us-lrasm",
+      "name": "AGM-158C LRASM",
+      "type": "ascm",
+      "country": "US",
+      "year": 2018,
+      "manufacturer": "Lockheed Martin",
+      "specifications": {
+        "range_km": 930,
+        "speed": "High subsonic",
+        "warhead_kg": 450,
+        "guidance": "GPS/INS + RF/IIR + AI targeting",
+        "stealth": true,
+        "sea_skimming": true
+      },
+      "service_history": {
+        "operators": [{"country": "US", "quantity": 400, "status": "active"}]
+      },
+      "notes": "Autonomous anti-ship missile, Harpoon replacement"
+    },
+    {
+      "id": "ru-kalibr",
+      "name": "3M-14 Kalibr (SS-N-30A)",
+      "type": "slcm",
+      "country": "RU",
+      "year": 2012,
+      "manufacturer": "NPO Novator",
+      "specifications": {
+        "range_km": 2500,
+        "speed_kmh": 900,
+        "warhead_kg": 450,
+        "guidance": "GLONASS/INS/TERCOM",
+        "cep_m": 3,
+        "length_m": 6.2
+      },
+      "variants": ["3M-14K (ship)", "3M-14T (sub)", "3M-14TE (export 300km)"],
+      "service_history": {
+        "operators": [{"country": "RU", "quantity": 1000, "status": "active"}]
+      },
+      "notes": "Extensively used in Syria and Ukraine"
+    },
+    {
+      "id": "ru-kh101",
+      "name": "Kh-101/102 (AS-23B Kodiak)",
+      "type": "alcm",
+      "country": "RU",
+      "year": 2012,
+      "manufacturer": "Raduga",
+      "specifications": {
+        "range_km": 4500,
+        "speed_kmh": 970,
+        "warhead_kg": 400,
+        "guidance": "GLONASS/INS/TERCOM + optical",
+        "cep_m": 5,
+        "length_m": 7.45,
+        "launch_weight_kg": 2400,
+        "stealth": true
+      },
+      "variants": ["Kh-101 (conventional)", "Kh-102 (nuclear 250 kt)"],
+      "notes": "Russia's primary strategic ALCM"
+    },
+    {
+      "id": "ru-kinzhal",
+      "name": "Kh-47M2 Kinzhal (AS-24 Killjoy)",
+      "type": "albm",
+      "country": "RU",
+      "year": 2018,
+      "manufacturer": "MiG/Raduga",
+      "specifications": {
+        "range_km": 2000,
+        "speed": "Mach 10",
+        "warhead_kg": 480,
+        "guidance": "INS/GLONASS + active radar",
+        "carrier": "MiG-31K, Tu-22M3M, Su-34"
+      },
+      "notes": "Air-launched hypersonic missile (Iskander derivative)"
+    },
+    {
+      "id": "ru-zircon",
+      "name": "3M22 Zircon (SS-N-33)",
+      "type": "ascm-hypersonic",
+      "country": "RU",
+      "year": 2023,
+      "manufacturer": "NPO Mashinostroyeniya",
+      "specifications": {
+        "range_km": 1000,
+        "speed": "Mach 8-9",
+        "warhead_kg": 400,
+        "guidance": "INS + active radar seeker"
+      },
+      "notes": "Hypersonic anti-ship missile"
+    },
+    {
+      "id": "cn-cj10",
+      "name": "CJ-10 (DH-10)",
+      "type": "lacm",
+      "country": "CN",
+      "year": 2007,
+      "manufacturer": "CASIC",
+      "specifications": {
+        "range_km": 2500,
+        "speed_kmh": 900,
+        "warhead_kg": 500,
+        "guidance": "GPS/BDS/INS/TERCOM",
+        "basing": "Ground-launched"
+      },
+      "variants": ["CJ-10A (ground)", "CJ-10K (air)", "CJ-20 (stealth)"],
+      "notes": "China's primary land-attack cruise missile"
+    },
+    {
+      "id": "cn-yj21",
+      "name": "YJ-21 (Eagle Strike-21)",
+      "type": "ascm-hypersonic",
+      "country": "CN",
+      "year": 2022,
+      "manufacturer": "CASIC",
+      "specifications": {
+        "range_km": 1500,
+        "speed": "Mach 6+",
+        "carrier": "Type 055 destroyer, H-6"
+      },
+      "notes": "Chinese ship-launched hypersonic ASCM"
+    },
+    {
+      "id": "cn-yj18",
+      "name": "YJ-18 (CH-SS-NX-13)",
+      "type": "ascm",
+      "country": "CN",
+      "year": 2014,
+      "manufacturer": "CASIC",
+      "specifications": {
+        "range_km": 540,
+        "cruise_speed": "Mach 0.8",
+        "terminal_speed": "Mach 3",
+        "warhead_kg": 300
+      },
+      "notes": "Subsonic cruise with supersonic terminal"
+    },
+    {
+      "id": "fr-scalp-eg",
+      "name": "SCALP-EG / Storm Shadow",
+      "type": "alcm",
+      "country": "FR",
+      "year": 2003,
+      "manufacturer": "MBDA",
+      "specifications": {
+        "range_km": 560,
+        "speed": "Mach 0.8",
+        "warhead_kg": 450,
+        "guidance": "GPS/INS + IIR/terrain",
+        "length_m": 5.1,
+        "stealth": true
+      },
+      "service_history": {
+        "operators": [
+          {"country": "FR", "quantity": 500, "status": "active"},
+          {"country": "GB", "quantity": 900, "status": "active"},
+          {"country": "IT", "quantity": 200, "status": "active"},
+          {"country": "UA", "quantity": 50, "status": "active"}
+        ]
+      },
+      "notes": "Anglo-French standoff missile, used in Ukraine"
+    },
+    {
+      "id": "de-taurus",
+      "name": "TAURUS KEPD 350",
+      "type": "alcm",
+      "country": "DE",
+      "year": 2005,
+      "manufacturer": "MBDA/Taurus Systems",
+      "specifications": {
+        "range_km": 500,
+        "speed": "Mach 0.9",
+        "warhead": "MEPHISTO tandem (481 kg)",
+        "guidance": "GPS/INS + IBN + IIR",
+        "length_m": 5.1,
+        "stealth": true
+      },
+      "service_history": {
+        "operators": [
+          {"country": "DE", "quantity": 600, "status": "active"},
+          {"country": "ES", "quantity": 43, "status": "active"},
+          {"country": "KR", "quantity": 170, "status": "active"}
+        ]
+      },
+      "notes": "Bunker-buster with programmable fuze"
+    },
+    {
+      "id": "no-nsm",
+      "name": "NSM (Naval Strike Missile)",
+      "type": "ascm",
+      "country": "NO",
+      "year": 2012,
+      "manufacturer": "Kongsberg",
+      "specifications": {
+        "range_km": 185,
+        "speed": "High subsonic",
+        "warhead_kg": 125,
+        "guidance": "GPS/INS + IIR + terrain",
+        "length_m": 3.95,
+        "stealth": true,
+        "sea_skimming": true
+      },
+      "variants": ["NSM", "JSM (air-launched for F-35)"],
+      "service_history": {
+        "operators": [
+          {"country": "NO", "quantity": 100, "status": "active"},
+          {"country": "US", "quantity": 200, "status": "active"},
+          {"country": "PL", "quantity": 50, "status": "ordered"}
+        ]
+      },
+      "notes": "Fifth-generation ASCM"
+    },
+    {
+      "id": "tr-som-j",
+      "name": "SOM-J",
+      "type": "alcm",
+      "country": "TR",
+      "year": 2019,
+      "manufacturer": "TÜBİTAK/Roketsan",
+      "specifications": {
+        "range_km": 250,
+        "speed": "High subsonic",
+        "warhead_kg": 230,
+        "guidance": "GPS/INS + IIR + terrain",
+        "stealth": true
+      },
+      "notes": "Turkish standoff missile for F-35 internal carriage"
+    },
+    {
+      "id": "in-brahmos",
+      "name": "BrahMos",
+      "type": "ascm",
+      "country": "IN",
+      "year": 2006,
+      "manufacturer": "BrahMos Aerospace",
+      "specifications": {
+        "range_km": 450,
+        "speed": "Mach 2.8-3",
+        "warhead_kg": 300,
+        "guidance": "INS + GPS + active radar",
+        "length_m": 8.4,
+        "launch_weight_kg": 3000
+      },
+      "variants": ["Ship", "Sub", "Ground", "Air"],
+      "service_history": {
+        "operators": [
+          {"country": "IN", "quantity": 200, "status": "active"},
+          {"country": "PH", "quantity": 3, "status": "ordered"}
+        ]
+      },
+      "notes": "World's fastest operational cruise missile"
+    },
+    {
+      "id": "in-brahmos2",
+      "name": "BrahMos-II",
+      "type": "ascm-hypersonic",
+      "country": "IN",
+      "year": 2028,
+      "manufacturer": "BrahMos Aerospace",
+      "specifications": {
+        "range_km": 600,
+        "speed": "Mach 7",
+        "propulsion": "Scramjet"
+      },
+      "notes": "Hypersonic BrahMos variant (development)"
+    }
+  ]
+}

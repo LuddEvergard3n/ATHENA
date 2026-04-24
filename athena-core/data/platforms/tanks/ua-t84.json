@@ -1,0 +1,376 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "ua-t84",
+      "name": "T-84",
+      "nato_designation": "T-84",
+      "type": "mbt",
+      "country_of_origin": "UA",
+      "manufacturer": "Malyshev Factory",
+      "service_history": {
+        "introduced": 1994,
+        "retired": null,
+        "production_count": 80,
+        "operators": [
+          {
+            "country": "UA",
+            "quantity": 10,
+            "variants": [
+              "T-84"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 46000,
+        "length_m": 7.08,
+        "length_gun_forward_m": 9.72,
+        "width_m": 3.56,
+        "height_m": 2.21,
+        "ground_clearance_m": 0.47
+      },
+      "mobility": {
+        "engine": {
+          "model": "6TD-2",
+          "type": "diesel_two-stroke",
+          "power_hp": 1200,
+          "power_kw": 895
+        },
+        "power_to_weight_hp_ton": 26.1,
+        "transmission": "Manual, 7 forward, 1 reverse",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 65,
+        "max_speed_offroad_kmh": 45,
+        "max_speed_reverse_kmh": 35,
+        "range_road_km": 540,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.85,
+        "vertical_obstacle_m": 1.0,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "KBA-3",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "autoloader_type": "carousel",
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1700,
+          "effective_range_m": 5000,
+          "ammunition_carried": 40,
+          "ammunition_ready": 28,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "3BM42 Mango",
+              "penetration_mm_rha": 520,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "APFSDS",
+              "designation": "BM-44U Mango-M",
+              "penetration_mm_rha": 600,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "3BK29M",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE-FRAG",
+              "designation": "3OF26",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 4000
+            },
+            {
+              "type": "ATGM",
+              "designation": "Kombat",
+              "penetration_mm_rha": 750,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "KT-12.7",
+            "caliber_mm": 12.7,
+            "mount": "commander_cupola",
+            "ammunition_carried": 450
+          },
+          {
+            "designation": "KT-7.62",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 1250
+          }
+        ],
+        "atgm": {
+          "designation": "Kombat",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "Composite armor with Nozh ERA",
+        "protection_front_turret_mm_rha": 700,
+        "protection_front_hull_mm_rha": 580,
+        "protection_side_mm_rha": 100,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 40,
+        "era_coverage": "Nozh ERA on turret and glacis",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "hull_floor",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "1A45",
+        "commander_sight": {
+          "type": "PNK-5",
+          "day_magnification": "5x",
+          "thermal": false,
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "1G46M",
+          "day_magnification": "2.7x/8x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 5000,
+        "ballistic_computer": true,
+        "gps": true,
+        "inertial_navigation": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "Tucha"
+      },
+      "unit_cost_usd": 3500000,
+      "cost_year": 2000,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia T-84",
+        "Army Recognition T-84",
+        "Military-Today T-84"
+      ],
+      "notes": "Ukrainian evolution of T-80UD. Indigenous 6TD-2 diesel engine. Nozh ERA claimed to be effective against tandem warheads.",
+      "year": 1994
+    },
+    {
+      "id": "ua-t84-oplot",
+      "name": "T-84 Oplot-M",
+      "nato_designation": "T-84 Oplot",
+      "type": "mbt",
+      "country_of_origin": "UA",
+      "manufacturer": "Malyshev Factory",
+      "service_history": {
+        "introduced": 2009,
+        "retired": null,
+        "production_count": 55,
+        "operators": [
+          {
+            "country": "TH",
+            "quantity": 49,
+            "variants": [
+              "T-84 Oplot-M"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 6,
+            "variants": [
+              "T-84 Oplot-M"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 51000,
+        "length_m": 7.08,
+        "length_gun_forward_m": 9.72,
+        "width_m": 3.56,
+        "height_m": 2.8,
+        "ground_clearance_m": 0.47
+      },
+      "mobility": {
+        "engine": {
+          "model": "6TD-3",
+          "type": "diesel_two-stroke",
+          "power_hp": 1500,
+          "power_kw": 1119
+        },
+        "power_to_weight_hp_ton": 29.4,
+        "transmission": "Automatic",
+        "suspension": "torsion bar_improved",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 38,
+        "range_road_km": 500,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.85,
+        "vertical_obstacle_m": 1.0,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "KBA-3",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "autoloader_type": "carousel",
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1700,
+          "effective_range_m": 5000,
+          "ammunition_carried": 46,
+          "ammunition_ready": 28,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "BM-44U1",
+              "penetration_mm_rha": 650,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "APFSDS",
+              "designation": "3BM46 Svinets",
+              "penetration_mm_rha": 600,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "3BK29M",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE-FRAG",
+              "designation": "3OF26",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 4000
+            },
+            {
+              "type": "ATGM",
+              "designation": "Kombat",
+              "penetration_mm_rha": 750,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "KT-12.7 RCWS",
+            "caliber_mm": 12.7,
+            "mount": "remote",
+            "ammunition_carried": 450
+          },
+          {
+            "designation": "KT-7.62",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 1250
+          }
+        ],
+        "atgm": {
+          "designation": "Kombat",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive_aps",
+        "armor_composition": "Composite armor with Duplet-2 ERA",
+        "protection_front_turret_mm_rha": 850,
+        "protection_front_hull_mm_rha": 700,
+        "protection_side_mm_rha": 300,
+        "protection_rear_mm_rha": 70,
+        "protection_top_mm_rha": 60,
+        "era_coverage": "Full coverage with Duplet-2 ERA",
+        "aps": {
+          "system": "Zaslon-L",
+          "type": "hard-kill",
+          "coverage_deg": 360,
+          "intercepts": 6
+        },
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "hull_floor",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Oplot-M FCS",
+        "commander_sight": {
+          "type": "PTT-3 Panoramic",
+          "day_magnification": "4x/14x",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "PNK-7",
+          "day_magnification": "4x/14x",
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "ballistic_computer": true,
+        "muzzle_reference_system": true,
+        "battle_management_system": "Kropyva-based",
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "Tucha/IR/Chaff",
+        "ir_signature_reduction": true,
+        "radar_signature_reduction": true
+      },
+      "unit_cost_usd": 7000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia T-84 Oplot",
+        "Army Recognition Oplot-M",
+        "Military-Today Oplot-M",
+        "Ukrainian MoD"
+      ],
+      "notes": "Latest Ukrainian MBT variant. Features 6TD-3 1500hp engine, Zaslon-L hard-kill APS, 3rd-gen thermals, RCWS. Limited production due to ongoing conflict. Duplet-2 ERA claimed to defeat tandem warheads. Exported to Thailand.",
+      "year": 2009
+    }
+  ]
+}

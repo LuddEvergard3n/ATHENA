@@ -1,0 +1,198 @@
+{
+  "platforms": [
+    {
+      "id": "ru-voronezh-dm-radar",
+      "name": "Voronezh-DM",
+      "type": "early_warning_radar",
+      "country_of_origin": "RU",
+      "manufacturer": "RTI Systems",
+      "service_entry": 2012,
+      "specifications": {
+        "frequency": "UHF (440-450 MHz)",
+        "range_km": 6000,
+        "altitude_km": 8000,
+        "azimuth_coverage_deg": 240,
+        "targets_tracked": 500,
+        "antenna_size_m": "140x42"
+      },
+      "features": {
+        "modular_phased_array": true,
+        "prefabricated": true,
+        "construction_time_months": 18,
+        "replaces": "Dnepr/Daryal radars"
+      },
+      "variants": [
+        "Voronezh-M (VHF)",
+        "Voronezh-DM (UHF)",
+        "Voronezh-VP (Highly Prefabricated)"
+      ],
+      "locations": [
+        {"site": "Lekhtusi", "region": "Leningrad"},
+        {"site": "Armavir", "region": "Krasnodar"},
+        {"site": "Pionersky", "region": "Kaliningrad"},
+        {"site": "Orsk", "region": "Orenburg"},
+        {"site": "Barnaul", "region": "Altai"},
+        {"site": "Yeniseysk", "region": "Krasnoyarsk"},
+        {"site": "Olenegorsk", "region": "Murmansk"},
+        {"site": "Vorkuta", "region": "Komi"}
+      ],
+      "notes": "Russian missile early warning network backbone. Detects ICBM/SLBM launches. 8 stations operational."
+    },
+    {
+      "id": "ru-nebo-m-radar",
+      "name": "Nebo-M (55Zh6M)",
+      "type": "mobile_3d_radar",
+      "country_of_origin": "RU",
+      "manufacturer": "NNIIRT",
+      "nato_name": "Tall Rack",
+      "service_entry": 2015,
+      "specifications": {
+        "detection_range_km": 600,
+        "altitude_max_km": 200,
+        "targets_tracked": 200,
+        "deployment_time_min": 15
+      },
+      "components": [
+        {"module": "RLM-M (VHF)", "range_km": 600, "note": "Stealth detection"},
+        {"module": "RLM-D (L-band)", "range_km": 500, "note": "Track accuracy"},
+        {"module": "RLM-S (S-band)", "range_km": 400, "note": "High resolution"}
+      ],
+      "features": {
+        "counter_stealth": true,
+        "multiband_fusion": true,
+        "mobile": true,
+        "networked": true
+      },
+      "service_history": {
+        "introduced": 2015,
+        "status": "active",
+        "operators": [{"country": "RU", "quantity": 12, "unit": "systems"}]
+      },
+      "combat_use": [
+        {"conflict": "Syria", "year": 2015},
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "notes": "Multi-band counter-stealth radar system. VHF component detects stealth aircraft. Deployed to Syria."
+    },
+    {
+      "id": "us-aim-260-jatm",
+      "name": "AIM-260 JATM",
+      "type": "air_to_air_missile",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "full_name": "Joint Advanced Tactical Missile",
+      "service_entry": 2026,
+      "specifications": {
+        "length_m": 3.65,
+        "diameter_mm": 178,
+        "weight_kg": 160,
+        "range_km": 200,
+        "speed_mach": 4
+      },
+      "guidance": {
+        "midcourse": "Two-way datalink + INS",
+        "terminal": "Active radar seeker"
+      },
+      "features": {
+        "replaces": "AIM-120D AMRAAM",
+        "counter": "PL-15, R-37M",
+        "f22_internal": true,
+        "f35_internal": true
+      },
+      "service_history": {
+        "expected_service": 2026,
+        "status": "EMD phase"
+      },
+      "notes": "AMRAAM replacement. Developed to counter PL-15. Extended range. Classified performance."
+    },
+    {
+      "id": "de-panzerfaust-3",
+      "name": "Panzerfaust 3",
+      "type": "rocket_launcher",
+      "country_of_origin": "DE",
+      "manufacturer": "Dynamit Nobel Defence",
+      "service_entry": 1987,
+      "specifications": {
+        "caliber_mm": 110,
+        "length_m": 1.2,
+        "weight_kg": 12.9,
+        "effective_range_m": 400,
+        "max_range_m": 920,
+        "muzzle_velocity_m_s": 160,
+        "penetration_mm": 800
+      },
+      "variants": [
+        {"name": "Pf 3", "penetration_mm": 700},
+        {"name": "Pf 3-IT", "penetration_mm": 800, "note": "Improved tandem"},
+        {"name": "Pf 3-T", "thermobaric": true, "note": "Bunker buster"},
+        {"name": "Pf 3-LR (Bunkerfaust)", "range_m": 600}
+      ],
+      "service_history": {
+        "introduced": 1987,
+        "status": "active",
+        "operators_count": 15,
+        "operators": [
+          {"country": "DE", "quantity": 100000},
+          {"country": "JP", "quantity": 50000},
+          {"country": "KR", "quantity": 30000},
+          {"country": "IT", "quantity": 20000},
+          {"country": "CH", "quantity": 15000}
+        ]
+      },
+      "combat_use": [
+        {"conflict": "Afghanistan", "year": 2002}
+      ],
+      "unit_cost_usd": 11000,
+      "notes": "German recoilless AT weapon. Tandem warhead defeats ERA. Reusable firing unit."
+    },
+    {
+      "id": "se-carl-gustaf-m4",
+      "name": "Carl Gustaf M4 (M3E1)",
+      "type": "recoilless_rifle",
+      "country_of_origin": "SE",
+      "manufacturer": "Saab Bofors Dynamics",
+      "designation_us": "M3 MAAWS",
+      "service_entry": 2014,
+      "specifications": {
+        "caliber_mm": 84,
+        "length_m": 1.1,
+        "weight_empty_kg": 6.6,
+        "effective_range_m": 700,
+        "max_range_m": 1300,
+        "rate_of_fire_rpm": 6
+      },
+      "ammunition": [
+        {"type": "HEAT 751", "penetration_mm": 500},
+        {"type": "HEDP 502", "note": "High Explosive Dual Purpose"},
+        {"type": "HE 441D", "note": "Anti-personnel airburst"},
+        {"type": "SMOKE 469C", "note": "Screening"},
+        {"type": "ASM 509", "note": "Anti-structure"},
+        {"type": "FFV597", "note": "Illumination"}
+      ],
+      "features": {
+        "computerized_sight": true,
+        "programmable_fuze": true,
+        "titanium_liner": true
+      },
+      "service_history": {
+        "introduced": 2014,
+        "status": "active",
+        "operators_count": 45,
+        "operators": [
+          {"country": "US", "quantity": 30000},
+          {"country": "SE", "quantity": 5000},
+          {"country": "GB", "quantity": 3000},
+          {"country": "AU", "quantity": 2000},
+          {"country": "CA", "quantity": 1000}
+        ]
+      },
+      "combat_use": [
+        {"conflict": "Afghanistan", "year": 2001},
+        {"conflict": "Iraq", "year": 2003},
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "unit_cost_usd": 20000,
+      "notes": "Multi-purpose weapon system. M4 is lightest version. Smart sight interfaces with programmable rounds."
+    }
+  ]
+}

@@ -1,0 +1,775 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "ru-s400",
+      "name": "S-400 Triumf (SA-21 Growler)",
+      "type": "sam",
+      "country_of_origin": "RU",
+      "manufacturer": "Almaz-Antey",
+      "service_history": {
+        "introduced": 2007,
+        "retired": null,
+        "production_count": 60,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 28,
+            "status": "active"
+          },
+          {
+            "country": "CN",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "TR",
+            "quantity": 2,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 5,
+            "status": "delivering"
+          },
+          {
+            "country": "BY",
+            "quantity": 2,
+            "status": "active"
+          }
+        ],
+        "notes": "Regiments (4 battalions each)"
+      },
+      "system_components": {
+        "radar": {
+          "acquisition": {
+            "designation": "91N6E Big Bird",
+            "type": "phased_array",
+            "range_km": 600,
+            "targets_tracked": 300
+          },
+          "engagement": {
+            "designation": "92N6E Grave Stone",
+            "type": "phased_array",
+            "range_km": 400,
+            "targets_engaged": 36
+          }
+        },
+        "command": {
+          "designation": "55K6E",
+          "type": "Command Post"
+        },
+        "launcher": {
+          "designation": "5P85TE2",
+          "missiles_per_launcher": 4,
+          "launchers_per_battalion": 8,
+          "notes": "TEL (transporter erector launcher)"
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "48N6E3 (SA-21b)",
+            "type": "semi-active_radar",
+            "range_max_km": 250,
+            "altitude_max_km": 30,
+            "speed_mach": 6.8,
+            "warhead_kg": 180,
+            "guidance": "semi-active radar + command",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "TBM"
+            ]
+          },
+          {
+            "designation": "40N6E",
+            "type": "active_radar",
+            "range_max_km": 400,
+            "altitude_max_km": 35,
+            "speed_mach": 14,
+            "warhead_kg": 180,
+            "guidance": "active radar + inertial",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "AWACS",
+              "TBM"
+            ],
+            "notes": "Very long range"
+          },
+          {
+            "designation": "9M96E2",
+            "type": "active_radar",
+            "range_max_km": 120,
+            "altitude_max_km": 30,
+            "speed_mach": 4.5,
+            "warhead_kg": 24,
+            "guidance": "active radar",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "TBM"
+            ],
+            "notes": "Hit-to-kill capable"
+          },
+          {
+            "designation": "77N6 (40N6E)",
+            "type": "anti_ballistic",
+            "range_max_km": 400,
+            "altitude_max_km": 185,
+            "guidance": "active radar",
+            "targets": [
+              "MRBM",
+              "IRBM"
+            ],
+            "notes": "ABM variant"
+          }
+        ]
+      },
+      "mobility": {
+        "deployment_time_min": 5,
+        "teardown_time_min": 5,
+        "vehicles": "MAZ-7910 8x8"
+      },
+      "unit_cost_usd": 500000000,
+      "cost_year": 2020,
+      "cost_notes": "Per battalion",
+      "missile_cost_usd": {
+        "48n6": 1200000,
+        "40n6": 2500000,
+        "9m96": 400000
+      },
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia S-400 missile system",
+        "Army Recognition",
+        "CSIS Missile Defense"
+      ],
+      "notes": "Russia's premier long-range SAM. Claimed 400km range (40N6E). Turkey purchase caused NATO crisis. Export success. Ukraine war: losses to HARM/ATACMS. Can engage stealth aircraft (claimed). 5-minute deployment.",
+      "year": 2007
+    },
+    {
+      "id": "ru-s300pmu2",
+      "name": "S-300PMU-2 Favorit (SA-20B)",
+      "type": "sam",
+      "country_of_origin": "RU",
+      "manufacturer": "Almaz-Antey",
+      "service_history": {
+        "introduced": 1997,
+        "retired": null,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 30,
+            "status": "active"
+          },
+          {
+            "country": "CN",
+            "quantity": 8,
+            "status": "active"
+          },
+          {
+            "country": "VN",
+            "quantity": 2,
+            "status": "active"
+          },
+          {
+            "country": "VE",
+            "quantity": 1,
+            "status": "active"
+          },
+          {
+            "country": "AZ",
+            "quantity": 2,
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "quantity": 2,
+            "status": "active"
+          }
+        ],
+        "notes": "Battalions"
+      },
+      "system_components": {
+        "radar": {
+          "designation": "30N6E2 Flap Lid-B",
+          "type": "phased_array",
+          "range_km": 300,
+          "targets_tracked": 100,
+          "targets_engaged": 6
+        },
+        "launcher": {
+          "designation": "5P85SE2",
+          "missiles_per_launcher": 4,
+          "launchers_per_battalion": 12
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "48N6E2",
+            "type": "semi-active_radar",
+            "range_max_km": 200,
+            "altitude_max_km": 27,
+            "speed_mach": 6,
+            "warhead_kg": 150,
+            "guidance": "semi-active radar + TVM",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "TBM"
+            ]
+          }
+        ]
+      },
+      "mobility": {
+        "deployment_time_min": 5,
+        "vehicles": "MAZ-543M 8x8"
+      },
+      "unit_cost_usd": 300000000,
+      "cost_year": 2015,
+      "cost_notes": "Per battalion",
+      "confidence": "high",
+      "sources": [
+        "Wikipedia S-300 missile system",
+        "Army Recognition"
+      ],
+      "notes": "Export variant of S-300PM2. Predecessor to S-400. Still highly capable. Iran/Syria/Venezuela sales controversial. Being replaced by S-400 in Russian service.",
+      "year": 1997
+    },
+    {
+      "id": "ru-s300v4",
+      "name": "S-300V4 Antey-2500 (SA-23)",
+      "type": "sam",
+      "country_of_origin": "RU",
+      "manufacturer": "Almaz-Antey",
+      "service_history": {
+        "introduced": 2014,
+        "retired": null,
+        "production_count": 30,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 25,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 3,
+            "status": "active"
+          },
+          {
+            "country": "VE",
+            "quantity": 2,
+            "status": "active"
+          }
+        ],
+        "notes": "Battalions"
+      },
+      "system_components": {
+        "radar": {
+          "designation": "9S19M2 Imbir",
+          "type": "phased_array",
+          "range_km": 400,
+          "targets_tracked": 200
+        },
+        "launcher": {
+          "designation": "9A83M",
+          "missiles_per_launcher": 4,
+          "notes": "Tracked TEL"
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "9M83M",
+            "type": "semi-active_radar",
+            "range_max_km": 200,
+            "altitude_max_km": 37,
+            "speed_mach": 7.5,
+            "warhead_kg": 150,
+            "guidance": "semi-active radar",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "TBM"
+            ]
+          },
+          {
+            "designation": "9M82MV",
+            "type": "active_radar",
+            "range_max_km": 400,
+            "altitude_max_km": 50,
+            "speed_mach": 9,
+            "warhead_kg": 150,
+            "guidance": "active radar",
+            "targets": [
+              "TBM",
+              "MRBM",
+              "aircraft"
+            ],
+            "notes": "Anti-ballistic capability"
+          }
+        ]
+      },
+      "mobility": {
+        "deployment_time_min": 6,
+        "vehicles": "MT-T tracked chassis",
+        "notes": "Army air defense (tracked for mobility)"
+      },
+      "unit_cost_usd": 400000000,
+      "cost_year": 2020,
+      "cost_notes": "Per battalion",
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia S-300V",
+        "Army Recognition"
+      ],
+      "notes": "Army SAM (tracked). Different from S-300P (strategic). Anti-TBM focus. Tracked for battlefield mobility. 400km range claimed with 9M82MV.",
+      "year": 2014
+    },
+    {
+      "id": "ru-buk-m3",
+      "name": "Buk-M3 (SA-17 Grizzly)",
+      "type": "sam",
+      "country_of_origin": "RU",
+      "manufacturer": "Almaz-Antey",
+      "service_history": {
+        "introduced": 2016,
+        "retired": null,
+        "production_count": 50,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 40,
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "quantity": 4,
+            "status": "active"
+          }
+        ],
+        "notes": "Batteries"
+      },
+      "system_components": {
+        "radar": {
+          "designation": "9S36M",
+          "type": "phased_array",
+          "range_km": 140,
+          "targets_tracked": 36,
+          "targets_engaged": 6
+        },
+        "launcher": {
+          "designation": "9A317M TELAR",
+          "missiles_per_launcher": 6,
+          "launchers_per_battery": 6,
+          "notes": "Transport Erector Launcher And Radar"
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "9M317MA",
+            "type": "active_radar",
+            "range_max_km": 70,
+            "altitude_max_km": 25,
+            "speed_mach": 4.5,
+            "warhead_kg": 62,
+            "guidance": "active radar + inertial",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "UAV",
+              "TBM"
+            ]
+          }
+        ]
+      },
+      "mobility": {
+        "deployment_time_min": 5,
+        "vehicles": "GM-569 tracked chassis"
+      },
+      "unit_cost_usd": 150000000,
+      "cost_year": 2020,
+      "cost_notes": "Per battery",
+      "missile_cost_usd": 1000000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Buk missile system",
+        "Army Recognition"
+      ],
+      "notes": "Divisional SAM. MH17 shot down by Buk (2014). 70km range. Active radar seeker. Widely deployed in Ukraine conflict. TELAR self-sufficient for engagement.",
+      "year": 2016
+    },
+    {
+      "id": "ru-buk-m2",
+      "name": "Buk-M2 (SA-17 Grizzly)",
+      "type": "sam",
+      "country_of_origin": "RU",
+      "manufacturer": "Almaz-Antey",
+      "service_history": {
+        "introduced": 2008,
+        "retired": null,
+        "production_count": 150,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 60,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 72,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "quantity": 36,
+            "status": "active"
+          },
+          {
+            "country": "VN",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 24,
+            "status": "ordered"
+          },
+          {
+            "country": "AZ",
+            "quantity": 18,
+            "status": "active"
+          }
+        ],
+        "notes": "Batteries"
+      },
+      "system_components": {
+        "radar": {
+          "designation": "9S36",
+          "type": "phased_array",
+          "range_km": 120,
+          "targets_tracked": 24
+        },
+        "launcher": {
+          "designation": "9A317 TELAR",
+          "missiles_per_launcher": 4,
+          "launchers_per_battery": 6
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "9M317",
+            "type": "semi-active_radar",
+            "range_max_km": 50,
+            "altitude_max_km": 25,
+            "speed_mach": 4,
+            "warhead_kg": 70,
+            "guidance": "semi-active radar",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "helicopter"
+            ]
+          }
+        ]
+      },
+      "mobility": {
+        "deployment_time_min": 5,
+        "vehicles": "GM-569 or wheeled"
+      },
+      "unit_cost_usd": 100000000,
+      "cost_year": 2015,
+      "cost_notes": "Per battery",
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Buk missile system",
+        "Army Recognition"
+      ],
+      "notes": "Medium-range SAM. 50km range. Ukraine operates same system. MH17 type (Buk M1). Heavy Ukraine war use by both sides.",
+      "year": 2008
+    },
+    {
+      "id": "ru-tor-m2",
+      "name": "Tor-M2 (SA-15 Gauntlet)",
+      "type": "sam",
+      "country_of_origin": "RU",
+      "manufacturer": "Almaz-Antey",
+      "service_history": {
+        "introduced": 2012,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 120,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "quantity": 29,
+            "status": "active"
+          },
+          {
+            "country": "VE",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "AZ",
+            "quantity": 18,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 32,
+            "status": "active"
+          }
+        ],
+        "notes": "Combat vehicles"
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 37000,
+        "length_m": 7.5,
+        "width_m": 3.3,
+        "height_m": 5.1
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-84MS",
+          "type": "diesel",
+          "power_hp": 840,
+          "power_kw": 627
+        },
+        "power_to_weight_hp_ton": 22.7,
+        "max_speed_road_kmh": 65,
+        "range_road_km": 500,
+        "notes": "Tracked chassis (also Tor-M2K wheeled)"
+      },
+      "system_components": {
+        "radar": {
+          "search": {
+            "designation": "3D phased array",
+            "range_km": 32,
+            "targets_tracked": 48
+          },
+          "tracking": {
+            "designation": "Engagement radar",
+            "range_km": 24,
+            "targets_engaged": 4
+          }
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "9M338K",
+            "type": "command_guidance",
+            "range_max_km": 16,
+            "range_min_km": 1,
+            "altitude_max_km": 10,
+            "altitude_min_m": 10,
+            "speed_mach": 2.8,
+            "warhead_kg": 15,
+            "guidance": "command + passive radar",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "UAV",
+              "PGM"
+            ],
+            "missiles_carried": 16,
+            "reaction_time_sec": 10
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 15,
+        "nbc_protection": true
+      },
+      "unit_cost_usd": 25000000,
+      "cost_year": 2020,
+      "missile_cost_usd": 300000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Tor missile system",
+        "Army Recognition"
+      ],
+      "notes": "Short-range point defense. 16 missiles. Engage while moving. 10-second reaction time. Iran shot down Ukraine PS752 with Tor-M1 (2020). Heavily used in Ukraine for drone defense.",
+      "year": 2012
+    },
+    {
+      "id": "ru-pantsir-s1",
+      "name": "Pantsir-S1 (SA-22 Greyhound)",
+      "type": "spaag_sam",
+      "country_of_origin": "RU",
+      "manufacturer": "KBP Instrument Design Bureau",
+      "service_history": {
+        "introduced": 2012,
+        "retired": null,
+        "production_count": 300,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "DZ",
+            "quantity": 38,
+            "status": "active"
+          },
+          {
+            "country": "LY",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "OM",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "BR",
+            "quantity": 3,
+            "status": "active"
+          },
+          {
+            "country": "ET",
+            "quantity": 4,
+            "status": "active"
+          }
+        ],
+        "notes": "Combat vehicles"
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 30000,
+        "length_m": 9.0,
+        "width_m": 3.2,
+        "height_m": 4.6
+      },
+      "mobility": {
+        "drivetrain": "8x8",
+        "chassis": "KamAZ-6560",
+        "max_speed_road_kmh": 90,
+        "range_road_km": 600
+      },
+      "system_components": {
+        "radar": {
+          "search": {
+            "designation": "1RS2-1E",
+            "type": "phased_array",
+            "range_km": 50,
+            "targets_tracked": 20
+          },
+          "tracking": {
+            "designation": "1RS2E",
+            "range_km": 30,
+            "targets_engaged": 4
+          }
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "57E6E",
+            "type": "command_guidance",
+            "range_max_km": 20,
+            "range_min_km": 1.2,
+            "altitude_max_km": 15,
+            "altitude_min_m": 5,
+            "speed_mach": 3.3,
+            "warhead_kg": 20,
+            "guidance": "laser beam riding + IR",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "UAV",
+              "PGM"
+            ],
+            "missiles_carried": 12
+          }
+        ],
+        "guns": [
+          {
+            "designation": "2A38M",
+            "caliber_mm": 30,
+            "barrels": 2,
+            "rate_of_fire_rpm": 5000,
+            "range_effective_km": 4,
+            "ammunition_carried": 1400,
+            "targets": [
+              "UAV",
+              "helicopter",
+              "PGM",
+              "soft_targets"
+            ]
+          }
+        ]
+      },
+      "unit_cost_usd": 15000000,
+      "cost_year": 2020,
+      "missile_cost_usd": 67000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Pantsir missile system",
+        "Army Recognition"
+      ],
+      "notes": "Gun/missile SHORAD. Protects S-400 batteries. Mixed results in Syria (Israeli strikes). Heavy Ukraine war losses. 30mm guns for close-in defense. Pantsir-S2 upgrade in service.",
+      "year": 2012
+    }
+  ]
+}

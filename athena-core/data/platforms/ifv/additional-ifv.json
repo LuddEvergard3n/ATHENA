@@ -1,0 +1,123 @@
+{
+  "category": "ifv",
+  "subcategory": "additional",
+  "metadata": {"file_version": "1.0", "last_updated": "2026-01-31"},
+  "platforms": [
+    {
+      "id": "us-m2a4-bradley",
+      "name": "M2A4 Bradley",
+      "type": "ifv",
+      "country": "US",
+      "year": 2022,
+      "manufacturer": "BAE Systems",
+      "service_history": {
+        "introduced": 2022,
+        "production_count": 500,
+        "operators": [{"country": "US", "quantity": 500, "status": "active"}]
+      },
+      "specifications": {"combat_weight_kg": 33600, "crew": 3, "passengers": 6},
+      "armament": {
+        "main_gun": "25mm M242 Bushmaster",
+        "atgm": "2x TOW-2B",
+        "coax": "7.62mm M240C"
+      },
+      "notes": "Latest Bradley upgrade with improved electronics"
+    },
+    {
+      "id": "ru-kurganets25",
+      "name": "Kurganets-25",
+      "type": "ifv",
+      "country": "RU",
+      "year": 2022,
+      "manufacturer": "Kurganmashzavod",
+      "service_history": {
+        "introduced": 2022,
+        "production_count": 20,
+        "operators": [{"country": "RU", "quantity": 20, "status": "testing"}]
+      },
+      "specifications": {"combat_weight_kg": 25000, "crew": 3, "passengers": 8},
+      "armament": {
+        "turret": "Epoch (Epokha) unmanned turret",
+        "main_gun": "30mm 2A42",
+        "atgm": "Kornet-EM"
+      },
+      "protection": {"aps": "Afganit APS"},
+      "notes": "Next-gen Russian IFV on Armata platform"
+    },
+    {
+      "id": "ru-bmp2m",
+      "name": "BMP-2M Berezhok",
+      "type": "ifv",
+      "country": "RU",
+      "year": 2018,
+      "manufacturer": "KBP",
+      "service_history": {
+        "introduced": 2018,
+        "production_count": 200,
+        "operators": [{"country": "RU", "quantity": 200, "status": "active"}]
+      },
+      "armament": {
+        "turret": "Berezhok combat module",
+        "main_gun": "30mm 2A42",
+        "atgm": "4x Kornet-M",
+        "grenade": "AG-30M"
+      },
+      "notes": "Modernized BMP-2"
+    },
+    {
+      "id": "jp-type16",
+      "name": "Type 16 MCV (Maneuver Combat Vehicle)",
+      "type": "wheeled-tank-destroyer",
+      "country": "JP",
+      "year": 2016,
+      "manufacturer": "MHI",
+      "service_history": {
+        "introduced": 2016,
+        "production_count": 134,
+        "operators": [{"country": "JP", "quantity": 134, "status": "active"}]
+      },
+      "specifications": {
+        "combat_weight_kg": 26000,
+        "max_speed_kmh": 100,
+        "crew": 4
+      },
+      "armament": {"main_gun": "105mm rifled gun"},
+      "notes": "Wheeled fire support vehicle"
+    },
+    {
+      "id": "au-as21-redback",
+      "name": "AS21 Redback",
+      "type": "ifv",
+      "country": "AU",
+      "year": 2027,
+      "manufacturer": "Hanwha Defense Australia",
+      "service_history": {
+        "introduced": 2027,
+        "production_count": 129,
+        "operators": [{"country": "AU", "quantity": 129, "status": "ordered"}]
+      },
+      "specifications": {"combat_weight_kg": 42000, "crew": 3, "passengers": 8},
+      "armament": {
+        "turret": "T2000 Lance turret",
+        "main_gun": "30mm Mk44 Bushmaster II"
+      },
+      "protection": {"aps": "Iron Fist Light"},
+      "notes": "Australian LAND 400 Phase 3 winner"
+    },
+    {
+      "id": "kr-k21-105",
+      "name": "K21-105",
+      "type": "light-tank",
+      "country": "KR",
+      "year": 2014,
+      "manufacturer": "Hanwha Defense",
+      "service_history": {
+        "introduced": 2014,
+        "production_count": 30,
+        "operators": [{"country": "KR", "quantity": 30, "status": "testing"}]
+      },
+      "armament": {"main_gun": "105mm low-recoil gun"},
+      "notes": "K21 chassis with 105mm turret"
+    }
+  ]
+}

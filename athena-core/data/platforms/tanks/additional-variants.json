@@ -1,0 +1,219 @@
+{
+  "category": "tanks",
+  "subcategory": "additional-variants",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": ["IISS Military Balance 2024", "Jane's Land Warfare Platforms"]
+  },
+  "platforms": [
+    {
+      "id": "se-strv122",
+      "name": "Stridsvagn 122 (Strv 122)",
+      "type": "mbt",
+      "country": "SE",
+      "year": 1997,
+      "manufacturer": "Krauss-Maffei (Leopard 2A5 variant)",
+      "service_history": {
+        "introduced": 1997,
+        "production_count": 120,
+        "operators": [{"country": "SE", "quantity": 120, "status": "active"}]
+      },
+      "specifications": {
+        "combat_weight_kg": 62000,
+        "length_m": 9.97,
+        "width_m": 3.74,
+        "height_m": 3.0,
+        "max_speed_kmh": 68,
+        "range_km": 500,
+        "crew": 4
+      },
+      "armament": {
+        "main_gun": "120mm Rheinmetall L/44",
+        "secondary": ["1x 7.62mm MG3 coax", "1x 7.62mm MG3 commander"]
+      },
+      "protection": {
+        "armor_type": "Composite + add-on modules",
+        "notes": "Swedish-specific add-on armor package"
+      }
+    },
+    {
+      "id": "pl-leopard2pl",
+      "name": "Leopard 2PL",
+      "type": "mbt",
+      "country": "PL",
+      "year": 2020,
+      "manufacturer": "PGZ/Rheinmetall",
+      "service_history": {
+        "introduced": 2020,
+        "production_count": 128,
+        "operators": [{"country": "PL", "quantity": 128, "status": "active"}]
+      },
+      "specifications": {
+        "combat_weight_kg": 60000,
+        "max_speed_kmh": 68,
+        "range_km": 500,
+        "crew": 4
+      },
+      "armament": {
+        "main_gun": "120mm Rheinmetall L/44",
+        "fcs": "Upgraded fire control with thermal imaging"
+      },
+      "protection": {
+        "armor_type": "Composite + AMAP add-on",
+        "era": true
+      }
+    },
+    {
+      "id": "gr-leopard2a6hel",
+      "name": "Leopard 2A6 HEL",
+      "type": "mbt",
+      "country": "GR",
+      "year": 2006,
+      "manufacturer": "Krauss-Maffei Wegmann",
+      "service_history": {
+        "introduced": 2006,
+        "production_count": 170,
+        "operators": [{"country": "GR", "quantity": 170, "status": "active"}]
+      },
+      "specifications": {
+        "combat_weight_kg": 62300,
+        "max_speed_kmh": 68
+      },
+      "armament": {"main_gun": "120mm Rheinmetall L/55"}
+    },
+    {
+      "id": "es-leopard2e",
+      "name": "Leopard 2E",
+      "type": "mbt",
+      "country": "ES",
+      "year": 2003,
+      "manufacturer": "Santa Bárbara Sistemas",
+      "service_history": {
+        "introduced": 2003,
+        "production_count": 219,
+        "operators": [{"country": "ES", "quantity": 219, "status": "active"}]
+      },
+      "armament": {"main_gun": "120mm Rheinmetall L/55"},
+      "notes": "Spanish-built Leopard 2A6 variant"
+    },
+    {
+      "id": "ca-leopard2a6mcan",
+      "name": "Leopard 2A6M CAN",
+      "type": "mbt",
+      "country": "CA",
+      "year": 2007,
+      "manufacturer": "KMW",
+      "service_history": {
+        "introduced": 2007,
+        "production_count": 42,
+        "operators": [{"country": "CA", "quantity": 42, "status": "active"}]
+      },
+      "specifications": {
+        "combat_weight_kg": 62500
+      },
+      "armament": {"main_gun": "120mm Rheinmetall L/55"},
+      "protection": {"mine_protection": "Enhanced belly armor"}
+    },
+    {
+      "id": "au-m1a1aim",
+      "name": "M1A1 AIM SA",
+      "type": "mbt",
+      "country": "AU",
+      "year": 2007,
+      "manufacturer": "General Dynamics",
+      "service_history": {
+        "introduced": 2007,
+        "production_count": 59,
+        "operators": [{"country": "AU", "quantity": 59, "status": "active"}]
+      },
+      "armament": {"main_gun": "120mm M256"},
+      "notes": "Abrams Integrated Management - Australia"
+    },
+    {
+      "id": "eg-m1a1",
+      "name": "M1A1 Abrams (Egypt)",
+      "type": "mbt",
+      "country": "EG",
+      "year": 1992,
+      "manufacturer": "Factory 200 (co-production)",
+      "service_history": {
+        "introduced": 1992,
+        "production_count": 1130,
+        "operators": [{"country": "EG", "quantity": 1130, "status": "active"}]
+      },
+      "notes": "Egyptian co-production"
+    },
+    {
+      "id": "ir-karrar",
+      "name": "Karrar",
+      "type": "mbt",
+      "country": "IR",
+      "year": 2017,
+      "manufacturer": "Iranian DIO",
+      "service_history": {
+        "introduced": 2017,
+        "production_count": 100,
+        "operators": [{"country": "IR", "quantity": 100, "status": "active"}]
+      },
+      "specifications": {
+        "combat_weight_kg": 51000,
+        "max_speed_kmh": 70
+      },
+      "armament": {
+        "main_gun": "125mm smoothbore",
+        "atgm": "Laser-guided missile capability"
+      },
+      "protection": {
+        "era": "Locally developed ERA"
+      },
+      "notes": "Indigenous Iranian MBT"
+    },
+    {
+      "id": "in-t72m1-ajeya",
+      "name": "T-72M1 Ajeya",
+      "type": "mbt",
+      "country": "IN",
+      "year": 1988,
+      "manufacturer": "Heavy Vehicles Factory (HVF)",
+      "service_history": {
+        "introduced": 1988,
+        "production_count": 1900,
+        "operators": [{"country": "IN", "quantity": 1900, "status": "active"}]
+      },
+      "armament": {"main_gun": "125mm 2A46M"},
+      "notes": "Indian-built T-72, various upgrade standards"
+    },
+    {
+      "id": "tw-cm11",
+      "name": "CM-11 Brave Tiger",
+      "type": "mbt",
+      "country": "TW",
+      "year": 1990,
+      "manufacturer": "AIDC/Tank Command",
+      "service_history": {
+        "introduced": 1990,
+        "production_count": 450,
+        "operators": [{"country": "TW", "quantity": 450, "status": "active"}]
+      },
+      "specifications": {
+        "combat_weight_kg": 50000
+      },
+      "armament": {"main_gun": "105mm M68A1"},
+      "notes": "M48/M60 hybrid with M1 fire control"
+    },
+    {
+      "id": "tw-m60a3tts",
+      "name": "M60A3 TTS (Taiwan)",
+      "type": "mbt",
+      "country": "TW",
+      "year": 1996,
+      "service_history": {
+        "introduced": 1996,
+        "production_count": 460,
+        "operators": [{"country": "TW", "quantity": 460, "status": "reserve"}]
+      },
+      "armament": {"main_gun": "105mm M68"}
+    }
+  ]
+}

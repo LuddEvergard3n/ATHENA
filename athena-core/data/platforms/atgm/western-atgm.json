@@ -1,0 +1,902 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-19",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Infantry Weapons",
+      "Army Recognition",
+      "Manufacturer specifications"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-javelin",
+      "name": "FGM-148 Javelin",
+      "type": "atgm",
+      "country_of_origin": "US",
+      "manufacturer": "Raytheon / Lockheed Martin",
+      "service_history": {
+        "introduced": 1996,
+        "retired": null,
+        "production_count": 50000,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 7000,
+            "status": "active"
+          },
+          {
+            "country": "UK",
+            "quantity": 600,
+            "status": "active"
+          },
+          {
+            "country": "FR",
+            "quantity": 260,
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 350,
+            "status": "active"
+          },
+          {
+            "country": "TW",
+            "quantity": 400,
+            "status": "active"
+          },
+          {
+            "country": "NO",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "NZ",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "LT",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "EE",
+            "quantity": 350,
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 180,
+            "status": "active"
+          },
+          {
+            "country": "CZ",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 5000,
+            "status": "active",
+            "notes": "US/NATO aid"
+          },
+          {
+            "country": "GE",
+            "quantity": 72,
+            "status": "active"
+          },
+          {
+            "country": "JO",
+            "quantity": 162,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 1000,
+            "status": "ordered"
+          },
+          {
+            "country": "QA",
+            "quantity": 500,
+            "status": "active"
+          }
+        ],
+        "notes": "Missiles delivered"
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_missile_kg": 11.8,
+        "weight_clu_kg": 6.4,
+        "weight_total_kg": 22.3,
+        "length_missile_mm": 1080,
+        "diameter_mm": 127
+      },
+      "performance": {
+        "range_min_m": 65,
+        "range_max_m": 2500,
+        "range_max_top_attack_m": 2000,
+        "flight_time_max_sec": 14,
+        "speed_mps": 290,
+        "guidance": "infrared_imaging",
+        "attack_modes": [
+          "top_attack",
+          "direct_attack"
+        ],
+        "fire_and_forget": true,
+        "soft_launch": true,
+        "clu_reusable": true
+      },
+      "warhead": {
+        "type": "tandem_heat",
+        "diameter_mm": 127,
+        "penetration_mm_rha": 750,
+        "penetration_era_mm_rha": 600,
+        "precursor_charge": true
+      },
+      "variants": [
+        {
+          "designation": "FGM-148A",
+          "range_m": 2000,
+          "notes": "Original version"
+        },
+        {
+          "designation": "FGM-148B",
+          "range_m": 2500,
+          "notes": "Improved seeker"
+        },
+        {
+          "designation": "FGM-148E (Block I)",
+          "range_m": 2500,
+          "notes": "Enhanced penetration"
+        },
+        {
+          "designation": "FGM-148F (Block II)",
+          "range_m": 4000,
+          "penetration_mm_rha": 800,
+          "notes": "Multi-purpose warhead, extended range"
+        }
+      ],
+      "unit_cost_usd": 178000,
+      "cost_year": 2022,
+      "cost_notes": "Per missile, CLU costs $126,000",
+      "confidence": "high",
+      "sources": [
+        "Wikipedia FGM-148 Javelin",
+        "Army Recognition",
+        "Raytheon"
+      ],
+      "notes": "Most successful modern ATGM. Fire-and-forget IR imaging seeker. Top-attack defeats ERA. Ukraine: 'Saint Javelin' - extremely effective vs Russian armor. Soft launch allows indoor firing. 50,000+ produced.",
+      "year": 1996
+    },
+    {
+      "id": "us-tow",
+      "name": "BGM-71 TOW",
+      "type": "atgm",
+      "country_of_origin": "US",
+      "manufacturer": "Raytheon",
+      "service_history": {
+        "introduced": 1970,
+        "retired": null,
+        "production_count": 700000,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 50000,
+            "status": "active"
+          },
+          {
+            "country": "CA",
+            "status": "active"
+          },
+          {
+            "country": "DE",
+            "status": "active"
+          },
+          {
+            "country": "UK",
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "status": "active"
+          },
+          {
+            "country": "ES",
+            "status": "active"
+          },
+          {
+            "country": "NL",
+            "status": "active"
+          },
+          {
+            "country": "NO",
+            "status": "active"
+          },
+          {
+            "country": "DK",
+            "status": "active"
+          },
+          {
+            "country": "GR",
+            "status": "active"
+          },
+          {
+            "country": "TR",
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "status": "active"
+          },
+          {
+            "country": "KW",
+            "status": "active"
+          },
+          {
+            "country": "IL",
+            "status": "active"
+          },
+          {
+            "country": "JP",
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "status": "active"
+          },
+          {
+            "country": "TW",
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "status": "active"
+          }
+        ],
+        "notes": "45+ operators worldwide"
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_missile_kg": 23.5,
+        "weight_launcher_kg": 92,
+        "length_missile_mm": 1170,
+        "diameter_mm": 152
+      },
+      "performance": {
+        "range_min_m": 65,
+        "range_max_m": 3750,
+        "flight_time_max_sec": 20,
+        "speed_mps": 320,
+        "guidance": "wire_guided_saclos",
+        "attack_modes": [
+          "direct_attack"
+        ],
+        "fire_and_forget": false
+      },
+      "warhead": {
+        "type": "tandem_heat",
+        "diameter_mm": 152,
+        "penetration_mm_rha": 900,
+        "penetration_era_mm_rha": 700
+      },
+      "variants": [
+        {
+          "designation": "BGM-71A Basic TOW",
+          "range_m": 3000,
+          "penetration_mm_rha": 430,
+          "notes": "Original 1970"
+        },
+        {
+          "designation": "BGM-71C ITOW",
+          "range_m": 3750,
+          "penetration_mm_rha": 630,
+          "notes": "Improved TOW 1981"
+        },
+        {
+          "designation": "BGM-71D TOW-2",
+          "range_m": 3750,
+          "penetration_mm_rha": 800,
+          "notes": "1983"
+        },
+        {
+          "designation": "BGM-71E TOW-2A",
+          "range_m": 3750,
+          "penetration_mm_rha": 900,
+          "notes": "Tandem warhead, defeats ERA"
+        },
+        {
+          "designation": "BGM-71F TOW-2B",
+          "range_m": 3750,
+          "warhead_type": "EFP",
+          "notes": "Top-attack (fly-over-shoot-down)"
+        },
+        {
+          "designation": "BGM-71H TOW Bunker Buster",
+          "range_m": 3750,
+          "notes": "Thermobaric for bunkers"
+        },
+        {
+          "designation": "TOW-2B Aero",
+          "range_m": 4500,
+          "notes": "Extended range"
+        }
+      ],
+      "platforms": [
+        "ground_tripod",
+        "HMMWV",
+        "M2_Bradley",
+        "M1134_Stryker",
+        "AH-1_Cobra"
+      ],
+      "unit_cost_usd": 93000,
+      "cost_year": 2022,
+      "cost_notes": "Per missile (TOW-2A)",
+      "confidence": "high",
+      "sources": [
+        "Wikipedia BGM-71 TOW",
+        "Army Recognition",
+        "Raytheon"
+      ],
+      "notes": "Most widely used ATGM ever. 700,000+ produced. Wire-guided SACLOS. Heavy, vehicle-mounted preferred. Still effective but being replaced by fire-and-forget systems. Syrian Civil War: extensive use.",
+      "year": 1970
+    },
+    {
+      "id": "il-spike-mr",
+      "name": "Spike-MR (Gil)",
+      "type": "atgm",
+      "country_of_origin": "IL",
+      "manufacturer": "Rafael Advanced Defense Systems",
+      "service_history": {
+        "introduced": 1997,
+        "retired": null,
+        "production_count": 33000,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 5000,
+            "status": "active"
+          },
+          {
+            "country": "DE",
+            "quantity": 2000,
+            "variants": [
+              "MELLS"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "quantity": 1500,
+            "status": "active"
+          },
+          {
+            "country": "NL",
+            "quantity": 700,
+            "status": "active"
+          },
+          {
+            "country": "ES",
+            "quantity": 2600,
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 2600,
+            "status": "active"
+          },
+          {
+            "country": "FI",
+            "quantity": 1000,
+            "status": "active"
+          },
+          {
+            "country": "SG",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "quantity": 1500,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 6000,
+            "status": "active"
+          },
+          {
+            "country": "CO",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "CL",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "RO",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "CZ",
+            "quantity": 200,
+            "status": "active"
+          }
+        ],
+        "notes": "Spike family total, 35+ countries"
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_missile_kg": 14,
+        "weight_clu_kg": 5,
+        "weight_total_kg": 26,
+        "length_missile_mm": 1200,
+        "diameter_mm": 130
+      },
+      "performance": {
+        "range_min_m": 200,
+        "range_max_m": 2500,
+        "flight_time_max_sec": 15,
+        "speed_mps": 180,
+        "guidance": "electro_optical_ccd_iir",
+        "attack_modes": [
+          "direct_attack",
+          "top_attack"
+        ],
+        "fire_and_forget": true,
+        "fire_and_observe": true,
+        "fiber_optic_datalink": true
+      },
+      "warhead": {
+        "type": "tandem_heat",
+        "diameter_mm": 130,
+        "penetration_mm_rha": 700
+      },
+      "unit_cost_usd": 200000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Spike missile",
+        "Army Recognition",
+        "Rafael"
+      ],
+      "notes": "Most exported Western ATGM family. Electro-optical seeker. Fire-and-forget OR fire-and-observe via fiber optic. Can re-target mid-flight. Top-attack mode.",
+      "year": 2009
+    },
+    {
+      "id": "il-spike-lr",
+      "name": "Spike-LR",
+      "type": "atgm",
+      "country_of_origin": "IL",
+      "manufacturer": "Rafael Advanced Defense Systems",
+      "service_history": {
+        "introduced": 2000,
+        "retired": null,
+        "production_count": 15000,
+        "operators": [
+          {
+            "country": "IL",
+            "status": "active"
+          },
+          {
+            "country": "DE",
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "status": "active"
+          },
+          {
+            "country": "BE",
+            "status": "active"
+          },
+          {
+            "country": "SG",
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "status": "ordered"
+          }
+        ],
+        "notes": "Part of Spike family"
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_missile_kg": 14,
+        "weight_total_kg": 26,
+        "length_missile_mm": 1200,
+        "diameter_mm": 130
+      },
+      "performance": {
+        "range_min_m": 200,
+        "range_max_m": 4000,
+        "guidance": "electro_optical_ccd_iir",
+        "attack_modes": [
+          "direct_attack",
+          "top_attack"
+        ],
+        "fire_and_forget": true,
+        "fire_and_observe": true,
+        "fiber_optic_datalink": true
+      },
+      "warhead": {
+        "type": "tandem_heat",
+        "penetration_mm_rha": 700
+      },
+      "variants": [
+        {
+          "designation": "Spike-LR2",
+          "range_m": 5500,
+          "notes": "Extended range, improved seeker"
+        }
+      ],
+      "unit_cost_usd": 250000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Spike missile",
+        "Army Recognition",
+        "Rafael"
+      ],
+      "notes": "Long-range man-portable Spike. 4km range. Spike-LR2 extends to 5.5km. Fiber optic datalink for mid-flight control.",
+      "year": 1997
+    },
+    {
+      "id": "il-spike-er",
+      "name": "Spike-ER / NLOS",
+      "type": "atgm",
+      "country_of_origin": "IL",
+      "manufacturer": "Rafael Advanced Defense Systems",
+      "service_history": {
+        "introduced": 2010,
+        "retired": null,
+        "production_count": 5000,
+        "operators": [
+          {
+            "country": "IL",
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "status": "active"
+          },
+          {
+            "country": "ES",
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "weight_missile_kg": 34,
+        "length_missile_mm": 1670,
+        "diameter_mm": 170
+      },
+      "performance": {
+        "range_max_m": 8000,
+        "guidance": "electro_optical_rf_datalink",
+        "attack_modes": [
+          "direct_attack",
+          "top_attack",
+          "nlos"
+        ],
+        "fire_and_forget": true,
+        "fire_and_observe": true,
+        "notes": "RF datalink for NLOS (beyond line of sight)"
+      },
+      "warhead": {
+        "type": "tandem_heat",
+        "penetration_mm_rha": 1000
+      },
+      "variants": [
+        {
+          "designation": "Spike-ER2",
+          "range_m": 10000,
+          "notes": "10km range"
+        },
+        {
+          "designation": "Spike-NLOS",
+          "range_m": 25000,
+          "notes": "25km, loitering capability"
+        }
+      ],
+      "unit_cost_usd": 350000,
+      "cost_year": 2022,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Spike missile",
+        "Rafael"
+      ],
+      "notes": "Vehicle/helicopter mounted. Spike-NLOS: 25km range, loitering capability, can engage targets beyond line of sight using third-party targeting.",
+      "year": 2002
+    },
+    {
+      "id": "uk-nlaw",
+      "name": "MBT LAW / NLAW",
+      "type": "atgm",
+      "country_of_origin": "GB",
+      "manufacturer": "Saab Bofors Dynamics / Thales",
+      "service_history": {
+        "introduced": 2009,
+        "retired": null,
+        "production_count": 40000,
+        "operators": [
+          {
+            "country": "UK",
+            "quantity": 14000,
+            "status": "active"
+          },
+          {
+            "country": "SE",
+            "quantity": 4000,
+            "status": "active"
+          },
+          {
+            "country": "FI",
+            "quantity": 2500,
+            "status": "active"
+          },
+          {
+            "country": "LU",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "ID",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "MY",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 9000,
+            "status": "active",
+            "notes": "UK aid"
+          }
+        ],
+        "notes": "Next-generation Light Anti-tank Weapon"
+      },
+      "specifications": {
+        "crew": 1,
+        "weight_kg": 12.5,
+        "length_mm": 1016,
+        "diameter_mm": 150
+      },
+      "performance": {
+        "range_min_m": 20,
+        "range_max_m": 800,
+        "range_effective_m": 600,
+        "flight_time_max_sec": 2,
+        "speed_mps": 200,
+        "guidance": "predicted_line_of_sight",
+        "attack_modes": [
+          "top_attack",
+          "direct_attack"
+        ],
+        "fire_and_forget": true,
+        "soft_launch": true
+      },
+      "warhead": {
+        "type": "heat",
+        "diameter_mm": 150,
+        "penetration_mm_rha": 500
+      },
+      "unit_cost_usd": 40000,
+      "cost_year": 2022,
+      "cost_notes": "Single-shot disposable",
+      "confidence": "high",
+      "sources": [
+        "Wikipedia MBT LAW",
+        "Army Recognition",
+        "Saab"
+      ],
+      "notes": "Disposable single-shot ATGM. Predicted Line of Sight (PLOS) guidance - no tracker wire/laser. Top-attack at range, direct attack close. Ukraine: highly effective, simple to use. 'Saint NLAW'.",
+      "year": 2009
+    },
+    {
+      "id": "fr-mmp",
+      "name": "MMP (Missile Moyenne Port\u00e9e)",
+      "type": "atgm",
+      "country_of_origin": "FR",
+      "manufacturer": "MBDA",
+      "service_history": {
+        "introduced": 2017,
+        "retired": null,
+        "production_count": 2000,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 1950,
+            "status": "active"
+          },
+          {
+            "country": "BE",
+            "quantity": 400,
+            "status": "ordered"
+          }
+        ],
+        "notes": "MILAN replacement"
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_missile_kg": 15,
+        "weight_launcher_kg": 10,
+        "weight_total_kg": 25,
+        "length_missile_mm": 1300,
+        "diameter_mm": 140
+      },
+      "performance": {
+        "range_min_m": 100,
+        "range_max_m": 4000,
+        "guidance": "infrared_imaging_fiber_optic",
+        "attack_modes": [
+          "direct_attack",
+          "top_attack"
+        ],
+        "fire_and_forget": true,
+        "fire_and_observe": true,
+        "fiber_optic_datalink": true
+      },
+      "warhead": {
+        "type": "tandem_heat",
+        "diameter_mm": 140,
+        "penetration_mm_rha": 1000,
+        "penetration_era_mm_rha": 800
+      },
+      "unit_cost_usd": 190000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia MMP missile",
+        "Army Recognition",
+        "MBDA"
+      ],
+      "notes": "French 5th-gen ATGM replacing MILAN. Network-enabled, man-in-the-loop via fiber optic. Day/night IR seeker. Lock-on-before/after-launch. Combat debut Mali 2019.",
+      "year": 2017
+    },
+    {
+      "id": "eu-milan",
+      "name": "MILAN",
+      "type": "atgm",
+      "country_of_origin": "FR",
+      "manufacturer": "Euromissile (MBDA)",
+      "service_history": {
+        "introduced": 1972,
+        "retired": null,
+        "production_count": 360000,
+        "operators": [
+          {
+            "country": "FR",
+            "status": "retiring"
+          },
+          {
+            "country": "DE",
+            "status": "retiring"
+          },
+          {
+            "country": "UK",
+            "status": "retired"
+          },
+          {
+            "country": "IT",
+            "status": "active"
+          },
+          {
+            "country": "ES",
+            "status": "active"
+          },
+          {
+            "country": "GR",
+            "status": "active"
+          },
+          {
+            "country": "TR",
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "status": "active"
+          },
+          {
+            "country": "LY",
+            "status": "active"
+          }
+        ],
+        "notes": "40+ operators, being phased out"
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_missile_kg": 6.7,
+        "weight_launcher_kg": 16.4,
+        "weight_total_kg": 24,
+        "length_missile_mm": 918,
+        "diameter_mm": 115
+      },
+      "performance": {
+        "range_min_m": 25,
+        "range_max_m": 2000,
+        "flight_time_max_sec": 12,
+        "speed_mps": 200,
+        "guidance": "wire_guided_saclos",
+        "attack_modes": [
+          "direct_attack"
+        ],
+        "fire_and_forget": false
+      },
+      "warhead": {
+        "type": "heat",
+        "diameter_mm": 115,
+        "penetration_mm_rha": 352
+      },
+      "variants": [
+        {
+          "designation": "MILAN 2",
+          "penetration_mm_rha": 560,
+          "notes": "Improved warhead"
+        },
+        {
+          "designation": "MILAN 2T",
+          "penetration_mm_rha": 900,
+          "notes": "Tandem warhead, defeats ERA"
+        },
+        {
+          "designation": "MILAN 3 / ER",
+          "range_m": 3000,
+          "penetration_mm_rha": 1000,
+          "notes": "Extended range"
+        }
+      ],
+      "unit_cost_usd": 18000,
+      "cost_year": 2000,
+      "cost_notes": "Missile only",
+      "confidence": "high",
+      "sources": [
+        "Wikipedia MILAN",
+        "Army Recognition"
+      ],
+      "notes": "Classic European ATGM. 360,000 produced. Wire-guided SACLOS. Falklands War, Iran-Iraq War, Syrian Civil War combat. Being replaced by MMP (France), Spike MELLS (Germany).",
+      "year": 1972
+    }
+  ]
+}

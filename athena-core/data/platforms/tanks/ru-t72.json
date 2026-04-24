@@ -1,0 +1,846 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "su-t72-ural",
+      "name": "T-72 Ural",
+      "nato_designation": "T-72",
+      "type": "mbt",
+      "country_of_origin": "SU",
+      "manufacturer": "Uralvagonzavod",
+      "service_history": {
+        "introduced": 1973,
+        "retired": null,
+        "production_count": 25000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 2000,
+            "variants": [
+              "T-72",
+              "T-72A"
+            ],
+            "status": "reserve"
+          },
+          {
+            "country": "SY",
+            "quantity": 650,
+            "variants": [
+              "T-72A",
+              "T-72AV",
+              "T-72M1"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "DZ",
+            "quantity": 325,
+            "variants": [
+              "T-72M1"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 1900,
+            "variants": [
+              "T-72M1",
+              "T-72 Ajeya"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 41000,
+        "length_m": 6.95,
+        "length_gun_forward_m": 9.53,
+        "width_m": 3.59,
+        "height_m": 2.23,
+        "ground_clearance_m": 0.43
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-46-6",
+          "type": "diesel",
+          "power_hp": 780,
+          "power_kw": 582
+        },
+        "power_to_weight_hp_ton": 19.0,
+        "transmission": "Manual, 7 forward, 1 reverse",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 60,
+        "max_speed_offroad_kmh": 45,
+        "max_speed_reverse_kmh": 4,
+        "range_road_km": 500,
+        "range_offroad_km": 320,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.8,
+        "vertical_obstacle_m": 0.85,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "2A26M2 (D-81TM)",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1800,
+          "effective_range_m": 2500,
+          "max_range_m": 4000,
+          "ammunition_carried": 44,
+          "ammunition_ready": 22,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "3BM9",
+              "penetration_mm_rha": 245,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "3BK12M",
+              "penetration_mm_rha": 450,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE-FRAG",
+              "designation": "3OF19",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 4000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "NSVT",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 300
+          },
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite",
+        "armor_composition": "Steel with composite inserts (Kvartz)",
+        "protection_front_turret_mm_rha": 380,
+        "protection_front_hull_mm_rha": 335,
+        "protection_side_mm_rha": 80,
+        "protection_rear_mm_rha": 40,
+        "protection_top_mm_rha": 30,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "turret_ring",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "1A40",
+        "gunner_sight": {
+          "type": "TPD-2-49",
+          "day_magnification": "3.9x/7.8x",
+          "thermal": false
+        },
+        "laser_rangefinder": false,
+        "ballistic_computer": true,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 0
+      },
+      "unit_cost_usd": 500000,
+      "cost_year": 1980,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia T-72",
+        "FAS T-72 Tank Characteristics",
+        "GlobalSecurity T-72"
+      ],
+      "notes": "Original production variant. Autoloader holds 22 rounds in carousel. Known issue: ammunition storage in fighting compartment leads to catastrophic kills.",
+      "year": 1973
+    },
+    {
+      "id": "su-t72a",
+      "name": "T-72A",
+      "nato_designation": "T-72A",
+      "type": "mbt",
+      "country_of_origin": "SU",
+      "manufacturer": "Uralvagonzavod",
+      "service_history": {
+        "introduced": 1979,
+        "retired": null,
+        "production_count": 5500,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 700,
+            "variants": [
+              "T-72A",
+              "T-72AV"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 41500,
+        "length_m": 6.95,
+        "length_gun_forward_m": 9.53,
+        "width_m": 3.59,
+        "height_m": 2.23,
+        "ground_clearance_m": 0.43
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-46-6",
+          "type": "diesel",
+          "power_hp": 780,
+          "power_kw": 582
+        },
+        "power_to_weight_hp_ton": 18.8,
+        "transmission": "Manual, 7 forward, 1 reverse",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 60,
+        "max_speed_offroad_kmh": 45,
+        "max_speed_reverse_kmh": 4,
+        "range_road_km": 500,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.8,
+        "vertical_obstacle_m": 0.85,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "2A46 (D-81TM)",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1800,
+          "effective_range_m": 3000,
+          "max_range_m": 4000,
+          "ammunition_carried": 44,
+          "ammunition_ready": 22,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "3BM22",
+              "penetration_mm_rha": 405,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "3BK18M",
+              "penetration_mm_rha": 550,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE-FRAG",
+              "designation": "3OF26",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 4000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "NSVT",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 300
+          },
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite",
+        "armor_composition": "Steel with quartz core composite",
+        "protection_front_turret_mm_rha": 450,
+        "protection_front_hull_mm_rha": 380,
+        "protection_side_mm_rha": 80,
+        "protection_rear_mm_rha": 40,
+        "protection_top_mm_rha": 30,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "turret_ring",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "1A40-1",
+        "gunner_sight": {
+          "type": "TPD-K1",
+          "day_magnification": "3.9x/7.8x",
+          "thermal": false
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 4000,
+        "ballistic_computer": true,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8,
+        "smoke_grenade_type": "902B Tucha"
+      },
+      "unit_cost_usd": 750000,
+      "cost_year": 1985,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia T-72",
+        "Army Recognition T-72",
+        "FAS T-72"
+      ],
+      "notes": "Added laser rangefinder, smoke grenades, improved armor. T-72AV adds Kontakt-1 ERA.",
+      "year": 1979
+    },
+    {
+      "id": "su-t72b",
+      "name": "T-72B",
+      "nato_designation": "T-72B",
+      "type": "mbt",
+      "country_of_origin": "SU",
+      "manufacturer": "Uralvagonzavod",
+      "service_history": {
+        "introduced": 1984,
+        "retired": null,
+        "production_count": 6500,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 4800,
+            "variants": [
+              "T-72B",
+              "T-72BA",
+              "T-72BV",
+              "T-72BM"
+            ],
+            "status": "reserve"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 44500,
+        "length_m": 6.95,
+        "length_gun_forward_m": 9.53,
+        "width_m": 3.59,
+        "height_m": 2.23,
+        "ground_clearance_m": 0.43
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-84-1",
+          "type": "diesel",
+          "power_hp": 840,
+          "power_kw": 626
+        },
+        "power_to_weight_hp_ton": 18.9,
+        "transmission": "Manual, 7 forward, 1 reverse",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 60,
+        "max_speed_offroad_kmh": 40,
+        "max_speed_reverse_kmh": 4,
+        "range_road_km": 500,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.8,
+        "vertical_obstacle_m": 0.85,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "2A46M",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1800,
+          "effective_range_m": 4000,
+          "max_range_m": 5000,
+          "ammunition_carried": 45,
+          "ammunition_ready": 22,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "3BM42 Mango",
+              "penetration_mm_rha": 460,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "3BK29",
+              "penetration_mm_rha": 600,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "ATGM",
+              "designation": "9M119 Svir (AT-11 Sniper)",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 4000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "NSVT",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 300
+          },
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "9K120 Svir",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "Steel/composite with Kontakt-1 or Kontakt-5 ERA",
+        "protection_front_turret_mm_rha": 520,
+        "protection_front_hull_mm_rha": 450,
+        "protection_side_mm_rha": 80,
+        "protection_rear_mm_rha": 45,
+        "protection_top_mm_rha": 30,
+        "era_coverage": "Turret front, glacis, hull sides",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "turret_ring",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "1A40-1",
+        "gunner_sight": {
+          "type": "1K13-49",
+          "day_magnification": "8x",
+          "thermal": false
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 5000,
+        "ballistic_computer": true,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8,
+        "smoke_grenade_type": "902B Tucha"
+      },
+      "unit_cost_usd": 1200000,
+      "cost_year": 1990,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia T-72",
+        "Army Recognition T-72B",
+        "Weaponsystems.net T-72B"
+      ],
+      "notes": "Added ATGM capability (Svir), improved armor package. T-72BV/BM adds Kontakt-5 ERA. T-72B1 lacks ATGM capability.",
+      "year": 1985
+    },
+    {
+      "id": "ru-t72b3",
+      "name": "T-72B3",
+      "nato_designation": "T-72B3",
+      "type": "mbt",
+      "country_of_origin": "RU",
+      "manufacturer": "Uralvagonzavod",
+      "service_history": {
+        "introduced": 2010,
+        "retired": null,
+        "production_count": 1700,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 1100,
+            "variants": [
+              "T-72B3 mod.2011",
+              "T-72B3 mod.2016"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 20,
+            "variants": [
+              "T-72B3 mod.2016"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 46000,
+        "length_m": 6.95,
+        "length_gun_forward_m": 9.53,
+        "width_m": 3.59,
+        "height_m": 2.23,
+        "ground_clearance_m": 0.43
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-92S2",
+          "type": "diesel",
+          "power_hp": 1000,
+          "power_kw": 746
+        },
+        "power_to_weight_hp_ton": 21.7,
+        "transmission": "Manual, 7 forward, 1 reverse",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 60,
+        "max_speed_offroad_kmh": 45,
+        "max_speed_reverse_kmh": 4,
+        "range_road_km": 550,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.8,
+        "vertical_obstacle_m": 0.85,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "2A46M-5",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1800,
+          "effective_range_m": 4000,
+          "max_range_m": 5000,
+          "ammunition_carried": 45,
+          "ammunition_ready": 22,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "3BM44 Lekalo",
+              "penetration_mm_rha": 550,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "APFSDS",
+              "designation": "3BM59 Svinets-1",
+              "penetration_mm_rha": 650,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "ATGM",
+              "designation": "9M119M Refleks (AT-11 Sniper-B)",
+              "penetration_mm_rha": 750,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "Kord",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 300
+          },
+          {
+            "designation": "PKTM",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "9K119M Refleks-M",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "Base T-72B armor with Kontakt-5 ERA",
+        "protection_front_turret_mm_rha": 600,
+        "protection_front_hull_mm_rha": 500,
+        "protection_side_mm_rha": 80,
+        "protection_rear_mm_rha": 45,
+        "protection_top_mm_rha": 30,
+        "era_coverage": "Turret front, glacis plate",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "turret_ring",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Kalina",
+        "commander_sight": {
+          "type": "TKN-3MK (upgraded)",
+          "day_magnification": "5x",
+          "thermal": false,
+          "independent": false,
+          "hunter_killer": false
+        },
+        "gunner_sight": {
+          "type": "Sosna-U",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "2nd (Catherine-FC)"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 7500,
+        "ballistic_computer": true,
+        "battle_management_system": "Ainet",
+        "data_link": true,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8,
+        "smoke_grenade_type": "902B Tucha"
+      },
+      "unit_cost_usd": 2500000,
+      "cost_year": 2016,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia T-72",
+        "Army Recognition T-72B3",
+        "Weaponsystems.net T-72B3",
+        "GlobalSecurity T-72B3"
+      ],
+      "notes": "Deep modernization of T-72B stock. Upgraded to T-90A standard FCS and ammunition. Sosna-U thermal sight from France (Catherine-FC).",
+      "year": 2011
+    },
+    {
+      "id": "ru-t72b3m",
+      "name": "T-72B3M (T-72B4)",
+      "nato_designation": "T-72B3M",
+      "type": "mbt",
+      "country_of_origin": "RU",
+      "manufacturer": "Uralvagonzavod",
+      "service_history": {
+        "introduced": 2016,
+        "retired": null,
+        "production_count": 550,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 550,
+            "variants": [
+              "T-72B3M",
+              "T-72B3M mod.2022"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 120,
+            "variants": [
+              "T-72B3M"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 46500,
+        "length_m": 6.95,
+        "length_gun_forward_m": 9.53,
+        "width_m": 3.59,
+        "height_m": 2.23,
+        "ground_clearance_m": 0.43
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-92S2F",
+          "type": "diesel",
+          "power_hp": 1130,
+          "power_kw": 843
+        },
+        "power_to_weight_hp_ton": 24.3,
+        "transmission": "Automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 65,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 10,
+        "range_road_km": 550,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.8,
+        "vertical_obstacle_m": 0.85,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "2A46M-5",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1800,
+          "effective_range_m": 4000,
+          "max_range_m": 5000,
+          "ammunition_carried": 45,
+          "ammunition_ready": 22,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "3BM59 Svinets-1",
+              "penetration_mm_rha": 650,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "APFSDS",
+              "designation": "3BM60 Svinets-2",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "ATGM",
+              "designation": "9M119M1 Refleks-M",
+              "penetration_mm_rha": 900,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "Kord",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 300
+          },
+          {
+            "designation": "PKTM",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "9K119M Refleks-M",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "Base armor with Relikt ERA",
+        "protection_front_turret_mm_rha": 700,
+        "protection_front_hull_mm_rha": 600,
+        "protection_side_mm_rha": 150,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 40,
+        "era_coverage": "Turret front/sides, glacis, hull sides with Relikt ERA and soft-container ERA bags",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "turret_ring",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Kalina-2",
+        "commander_sight": {
+          "type": "PK PAN (Panoramic)",
+          "day_magnification": "5x/12x",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "Sosna-U",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "2nd (Catherine-FC)"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 7500,
+        "ballistic_computer": true,
+        "battle_management_system": "Ainet",
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true,
+        "driver_vision": {
+          "day": "TVN-5",
+          "night": "TVN-5",
+          "thermal": false
+        }
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8,
+        "smoke_grenade_type": "902B Tucha",
+        "ir_signature_reduction": true
+      },
+      "unit_cost_usd": 3000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia T-72",
+        "Army Recognition T-72B3M",
+        "Army Technology T-72B3M",
+        "GlobalSecurity T-72B4"
+      ],
+      "notes": "Latest T-72 variant. Relikt ERA, automatic transmission, improved reverse speed (10 km/h vs 4 km/h), panoramic commander sight with hunter-killer capability. Rear-view camera, digital displays.",
+      "year": 2016
+    }
+  ]
+}

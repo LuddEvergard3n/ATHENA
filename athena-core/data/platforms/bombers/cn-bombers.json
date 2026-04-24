@@ -1,0 +1,424 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-23",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "CSIS China Power",
+      "PLA sources"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "cn-h6k",
+      "name": "Xian H-6K",
+      "nato_name": null,
+      "type": "strategic_bomber",
+      "country_of_origin": "CN",
+      "manufacturer": "Xi'an Aircraft Corporation",
+      "service_history": {
+        "introduced": 2009,
+        "first_flight": 2007,
+        "retired": null,
+        "production_count": 160,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 160,
+            "status": "active",
+            "notes": "PLAAF"
+          }
+        ],
+        "notes": "China's primary strategic bomber"
+      },
+      "specifications": {
+        "crew": 4,
+        "length_m": 34.8,
+        "wingspan_m": 33.0,
+        "height_m": 10.36,
+        "empty_weight_kg": 37200,
+        "max_takeoff_weight_kg": 79000,
+        "internal_fuel_kg": 30000
+      },
+      "performance": {
+        "max_speed_kmh": 1050,
+        "max_speed_mach": 0.86,
+        "cruise_speed_kmh": 800,
+        "combat_radius_km": 3500,
+        "ferry_range_km": 8000,
+        "service_ceiling_m": 12000,
+        "notes": "Significantly improved over H-6A/E/D"
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Soloviev D-30KP-2",
+        "thrust_dry_kn": 118,
+        "notes": "Russian turbofans, replacing original WP-8"
+      },
+      "avionics": {
+        "radar": "KLC-1 AESA",
+        "radar_range_km": 200,
+        "terrain_following": "Integrated navigation/attack",
+        "ew_suite": "Integrated ECM",
+        "datalink": "Encrypted datalink",
+        "notes": "Modern glass cockpit, INS/GPS"
+      },
+      "armament": {
+        "internal_bay": false,
+        "external_pylons": 6,
+        "max_payload_kg": 12000,
+        "weapons": [
+          {
+            "type": "cruise",
+            "designation": "CJ-10 (KD-20)",
+            "quantity": 6,
+            "range_km": 2500,
+            "notes": "Land attack cruise missile"
+          },
+          {
+            "type": "anti_ship",
+            "designation": "YJ-12",
+            "quantity": 4,
+            "range_km": 400,
+            "notes": "Supersonic anti-ship missile"
+          },
+          {
+            "type": "anti_ship",
+            "designation": "YJ-63",
+            "quantity": 4,
+            "range_km": 200
+          },
+          {
+            "type": "anti_ship",
+            "designation": "YJ-100",
+            "quantity": 4,
+            "range_km": 800,
+            "notes": "Long-range anti-ship"
+          },
+          {
+            "type": "conventional",
+            "designation": "LS-6 / LT-2",
+            "notes": "Precision guided bombs"
+          }
+        ],
+        "notes": "External pylons only - no internal bomb bay (used for fuel)"
+      },
+      "operational_history": {
+        "notes": "Regular patrols into Pacific, Miyako Strait. Taiwan scenario primary platform. First Island Chain strike capability."
+      },
+      "variants": [
+        {
+          "designation": "H-6K",
+          "notes": "Cruise missile carrier"
+        },
+        {
+          "designation": "H-6G",
+          "notes": "Naval aviation variant"
+        }
+      ],
+      "unit_cost_usd": 40000000,
+      "cost_year": 2015,
+      "confidence": "medium",
+      "sources": [
+        "Jane's",
+        "CSIS",
+        "PLA media"
+      ],
+      "notes": "Modernized Tu-16 derivative. Internal bomb bay converted to fuel tank. External pylons for cruise missiles. Pacific reach capability. First Island Chain mission. 160+ in service.",
+      "year": 2009
+    },
+    {
+      "id": "cn-h6n",
+      "name": "Xian H-6N",
+      "nato_name": null,
+      "type": "strategic_bomber",
+      "country_of_origin": "CN",
+      "manufacturer": "Xi'an Aircraft Corporation",
+      "service_history": {
+        "introduced": 2020,
+        "first_flight": 2019,
+        "retired": null,
+        "production_count": 30,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 30,
+            "status": "active",
+            "notes": "PLAAF nuclear mission"
+          }
+        ],
+        "notes": "Nuclear-capable variant with air refueling"
+      },
+      "specifications": {
+        "crew": 4,
+        "length_m": 34.8,
+        "wingspan_m": 33.0,
+        "height_m": 10.36,
+        "empty_weight_kg": 38000,
+        "max_takeoff_weight_kg": 95000,
+        "notes": "Increased weight for air refueling capability"
+      },
+      "performance": {
+        "max_speed_kmh": 1000,
+        "max_speed_mach": 0.84,
+        "combat_radius_km": 5000,
+        "ferry_range_km": 10000,
+        "service_ceiling_m": 12000,
+        "notes": "Air refueling probe extends range significantly"
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "WS-18 or D-30KP-2",
+        "thrust_dry_kn": 120
+      },
+      "avionics": {
+        "radar": "KLC-1 AESA (improved)",
+        "radar_range_km": 250,
+        "ew_suite": "Enhanced ECM",
+        "datalink": "Advanced encrypted"
+      },
+      "armament": {
+        "internal_recess": true,
+        "external_pylons": 6,
+        "max_payload_kg": 15000,
+        "weapons": [
+          {
+            "type": "ballistic",
+            "designation": "DF-21D (ASBM carrier)",
+            "quantity": 1,
+            "notes": "Semi-recessed, air-launched ballistic missile"
+          },
+          {
+            "type": "hypersonic",
+            "designation": "DF-17 / Hypersonic glide vehicle",
+            "quantity": 1,
+            "notes": "Potential carrier platform"
+          },
+          {
+            "type": "cruise",
+            "designation": "CJ-20",
+            "quantity": 6,
+            "range_km": 2500,
+            "notes": "Improved cruise missile"
+          }
+        ],
+        "notes": "Semi-recessed fuselage for large missile. Air-launched ASBM capability."
+      },
+      "special_features": {
+        "air_refueling_probe": true,
+        "semi_recessed_hardpoint": true,
+        "notes": "First Chinese bomber with air refueling. Intercontinental range with tanker support. Can carry DF-21D air-launched variant."
+      },
+      "unit_cost_usd": 60000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Jane's",
+        "CSIS",
+        "DoD China reports"
+      ],
+      "notes": "Nuclear bomber variant. Air refueling probe adds intercontinental range. Semi-recessed hardpoint for hypersonic/ballistic missiles. Completes China's nuclear triad (land, sea, air). 30+ in service.",
+      "year": 2019
+    },
+    {
+      "id": "cn-h20",
+      "name": "Xian H-20",
+      "nato_name": null,
+      "type": "strategic_bomber",
+      "country_of_origin": "CN",
+      "manufacturer": "Xi'an Aircraft Corporation",
+      "service_history": {
+        "introduced": null,
+        "first_flight": null,
+        "retired": null,
+        "production_count": 0,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 0,
+            "status": "development"
+          }
+        ],
+        "notes": "China's first stealth bomber (in development)"
+      },
+      "specifications": {
+        "crew": 2,
+        "wingspan_m": 35,
+        "max_takeoff_weight_kg": 100000,
+        "notes": "Specifications estimated from available imagery"
+      },
+      "performance": {
+        "max_speed_kmh": 1000,
+        "max_speed_mach": 0.9,
+        "combat_radius_km": 4500,
+        "ferry_range_km": 8500,
+        "service_ceiling_m": 15000,
+        "notes": "Subsonic stealth design similar to B-2"
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "WS-10 derivative or new design",
+        "thrust_dry_kn": 90,
+        "notes": "Non-afterburning for stealth"
+      },
+      "avionics": {
+        "radar": "AESA (LPI design)",
+        "ew_suite": "Integrated stealth suite",
+        "datalink": "Advanced battle management"
+      },
+      "armament": {
+        "internal_bays": true,
+        "max_payload_kg": 20000,
+        "weapons": [
+          {
+            "type": "nuclear",
+            "designation": "CJ-20",
+            "notes": "Nuclear cruise missiles"
+          },
+          {
+            "type": "conventional",
+            "designation": "CJ-10K",
+            "notes": "Conventional cruise missiles"
+          },
+          {
+            "type": "hypersonic",
+            "designation": "Future hypersonic weapons",
+            "notes": "Designed for integration"
+          }
+        ]
+      },
+      "stealth": {
+        "design_features": [
+          "Flying wing",
+          "Radar absorbent materials",
+          "Buried engines",
+          "Serpentine inlets"
+        ],
+        "notes": "B-2 inspired design based on released imagery"
+      },
+      "unit_cost_usd": 800000000,
+      "cost_year": 2025,
+      "confidence": "low",
+      "sources": [
+        "AVIC teasers",
+        "DoD reports",
+        "Jane's"
+      ],
+      "notes": "China's first stealth bomber. Flying wing design. Silhouette revealed 2018. Will enable Second Island Chain strikes. First flight expected 2025-2027. Replace H-6 long-term.",
+      "year": 2025
+    },
+    {
+      "id": "cn-jh7a",
+      "name": "Xi'an JH-7A Flying Leopard",
+      "nato_name": "Flounder",
+      "type": "fighter_bomber",
+      "country_of_origin": "CN",
+      "manufacturer": "Xi'an Aircraft Corporation",
+      "service_history": {
+        "introduced": 2004,
+        "first_flight": 2002,
+        "retired": null,
+        "production_count": 240,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 200,
+            "status": "active",
+            "notes": "PLAN/PLAAF"
+          }
+        ],
+        "notes": "Chinese dedicated strike aircraft"
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 22.32,
+        "wingspan_m": 12.71,
+        "height_m": 6.22,
+        "empty_weight_kg": 14500,
+        "max_takeoff_weight_kg": 28475,
+        "internal_fuel_kg": 6000
+      },
+      "performance": {
+        "max_speed_kmh": 1808,
+        "max_speed_mach": 1.7,
+        "cruise_speed_kmh": 900,
+        "combat_radius_km": 1650,
+        "ferry_range_km": 3650,
+        "service_ceiling_m": 16000,
+        "max_g_load": 8.5
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "WS-9 (Rolls-Royce Spey derivative)",
+        "thrust_afterburner_kn": 91,
+        "thrust_dry_kn": 54
+      },
+      "avionics": {
+        "radar": "JL-10A pulse-Doppler",
+        "radar_range_km": 150,
+        "targeting_pod": "WMD-7 / K/JDC-01A",
+        "ew_suite": "BM/KG300G jamming pod"
+      },
+      "armament": {
+        "gun": {
+          "type": "Type 23-3 twin-barrel",
+          "caliber_mm": 23,
+          "rounds": 200
+        },
+        "external_pylons": 9,
+        "max_payload_kg": 6500,
+        "weapons": [
+          {
+            "type": "anti_ship",
+            "designation": "YJ-83K",
+            "quantity": 4,
+            "range_km": 180
+          },
+          {
+            "type": "anti_ship",
+            "designation": "YJ-91",
+            "quantity": 2,
+            "range_km": 50,
+            "notes": "Anti-radiation missile"
+          },
+          {
+            "type": "precision",
+            "designation": "LS-6 / LT-2 / FT series",
+            "notes": "Precision guided bombs"
+          },
+          {
+            "type": "aam",
+            "designation": "PL-8 / PL-5",
+            "quantity": 2,
+            "notes": "Self-defense"
+          }
+        ]
+      },
+      "variants": [
+        {
+          "designation": "JH-7",
+          "notes": "Original"
+        },
+        {
+          "designation": "JH-7A",
+          "notes": "Improved avionics, weapons"
+        },
+        {
+          "designation": "JH-7B",
+          "notes": "Proposed further upgrade"
+        }
+      ],
+      "unit_cost_usd": 25000000,
+      "cost_year": 2010,
+      "confidence": "medium",
+      "sources": [
+        "Jane's",
+        "CSIS"
+      ],
+      "notes": "'Flying Leopard'. Dedicated strike aircraft (F-111/Tornado equivalent). PLAN primary anti-ship platform. 200+ in service. Being supplemented by J-16.",
+      "year": 2004
+    }
+  ]
+}

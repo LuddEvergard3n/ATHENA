@@ -1,0 +1,318 @@
+{
+  "category": "tanks",
+  "subcategory": "regional-legacy",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": ["IISS Military Balance 2024", "Jane's Land Warfare Platforms"]
+  },
+  "platforms": [
+    {
+      "id": "cn-type59",
+      "name": "Type 59",
+      "type": "mbt",
+      "country": "CN",
+      "year": 1959,
+      "manufacturer": "NORINCO",
+      "service_history": {
+        "introduced": 1959,
+        "production_count": 10000,
+        "operators": [
+          {"country": "CN", "quantity": 500, "status": "reserve"},
+          {"country": "PK", "quantity": 1200, "status": "active", "notes": "Various upgrades"},
+          {"country": "BD", "quantity": 200, "status": "active"},
+          {"country": "MM", "quantity": 100, "status": "active"},
+          {"country": "KP", "quantity": 500, "status": "active"}
+        ]
+      },
+      "specifications": {
+        "combat_weight_kg": 36000,
+        "crew": 4
+      },
+      "armament": {"main_gun": "100mm Type 59"},
+      "notes": "Chinese T-54A copy, still widely used"
+    },
+    {
+      "id": "cn-type69",
+      "name": "Type 69/79",
+      "type": "mbt",
+      "country": "CN",
+      "year": 1969,
+      "manufacturer": "NORINCO",
+      "service_history": {
+        "introduced": 1969,
+        "production_count": 3000,
+        "operators": [
+          {"country": "CN", "quantity": 200, "status": "reserve"},
+          {"country": "PK", "quantity": 400, "status": "active"},
+          {"country": "BD", "quantity": 100, "status": "active"},
+          {"country": "MM", "quantity": 80, "status": "active"}
+        ]
+      },
+      "armament": {"main_gun": "100mm smoothbore"},
+      "notes": "Improved Type 59"
+    },
+    {
+      "id": "kp-chonmaho",
+      "name": "Chonma-ho",
+      "type": "mbt",
+      "country": "KP",
+      "year": 1976,
+      "manufacturer": "DPRK",
+      "service_history": {
+        "introduced": 1976,
+        "production_count": 1000,
+        "operators": [
+          {"country": "KP", "quantity": 800, "status": "active"}
+        ]
+      },
+      "specifications": {
+        "combat_weight_kg": 44000
+      },
+      "armament": {"main_gun": "115mm smoothbore"},
+      "notes": "T-62 derivative, multiple variants"
+    },
+    {
+      "id": "kp-pokpungho",
+      "name": "Pokpung-ho (Storm Tiger)",
+      "type": "mbt",
+      "country": "KP",
+      "year": 2002,
+      "manufacturer": "DPRK",
+      "service_history": {
+        "introduced": 2002,
+        "production_count": 500,
+        "operators": [
+          {"country": "KP", "quantity": 500, "status": "active"}
+        ]
+      },
+      "specifications": {
+        "combat_weight_kg": 44000
+      },
+      "armament": {"main_gun": "125mm smoothbore", "atgm": "Bulsae-3 ATGM"},
+      "notes": "Most advanced DPRK tank"
+    },
+    {
+      "id": "ir-zulfiqar",
+      "name": "Zulfiqar",
+      "type": "mbt",
+      "country": "IR",
+      "year": 1997,
+      "manufacturer": "DIO",
+      "service_history": {
+        "introduced": 1997,
+        "production_count": 200,
+        "operators": [
+          {"country": "IR", "quantity": 200, "status": "active"}
+        ]
+      },
+      "specifications": {
+        "combat_weight_kg": 48000
+      },
+      "armament": {"main_gun": "125mm smoothbore"},
+      "notes": "Indigenous design with M48/M60/T-72 influence"
+    },
+    {
+      "id": "vn-t54m3",
+      "name": "T-54M3 (Israel upgrade)",
+      "type": "mbt",
+      "country": "VN",
+      "year": 2019,
+      "manufacturer": "Elbit/Z199",
+      "service_history": {
+        "introduced": 2019,
+        "production_count": 200,
+        "operators": [
+          {"country": "VN", "quantity": 200, "status": "active"}
+        ]
+      },
+      "armament": {"main_gun": "105mm M68", "fcs": "Modern Israeli FCS"},
+      "notes": "Israeli-upgraded T-54/55"
+    },
+    {
+      "id": "th-oplot",
+      "name": "T-84 Oplot-T (Thailand)",
+      "type": "mbt",
+      "country": "TH",
+      "year": 2014,
+      "manufacturer": "KMDB",
+      "service_history": {
+        "introduced": 2014,
+        "production_count": 49,
+        "operators": [
+          {"country": "TH", "quantity": 49, "status": "active"}
+        ]
+      },
+      "specifications": {
+        "combat_weight_kg": 51000
+      },
+      "armament": {"main_gun": "125mm KBA-3"},
+      "notes": "Thai export Oplot-M"
+    },
+    {
+      "id": "my-pt91m",
+      "name": "PT-91M Pendekar",
+      "type": "mbt",
+      "country": "MY",
+      "year": 2010,
+      "manufacturer": "Bumar-Łabędy",
+      "service_history": {
+        "introduced": 2010,
+        "production_count": 48,
+        "operators": [
+          {"country": "MY", "quantity": 48, "status": "active"}
+        ]
+      },
+      "armament": {"main_gun": "125mm 2A46MS"},
+      "notes": "Polish T-72 derivative for Malaysia"
+    },
+    {
+      "id": "id-leopard2ri",
+      "name": "Leopard 2RI",
+      "type": "mbt",
+      "country": "ID",
+      "year": 2014,
+      "manufacturer": "Rheinmetall",
+      "service_history": {
+        "introduced": 2014,
+        "production_count": 103,
+        "operators": [
+          {"country": "ID", "quantity": 103, "status": "active"}
+        ]
+      },
+      "specifications": {
+        "combat_weight_kg": 62500
+      },
+      "armament": {"main_gun": "120mm L/55"},
+      "notes": "Indonesian Leopard 2A4 upgrade"
+    },
+    {
+      "id": "ar-tam",
+      "name": "TAM (Tanque Argentino Mediano)",
+      "type": "medium-tank",
+      "country": "AR",
+      "year": 1979,
+      "manufacturer": "TAMSE",
+      "service_history": {
+        "introduced": 1979,
+        "production_count": 350,
+        "operators": [
+          {"country": "AR", "quantity": 200, "status": "active"}
+        ]
+      },
+      "specifications": {
+        "combat_weight_kg": 30500,
+        "max_speed_kmh": 75
+      },
+      "armament": {"main_gun": "105mm FM K.4 Modelo 1L"},
+      "notes": "Marder chassis, Argentine design"
+    },
+    {
+      "id": "cl-leopard2a4chl",
+      "name": "Leopard 2A4CHL",
+      "type": "mbt",
+      "country": "CL",
+      "year": 2007,
+      "manufacturer": "KMW",
+      "service_history": {
+        "introduced": 2007,
+        "production_count": 202,
+        "operators": [
+          {"country": "CL", "quantity": 202, "status": "active"}
+        ]
+      },
+      "armament": {"main_gun": "120mm L/44"},
+      "notes": "Chilean Leopard 2A4 with upgrades"
+    },
+    {
+      "id": "pe-mbt2000",
+      "name": "MBT-2000 (Peru - CANCELLED)",
+      "type": "mbt",
+      "country": "PE",
+      "year": 2009,
+      "manufacturer": "NORINCO",
+      "service_history": {
+        "introduced": null,
+        "production_count": 0,
+        "operators": [
+          {"country": "PE", "quantity": 0, "status": "cancelled", "notes": "Deal collapsed. 5 demo tanks returned to China."}
+        ]
+      },
+      "armament": {"main_gun": "125mm smoothbore"},
+      "notes": "DEAL CANCELLED. 5 demonstrators shipped to Lima Nov 2009, paraded Dec 8 2009. Failed technical requirements, data tampering in evaluation tables, corruption charges against Gen. Otto Guibovich. Ukrainian 6TD-2 engine lacked export authorization. Tanks returned to China. Peru never acquired MBT-2000."
+    },
+    {
+      "id": "sa-m1a2sa",
+      "name": "M1A2S Abrams",
+      "type": "mbt",
+      "country": "SA",
+      "year": 2014,
+      "manufacturer": "General Dynamics",
+      "service_history": {
+        "introduced": 2014,
+        "production_count": 400,
+        "operators": [
+          {"country": "SA", "quantity": 400, "status": "active"}
+        ]
+      },
+      "armament": {"main_gun": "120mm M256"},
+      "notes": "Saudi-specific M1A2"
+    },
+    {
+      "id": "kw-m1a2k",
+      "name": "M1A2K Abrams",
+      "type": "mbt",
+      "country": "KW",
+      "year": 1994,
+      "manufacturer": "General Dynamics",
+      "service_history": {
+        "introduced": 1994,
+        "production_count": 218,
+        "operators": [
+          {"country": "KW", "quantity": 218, "status": "active"}
+        ]
+      },
+      "armament": {"main_gun": "120mm M256"},
+      "notes": "Kuwaiti M1A2"
+    },
+    {
+      "id": "de-leopard2a7v",
+      "name": "Leopard 2A7V",
+      "type": "mbt",
+      "country": "DE",
+      "year": 2019,
+      "manufacturer": "KMW",
+      "service_history": {
+        "introduced": 2019,
+        "production_count": 104,
+        "operators": [
+          {"country": "DE", "quantity": 104, "status": "active"}
+        ]
+      },
+      "specifications": {
+        "combat_weight_kg": 67000
+      },
+      "armament": {"main_gun": "120mm L/55"},
+      "protection": {"aps": "Trophy integration planned"},
+      "notes": "Latest German Leopard standard"
+    },
+    {
+      "id": "no-leopard2a7no",
+      "name": "Leopard 2A8NO",
+      "type": "mbt",
+      "country": "NO",
+      "year": 2026,
+      "manufacturer": "KMW",
+      "service_history": {
+        "introduced": 2026,
+        "production_count": 54,
+        "operators": [
+          {"country": "NO", "quantity": 54, "status": "ordered"}
+        ]
+      },
+      "armament": {"main_gun": "120mm L/55A1"},
+      "protection": {"aps": "Trophy"},
+      "notes": "Norwegian Leopard 2A8"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "platforms": [
+    {
+      "id": "ru-dshk-hmg",
+      "name": "DShK 1938/46",
+      "type": "heavy_machine_gun",
+      "country_of_origin": "RU",
+      "manufacturer": "Various (Soviet/Russian)",
+      "full_name": "Degtyaryova-Shpagina Krupnokaliberny",
+      "service_entry": 1938,
+      "specifications": {
+        "caliber": "12.7x108mm",
+        "length_mm": 1625,
+        "barrel_length_mm": 1070,
+        "weight_body_kg": 33.5,
+        "weight_tripod_kg": 44,
+        "rate_of_fire_rpm": 600,
+        "muzzle_velocity_m_s": 850,
+        "effective_range_m": 2000,
+        "max_range_m": 7000,
+        "feed": "50-round belt"
+      },
+      "service_history": {
+        "introduced": 1938,
+        "status": "active",
+        "operators_count": 60,
+        "note": "Still widely used globally"
+      },
+      "combat_use": [
+        {"conflict": "WWII", "year": 1941},
+        {"conflict": "Korea", "year": 1950},
+        {"conflict": "Vietnam", "year": 1965},
+        {"conflict": "Afghanistan", "year": 1979},
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "notes": "Legendary Soviet HMG. Still in service 85+ years later. Mounted on vehicles, tripod, AA. DShKM improved version."
+    },
+    {
+      "id": "us-m252-81mm-mortar",
+      "name": "M252 81mm Mortar",
+      "type": "medium_mortar",
+      "country_of_origin": "US",
+      "manufacturer": "Watervliet Arsenal",
+      "service_entry": 1987,
+      "specifications": {
+        "caliber_mm": 81,
+        "length_mm": 1280,
+        "weight_kg": 41,
+        "barrel_weight_kg": 12.7,
+        "baseplate_kg": 11.6,
+        "bipod_kg": 12.3,
+        "max_range_m": 5935,
+        "min_range_m": 83,
+        "rate_of_fire_rpm": 30,
+        "sustained_rpm": 15
+      },
+      "ammunition": [
+        {"type": "M821 HE", "weight_kg": 4.2},
+        {"type": "M853A1 Illumination"},
+        {"type": "M819 RP Smoke"},
+        {"type": "M889A1 IR Illumination"},
+        {"type": "XM983 Precision Guided (PGMM)"}
+      ],
+      "service_history": {
+        "introduced": 1987,
+        "status": "active",
+        "operators": [
+          {"country": "US", "quantity": 5000},
+          {"country": "GB", "quantity": 1500, "name": "L16A2"}
+        ]
+      },
+      "notes": "Standard NATO 81mm mortar. Based on British L16. Infantry battalion organic fire support."
+    },
+    {
+      "id": "ru-2b14-podnos-82mm",
+      "name": "2B14 Podnos 82mm Mortar",
+      "type": "medium_mortar",
+      "country_of_origin": "RU",
+      "manufacturer": "Motovilikha Plants",
+      "service_entry": 1983,
+      "specifications": {
+        "caliber_mm": 82,
+        "weight_kg": 42,
+        "max_range_m": 4000,
+        "min_range_m": 80,
+        "rate_of_fire_rpm": 24
+      },
+      "ammunition": [
+        {"type": "O-832DU HE"},
+        {"type": "3-O-26 Illumination"},
+        {"type": "D-832A Smoke"}
+      ],
+      "service_history": {
+        "introduced": 1983,
+        "status": "active",
+        "operators": [{"country": "RU", "quantity": 3000}]
+      },
+      "combat_use": [
+        {"conflict": "Chechnya", "year": 1994},
+        {"conflict": "Syria", "year": 2015},
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "notes": "Standard Russian 82mm mortar. Man-portable. Battalion level fire support."
+    },
+    {
+      "id": "fr-pgm-hecate-ii",
+      "name": "PGM Hecate II",
+      "type": "anti_materiel_rifle",
+      "country_of_origin": "FR",
+      "manufacturer": "PGM Précision",
+      "service_entry": 1993,
+      "specifications": {
+        "caliber": ".50 BMG (12.7x99mm)",
+        "length_mm": 1380,
+        "barrel_length_mm": 700,
+        "weight_kg": 13.8,
+        "magazine": 7,
+        "muzzle_velocity_m_s": 825,
+        "effective_range_m": 1800,
+        "max_range_m": 2000
+      },
+      "features": {
+        "action": "Bolt-action",
+        "muzzle_brake": true,
+        "folding_stock": true
+      },
+      "service_history": {
+        "introduced": 1993,
+        "status": "active",
+        "operators": [
+          {"country": "FR", "quantity": 500},
+          {"country": "AE", "quantity": 100},
+          {"country": "IN", "quantity": 50}
+        ]
+      },
+      "unit_cost_usd": 12000,
+      "notes": "French .50 cal sniper/AMR. Used by French special forces. Anti-materiel and EOR role."
+    },
+    {
+      "id": "jp-type-89-torpedo",
+      "name": "Type 89 Torpedo",
+      "type": "heavyweight_torpedo",
+      "country_of_origin": "JP",
+      "manufacturer": "Mitsubishi Heavy Industries",
+      "service_entry": 1989,
+      "specifications": {
+        "diameter_mm": 533,
+        "length_m": 6.0,
+        "weight_kg": 1760,
+        "warhead_kg": 267,
+        "range_km": 50,
+        "max_speed_knots": 55
+      },
+      "guidance": {
+        "active_passive_sonar": true,
+        "wire_guided": true
+      },
+      "propulsion": "Silver-zinc battery",
+      "platforms": ["Soryu-class", "Taigei-class", "P-1 aircraft"],
+      "service_history": {
+        "introduced": 1989,
+        "status": "active"
+      },
+      "notes": "Japanese standard heavyweight torpedo. Replaces US Mk 37. Submarine and air-launched variants."
+    },
+    {
+      "id": "ru-91r-otvet-asw",
+      "name": "91R Otvet (Answer)",
+      "type": "asw_rocket",
+      "country_of_origin": "RU",
+      "manufacturer": "Novator Design Bureau",
+      "service_entry": 2010,
+      "specifications": {
+        "length_m": 7.65,
+        "diameter_mm": 533,
+        "weight_kg": 2050,
+        "range_km": 40,
+        "payload": "Small torpedo (MPT-1)"
+      },
+      "guidance": {
+        "midcourse": "Inertial",
+        "terminal": "Torpedo guidance"
+      },
+      "platforms": ["Yasen-class SSGN", "Gorshkov-class frigate", "Improved Kilo"],
+      "service_history": {
+        "introduced": 2010,
+        "status": "active"
+      },
+      "notes": "Russian rocket-propelled ASW weapon. Delivers small torpedo to target area. VLS compatible."
+    }
+  ]
+}

@@ -1,0 +1,732 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "ru-t80b",
+      "name": "T-80B",
+      "nato_designation": "T-80B",
+      "type": "mbt",
+      "country_of_origin": "SU",
+      "manufacturer": "Kirov Plant (LKZ)",
+      "service_history": {
+        "introduced": 1978,
+        "retired": null,
+        "production_count": 4500,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 200,
+            "variants": [
+              "T-80B",
+              "T-80BV"
+            ],
+            "status": "reserve"
+          },
+          {
+            "country": "UA",
+            "quantity": 50,
+            "variants": [
+              "T-80BV"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 42500,
+        "length_m": 6.98,
+        "length_gun_forward_m": 9.65,
+        "width_m": 3.58,
+        "height_m": 2.2,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "GTD-1000TF",
+          "type": "gas_turbine",
+          "power_hp": 1000,
+          "power_kw": 746
+        },
+        "power_to_weight_hp_ton": 23.5,
+        "transmission": "Manual, 4 forward, 1 reverse",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 12,
+        "range_road_km": 335,
+        "fuel_capacity_liters": 1100,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.85,
+        "vertical_obstacle_m": 1.0,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "2A46-2",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "autoloader_type": "carousel",
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1715,
+          "effective_range_m": 4000,
+          "ammunition_carried": 38,
+          "ammunition_ready": 28,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "3BM22",
+              "penetration_mm_rha": 430,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "APFSDS",
+              "designation": "3BM32",
+              "penetration_mm_rha": 500,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "3BK18M",
+              "penetration_mm_rha": 550,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE-FRAG",
+              "designation": "3OF26",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 4000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "NSVT",
+            "caliber_mm": 12.7,
+            "mount": "commander_cupola",
+            "ammunition_carried": 300
+          },
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 1250
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite",
+        "armor_composition": "Steel/glass-textolite composite",
+        "protection_front_turret_mm_rha": 500,
+        "protection_front_hull_mm_rha": 450,
+        "protection_side_mm_rha": 80,
+        "protection_rear_mm_rha": 45,
+        "protection_top_mm_rha": 30,
+        "era_coverage": "T-80BV has Kontakt-1 ERA",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "hull_floor",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "1A33",
+        "commander_sight": {
+          "type": "TKN-3V",
+          "day_magnification": "5x",
+          "thermal": false,
+          "independent": true,
+          "hunter_killer": false
+        },
+        "gunner_sight": {
+          "type": "1G42",
+          "day_magnification": "8x",
+          "thermal": false
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 4000,
+        "ballistic_computer": true,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8,
+        "smoke_grenade_type": "Tucha"
+      },
+      "unit_cost_usd": 1200000,
+      "cost_year": 1985,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia T-80",
+        "Army Recognition T-80",
+        "Military-Today T-80"
+      ],
+      "notes": "First Soviet tank with gas turbine engine. High fuel consumption (3-5x diesel). Excellent cold-weather starting. Kontakt-1 ERA on BV variant.",
+      "year": 1978
+    },
+    {
+      "id": "ru-t80u",
+      "name": "T-80U",
+      "nato_designation": "T-80U",
+      "type": "mbt",
+      "country_of_origin": "SU",
+      "manufacturer": "Omsk Transmash",
+      "service_history": {
+        "introduced": 1985,
+        "retired": null,
+        "production_count": 700,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 150,
+            "variants": [
+              "T-80U"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "quantity": 33,
+            "variants": [
+              "T-80U"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "CY",
+            "quantity": 41,
+            "variants": [
+              "T-80U"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 46000,
+        "length_m": 7.01,
+        "length_gun_forward_m": 9.65,
+        "width_m": 3.6,
+        "height_m": 2.22,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "GTD-1250",
+          "type": "gas_turbine",
+          "power_hp": 1250,
+          "power_kw": 932
+        },
+        "power_to_weight_hp_ton": 27.2,
+        "transmission": "Manual, 4 forward, 1 reverse",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 12,
+        "range_road_km": 440,
+        "fuel_capacity_liters": 1840,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.85,
+        "vertical_obstacle_m": 1.0,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "2A46M-1",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "autoloader_type": "carousel",
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1715,
+          "effective_range_m": 5000,
+          "ammunition_carried": 45,
+          "ammunition_ready": 28,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "3BM42 Mango",
+              "penetration_mm_rha": 520,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "APFSDS",
+              "designation": "3BM46 Svinets",
+              "penetration_mm_rha": 600,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "3BK29M",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE-FRAG",
+              "designation": "3OF26",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 4000
+            },
+            {
+              "type": "ATGM",
+              "designation": "9M119 Refleks",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "NSVT",
+            "caliber_mm": 12.7,
+            "mount": "commander_cupola",
+            "ammunition_carried": 300
+          },
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 1250
+          }
+        ],
+        "atgm": {
+          "designation": "9M119 Refleks",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "Multi-layer composite with Kontakt-5 ERA",
+        "protection_front_turret_mm_rha": 780,
+        "protection_front_hull_mm_rha": 650,
+        "protection_side_mm_rha": 100,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 40,
+        "era_coverage": "Full frontal arc with Kontakt-5",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "hull_floor",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "1A45 Irtysh",
+        "commander_sight": {
+          "type": "PNK-4S",
+          "day_magnification": "5x",
+          "thermal": false,
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "1G46",
+          "day_magnification": "2.7x/8x",
+          "thermal": false
+        },
+        "thermal_sight": {
+          "type": "Agava-2",
+          "generation": "2nd",
+          "range_m": 2500
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 5000,
+        "ballistic_computer": true,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8,
+        "smoke_grenade_type": "Tucha"
+      },
+      "unit_cost_usd": 2500000,
+      "cost_year": 1992,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia T-80U",
+        "Army Recognition T-80U",
+        "Military-Today T-80U"
+      ],
+      "notes": "Improved T-80 with better armor and ATGM capability. Kontakt-5 ERA defeats long-rod APFSDS. Exported to South Korea and Cyprus.",
+      "year": 1985
+    },
+    {
+      "id": "ru-t80bvm",
+      "name": "T-80BVM",
+      "nato_designation": "T-80BVM",
+      "type": "mbt",
+      "country_of_origin": "RU",
+      "manufacturer": "Omsktransmash",
+      "service_history": {
+        "introduced": 2017,
+        "retired": null,
+        "production_count": 300,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 300,
+            "variants": [
+              "T-80BVM"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 46000,
+        "length_m": 7.01,
+        "length_gun_forward_m": 9.65,
+        "width_m": 3.6,
+        "height_m": 2.22,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "GTD-1250TF",
+          "type": "gas_turbine",
+          "power_hp": 1250,
+          "power_kw": 932
+        },
+        "power_to_weight_hp_ton": 27.2,
+        "transmission": "Manual, 4 forward, 1 reverse",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 12,
+        "range_road_km": 500,
+        "fuel_capacity_liters": 1840,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.85,
+        "vertical_obstacle_m": 1.0,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "2A46M-4",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "autoloader_type": "carousel",
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1700,
+          "effective_range_m": 5000,
+          "ammunition_carried": 45,
+          "ammunition_ready": 28,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "3BM59 Svinets-1",
+              "penetration_mm_rha": 650,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "APFSDS",
+              "designation": "3BM60 Svinets-2",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "3BK31",
+              "penetration_mm_rha": 650,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE-FRAG",
+              "designation": "3OF26",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 4000
+            },
+            {
+              "type": "ATGM",
+              "designation": "9M119M1 Invar-M",
+              "penetration_mm_rha": 900,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "Kord",
+            "caliber_mm": 12.7,
+            "mount": "commander_cupola",
+            "ammunition_carried": 300
+          },
+          {
+            "designation": "PKTM",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 1250
+          }
+        ],
+        "atgm": {
+          "designation": "9M119M1 Invar-M",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "Multi-layer composite with Relikt ERA",
+        "protection_front_turret_mm_rha": 900,
+        "protection_front_hull_mm_rha": 800,
+        "protection_side_mm_rha": 250,
+        "protection_rear_mm_rha": 60,
+        "protection_top_mm_rha": 50,
+        "era_coverage": "Full coverage with Relikt ERA",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "hull_floor",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Sosna-U",
+        "commander_sight": {
+          "type": "PK PAN",
+          "day_magnification": "5x/12x",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "Sosna-U",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 7500,
+        "ballistic_computer": true,
+        "battle_management_system": true,
+        "data_link": true,
+        "gps": true,
+        "glonass": true,
+        "inertial_navigation": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "Tucha/IR"
+      },
+      "unit_cost_usd": 3500000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia T-80BVM",
+        "Army Recognition T-80BVM",
+        "Military-Today T-80BVM"
+      ],
+      "notes": "Deep modernization of T-80BV. Relikt ERA, Sosna-U thermal sights, modern ammo. Gas turbine retained. Extensively used in Ukraine conflict.",
+      "year": 2017
+    },
+    {
+      "id": "ua-t80ud",
+      "name": "T-80UD Bereza",
+      "nato_designation": "T-80UD",
+      "type": "mbt",
+      "country_of_origin": "UA",
+      "manufacturer": "Malyshev Factory",
+      "service_history": {
+        "introduced": 1987,
+        "retired": null,
+        "production_count": 800,
+        "operators": [
+          {
+            "country": "UA",
+            "quantity": 100,
+            "variants": [
+              "T-80UD"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 320,
+            "variants": [
+              "T-80UD"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 46000,
+        "length_m": 7.01,
+        "length_gun_forward_m": 9.65,
+        "width_m": 3.58,
+        "height_m": 2.2,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "6TD-1",
+          "type": "diesel_two-stroke",
+          "power_hp": 1000,
+          "power_kw": 746
+        },
+        "power_to_weight_hp_ton": 21.7,
+        "transmission": "Manual, 7 forward, 1 reverse",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 65,
+        "max_speed_offroad_kmh": 45,
+        "max_speed_reverse_kmh": 12,
+        "range_road_km": 560,
+        "fuel_capacity_liters": 1100,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.85,
+        "vertical_obstacle_m": 1.0,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "2A46M-1",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "autoloader_type": "carousel",
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1715,
+          "effective_range_m": 5000,
+          "ammunition_carried": 45,
+          "ammunition_ready": 28,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "3BM42 Mango",
+              "penetration_mm_rha": 520,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "3BK29M",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE-FRAG",
+              "designation": "3OF26",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 4000
+            },
+            {
+              "type": "ATGM",
+              "designation": "9M119 Refleks",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "NSVT",
+            "caliber_mm": 12.7,
+            "mount": "commander_cupola",
+            "ammunition_carried": 300
+          },
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 1250
+          }
+        ],
+        "atgm": {
+          "designation": "9M119 Refleks",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "Composite armor with Kontakt-5 ERA",
+        "protection_front_turret_mm_rha": 700,
+        "protection_front_hull_mm_rha": 580,
+        "protection_side_mm_rha": 100,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 40,
+        "era_coverage": "Turret and glacis with Kontakt-5",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "hull_floor",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "1A45 Irtysh",
+        "commander_sight": {
+          "type": "PNK-4S",
+          "day_magnification": "5x",
+          "thermal": false,
+          "independent": true,
+          "hunter_killer": false
+        },
+        "gunner_sight": {
+          "type": "1G46",
+          "day_magnification": "2.7x/8x",
+          "thermal": false
+        },
+        "thermal_sight": {
+          "type": "Buran-Catherine-E",
+          "generation": "2nd",
+          "range_m": 4000
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 5000,
+        "ballistic_computer": true,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8,
+        "smoke_grenade_type": "Tucha"
+      },
+      "unit_cost_usd": 2000000,
+      "cost_year": 1995,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia T-80UD",
+        "Army Recognition T-80UD",
+        "Military-Today T-80UD"
+      ],
+      "notes": "Ukrainian-built T-80 with 6TD diesel engine instead of gas turbine. Better fuel economy than GTD variants. Exported to Pakistan.",
+      "year": 1985
+    }
+  ]
+}

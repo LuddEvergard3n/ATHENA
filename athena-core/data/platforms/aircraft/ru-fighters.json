@@ -1,0 +1,574 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-22",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "Russian MoD",
+      "Sukhoi"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "ru-su57",
+      "name": "Su-57 Felon",
+      "nato_name": "Felon",
+      "type": "stealth_multirole",
+      "generation": "5",
+      "country_of_origin": "RU",
+      "manufacturer": "Sukhoi (UAC)",
+      "service_history": {
+        "introduced": 2020,
+        "first_flight": 2010,
+        "retired": null,
+        "production_count": 30,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 30,
+            "status": "active",
+            "notes": "76 ordered, slow production"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 20.1,
+        "wingspan_m": 14.1,
+        "height_m": 4.74,
+        "empty_weight_kg": 18500,
+        "max_takeoff_weight_kg": 35000,
+        "internal_fuel_kg": 10300,
+        "hardpoints": 12,
+        "internal_weapon_bays": 4
+      },
+      "performance": {
+        "max_speed_kmh": 2600,
+        "max_speed_mach": 2.0,
+        "supercruise_mach": 1.6,
+        "combat_radius_km": 1500,
+        "ferry_range_km": 3500,
+        "service_ceiling_m": 20000,
+        "max_g_load": 9,
+        "thrust_to_weight": 1.13
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Saturn AL-41F1S (Izdeliye 117S)",
+        "thrust_afterburner_kn": 147,
+        "thrust_vectoring": true,
+        "notes": "3D thrust vectoring"
+      },
+      "avionics": {
+        "radar": "N036 Byelka AESA",
+        "radar_range_km": 400,
+        "additional_radars": [
+          "L-band wing radars (anti-stealth)"
+        ],
+        "irst": "101KS Atoll",
+        "ew_suite": "L402 Himalayas",
+        "sensor_fusion": true
+      },
+      "armament": {
+        "gun": {
+          "type": "GSh-30-1",
+          "caliber_mm": 30,
+          "rounds": 150
+        },
+        "air_to_air_internal": [
+          "R-77M (6)",
+          "R-74M2 (2)"
+        ],
+        "air_to_ground_internal": [
+          "Kh-59MK2",
+          "Kh-38M"
+        ],
+        "external_options": [
+          "R-37M (300km range)",
+          "Kh-35U"
+        ]
+      },
+      "stealth": {
+        "rcs_estimate_m2": 0.1,
+        "notes": "RCS disputed - larger than Western 5th gen"
+      },
+      "unit_cost_usd": 50000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Sukhoi",
+        "Russian MoD",
+        "Jane's"
+      ],
+      "notes": "Russia's first 5th-gen fighter. Limited production. Ukraine: deployed 2022 for standoff strikes. India withdrew from joint program (FGFA).",
+      "year": 2020
+    },
+    {
+      "id": "ru-su35s",
+      "name": "Su-35S Flanker-E",
+      "nato_name": "Flanker-E",
+      "type": "air_superiority",
+      "generation": "4++",
+      "country_of_origin": "RU",
+      "manufacturer": "Sukhoi (UAC)",
+      "service_history": {
+        "introduced": 2014,
+        "first_flight": 2008,
+        "retired": null,
+        "production_count": 150,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 110,
+            "status": "active"
+          },
+          {
+            "country": "CN",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "quantity": 24,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 21.9,
+        "wingspan_m": 15.3,
+        "height_m": 5.9,
+        "empty_weight_kg": 18400,
+        "max_takeoff_weight_kg": 34500,
+        "internal_fuel_kg": 11500,
+        "hardpoints": 12
+      },
+      "performance": {
+        "max_speed_kmh": 2500,
+        "max_speed_mach": 2.25,
+        "combat_radius_km": 1600,
+        "ferry_range_km": 4500,
+        "service_ceiling_m": 18000,
+        "max_g_load": 9,
+        "thrust_to_weight": 1.1
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Saturn AL-41F1S (117S)",
+        "thrust_afterburner_kn": 142,
+        "thrust_vectoring": true
+      },
+      "avionics": {
+        "radar": "Irbis-E PESA",
+        "radar_range_km": 350,
+        "irst": "OLS-35",
+        "ew_suite": "L175M Khibiny-M"
+      },
+      "armament": {
+        "gun": {
+          "type": "GSh-30-1",
+          "caliber_mm": 30,
+          "rounds": 150
+        },
+        "air_to_air": [
+          "R-27ER/ET",
+          "R-77-1",
+          "R-73M",
+          "R-37M"
+        ],
+        "air_to_ground": [
+          "Kh-29",
+          "Kh-31",
+          "Kh-38",
+          "KAB-500/1500"
+        ],
+        "max_payload_kg": 8000
+      },
+      "unit_cost_usd": 65000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Sukhoi",
+        "Russian MoD",
+        "Jane's"
+      ],
+      "notes": "Russia's most capable operational fighter. '4++ generation'. Supermaneuverability. Ukraine: extensive combat, losses to SAMs.",
+      "year": 2014
+    },
+    {
+      "id": "ru-su30sm",
+      "name": "Su-30SM/SM2 Flanker-H",
+      "nato_name": "Flanker-H",
+      "type": "multirole_fighter",
+      "generation": "4+",
+      "country_of_origin": "RU",
+      "manufacturer": "Irkut (UAC)",
+      "service_history": {
+        "introduced": 2012,
+        "first_flight": 2012,
+        "retired": null,
+        "production_count": 140,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 130,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 272,
+            "variants": [
+              "Su-30MKI"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "DZ",
+            "quantity": 58,
+            "variants": [
+              "Su-30MKA"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "VN",
+            "quantity": 36,
+            "variants": [
+              "Su-30MK2"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "MY",
+            "quantity": 18,
+            "variants": [
+              "Su-30MKM"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 21.9,
+        "wingspan_m": 14.7,
+        "empty_weight_kg": 18800,
+        "max_takeoff_weight_kg": 34500,
+        "hardpoints": 12
+      },
+      "performance": {
+        "max_speed_kmh": 2125,
+        "max_speed_mach": 2.0,
+        "combat_radius_km": 1500,
+        "service_ceiling_m": 17300,
+        "max_g_load": 9
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Saturn AL-31FP",
+        "thrust_afterburner_kn": 122,
+        "thrust_vectoring": true
+      },
+      "avionics": {
+        "radar": "N011M Bars PESA / N035 Irbis (SM2)",
+        "radar_range_km": 200,
+        "irst": "OLS-30"
+      },
+      "armament": {
+        "gun": {
+          "type": "GSh-30-1",
+          "caliber_mm": 30,
+          "rounds": 150
+        },
+        "air_to_air": [
+          "R-27",
+          "R-77",
+          "R-73"
+        ],
+        "air_to_ground": [
+          "Kh-29",
+          "Kh-31",
+          "KAB-500"
+        ],
+        "max_payload_kg": 8000
+      },
+      "unit_cost_usd": 50000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Irkut",
+        "Jane's"
+      ],
+      "notes": "Two-seat multirole. Canards + thrust vectoring. Export extremely successful (India 272, Algeria 58, Vietnam 36).",
+      "year": 2012
+    },
+    {
+      "id": "ru-su34",
+      "name": "Su-34 Fullback",
+      "nato_name": "Fullback",
+      "type": "strike_fighter",
+      "generation": "4+",
+      "country_of_origin": "RU",
+      "manufacturer": "Sukhoi (UAC)",
+      "service_history": {
+        "introduced": 2014,
+        "first_flight": 1990,
+        "retired": null,
+        "production_count": 150,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 146,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 23.3,
+        "wingspan_m": 14.7,
+        "empty_weight_kg": 22500,
+        "max_takeoff_weight_kg": 45100,
+        "hardpoints": 12
+      },
+      "performance": {
+        "max_speed_kmh": 1900,
+        "max_speed_mach": 1.8,
+        "combat_radius_km": 1100,
+        "ferry_range_km": 4000,
+        "service_ceiling_m": 15000,
+        "max_g_load": 7
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Saturn AL-31FM1",
+        "thrust_afterburner_kn": 125
+      },
+      "armament": {
+        "gun": {
+          "type": "GSh-30-1",
+          "caliber_mm": 30,
+          "rounds": 180
+        },
+        "air_to_air": [
+          "R-27",
+          "R-77",
+          "R-73"
+        ],
+        "air_to_ground": [
+          "Kh-29",
+          "Kh-31",
+          "Kh-38",
+          "Kh-59",
+          "KAB-500/1500"
+        ],
+        "max_payload_kg": 12000
+      },
+      "features": {
+        "side_by_side_cockpit": true,
+        "crew_rest_area": true,
+        "notes": "Only tactical aircraft with full crew amenities"
+      },
+      "unit_cost_usd": 50000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Sukhoi",
+        "Jane's"
+      ],
+      "notes": "Dedicated strike fighter (F-15E equivalent). Side-by-side cockpit, titanium bathtub armor. Ukraine: heavy losses (20+), primary strike platform.",
+      "year": 2014
+    },
+    {
+      "id": "ru-mig29",
+      "name": "MiG-29 Fulcrum",
+      "nato_name": "Fulcrum",
+      "type": "air_superiority",
+      "generation": "4",
+      "country_of_origin": "SU",
+      "manufacturer": "RSK MiG",
+      "service_history": {
+        "introduced": 1983,
+        "first_flight": 1977,
+        "retired": null,
+        "production_count": 1600,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 37,
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 28,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 66,
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "quantity": 40,
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "quantity": 36,
+            "status": "active"
+          }
+        ],
+        "notes": "1600+ built, 30+ operators"
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 17.32,
+        "wingspan_m": 11.36,
+        "empty_weight_kg": 11000,
+        "max_takeoff_weight_kg": 21000,
+        "hardpoints": 7
+      },
+      "performance": {
+        "max_speed_kmh": 2400,
+        "max_speed_mach": 2.25,
+        "combat_radius_km": 710,
+        "service_ceiling_m": 18000,
+        "max_g_load": 9,
+        "thrust_to_weight": 1.09
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Klimov RD-33",
+        "thrust_afterburner_kn": 81.4
+      },
+      "avionics": {
+        "radar": "N019 Topaz / N010 Zhuk (upgrades)",
+        "radar_range_km": 70,
+        "irst": "OEPS-29"
+      },
+      "armament": {
+        "gun": {
+          "type": "GSh-30-1",
+          "caliber_mm": 30,
+          "rounds": 150
+        },
+        "air_to_air": [
+          "R-27",
+          "R-73",
+          "R-77"
+        ],
+        "max_payload_kg": 4500
+      },
+      "variants": [
+        {
+          "designation": "MiG-29SMT",
+          "notes": "Modernized, dorsal fuel tank"
+        },
+        {
+          "designation": "MiG-29K",
+          "notes": "Carrier variant (India)"
+        }
+      ],
+      "unit_cost_usd": 25000000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "MiG",
+        "Jane's"
+      ],
+      "notes": "Soviet answer to F-16. Excellent dogfighter. Short range. 1600+ built. Ukraine: NATO donations (Poland, Slovakia).",
+      "year": 1983
+    },
+    {
+      "id": "ru-su25",
+      "name": "Su-25 Frogfoot",
+      "nato_name": "Frogfoot",
+      "type": "close_air_support",
+      "generation": "3",
+      "country_of_origin": "SU",
+      "manufacturer": "Sukhoi",
+      "service_history": {
+        "introduced": 1981,
+        "first_flight": 1975,
+        "retired": null,
+        "production_count": 1000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 17,
+            "status": "active"
+          }
+        ],
+        "notes": "1000+ built, 20+ operators"
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 15.36,
+        "wingspan_m": 14.36,
+        "empty_weight_kg": 9500,
+        "max_takeoff_weight_kg": 17600,
+        "hardpoints": 10
+      },
+      "performance": {
+        "max_speed_kmh": 950,
+        "max_speed_mach": 0.8,
+        "combat_radius_km": 375,
+        "service_ceiling_m": 7000,
+        "max_g_load": 6.5
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Soyuz/Gavrilov R-195",
+        "thrust_kn": 44.2
+      },
+      "armament": {
+        "gun": {
+          "type": "GSh-30-2",
+          "caliber_mm": 30,
+          "rounds": 250
+        },
+        "air_to_ground": [
+          "S-8/13/24 rockets",
+          "Kh-25ML",
+          "Kh-29",
+          "KAB-500",
+          "FAB bombs"
+        ],
+        "max_payload_kg": 4400
+      },
+      "survivability": {
+        "armor_kg": 595,
+        "titanium_bathtub": true,
+        "notes": "Designed for survivability like A-10"
+      },
+      "unit_cost_usd": 11000000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Sukhoi",
+        "Jane's"
+      ],
+      "notes": "Soviet A-10 equivalent. Afghanistan: extensive combat. Armored cockpit. Ukraine: heavy losses both sides.",
+      "year": 1981
+    }
+  ]
+}

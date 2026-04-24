@@ -1,0 +1,290 @@
+{
+  "platforms": [
+    {
+      "id": "ru-su-57-felon",
+      "name": "Su-57 Felon",
+      "type": "stealth_multirole",
+      "country_of_origin": "RU",
+      "manufacturer": "Sukhoi (UAC)",
+      "nato_name": "Felon",
+      "designation_alt": "T-50, PAK FA",
+      "service_entry": 2020,
+      "specifications": {
+        "crew": 1,
+        "length_m": 19.8,
+        "wingspan_m": 14.1,
+        "height_m": 4.74,
+        "wing_area_m2": 78.8,
+        "empty_weight_kg": 18500,
+        "max_takeoff_weight_kg": 35000,
+        "internal_fuel_kg": 10300,
+        "max_speed_kmh": 2600,
+        "max_speed_mach": 2.0,
+        "supercruise_mach": 1.6,
+        "combat_radius_km": 1500,
+        "ferry_range_km": 5500,
+        "service_ceiling_m": 20000,
+        "g_limit": 9,
+        "thrust_to_weight": 1.13
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "Saturn AL-41F1 (Izdeliye 117)",
+        "type": "turbofan",
+        "thrust_dry_kn": 93,
+        "thrust_afterburner_kn": 147,
+        "thrust_vectoring": true,
+        "vector_range_deg": 20,
+        "future_engine": "Izdeliye 30 (180 kN)"
+      },
+      "armament": {
+        "internal_bays": 2,
+        "internal_stations": 6,
+        "external_stations": 6,
+        "internal_payload_kg": 4400,
+        "max_payload_kg": 10000,
+        "gun": {
+          "type": "GSh-30-1",
+          "caliber_mm": 30,
+          "rounds": 150,
+          "rate_of_fire_rpm": 1800
+        },
+        "missiles": [
+          "R-77M (AA-12 Adder)",
+          "R-37M (AA-13 Arrow) 300km range",
+          "R-74M (AA-11 Archer)",
+          "Kh-59MK2 cruise missile",
+          "Kh-38M air-to-ground",
+          "Kh-35U anti-ship"
+        ]
+      },
+      "avionics": {
+        "radar": "N036 Byelka AESA",
+        "radar_range_km": 400,
+        "x_band_arrays": 5,
+        "l_band_arrays": 2,
+        "irst": "101KS Atoll",
+        "ew_suite": "L402 Himalayas",
+        "data_link": "S-111"
+      },
+      "stealth": {
+        "rcs_m2": 0.1,
+        "rcs_category": "low",
+        "internal_weapons_bays": true,
+        "ir_suppression": true
+      },
+      "service_history": {
+        "introduced": 2020,
+        "status": "active",
+        "production_count": 30,
+        "operators": [
+          {"country": "RU", "quantity": 30, "status": "active"}
+        ]
+      },
+      "combat_use": [
+        {"conflict": "Ukraine", "year": 2022, "role": "standoff strikes"}
+      ],
+      "unit_cost_usd": 50000000,
+      "notes": "Russia's first stealth fighter. Entered service 2020. Limited production due to costs and sanctions. Used R-37M LRAAM in Ukraine conflict."
+    },
+    {
+      "id": "ru-su-35s-flanker-e",
+      "name": "Su-35S Flanker-E",
+      "type": "air_superiority",
+      "country_of_origin": "RU",
+      "manufacturer": "Sukhoi (UAC)",
+      "nato_name": "Flanker-E",
+      "designation_alt": "Su-35BM, Super Flanker",
+      "service_entry": 2014,
+      "specifications": {
+        "crew": 1,
+        "length_m": 21.9,
+        "wingspan_m": 15.3,
+        "height_m": 5.9,
+        "wing_area_m2": 62.0,
+        "empty_weight_kg": 18400,
+        "max_takeoff_weight_kg": 34500,
+        "internal_fuel_kg": 11500,
+        "max_speed_kmh": 2500,
+        "max_speed_mach": 2.25,
+        "combat_radius_km": 1600,
+        "ferry_range_km": 4500,
+        "service_ceiling_m": 18000,
+        "g_limit": 9,
+        "thrust_to_weight": 1.13
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "Saturn 117S (AL-41F1S)",
+        "type": "turbofan",
+        "thrust_dry_kn": 86.3,
+        "thrust_afterburner_kn": 142,
+        "thrust_vectoring": true,
+        "vector_range_deg": 15
+      },
+      "armament": {
+        "hardpoints": 12,
+        "max_payload_kg": 8000,
+        "gun": {
+          "type": "GSh-30-1",
+          "caliber_mm": 30,
+          "rounds": 150
+        },
+        "missiles": [
+          "R-77 (AA-12 Adder)",
+          "R-27ER/ET (AA-10 Alamo)",
+          "R-73 (AA-11 Archer)",
+          "Kh-31 anti-radiation/anti-ship",
+          "Kh-59M cruise missile"
+        ]
+      },
+      "avionics": {
+        "radar": "N035 Irbis-E PESA",
+        "radar_range_km": 350,
+        "radar_tracking_targets": 30,
+        "radar_simultaneous_engagement": 8,
+        "irst": "OLS-35",
+        "ew_suite": "L175M Khibiny"
+      },
+      "service_history": {
+        "introduced": 2014,
+        "status": "active",
+        "production_count": 180,
+        "operators": [
+          {"country": "RU", "quantity": 130, "status": "active"},
+          {"country": "CN", "quantity": 24, "status": "active"},
+          {"country": "EG", "quantity": 24, "status": "ordered"},
+          {"country": "IR", "quantity": 24, "status": "ordered"}
+        ]
+      },
+      "unit_cost_usd": 85000000,
+      "notes": "Most capable non-stealth Russian fighter. 4++ generation. Extensively used in Syria and Ukraine. Supermaneuverable with thrust vectoring."
+    },
+    {
+      "id": "ru-mig-31bm-foxhound",
+      "name": "MiG-31BM Foxhound",
+      "type": "interceptor",
+      "country_of_origin": "RU",
+      "manufacturer": "Mikoyan (RSK MiG)",
+      "nato_name": "Foxhound",
+      "service_entry": 2011,
+      "specifications": {
+        "crew": 2,
+        "length_m": 22.69,
+        "wingspan_m": 13.46,
+        "height_m": 6.15,
+        "empty_weight_kg": 21820,
+        "max_takeoff_weight_kg": 46200,
+        "max_speed_kmh": 3000,
+        "max_speed_mach": 2.83,
+        "combat_radius_km": 720,
+        "ferry_range_km": 3300,
+        "service_ceiling_m": 20600
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "Aviadvigatel D-30F6",
+        "type": "turbofan",
+        "thrust_afterburner_kn": 152
+      },
+      "armament": {
+        "hardpoints": 6,
+        "missiles": [
+          "R-33S (AA-9 Amos)",
+          "R-37M (AA-13) 300km range",
+          "R-77 (AA-12 Adder)",
+          "R-73 (AA-11 Archer)",
+          "Kh-47M2 Kinzhal hypersonic"
+        ],
+        "gun": {
+          "type": "GSh-6-23",
+          "caliber_mm": 23,
+          "rounds": 260,
+          "rate_of_fire_rpm": 9000
+        }
+      },
+      "avionics": {
+        "radar": "Zaslon-AM PESA",
+        "radar_range_km": 320,
+        "radar_simultaneous_engagement": 6,
+        "irst": true,
+        "data_link": "APD-518"
+      },
+      "service_history": {
+        "introduced": 2011,
+        "status": "active",
+        "operators": [
+          {"country": "RU", "quantity": 130, "status": "active"},
+          {"country": "KZ", "quantity": 32, "status": "active"}
+        ]
+      },
+      "unit_cost_usd": 45000000,
+      "notes": "Long-range interceptor. Fastest combat aircraft in service. Primary platform for Kinzhal hypersonic missile. BM upgrade with modernized avionics."
+    },
+    {
+      "id": "ru-su-34-fullback",
+      "name": "Su-34 Fullback",
+      "type": "strike_fighter",
+      "country_of_origin": "RU",
+      "manufacturer": "Sukhoi (UAC)",
+      "nato_name": "Fullback",
+      "service_entry": 2014,
+      "specifications": {
+        "crew": 2,
+        "length_m": 23.34,
+        "wingspan_m": 14.7,
+        "height_m": 6.09,
+        "empty_weight_kg": 22500,
+        "max_takeoff_weight_kg": 45000,
+        "internal_fuel_kg": 12100,
+        "max_speed_kmh": 1900,
+        "max_speed_mach": 1.8,
+        "combat_radius_km": 1100,
+        "ferry_range_km": 4500,
+        "service_ceiling_m": 15000
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "Saturn AL-31FM1",
+        "type": "turbofan",
+        "thrust_afterburner_kn": 137
+      },
+      "armament": {
+        "hardpoints": 12,
+        "max_payload_kg": 8000,
+        "gun": {
+          "type": "GSh-30-1",
+          "caliber_mm": 30,
+          "rounds": 180
+        },
+        "weapons": [
+          "Kh-59MK cruise missile",
+          "Kh-31 anti-radar/anti-ship",
+          "Kh-38 precision guided",
+          "KAB-500/1500 guided bombs",
+          "FAB series bombs with UMPK"
+        ]
+      },
+      "avionics": {
+        "radar": "V004 PESA (nose)",
+        "rear_radar": "N012 (tail warning)",
+        "targeting_pod": "Platan",
+        "ew_suite": "L175V Khibiny"
+      },
+      "service_history": {
+        "introduced": 2014,
+        "status": "active",
+        "production_count": 154,
+        "operators": [
+          {"country": "RU", "quantity": 154, "status": "active"}
+        ]
+      },
+      "combat_use": [
+        {"conflict": "Syria", "year": 2015},
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "unit_cost_usd": 36000000,
+      "notes": "Dedicated strike fighter replacing Su-24. Side-by-side cockpit. Titanium armor around cockpit. Heavily used in Ukraine for glide bomb delivery."
+    }
+  ]
+}

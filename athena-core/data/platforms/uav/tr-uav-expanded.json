@@ -1,0 +1,270 @@
+{
+  "category": "uav",
+  "subcategory": "turkey",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": [
+      "Baykar Technologies",
+      "TAI",
+      "IISS Military Balance 2024"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "tr-tb3",
+      "name": "Bayraktar TB3",
+      "type": "ucav",
+      "country": "TR",
+      "year": 2024,
+      "manufacturer": "Baykar",
+      "service_history": {
+        "introduced": 2024,
+        "first_flight": 2023,
+        "production_count": 50,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 50,
+            "status": "active",
+            "notes": "TCG Anadolu operations"
+          }
+        ],
+        "notes": "Naval UCAV with folding wings for carrier ops"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 8.35,
+        "wingspan_m": 14.0,
+        "height_m": 3.3,
+        "empty_weight_kg": 1450,
+        "max_weight_kg": 1450,
+        "max_speed_kmh": 260,
+        "cruise_speed_kmh": 180,
+        "range_km": 1800,
+        "endurance_hours": 24,
+        "service_ceiling_m": 10668
+      },
+      "armament": {
+        "payload_kg": 280,
+        "hardpoints": 6,
+        "weapons": [
+          "MAM-L",
+          "MAM-C",
+          "MAM-T",
+          "UMTAS ATGM",
+          "Mk-82 bombs"
+        ]
+      },
+      "unit_cost_usd": 8000000
+    },
+    {
+      "id": "tr-kizilelma",
+      "name": "Bayraktar Kizilelma",
+      "type": "ucav",
+      "country": "TR",
+      "year": 2025,
+      "manufacturer": "Baykar",
+      "service_history": {
+        "introduced": 2025,
+        "first_flight": 2022,
+        "production_count": 20,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 20,
+            "status": "production",
+            "notes": "First supersonic Turkish UCAV"
+          }
+        ],
+        "notes": "Carrier-capable supersonic UCAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 14.7,
+        "wingspan_m": 10.0,
+        "height_m": 4.1,
+        "empty_weight_kg": 6000,
+        "max_weight_kg": 6000,
+        "max_speed_kmh": 1111,
+        "cruise_speed_kmh": 800,
+        "range_km": 930,
+        "endurance_hours": 3,
+        "service_ceiling_m": 10668,
+        "radar_cross_section": "LO",
+        "powerplant": {
+          "type": "turbofan",
+          "model": "Ivchenko-Progress AI-322F / TEI TF-6000",
+          "thrust_kn": 52
+        }
+      },
+      "armament": {
+        "internal_payload_kg": 550,
+        "external_payload_kg": 1000,
+        "hardpoints": 6,
+        "weapons": [
+          "SOM-J cruise missile",
+          "Gokdogan AAM",
+          "Bozdogan AAM",
+          "MAM-T",
+          "KGK guided bombs"
+        ]
+      },
+      "unit_cost_usd": 25000000
+    },
+    {
+      "id": "tr-anka-s",
+      "name": "TAI Anka-S",
+      "type": "male",
+      "country": "TR",
+      "year": 2017,
+      "manufacturer": "TAI",
+      "service_history": {
+        "introduced": 2017,
+        "first_flight": 2010,
+        "production_count": 80,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 60,
+            "status": "active",
+            "notes": "TAF and TNK"
+          },
+          {
+            "country": "TN",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "KZ",
+            "quantity": 3,
+            "status": "active"
+          },
+          {
+            "country": "ML",
+            "quantity": 6,
+            "status": "ordered"
+          }
+        ],
+        "notes": "Indigenous Turkish MALE UAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 8.6,
+        "wingspan_m": 17.3,
+        "height_m": 3.4,
+        "empty_weight_kg": 1600,
+        "max_weight_kg": 1600,
+        "max_speed_kmh": 217,
+        "cruise_speed_kmh": 130,
+        "range_km": 200,
+        "endurance_hours": 24,
+        "service_ceiling_m": 9144
+      },
+      "armament": {
+        "payload_kg": 200,
+        "hardpoints": 4,
+        "weapons": [
+          "MAM-L",
+          "MAM-C",
+          "UMTAS",
+          "Cirit rockets"
+        ]
+      },
+      "sensors": {
+        "radar": "SAR/GMTI (ASELSAN)",
+        "eo_ir": "ASELSAN CATS",
+        "sigint": "SIGINT pod optional"
+      },
+      "unit_cost_usd": 5000000
+    },
+    {
+      "id": "tr-anka3",
+      "name": "TAI Anka-3",
+      "type": "ucav",
+      "country": "TR",
+      "year": 2025,
+      "manufacturer": "TAI",
+      "service_history": {
+        "introduced": 2025,
+        "first_flight": 2023,
+        "production_count": 10,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 10,
+            "status": "testing",
+            "notes": "TAF evaluation"
+          }
+        ],
+        "notes": "Stealth flying wing UCAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 10.5,
+        "wingspan_m": 15.0,
+        "max_weight_kg": 6500,
+        "max_speed_kmh": 800,
+        "range_km": 2500,
+        "endurance_hours": 12,
+        "service_ceiling_m": 12000,
+        "radar_cross_section": "VLO"
+      },
+      "armament": {
+        "internal_payload_kg": 1200,
+        "weapons": [
+          "SOM cruise missiles",
+          "KGK guided bombs",
+          "MAM-T"
+        ]
+      }
+    },
+    {
+      "id": "tr-aksungur",
+      "name": "TAI Aksungur",
+      "type": "hale",
+      "country": "TR",
+      "year": 2021,
+      "manufacturer": "TAI",
+      "service_history": {
+        "introduced": 2021,
+        "first_flight": 2019,
+        "production_count": 20,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 20,
+            "status": "active",
+            "notes": "Navy and Army"
+          }
+        ],
+        "notes": "Twin-engine long-endurance UAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 12.0,
+        "wingspan_m": 24.0,
+        "height_m": 4.0,
+        "empty_weight_kg": 3300,
+        "max_weight_kg": 3300,
+        "max_speed_kmh": 240,
+        "cruise_speed_kmh": 150,
+        "range_km": 350,
+        "endurance_hours": 50,
+        "service_ceiling_m": 12192
+      },
+      "armament": {
+        "payload_kg": 750,
+        "hardpoints": 12,
+        "weapons": [
+          "MAM-L",
+          "MAM-T",
+          "UMTAS",
+          "Torpedoes (naval variant)",
+          "Sonobuoys"
+        ]
+      },
+      "unit_cost_usd": 15000000
+    }
+  ]
+}

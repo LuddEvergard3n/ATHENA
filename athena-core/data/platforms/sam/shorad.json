@@ -1,0 +1,690 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-avenger",
+      "name": "AN/TWQ-1 Avenger",
+      "type": "shorad",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 1990,
+        "retired": null,
+        "production_count": 1100,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 800,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "TW",
+            "quantity": 74,
+            "status": "active"
+          }
+        ],
+        "notes": "Vehicles"
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_kg": 4500,
+        "length_m": 4.7,
+        "width_m": 2.1,
+        "height_m": 2.7
+      },
+      "mobility": {
+        "drivetrain": "4x4",
+        "chassis": "HMMWV",
+        "max_speed_road_kmh": 105,
+        "range_road_km": 480
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "FIM-92 Stinger",
+            "type": "infrared",
+            "missiles_per_launcher": 8,
+            "range_max_km": 8,
+            "altitude_max_km": 3.8,
+            "speed_mach": 2.2,
+            "warhead_kg": 1,
+            "guidance": "infrared (all-aspect)",
+            "targets": [
+              "aircraft",
+              "helicopter",
+              "UAV",
+              "cruise_missile"
+            ]
+          }
+        ],
+        "guns": [
+          {
+            "designation": "M3P",
+            "caliber_mm": 12.7,
+            "rate_of_fire_rpm": 1100,
+            "range_effective_km": 2
+          }
+        ]
+      },
+      "sensors_and_fcs": {
+        "sensor": "FLIR",
+        "rangefinder": "Laser",
+        "iff": "AN/PPX-3B"
+      },
+      "unit_cost_usd": 3000000,
+      "cost_year": 2020,
+      "missile_cost_usd": 120000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia AN/TWQ-1 Avenger",
+        "Army Recognition",
+        "Boeing"
+      ],
+      "notes": "HMMWV-based SHORAD. 8 Stingers. FLIR for night operations. Gulf War debut. Being modernized with Hellfire/AIM-9X (IM-SHORAD precursor).",
+      "year": 1989
+    },
+    {
+      "id": "us-im-shorad",
+      "name": "M-SHORAD (IM-SHORAD)",
+      "type": "shorad",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics / Leonardo DRS",
+      "service_history": {
+        "introduced": 2021,
+        "retired": null,
+        "production_count": 144,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 144,
+            "status": "active"
+          }
+        ],
+        "notes": "Vehicles"
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_kg": 22000,
+        "length_m": 6.9,
+        "width_m": 2.72,
+        "height_m": 3.2
+      },
+      "mobility": {
+        "drivetrain": "8x8",
+        "chassis": "Stryker",
+        "max_speed_road_kmh": 97,
+        "range_road_km": 500
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "FIM-92 Stinger",
+            "type": "infrared",
+            "missiles_per_launcher": 4,
+            "range_max_km": 8,
+            "guidance": "infrared"
+          },
+          {
+            "designation": "AGM-114L Hellfire Longbow",
+            "type": "radar_guided",
+            "missiles_per_launcher": 4,
+            "range_max_km": 8,
+            "guidance": "millimeter wave radar",
+            "targets": [
+              "UAV",
+              "helicopter",
+              "light_vehicle"
+            ]
+          }
+        ],
+        "guns": [
+          {
+            "designation": "M230LF",
+            "caliber_mm": 30,
+            "rate_of_fire_rpm": 200,
+            "range_effective_km": 3,
+            "ammunition_carried": 150
+          }
+        ]
+      },
+      "sensors_and_fcs": {
+        "sensor": "Leonardo DRS MHR",
+        "radar": "Ku-band AESA",
+        "iff": "Integrated"
+      },
+      "unit_cost_usd": 9000000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia M-SHORAD",
+        "Army Recognition",
+        "General Dynamics"
+      ],
+      "notes": "Stryker-based SHORAD. Multi-mission (air/ground). Stinger + Hellfire + 30mm. First US mobile SHORAD since Sergeant York failure. Counter-drone focus.",
+      "year": 2021
+    },
+    {
+      "id": "de-gepard",
+      "name": "Flakpanzer Gepard",
+      "type": "spaag",
+      "country_of_origin": "DE",
+      "manufacturer": "Krauss-Maffei",
+      "service_history": {
+        "introduced": 1976,
+        "retired": 2012,
+        "production_count": 570,
+        "operators": [
+          {
+            "country": "RO",
+            "quantity": 49,
+            "status": "active"
+          },
+          {
+            "country": "JO",
+            "quantity": 60,
+            "status": "active"
+          },
+          {
+            "country": "QA",
+            "quantity": 9,
+            "status": "reserve"
+          },
+          {
+            "country": "UA",
+            "quantity": 60,
+            "status": "active",
+            "notes": "Ex-German"
+          },
+          {
+            "country": "NL",
+            "quantity": 0,
+            "status": "retired"
+          },
+          {
+            "country": "BE",
+            "quantity": 0,
+            "status": "retired"
+          },
+          {
+            "country": "DE",
+            "quantity": 0,
+            "status": "retired"
+          }
+        ],
+        "notes": "Vehicles"
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 47300,
+        "length_m": 7.68,
+        "width_m": 3.27,
+        "height_m": 3.01
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU MB 838 CaM 500",
+          "type": "diesel",
+          "power_hp": 830,
+          "power_kw": 619
+        },
+        "power_to_weight_hp_ton": 17.5,
+        "chassis": "Leopard 1",
+        "max_speed_road_kmh": 65,
+        "range_road_km": 550
+      },
+      "armament": {
+        "guns": [
+          {
+            "designation": "Oerlikon KDA",
+            "caliber_mm": 35,
+            "barrels": 2,
+            "rate_of_fire_rpm": 1100,
+            "rate_of_fire_combined_rpm": 2200,
+            "range_effective_km": 4,
+            "range_max_km": 5.5,
+            "altitude_max_km": 3,
+            "ammunition_carried": 640,
+            "ammunition_types": [
+              "HEI-T",
+              "FAPDS",
+              "AHEAD"
+            ]
+          }
+        ]
+      },
+      "sensors_and_fcs": {
+        "radar": {
+          "search": {
+            "designation": "Siemens",
+            "range_km": 15
+          },
+          "tracking": {
+            "designation": "Siemens",
+            "range_km": 15
+          }
+        },
+        "optics": "Thermal imager, laser rangefinder"
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 70,
+        "nbc_protection": true
+      },
+      "unit_cost_usd": 4000000,
+      "cost_year": 1985,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Flakpanzer Gepard",
+        "Army Recognition"
+      ],
+      "notes": "Cold War SPAAG. Retired from most NATO armies. Ukraine: highly effective vs drones/cruise missiles. Leopard 1 chassis. 35mm twin Oerlikon. AHEAD ammunition devastating.",
+      "year": 1976
+    },
+    {
+      "id": "uk-starstreak",
+      "name": "Starstreak HVM",
+      "type": "shorad",
+      "country_of_origin": "GB",
+      "manufacturer": "Thales Air Defence",
+      "service_history": {
+        "introduced": 1997,
+        "retired": null,
+        "production_count": 1000,
+        "operators": [
+          {
+            "country": "UK",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "TH",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "MY",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "ID",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 100,
+            "status": "active"
+          }
+        ],
+        "notes": "Systems/missiles"
+      },
+      "system_variants": [
+        {
+          "designation": "LML",
+          "type": "Lightweight Multiple Launcher",
+          "missiles": 3,
+          "weight_kg": 16,
+          "notes": "Man-portable tripod"
+        },
+        {
+          "designation": "SP HVM",
+          "type": "Self-propelled (Stormer)",
+          "missiles": 8,
+          "chassis": "Stormer APC"
+        }
+      ],
+      "armament": {
+        "missiles": [
+          {
+            "designation": "Starstreak",
+            "type": "laser_beam_riding",
+            "range_max_km": 7,
+            "range_min_km": 0.3,
+            "altitude_max_km": 5,
+            "speed_mach": 4,
+            "warhead": "3 kinetic darts (900g each)",
+            "guidance": "laser beam riding",
+            "targets": [
+              "aircraft",
+              "helicopter",
+              "UAV"
+            ],
+            "notes": "Fastest SHORAD missile"
+          },
+          {
+            "designation": "Starstreak II",
+            "type": "laser_beam_riding",
+            "range_max_km": 7,
+            "speed_mach": 4.5,
+            "guidance": "laser beam riding + seeker",
+            "notes": "Fire-and-forget option"
+          },
+          {
+            "designation": "LMM (Martlet)",
+            "type": "laser_guided",
+            "range_max_km": 8,
+            "warhead_kg": 3,
+            "guidance": "laser semi-active",
+            "targets": [
+              "UAV",
+              "small_boat",
+              "light_vehicle"
+            ],
+            "notes": "Multi-purpose light missile"
+          }
+        ]
+      },
+      "unit_cost_usd": 2000000,
+      "cost_year": 2020,
+      "missile_cost_usd": 100000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Starstreak",
+        "Army Recognition",
+        "Thales"
+      ],
+      "notes": "Fastest SHORAD (Mach 4). 3 tungsten darts. Ukraine: first combat use 2022 vs Mi-28. Laser beam riding (jam-resistant). No IR signature warning.",
+      "year": 1997
+    },
+    {
+      "id": "ru-tunguska",
+      "name": "2K22 Tunguska (SA-19 Grison)",
+      "type": "spaag_sam",
+      "country_of_origin": "SU",
+      "manufacturer": "KBP Instrument Design Bureau",
+      "service_history": {
+        "introduced": 1982,
+        "retired": null,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 70,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 36,
+            "status": "active"
+          },
+          {
+            "country": "MA",
+            "quantity": 12,
+            "status": "active"
+          }
+        ],
+        "notes": "Combat vehicles"
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 34000,
+        "length_m": 7.93,
+        "width_m": 3.24,
+        "height_m": 3.35
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-46-6",
+          "type": "diesel",
+          "power_hp": 710,
+          "power_kw": 529
+        },
+        "power_to_weight_hp_ton": 20.9,
+        "chassis": "GM-352M",
+        "max_speed_road_kmh": 65,
+        "range_road_km": 500,
+        "notes": "Tracked for battlefield mobility"
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "9M311 (SA-19)",
+            "type": "command_guidance",
+            "missiles_per_launcher": 8,
+            "range_max_km": 8,
+            "range_min_km": 2.5,
+            "altitude_max_km": 3.5,
+            "speed_mach": 2.8,
+            "warhead_kg": 9,
+            "guidance": "laser beam riding + radio command",
+            "targets": [
+              "aircraft",
+              "helicopter",
+              "UAV",
+              "cruise_missile"
+            ]
+          }
+        ],
+        "guns": [
+          {
+            "designation": "2A38M",
+            "caliber_mm": 30,
+            "barrels": 2,
+            "rate_of_fire_rpm": 5000,
+            "range_effective_km": 4,
+            "altitude_max_km": 3,
+            "ammunition_carried": 1904
+          }
+        ]
+      },
+      "sensors_and_fcs": {
+        "radar": {
+          "search": {
+            "designation": "1RL144",
+            "range_km": 18
+          },
+          "tracking": {
+            "designation": "1RL144",
+            "range_km": 10
+          }
+        },
+        "optics": "Thermal + TV"
+      },
+      "protection": {
+        "armor_type": "aluminum",
+        "protection_front_mm_rha": 15,
+        "nbc_protection": true
+      },
+      "unit_cost_usd": 16000000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia 2K22 Tunguska",
+        "Army Recognition"
+      ],
+      "notes": "Combined gun/missile SHORAD. Tracked. 30mm twin guns + 8 SAMs. Pantsir predecessor concept. Tunguska-M1 upgrade. Heavy Ukraine war use.",
+      "year": 1982
+    },
+    {
+      "id": "ru-strela-10",
+      "name": "9K35 Strela-10 (SA-13 Gopher)",
+      "type": "shorad",
+      "country_of_origin": "SU",
+      "manufacturer": "LOMO",
+      "service_history": {
+        "introduced": 1976,
+        "retired": null,
+        "production_count": 1000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 150,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 80,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 250,
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "CZ",
+            "quantity": 40,
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "quantity": 60,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 30,
+            "status": "active"
+          }
+        ],
+        "notes": "Vehicles"
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 12300,
+        "length_m": 6.45,
+        "width_m": 2.85,
+        "height_m": 2.3
+      },
+      "mobility": {
+        "drivetrain": "tracked",
+        "chassis": "MT-LB",
+        "max_speed_road_kmh": 61,
+        "max_speed_water_kmh": 6,
+        "range_road_km": 500,
+        "amphibious": true
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "9M37M",
+            "type": "infrared",
+            "missiles_per_launcher": 4,
+            "missiles_stowed": 8,
+            "range_max_km": 5,
+            "range_min_km": 0.8,
+            "altitude_max_km": 3.5,
+            "speed_mach": 1.8,
+            "warhead_kg": 3,
+            "guidance": "infrared",
+            "targets": [
+              "aircraft",
+              "helicopter"
+            ]
+          }
+        ]
+      },
+      "sensors_and_fcs": {
+        "rangefinder": "Laser",
+        "iff": "1RL247"
+      },
+      "unit_cost_usd": 1000000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia 9K35 Strela-10",
+        "Army Recognition"
+      ],
+      "notes": "Low-level SAM. MT-LB chassis. Amphibious. 4 ready + 4 reload. Widely exported. Still effective vs helicopters. Being replaced by Tor-M2.",
+      "year": 1976
+    },
+    {
+      "id": "us-c-ram",
+      "name": "Centurion C-RAM",
+      "type": "ciws",
+      "country_of_origin": "US",
+      "manufacturer": "Raytheon",
+      "service_history": {
+        "introduced": 2005,
+        "retired": null,
+        "production_count": 50,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 40,
+            "status": "active"
+          },
+          {
+            "country": "UK",
+            "quantity": 6,
+            "status": "active"
+          }
+        ],
+        "notes": "Systems"
+      },
+      "specifications": {
+        "crew": 0,
+        "weight_kg": 12500,
+        "notes": "Land-based Phalanx CIWS"
+      },
+      "armament": {
+        "guns": [
+          {
+            "designation": "M61A1 Vulcan",
+            "caliber_mm": 20,
+            "barrels": 6,
+            "rate_of_fire_rpm": 4500,
+            "range_effective_km": 2,
+            "ammunition_carried": 1550,
+            "ammunition_types": [
+              "HEIT-SD (self-destruct)"
+            ],
+            "notes": "Self-destruct rounds for land use"
+          }
+        ]
+      },
+      "sensors_and_fcs": {
+        "radar": {
+          "designation": "Ku-band search/track",
+          "range_km": 5
+        },
+        "fcs": "Autonomous engagement"
+      },
+      "unit_cost_usd": 15000000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia C-RAM",
+        "Army Recognition",
+        "Raytheon"
+      ],
+      "notes": "Land-based Phalanx. Counter-RAM (rockets, artillery, mortars). Iraq/Afghanistan base defense. 4500 rpm. Self-destruct rounds. Autonomous engagement.",
+      "year": 2005
+    }
+  ]
+}

@@ -1,0 +1,805 @@
+{
+  "category": "submarines",
+  "subcategory": "ssn",
+  "metadata": {
+    "file_version": "1.1",
+    "last_updated": "2026-01-31",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Fighting Ships"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "cn-ssn-093a",
+      "name": "Type 093 Shang-class",
+      "nato_name": "Shang",
+      "type": "ssn",
+      "class": "Type 093",
+      "country_of_origin": "CN",
+      "manufacturer": "Huludao Shipyard",
+      "service_history": {
+        "introduced": 2006,
+        "retired": null,
+        "production_count": 8,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 8,
+            "status": "active"
+          }
+        ],
+        "notes": "China's primary attack submarine"
+      },
+      "specifications": {
+        "crew": 100,
+        "displacement_surfaced_tons": 6100,
+        "displacement_submerged_tons": 7000,
+        "length_m": 110,
+        "beam_m": 11,
+        "draft_m": 7.5
+      },
+      "performance": {
+        "max_speed_submerged_knots": 30,
+        "max_depth_m": 400,
+        "range_nm": "unlimited"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactor": "PWR (improved)",
+        "power_shp": 25000
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 6,
+          "caliber_mm": 533
+        },
+        "weapons": [
+          "Yu-6 torpedo",
+          "YJ-18 AShM",
+          "CJ-10 LACM"
+        ],
+        "vls": {
+          "notes": "Type 093A/B may have VLS"
+        }
+      },
+      "variants": [
+        {
+          "designation": "Type 093",
+          "notes": "Original (2 built)"
+        },
+        {
+          "designation": "Type 093A",
+          "notes": "Improved (4 built)"
+        },
+        {
+          "designation": "Type 093B",
+          "notes": "VLS equipped (2 built)"
+        }
+      ],
+      "unit_cost_usd": 1100000000,
+      "cost_year": 2015,
+      "confidence": "low",
+      "sources": [
+        "DoD China reports",
+        "Jane's",
+        "CSIS"
+      ],
+      "notes": "China's 2nd gen SSN. Still noisier than US/Russian subs. Type 093B may have VLS. Being supplemented by Type 095.",
+      "year": 2006
+    },
+    {
+      "id": "cn-ssn-095",
+      "name": "Type 095 (Project)",
+      "nato_name": null,
+      "type": "ssn",
+      "class": "Type 095",
+      "country_of_origin": "CN",
+      "manufacturer": "Bohai/Wuchang Shipyard",
+      "service_history": {
+        "introduced": 2025,
+        "first_launch": 2024,
+        "retired": null,
+        "production_count": 2,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 2,
+            "status": "building"
+          }
+        ],
+        "notes": "China's next-gen attack sub"
+      },
+      "specifications": {
+        "crew": 100,
+        "displacement_submerged_tons": 8000,
+        "length_m": 120,
+        "notes": "Specifications estimated"
+      },
+      "performance": {
+        "max_speed_submerged_knots": 33,
+        "max_depth_m": 500,
+        "notes": "Estimated to approach Western standards"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactor": "New generation PWR",
+        "propulsion": "Pump-jet likely"
+      },
+      "armament": {
+        "vls": {
+          "cells": 16,
+          "notes": "Estimated"
+        },
+        "missiles": [
+          {
+            "type": "YJ-21 (hypersonic)",
+            "notes": "Anti-ship"
+          },
+          {
+            "type": "CJ-10K",
+            "notes": "Land attack"
+          }
+        ]
+      },
+      "unit_cost_usd": 2000000000,
+      "cost_year": 2024,
+      "confidence": "low",
+      "sources": [
+        "ONI",
+        "CSIS",
+        "H.I. Sutton"
+      ],
+      "notes": "China's answer to Virginia. Major noise reduction efforts. VLS expected. First-in-class 2024-2025. Critical for PLAN.",
+      "year": 2025
+    },
+    {
+      "id": "fr-ssn-suffren",
+      "name": "Suffren-class (Barracuda)",
+      "nato_name": null,
+      "type": "ssn",
+      "class": "Suffren",
+      "country_of_origin": "FR",
+      "manufacturer": "Naval Group",
+      "service_history": {
+        "introduced": 2022,
+        "retired": null,
+        "production_count": 2,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 2,
+            "status": "active",
+            "notes": "6 planned"
+          }
+        ],
+        "notes": "France's new attack submarine"
+      },
+      "specifications": {
+        "crew": 65,
+        "displacement_surfaced_tons": 4700,
+        "displacement_submerged_tons": 5300,
+        "length_m": 99.4,
+        "beam_m": 8.8,
+        "draft_m": 7.3
+      },
+      "performance": {
+        "max_speed_submerged_knots": 25,
+        "max_depth_m": 350,
+        "range_nm": "unlimited"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactor": "K15 PWR (150 MW)",
+        "propulsion": "Pump-jet"
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 4,
+          "caliber_mm": 533
+        },
+        "torpedoes": {
+          "type": "F21 Artemis",
+          "quantity": 20
+        },
+        "missiles": [
+          {
+            "type": "MdCN (Naval Cruise Missile)",
+            "notes": "Land attack"
+          },
+          {
+            "type": "Exocet SM39",
+            "notes": "Anti-ship"
+          }
+        ],
+        "special_ops": "Can deploy commandos/SDVs"
+      },
+      "sensors": {
+        "sonar": "Thales SYCOBS suite"
+      },
+      "unit_cost_usd": 1500000000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "French Navy",
+        "Naval Group"
+      ],
+      "notes": "Replaced Rubis-class. 6 planned. Base for Australian Attack-class (cancelled). Very capable, smaller than US/UK subs.",
+      "year": 2022
+    },
+    {
+      "id": "ru-akula",
+      "name": "Akula-class (Project 971)",
+      "nato_name": "Akula",
+      "type": "ssn",
+      "class": "Akula",
+      "country_of_origin": "RU",
+      "manufacturer": "Sevmash/Komsomolsk",
+      "service_history": {
+        "introduced": 1986,
+        "retired": null,
+        "production_count": 15,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 9,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 1,
+            "status": "active",
+            "notes": "Leased as INS Chakra"
+          }
+        ],
+        "notes": "First truly quiet Soviet sub"
+      },
+      "specifications": {
+        "crew": 73,
+        "displacement_surfaced_tons": 8140,
+        "displacement_submerged_tons": 12770,
+        "length_m": 113.3,
+        "beam_m": 13.5,
+        "draft_m": 10.4
+      },
+      "performance": {
+        "max_speed_submerged_knots": 35,
+        "max_depth_m": 600,
+        "range_nm": "unlimited"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactor": "OK-650B PWR",
+        "power_shp": 50000
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 8,
+          "caliber_mm": "533/650"
+        },
+        "weapons_capacity": 40,
+        "weapons": [
+          "Type 65 torpedo",
+          "SS-N-21 Granat",
+          "SS-N-15 Starfish"
+        ]
+      },
+      "variants": [
+        {
+          "designation": "Akula I",
+          "notes": "Original"
+        },
+        {
+          "designation": "Akula II",
+          "notes": "Quieter"
+        },
+        {
+          "designation": "Akula III (Vepr)",
+          "notes": "Most advanced"
+        }
+      ],
+      "unit_cost_usd": 800000000,
+      "cost_year": 1995,
+      "confidence": "medium",
+      "sources": [
+        "Russian MoD",
+        "Jane's"
+      ],
+      "notes": "First Soviet sub as quiet as US subs. 'Shchuka-B' in Russian. India leases one. Being replaced by Yasen.",
+      "year": 1986
+    },
+    {
+      "id": "ru-yasen",
+      "name": "Yasen-class (Project 885/885M)",
+      "nato_name": "Severodvinsk",
+      "type": "ssgn",
+      "class": "Yasen",
+      "country_of_origin": "RU",
+      "manufacturer": "Sevmash",
+      "service_history": {
+        "introduced": 2014,
+        "retired": null,
+        "production_count": 4,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 4,
+            "status": "active",
+            "notes": "9 planned"
+          }
+        ],
+        "notes": "Russia's most advanced submarine"
+      },
+      "specifications": {
+        "crew": 90,
+        "displacement_surfaced_tons": 8600,
+        "displacement_submerged_tons": 13800,
+        "length_m": 139,
+        "beam_m": 13,
+        "draft_m": 10
+      },
+      "performance": {
+        "max_speed_submerged_knots": 31,
+        "max_depth_m": 600,
+        "range_nm": "unlimited",
+        "endurance_days": 100
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactor": "KPM PWR",
+        "power_shp": 50000,
+        "propulsion": "Pump-jet"
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 10,
+          "caliber_mm": 533
+        },
+        "vls": {
+          "cells": 32,
+          "missiles": [
+            "Kalibr (SS-N-30)",
+            "Oniks (SS-N-26)",
+            "Zircon"
+          ]
+        },
+        "notes": "Can carry Zircon hypersonic missiles"
+      },
+      "sensors": {
+        "sonar": "Irtysh-Amfora (spherical bow array)",
+        "notes": "Spherical array (torpedo tubes amidships)"
+      },
+      "variants": [
+        {
+          "designation": "Project 885",
+          "notes": "K-560 Severodvinsk only"
+        },
+        {
+          "designation": "Project 885M Yasen-M",
+          "notes": "Improved, shorter"
+        }
+      ],
+      "unit_cost_usd": 1600000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Russian MoD",
+        "Jane's"
+      ],
+      "notes": "Russia's answer to Virginia/Seawolf. Spherical sonar (tubes amidships). Kalibr/Oniks/Zircon capable. 4 in service, 9 planned. Very quiet.",
+      "year": 2014
+    },
+    {
+      "id": "uk-ssn-astute",
+      "name": "Astute-class",
+      "nato_name": null,
+      "type": "ssn",
+      "class": "Astute",
+      "country_of_origin": "GB",
+      "manufacturer": "BAE Systems",
+      "service_history": {
+        "introduced": 2010,
+        "retired": null,
+        "production_count": 5,
+        "operators": [
+          {
+            "country": "UK",
+            "quantity": 5,
+            "status": "active",
+            "notes": "7 planned"
+          }
+        ],
+        "notes": "Royal Navy's attack submarine"
+      },
+      "specifications": {
+        "crew": 98,
+        "displacement_surfaced_tons": 7400,
+        "displacement_submerged_tons": 7800,
+        "length_m": 97,
+        "beam_m": 11.3,
+        "draft_m": 10.8
+      },
+      "performance": {
+        "max_speed_submerged_knots": 30,
+        "max_depth_m": 300,
+        "range_nm": "unlimited",
+        "endurance_days": 90
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactor": "Rolls-Royce PWR2",
+        "propulsion": "Pump-jet"
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 6,
+          "caliber_mm": 533
+        },
+        "torpedoes": {
+          "type": "Spearfish",
+          "quantity": 38
+        },
+        "missiles": {
+          "type": "Tomahawk Block IV",
+          "quantity": 38,
+          "notes": "Total weapons"
+        }
+      },
+      "sensors": {
+        "sonar": {
+          "bow": "Thales Sonar 2076",
+          "notes": "World's most capable sonar"
+        }
+      },
+      "unit_cost_usd": 2000000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Royal Navy",
+        "Jane's"
+      ],
+      "notes": "Replaced Trafalgar-class. Sonar 2076 world-class. 7 planned. Troubled construction (delays). Will serve until 2040s.",
+      "year": 2010
+    },
+    {
+      "id": "us-ssn21",
+      "name": "Seawolf-class (SSN-21)",
+      "nato_name": null,
+      "type": "ssn",
+      "class": "Seawolf",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics Electric Boat",
+      "service_history": {
+        "introduced": 1997,
+        "retired": null,
+        "production_count": 3,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 3,
+            "status": "active"
+          }
+        ],
+        "notes": "Most capable US attack submarine"
+      },
+      "specifications": {
+        "crew": 140,
+        "displacement_surfaced_tons": 8600,
+        "displacement_submerged_tons": 9138,
+        "length_m": 107.6,
+        "beam_m": 12.2,
+        "draft_m": 10.9
+      },
+      "performance": {
+        "max_speed_submerged_knots": 35,
+        "max_speed_surfaced_knots": 20,
+        "max_depth_m": 610,
+        "range_nm": "unlimited"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactor": "S6W PWR",
+        "power_shp": 52000
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 8,
+          "caliber_mm": 660
+        },
+        "weapons_capacity": 50,
+        "weapons": [
+          "Mk 48 ADCAP",
+          "Tomahawk",
+          "Harpoon",
+          "Mk 60 CAPTOR"
+        ]
+      },
+      "sensors": {
+        "sonar": "BQQ-5D",
+        "towed_array": "TB-16/TB-29"
+      },
+      "unit_cost_usd": 3000000000,
+      "cost_year": 1997,
+      "confidence": "high",
+      "sources": [
+        "USN",
+        "Jane's"
+      ],
+      "notes": "Cold War design, too expensive ($3B each). Only 3 built (planned 29). Fastest, deepest-diving US sub. SSN-23 Jimmy Carter modified for special ops/cable tapping.",
+      "year": 1997
+    },
+    {
+      "id": "us-ssn688",
+      "name": "Los Angeles-class (SSN-688)",
+      "nato_name": null,
+      "type": "ssn",
+      "class": "Los Angeles",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics / Newport News",
+      "service_history": {
+        "introduced": 1976,
+        "retired": null,
+        "production_count": 62,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 28,
+            "status": "active",
+            "notes": "Retiring"
+          }
+        ],
+        "notes": "Most numerous nuclear sub class ever"
+      },
+      "specifications": {
+        "crew": 129,
+        "displacement_surfaced_tons": 6082,
+        "displacement_submerged_tons": 6927,
+        "length_m": 110.3,
+        "beam_m": 10.1,
+        "draft_m": 9.9
+      },
+      "performance": {
+        "max_speed_submerged_knots": 32,
+        "max_depth_m": 450,
+        "range_nm": "unlimited"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactor": "S6G PWR",
+        "power_shp": 35000
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 4,
+          "caliber_mm": 533
+        },
+        "weapons_capacity": 26,
+        "vls": {
+          "cells": 12,
+          "notes": "688i Improved only"
+        }
+      },
+      "variants": [
+        {
+          "designation": "Flight I",
+          "notes": "Original"
+        },
+        {
+          "designation": "Flight II",
+          "notes": "Quieter"
+        },
+        {
+          "designation": "688i Improved",
+          "notes": "VLS tubes, quieter"
+        }
+      ],
+      "unit_cost_usd": 900000000,
+      "cost_year": 1990,
+      "confidence": "high",
+      "sources": [
+        "USN",
+        "Jane's"
+      ],
+      "notes": "62 built - most numerous nuclear sub. Being replaced by Virginia. 28 still active. 688i variants have VLS.",
+      "year": 1976
+    },
+    {
+      "id": "us-ssn688i",
+      "name": "Los Angeles-class (Improved)",
+      "nato_name": null,
+      "type": "ssn",
+      "class": "Los Angeles",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics / Newport News",
+      "service_history": {
+        "introduced": 1976,
+        "retired": null,
+        "production_count": 62,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 28,
+            "status": "active",
+            "notes": "Being retired"
+          }
+        ],
+        "notes": "Workhorse attack submarine"
+      },
+      "specifications": {
+        "crew": 143,
+        "displacement_surfaced_tons": 6080,
+        "displacement_submerged_tons": 6927,
+        "length_m": 110.3,
+        "beam_m": 10.1,
+        "draft_m": 9.9
+      },
+      "performance": {
+        "max_speed_submerged_knots": 33,
+        "max_depth_m": 450,
+        "range_nm": "unlimited"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactor": "S6G PWR",
+        "power_shp": 35000
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 4,
+          "caliber_mm": 533
+        },
+        "vls": {
+          "type": "Mk 36 (688i only)",
+          "cells": 12
+        },
+        "torpedoes": {
+          "type": "Mk 48",
+          "quantity": 26
+        },
+        "missiles": {
+          "type": "Tomahawk",
+          "quantity": 12
+        }
+      },
+      "sensors": {
+        "sonar": {
+          "bow": "BQQ-5D/E",
+          "towed": "TB-16/TB-23"
+        }
+      },
+      "unit_cost_usd": 900000000,
+      "cost_year": 1995,
+      "confidence": "high",
+      "sources": [
+        "USN",
+        "Jane's"
+      ],
+      "notes": "62 built (most produced US nuclear sub). 688i variant has VLS. Being replaced by Virginia. 28 remain active.",
+      "year": 1988
+    },
+    {
+      "id": "us-ssn774",
+      "name": "Virginia-class (SSN-774)",
+      "nato_name": null,
+      "type": "ssn",
+      "class": "Virginia",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics / Huntington Ingalls",
+      "service_history": {
+        "introduced": 2004,
+        "commissioned": 2004,
+        "retired": null,
+        "production_count": 23,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 23,
+            "status": "active",
+            "notes": "66 planned total"
+          }
+        ],
+        "notes": "Primary US attack submarine"
+      },
+      "specifications": {
+        "crew": 135,
+        "displacement_surfaced_tons": 7900,
+        "displacement_submerged_tons": 10200,
+        "length_m": 115,
+        "beam_m": 10.4,
+        "draft_m": 9.3
+      },
+      "performance": {
+        "max_speed_submerged_knots": 34,
+        "max_speed_surfaced_knots": 25,
+        "max_depth_m": 490,
+        "range_nm": "unlimited",
+        "endurance_days": 90,
+        "notes": "Nuclear powered"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactor": "S9G PWR",
+        "power_shp": 40000,
+        "propulsion": "Pump-jet propulsor",
+        "notes": "Life-of-ship reactor core (33 years)"
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 4,
+          "caliber_mm": 533
+        },
+        "vls": {
+          "type": "VPM (Block V)",
+          "cells": 40,
+          "notes": "Block V only"
+        },
+        "torpedoes": {
+          "type": "Mk 48 ADCAP",
+          "quantity": 26
+        },
+        "missiles": [
+          {
+            "type": "Tomahawk TLAM",
+            "quantity": 12,
+            "notes": "Tubes + VLS"
+          },
+          {
+            "type": "Harpoon (legacy)",
+            "notes": "Via tubes"
+          }
+        ],
+        "mines": {
+          "type": "Mk 67 SLMM",
+          "notes": "Via tubes"
+        },
+        "special_ops": "Lock-out chamber for SEALs"
+      },
+      "sensors": {
+        "sonar": {
+          "bow": "BQQ-10 spherical array",
+          "flank": "Wide Aperture Array (WAA)",
+          "towed": "TB-34 towed array",
+          "notes": "Integrated sonar suite"
+        },
+        "other": "Photonics masts (no periscopes)"
+      },
+      "stealth": {
+        "features": [
+          "Anechoic tiles",
+          "Pump-jet propulsor",
+          "Isolated machinery",
+          "Advanced hull design"
+        ],
+        "notes": "Extremely quiet"
+      },
+      "variants": [
+        {
+          "designation": "Block I/II",
+          "notes": "SSN-774 to SSN-783"
+        },
+        {
+          "designation": "Block III",
+          "notes": "Redesigned bow"
+        },
+        {
+          "designation": "Block IV",
+          "notes": "Acoustic improvements"
+        },
+        {
+          "designation": "Block V",
+          "notes": "VPM (+28m, +40 VLS)"
+        }
+      ],
+      "unit_cost_usd": 3450000000,
+      "cost_year": 2023,
+      "confidence": "high",
+      "sources": [
+        "USN",
+        "Jane's",
+        "CBO"
+      ],
+      "notes": "Most advanced US attack sub. Block V adds Virginia Payload Module (40 Tomahawks). 66 planned. Replacing Los Angeles class.",
+      "year": 2004
+    }
+  ]
+}

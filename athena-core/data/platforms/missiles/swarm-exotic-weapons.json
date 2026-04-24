@@ -1,0 +1,248 @@
+{
+  "platforms": [
+    {
+      "id": "us-perdix-swarm",
+      "name": "Perdix Micro-Drone Swarm",
+      "type": "swarm_uav",
+      "country_of_origin": "US",
+      "manufacturer": "MIT Lincoln Laboratory / DOD SCO",
+      "service_entry": 2017,
+      "specifications": {
+        "length_mm": 165,
+        "wingspan_mm": 300,
+        "weight_g": 290,
+        "speed_kmh": 110,
+        "endurance_min": 20,
+        "swarm_size": 103
+      },
+      "deployment": {
+        "method": "Dispensed from fighter flare dispenser",
+        "platforms": ["F/A-18", "F-16", "F-35"],
+        "altitude": "High altitude release"
+      },
+      "features": {
+        "collective_ai": true,
+        "distributed_decision": true,
+        "self_healing_swarm": true,
+        "no_leader": true,
+        "expendable": true
+      },
+      "missions": [
+        "ISR swarm",
+        "Electronic warfare",
+        "Sensor flooding",
+        "Target designation"
+      ],
+      "service_history": {
+        "first_test": 2016,
+        "swarm_test_103": 2017,
+        "status": "Operational prototype"
+      },
+      "notes": "First true military swarm. Collective AI makes decisions. 103-drone test successful. Disposable 3D-printed."
+    },
+    {
+      "id": "us-gremlins-uav",
+      "name": "DARPA Gremlins",
+      "type": "attritable_uav",
+      "country_of_origin": "US",
+      "manufacturer": "Dynetics (Leidos)",
+      "designation": "X-61A",
+      "service_entry": 2025,
+      "specifications": {
+        "length_m": 4.27,
+        "wingspan_m": 3.48,
+        "weight_kg": 680,
+        "speed_kmh": 630,
+        "endurance_hours": 3,
+        "range_km": 900
+      },
+      "deployment": {
+        "launch": "Air-launched from C-130",
+        "recovery": "Mid-air retrieval by C-130",
+        "reuse": "20 missions"
+      },
+      "missions": [
+        "Distributed ISR",
+        "Electronic attack",
+        "Strike (future)",
+        "Decoy"
+      ],
+      "features": {
+        "recoverable": true,
+        "swarm_capable": true,
+        "modular_payload": true
+      },
+      "service_history": {
+        "first_flight": 2019,
+        "recovery_test": 2021,
+        "expected_service": 2025,
+        "status": "Development"
+      },
+      "notes": "Recoverable air-launched drones. Mid-air capture by C-130. 20x reusable. Swarm operations."
+    },
+    {
+      "id": "ru-burevestnik-nuclear-cruise",
+      "name": "9M730 Burevestnik",
+      "type": "nuclear_cruise_missile",
+      "country_of_origin": "RU",
+      "manufacturer": "Novator",
+      "nato_name": "SSC-X-9 Skyfall",
+      "service_entry": null,
+      "specifications": {
+        "range_km": "Unlimited (claimed)",
+        "speed": "Subsonic to low supersonic",
+        "flight_duration": "Months (claimed)",
+        "altitude": "Low altitude cruise"
+      },
+      "propulsion": {
+        "type": "Nuclear thermal ramjet",
+        "reactor": "Small nuclear reactor heats air"
+      },
+      "warhead": "Nuclear",
+      "features": {
+        "unlimited_range": "Nuclear powered",
+        "terrain_following": true,
+        "unpredictable_flight_path": true
+      },
+      "testing": {
+        "tests": 13,
+        "failures": "Multiple including Nyonoksa accident 2019",
+        "status": "Ongoing development"
+      },
+      "service_history": {
+        "announced": 2018,
+        "status": "Development",
+        "expected": "Unknown - significant technical challenges"
+      },
+      "notes": "Nuclear-powered cruise missile. Unlimited range. Major technical challenges. Nyonoksa accident killed 5 scientists. Doomsday weapon."
+    },
+    {
+      "id": "us-x-51a-waverider",
+      "name": "X-51A Waverider",
+      "type": "hypersonic_demonstrator",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_entry": null,
+      "specifications": {
+        "length_m": 7.62,
+        "wingspan_m": 0.61,
+        "weight_kg": 1800,
+        "speed_mach": 5.1,
+        "altitude_m": 21300,
+        "burn_time_sec": 300
+      },
+      "propulsion": {
+        "booster": "MGM-140 ATACMS solid rocket",
+        "sustainer": "Pratt & Whitney SJY61 scramjet"
+      },
+      "tests": [
+        {"date": "2010-05", "result": "Partial success, 143 sec scramjet"},
+        {"date": "2011-06", "result": "Failure, inlet unstart"},
+        {"date": "2012-08", "result": "Failure, fin control"},
+        {"date": "2013-05", "result": "Success, Mach 5.1 for 210 sec"}
+      ],
+      "service_history": {
+        "program": "2004-2013",
+        "status": "Completed",
+        "successor": "HAWC, ARRW programs"
+      },
+      "notes": "First practical scramjet demonstrator. Longest air-breathing hypersonic flight (210 sec). Technology feeds into current weapons."
+    },
+    {
+      "id": "il-orbiter-1k-loitering",
+      "name": "Orbiter 1K",
+      "type": "loitering_munition",
+      "country_of_origin": "IL",
+      "manufacturer": "Aeronautics Ltd",
+      "service_entry": 2015,
+      "specifications": {
+        "wingspan_m": 2.4,
+        "weight_kg": 13,
+        "warhead_kg": 2.5,
+        "speed_kmh": 150,
+        "endurance_hours": 3,
+        "range_km": 100
+      },
+      "guidance": {
+        "eo_ir": "Gimbaled camera",
+        "gps": true,
+        "human_in_loop": true
+      },
+      "features": {
+        "switchblade_type": true,
+        "loiter_and_strike": true,
+        "mission_abort": true
+      },
+      "service_history": {
+        "introduced": 2015,
+        "status": "active",
+        "operators": ["IL", "AZ", "UA"]
+      },
+      "combat_use": [
+        {"conflict": "Nagorno-Karabakh", "year": 2020},
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "notes": "Israeli loitering munition. Precision anti-personnel. Combat proven Karabakh and Ukraine."
+    },
+    {
+      "id": "cn-ch-901-swarm",
+      "name": "CH-901 Swarm",
+      "type": "loitering_munition_swarm",
+      "country_of_origin": "CN",
+      "manufacturer": "CASC",
+      "service_entry": 2018,
+      "specifications": {
+        "weight_kg": 9,
+        "wingspan_m": 1.2,
+        "endurance_hours": 2,
+        "warhead_kg": 4,
+        "range_km": 15,
+        "swarm_size": 48
+      },
+      "deployment": {
+        "method": "Vehicle-mounted 48-tube launcher"
+      },
+      "features": {
+        "swarm_attack": true,
+        "autonomous_targeting": true,
+        "saturation_attack": true
+      },
+      "service_history": {
+        "introduced": 2018,
+        "status": "active"
+      },
+      "notes": "Chinese loitering munition swarm. 48-round launcher for saturation attacks."
+    },
+    {
+      "id": "us-b61-12-tactical",
+      "name": "B61-12",
+      "type": "tactical_nuclear_bomb",
+      "country_of_origin": "US",
+      "manufacturer": "Sandia/NNSA",
+      "service_entry": 2022,
+      "specifications": {
+        "length_m": 3.56,
+        "diameter_m": 0.33,
+        "weight_kg": 374,
+        "yield_kt": "0.3-50 (dial-a-yield)"
+      },
+      "guidance": {
+        "type": "GPS-aided INS tail kit",
+        "cep_m": 30,
+        "note": "First precision-guided nuclear bomb"
+      },
+      "delivery_platforms": ["F-35A", "F-15E", "F-16", "B-2A", "Tornado", "PA-200"],
+      "deployment": {
+        "europe": "NATO nuclear sharing (BE, DE, IT, NL, TR)",
+        "us": "CONUS"
+      },
+      "service_history": {
+        "introduced": 2022,
+        "status": "active",
+        "replaces": ["B61-3", "B61-4", "B61-7", "B61-10"]
+      },
+      "unit_cost_usd": 28000000,
+      "notes": "Consolidated B61 variants. First precision nuclear weapon. GPS guidance 30m CEP. F-35 certified 2023."
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "platforms": [
+    {
+      "id": "leopard-2sg",
+      "name": "Leopard 2SG",
+      "country": "SG",
+      "manufacturer": "Krauss-Maffei Wegmann/ST Kinetics",
+      "type": "main_battle_tank",
+      "role": "armored warfare",
+      "introduced": 2007,
+      "status": "active",
+      "crew": 4,
+      "specifications": {
+        "weight": {"value": 63.0, "unit": "tons", "note": "with AMAP armor"},
+        "length": {"value": 10.97, "unit": "m", "note": "with gun forward"},
+        "width": {"value": 3.75, "unit": "m"},
+        "height": {"value": 3.03, "unit": "m", "note": "to top of RWS"},
+        "ground_clearance": {"value": 0.49, "unit": "m"},
+        "track_width": {"value": 635, "unit": "mm"}
+      },
+      "mobility": {
+        "engine": "MTU MB 873 Ka-501 diesel",
+        "power": {"value": 1500, "unit": "hp"},
+        "power_to_weight": {"value": 23.8, "unit": "hp/ton"},
+        "transmission": "Renk HSWL 354 automatic, 4 forward, 2 reverse",
+        "max_speed_road": {"value": 68, "unit": "km/h"},
+        "max_speed_offroad": {"value": 45, "unit": "km/h"},
+        "max_speed_reverse": {"value": 31, "unit": "km/h"},
+        "range_road": {"value": 500, "unit": "km"},
+        "range_offroad": {"value": 300, "unit": "km"},
+        "fuel_capacity": {"value": 1200, "unit": "liters"},
+        "gradient": {"value": 60, "unit": "%"},
+        "side_slope": {"value": 30, "unit": "%"},
+        "vertical_obstacle": {"value": 1.15, "unit": "m"},
+        "trench": {"value": 3.0, "unit": "m"},
+        "fording": {"value": 1.2, "unit": "m"},
+        "fording_prepared": {"value": 4.0, "unit": "m", "note": "with snorkel"},
+        "tropical_modifications": [
+          "Enhanced cooling system",
+          "Improved air filtration",
+          "Climate control for crew",
+          "Corrosion protection"
+        ]
+      },
+      "armament": {
+        "main_gun": {
+          "designation": "Rheinmetall 120mm L/44",
+          "caliber": {"value": 120, "unit": "mm"},
+          "length": "L/44",
+          "elevation": {"min": -9, "max": 20, "unit": "degrees"},
+          "traverse": {"value": 360, "unit": "degrees"},
+          "rotation_speed": {"value": 40, "unit": "deg/s"},
+          "rate_of_fire": {"value": 8, "unit": "rounds/min"},
+          "ammunition_stowage": 42,
+          "ammunition_types": ["DM53 APFSDS", "DM12 HEAT-MP", "DM11 HE"]
+        },
+        "secondary": [
+          {
+            "designation": "MG3A1",
+            "caliber": {"value": 7.62, "unit": "mm"},
+            "mount": "coaxial",
+            "ammunition": 4750
+          },
+          {
+            "designation": "FN MAG 58 RWS",
+            "caliber": {"value": 7.62, "unit": "mm"},
+            "mount": "CROWS II remote weapon station",
+            "ammunition": 2000
+          }
+        ],
+        "smoke_grenade_launchers": {
+          "type": "76mm Wegmann",
+          "quantity": 16
+        }
+      },
+      "protection": {
+        "armor_type": "composite + IBD Deisenroth AMAP modular armor",
+        "frontal_arc": {"value": "800-900", "unit": "mm RHAe", "note": "with AMAP"},
+        "turret_front": {"value": "900-1000", "unit": "mm RHAe", "note": "AMAP composite"},
+        "hull_front": {"value": "700-800", "unit": "mm RHAe"},
+        "turret_sides": {"value": "500-600", "unit": "mm RHAe", "note": "with AMAP"},
+        "hull_sides": {"value": "300-400", "unit": "mm RHAe", "note": "with side skirts"},
+        "roof_armor": {"value": "200", "unit": "mm RHAe", "note": "reinforced"},
+        "belly_armor": {"value": "150", "unit": "mm RHAe", "note": "mine protection"},
+        "active_protection": null,
+        "reactive_armor": "optional AMAP-R modules",
+        "nbc_protection": true,
+        "laser_warning": true,
+        "special_features": [
+          "All-around cameras",
+          "Automatic fire suppression",
+          "Spall liners"
+        ]
+      },
+      "sensors": {
+        "fire_control": "PERI-R17A2 with STK modifications",
+        "gunner_sight": {
+          "designation": "EMES-15",
+          "magnification": "4x/12x",
+          "stabilized": true
+        },
+        "commander_sight": {
+          "designation": "PERI-R17A2 panoramic",
+          "independent": true,
+          "thermal": true,
+          "magnification": "2.5x to 20x"
+        },
+        "thermal_imaging": {
+          "gunner": "2nd gen ATTICA thermal",
+          "commander": "2nd gen thermal",
+          "driver": "thermal camera"
+        },
+        "laser_rangefinder": {
+          "type": "Nd:YAG",
+          "range": {"value": 10000, "unit": "m"}
+        },
+        "ballistic_computer": true,
+        "hunter_killer": true,
+        "battlefield_management": "SAF C4I system"
+      },
+      "operational": {
+        "unit_cost": {"value": 12.8, "unit": "million USD", "year": 2007},
+        "units_produced": 96,
+        "operators": ["Singapore"],
+        "combat_history": [],
+        "deployment": [
+          "Armour Training Institute",
+          "48th Battalion Singapore Armoured Regiment",
+          "Sungei Gedong Camp"
+        ],
+        "notes": [
+          "Based on Leopard 2A4 but upgraded to 2A5+ standard",
+          "Customized for tropical operations",
+          "Features AMAP composite armor from IBD",
+          "Integrated with Singapore Armed Forces C4I",
+          "Crews train in Germany due to space constraints"
+        ]
+      },
+      "sources": [
+        "Singapore Ministry of Defence",
+        "Jane's International Defence Review",
+        "IISS Military Balance Asia-Pacific",
+        "Army Technology analysis"
+      ]
+    }
+  ]
+}

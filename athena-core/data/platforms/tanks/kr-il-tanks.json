@@ -1,0 +1,535 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "kr-k2-black-panther",
+      "name": "K2 Black Panther",
+      "type": "mbt",
+      "country_of_origin": "KR",
+      "manufacturer": "Hyundai Rotem",
+      "service_history": {
+        "introduced": 2014,
+        "retired": null,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 260,
+            "variants": [
+              "K2",
+              "K2GF"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 180,
+            "variants": [
+              "K2"
+            ],
+            "status": "delivering",
+            "notes": "First 10 delivered Dec 2022"
+          },
+          {
+            "country": "PL",
+            "quantity": 820,
+            "variants": [
+              "K2PL"
+            ],
+            "status": "ordered",
+            "notes": "License production from 2026"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 55000,
+        "weight_combat_kg": 56000,
+        "length_m": 7.5,
+        "length_gun_forward_m": 10.8,
+        "width_m": 3.6,
+        "height_m": 2.4,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Doosan DV27K / MTU MB-883 Ka-500",
+          "type": "diesel",
+          "power_hp": 1500,
+          "power_kw": 1100
+        },
+        "power_to_weight_hp_ton": 27.3,
+        "transmission": "SNT Dynamics EST15K automatic, 5F/3R",
+        "suspension": "ISU (In-arm Suspension Unit) hydropneumatic",
+        "suspension_features": [
+          "kneel",
+          "lean",
+          "tilt",
+          "adjust ground clearance",
+          "individual wheel control"
+        ],
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 35,
+        "acceleration_0_32_sec": 7,
+        "range_road_km": 450,
+        "fuel_capacity_liters": 1250,
+        "fording_depth_m": 1.2,
+        "fording_snorkel_m": 4.1,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 2.8,
+        "vertical_obstacle_m": 1.3
+      },
+      "armament": {
+        "main": {
+          "designation": "Hyundai WIA CN08 (Rheinmetall L55 license)",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 55,
+          "type": "smoothbore",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "traverse_speed_deg_sec": 45,
+          "stabilization": "three-axis EGTDS",
+          "loading": "autoloader",
+          "autoloader_capacity": 16,
+          "rate_of_fire_rpm": 10,
+          "effective_range_m": 4000,
+          "max_range_smart_m": 8000,
+          "ammunition_carried": 40,
+          "ammunition_ready": 16,
+          "ammunition_stowed": 24,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "K279",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT-MP",
+              "designation": "K280"
+            },
+            {
+              "type": "KSTAM-II",
+              "designation": "Smart Top-Attack",
+              "range_m": 8000,
+              "notes": "Fire-and-forget guided munition"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "K-6",
+            "caliber_mm": 12.7,
+            "mount": "commander RWS",
+            "ammunition_carried": 3200,
+            "remote": true
+          },
+          {
+            "designation": "M60E2-1",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 12000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite_modular_era",
+        "armor_composition": "Modular composite with ERA blocks",
+        "protection_front_mm_rha": 750,
+        "protection_side_mm_rha": 200,
+        "stanag_level": "6 (estimated)",
+        "era_coverage": "Hull front, turret",
+        "aps": {
+          "system": "KAPS (Korean Active Protection System)",
+          "type": "soft-kill + hard-kill (PIP)",
+          "features": [
+            "laser warning",
+            "radar warning",
+            "multispectral smoke"
+          ],
+          "hard_kill_planned": true
+        },
+        "mine_protection": "V-shaped hull bottom",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true,
+        "ammunition_isolation": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "KFCS (Korean Fire Control System)",
+        "commander_sight": {
+          "type": "KCPS (Korean Commander's Panoramic Sight)",
+          "day_magnification": "4x/15x",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true,
+          "digital_zoom": "30x/60x"
+        },
+        "gunner_sight": {
+          "type": "KGPS (Korean Gunner's Primary Sight)",
+          "day_magnification": "4x/15x",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "range_m": 9800
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "millimeter_wave_radar": true,
+        "radar_range_m": 10000,
+        "radar_features": [
+          "target tracking",
+          "MAW (Missile Approach Warning)"
+        ],
+        "ballistic_computer": true,
+        "automatic_target_tracker": true,
+        "crosswind_sensor": true,
+        "muzzle_reference_system": true,
+        "shot_delay_stabilization": true,
+        "battle_management_system": "Korean BMS",
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true,
+        "anti_helicopter_capability": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_type": "Multispectral",
+        "radar_signature_reduction": true
+      },
+      "unit_cost_usd": 8500000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia K2 Black Panther",
+        "Hyundai Rotem",
+        "Army Technology",
+        "Army Recognition",
+        "Military Factory"
+      ],
+      "notes": "4th gen MBT. ISU allows 'dancing' - kneel, lean, tilt for firing from defilade. KSTAM-II smart munitions (fire-and-forget top-attack). $6.2B Poland deal (1000 tanks total). K2GF: mountain-optimized version. 90%+ indigenous design. Engine powerpack drama: early batches used German MTU, later Korean Doosan.",
+      "year": 2014
+    },
+    {
+      "id": "il-merkava-mk4",
+      "name": "Merkava Mk.4",
+      "type": "mbt",
+      "country_of_origin": "IL",
+      "manufacturer": "Israel Military Industries / MANTAK",
+      "service_history": {
+        "introduced": 2004,
+        "retired": null,
+        "production_count": 600,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 600,
+            "variants": [
+              "Mk.4",
+              "Mk.4M Windbreaker",
+              "Mk.4 Barak"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "passengers": 8,
+        "weight_kg": 65000,
+        "length_m": 7.6,
+        "length_gun_forward_m": 9.04,
+        "width_m": 3.72,
+        "height_m": 2.66,
+        "ground_clearance_m": 0.45,
+        "notes": "Can carry 8 troops, command group, or 3 stretcher casualties"
+      },
+      "mobility": {
+        "engine": {
+          "model": "General Dynamics GD883",
+          "type": "diesel",
+          "power_hp": 1500,
+          "power_kw": 1100
+        },
+        "power_to_weight_hp_ton": 23.1,
+        "transmission": "Renk RK325 automatic",
+        "suspension": "helical spring",
+        "max_speed_road_kmh": 64,
+        "max_speed_offroad_kmh": 55,
+        "max_speed_reverse_kmh": 25,
+        "range_road_km": 500,
+        "fuel_capacity_liters": 1400,
+        "fording_depth_m": 1.4,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 3.0,
+        "vertical_obstacle_m": 1.0
+      },
+      "armament": {
+        "main": {
+          "designation": "IMI MG253",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 44,
+          "type": "smoothbore",
+          "barrel_length_mm": 5300,
+          "elevation_min_deg": -7,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "loading": "semi-automatic magazine assist",
+          "magazine_capacity": 10,
+          "rate_of_fire_rpm": 8,
+          "effective_range_m": 4000,
+          "ammunition_carried": 48,
+          "ammunition_ready": 10,
+          "ammunition_types": [
+            {
+              "type": "APFSDS-T",
+              "designation": "M711 CL3254",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT-MP-T",
+              "designation": "M325 CL3105"
+            },
+            {
+              "type": "ATGM",
+              "designation": "LAHAT",
+              "range_m": 8000,
+              "guidance": "laser",
+              "notes": "Gun-launched, top-attack capable"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "FN MAG",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 6000
+          },
+          {
+            "designation": "M2HB",
+            "caliber_mm": 12.7,
+            "mount": "commander cupola",
+            "ammunition_carried": 1800
+          },
+          {
+            "designation": "FN MAG",
+            "caliber_mm": 7.62,
+            "mount": "loader cupola",
+            "ammunition_carried": 5000
+          }
+        ],
+        "mortar": {
+          "designation": "Soltam 60mm",
+          "caliber_mm": 60,
+          "mount": "internal",
+          "ammunition_carried": 30,
+          "notes": "Internally operated for close defense and illumination"
+        }
+      },
+      "protection": {
+        "armor_type": "modular_composite",
+        "armor_composition": "Classified modular composite, front engine placement",
+        "protection_layout": "Engine forward provides additional protection for crew",
+        "protection_front_mm_rha": 800,
+        "protection_side_mm_rha": 400,
+        "protection_upgrade": "Mk.4M adds Trophy APS",
+        "aps": {
+          "system": "Trophy (Mk.4M/Barak)",
+          "type": "hard-kill",
+          "coverage_deg": 360,
+          "intercepts": [
+            "RPG",
+            "ATGM",
+            "HEAT"
+          ],
+          "combat_proven": true,
+          "intercepts_confirmed": "Dozens including Kornet, RPG-29"
+        },
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true,
+        "ammunition_isolation": true,
+        "crew_protection_priority": "Highest design priority",
+        "rear_door": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Elbit El-Op Knight Mk.4",
+        "commander_sight": {
+          "type": "Panoramic",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "El-Op",
+          "day_magnification": "5x/13x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "ballistic_computer": true,
+        "automatic_target_tracker": true,
+        "battle_management_system": "C4I integrated",
+        "data_link": true,
+        "anti_helicopter_capability": true,
+        "infantry_phone": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12
+      },
+      "unit_cost_usd": 6000000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Merkava",
+        "Army Technology Merkava 4",
+        "Army Recognition",
+        "Military Factory"
+      ],
+      "notes": "Unique front-engine layout for crew protection. Can carry troops/casualties. 60mm internal mortar. Trophy APS combat-proven (2011+). LAHAT gun-launched ATGM. Not exported until 2023 (Mk.3 to unnamed countries). Gaza/Lebanon combat veteran.",
+      "year": 2004
+    },
+    {
+      "id": "il-merkava-mk4-barak",
+      "name": "Merkava Mk.4 Barak",
+      "type": "mbt",
+      "country_of_origin": "IL",
+      "manufacturer": "Israel Military Industries / MANTAK",
+      "service_history": {
+        "introduced": 2023,
+        "retired": null,
+        "production_count": 50,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 50,
+            "status": "active",
+            "notes": "401st Armored Brigade"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "passengers": 8,
+        "weight_kg": 65000,
+        "length_gun_forward_m": 9.04,
+        "width_m": 3.72,
+        "height_m": 2.66
+      },
+      "mobility": {
+        "engine": {
+          "model": "General Dynamics GD883",
+          "type": "diesel",
+          "power_hp": 1500,
+          "power_kw": 1100
+        },
+        "power_to_weight_hp_ton": 23.1,
+        "transmission": "Renk RK325 automatic",
+        "max_speed_road_kmh": 64,
+        "range_road_km": 500
+      },
+      "armament": {
+        "main": {
+          "designation": "IMI MG253",
+          "caliber_mm": 120,
+          "type": "smoothbore",
+          "loading": "semi-automatic magazine assist",
+          "ammunition_carried": 48,
+          "ammunition_types": [
+            {
+              "type": "APFSDS-T",
+              "designation": "M711"
+            },
+            {
+              "type": "HEAT-MP-T",
+              "designation": "M325"
+            },
+            {
+              "type": "ATGM",
+              "designation": "LAHAT"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "FN MAG",
+            "caliber_mm": 7.62,
+            "mount": "coaxial"
+          },
+          {
+            "designation": "RWS",
+            "caliber_mm": 12.7,
+            "mount": "roof",
+            "remote": true
+          }
+        ],
+        "mortar": {
+          "designation": "Soltam 60mm",
+          "caliber_mm": 60,
+          "mount": "internal"
+        }
+      },
+      "protection": {
+        "armor_type": "modular_composite_advanced",
+        "aps": {
+          "system": "Trophy (upgraded)",
+          "type": "hard-kill",
+          "coverage_deg": 360,
+          "anti_drone": true
+        },
+        "directed_energy": "Anti-drone laser system (reported)",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "AI-assisted",
+        "commander_sight": {
+          "type": "Iron Vision HMD",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true,
+          "helmet_mounted_display": true,
+          "augmented_reality": true,
+          "coverage_deg": 360
+        },
+        "gunner_sight": {
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "camera_coverage": "360-degree day/night",
+        "laser_rangefinder": true,
+        "ballistic_computer": true,
+        "autonomous_target_acquisition": true,
+        "ai_target_prioritization": true,
+        "battle_management_system": "Advanced C4I",
+        "electronic_warfare": true,
+        "predictive_maintenance": true,
+        "data_link": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12
+      },
+      "unit_cost_usd": 8000000,
+      "cost_year": 2023,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Merkava",
+        "Army Recognition Merkava Barak",
+        "Defense Feeds"
+      ],
+      "notes": "5th gen tank (sometimes called Mk.5). Iron Vision: F-35 derived helmet-mounted AR display. AI-assisted targeting. 360\u00b0 camera situational awareness. Anti-drone directed energy. First loss Dec 2024 (IED in Gaza). Most technologically advanced Merkava.",
+      "year": 2023
+    }
+  ]
+}

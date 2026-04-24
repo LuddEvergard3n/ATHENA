@@ -1,0 +1,596 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-22",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "CSIS China Power",
+      "HAL"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "cn-z10",
+      "name": "CAIC Z-10",
+      "nato_name": "Fierce Thunderbolt",
+      "type": "attack_helicopter",
+      "country_of_origin": "CN",
+      "manufacturer": "Changhe Aircraft Industries Corporation",
+      "service_history": {
+        "introduced": 2011,
+        "first_flight": 2003,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 180,
+            "status": "active",
+            "notes": "PLAGF"
+          },
+          {
+            "country": "PK",
+            "quantity": 3,
+            "status": "evaluation"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "seating_configuration": "tandem",
+        "length_m": 14.15,
+        "rotor_diameter_m": 13.0,
+        "height_m": 3.84,
+        "empty_weight_kg": 5100,
+        "max_takeoff_weight_kg": 7000
+      },
+      "performance": {
+        "max_speed_kmh": 300,
+        "cruise_speed_kmh": 270,
+        "combat_radius_km": 400,
+        "ferry_range_km": 800,
+        "service_ceiling_m": 6400
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "WZ-9 (Turbomeca Ardiden derivative)",
+        "power_shp": 1000,
+        "notes": "Initially underpowered, WZ-9C improved"
+      },
+      "avionics": {
+        "targeting": "Roof-mounted sight",
+        "flir": "Day/night thermal",
+        "ew_suite": "Integrated",
+        "helmet_mounted_display": true
+      },
+      "armament": {
+        "gun": {
+          "type": "Type 23-1",
+          "caliber_mm": 23,
+          "rounds": 280
+        },
+        "missiles": {
+          "atgm": [
+            "HJ-10 (8-16)",
+            "HJ-8"
+          ],
+          "aam": [
+            "TY-90 (8)"
+          ]
+        },
+        "rockets": {
+          "type": "90mm / 57mm",
+          "total_rockets": 72
+        },
+        "hardpoints": 4
+      },
+      "variants": [
+        {
+          "designation": "Z-10",
+          "notes": "Standard PLAGF"
+        },
+        {
+          "designation": "Z-10ME",
+          "notes": "Enhanced export"
+        },
+        {
+          "designation": "Z-10K",
+          "notes": "Export variant"
+        }
+      ],
+      "unit_cost_usd": 15000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "CAIC",
+        "Jane's",
+        "CSIS"
+      ],
+      "notes": "China's primary attack helicopter. Kamov assisted early design. Initially underpowered (engine issues). TY-90 dedicated helicopter air-to-air missile unique feature. 200+ in service.",
+      "year": 2012
+    },
+    {
+      "id": "cn-z19",
+      "name": "Harbin Z-19",
+      "nato_name": null,
+      "type": "armed_reconnaissance",
+      "country_of_origin": "CN",
+      "manufacturer": "Harbin Aircraft Manufacturing",
+      "service_history": {
+        "introduced": 2012,
+        "first_flight": 2010,
+        "retired": null,
+        "production_count": 150,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 150,
+            "status": "active",
+            "notes": "PLAGF scout"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "seating_configuration": "tandem",
+        "length_m": 12.0,
+        "rotor_diameter_m": 11.0,
+        "empty_weight_kg": 2350,
+        "max_takeoff_weight_kg": 4500
+      },
+      "performance": {
+        "max_speed_kmh": 280,
+        "cruise_speed_kmh": 245,
+        "combat_radius_km": 300,
+        "service_ceiling_m": 4500
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "WZ-8A",
+        "power_shp": 704
+      },
+      "avionics": {
+        "mast_mounted_sight": true,
+        "flir": "Roof sensor ball"
+      },
+      "armament": {
+        "gun": {
+          "type": "12.7mm pod",
+          "caliber_mm": 12.7
+        },
+        "missiles": {
+          "atgm": [
+            "HJ-8 (8)",
+            "HJ-10"
+          ],
+          "aam": [
+            "TY-90 (8)"
+          ]
+        },
+        "rockets": {
+          "type": "57mm",
+          "total_rockets": 32
+        }
+      },
+      "unit_cost_usd": 10000000,
+      "cost_year": 2018,
+      "confidence": "medium",
+      "sources": [
+        "Harbin",
+        "Jane's"
+      ],
+      "notes": "Chinese scout helicopter. Based on Z-9/Dauphin. Fenestron tail rotor for safety. Complements Z-10. Tandem cockpit from ground up. 150+ in service.",
+      "year": 2012
+    },
+    {
+      "id": "in-lch",
+      "name": "HAL Light Combat Helicopter (Prachand)",
+      "nato_name": null,
+      "type": "attack_helicopter",
+      "country_of_origin": "IN",
+      "manufacturer": "Hindustan Aeronautics Limited",
+      "service_history": {
+        "introduced": 2022,
+        "first_flight": 2010,
+        "retired": null,
+        "production_count": 15,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 15,
+            "status": "active",
+            "notes": "IAF/Army, 180 planned"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "seating_configuration": "tandem",
+        "length_m": 15.8,
+        "rotor_diameter_m": 13.2,
+        "height_m": 4.7,
+        "empty_weight_kg": 2850,
+        "max_takeoff_weight_kg": 5800
+      },
+      "performance": {
+        "max_speed_kmh": 268,
+        "cruise_speed_kmh": 220,
+        "combat_radius_km": 550,
+        "ferry_range_km": 700,
+        "service_ceiling_m": 6500,
+        "hover_ceiling_m": 4500,
+        "notes": "Optimized for high-altitude Himalayan ops"
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Turbomeca/HAL Shakti",
+        "power_shp": 1067
+      },
+      "avionics": {
+        "targeting": "EL-OP COMPASS sight",
+        "flir": "Day/night",
+        "ew_suite": "Saab IDAS",
+        "helmet_mounted_display": "Elbit"
+      },
+      "armament": {
+        "gun": {
+          "type": "Nexter M621",
+          "caliber_mm": 20,
+          "rounds": 400
+        },
+        "missiles": {
+          "atgm": [
+            "HELINA/Dhruvastra (8)",
+            "Spike-ER"
+          ],
+          "aam": [
+            "Mistral (4)"
+          ]
+        },
+        "rockets": {
+          "type": "70mm guided/unguided",
+          "total_rockets": 68
+        }
+      },
+      "unit_cost_usd": 26000000,
+      "cost_year": 2023,
+      "confidence": "medium",
+      "sources": [
+        "HAL",
+        "IAF",
+        "Jane's"
+      ],
+      "notes": "India's indigenous attack helicopter 'Prachand' (Fierce). World's highest hover ceiling. Designed for Siachen/LAC operations. 180 planned total.",
+      "year": 2022
+    },
+    {
+      "id": "in-rudra",
+      "name": "HAL Rudra (ALH WSI)",
+      "nato_name": null,
+      "type": "armed_utility",
+      "country_of_origin": "IN",
+      "manufacturer": "Hindustan Aeronautics Limited",
+      "service_history": {
+        "introduced": 2013,
+        "first_flight": 2007,
+        "retired": null,
+        "production_count": 76,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 76,
+            "status": "active",
+            "notes": "IAF/Army"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 4,
+        "length_m": 15.87,
+        "rotor_diameter_m": 13.2,
+        "empty_weight_kg": 2895,
+        "max_takeoff_weight_kg": 5500
+      },
+      "performance": {
+        "max_speed_kmh": 280,
+        "cruise_speed_kmh": 245,
+        "combat_radius_km": 400,
+        "service_ceiling_m": 6000
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Turbomeca/HAL Shakti",
+        "power_shp": 1067
+      },
+      "armament": {
+        "gun": {
+          "type": "M621",
+          "caliber_mm": 20,
+          "rounds": 400
+        },
+        "missiles": {
+          "atgm": [
+            "Helina (8)",
+            "Spike-ER"
+          ],
+          "aam": [
+            "Mistral"
+          ]
+        },
+        "rockets": {
+          "type": "68mm SNEB",
+          "total_rockets": 40
+        }
+      },
+      "unit_cost_usd": 15000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "HAL",
+        "Indian Army"
+      ],
+      "notes": "Armed Dhruv variant. Weapon Systems Integrated (WSI). Can carry 4 troops while armed. 76 in service. Predecessor to LCH.",
+      "year": 2013
+    },
+    {
+      "id": "jp-ah64djp",
+      "name": "AH-64DJP Apache (Japan)",
+      "nato_name": null,
+      "type": "attack_helicopter",
+      "country_of_origin": "US",
+      "manufacturer": "Fuji Heavy Industries (Boeing license)",
+      "service_history": {
+        "introduced": 2006,
+        "retired": null,
+        "production_count": 13,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 13,
+            "status": "active",
+            "notes": "JGSDF"
+          }
+        ],
+        "notes": "Order cut from 62 to 13 due to cost"
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 17.73,
+        "rotor_diameter_m": 14.63,
+        "max_takeoff_weight_kg": 10433
+      },
+      "performance": {
+        "max_speed_kmh": 293,
+        "combat_radius_km": 480,
+        "service_ceiling_m": 6400
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "IHI T700-IHI-701C",
+        "power_shp": 1890
+      },
+      "armament": {
+        "gun": {
+          "type": "M230",
+          "caliber_mm": 30,
+          "rounds": 1200
+        },
+        "missiles": {
+          "atgm": [
+            "AGM-114 Hellfire (16)"
+          ],
+          "aam": [
+            "AIM-92 Stinger"
+          ]
+        },
+        "rockets": {
+          "type": "Hydra 70mm",
+          "total_rockets": 76
+        }
+      },
+      "unit_cost_usd": 70000000,
+      "cost_year": 2006,
+      "cost_notes": "Extremely expensive due to license production",
+      "confidence": "high",
+      "sources": [
+        "Fuji",
+        "JGSDF",
+        "Jane's"
+      ],
+      "notes": "Japanese license-built Apache. Only 13 built (originally 62 planned) due to $70M unit cost. Most expensive Apache variant. Being supplemented by AH-1Z interest.",
+      "year": 2006
+    },
+    {
+      "id": "jp-ah1s",
+      "name": "Fuji AH-1S Cobra (Japan)",
+      "nato_name": null,
+      "type": "attack_helicopter",
+      "country_of_origin": "US",
+      "manufacturer": "Fuji Heavy Industries (Bell license)",
+      "service_history": {
+        "introduced": 1979,
+        "retired": null,
+        "production_count": 89,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 50,
+            "status": "active",
+            "notes": "JGSDF, retiring"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 16.18,
+        "rotor_diameter_m": 13.41,
+        "max_takeoff_weight_kg": 4536
+      },
+      "performance": {
+        "max_speed_kmh": 227,
+        "combat_radius_km": 200,
+        "service_ceiling_m": 3720
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Kawasaki T53-K-703",
+        "power_shp": 1800
+      },
+      "armament": {
+        "gun": {
+          "type": "M197",
+          "caliber_mm": 20,
+          "rounds": 750
+        },
+        "missiles": {
+          "atgm": [
+            "BGM-71 TOW (8)"
+          ]
+        },
+        "rockets": {
+          "type": "Hydra 70mm",
+          "total_rockets": 38
+        }
+      },
+      "unit_cost_usd": 12000000,
+      "cost_year": 1990,
+      "confidence": "high",
+      "sources": [
+        "JGSDF",
+        "Jane's"
+      ],
+      "notes": "Japanese license-built Cobra. 89 built by Fuji. Being retired, supplemented by limited Apaches. TOW missiles only (no Hellfire).",
+      "year": 1984
+    },
+    {
+      "id": "kr-ah64e-kr",
+      "name": "AH-64E Apache (Korea)",
+      "nato_name": null,
+      "type": "attack_helicopter",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 2017,
+        "retired": null,
+        "production_count": 36,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 36,
+            "status": "active",
+            "notes": "ROKA"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 17.73,
+        "rotor_diameter_m": 14.63,
+        "max_takeoff_weight_kg": 10432
+      },
+      "performance": {
+        "max_speed_kmh": 293,
+        "combat_radius_km": 480,
+        "service_ceiling_m": 6400
+      },
+      "armament": {
+        "gun": {
+          "type": "M230",
+          "caliber_mm": 30,
+          "rounds": 1200
+        },
+        "missiles": {
+          "atgm": [
+            "AGM-114 Hellfire (16)"
+          ],
+          "aam": [
+            "Stinger"
+          ]
+        },
+        "rockets": {
+          "type": "Hydra 70mm",
+          "total_rockets": 76
+        }
+      },
+      "unit_cost_usd": 35500000,
+      "cost_year": 2017,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "ROKA"
+      ],
+      "notes": "South Korea operates 36 AH-64E for anti-armor defense. Key to countering DPRK armor. Delivered 2017. Longbow radar equipped.",
+      "year": 2017
+    },
+    {
+      "id": "kr-500md",
+      "name": "MD 500 Defender (Korea)",
+      "nato_name": null,
+      "type": "light_attack",
+      "country_of_origin": "US",
+      "manufacturer": "MD Helicopters / Korean Aerospace",
+      "service_history": {
+        "introduced": 1976,
+        "retired": null,
+        "production_count": 309,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 130,
+            "status": "active",
+            "notes": "ROKA, aging"
+          },
+          {
+            "country": "KP",
+            "quantity": 86,
+            "status": "active",
+            "notes": "Smuggled in 1985"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 9.4,
+        "rotor_diameter_m": 8.05,
+        "max_takeoff_weight_kg": 1361
+      },
+      "performance": {
+        "max_speed_kmh": 282,
+        "combat_radius_km": 200,
+        "service_ceiling_m": 4875
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Allison 250-C20B",
+        "power_shp": 420
+      },
+      "armament": {
+        "gun": {
+          "type": "M134 Minigun / 7.62mm MG",
+          "caliber_mm": 7.62
+        },
+        "missiles": {
+          "atgm": [
+            "BGM-71 TOW (4)"
+          ]
+        },
+        "rockets": {
+          "type": "70mm",
+          "total_rockets": 14
+        }
+      },
+      "unit_cost_usd": 2000000,
+      "cost_year": 1990,
+      "confidence": "high",
+      "sources": [
+        "ROKA",
+        "Jane's"
+      ],
+      "notes": "Both Koreas operate MD 500! North Korea smuggled 86 in 1985. South Korea has 130+. Light scout/attack. Being replaced by newer platforms.",
+      "year": 1976
+    }
+  ]
+}

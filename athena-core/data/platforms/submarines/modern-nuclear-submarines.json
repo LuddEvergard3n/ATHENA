@@ -1,0 +1,461 @@
+{
+  "platforms": [
+    {
+      "id": "us-ssbn-826-columbia",
+      "name": "Columbia-class SSBN",
+      "type": "ssbn",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics Electric Boat",
+      "service_entry": 2031,
+      "specifications": {
+        "displacement_surfaced_tons": 20810,
+        "displacement_submerged_tons": 20810,
+        "length_m": 171,
+        "beam_m": 13,
+        "draft_m": 10.7,
+        "crew": 155,
+        "max_speed_submerged_knots": 20
+      },
+      "propulsion": {
+        "type": "Nuclear",
+        "reactor": "S1B PWR (life-of-ship)",
+        "propulsion": "Electric drive",
+        "note": "No refueling required"
+      },
+      "armament": {
+        "slbm_tubes": 16,
+        "slbm": "Trident II D5LE",
+        "warheads_per_missile": 8,
+        "range_km": 12000,
+        "torpedo_tubes": 4,
+        "torpedoes": "Mk 48 ADCAP"
+      },
+      "service_history": {
+        "expected_service": 2031,
+        "planned": 12,
+        "lead_ship": "USS District of Columbia (SSBN-826)",
+        "replaces": "Ohio-class"
+      },
+      "unit_cost_usd": 9000000000,
+      "notes": "Ohio replacement. Life-of-ship reactor core. Electric drive for quieting. Most expensive ship program in USN history."
+    },
+    {
+      "id": "us-ssbn-726-ohio",
+      "name": "Ohio-class SSBN",
+      "type": "ssbn",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics Electric Boat",
+      "service_entry": 1981,
+      "specifications": {
+        "displacement_submerged_tons": 18750,
+        "length_m": 170.7,
+        "beam_m": 12.8,
+        "crew": 155,
+        "max_speed_submerged_knots": 25
+      },
+      "propulsion": {
+        "type": "Nuclear",
+        "reactor": "GE S8G PWR",
+        "power_shp": 60000
+      },
+      "armament": {
+        "slbm_tubes": 24,
+        "slbm": "Trident II D5",
+        "torpedo_tubes": 4,
+        "torpedoes": "Mk 48"
+      },
+      "service_history": {
+        "introduced": 1981,
+        "status": "active",
+        "built": 18,
+        "ssbn_active": 14,
+        "ssgn_converted": 4
+      },
+      "notes": "Backbone of US nuclear deterrent. 14 SSBNs carry majority of US warheads. 4 converted to SSGN cruise missile subs."
+    },
+    {
+      "id": "us-ssn-774-virginia",
+      "name": "Virginia-class SSN",
+      "type": "ssn",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics/Huntington Ingalls",
+      "service_entry": 2004,
+      "specifications": {
+        "displacement_submerged_tons": 7900,
+        "length_m": 115,
+        "beam_m": 10.4,
+        "draft_m": 9.7,
+        "crew": 135,
+        "max_speed_submerged_knots": 25,
+        "test_depth_m": 250
+      },
+      "propulsion": {
+        "type": "Nuclear",
+        "reactor": "GE S9G PWR",
+        "power_shp": 40000,
+        "pump_jet": true
+      },
+      "armament": {
+        "torpedo_tubes": "4x 533mm",
+        "torpedoes": "Mk 48 Mod 7 CBASS",
+        "vls": {
+          "type": "VPM (Block V+)",
+          "cells": 12,
+          "tomahawk": true
+        },
+        "tomahawk_tubes": 12,
+        "total_weapons": 37
+      },
+      "sensors": {
+        "sonar": "AN/BQQ-10 bow array",
+        "towed_array": "TB-29A",
+        "photonics_mast": "AN/BVS-1 (no periscope)"
+      },
+      "variants": [
+        "Block I-II: 12 Tomahawk tubes",
+        "Block III-IV: Redesigned bow",
+        "Block V: VPM adds 28 Tomahawk capacity"
+      ],
+      "service_history": {
+        "introduced": 2004,
+        "status": "active",
+        "built": 23,
+        "building": 9,
+        "planned": 66
+      },
+      "unit_cost_usd": 3400000000,
+      "notes": "US primary attack submarine. Block V adds Virginia Payload Module (40 Tomahawks total). Photonics masts replace periscopes."
+    },
+    {
+      "id": "us-ssn-21-seawolf",
+      "name": "Seawolf-class SSN",
+      "type": "ssn",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics Electric Boat",
+      "service_entry": 1997,
+      "specifications": {
+        "displacement_submerged_tons": 9138,
+        "length_m": 107.6,
+        "beam_m": 12.2,
+        "crew": 140,
+        "max_speed_submerged_knots": 35,
+        "test_depth_m": 490
+      },
+      "propulsion": {
+        "reactor": "GE S6W PWR",
+        "power_shp": 52000
+      },
+      "armament": {
+        "torpedo_tubes": "8x 660mm",
+        "weapons": 50,
+        "tomahawk": true,
+        "mines": true
+      },
+      "service_history": {
+        "introduced": 1997,
+        "status": "active",
+        "built": 3,
+        "ships": [
+          "USS Seawolf",
+          "USS Connecticut",
+          "USS Jimmy Carter"
+        ]
+      },
+      "notes": "Most capable US attack sub. Only 3 built due to cost. Jimmy Carter modified for special operations. Quietest sub ever built."
+    },
+    {
+      "id": "ru-ssbn-955a-borei-a",
+      "name": "Borei-A class (Project 955A)",
+      "type": "ssbn",
+      "country_of_origin": "RU",
+      "manufacturer": "Sevmash",
+      "nato_name": "Borei-II",
+      "service_entry": 2020,
+      "specifications": {
+        "displacement_submerged_tons": 24000,
+        "length_m": 170,
+        "beam_m": 13.5,
+        "crew": 107,
+        "max_speed_submerged_knots": 29
+      },
+      "propulsion": {
+        "type": "Nuclear",
+        "reactor": "OK-650V PWR",
+        "pump_jet": true
+      },
+      "armament": {
+        "slbm_tubes": 16,
+        "slbm": "RSM-56 Bulava (SS-N-32)",
+        "warheads_per_missile": 6,
+        "range_km": 9300,
+        "torpedo_tubes": 6,
+        "torpedoes": 533
+      },
+      "service_history": {
+        "introduced": 2020,
+        "status": "active",
+        "built": 4,
+        "building": 4,
+        "planned": 8
+      },
+      "notes": "Russia's newest SSBN. Borei-A improved quieting. Replaces Typhoon and Delta IV. Bulava troubled development."
+    },
+    {
+      "id": "ru-ssn-885m-yasen-m",
+      "name": "Yasen-M class (Project 885M)",
+      "type": "ssgn",
+      "country_of_origin": "RU",
+      "manufacturer": "Sevmash",
+      "nato_name": "Severodvinsk-II",
+      "service_entry": 2021,
+      "specifications": {
+        "displacement_submerged_tons": 13800,
+        "length_m": 130,
+        "beam_m": 13,
+        "crew": 90,
+        "max_speed_submerged_knots": 31
+      },
+      "propulsion": {
+        "reactor": "KPM OK-650KPM PWR",
+        "pump_jet": true
+      },
+      "armament": {
+        "vls": 32,
+        "cruise_missiles": [
+          "3M14 Kalibr (1500km)",
+          "P-800 Oniks",
+          "3M22 Zircon hypersonic"
+        ],
+        "torpedo_tubes": 10,
+        "torpedoes": "UGST, 65-76A"
+      },
+      "sensors": {
+        "sonar": "Irtysh-Amfora spherical array"
+      },
+      "service_history": {
+        "introduced": 2021,
+        "status": "active",
+        "built": 4,
+        "building": 5
+      },
+      "notes": "Russia's most advanced attack sub. First to carry Zircon hypersonic. Spherical sonar array. Very expensive."
+    },
+    {
+      "id": "gb-ssbn-vanguard",
+      "name": "Vanguard-class SSBN",
+      "type": "ssbn",
+      "country_of_origin": "GB",
+      "manufacturer": "BAE Systems",
+      "service_entry": 1993,
+      "specifications": {
+        "displacement_submerged_tons": 15900,
+        "length_m": 149.9,
+        "beam_m": 12.8,
+        "crew": 135,
+        "max_speed_submerged_knots": 25
+      },
+      "propulsion": {
+        "reactor": "Rolls-Royce PWR2"
+      },
+      "armament": {
+        "slbm_tubes": 16,
+        "slbm": "Trident II D5",
+        "warheads_per_missile": 8,
+        "torpedo_tubes": 4
+      },
+      "service_history": {
+        "introduced": 1993,
+        "status": "active",
+        "ships": [
+          "Vanguard",
+          "Victorious",
+          "Vigilant",
+          "Vengeance"
+        ]
+      },
+      "notes": "UK continuous at-sea deterrent. One always at sea. To be replaced by Dreadnought class."
+    },
+    {
+      "id": "gb-ssbn-dreadnought",
+      "name": "Dreadnought-class SSBN",
+      "type": "ssbn",
+      "country_of_origin": "GB",
+      "manufacturer": "BAE Systems",
+      "service_entry": 2030,
+      "specifications": {
+        "displacement_submerged_tons": 17500,
+        "length_m": 152.9
+      },
+      "propulsion": {
+        "reactor": "Rolls-Royce PWR3 (life-of-ship)"
+      },
+      "armament": {
+        "slbm_tubes": 12,
+        "slbm": "Trident II D5LE"
+      },
+      "service_history": {
+        "expected_service": 2030,
+        "planned": 4,
+        "status": "building"
+      },
+      "notes": "Vanguard replacement. Common Missile Compartment with Columbia class. 12 tubes (reduced from 16)."
+    },
+    {
+      "id": "gb-ssn-astute",
+      "name": "Astute-class SSN",
+      "type": "ssn",
+      "country_of_origin": "GB",
+      "manufacturer": "BAE Systems",
+      "service_entry": 2010,
+      "specifications": {
+        "displacement_submerged_tons": 7400,
+        "length_m": 97,
+        "beam_m": 11.3,
+        "crew": 98,
+        "max_speed_submerged_knots": 29
+      },
+      "propulsion": {
+        "reactor": "Rolls-Royce PWR2 Core H"
+      },
+      "armament": {
+        "torpedo_tubes": 6,
+        "weapons": 38,
+        "tomahawk": true,
+        "torpedoes": "Spearfish Mod 1"
+      },
+      "sensors": {
+        "sonar": "Thales Sonar 2076"
+      },
+      "service_history": {
+        "introduced": 2010,
+        "status": "active",
+        "built": 5,
+        "building": 2,
+        "planned": 7
+      },
+      "unit_cost_usd": 1600000000,
+      "notes": "Most advanced UK submarine. Sonar 2076 best in world. Tomahawk capable. No refueling in service life."
+    },
+    {
+      "id": "fr-ssbn-le-triomphant",
+      "name": "Le Triomphant-class SSBN",
+      "type": "ssbn",
+      "country_of_origin": "FR",
+      "manufacturer": "Naval Group (DCNS)",
+      "service_entry": 1997,
+      "specifications": {
+        "displacement_submerged_tons": 14335,
+        "length_m": 138,
+        "beam_m": 12.5,
+        "crew": 111,
+        "max_speed_submerged_knots": 25
+      },
+      "propulsion": {
+        "reactor": "K15 PWR",
+        "pump_jet": true
+      },
+      "armament": {
+        "slbm_tubes": 16,
+        "slbm": "M51.2",
+        "range_km": 10000,
+        "torpedo_tubes": 4,
+        "torpedoes": "F21 Artemis"
+      },
+      "service_history": {
+        "introduced": 1997,
+        "status": "active",
+        "ships": [
+          "Le Triomphant",
+          "Le T\u00e9m\u00e9raire",
+          "Le Vigilant",
+          "Le Terrible"
+        ]
+      },
+      "notes": "French nuclear deterrent. M51 missile replaced M45. Pump-jet propulsion. One always at sea."
+    },
+    {
+      "id": "cn-ssbn-094a-jin-a",
+      "name": "Type 094A Jin-class SSBN",
+      "type": "ssbn",
+      "country_of_origin": "CN",
+      "manufacturer": "Bohai Shipyard",
+      "nato_name": "Jin-A",
+      "service_entry": 2020,
+      "specifications": {
+        "displacement_submerged_tons": 11000,
+        "length_m": 140,
+        "beam_m": 12.5,
+        "crew": 140,
+        "max_speed_submerged_knots": 20
+      },
+      "propulsion": {
+        "type": "Nuclear",
+        "reactor": "PWR"
+      },
+      "armament": {
+        "slbm_tubes": 12,
+        "slbm": "JL-2 (CSS-N-14)",
+        "range_km": 7400,
+        "torpedo_tubes": 6
+      },
+      "service_history": {
+        "introduced": 2020,
+        "status": "active",
+        "quantity": 6
+      },
+      "notes": "Improved Jin with reduced noise. JL-2 missile range limits patrol areas. Type 096 replacement in development."
+    },
+    {
+      "id": "cn-ssn-093a-shang-a",
+      "name": "Type 093A Shang-class SSN",
+      "type": "ssn",
+      "country_of_origin": "CN",
+      "manufacturer": "Huludao Shipyard",
+      "nato_name": "Shang-II",
+      "service_entry": 2016,
+      "specifications": {
+        "displacement_submerged_tons": 7000,
+        "length_m": 110,
+        "beam_m": 11,
+        "max_speed_submerged_knots": 30
+      },
+      "armament": {
+        "torpedo_tubes": 6,
+        "cruise_missiles": "YJ-18",
+        "torpedoes": "Yu-6"
+      },
+      "service_history": {
+        "introduced": 2016,
+        "status": "active",
+        "quantity": 6
+      },
+      "notes": "Improved Shang with VLS for YJ-18. Still noisier than Western subs. Type 095 successor building."
+    },
+    {
+      "id": "au-ssn-aukus",
+      "name": "AUKUS SSN (SSN-AUKUS)",
+      "type": "ssn",
+      "country_of_origin": "AU",
+      "manufacturer": "BAE Systems / ASC",
+      "service_entry": 2040,
+      "specifications": {
+        "displacement_submerged_tons": 10000,
+        "crew": 130
+      },
+      "propulsion": {
+        "reactor": "PWR (US/UK technology)"
+      },
+      "armament": {
+        "torpedo_tubes": "533mm",
+        "tomahawk": true,
+        "torpedoes": true
+      },
+      "service_history": {
+        "expected_service": 2040,
+        "planned": 8,
+        "note": "Interim Virginia-class from 2030s"
+      },
+      "notes": "AUKUS program. Australia to build UK-designed SSN with US reactor. Interim Virginia-class purchases. Replaces Collins."
+    }
+  ]
+}

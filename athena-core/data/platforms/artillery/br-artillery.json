@@ -1,0 +1,123 @@
+{
+  "category": "artillery",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-02-16",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Brazilian Army (Exercito Brasileiro)"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "br-m109a3",
+      "name": "M109A3 (Brazilian Army)",
+      "type": "sph",
+      "country": "BR",
+      "year": 1970,
+      "manufacturer": "BAE Systems (General Dynamics)",
+      "service_history": {
+        "introduced": 1970,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 72,
+            "status": "active",
+            "notes": "Main self-propelled howitzer of Brazilian Army. Modernization in progress."
+          }
+        ]
+      },
+      "specifications": {
+        "caliber_mm": 155,
+        "barrel_length": "L/39",
+        "range_km": 24,
+        "range_rap_km": 30,
+        "crew": 6,
+        "weight_kg": 24948,
+        "rate_of_fire_rpm": 3,
+        "ammunition_carried": 36,
+        "traverse_degrees": 360,
+        "elevation_min": -3,
+        "elevation_max": 75
+      },
+      "mobility": {
+        "engine": "Detroit Diesel 8V71T",
+        "power_hp": 405,
+        "max_speed_kmh": 56,
+        "range_km": 350,
+        "fuel_capacity_liters": 511
+      },
+      "protection": {
+        "armor_type": "aluminum alloy",
+        "max_armor_mm": 32,
+        "nbc_protection": true
+      },
+      "notes": "Workhorse SPH of Brazilian Army since 1970s. A3 variant with improved reliability. Being supplemented by ASTROS for rocket artillery."
+    },
+    {
+      "id": "br-l118-light-gun",
+      "name": "L118 Light Gun 105mm",
+      "type": "towed",
+      "country": "BR",
+      "year": 1987,
+      "manufacturer": "Royal Ordnance (BAE Systems)",
+      "service_history": {
+        "introduced": 1987,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 54,
+            "status": "active",
+            "notes": "Mountain and light artillery battalions. Air-portable."
+          }
+        ]
+      },
+      "specifications": {
+        "caliber_mm": 105,
+        "barrel_length": "L/37",
+        "range_km": 17,
+        "range_rap_km": 21,
+        "crew": 6,
+        "weight_kg": 1858,
+        "rate_of_fire_rpm": 6,
+        "ammunition_types": ["HE", "HESH", "WP", "Illum", "Smoke"],
+        "traverse_degrees": 360,
+        "elevation_min": -5.5,
+        "elevation_max": 70
+      },
+      "notes": "Light towed howitzer. Air-portable by helicopter (CH-47, H225M). Used in mountain and jungle operations. Same gun used by British Army in Falklands War."
+    },
+    {
+      "id": "br-m114-155mm",
+      "name": "M114A1 155mm Howitzer",
+      "type": "towed",
+      "country": "BR",
+      "year": 1960,
+      "manufacturer": "Rock Island Arsenal",
+      "service_history": {
+        "introduced": 1960,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 92,
+            "status": "active",
+            "notes": "Heavy towed artillery battalions. Being gradually replaced."
+          }
+        ]
+      },
+      "specifications": {
+        "caliber_mm": 155,
+        "barrel_length": "L/23",
+        "range_km": 14.6,
+        "crew": 11,
+        "weight_kg": 5672,
+        "rate_of_fire_rpm": 1,
+        "traverse_degrees": 49,
+        "elevation_min": -2,
+        "elevation_max": 63
+      },
+      "notes": "Cold War era towed howitzer. Limited range by modern standards. Being supplemented by ASTROS MLRS for deeper fires."
+    }
+  ]
+}

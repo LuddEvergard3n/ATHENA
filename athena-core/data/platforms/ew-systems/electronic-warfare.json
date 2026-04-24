@@ -1,0 +1,301 @@
+{
+  "category": "ew-systems",
+  "subcategory": "electronic-warfare",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": [
+      "Jane's Electronic Mission Aircraft",
+      "IISS"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-alq99",
+      "name": "AN/ALQ-99 TJS",
+      "type": "airborne-jammer",
+      "country": "US",
+      "year": 1971,
+      "manufacturer": "Raytheon",
+      "specifications": {
+        "platform": "EA-18G Growler",
+        "bands": [
+          "High",
+          "Low"
+        ],
+        "pods": 5
+      },
+      "operators": [
+        "US",
+        "AU"
+      ],
+      "notes": "Legacy EA-18G jammer system"
+    },
+    {
+      "id": "us-ngj",
+      "name": "AN/ALQ-249 NGJ-MB",
+      "type": "airborne-jammer",
+      "country": "US",
+      "year": 2024,
+      "manufacturer": "Raytheon",
+      "specifications": {
+        "platform": "EA-18G Growler",
+        "type": "AESA jammer",
+        "bands": "Mid-band",
+        "capability": "Reactive jamming, cyber attack"
+      },
+      "operators": [
+        "US"
+      ],
+      "notes": "Next Generation Jammer, ALQ-99 replacement"
+    },
+    {
+      "id": "ru-krasukha4",
+      "name": "Krasukha-4",
+      "type": "ground-jammer",
+      "country": "RU",
+      "year": 2012,
+      "manufacturer": "KRET",
+      "specifications": {
+        "type": "Broadband active jammer",
+        "range_km": 300,
+        "targets": "AWACS, satellites, UAVs"
+      },
+      "operators": [
+        "RU"
+      ],
+      "notes": "Strategic ground-based EW system"
+    },
+    {
+      "id": "ru-krasukha2",
+      "name": "Krasukha-2",
+      "type": "ground-jammer",
+      "country": "RU",
+      "year": 2012,
+      "manufacturer": "KRET",
+      "specifications": {
+        "type": "Narrowband jammer",
+        "targets": "AWACS, ground radars"
+      },
+      "operators": [
+        "RU"
+      ],
+      "notes": "Targets AWACS and similar systems"
+    },
+    {
+      "id": "ru-zhitel",
+      "name": "Zhitel (R-330Zh)",
+      "type": "comms-jammer",
+      "country": "RU",
+      "year": 2001,
+      "manufacturer": "Protek",
+      "specifications": {
+        "type": "Communications jammer",
+        "frequency_range": "100 MHz - 2 GHz",
+        "targets": "Cellular, satellite, tactical radios"
+      },
+      "operators": [
+        "RU"
+      ],
+      "notes": "Communications jamming system"
+    },
+    {
+      "id": "ru-borisoglebsk2",
+      "name": "Borisoglebsk-2",
+      "type": "comms-ew-complex",
+      "country": "RU",
+      "year": 2015,
+      "manufacturer": "Sozvezdie",
+      "specifications": {
+        "vehicles": 9,
+        "capability": "Jamming, direction finding, SIGINT"
+      },
+      "operators": [
+        "RU"
+      ],
+      "notes": "Russian integrated EW complex"
+    },
+    {
+      "id": "ru-murmansk",
+      "name": "Murmansk-BN",
+      "type": "hf-jammer",
+      "country": "RU",
+      "year": 2014,
+      "manufacturer": "KRET",
+      "specifications": {
+        "range_km": 5000,
+        "targets": "HF communications"
+      },
+      "operators": [
+        "RU"
+      ],
+      "notes": "Long-range HF jamming"
+    },
+    {
+      "id": "ru-leer3",
+      "name": "Leer-3 (Orlan-10 based)",
+      "type": "drone-jammer",
+      "country": "RU",
+      "year": 2015,
+      "manufacturer": "STTs",
+      "specifications": {
+        "platform": "Orlan-10 UAV",
+        "capability": "Cellular network jamming, SMS spoofing"
+      },
+      "operators": [
+        "RU"
+      ],
+      "notes": "UAV-based cellular jamming"
+    },
+    {
+      "id": "ru-moskva1",
+      "name": "Moskva-1",
+      "type": "passive-detection",
+      "country": "RU",
+      "year": 2015,
+      "manufacturer": "KRET",
+      "specifications": {
+        "range_km": 400,
+        "type": "Passive radar/ELINT"
+      },
+      "operators": [
+        "RU"
+      ],
+      "notes": "Passive electronic reconnaissance"
+    },
+    {
+      "id": "cn-wz505",
+      "name": "WZ-505 EW Vehicle",
+      "type": "ground-ew",
+      "country": "CN",
+      "year": 2010,
+      "manufacturer": "CETC",
+      "specifications": {
+        "capability": "Communications jamming, radar jamming"
+      },
+      "operators": [
+        "CN"
+      ],
+      "notes": "PLA ground EW vehicle"
+    },
+    {
+      "id": "il-suter",
+      "name": "Suter",
+      "type": "cyber-ew",
+      "country": "US",
+      "year": 2006,
+      "manufacturer": "BAE Systems",
+      "specifications": {
+        "capability": "IADS penetration, network intrusion"
+      },
+      "operators": [
+        "US",
+        "IL"
+      ],
+      "notes": "Cyber-attack on air defense networks"
+    },
+    {
+      "id": "tr-koral",
+      "name": "KORAL",
+      "type": "ground-jammer",
+      "country": "TR",
+      "year": 2015,
+      "manufacturer": "ASELSAN",
+      "specifications": {
+        "type": "Soft-kill EW system",
+        "range_km": 200,
+        "targets": "Ground/air radars"
+      },
+      "operators": [
+        "TR"
+      ],
+      "notes": "Turkish indigenous EW system"
+    },
+    {
+      "id": "tr-redet",
+      "name": "REDET",
+      "type": "radar-ew",
+      "country": "TR",
+      "year": 2020,
+      "manufacturer": "ASELSAN",
+      "specifications": {
+        "capability": "Radar electronic support, jamming"
+      },
+      "operators": [
+        "TR"
+      ],
+      "notes": "Turkish radar EW suite"
+    },
+    {
+      "id": "uk-brite-cloud",
+      "name": "BriteCloud",
+      "type": "expendable-jammer",
+      "country": "GB",
+      "year": 2018,
+      "manufacturer": "Leonardo",
+      "specifications": {
+        "size": "Flare-sized (55mm)",
+        "capability": "DRFM jammer, radar decoying"
+      },
+      "operators": [
+        "GB",
+        "US"
+      ],
+      "notes": "World's smallest expendable DRFM jammer"
+    },
+    {
+      "id": "de-spectra",
+      "name": "SPECTRA",
+      "type": "integrated-ew",
+      "country": "FR",
+      "year": 2001,
+      "manufacturer": "Thales/MBDA",
+      "specifications": {
+        "platform": "Rafale",
+        "capability": "RWR, jammer, missile warning, DRFM"
+      },
+      "operators": [
+        "FR",
+        "IN (Rafale)",
+        "EG",
+        "QA"
+      ],
+      "notes": "Rafale integrated EW suite"
+    },
+    {
+      "id": "it-praetorian",
+      "name": "Praetorian DASS",
+      "type": "integrated-ew",
+      "country": "EU",
+      "year": 2003,
+      "manufacturer": "Leonardo/Airbus",
+      "specifications": {
+        "platform": "Eurofighter Typhoon",
+        "capability": "ESM, ECM, MAWS, LWS"
+      },
+      "operators": [
+        "DE",
+        "IT",
+        "ES",
+        "GB",
+        "SA"
+      ],
+      "notes": "Typhoon defensive aids suite"
+    },
+    {
+      "id": "in-samyukta",
+      "name": "Samyukta EW System",
+      "type": "ground-ew",
+      "country": "IN",
+      "year": 2004,
+      "manufacturer": "DRDO/BEL",
+      "specifications": {
+        "capability": "COMINT, ELINT, jamming"
+      },
+      "operators": [
+        "IN"
+      ],
+      "notes": "Indian integrated EW system"
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition",
+      "Nexter Systems"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "fr-vbci",
+      "name": "VBCI",
+      "type": "ifv",
+      "country_of_origin": "FR",
+      "manufacturer": "Nexter Systems / Renault Trucks Defense",
+      "service_history": {
+        "introduced": 2008,
+        "retired": null,
+        "production_count": 700,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 630,
+            "variants": [
+              "VCI",
+              "VPC"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "QA",
+            "quantity": 60,
+            "variants": [
+              "VBCI-2"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 9,
+        "weight_kg": 25600,
+        "weight_combat_kg": 29000,
+        "length_m": 7.66,
+        "width_m": 2.98,
+        "height_m": 2.26,
+        "ground_clearance_m": 0.5
+      },
+      "mobility": {
+        "engine": {
+          "model": "Volvo D12A V6",
+          "type": "diesel_turbocharged",
+          "power_hp": 550,
+          "power_kw": 410
+        },
+        "power_to_weight_hp_ton": 21.5,
+        "drivetrain": "8x8",
+        "transmission": "ZF 7HP902 automatic",
+        "suspension": "independent hydropneumatic",
+        "max_speed_road_kmh": 100,
+        "max_speed_offroad_kmh": 60,
+        "range_road_km": 750,
+        "fuel_capacity_liters": 400,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "fording_depth_m": 1.2,
+        "trench_crossing_m": 2.0,
+        "vertical_obstacle_m": 0.7,
+        "amphibious": false,
+        "tyre_pressure_central": true
+      },
+      "armament": {
+        "main": {
+          "designation": "GIAT M811",
+          "caliber_mm": 25,
+          "type": "autocannon",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 50,
+          "traverse_deg": 360,
+          "stabilization": "two-axis electric",
+          "rate_of_fire_rpm": 400,
+          "effective_range_m": 2500,
+          "ammunition_carried": 450,
+          "ammunition_types": [
+            {
+              "type": "APDS",
+              "penetration_mm_rha": 40,
+              "penetration_range_m": 1000
+            },
+            {
+              "type": "HEI-T"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "ANF1",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2200
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 4",
+        "protection_front_mm_rha": 25,
+        "mine_protection": "STANAG 4569 Level 2a/2b",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true,
+        "add_on_armor": "AZUR urban kit available"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Sagem Paseo-II",
+        "commander_sight": {
+          "type": "Paseo-II",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "Paseo-II",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true,
+        "battle_management_system": "SCORPION SIR"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 9,
+        "acoustic_signature_reduction": true
+      },
+      "unit_cost_usd": 5000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia VBCI",
+        "Army Recognition",
+        "Nexter Systems"
+      ],
+      "notes": "Wheeled IFV 8x8. V\u00e9hicule Blind\u00e9 de Combat d'Infanterie. High road speed (100km/h). Mali, CAR combat proven. VBCI-2: 32t, 40mm CTA.",
+      "year": 2008
+    },
+    {
+      "id": "fr-vbci-2",
+      "name": "VBCI-2",
+      "type": "ifv",
+      "country_of_origin": "FR",
+      "manufacturer": "Nexter Systems",
+      "service_history": {
+        "introduced": 2018,
+        "retired": null,
+        "production_count": 60,
+        "operators": [
+          {
+            "country": "QA",
+            "quantity": 60,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 8,
+        "weight_kg": 32000,
+        "length_m": 7.9,
+        "width_m": 3.0,
+        "height_m": 2.8,
+        "ground_clearance_m": 0.5
+      },
+      "mobility": {
+        "engine": {
+          "model": "Volvo D13",
+          "type": "diesel_turbocharged",
+          "power_hp": 600,
+          "power_kw": 447
+        },
+        "power_to_weight_hp_ton": 18.8,
+        "drivetrain": "8x8",
+        "max_speed_road_kmh": 100,
+        "range_road_km": 700,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "CTA 40mm",
+          "caliber_mm": 40,
+          "type": "cased_telescoped_autocannon",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 45,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 200,
+          "effective_range_m": 4000,
+          "ammunition_carried": 150,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "penetration_mm_rha": 140,
+              "penetration_range_m": 1500
+            },
+            {
+              "type": "GPR-AB",
+              "notes": "Airburst programmable"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "ANF1",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "MMP (optional)",
+          "missiles_carried": 2,
+          "range_m": 4000,
+          "penetration_mm_rha": 1000
+        }
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 5",
+        "mine_protection": "STANAG 4569 Level 4a/4b",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Sagem T3",
+        "commander_sight": {
+          "type": "Panoramic",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true,
+        "automatic_target_tracker": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 10
+      },
+      "unit_cost_usd": 8000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Army Recognition",
+        "Nexter Systems",
+        "Jane's"
+      ],
+      "notes": "Export variant with T40 turret. CTA 40mm same as Ajax/EBRC. Qatar order 2015.",
+      "year": 2018
+    }
+  ]
+}

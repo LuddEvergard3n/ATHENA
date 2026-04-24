@@ -1,0 +1,349 @@
+{
+  "platforms": [
+    {
+      "id": "us-m72-law",
+      "name": "M72 LAW",
+      "type": "disposable_at_launcher",
+      "country_of_origin": "US",
+      "manufacturer": "Nammo (current)",
+      "full_name": "Light Anti-tank Weapon",
+      "service_entry": 1963,
+      "specifications": {
+        "caliber_mm": 66,
+        "length_extended_mm": 1010,
+        "length_collapsed_mm": 665,
+        "weight_kg": 2.5,
+        "muzzle_velocity_m_s": 145,
+        "effective_range_m": 200,
+        "max_range_m": 1000,
+        "penetration_mm": 300
+      },
+      "variants": [
+        {"name": "M72A2/A3", "penetration_mm": 300},
+        {"name": "M72A5/A6", "penetration_mm": 300, "note": "Improved sights"},
+        {"name": "M72A7", "penetration_mm": 450, "note": "Enhanced warhead"},
+        {"name": "M72 ASM", "note": "Anti-structure"},
+        {"name": "M72 FFE", "note": "Fire From Enclosure"}
+      ],
+      "service_history": {
+        "introduced": 1963,
+        "status": "active",
+        "production_count": "Millions",
+        "operators_count": 40
+      },
+      "combat_use": ["Vietnam", "Iraq", "Afghanistan", "Ukraine"],
+      "unit_cost_usd": 2000,
+      "notes": "Oldest disposable AT in service. Still effective vs light armor and bunkers. Massive production."
+    },
+    {
+      "id": "ru-rpg-30-kryuk",
+      "name": "RPG-30 Kryuk",
+      "type": "anti_aps_launcher",
+      "country_of_origin": "RU",
+      "manufacturer": "NPO Bazalt",
+      "service_entry": 2013,
+      "specifications": {
+        "caliber_mm": "105 main + 40 decoy",
+        "length_mm": 1135,
+        "weight_kg": 10.3,
+        "effective_range_m": 200,
+        "penetration_mm": 650
+      },
+      "features": {
+        "tandem_launch": true,
+        "aps_defeat": true,
+        "precursor_round": "40mm decoy triggers APS"
+      },
+      "service_history": {
+        "introduced": 2013,
+        "status": "active"
+      },
+      "notes": "Designed to defeat APS like Trophy. Fires decoy to trigger APS, main round follows 0.2-0.4sec later."
+    },
+    {
+      "id": "us-smaw",
+      "name": "Mk 153 SMAW",
+      "type": "at_launcher",
+      "country_of_origin": "US",
+      "manufacturer": "Nammo Talley",
+      "full_name": "Shoulder-Launched Multipurpose Assault Weapon",
+      "service_entry": 1984,
+      "specifications": {
+        "caliber_mm": 83,
+        "length_mm": 1370,
+        "weight_loaded_kg": 7.5,
+        "effective_range_m": 500,
+        "max_range_m": 1600
+      },
+      "ammunition": [
+        {"type": "Mk 3 HEDP", "penetration_mm": 200},
+        {"type": "Mk 6 HEAA", "penetration_mm": 600},
+        {"type": "Mk 80 NE", "note": "Novel Explosive"},
+        {"type": "Mk 7 Thermobaric", "note": "SMAW-NE"}
+      ],
+      "features": {
+        "spotting_rifle": "9mm tracer for ranging"
+      },
+      "service_history": {
+        "introduced": 1984,
+        "status": "active",
+        "primary_user": "USMC"
+      },
+      "combat_use": ["Grenada", "Panama", "Iraq", "Afghanistan"],
+      "unit_cost_usd": 14000,
+      "notes": "USMC primary bunker buster. Based on Israeli B-300. Spotting rifle for first-round hits."
+    },
+    {
+      "id": "il-matador",
+      "name": "MATADOR",
+      "type": "disposable_at_launcher",
+      "country_of_origin": "IL",
+      "manufacturer": "Rafael/Dynamit Nobel",
+      "service_entry": 2000,
+      "specifications": {
+        "caliber_mm": 90,
+        "length_mm": 1000,
+        "weight_kg": 8.9,
+        "effective_range_m": 500,
+        "penetration_mm": 500
+      },
+      "variants": [
+        {"name": "MATADOR", "note": "Standard AT"},
+        {"name": "MATADOR-WB", "note": "Wall breaching"},
+        {"name": "MATADOR-MP", "note": "Multi-purpose"}
+      ],
+      "features": {
+        "confined_space": true,
+        "fire_from_enclosure": true,
+        "countermass_system": true
+      },
+      "service_history": {
+        "introduced": 2000,
+        "status": "active",
+        "operators": ["IL", "SG", "DE", "GB"]
+      },
+      "combat_use": [
+        {"conflict": "Lebanon", "year": 2006},
+        {"conflict": "Gaza", "year": 2014}
+      ],
+      "unit_cost_usd": 20000,
+      "notes": "Fires from enclosed spaces. Countermass system eliminates backblast danger."
+    },
+    {
+      "id": "fr-apilas",
+      "name": "APILAS",
+      "type": "disposable_at_launcher",
+      "country_of_origin": "FR",
+      "manufacturer": "GIAT Industries",
+      "full_name": "Armor-Piercing Infantry Light Arm System",
+      "service_entry": 1985,
+      "specifications": {
+        "caliber_mm": 112,
+        "length_mm": 1300,
+        "weight_kg": 9.0,
+        "effective_range_m": 350,
+        "max_range_m": 500,
+        "penetration_mm": 720
+      },
+      "features": {
+        "high_penetration": true,
+        "shaped_charge": true
+      },
+      "service_history": {
+        "introduced": 1985,
+        "status": "active (legacy)",
+        "operators": ["FR", "BR", "SA"]
+      },
+      "unit_cost_usd": 2000,
+      "notes": "French disposable AT. Very high penetration for its era. Being replaced by AT4CS."
+    },
+    {
+      "id": "cn-pf-98-at",
+      "name": "PF-98 Anti-Tank Rocket",
+      "type": "reusable_at_launcher",
+      "country_of_origin": "CN",
+      "manufacturer": "NORINCO",
+      "service_entry": 1999,
+      "specifications": {
+        "caliber_mm": 120,
+        "length_mm": 1471,
+        "weight_launcher_kg": 10,
+        "weight_loaded_kg": 19,
+        "effective_range_m": 800,
+        "penetration_mm": 800
+      },
+      "features": {
+        "crew_served": true,
+        "tripod_optional": true,
+        "tandem_warhead": true
+      },
+      "service_history": {
+        "introduced": 1999,
+        "status": "active",
+        "operators": ["CN", "PK", "BD", "SD"]
+      },
+      "notes": "Chinese heavy AT rocket. Tandem warhead defeats ERA. Crew-served or shoulder-fired."
+    },
+    {
+      "id": "ru-spg-9-kopye",
+      "name": "SPG-9 Kopye",
+      "type": "recoilless_gun",
+      "country_of_origin": "RU",
+      "manufacturer": "Soviet state factories",
+      "service_entry": 1962,
+      "specifications": {
+        "caliber_mm": 73,
+        "length_mm": 2110,
+        "weight_kg": 47,
+        "muzzle_velocity_m_s": 700,
+        "effective_range_m": 800,
+        "max_range_m": 1300,
+        "penetration_mm": 300
+      },
+      "ammunition": [
+        {"type": "PG-9", "penetration_mm": 300},
+        {"type": "PG-9N", "note": "Improved"},
+        {"type": "OG-9", "note": "HE-Frag"}
+      ],
+      "service_history": {
+        "introduced": 1962,
+        "status": "active",
+        "operators_count": 40
+      },
+      "combat_use": ["Vietnam", "Afghanistan", "Syria", "Ukraine"],
+      "notes": "Lightweight recoilless gun. Tripod mounted. Still in wide use globally."
+    },
+    {
+      "id": "us-m40-recoilless",
+      "name": "M40 106mm Recoilless Rifle",
+      "type": "recoilless_rifle",
+      "country_of_origin": "US",
+      "manufacturer": "Various US",
+      "service_entry": 1955,
+      "specifications": {
+        "caliber_mm": 106,
+        "length_mm": 3404,
+        "weight_kg": 209,
+        "muzzle_velocity_m_s": 503,
+        "effective_range_m": 1350,
+        "max_range_m": 6900,
+        "penetration_mm": 400
+      },
+      "features": {
+        "vehicle_mounted": "Common",
+        "spotting_rifle": "M8C .50 cal"
+      },
+      "service_history": {
+        "introduced": 1955,
+        "status": "active (legacy)",
+        "operators_count": 30
+      },
+      "notes": "Iconic 'Ontos' weapon. Still used in many countries. Vehicle or ground mount."
+    },
+    {
+      "id": "ru-b-10-recoilless",
+      "name": "B-10 Recoilless Gun",
+      "type": "recoilless_gun",
+      "country_of_origin": "RU",
+      "manufacturer": "Soviet state factories",
+      "service_entry": 1954,
+      "specifications": {
+        "caliber_mm": 82,
+        "length_mm": 1850,
+        "weight_kg": 85,
+        "effective_range_m": 400,
+        "penetration_mm": 200
+      },
+      "service_history": {
+        "introduced": 1954,
+        "status": "legacy",
+        "operators": "Various developing nations"
+      },
+      "notes": "Old Soviet recoilless. Largely replaced but still found in conflict zones."
+    },
+    {
+      "id": "ru-rpg-hand-grenade",
+      "name": "RPG-43/RPG-6 Anti-Tank Grenade",
+      "type": "at_hand_grenade",
+      "country_of_origin": "RU",
+      "manufacturer": "Soviet state factories",
+      "service_entry": 1943,
+      "specifications": {
+        "weight_kg": 1.2,
+        "explosive_g": 612,
+        "penetration_mm": 75
+      },
+      "variants": [
+        {"name": "RPG-43", "year": 1943, "penetration_mm": 75},
+        {"name": "RPG-6", "year": 1943, "penetration_mm": 100}
+      ],
+      "service_history": {
+        "introduced": 1943,
+        "status": "legacy but still found"
+      },
+      "notes": "WWII-era AT grenades. Thrown at tanks. Still appear in insurgencies and militia stocks."
+    },
+    {
+      "id": "de-pzf-3-bunkerfaust",
+      "name": "Panzerfaust 3 Bunkerfaust",
+      "type": "bunker_buster_launcher",
+      "country_of_origin": "DE",
+      "manufacturer": "Dynamit Nobel Defence",
+      "service_entry": 2004,
+      "specifications": {
+        "caliber_mm": 110,
+        "weight_kg": 15.5,
+        "range_m": 600,
+        "warhead": "Tandem HEAT or thermobaric"
+      },
+      "features": {
+        "extended_range": true,
+        "bunker_defeat": true,
+        "urban_combat": true
+      },
+      "service_history": {
+        "introduced": 2004,
+        "status": "active"
+      },
+      "notes": "Extended range Panzerfaust 3 variant. Anti-bunker and urban combat focus."
+    },
+    {
+      "id": "gb-nlaw-detailed",
+      "name": "NLAW (MBT LAW)",
+      "type": "at_launcher",
+      "country_of_origin": "GB",
+      "manufacturer": "Saab Bofors / Thales",
+      "full_name": "Next Generation Light Anti-tank Weapon",
+      "service_entry": 2009,
+      "specifications": {
+        "caliber_mm": 150,
+        "length_mm": 1016,
+        "weight_kg": 12.5,
+        "effective_range_m": 800,
+        "max_range_m": 1000,
+        "penetration_mm": 500
+      },
+      "guidance": {
+        "type": "PLOS (Predicted Line of Sight)",
+        "fire_and_forget": true,
+        "top_attack": true,
+        "direct_attack": true
+      },
+      "features": {
+        "soft_launch": true,
+        "confined_space": true,
+        "overfly_top_attack": true
+      },
+      "service_history": {
+        "introduced": 2009,
+        "status": "active",
+        "operators": ["GB", "SE", "FI", "LU", "ID", "UA"]
+      },
+      "combat_use": [
+        {"conflict": "Ukraine", "year": 2022, "note": "Highly effective vs Russian armor"}
+      ],
+      "unit_cost_usd": 40000,
+      "notes": "Fire-and-forget AT weapon. Overfly top attack mode. Game-changer in Ukraine."
+    }
+  ]
+}

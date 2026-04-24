@@ -1,0 +1,346 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "in-arjun-mk1",
+      "name": "Arjun Mk.1",
+      "nato_designation": null,
+      "type": "mbt",
+      "country_of_origin": "IN",
+      "manufacturer": "CVRDE / Heavy Vehicles Factory (HVF)",
+      "service_history": {
+        "introduced": 2004,
+        "retired": null,
+        "production_count": 124,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 124,
+            "variants": [
+              "Arjun Mk.1"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "passengers": 0,
+        "weight_kg": 58500,
+        "length_m": 6.92,
+        "length_gun_forward_m": 10.64,
+        "width_m": 3.86,
+        "height_m": 2.32,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU MB 838 Ka-501",
+          "type": "diesel_turbocharged",
+          "power_hp": 1400,
+          "power_kw": 1044
+        },
+        "power_to_weight_hp_ton": 23.9,
+        "transmission": "RENK HSWL 354 automatic",
+        "suspension": "hydropneumatic",
+        "max_speed_road_kmh": 72,
+        "max_speed_offroad_kmh": 40,
+        "max_speed_reverse_kmh": 30,
+        "range_road_km": 450,
+        "fuel_capacity_liters": 1610,
+        "fording_depth_m": 1.4,
+        "fording_depth_prepared_m": 2.4,
+        "gradient_percent": 60,
+        "side_slope_percent": 35,
+        "trench_crossing_m": 2.43,
+        "vertical_obstacle_m": 0.91,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "CVRDE 120mm rifled gun",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 55,
+          "type": "rifled",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 6,
+          "muzzle_velocity_ms": 1650,
+          "effective_range_m": 4000,
+          "ammunition_carried": 39,
+          "ammunition_ready": 12,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "DRDO APFSDS",
+              "penetration_mm_rha": 500,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "DRDO HEAT",
+              "penetration_mm_rha": 450,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE",
+              "designation": "DRDO HE",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 4000
+            },
+            {
+              "type": "HESH",
+              "designation": "DRDO HESH",
+              "penetration_mm_rha": 120,
+              "penetration_range_m": 3000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "NSVT",
+            "caliber_mm": 12.7,
+            "mount": "commander_cupola",
+            "ammunition_carried": 1000
+          },
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 3000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite",
+        "armor_composition": "Kanchan composite armor",
+        "protection_front_turret_mm_rha": 700,
+        "protection_front_hull_mm_rha": 550,
+        "protection_side_mm_rha": 150,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 40,
+        "era_coverage": "None standard",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "hull_floor",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "BEL SFCS Mk.1",
+        "commander_sight": {
+          "type": "Panoramic",
+          "day_magnification": "3x/8x",
+          "thermal": false,
+          "independent": true,
+          "hunter_killer": false
+        },
+        "gunner_sight": {
+          "type": "SFCS Primary",
+          "day_magnification": "3x/8x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 8000,
+        "ballistic_computer": true,
+        "gps": true,
+        "inertial_navigation": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "Smoke"
+      },
+      "unit_cost_usd": 6700000,
+      "cost_year": 2010,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Arjun tank",
+        "Army Recognition Arjun",
+        "Military-Today Arjun",
+        "DRDO official"
+      ],
+      "notes": "Indigenous Indian MBT. Long development (1972-2004). Rifled gun unique among modern MBTs. Very heavy weight causes operational limitations in desert terrain. Kanchan composite armor developed by DRDO.",
+      "year": 2004
+    },
+    {
+      "id": "in-arjun-mk1a",
+      "name": "Arjun Mk.1A",
+      "nato_designation": null,
+      "type": "mbt",
+      "country_of_origin": "IN",
+      "manufacturer": "CVRDE / Heavy Vehicles Factory (HVF)",
+      "service_history": {
+        "introduced": 2021,
+        "retired": null,
+        "production_count": 118,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 118,
+            "variants": [
+              "Arjun Mk.1A"
+            ],
+            "status": "production"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "passengers": 0,
+        "weight_kg": 68000,
+        "length_m": 6.92,
+        "length_gun_forward_m": 10.64,
+        "width_m": 3.86,
+        "height_m": 2.4,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU MB 838 Ka-501 (uprated)",
+          "type": "diesel_turbocharged",
+          "power_hp": 1500,
+          "power_kw": 1119
+        },
+        "power_to_weight_hp_ton": 22.1,
+        "transmission": "RENK automatic",
+        "suspension": "hydropneumatic",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 40,
+        "max_speed_reverse_kmh": 30,
+        "range_road_km": 500,
+        "fuel_capacity_liters": 1610,
+        "fording_depth_m": 1.4,
+        "fording_depth_prepared_m": 2.4,
+        "gradient_percent": 60,
+        "side_slope_percent": 35,
+        "trench_crossing_m": 2.43,
+        "vertical_obstacle_m": 0.91,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "CVRDE 120mm rifled gun",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 55,
+          "type": "rifled",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 6,
+          "muzzle_velocity_ms": 1650,
+          "effective_range_m": 5000,
+          "ammunition_carried": 39,
+          "ammunition_ready": 12,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "DRDO APFSDS Mk.2",
+              "penetration_mm_rha": 550,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "DRDO HEAT",
+              "penetration_mm_rha": 450,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE",
+              "designation": "DRDO HE",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 4000
+            },
+            {
+              "type": "ATGM",
+              "designation": "LAHAT",
+              "penetration_mm_rha": 800,
+              "penetration_range_m": 6000,
+              "notes": "Gun-launched ATGM"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "RCWS 12.7mm",
+            "caliber_mm": 12.7,
+            "mount": "remote",
+            "ammunition_carried": 1000
+          },
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 3000
+          }
+        ],
+        "atgm": {
+          "designation": "LAHAT",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "Enhanced Kanchan composite armor with ERA",
+        "protection_front_turret_mm_rha": 850,
+        "protection_front_hull_mm_rha": 700,
+        "protection_side_mm_rha": 200,
+        "protection_rear_mm_rha": 60,
+        "protection_top_mm_rha": 50,
+        "era_coverage": "Full frontal arc",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "hull_floor",
+        "blowout_panels": false,
+        "mine_protection": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "BEL SFCS Mk.2",
+        "commander_sight": {
+          "type": "Panoramic Independent",
+          "day_magnification": "3x/12x",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "SFCS Primary",
+          "day_magnification": "3x/12x",
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "laser_warning_system": true,
+        "ballistic_computer": true,
+        "battle_management_system": true,
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true,
+        "driver_vision": {
+          "thermal": true
+        }
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "Smoke/IR"
+      },
+      "unit_cost_usd": 9000000,
+      "cost_year": 2021,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Arjun tank",
+        "Army Recognition Arjun Mk1A",
+        "DRDO official"
+      ],
+      "notes": "Major upgrade with 72 improvements over Mk.1. LAHAT gun-launched ATGM capability. Enhanced ERA. RCWS with 360-degree coverage. Hunter-killer capability. Approved for 118 units.",
+      "year": 2021
+    }
+  ]
+}

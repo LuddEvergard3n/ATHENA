@@ -1,0 +1,489 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-22",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "IAF",
+      "TAI"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "il-f35i",
+      "name": "F-35I Adir",
+      "nato_name": null,
+      "type": "stealth_multirole",
+      "generation": "5",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin / IAI",
+      "service_history": {
+        "introduced": 2017,
+        "first_flight": 2016,
+        "retired": null,
+        "production_count": 50,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 50,
+            "status": "active",
+            "notes": "IAF 116 & 140 Squadrons"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 15.67,
+        "wingspan_m": 10.67,
+        "empty_weight_kg": 13290,
+        "max_takeoff_weight_kg": 31800,
+        "internal_weapon_bays": 2
+      },
+      "performance": {
+        "max_speed_kmh": 1975,
+        "max_speed_mach": 1.6,
+        "combat_radius_km": 1093,
+        "service_ceiling_m": 15240,
+        "max_g_load": 9
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Pratt & Whitney F135-PW-100",
+        "thrust_afterburner_kn": 191
+      },
+      "avionics": {
+        "radar": "AN/APG-81 AESA",
+        "radar_range_km": 240,
+        "irst": "AAQ-40 EOTS",
+        "ew_suite": "Indigenous Israeli EW systems",
+        "das": "AN/AAQ-37 DAS",
+        "notes": "Unique Israeli C4I integration, indigenous EW"
+      },
+      "armament": {
+        "gun": {
+          "type": "GAU-22/A",
+          "caliber_mm": 25,
+          "rounds": 182
+        },
+        "air_to_air_internal": [
+          "AIM-120D AMRAAM",
+          "Python-5 (integration TBD)"
+        ],
+        "air_to_ground_internal": [
+          "GBU-31 JDAM",
+          "GBU-39 SDB",
+          "Spice 250"
+        ]
+      },
+      "stealth": {
+        "rcs_estimate_m2": 0.001,
+        "internal_weapons_bays": true
+      },
+      "unit_cost_usd": 100000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Lockheed Martin",
+        "IAF",
+        "Jane's"
+      ],
+      "notes": "Israeli F-35A variant. First non-US F-35 combat (2018). World's first F-35 air-to-air kill (Iranian drone). Indigenous EW, C4I systems. 'Adir' = Mighty.",
+      "year": 2017
+    },
+    {
+      "id": "il-f15i",
+      "name": "F-15I Ra'am",
+      "nato_name": null,
+      "type": "strike_fighter",
+      "generation": "4",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 1998,
+        "first_flight": 1997,
+        "retired": null,
+        "production_count": 25,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 25,
+            "status": "active",
+            "notes": "IAF 69 'Hammers' Squadron"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 19.43,
+        "wingspan_m": 13.05,
+        "max_takeoff_weight_kg": 36700,
+        "hardpoints": 17
+      },
+      "performance": {
+        "max_speed_kmh": 2655,
+        "max_speed_mach": 2.5,
+        "combat_radius_km": 1270,
+        "ferry_range_km": 5745,
+        "max_g_load": 9
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Pratt & Whitney F100-PW-229",
+        "thrust_afterburner_kn": 129
+      },
+      "avionics": {
+        "radar": "AN/APG-70 / APG-82 (upgrade)",
+        "radar_range_km": 200,
+        "targeting_pod": "Litening",
+        "ew_suite": "Israeli EW systems"
+      },
+      "armament": {
+        "gun": {
+          "type": "M61A1 Vulcan",
+          "caliber_mm": 20,
+          "rounds": 512
+        },
+        "air_to_air": [
+          "AIM-120 AMRAAM",
+          "AIM-9X",
+          "Python-5"
+        ],
+        "air_to_ground": [
+          "GBU-28 bunker buster",
+          "JDAM",
+          "Spice 2000",
+          "Delilah",
+          "Popeye"
+        ],
+        "max_payload_kg": 11100
+      },
+      "unit_cost_usd": 100000000,
+      "cost_year": 1998,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "IAF",
+        "Jane's"
+      ],
+      "notes": "Israeli F-15E variant. 'Ra'am' = Thunder. Long-range strike platform. Syrian nuclear reactor strike (2007) likely conducted by F-15I.",
+      "year": 1998
+    },
+    {
+      "id": "il-f16i",
+      "name": "F-16I Sufa",
+      "nato_name": null,
+      "type": "multirole_fighter",
+      "generation": "4",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "service_history": {
+        "introduced": 2004,
+        "first_flight": 2003,
+        "retired": null,
+        "production_count": 102,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 100,
+            "status": "active",
+            "notes": "IAF backbone"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 15.03,
+        "wingspan_m": 9.96,
+        "max_takeoff_weight_kg": 23500,
+        "hardpoints": 15,
+        "conformal_fuel_tanks": true
+      },
+      "performance": {
+        "max_speed_kmh": 2120,
+        "max_speed_mach": 2.0,
+        "combat_radius_km": 1600,
+        "service_ceiling_m": 15240,
+        "max_g_load": 9
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "General Electric F100-GE-129IPE",
+        "thrust_afterburner_kn": 129
+      },
+      "avionics": {
+        "radar": "AN/APG-68(V)9 / Elta EL/M-2032",
+        "radar_range_km": 150,
+        "targeting_pod": "Litening IV",
+        "ew_suite": "Elisra SPS-3000",
+        "helmet_mounted_display": "DASH III",
+        "notes": "60% Israeli avionics"
+      },
+      "armament": {
+        "gun": {
+          "type": "M61A1 Vulcan",
+          "caliber_mm": 20,
+          "rounds": 511
+        },
+        "air_to_air": [
+          "AIM-120 AMRAAM",
+          "Python-5",
+          "Derby"
+        ],
+        "air_to_ground": [
+          "Spice 1000/2000",
+          "JDAM",
+          "Delilah"
+        ],
+        "max_payload_kg": 9500
+      },
+      "unit_cost_usd": 70000000,
+      "cost_year": 2004,
+      "confidence": "high",
+      "sources": [
+        "Lockheed Martin",
+        "IAF",
+        "Jane's"
+      ],
+      "notes": "Israeli F-16D Block 52+ variant. 'Sufa' = Storm. Most advanced F-16 variant at time of delivery. CFTs for extended range. 60% Israeli systems.",
+      "year": 2004
+    },
+    {
+      "id": "tr-kaan",
+      "name": "TAI TF-X KAAN",
+      "nato_name": null,
+      "type": "stealth_multirole",
+      "generation": "5",
+      "country_of_origin": "TR",
+      "manufacturer": "Turkish Aerospace Industries (TAI)",
+      "service_history": {
+        "introduced": null,
+        "first_flight": 2024,
+        "retired": null,
+        "production_count": 0,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 0,
+            "status": "development",
+            "notes": "First flight Feb 2024"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 21.0,
+        "wingspan_m": 14.0,
+        "empty_weight_kg": 15000,
+        "max_takeoff_weight_kg": 27000,
+        "internal_weapon_bays": 2
+      },
+      "performance": {
+        "max_speed_kmh": 2222,
+        "max_speed_mach": 1.8,
+        "supercruise_mach": 1.4,
+        "combat_radius_km": 1100,
+        "service_ceiling_m": 16760,
+        "max_g_load": 9
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "General Electric F110-GE-129 (interim) / TEI TF-6000 (target)",
+        "thrust_afterburner_kn": 131,
+        "notes": "Indigenous TF-6000 engine in development"
+      },
+      "avionics": {
+        "radar": "Aselsan AESA",
+        "radar_range_km": 200,
+        "irst": true,
+        "sensor_fusion": true
+      },
+      "armament": {
+        "air_to_air_internal": [
+          "G\u00f6kdogan BVRAAM",
+          "Bozdogan WVRAAM"
+        ],
+        "air_to_ground_internal": [
+          "SOM-J",
+          "KGK"
+        ]
+      },
+      "stealth": {
+        "rcs_estimate_m2": 0.1,
+        "internal_weapons_bays": true,
+        "notes": "Twin-canted tails, DSI intakes"
+      },
+      "variants": [
+        {
+          "designation": "Block 0",
+          "notes": "Prototype, F110 engines"
+        },
+        {
+          "designation": "Block 1",
+          "notes": "Initial production ~2028"
+        },
+        {
+          "designation": "Block 2",
+          "engines": "TEI TF-6000",
+          "notes": "Full capability ~2030+"
+        }
+      ],
+      "unit_cost_usd": 100000000,
+      "cost_year": 2024,
+      "confidence": "low",
+      "sources": [
+        "TAI",
+        "SSB",
+        "Jane's"
+      ],
+      "notes": "Turkey's 5th-gen fighter program. First flight Feb 21, 2024. Engine is critical path. F-35 program exit accelerated development. 250+ planned.",
+      "year": 2025
+    },
+    {
+      "id": "sa-f15sa",
+      "name": "F-15SA (Saudi Advanced)",
+      "nato_name": null,
+      "type": "multirole_fighter",
+      "generation": "4.5",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 2017,
+        "first_flight": 2013,
+        "retired": null,
+        "production_count": 84,
+        "operators": [
+          {
+            "country": "SA",
+            "quantity": 84,
+            "status": "active",
+            "notes": "RSAF"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 19.43,
+        "wingspan_m": 13.05,
+        "max_takeoff_weight_kg": 37000,
+        "hardpoints": 20
+      },
+      "performance": {
+        "max_speed_kmh": 2655,
+        "max_speed_mach": 2.5,
+        "combat_radius_km": 1800,
+        "service_ceiling_m": 19812
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "General Electric F110-GE-129",
+        "thrust_afterburner_kn": 131
+      },
+      "avionics": {
+        "radar": "AN/APG-63(V)3 AESA",
+        "radar_range_km": 280,
+        "irst": "Tiger Eyes IRST",
+        "ew_suite": "DEWS (Digital EW Suite)",
+        "helmet_mounted_display": "JHMCS II"
+      },
+      "armament": {
+        "gun": {
+          "type": "M61A1 Vulcan",
+          "caliber_mm": 20
+        },
+        "air_to_air": [
+          "AIM-120D AMRAAM",
+          "AIM-9X"
+        ],
+        "air_to_ground": [
+          "JDAM",
+          "SDB",
+          "AGM-84 SLAM-ER"
+        ],
+        "max_payload_kg": 13400
+      },
+      "unit_cost_usd": 100000000,
+      "cost_year": 2012,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "RSAF",
+        "Jane's"
+      ],
+      "notes": "Most advanced F-15 export variant. Basis for F-15EX. AESA radar, fly-by-wire, digital cockpit. Yemen combat operations.",
+      "year": 2016
+    },
+    {
+      "id": "au-fa18f",
+      "name": "F/A-18F Super Hornet (Australia)",
+      "nato_name": null,
+      "type": "multirole_fighter",
+      "generation": "4.5",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 2010,
+        "first_flight": 2007,
+        "retired": null,
+        "production_count": 24,
+        "operators": [
+          {
+            "country": "AU",
+            "quantity": 24,
+            "status": "active",
+            "notes": "RAAF 1 Sqn"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 18.31,
+        "wingspan_m": 13.62,
+        "max_takeoff_weight_kg": 29937,
+        "hardpoints": 11
+      },
+      "performance": {
+        "max_speed_kmh": 1915,
+        "max_speed_mach": 1.8,
+        "combat_radius_km": 722,
+        "service_ceiling_m": 15000
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "General Electric F414-GE-400",
+        "thrust_afterburner_kn": 97.9
+      },
+      "avionics": {
+        "radar": "AN/APG-79 AESA",
+        "targeting_pod": "AN/ASQ-228 ATFLIR"
+      },
+      "armament": {
+        "gun": {
+          "type": "M61A2 Vulcan",
+          "caliber_mm": 20,
+          "rounds": 412
+        },
+        "air_to_air": [
+          "AIM-120 AMRAAM",
+          "AIM-9X"
+        ],
+        "air_to_ground": [
+          "AGM-84 Harpoon",
+          "JDAM"
+        ],
+        "max_payload_kg": 8050
+      },
+      "unit_cost_usd": 70000000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "RAAF",
+        "Jane's"
+      ],
+      "notes": "Australian Super Hornet fleet. Gap-filler between F/A-18A retirement and F-35A. 24 aircraft + 12 EA-18G Growlers.",
+      "year": 2001
+    }
+  ]
+}

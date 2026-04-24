@@ -1,0 +1,62 @@
+{
+  "platforms": [
+    {
+      "id": "br-tamandare-frigate",
+      "name": "Tamandaré-class (MEKO A-100 BR)",
+      "type": "frigate",
+      "country_of_origin": "DE",
+      "manufacturer": "thyssenkrupp Marine Systems / Águas Azuis",
+      "base_design": "MEKO A-100",
+      "service_entry": 2027,
+      "specifications": {
+        "displacement_tons": 3500,
+        "length_m": 107.2,
+        "beam_m": 15.95,
+        "draft_m": 5.2,
+        "crew": 136,
+        "max_speed_knots": 27,
+        "range_nm": 5000
+      },
+      "propulsion": {
+        "type": "CODAD",
+        "diesels": "4x MAN 12V 28/33 DSTC (7,320 hp each)",
+        "shafts": 2,
+        "power_hp": 29280
+      },
+      "armament": {
+        "vls": {
+          "type": "MBDA Sea Ceptor VLS",
+          "cells": 12,
+          "missiles": ["CAMM"]
+        },
+        "gun": "1x Leonardo 76/62mm Super Rapid",
+        "ciws": "1x Rheinmetall Sea Snake 30mm",
+        "ssm": "MANSUP (AV-RE40) Brazilian indigenous AShM - 2x twin launchers",
+        "torpedoes": "2x triple Mk 46 tubes",
+        "rws": "2x FN Sea Defender 12.7mm + 2x 7.62mm M134",
+        "helicopters": 1,
+        "helicopter_type": "SH-60 / Super Lynx / EC725"
+      },
+      "sensors": {
+        "radar": "Hensoldt TRS-4D AESA (C-band multifunction)",
+        "sonar": "Atlas Elektronik hull-mounted",
+        "eo": "2x Safran PASEO XLR",
+        "cms": "Atlas ANCS / Atech",
+        "esm": "Integrated ESM/ECM suite"
+      },
+      "service_history": {
+        "introduced": 2027,
+        "status": "under_construction",
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 4,
+            "notes": "F-200 Tamandaré (launched Aug 2024), F-201 Jerônimo de Albuquerque, F-202 Cunha Moreira, F-203 Mariz e Barros. ~$2.2B total program."
+          }
+        ]
+      },
+      "unit_cost_usd": 550000000,
+      "notes": "Brazilian Navy surface fleet renewal. MEKO modular design by thyssenkrupp. Primary air defense via 12-cell Sea Ceptor. MANSUP is Brazilian-developed subsonic anti-ship missile by Avibras (~180 km range). Built at Estaleiro Jurong Aracruz (Brazil). TRS-4D AESA radar (NOT SMART-S Mk2 as sometimes reported). Lead ship expected commissioning 2027."
+    }
+  ]
+}

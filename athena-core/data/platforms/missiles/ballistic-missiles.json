@@ -1,0 +1,365 @@
+{
+  "category": "missiles",
+  "subcategory": "ballistic",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": ["CSIS Missile Threat", "Jane's Strategic Weapon Systems", "NTI"]
+  },
+  "platforms": [
+    {
+      "id": "us-minuteman-iii",
+      "name": "LGM-30G Minuteman III",
+      "type": "icbm",
+      "country": "US",
+      "year": 1970,
+      "manufacturer": "Boeing",
+      "specifications": {
+        "range_km": 13000,
+        "cep_m": 200,
+        "warheads": "1-3 W87/W78 (300-475 kt)",
+        "stages": 3,
+        "propellant": "solid",
+        "length_m": 18.2,
+        "diameter_m": 1.67,
+        "launch_weight_kg": 36030,
+        "basing": "silo"
+      },
+      "service_history": {
+        "operators": [{"country": "US", "quantity": 400, "status": "active"}]
+      },
+      "notes": "Only US land-based ICBM, being replaced by LGM-35A Sentinel"
+    },
+    {
+      "id": "us-sentinel",
+      "name": "LGM-35A Sentinel (GBSD)",
+      "type": "icbm",
+      "country": "US",
+      "year": 2029,
+      "manufacturer": "Northrop Grumman",
+      "specifications": {
+        "range_km": 13000,
+        "warheads": "Multiple (classified)",
+        "stages": 3,
+        "propellant": "solid",
+        "basing": "silo"
+      },
+      "notes": "Minuteman III replacement, IOC ~2029"
+    },
+    {
+      "id": "ru-rs28-sarmat",
+      "name": "RS-28 Sarmat (SS-X-30 Satan 2)",
+      "type": "icbm",
+      "country": "RU",
+      "year": 2023,
+      "manufacturer": "Makeyev Design Bureau",
+      "specifications": {
+        "range_km": 18000,
+        "payload_kg": 10000,
+        "warheads": "10-15 MIRV + Avangard HGV",
+        "stages": 2,
+        "propellant": "liquid",
+        "length_m": 35.5,
+        "diameter_m": 3.0,
+        "launch_weight_kg": 208000,
+        "basing": "silo"
+      },
+      "service_history": {
+        "operators": [{"country": "RU", "quantity": 46, "status": "production"}]
+      },
+      "notes": "World's heaviest ICBM, replaces R-36M2"
+    },
+    {
+      "id": "ru-rs24-yars",
+      "name": "RS-24 Yars (SS-27 Mod 2)",
+      "type": "icbm",
+      "country": "RU",
+      "year": 2010,
+      "manufacturer": "MIT",
+      "specifications": {
+        "range_km": 12000,
+        "warheads": "3-4 MIRV (150-300 kt each)",
+        "stages": 3,
+        "propellant": "solid",
+        "length_m": 23.0,
+        "diameter_m": 2.0,
+        "launch_weight_kg": 49600,
+        "basing": "silo/TEL"
+      },
+      "service_history": {
+        "operators": [{"country": "RU", "quantity": 180, "status": "active"}]
+      },
+      "notes": "Main Russian road-mobile ICBM"
+    },
+    {
+      "id": "ru-avangard",
+      "name": "Avangard (Yu-71)",
+      "type": "hgv",
+      "country": "RU",
+      "year": 2019,
+      "manufacturer": "NPO Mashinostroyeniya",
+      "specifications": {
+        "speed": "Mach 20-27",
+        "range_km": 6000,
+        "warhead": "Nuclear (up to 2 MT)",
+        "carrier": "RS-28 Sarmat or UR-100N"
+      },
+      "service_history": {
+        "operators": [{"country": "RU", "quantity": 6, "status": "active"}]
+      },
+      "notes": "Hypersonic glide vehicle, maneuverable"
+    },
+    {
+      "id": "cn-df41",
+      "name": "DF-41 (CSS-X-20)",
+      "type": "icbm",
+      "country": "CN",
+      "year": 2017,
+      "manufacturer": "CASIC",
+      "specifications": {
+        "range_km": 14000,
+        "warheads": "10 MIRV (150-350 kt each)",
+        "stages": 3,
+        "propellant": "solid",
+        "length_m": 21.0,
+        "diameter_m": 2.25,
+        "launch_weight_kg": 80000,
+        "basing": "silo/TEL/rail"
+      },
+      "service_history": {
+        "operators": [{"country": "CN", "quantity": 100, "status": "active"}]
+      },
+      "notes": "China's most advanced ICBM"
+    },
+    {
+      "id": "cn-df31ag",
+      "name": "DF-31AG (CSS-10 Mod 2)",
+      "type": "icbm",
+      "country": "CN",
+      "year": 2017,
+      "manufacturer": "CASIC",
+      "specifications": {
+        "range_km": 11200,
+        "warheads": "1-3 MIRV",
+        "stages": 3,
+        "propellant": "solid",
+        "basing": "TEL"
+      },
+      "service_history": {
+        "operators": [{"country": "CN", "quantity": 80, "status": "active"}]
+      },
+      "notes": "Road-mobile ICBM"
+    },
+    {
+      "id": "cn-df5b",
+      "name": "DF-5B (CSS-4 Mod 3)",
+      "type": "icbm",
+      "country": "CN",
+      "year": 2015,
+      "manufacturer": "CALT",
+      "specifications": {
+        "range_km": 13000,
+        "warheads": "5-8 MIRV",
+        "stages": 2,
+        "propellant": "liquid",
+        "length_m": 32.6,
+        "basing": "silo"
+      },
+      "service_history": {
+        "operators": [{"country": "CN", "quantity": 20, "status": "active"}]
+      },
+      "notes": "China's largest liquid-fuel ICBM"
+    },
+    {
+      "id": "cn-df27",
+      "name": "DF-27",
+      "type": "irbm-hgv",
+      "country": "CN",
+      "year": 2024,
+      "manufacturer": "CASIC",
+      "specifications": {
+        "range_km": 8000,
+        "speed": "Mach 8+",
+        "warhead": "HGV or conventional",
+        "basing": "TEL"
+      },
+      "notes": "Hypersonic medium-range system"
+    },
+    {
+      "id": "cn-df17",
+      "name": "DF-17",
+      "type": "mrbm-hgv",
+      "country": "CN",
+      "year": 2019,
+      "manufacturer": "CASIC",
+      "specifications": {
+        "range_km": 2500,
+        "speed": "Mach 10",
+        "warhead": "DF-ZF HGV (conventional or nuclear)",
+        "stages": 1,
+        "propellant": "solid",
+        "basing": "TEL"
+      },
+      "service_history": {
+        "operators": [{"country": "CN", "quantity": 100, "status": "active"}]
+      },
+      "notes": "World's first operational HGV-armed missile"
+    },
+    {
+      "id": "cn-df26",
+      "name": "DF-26 (Guam Killer)",
+      "type": "irbm",
+      "country": "CN",
+      "year": 2016,
+      "manufacturer": "CASIC",
+      "specifications": {
+        "range_km": 4000,
+        "cep_m": 150,
+        "warhead": "Nuclear or conventional (1200 kg)",
+        "propellant": "solid",
+        "basing": "TEL"
+      },
+      "service_history": {
+        "operators": [{"country": "CN", "quantity": 200, "status": "active"}]
+      },
+      "notes": "Can target ships (ASBM capability)"
+    },
+    {
+      "id": "cn-df21d",
+      "name": "DF-21D (Carrier Killer)",
+      "type": "asbm",
+      "country": "CN",
+      "year": 2010,
+      "manufacturer": "CASIC",
+      "specifications": {
+        "range_km": 1500,
+        "cep_m": 20,
+        "warhead": "Conventional MaRV (600 kg)",
+        "terminal_speed": "Mach 10",
+        "propellant": "solid",
+        "basing": "TEL"
+      },
+      "service_history": {
+        "operators": [{"country": "CN", "quantity": 100, "status": "active"}]
+      },
+      "notes": "World's first anti-ship ballistic missile"
+    },
+    {
+      "id": "kp-hwasong17",
+      "name": "Hwasong-17",
+      "type": "icbm",
+      "country": "KP",
+      "year": 2022,
+      "manufacturer": "DPRK",
+      "specifications": {
+        "range_km": 15000,
+        "payload_kg": 2000,
+        "stages": 2,
+        "propellant": "liquid",
+        "length_m": 25.0,
+        "diameter_m": 2.5,
+        "basing": "TEL"
+      },
+      "notes": "DPRK's largest ICBM"
+    },
+    {
+      "id": "kp-hwasong18",
+      "name": "Hwasong-18",
+      "type": "icbm",
+      "country": "KP",
+      "year": 2023,
+      "manufacturer": "DPRK",
+      "specifications": {
+        "range_km": 15000,
+        "stages": 3,
+        "propellant": "solid",
+        "basing": "TEL"
+      },
+      "notes": "DPRK's first solid-fuel ICBM"
+    },
+    {
+      "id": "in-agni5",
+      "name": "Agni-V",
+      "type": "icbm",
+      "country": "IN",
+      "year": 2018,
+      "manufacturer": "DRDO",
+      "specifications": {
+        "range_km": 5500,
+        "payload_kg": 1500,
+        "warhead": "Nuclear (150-200 kt)",
+        "stages": 3,
+        "propellant": "solid",
+        "length_m": 17.5,
+        "launch_weight_kg": 50000,
+        "basing": "TEL/rail"
+      },
+      "service_history": {
+        "operators": [{"country": "IN", "quantity": 20, "status": "active"}]
+      },
+      "notes": "India's longest-range missile"
+    },
+    {
+      "id": "pk-shaheen3",
+      "name": "Shaheen-III",
+      "type": "mrbm",
+      "country": "PK",
+      "year": 2015,
+      "manufacturer": "NESCOM",
+      "specifications": {
+        "range_km": 2750,
+        "payload_kg": 750,
+        "stages": 2,
+        "propellant": "solid",
+        "basing": "TEL"
+      },
+      "notes": "Pakistan's longest-range ballistic missile"
+    },
+    {
+      "id": "ir-khorramshahr4",
+      "name": "Khorramshahr-4 (Kheibar Shekan)",
+      "type": "mrbm",
+      "country": "IR",
+      "year": 2023,
+      "manufacturer": "AIO",
+      "specifications": {
+        "range_km": 2000,
+        "payload_kg": 1500,
+        "propellant": "liquid",
+        "warhead": "MaRV capable",
+        "basing": "TEL"
+      },
+      "notes": "Iran's most advanced MRBM"
+    },
+    {
+      "id": "ir-fattah",
+      "name": "Fattah",
+      "type": "mrbm-hgv",
+      "country": "IR",
+      "year": 2023,
+      "manufacturer": "IRGC-ASF",
+      "specifications": {
+        "range_km": 1400,
+        "speed": "Mach 13-15",
+        "warhead": "HGV with movable nozzles",
+        "propellant": "solid"
+      },
+      "notes": "Iran's first hypersonic missile (claimed)"
+    },
+    {
+      "id": "il-jericho3",
+      "name": "Jericho III",
+      "type": "icbm",
+      "country": "IL",
+      "year": 2011,
+      "manufacturer": "IAI",
+      "specifications": {
+        "range_km": 6500,
+        "payload_kg": 1000,
+        "stages": 3,
+        "propellant": "solid"
+      },
+      "notes": "Israeli strategic deterrent (officially unacknowledged)"
+    }
+  ]
+}

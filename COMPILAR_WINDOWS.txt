@@ -1,0 +1,59 @@
+================================================================================
+ATHENA - COMPILACAO NO WINDOWS (MinGW)
+================================================================================
+
+REQUISITOS:
+- MinGW-w64 (g++ 15.x ou superior)
+- Windows 11
+
+PASSOS:
+
+1. EXTRAIR O ZIP
+   Extraia athena-final.zip para:
+   C:\Users\Ludd\Desktop\Pasta com Pastass\Projetos\ATHENA
+
+2. ABRIR CMD (COMO ADMINISTRADOR)
+   Pressione Win+R, digite "cmd", Enter
+
+3. NAVEGAR PARA O DIRETORIO
+   cd "C:\Users\Ludd\Desktop\Pasta com Pastass\Projetos\ATHENA"
+
+4. CONFIGURAR PATH DO MINGW
+   set PATH=C:\Users\Ludd\Desktop\Pasta com Pastass\mingw64\bin;%PATH%
+
+5. VERIFICAR COMPILADOR
+   g++ --version
+
+6. COMPILAR
+   mingw32-make -f Makefile.mingw clean
+   mingw32-make -f Makefile.mingw cli
+
+7. TESTAR
+   build\bin\athena-cli.exe info
+   build\bin\athena-cli.exe platforms athena-core\data
+
+================================================================================
+COMANDOS DISPONIVEIS
+================================================================================
+
+athena-cli info                    - Mostra informacoes da versao
+athena-cli platforms <data_path>   - Lista plataformas disponiveis
+athena-cli validate <scenario>     - Valida arquivo de cenario
+athena-cli run <scenario> [seed]   - Executa simulacao
+athena-cli batch <scenario> <n>    - Executa Monte Carlo (n iteracoes)
+
+================================================================================
+PROBLEMAS COMUNS
+================================================================================
+
+ERRO: "'mingw32-make' nao e reconhecido"
+  -> Verifique o PATH do MinGW
+
+ERRO: "'g++' nao e reconhecido"  
+  -> Verifique o PATH do MinGW
+
+ERRO: "No rule to make target"
+  -> Verifique se esta no diretorio correto
+  -> Verifique se extraiu corretamente
+
+================================================================================

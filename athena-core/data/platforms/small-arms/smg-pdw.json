@@ -1,0 +1,215 @@
+{
+  "category": "small-arms",
+  "subcategory": "smg-pdw",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": ["Jane's Infantry Weapons", "IISS Military Balance 2024"]
+  },
+  "platforms": [
+    {
+      "id": "de-mp5",
+      "name": "Heckler & Koch MP5",
+      "type": "smg",
+      "country": "DE",
+      "year": 1966,
+      "manufacturer": "Heckler & Koch",
+      "specifications": {
+        "caliber": "9x19mm Parabellum",
+        "action": "Roller-delayed blowback",
+        "rate_of_fire_rpm": 800,
+        "muzzle_velocity_mps": 400,
+        "effective_range_m": 200,
+        "weight_kg": 2.54,
+        "magazine_capacity": 30
+      },
+      "operators": ["40+ countries"],
+      "variants": ["MP5A2", "MP5A3", "MP5SD", "MP5K", "MP5N"],
+      "notes": "World's most widely used SMG, special operations standard"
+    },
+    {
+      "id": "de-mp7",
+      "name": "Heckler & Koch MP7",
+      "type": "pdw",
+      "country": "DE",
+      "year": 2001,
+      "manufacturer": "Heckler & Koch",
+      "specifications": {
+        "caliber": "4.6x30mm",
+        "action": "Gas-operated, rotating bolt",
+        "rate_of_fire_rpm": 950,
+        "muzzle_velocity_mps": 735,
+        "effective_range_m": 200,
+        "weight_kg": 1.9,
+        "magazine_capacity": 40
+      },
+      "operators": ["DE", "GB", "US-SOCOM", "KR", "NO", "JP"],
+      "variants": ["MP7A1", "MP7A2"],
+      "notes": "Armor-piercing PDW"
+    },
+    {
+      "id": "be-p90",
+      "name": "FN P90",
+      "type": "pdw",
+      "country": "BE",
+      "year": 1990,
+      "manufacturer": "FN Herstal",
+      "specifications": {
+        "caliber": "5.7x28mm",
+        "action": "Blowback, closed bolt",
+        "rate_of_fire_rpm": 900,
+        "muzzle_velocity_mps": 716,
+        "effective_range_m": 200,
+        "weight_kg": 2.54,
+        "magazine_capacity": 50
+      },
+      "operators": ["BE", "US", "MX", "PE", "SA"],
+      "notes": "Bullpup PDW, unique top-mounted magazine"
+    },
+    {
+      "id": "ru-pp2000",
+      "name": "PP-2000",
+      "type": "smg",
+      "country": "RU",
+      "year": 2006,
+      "manufacturer": "KBP",
+      "specifications": {
+        "caliber": "9x19mm",
+        "action": "Blowback",
+        "rate_of_fire_rpm": 600,
+        "effective_range_m": 100,
+        "weight_kg": 1.4,
+        "magazine_capacity": 44
+      },
+      "operators": ["RU"],
+      "notes": "Russian military/FSB SMG"
+    },
+    {
+      "id": "ru-pp19-vityaz",
+      "name": "PP-19-01 Vityaz",
+      "type": "smg",
+      "country": "RU",
+      "year": 2004,
+      "manufacturer": "Izhmash",
+      "specifications": {
+        "caliber": "9x19mm",
+        "action": "Blowback",
+        "rate_of_fire_rpm": 700,
+        "effective_range_m": 200,
+        "weight_kg": 2.9,
+        "magazine_capacity": 30
+      },
+      "operators": ["RU"],
+      "notes": "AK-based SMG for Russian forces"
+    },
+    {
+      "id": "ru-ppk20",
+      "name": "PPK-20",
+      "type": "smg",
+      "country": "RU",
+      "year": 2021,
+      "manufacturer": "Kalashnikov Concern",
+      "specifications": {
+        "caliber": "9x19mm",
+        "action": "Blowback",
+        "rate_of_fire_rpm": 700,
+        "effective_range_m": 200,
+        "weight_kg": 2.7,
+        "magazine_capacity": 30
+      },
+      "operators": ["RU"],
+      "notes": "New Russian SMG for pilots/vehicle crews"
+    },
+    {
+      "id": "il-uzi",
+      "name": "IMI Uzi",
+      "type": "smg",
+      "country": "IL",
+      "year": 1954,
+      "manufacturer": "IMI",
+      "specifications": {
+        "caliber": "9x19mm",
+        "action": "Blowback, open bolt",
+        "rate_of_fire_rpm": 600,
+        "effective_range_m": 200,
+        "weight_kg": 3.5,
+        "magazine_capacity": 32
+      },
+      "operators": ["IL (historical)", "Many export"],
+      "variants": ["Uzi", "Mini Uzi", "Micro Uzi", "Uzi Pro"],
+      "notes": "Iconic Israeli SMG"
+    },
+    {
+      "id": "us-sig-mpx",
+      "name": "SIG MPX",
+      "type": "smg",
+      "country": "US",
+      "year": 2015,
+      "manufacturer": "SIG Sauer",
+      "specifications": {
+        "caliber": "9x19mm",
+        "action": "Short-stroke gas piston",
+        "rate_of_fire_rpm": 850,
+        "effective_range_m": 100,
+        "weight_kg": 2.7,
+        "magazine_capacity": 30
+      },
+      "operators": ["US (various LE/SOF)"],
+      "notes": "Modern AR-style SMG"
+    },
+    {
+      "id": "cz-scorpion-evo",
+      "name": "CZ Scorpion EVO 3",
+      "type": "smg",
+      "country": "CZ",
+      "year": 2009,
+      "manufacturer": "Česká zbrojovka",
+      "specifications": {
+        "caliber": "9x19mm",
+        "action": "Blowback",
+        "rate_of_fire_rpm": 1150,
+        "effective_range_m": 250,
+        "weight_kg": 2.77,
+        "magazine_capacity": 30
+      },
+      "operators": ["CZ", "PH", "TH"],
+      "notes": "Modern Czech SMG"
+    },
+    {
+      "id": "kr-k1a",
+      "name": "Daewoo K1A",
+      "type": "smg-carbine",
+      "country": "KR",
+      "year": 1981,
+      "manufacturer": "Daewoo",
+      "specifications": {
+        "caliber": "5.56x45mm NATO",
+        "action": "Gas-operated",
+        "rate_of_fire_rpm": 750,
+        "effective_range_m": 250,
+        "weight_kg": 2.87,
+        "magazine_capacity": 30
+      },
+      "operators": ["KR"],
+      "notes": "Korean SMG-style carbine"
+    },
+    {
+      "id": "cn-qcw05",
+      "name": "QCW-05",
+      "type": "smg",
+      "country": "CN",
+      "year": 2005,
+      "manufacturer": "Norinco",
+      "specifications": {
+        "caliber": "5.8x21mm DCV05",
+        "action": "Blowback",
+        "rate_of_fire_rpm": 400,
+        "effective_range_m": 100,
+        "weight_kg": 2.2,
+        "magazine_capacity": 50
+      },
+      "operators": ["CN"],
+      "notes": "Chinese PDW with unique caliber"
+    }
+  ]
+}

@@ -1,0 +1,273 @@
+{
+  "platforms": [
+    {
+      "id": "cn-type-055-renhai",
+      "name": "Type 055 Renhai-class",
+      "type": "cruiser",
+      "country_of_origin": "CN",
+      "manufacturer": "Jiangnan Shipyard / Dalian Shipyard",
+      "designation_alt": "Renhai (Large Cruiser)",
+      "service_entry": 2020,
+      "specifications": {
+        "displacement_tons": 13000,
+        "length_m": 180,
+        "beam_m": 20,
+        "draft_m": 6.6,
+        "crew": 300,
+        "max_speed_knots": 30,
+        "range_nm": 5000
+      },
+      "propulsion": {
+        "type": "COGAG",
+        "engines": "4x QC-280 gas turbines",
+        "power_shp": 113000,
+        "shafts": 2
+      },
+      "armament": {
+        "vls": {
+          "type": "Universal VLS",
+          "cells_forward": 64,
+          "cells_aft": 48,
+          "total_cells": 112,
+          "missiles": [
+            "HHQ-9B SAM (200km range)",
+            "YJ-18A ASCM (540km)",
+            "CJ-10 LACM",
+            "YJ-21 hypersonic ASBM",
+            "Yu-8 ASROC"
+          ]
+        },
+        "gun": {
+          "type": "H/PJ-45A",
+          "caliber": "130mm",
+          "rate_of_fire_rpm": 40
+        },
+        "ciws": "H/PJ-11 CIWS (11-barrel 30mm)",
+        "torpedo_tubes": "2x triple 324mm",
+        "helicopters": 2,
+        "helicopter_type": "Z-20F or Ka-28"
+      },
+      "sensors": {
+        "radar_search": "Type 346B AESA (4 arrays)",
+        "radar_s_band": "Type 346B S-band",
+        "radar_x_band": "X-band fire control",
+        "sonar_hull": "Bow-mounted sonar",
+        "sonar_towed": "Towed array"
+      },
+      "service_history": {
+        "introduced": 2020,
+        "status": "active",
+        "built": 8,
+        "ships": [
+          {"name": "Nanchang", "hull": "101"},
+          {"name": "Lhasa", "hull": "102"},
+          {"name": "Dalian", "hull": "105"},
+          {"name": "Yan'an", "hull": "106"},
+          {"name": "Zunyi", "hull": "107"},
+          {"name": "Xianyang", "hull": "108"},
+          {"name": "Wuxi", "hull": "103"},
+          {"name": "Anshan", "hull": "104"}
+        ]
+      },
+      "unit_cost_usd": 920000000,
+      "notes": "PLAN's most capable surface combatant. 112 VLS cells - most of any Asian warship. Often classified as cruiser. 8 built, more ordered."
+    },
+    {
+      "id": "cn-type-052d-luyang-iii",
+      "name": "Type 052D Luyang III-class",
+      "type": "destroyer",
+      "country_of_origin": "CN",
+      "manufacturer": "Jiangnan Shipyard / Dalian Shipyard",
+      "service_entry": 2014,
+      "specifications": {
+        "displacement_tons": 7500,
+        "length_m": 157,
+        "beam_m": 17.2,
+        "draft_m": 6.5,
+        "crew": 280,
+        "max_speed_knots": 29,
+        "range_nm": 4500
+      },
+      "propulsion": {
+        "type": "COGAG",
+        "engines": "2x QC-280 + 2x diesel",
+        "power_shp": 72000
+      },
+      "armament": {
+        "vls": {
+          "type": "Universal VLS",
+          "total_cells": 64,
+          "missiles": [
+            "HHQ-9B SAM",
+            "YJ-18 ASCM",
+            "CJ-10 LACM",
+            "Yu-8 ASROC"
+          ]
+        },
+        "gun": {
+          "type": "H/PJ-45A",
+          "caliber": "130mm"
+        },
+        "ciws": "H/PJ-11 + HQ-10 SAM",
+        "helicopters": 1
+      },
+      "sensors": {
+        "radar": "Type 346A AESA",
+        "note": "Chinese AEGIS equivalent"
+      },
+      "service_history": {
+        "introduced": 2014,
+        "status": "active",
+        "built": 25,
+        "operators": [
+          {"country": "CN", "quantity": 25}
+        ]
+      },
+      "unit_cost_usd": 680000000,
+      "notes": "Workhorse destroyer of PLAN. 25+ built. Extended hull variant (052DL) has 72 VLS cells. Continuous production."
+    },
+    {
+      "id": "cn-type-054a-jiangkai-ii",
+      "name": "Type 054A Jiangkai II-class",
+      "type": "frigate",
+      "country_of_origin": "CN",
+      "manufacturer": "Hudong-Zhonghua / Huangpu Shipyard",
+      "service_entry": 2008,
+      "specifications": {
+        "displacement_tons": 4050,
+        "length_m": 134,
+        "beam_m": 16,
+        "draft_m": 5,
+        "crew": 165,
+        "max_speed_knots": 27,
+        "range_nm": 3800
+      },
+      "propulsion": {
+        "type": "CODAD",
+        "engines": "4x SEMT Pielstick diesels",
+        "power_hp": 25000
+      },
+      "armament": {
+        "vls": {
+          "type": "VLS",
+          "cells": 32,
+          "missiles": ["HQ-16 SAM"]
+        },
+        "ascm": "8x YJ-83 anti-ship",
+        "gun": {
+          "type": "H/PJ-26",
+          "caliber": "76mm"
+        },
+        "ciws": "2x H/PJ-12 CIWS",
+        "torpedo_tubes": "2x triple 324mm",
+        "helicopters": 1
+      },
+      "sensors": {
+        "radar": "Type 382 3D radar",
+        "sonar": "Bow-mounted + towed array"
+      },
+      "service_history": {
+        "introduced": 2008,
+        "status": "active",
+        "built": 40,
+        "operators": [
+          {"country": "CN", "quantity": 40}
+        ]
+      },
+      "unit_cost_usd": 350000000,
+      "notes": "Most numerous PLAN escort. Multi-mission frigate. Type 054B successor with improved sensors entering production."
+    },
+    {
+      "id": "cn-cv-18-fujian",
+      "name": "Fujian (Type 003)",
+      "type": "aircraft_carrier",
+      "country_of_origin": "CN",
+      "manufacturer": "Jiangnan Shipyard",
+      "service_entry": 2025,
+      "specifications": {
+        "displacement_tons": 85000,
+        "length_m": 320,
+        "beam_m": 78,
+        "draft_m": 11,
+        "crew": 3000,
+        "max_speed_knots": 30
+      },
+      "propulsion": {
+        "type": "Conventional (EMALS)",
+        "engines": "Steam turbines",
+        "note": "Conventional propulsion but electromagnetic catapults"
+      },
+      "flight_operations": {
+        "catapults": "3x EMALS",
+        "aircraft_capacity": 70,
+        "air_wing": [
+          "J-15T/J-35",
+          "KJ-600 AEW",
+          "Z-20"
+        ]
+      },
+      "armament": {
+        "sam": "HQ-10 SAM",
+        "ciws": "H/PJ-11 CIWS"
+      },
+      "service_history": {
+        "launched": 2022,
+        "expected_service": 2025,
+        "status": "fitting out"
+      },
+      "unit_cost_usd": 5500000000,
+      "notes": "China's first CATOBAR carrier. EMALS catapults - third nation after US. Conventional propulsion. Will operate J-35 stealth fighters."
+    },
+    {
+      "id": "cn-cv-17-shandong",
+      "name": "Shandong (Type 002)",
+      "type": "aircraft_carrier",
+      "country_of_origin": "CN",
+      "manufacturer": "Dalian Shipyard",
+      "service_entry": 2019,
+      "specifications": {
+        "displacement_tons": 70000,
+        "length_m": 315,
+        "beam_m": 75,
+        "max_speed_knots": 31
+      },
+      "flight_operations": {
+        "type": "STOBAR",
+        "ski_jump_angle_deg": 12,
+        "aircraft_capacity": 44,
+        "air_wing": ["J-15 Flying Shark", "Z-18", "Z-9"]
+      },
+      "service_history": {
+        "introduced": 2019,
+        "status": "active"
+      },
+      "notes": "First Chinese-built carrier. Improved Kuznetsov design. STOBAR limits payload."
+    },
+    {
+      "id": "cn-cv-16-liaoning",
+      "name": "Liaoning (Type 001)",
+      "type": "aircraft_carrier",
+      "country_of_origin": "CN",
+      "manufacturer": "Dalian Shipyard (rebuilt)",
+      "original_name": "Varyag (Soviet)",
+      "service_entry": 2012,
+      "specifications": {
+        "displacement_tons": 67500,
+        "length_m": 304.5,
+        "beam_m": 75,
+        "max_speed_knots": 29
+      },
+      "flight_operations": {
+        "type": "STOBAR",
+        "ski_jump_angle_deg": 14,
+        "aircraft_capacity": 40
+      },
+      "service_history": {
+        "introduced": 2012,
+        "status": "active",
+        "note": "Training carrier"
+      },
+      "notes": "Ex-Soviet Kuznetsov-class. Purchased incomplete from Ukraine. Primarily training role."
+    }
+  ]
+}

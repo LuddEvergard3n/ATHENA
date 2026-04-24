@@ -1,0 +1,941 @@
+{
+  "actors": [
+    {
+      "health": 1,
+      "id": "blue-fb-1001",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #1",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.970243002949335
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1002",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #2",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.973375318428353
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1003",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #3",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.976507633907371
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1004",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #4",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.979639949386385
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1005",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #5",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.982772264865403
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1006",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #6",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.985904580344421
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1007",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #7",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.989036895823439
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1008",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #8",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.992169211302457
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1009",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #9",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.995301526781475
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1010",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #10",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55.04797634901135,
+        "lon": 20.980890056887993
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1011",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #11",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.001566157739507
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1012",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #12",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.004698473218525
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1013",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #13",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.007830788697543
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1014",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #14",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.010963104176561
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1015",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #15",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.014095419655579
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1016",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #16",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.017227735134597
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1017",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #17",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.020360050613615
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1018",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #18",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.023492366092629
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1019",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #19",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.026624681571647
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1020",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório #20",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.029756997050665
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1021",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #1",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.256075073733363
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1022",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #2",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.334382960708798
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1023",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #3",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.412690847684235
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1024",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #4",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.490998734659669
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1025",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #5",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.569306621635103
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1026",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #6",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.647614508610541
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1027",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #7",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.725922395585975
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1028",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #8",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.804230282561413
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1029",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #9",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.882538169536847
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1030",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #10",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 20.960846056512281
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1031",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #11",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.039153943487719
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1032",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #12",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.117461830463153
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1033",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #13",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.195769717438587
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1034",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #14",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.274077604414025
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1035",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #15",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.352385491389459
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1036",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #16",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.430693378364897
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1037",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #17",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.509001265340331
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1038",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #18",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.587309152315765
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1039",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #19",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.665617039291202
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "blue-fb-1040",
+      "morale": 0.90000000000000002,
+      "name": "JAS 39E Gripen (F-39E) #20",
+      "platform_id": "br-gripen-e",
+      "position": {
+        "alt": 0,
+        "lat": 55,
+        "lon": 21.743924926266637
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "fighter"
+    },
+    {
+      "health": 1,
+      "id": "red-1",
+      "morale": 0.90000000000000002,
+      "name": "New Red Unit",
+      "position": {
+        "alt": 0,
+        "lat": 55.05310202654951,
+        "lon": 20.998750983907129
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "unit"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1041",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #1",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.068069007810784,
+        "lon": 20.990257677584523
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1042",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #2",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.067863980191106,
+        "lon": 21.029351867819415
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1043",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #3",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.064173492104551,
+        "lon": 20.974520075850659
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1044",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #4",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.052486946281235,
+        "lon": 20.975019683324113
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1045",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #5",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.053512081788867,
+        "lon": 20.981014957460978
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1046",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #6",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.053512081788867,
+        "lon": 21.006494881610319
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1047",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #7",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.052486946281235,
+        "lon": 21.016736811499246
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1048",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #8",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.052896998929832,
+        "lon": 21.024980321857409
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1049",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #9",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.063353384216597,
+        "lon": 21.021732875870729
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1050",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #10",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.063558411836276,
+        "lon": 21.012365255174199
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1051",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #11",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.066223763119822,
+        "lon": 20.981139858033959
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1052",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #12",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.060072950074023,
+        "lon": 20.977767516655817
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1053",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #13",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.064583547343908,
+        "lon": 20.991631594250375
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1054",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #14",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.058022679058759,
+        "lon": 20.98438730402064
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1055",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #15",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.056792515931448,
+        "lon": 21.009992128742965
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1056",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #16",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.053717109408545,
+        "lon": 20.989133562064637
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1057",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #17",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.056792515931448,
+        "lon": 21.017486225300186
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1058",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #18",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.05781765143908,
+        "lon": 21.023856201156001
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1059",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #19",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.060277977693701,
+        "lon": 21.032474408051588
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    },
+    {
+      "health": 1,
+      "id": "red-fb-1060",
+      "morale": 0.90000000000000002,
+      "name": "3M-14 Kalibr (SS-N-30A) #20",
+      "platform_id": "ru-kalibr",
+      "position": {
+        "alt": 0,
+        "lat": 55.062943328977241,
+        "lon": 21.040218305754777
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "artillery"
+    }
+  ],
+  "environment": {
+    "terrain": {
+      "base_type": "flat",
+      "forest_density": 0.30000001192092896,
+      "rivers": false,
+      "roughness": 0.30000001192092896,
+      "urban_density": 0.20000000298023224
+    }
+  },
+  "id": "custom-scenario",
+  "name": "New Scenario",
+  "scale": "meso",
+  "spatial_bounds": {
+    "max_lat": 55.568069007810784,
+    "max_lon": 22.243924926266637,
+    "min_lat": 54.5,
+    "min_lon": 19.756075073733363
+  },
+  "temporal": {
+    "max_ticks": 72,
+    "tick_duration_seconds": 3600
+  },
+  "version": "1.0.0"
+}

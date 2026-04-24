@@ -1,0 +1,149 @@
+{
+  "platforms": [
+    {
+      "id": "es-c90-at-launcher",
+      "name": "C90-CR (M3)",
+      "type": "disposable_at_launcher",
+      "country_of_origin": "ES",
+      "manufacturer": "Instalaza",
+      "service_entry": 1990,
+      "specifications": {
+        "caliber_mm": 90,
+        "length_mm": 997,
+        "weight_kg": 4.8,
+        "muzzle_velocity_m_s": 230,
+        "effective_range_m": 350,
+        "max_range_m": 700,
+        "penetration_mm": 480
+      },
+      "variants": [
+        {"name": "C90-C", "warhead": "HEAT", "penetration_mm": 400},
+        {"name": "C90-CR", "warhead": "Tandem HEAT", "penetration_mm": 480},
+        {"name": "C90-CR-AM", "warhead": "Anti-structure"},
+        {"name": "C90-CR-BK", "warhead": "Bunker buster"},
+        {"name": "C90-CR-FIM", "note": "Confined space capable"}
+      ],
+      "features": {
+        "disposable": true,
+        "tandem_warhead": "CR variant",
+        "era_defeat": true
+      },
+      "service_history": {
+        "introduced": 1990,
+        "status": "active",
+        "operators": ["ES", "PT", "CO", "PE", "MA", "ID"]
+      },
+      "combat_use": [
+        {"conflict": "Afghanistan", "year": 2002, "operator": "Spain"}
+      ],
+      "unit_cost_usd": 3000,
+      "notes": "Spanish disposable AT. Tandem warhead defeats ERA. Widely exported. Multiple warhead options."
+    },
+    {
+      "id": "br-msss-at-launcher",
+      "name": "ALAC (MSS-1.2)",
+      "type": "disposable_at_launcher",
+      "country_of_origin": "BR",
+      "manufacturer": "IMBEL",
+      "service_entry": 2010,
+      "specifications": {
+        "caliber_mm": 84,
+        "weight_kg": 8.0,
+        "effective_range_m": 300,
+        "penetration_mm": 350
+      },
+      "service_history": {
+        "introduced": 2010,
+        "status": "active",
+        "operator": "Brazilian Army"
+      },
+      "notes": "Brazilian AT launcher based on AT4. Indigenous production."
+    },
+    {
+      "id": "ua-stugna-p-detail",
+      "name": "Stugna-P (Skif)",
+      "type": "atgm_system",
+      "country_of_origin": "UA",
+      "manufacturer": "Luch Design Bureau",
+      "service_entry": 2011,
+      "specifications": {
+        "caliber_mm": 130,
+        "weight_launcher_kg": 25,
+        "weight_missile_kg": 29,
+        "range_m": 5000,
+        "penetration_mm": 800
+      },
+      "guidance": {
+        "type": "Laser beam-riding",
+        "remote_operation": true,
+        "thermal_sight": true
+      },
+      "features": {
+        "fire_and_observe": true,
+        "remote_tripod": true,
+        "day_night": true
+      },
+      "service_history": {
+        "introduced": 2011,
+        "status": "active",
+        "operators": ["UA", "SA"]
+      },
+      "combat_use": [
+        {"conflict": "Donbas", "year": 2014},
+        {"conflict": "Ukraine", "year": 2022, "note": "Highly effective, viral tank kills"}
+      ],
+      "unit_cost_usd": 20000,
+      "notes": "Ukrainian ATGM. Remote operation keeps crew safe. Viral videos of tank kills in 2022."
+    },
+    {
+      "id": "tr-karaok-atgm",
+      "name": "KARAOK",
+      "type": "atgm",
+      "country_of_origin": "TR",
+      "manufacturer": "Roketsan",
+      "service_entry": 2022,
+      "specifications": {
+        "weight_kg": 12,
+        "range_m": 2500,
+        "penetration_mm": 600,
+        "guidance": "Imaging Infrared"
+      },
+      "features": {
+        "fire_and_forget": true,
+        "shoulder_fired": true,
+        "soft_launch": true,
+        "top_attack": true
+      },
+      "service_history": {
+        "introduced": 2022,
+        "status": "active"
+      },
+      "notes": "Turkish man-portable ATGM. Fire-and-forget like Javelin. Top attack mode."
+    },
+    {
+      "id": "kr-raybolt-atgm",
+      "name": "Raybolt (Hyungung)",
+      "type": "atgm",
+      "country_of_origin": "KR",
+      "manufacturer": "LIG Nex1",
+      "service_entry": 2017,
+      "specifications": {
+        "weight_kg": 23,
+        "range_m": 2500,
+        "penetration_mm": 900,
+        "guidance": "Imaging Infrared"
+      },
+      "features": {
+        "fire_and_forget": true,
+        "top_attack": true,
+        "direct_attack": true
+      },
+      "service_history": {
+        "introduced": 2017,
+        "status": "active",
+        "operators": ["KR", "AE", "PH"]
+      },
+      "notes": "Korean Javelin equivalent. 900mm penetration with tandem warhead. UAE export."
+    }
+  ]
+}

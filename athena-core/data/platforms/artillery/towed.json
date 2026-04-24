@@ -1,0 +1,950 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-m777",
+      "name": "M777A2",
+      "type": "towed_howitzer",
+      "country_of_origin": "GB",
+      "manufacturer": "BAE Systems (Land Systems)",
+      "service_history": {
+        "introduced": 2005,
+        "retired": null,
+        "production_count": 1400,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 1000,
+            "variants": [
+              "M777A2"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 54,
+            "status": "active"
+          },
+          {
+            "country": "CA",
+            "quantity": 37,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 145,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 36,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 126,
+            "status": "active"
+          },
+          {
+            "country": "CO",
+            "quantity": 12,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 5,
+        "weight_kg": 4200,
+        "length_m": 10.7,
+        "width_m": 3.78,
+        "height_m": 1.5,
+        "notes": "Lightest 155mm howitzer in NATO"
+      },
+      "mobility": {
+        "towing_vehicle": "HMMWV, FMTV, helicopter",
+        "helicopter_lift": [
+          "CH-47 Chinook",
+          "V-22 Osprey",
+          "CH-53"
+        ],
+        "deploy_time_min": 3,
+        "pack_time_min": 2,
+        "towed_speed_kmh": 88
+      },
+      "armament": {
+        "main": {
+          "designation": "M777A2",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 39,
+          "type": "howitzer",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 70,
+          "traverse_deg": 45,
+          "loading": "manual",
+          "rate_of_fire_burst_rpm": 5,
+          "rate_of_fire_sustained_rpm": 2,
+          "range_standard_km": 24.7,
+          "range_rap_km": 30,
+          "range_excalibur_km": 40,
+          "ammunition_types": [
+            {
+              "type": "HE",
+              "designation": "M795",
+              "range_km": 24.7
+            },
+            {
+              "type": "RAP",
+              "designation": "M549A1",
+              "range_km": 30
+            },
+            {
+              "type": "GPS-Guided",
+              "designation": "M982 Excalibur",
+              "range_km": 40,
+              "cep_m": 2
+            },
+            {
+              "type": "Smoke",
+              "designation": "M825A1"
+            },
+            {
+              "type": "Illumination",
+              "designation": "M485A2"
+            }
+          ]
+        }
+      },
+      "protection": {
+        "armor_type": "none",
+        "crew_protection": "Gun shield only",
+        "notes": "Open emplacement, no armor"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Digital Fire Control System (DFCS)",
+        "navigation": "GPS/INS",
+        "digital_fire_control": true,
+        "automatic_gun_laying": true,
+        "topsight_unit": true
+      },
+      "unit_cost_usd": 700000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia M777",
+        "Army Recognition",
+        "BAE Systems"
+      ],
+      "notes": "Titanium/aluminum construction. Lightest 155mm (4.2t vs 7t+ others). CH-47 sling-loadable. Afghanistan/Iraq workhorse. 126 sent to Ukraine. M777ER 58-caliber canceled. India TOT production.",
+      "year": 2005
+    },
+    {
+      "id": "us-m198",
+      "name": "M198",
+      "type": "towed_howitzer",
+      "country_of_origin": "US",
+      "manufacturer": "Rock Island Arsenal",
+      "service_history": {
+        "introduced": 1979,
+        "retired": null,
+        "production_count": 1700,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 400,
+            "status": "reserve"
+          },
+          {
+            "country": "PK",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 36,
+            "status": "reserve"
+          },
+          {
+            "country": "LB",
+            "quantity": 36,
+            "status": "active"
+          },
+          {
+            "country": "TH",
+            "quantity": 62,
+            "status": "active"
+          },
+          {
+            "country": "HN",
+            "quantity": 24,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 9,
+        "weight_kg": 7150,
+        "length_m": 11.0,
+        "width_m": 2.79,
+        "height_m": 1.47
+      },
+      "mobility": {
+        "towing_vehicle": "FMTV, M939",
+        "helicopter_lift": [
+          "CH-47 Chinook (marginal)",
+          "CH-53E"
+        ],
+        "deploy_time_min": 4,
+        "towed_speed_kmh": 72
+      },
+      "armament": {
+        "main": {
+          "designation": "M198 155mm",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 39,
+          "type": "howitzer",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 72,
+          "traverse_deg": 45,
+          "loading": "manual",
+          "rate_of_fire_burst_rpm": 4,
+          "rate_of_fire_sustained_rpm": 2,
+          "range_standard_km": 22,
+          "range_rap_km": 30,
+          "ammunition_types": [
+            {
+              "type": "HE",
+              "designation": "M107",
+              "range_km": 22
+            },
+            {
+              "type": "RAP",
+              "designation": "M549",
+              "range_km": 30
+            },
+            {
+              "type": "Smoke"
+            },
+            {
+              "type": "Illumination"
+            }
+          ]
+        }
+      },
+      "protection": {
+        "armor_type": "none",
+        "crew_protection": "Shield"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Basic optical/digital"
+      },
+      "unit_cost_usd": 500000,
+      "cost_year": 1995,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia M198 howitzer",
+        "Army Recognition"
+      ],
+      "notes": "M777 predecessor. Heavier but more stable. Being replaced. Gulf War, Iraq, Afghanistan veteran. Still in many allied inventories.",
+      "year": 1979
+    },
+    {
+      "id": "eu-fh70",
+      "name": "FH70",
+      "type": "towed_howitzer",
+      "country_of_origin": "DE",
+      "manufacturer": "Rheinmetall/OTO Melara/BAE",
+      "service_history": {
+        "introduced": 1978,
+        "retired": null,
+        "production_count": 1200,
+        "operators": [
+          {
+            "country": "DE",
+            "quantity": 0,
+            "status": "retired"
+          },
+          {
+            "country": "IT",
+            "quantity": 164,
+            "status": "active"
+          },
+          {
+            "country": "JP",
+            "quantity": 483,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 72,
+            "status": "active"
+          },
+          {
+            "country": "MY",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "OM",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "EE",
+            "quantity": 24,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 8,
+        "weight_kg": 9300,
+        "length_m": 12.4,
+        "width_m": 2.2,
+        "height_m": 1.8
+      },
+      "mobility": {
+        "apu": {
+          "type": "Volkswagen",
+          "power_hp": 75
+        },
+        "self_propulsion_kmh": 16,
+        "self_propulsion_range_km": 24,
+        "towing_vehicle": "MAN truck",
+        "deploy_time_min": 2.5,
+        "towed_speed_kmh": 100
+      },
+      "armament": {
+        "main": {
+          "designation": "FH70 155mm",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 39,
+          "type": "howitzer",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 70,
+          "traverse_deg": 56,
+          "loading": "assisted (semi-automatic)",
+          "rate_of_fire_burst_rpm": 6,
+          "rate_of_fire_sustained_rpm": 2,
+          "range_standard_km": 24,
+          "range_rap_km": 30,
+          "ammunition_types": [
+            {
+              "type": "HE",
+              "range_km": 24
+            },
+            {
+              "type": "RAP",
+              "range_km": 30
+            },
+            {
+              "type": "Smoke"
+            },
+            {
+              "type": "Illumination"
+            }
+          ]
+        }
+      },
+      "protection": {
+        "armor_type": "none",
+        "crew_protection": "Shield"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "MRSI upgrades available",
+        "notes": "Japan FH70 has digital FCS upgrade"
+      },
+      "unit_cost_usd": 600000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia FH70",
+        "Army Recognition"
+      ],
+      "notes": "Tri-national (DE/UK/IT) development. APU for self-propulsion (16 km/h). Semi-automatic loading. Japan largest operator. Germany retired all.",
+      "year": 1978
+    },
+    {
+      "id": "ru-d30",
+      "name": "D-30 (2A18)",
+      "type": "towed_howitzer",
+      "country_of_origin": "SU",
+      "manufacturer": "Motovilikha Plants",
+      "service_history": {
+        "introduced": 1963,
+        "retired": null,
+        "production_count": 15000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 1500,
+            "status": "reserve"
+          },
+          {
+            "country": "UA",
+            "quantity": 400,
+            "status": "active"
+          },
+          {
+            "country": "CN",
+            "quantity": 2000,
+            "variants": [
+              "Type 96"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 300,
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "AF",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "VN",
+            "quantity": 400,
+            "status": "active"
+          },
+          {
+            "country": "KP",
+            "quantity": 500,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 6,
+        "weight_kg": 3150,
+        "length_m": 5.4,
+        "width_m": 1.95,
+        "height_m": 1.66
+      },
+      "mobility": {
+        "towing_vehicle": "Ural-4320, ZIL-131, MT-LB",
+        "helicopter_lift": [
+          "Mi-26",
+          "Mi-6"
+        ],
+        "deploy_time_min": 2.5,
+        "towed_speed_kmh": 60
+      },
+      "armament": {
+        "main": {
+          "designation": "2A18 122mm",
+          "caliber_mm": 122,
+          "barrel_length_calibers": 38,
+          "type": "howitzer",
+          "elevation_min_deg": -7,
+          "elevation_max_deg": 70,
+          "traverse_deg": 360,
+          "loading": "manual",
+          "rate_of_fire_burst_rpm": 8,
+          "rate_of_fire_sustained_rpm": 2,
+          "range_standard_km": 15.3,
+          "range_rap_km": 21.9,
+          "ammunition_types": [
+            {
+              "type": "HE-FRAG",
+              "designation": "3OF56",
+              "range_km": 15.3
+            },
+            {
+              "type": "RAP",
+              "range_km": 21.9
+            },
+            {
+              "type": "HEAT",
+              "designation": "3BP1",
+              "penetration_mm": 460
+            },
+            {
+              "type": "Smoke",
+              "designation": "3D6"
+            }
+          ],
+          "notes": "360\u00b0 traverse without moving trails"
+        }
+      },
+      "protection": {
+        "armor_type": "none",
+        "crew_protection": "Shield"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Basic optical"
+      },
+      "unit_cost_usd": 100000,
+      "cost_year": 1990,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia D-30 howitzer",
+        "Army Recognition",
+        "Military Factory"
+      ],
+      "notes": "Most widely used 122mm. 360\u00b0 traverse unique feature. 60+ countries. Light weight allows helicopter transport. Direct fire anti-tank capable. Ukraine: heavily used by both sides.",
+      "year": 1963
+    },
+    {
+      "id": "ru-2a65",
+      "name": "2A65 Msta-B",
+      "type": "towed_howitzer",
+      "country_of_origin": "SU",
+      "manufacturer": "Motovilikha Plants",
+      "service_history": {
+        "introduced": 1987,
+        "retired": null,
+        "production_count": 1500,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 48,
+            "status": "active"
+          },
+          {
+            "country": "AZ",
+            "quantity": 30,
+            "status": "active"
+          },
+          {
+            "country": "KZ",
+            "quantity": 24,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 8,
+        "weight_kg": 7000,
+        "length_m": 12.9,
+        "width_m": 2.5,
+        "height_m": 2.0
+      },
+      "mobility": {
+        "towing_vehicle": "Ural-4320, KamAZ-63501",
+        "deploy_time_min": 2,
+        "pack_time_min": 3,
+        "towed_speed_kmh": 80
+      },
+      "armament": {
+        "main": {
+          "designation": "2A65 152mm",
+          "caliber_mm": 152,
+          "barrel_length_calibers": 47,
+          "type": "howitzer",
+          "elevation_min_deg": -3,
+          "elevation_max_deg": 70,
+          "traverse_deg": 50,
+          "loading": "semi-automatic",
+          "rate_of_fire_burst_rpm": 8,
+          "rate_of_fire_sustained_rpm": 2,
+          "range_standard_km": 24.7,
+          "range_rap_km": 29,
+          "range_krasnopol_km": 25,
+          "ammunition_types": [
+            {
+              "type": "HE-FRAG",
+              "designation": "3OF45",
+              "range_km": 24.7
+            },
+            {
+              "type": "RAP",
+              "range_km": 29
+            },
+            {
+              "type": "Laser-guided",
+              "designation": "Krasnopol",
+              "range_km": 25,
+              "cep_m": 3
+            },
+            {
+              "type": "Smoke"
+            },
+            {
+              "type": "Illumination"
+            }
+          ]
+        }
+      },
+      "protection": {
+        "armor_type": "none",
+        "crew_protection": "Shield"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Digital upgrades available"
+      },
+      "unit_cost_usd": 400000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia 2A65 Msta-B",
+        "Army Recognition"
+      ],
+      "notes": "Towed version of 2S19. 152mm Russian caliber. Same ammunition as 2S19 Msta-S. Semi-automatic loading. Ukraine: heavily used by both sides.",
+      "year": 1987
+    },
+    {
+      "id": "ru-2a36",
+      "name": "2A36 Giatsint-B",
+      "type": "towed_gun",
+      "country_of_origin": "SU",
+      "manufacturer": "Motovilikha Plants",
+      "service_history": {
+        "introduced": 1976,
+        "retired": null,
+        "production_count": 1500,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 300,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "FI",
+            "quantity": 36,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 48,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 8,
+        "weight_kg": 9800,
+        "length_m": 12.3,
+        "width_m": 2.79,
+        "height_m": 1.8
+      },
+      "mobility": {
+        "towing_vehicle": "Ural-4320, KrAZ-260",
+        "deploy_time_min": 3,
+        "towed_speed_kmh": 60
+      },
+      "armament": {
+        "main": {
+          "designation": "2A36 152mm",
+          "caliber_mm": 152,
+          "barrel_length_calibers": 47,
+          "type": "gun",
+          "elevation_min_deg": -2,
+          "elevation_max_deg": 57,
+          "traverse_deg": 50,
+          "loading": "semi-automatic",
+          "rate_of_fire_rpm": 6,
+          "range_standard_km": 28.4,
+          "range_rap_km": 33.5,
+          "ammunition_types": [
+            {
+              "type": "HE-FRAG",
+              "designation": "3OF25",
+              "range_km": 28.4
+            },
+            {
+              "type": "RAP",
+              "range_km": 33.5
+            },
+            {
+              "type": "APHE",
+              "notes": "Direct fire capable"
+            }
+          ],
+          "notes": "Long-range gun, not howitzer"
+        }
+      },
+      "protection": {
+        "armor_type": "none"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Basic optical"
+      },
+      "unit_cost_usd": 350000,
+      "cost_year": 1995,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia 2A36 Giatsint-B",
+        "Army Recognition"
+      ],
+      "notes": "Long-range gun (not howitzer). 28+ km range. Counter-battery role. Towed version of 2S5. Limited traverse. Ukraine: still in use.",
+      "year": 1976
+    },
+    {
+      "id": "uk-l118",
+      "name": "L118 Light Gun",
+      "type": "towed_howitzer",
+      "country_of_origin": "GB",
+      "manufacturer": "Royal Ordnance / BAE Systems",
+      "service_history": {
+        "introduced": 1976,
+        "retired": null,
+        "production_count": 1400,
+        "operators": [
+          {
+            "country": "UK",
+            "quantity": 126,
+            "status": "active"
+          },
+          {
+            "country": "US",
+            "quantity": 100,
+            "variants": [
+              "M119"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 54,
+            "status": "active"
+          },
+          {
+            "country": "IE",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "NZ",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 36,
+            "status": "active"
+          },
+          {
+            "country": "BR",
+            "quantity": 36,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 6,
+        "weight_kg": 1858,
+        "length_m": 8.8,
+        "width_m": 1.78,
+        "height_m": 1.4,
+        "notes": "Very light weight for 105mm"
+      },
+      "mobility": {
+        "towing_vehicle": "Land Rover, HMMWV, light trucks",
+        "helicopter_lift": [
+          "CH-47",
+          "UH-60",
+          "Puma",
+          "Merlin"
+        ],
+        "deploy_time_min": 1,
+        "pack_time_min": 1,
+        "towed_speed_kmh": 80,
+        "notes": "Rapid deployment - 1 minute"
+      },
+      "armament": {
+        "main": {
+          "designation": "L118/L119 105mm",
+          "caliber_mm": 105,
+          "barrel_length_calibers": 37,
+          "type": "howitzer",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 70,
+          "traverse_deg": 11,
+          "loading": "manual",
+          "rate_of_fire_burst_rpm": 8,
+          "rate_of_fire_sustained_rpm": 3,
+          "range_standard_km": 17.2,
+          "range_hesh_km": 14,
+          "ammunition_types": [
+            {
+              "type": "HE",
+              "designation": "L31",
+              "range_km": 17.2
+            },
+            {
+              "type": "HESH",
+              "designation": "L42",
+              "range_km": 14,
+              "penetration_mm": 100
+            },
+            {
+              "type": "Smoke"
+            },
+            {
+              "type": "Illumination"
+            }
+          ]
+        }
+      },
+      "protection": {
+        "armor_type": "none",
+        "crew_protection": "Shield"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Basic with digital upgrades"
+      },
+      "unit_cost_usd": 300000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia L118 light gun",
+        "Army Recognition"
+      ],
+      "notes": "Falklands War star. Very light (1.8t). 1-minute deploy. Helicopter portable. M119 is US version. Paratrooper artillery. 36 donated to Ukraine.",
+      "year": 1976
+    },
+    {
+      "id": "za-g5",
+      "name": "G5 155mm",
+      "type": "towed_howitzer",
+      "country_of_origin": "ZA",
+      "manufacturer": "Denel Land Systems",
+      "service_history": {
+        "introduced": 1983,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "ZA",
+            "quantity": 72,
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 78,
+            "status": "active"
+          },
+          {
+            "country": "OM",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "MY",
+            "quantity": 22,
+            "status": "active"
+          },
+          {
+            "country": "QA",
+            "quantity": 12,
+            "status": "reserve"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 8,
+        "weight_kg": 13500,
+        "length_m": 9.1,
+        "length_barrel_m": 7.0,
+        "width_m": 3.3,
+        "height_m": 2.2
+      },
+      "mobility": {
+        "apu": {
+          "type": "Diesel",
+          "power_hp": 85
+        },
+        "self_propulsion_kmh": 16,
+        "towing_vehicle": "Samil trucks",
+        "deploy_time_min": 1,
+        "towed_speed_kmh": 90
+      },
+      "armament": {
+        "main": {
+          "designation": "G5 155mm",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 45,
+          "type": "howitzer",
+          "elevation_min_deg": -3,
+          "elevation_max_deg": 75,
+          "traverse_deg": 82,
+          "loading": "semi-automatic",
+          "rate_of_fire_burst_rpm": 4,
+          "rate_of_fire_sustained_rpm": 2,
+          "range_standard_km": 30,
+          "range_basebleed_km": 39,
+          "range_vlap_km": 67,
+          "ammunition_types": [
+            {
+              "type": "HE",
+              "range_km": 30
+            },
+            {
+              "type": "Base-bleed",
+              "range_km": 39
+            },
+            {
+              "type": "V-LAP",
+              "designation": "Velocity Enhanced",
+              "range_km": 67
+            },
+            {
+              "type": "Assegai GPS",
+              "range_km": 52,
+              "guidance": "GPS"
+            }
+          ]
+        }
+      },
+      "protection": {
+        "armor_type": "none",
+        "crew_protection": "Shield"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Digital FCS",
+        "muzzle_velocity_radar": true,
+        "automatic_gun_laying": true
+      },
+      "unit_cost_usd": 800000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia G5 howitzer",
+        "Army Recognition",
+        "Denel"
+      ],
+      "notes": "Record-breaking range. Gerald Bull design (Space Gun inventor). V-LAP round set 67km record. APU for self-propulsion. Angola Border War veteran. Basis for G6 SPH.",
+      "year": 1983
+    }
+  ]
+}

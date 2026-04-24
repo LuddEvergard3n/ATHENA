@@ -1,0 +1,686 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "ru-2s19",
+      "name": "2S19 Msta-S",
+      "type": "sph",
+      "country_of_origin": "SU",
+      "manufacturer": "Uraltransmash",
+      "service_history": {
+        "introduced": 1989,
+        "retired": null,
+        "production_count": 1500,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 850,
+            "variants": [
+              "2S19",
+              "2S19M1",
+              "2S19M2"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 40,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 120,
+            "status": "active"
+          },
+          {
+            "country": "VE",
+            "quantity": 48,
+            "status": "active"
+          },
+          {
+            "country": "ET",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "AZ",
+            "quantity": 18,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 5,
+        "weight_kg": 42000,
+        "length_m": 6.04,
+        "length_gun_forward_m": 11.92,
+        "width_m": 3.38,
+        "height_m": 2.99,
+        "ground_clearance_m": 0.44
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-84A",
+          "type": "diesel",
+          "power_hp": 840,
+          "power_kw": 627
+        },
+        "power_to_weight_hp_ton": 20.0,
+        "transmission": "Manual 7F/1R",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 60,
+        "max_speed_offroad_kmh": 30,
+        "range_road_km": 500,
+        "fuel_capacity_liters": 1270,
+        "fording_depth_m": 1.2,
+        "gradient_percent": 58,
+        "trench_crossing_m": 2.8,
+        "vertical_obstacle_m": 0.8
+      },
+      "armament": {
+        "main": {
+          "designation": "2A64",
+          "caliber_mm": 152,
+          "barrel_length_calibers": 47,
+          "type": "howitzer",
+          "elevation_min_deg": -4,
+          "elevation_max_deg": 68,
+          "traverse_deg": 360,
+          "loading": "automatic (conveyor)",
+          "autoloader_capacity": 50,
+          "rate_of_fire_burst_rpm": 8,
+          "rate_of_fire_sustained_rpm": 2,
+          "range_standard_km": 24.7,
+          "range_rap_km": 29,
+          "range_krasnopol_km": 25,
+          "ammunition_carried": 50,
+          "ammunition_types": [
+            {
+              "type": "HE-FRAG",
+              "designation": "3OF45",
+              "range_km": 24.7
+            },
+            {
+              "type": "RAP",
+              "designation": "3OF61",
+              "range_km": 29
+            },
+            {
+              "type": "Laser-guided",
+              "designation": "3OF39 Krasnopol",
+              "range_km": 25,
+              "cep_m": 3
+            },
+            {
+              "type": "Smoke",
+              "designation": "3D3"
+            },
+            {
+              "type": "Illumination",
+              "designation": "3S1"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "NSVT",
+            "caliber_mm": 12.7,
+            "mount": "commander cupola",
+            "ammunition_carried": 300
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "armor_composition": "Welded steel",
+        "protection_front_mm_rha": 15,
+        "protection_turret_mm_rha": 15,
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "1V558",
+        "navigation": "GPS/GLONASS (M2)",
+        "muzzle_velocity_radar": false,
+        "automatic_gun_laying": true,
+        "digital_fire_control": true
+      },
+      "unit_cost_usd": 2500000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia 2S19 Msta",
+        "Army Recognition",
+        "Military Today"
+      ],
+      "notes": "Main Russian SPH. T-80 chassis. 152mm (not NATO 155mm). Msta-SM2 upgrade: digital FCS, GLONASS, autoloader improvements. 300+ lost in Ukraine war.",
+      "year": 1989
+    },
+    {
+      "id": "ru-2s19m2",
+      "name": "2S19M2 Msta-SM2",
+      "type": "sph",
+      "country_of_origin": "RU",
+      "manufacturer": "Uraltransmash",
+      "service_history": {
+        "introduced": 2020,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 200,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 5,
+        "weight_kg": 43000,
+        "length_gun_forward_m": 11.92,
+        "width_m": 3.38,
+        "height_m": 2.99
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-92S2F",
+          "type": "diesel_turbocharged",
+          "power_hp": 1000,
+          "power_kw": 746
+        },
+        "power_to_weight_hp_ton": 23.3,
+        "max_speed_road_kmh": 60,
+        "range_road_km": 500
+      },
+      "armament": {
+        "main": {
+          "designation": "2A64M2",
+          "caliber_mm": 152,
+          "barrel_length_calibers": 47,
+          "type": "howitzer",
+          "loading": "automatic",
+          "rate_of_fire_burst_rpm": 10,
+          "rate_of_fire_sustained_rpm": 3,
+          "range_standard_km": 29,
+          "range_extended_km": 40,
+          "ammunition_carried": 50,
+          "ammunition_types": [
+            {
+              "type": "HE-FRAG",
+              "range_km": 29
+            },
+            {
+              "type": "RAP",
+              "range_km": 40
+            },
+            {
+              "type": "Krasnopol-M",
+              "range_km": 25,
+              "guidance": "laser"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "Kord",
+            "caliber_mm": 12.7,
+            "mount": "commander cupola"
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Digital automated",
+        "navigation": "GLONASS",
+        "muzzle_velocity_radar": true,
+        "automatic_gun_laying": true,
+        "shoot_and_scoot": true
+      },
+      "unit_cost_usd": 4000000,
+      "cost_year": 2022,
+      "confidence": "medium",
+      "sources": [
+        "Army Recognition",
+        "Military Today"
+      ],
+      "notes": "Modernized Msta. Digital FCS, GLONASS navigation, improved autoloader. Higher ROF. T-90 series engine.",
+      "year": 2012
+    },
+    {
+      "id": "ru-2s35",
+      "name": "2S35 Koalitsiya-SV",
+      "type": "sph",
+      "country_of_origin": "RU",
+      "manufacturer": "Uraltransmash",
+      "service_history": {
+        "introduced": 2020,
+        "retired": null,
+        "production_count": 20,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 20,
+            "status": "entering service"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_kg": 48000,
+        "length_m": 8.0,
+        "length_gun_forward_m": 13.0,
+        "width_m": 3.4,
+        "height_m": 3.3,
+        "notes": "Unmanned turret, crew in hull"
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-92S2F",
+          "type": "diesel_turbocharged",
+          "power_hp": 1130,
+          "power_kw": 843
+        },
+        "power_to_weight_hp_ton": 23.5,
+        "transmission": "Automatic",
+        "suspension": "torsion bar with hydraulic dampers",
+        "max_speed_road_kmh": 60,
+        "max_speed_offroad_kmh": 40,
+        "range_road_km": 500,
+        "fording_depth_m": 1.8,
+        "gradient_percent": 60,
+        "trench_crossing_m": 3.0
+      },
+      "armament": {
+        "main": {
+          "designation": "2A88",
+          "caliber_mm": 152,
+          "barrel_length_calibers": 52,
+          "type": "howitzer",
+          "elevation_min_deg": -3,
+          "elevation_max_deg": 75,
+          "traverse_deg": 360,
+          "loading": "fully automatic",
+          "autoloader_capacity": 70,
+          "rate_of_fire_burst_rpm": 16,
+          "rate_of_fire_sustained_rpm": 10,
+          "range_standard_km": 40,
+          "range_extended_km": 70,
+          "ammunition_carried": 70,
+          "ammunition_types": [
+            {
+              "type": "HE-FRAG",
+              "range_km": 40
+            },
+            {
+              "type": "RAP",
+              "range_km": 70
+            },
+            {
+              "type": "Guided",
+              "designation": "Krasnopol-D",
+              "range_km": 40,
+              "guidance": "GPS/GLONASS"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "Kord RWS",
+            "caliber_mm": 12.7,
+            "mount": "remote",
+            "ammunition_carried": 500
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 3",
+        "aps": {
+          "system": "Curtain (planned)",
+          "type": "soft-kill"
+        },
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Digital fully automated",
+        "navigation": "GLONASS/INS",
+        "muzzle_velocity_radar": true,
+        "automatic_gun_laying": true,
+        "mrsi_capability": {
+          "rounds": 10
+        },
+        "shoot_and_scoot": true,
+        "deploy_fire_time_sec": 60
+      },
+      "unit_cost_usd": 10000000,
+      "cost_year": 2023,
+      "confidence": "low",
+      "sources": [
+        "Wikipedia 2S35 Koalitsiya-SV",
+        "Army Recognition"
+      ],
+      "notes": "Next-gen Russian SPH. Unmanned turret. 2-man crew. 10-round MRSI claimed. Limited production due to cost/complexity. May have seen limited Ukraine deployment.",
+      "year": 2015
+    },
+    {
+      "id": "ru-2s3",
+      "name": "2S3 Akatsiya",
+      "type": "sph",
+      "country_of_origin": "SU",
+      "manufacturer": "Uraltransmash",
+      "service_history": {
+        "introduced": 1971,
+        "retired": null,
+        "production_count": 4000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 600,
+            "status": "reserve"
+          },
+          {
+            "country": "UA",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "LY",
+            "quantity": 60,
+            "status": "unknown"
+          },
+          {
+            "country": "IQ",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 120,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 27500,
+        "length_m": 6.97,
+        "length_gun_forward_m": 8.4,
+        "width_m": 3.25,
+        "height_m": 2.8,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-59",
+          "type": "diesel",
+          "power_hp": 520,
+          "power_kw": 388
+        },
+        "power_to_weight_hp_ton": 18.9,
+        "transmission": "Manual",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 63,
+        "max_speed_offroad_kmh": 30,
+        "range_road_km": 500,
+        "fording_depth_m": 1.0,
+        "gradient_percent": 58,
+        "trench_crossing_m": 2.5
+      },
+      "armament": {
+        "main": {
+          "designation": "2A33",
+          "caliber_mm": 152,
+          "barrel_length_calibers": 27,
+          "type": "howitzer",
+          "elevation_min_deg": -4,
+          "elevation_max_deg": 60,
+          "traverse_deg": 360,
+          "loading": "semi-automatic",
+          "rate_of_fire_burst_rpm": 4,
+          "rate_of_fire_sustained_rpm": 1.5,
+          "range_standard_km": 17.4,
+          "range_rap_km": 24,
+          "ammunition_carried": 46
+        },
+        "secondary": [
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "commander hatch",
+            "ammunition_carried": 1500
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 15,
+        "nbc_protection": true,
+        "fire_suppression": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Basic mechanical",
+        "automatic_gun_laying": false
+      },
+      "unit_cost_usd": 500000,
+      "cost_year": 1990,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia 2S3 Akatsiya",
+        "Army Recognition"
+      ],
+      "notes": "Cold War workhorse. Shorter range than modern SPH. Being replaced by Msta-S. Still in use due to numbers. Large caliber (152mm) but short barrel (27 cal).",
+      "year": 1971
+    },
+    {
+      "id": "ru-2s5",
+      "name": "2S5 Giatsint-S",
+      "type": "spg",
+      "country_of_origin": "SU",
+      "manufacturer": "Uraltransmash",
+      "service_history": {
+        "introduced": 1976,
+        "retired": null,
+        "production_count": 1000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 300,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "FI",
+            "quantity": 18,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 48,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 5,
+        "weight_kg": 28200,
+        "length_m": 6.2,
+        "length_gun_forward_m": 10.3,
+        "width_m": 3.25,
+        "height_m": 2.6
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-59",
+          "type": "diesel",
+          "power_hp": 520,
+          "power_kw": 388
+        },
+        "power_to_weight_hp_ton": 18.4,
+        "max_speed_road_kmh": 60,
+        "range_road_km": 500
+      },
+      "armament": {
+        "main": {
+          "designation": "2A37",
+          "caliber_mm": 152,
+          "barrel_length_calibers": 47,
+          "type": "gun",
+          "elevation_min_deg": -2,
+          "elevation_max_deg": 57,
+          "traverse_deg": 30,
+          "loading": "semi-automatic",
+          "rate_of_fire_rpm": 6,
+          "range_standard_km": 28.4,
+          "range_rap_km": 33.5,
+          "ammunition_carried": 30,
+          "notes": "Open-topped, limited traverse"
+        }
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 10,
+        "notes": "Open-topped, crew exposed"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Basic"
+      },
+      "unit_cost_usd": 400000,
+      "cost_year": 1990,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia 2S5 Giatsint",
+        "Army Recognition"
+      ],
+      "notes": "Long-range SPG. Open-topped design. 28+ km range. Limited traverse (30\u00b0). Used for counter-battery. Still in Ukraine conflict.",
+      "year": 1976
+    },
+    {
+      "id": "ru-2s7m",
+      "name": "2S7M Malka",
+      "type": "spg",
+      "country_of_origin": "SU",
+      "manufacturer": "Kirov Plant",
+      "service_history": {
+        "introduced": 1983,
+        "retired": null,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 60,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 8,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 8,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 7,
+        "weight_kg": 46000,
+        "length_m": 10.5,
+        "length_gun_forward_m": 13.1,
+        "width_m": 3.38,
+        "height_m": 3.0
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-46-1",
+          "type": "diesel_turbocharged",
+          "power_hp": 840,
+          "power_kw": 627
+        },
+        "power_to_weight_hp_ton": 18.3,
+        "max_speed_road_kmh": 50,
+        "range_road_km": 500
+      },
+      "armament": {
+        "main": {
+          "designation": "2A44",
+          "caliber_mm": 203,
+          "barrel_length_calibers": 55,
+          "type": "gun",
+          "elevation_min_deg": 0,
+          "elevation_max_deg": 60,
+          "traverse_deg": 30,
+          "loading": "crane-assisted",
+          "rate_of_fire_rpm": 1.5,
+          "range_standard_km": 37.5,
+          "range_rap_km": 47.5,
+          "range_nuclear_capable": true,
+          "ammunition_carried": 8,
+          "ammunition_types": [
+            {
+              "type": "HE",
+              "designation": "3OF34",
+              "weight_kg": 110,
+              "range_km": 37.5
+            },
+            {
+              "type": "RAP",
+              "range_km": 47.5
+            },
+            {
+              "type": "Nuclear",
+              "designation": "3BV2",
+              "notes": "0.1-2 kt yield"
+            }
+          ]
+        }
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 8,
+        "notes": "Minimal protection - artillery role"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Basic optical"
+      },
+      "unit_cost_usd": 3000000,
+      "cost_year": 2000,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia 2S7 Pion",
+        "Army Recognition"
+      ],
+      "notes": "World's largest SPG. 203mm (8 inch). Nuclear capable. 110kg shell. Limited mobility - firing platform only. Some reactivated for Ukraine war.",
+      "year": 1986
+    }
+  ]
+}

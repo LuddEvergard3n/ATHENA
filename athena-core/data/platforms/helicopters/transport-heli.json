@@ -1,0 +1,971 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-23",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "Boeing",
+      "Sikorsky",
+      "Russian Helicopters"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-ch47f",
+      "name": "CH-47F Chinook",
+      "nato_name": null,
+      "type": "transport_helicopter",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 2007,
+        "first_flight": 1961,
+        "retired": null,
+        "production_count": 950,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 480,
+            "status": "active"
+          },
+          {
+            "country": "UK",
+            "quantity": 60,
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 14,
+            "status": "active"
+          },
+          {
+            "country": "CA",
+            "quantity": 15,
+            "status": "active"
+          },
+          {
+            "country": "NL",
+            "quantity": 20,
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "quantity": 16,
+            "status": "active"
+          },
+          {
+            "country": "JP",
+            "quantity": 74,
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "quantity": 36,
+            "status": "active"
+          },
+          {
+            "country": "ES",
+            "quantity": 17,
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 26,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 15,
+            "status": "active"
+          },
+          {
+            "country": "DE",
+            "quantity": 60,
+            "status": "ordered"
+          }
+        ],
+        "notes": "Primary Western heavy-lift helicopter"
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 33,
+        "troops": 55,
+        "length_m": 30.1,
+        "rotor_diameter_m": 18.3,
+        "height_m": 5.7,
+        "empty_weight_kg": 12210,
+        "max_takeoff_weight_kg": 22680,
+        "internal_fuel_kg": 3914
+      },
+      "performance": {
+        "max_speed_kmh": 315,
+        "cruise_speed_kmh": 259,
+        "range_km": 741,
+        "ferry_range_km": 2252,
+        "service_ceiling_m": 5640,
+        "rate_of_climb_mps": 8.5,
+        "hover_ceiling_oge_m": 2225
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Honeywell T55-GA-714A",
+        "power_shp": 4867
+      },
+      "capacity": {
+        "cargo_internal_kg": 10886,
+        "cargo_slung_kg": 12700,
+        "paratroopers": 44,
+        "stretchers": 24
+      },
+      "avionics": {
+        "cockpit": "Digital glass cockpit (CAAS)",
+        "nav": "GPS/INS",
+        "defensive": "CMWS, IR jammer, chaff/flare"
+      },
+      "armament": {
+        "guns": [
+          {
+            "type": "M134 Minigun",
+            "caliber_mm": 7.62,
+            "quantity": 2
+          },
+          {
+            "type": "M240",
+            "caliber_mm": 7.62,
+            "quantity": 1
+          }
+        ]
+      },
+      "operational_history": {
+        "combat": [
+          "Vietnam",
+          "Gulf War",
+          "Afghanistan",
+          "Iraq"
+        ],
+        "notes": "Workhorse of US Army aviation. 60+ years in service."
+      },
+      "variants": [
+        {
+          "designation": "CH-47F",
+          "notes": "Current US Army standard"
+        },
+        {
+          "designation": "CH-47F Block II",
+          "notes": "Upgraded, new blades"
+        },
+        {
+          "designation": "MH-47G",
+          "notes": "Special operations"
+        }
+      ],
+      "unit_cost_usd": 38550000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "US Army"
+      ],
+      "notes": "Tandem rotor heavy-lift. Can carry 12+ tons slung. Iconic US helicopter since Vietnam. Block II upgrade ongoing.",
+      "year": 2007
+    },
+    {
+      "id": "us-uh60m",
+      "name": "UH-60M Black Hawk",
+      "nato_name": null,
+      "type": "utility_helicopter",
+      "country_of_origin": "US",
+      "manufacturer": "Sikorsky (Lockheed Martin)",
+      "service_history": {
+        "introduced": 2007,
+        "first_flight": 1974,
+        "retired": null,
+        "production_count": 4000,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 2135,
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 35,
+            "status": "active"
+          },
+          {
+            "country": "JP",
+            "quantity": 42,
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "quantity": 150,
+            "status": "active"
+          },
+          {
+            "country": "TW",
+            "quantity": 60,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 72,
+            "status": "active"
+          },
+          {
+            "country": "IL",
+            "quantity": 49,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "TR",
+            "quantity": 109,
+            "status": "active"
+          },
+          {
+            "country": "CO",
+            "quantity": 80,
+            "status": "active"
+          },
+          {
+            "country": "MX",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "BR",
+            "quantity": 16,
+            "status": "active"
+          }
+        ],
+        "notes": "World's most widely used military helicopter"
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 11,
+        "length_m": 19.76,
+        "rotor_diameter_m": 16.36,
+        "height_m": 5.13,
+        "empty_weight_kg": 5224,
+        "max_takeoff_weight_kg": 10660
+      },
+      "performance": {
+        "max_speed_kmh": 294,
+        "cruise_speed_kmh": 278,
+        "range_km": 592,
+        "service_ceiling_m": 5790,
+        "rate_of_climb_mps": 4.3
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "General Electric T700-GE-701D",
+        "power_shp": 2000
+      },
+      "capacity": {
+        "cargo_internal_kg": 1170,
+        "cargo_slung_kg": 4082,
+        "stretchers": 6
+      },
+      "armament": {
+        "guns": [
+          {
+            "type": "M134 Minigun",
+            "caliber_mm": 7.62,
+            "quantity": 2
+          },
+          {
+            "type": "M240H",
+            "caliber_mm": 7.62,
+            "quantity": 2
+          }
+        ],
+        "optional": "Hellfire, rockets (armed variants)"
+      },
+      "variants": [
+        {
+          "designation": "UH-60M",
+          "notes": "Current standard"
+        },
+        {
+          "designation": "HH-60M MEDEVAC",
+          "notes": "Medical evacuation"
+        },
+        {
+          "designation": "MH-60M DAP",
+          "notes": "Special ops, armed"
+        },
+        {
+          "designation": "SH-60/MH-60R",
+          "notes": "Naval Seahawk"
+        }
+      ],
+      "unit_cost_usd": 21300000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Sikorsky",
+        "US Army"
+      ],
+      "notes": "World's most produced military helicopter. 4000+ built. Used by 30+ countries. Replaced UH-1 Huey.",
+      "year": 2007
+    },
+    {
+      "id": "ru-mi8mt",
+      "name": "Mi-8MT/Mi-17",
+      "nato_name": "Hip-H",
+      "type": "transport_helicopter",
+      "country_of_origin": "RU",
+      "manufacturer": "Kazan/Ulan-Ude Helicopters",
+      "service_history": {
+        "introduced": 1977,
+        "first_flight": 1961,
+        "retired": null,
+        "production_count": 17000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 570,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 228,
+            "status": "active"
+          },
+          {
+            "country": "CN",
+            "quantity": 300,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 60,
+            "status": "active"
+          },
+          {
+            "country": "AF",
+            "quantity": 50,
+            "status": "active",
+            "notes": "Before 2021"
+          },
+          {
+            "country": "VN",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 80,
+            "status": "active",
+            "notes": "Heavy combat losses"
+          },
+          {
+            "country": "PL",
+            "quantity": 30,
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "quantity": 40,
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "quantity": 40,
+            "status": "active"
+          }
+        ],
+        "notes": "World's most produced helicopter"
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 24,
+        "troops": 32,
+        "length_m": 25.3,
+        "rotor_diameter_m": 21.3,
+        "height_m": 5.65,
+        "empty_weight_kg": 7260,
+        "max_takeoff_weight_kg": 13000
+      },
+      "performance": {
+        "max_speed_kmh": 250,
+        "cruise_speed_kmh": 230,
+        "range_km": 580,
+        "ferry_range_km": 1065,
+        "service_ceiling_m": 6000,
+        "rate_of_climb_mps": 9
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Klimov TV3-117VM",
+        "power_shp": 2200
+      },
+      "capacity": {
+        "cargo_internal_kg": 4000,
+        "cargo_slung_kg": 4000,
+        "stretchers": 12
+      },
+      "armament": {
+        "guns": {
+          "type": "PKT",
+          "caliber_mm": 7.62,
+          "notes": "Door guns"
+        },
+        "rockets": {
+          "type": "B-8V20",
+          "quantity": 4,
+          "notes": "80mm rockets"
+        },
+        "missiles": {
+          "type": "9M17 Falanga",
+          "notes": "Optional ATGM"
+        }
+      },
+      "operational_history": {
+        "combat": [
+          "Afghanistan (Soviet)",
+          "Chechnya",
+          "Syria",
+          "Ukraine"
+        ],
+        "notes": "Most combat-experienced transport helicopter ever."
+      },
+      "variants": [
+        {
+          "designation": "Mi-8T",
+          "notes": "Original transport"
+        },
+        {
+          "designation": "Mi-8MTV/Mi-17",
+          "notes": "Upgraded, export"
+        },
+        {
+          "designation": "Mi-8AMTSh",
+          "notes": "Armed assault"
+        },
+        {
+          "designation": "Mi-171Sh",
+          "notes": "Latest export variant"
+        }
+      ],
+      "unit_cost_usd": 15000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Russian Helicopters",
+        "Jane's"
+      ],
+      "notes": "17,000+ built - world's most produced helicopter. 'Mi-17' is export designation. Ukraine: heavy use and losses on both sides.",
+      "year": 1977
+    },
+    {
+      "id": "ru-mi26",
+      "name": "Mi-26 Halo",
+      "nato_name": "Halo",
+      "type": "heavy_transport_helicopter",
+      "country_of_origin": "RU",
+      "manufacturer": "Rostvertol",
+      "service_history": {
+        "introduced": 1983,
+        "first_flight": 1977,
+        "retired": null,
+        "production_count": 310,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 40,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "CN",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 2,
+            "status": "active"
+          },
+          {
+            "country": "KZ",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "VE",
+            "quantity": 3,
+            "status": "active"
+          },
+          {
+            "country": "DZ",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "MX",
+            "quantity": 2,
+            "status": "active"
+          }
+        ],
+        "notes": "World's largest production helicopter"
+      },
+      "specifications": {
+        "crew": 5,
+        "passengers": 82,
+        "troops": 90,
+        "length_m": 40.0,
+        "rotor_diameter_m": 32.0,
+        "height_m": 8.15,
+        "empty_weight_kg": 28200,
+        "max_takeoff_weight_kg": 56000
+      },
+      "performance": {
+        "max_speed_kmh": 295,
+        "cruise_speed_kmh": 255,
+        "range_km": 590,
+        "ferry_range_km": 1920,
+        "service_ceiling_m": 4600
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "ZMKB Progress D-136",
+        "power_shp": 11400,
+        "notes": "Most powerful turboshafts ever"
+      },
+      "capacity": {
+        "cargo_internal_kg": 20000,
+        "cargo_slung_kg": 20000,
+        "stretchers": 60,
+        "notes": "Can carry 2x BMP-1 or T-72 turret"
+      },
+      "operational_history": {
+        "notable": "Recovered crashed CH-47 in Afghanistan. Chernobyl disaster response."
+      },
+      "unit_cost_usd": 25000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Russian Helicopters",
+        "Jane's"
+      ],
+      "notes": "World's largest helicopter. 20-ton lift (CH-47 is 12t). 8-blade rotor. Can carry 90 troops or 2 BMPs internally.",
+      "year": 1983
+    },
+    {
+      "id": "eu-nh90",
+      "name": "NH90",
+      "nato_name": null,
+      "type": "transport_helicopter",
+      "country_of_origin": "EU",
+      "manufacturer": "NHIndustries (Airbus/Leonardo/Fokker)",
+      "service_history": {
+        "introduced": 2006,
+        "first_flight": 1995,
+        "retired": null,
+        "production_count": 540,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 94,
+            "status": "active"
+          },
+          {
+            "country": "DE",
+            "quantity": 82,
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "quantity": 68,
+            "status": "active"
+          },
+          {
+            "country": "NL",
+            "quantity": 20,
+            "status": "active"
+          },
+          {
+            "country": "NO",
+            "quantity": 14,
+            "status": "active",
+            "notes": "Returned due to issues"
+          },
+          {
+            "country": "AU",
+            "quantity": 47,
+            "status": "active",
+            "notes": "Being replaced"
+          },
+          {
+            "country": "ES",
+            "quantity": 22,
+            "status": "active"
+          },
+          {
+            "country": "BE",
+            "quantity": 8,
+            "status": "active"
+          },
+          {
+            "country": "FI",
+            "quantity": 20,
+            "status": "active"
+          },
+          {
+            "country": "GR",
+            "quantity": 20,
+            "status": "active"
+          },
+          {
+            "country": "NZ",
+            "quantity": 8,
+            "status": "active"
+          },
+          {
+            "country": "SE",
+            "quantity": 13,
+            "status": "active"
+          },
+          {
+            "country": "QA",
+            "quantity": 28,
+            "status": "active"
+          }
+        ],
+        "notes": "Main European medium helicopter"
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 20,
+        "length_m": 19.56,
+        "rotor_diameter_m": 16.3,
+        "height_m": 5.44,
+        "empty_weight_kg": 6400,
+        "max_takeoff_weight_kg": 10600
+      },
+      "performance": {
+        "max_speed_kmh": 300,
+        "cruise_speed_kmh": 262,
+        "range_km": 800,
+        "service_ceiling_m": 6000,
+        "endurance_hours": 5
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Rolls-Royce Turbomeca RTM322",
+        "power_shp": 2230
+      },
+      "capacity": {
+        "cargo_internal_kg": 2500,
+        "cargo_slung_kg": 4000,
+        "stretchers": 12
+      },
+      "variants": [
+        {
+          "designation": "NH90 TTH",
+          "notes": "Tactical Transport"
+        },
+        {
+          "designation": "NH90 NFH",
+          "notes": "NATO Frigate Helicopter (naval)"
+        }
+      ],
+      "unit_cost_usd": 32000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "NHI",
+        "Jane's"
+      ],
+      "notes": "Troubled development (decades late). Fly-by-wire composite airframe. Some operators (Norway, Australia) canceling orders due to availability issues.",
+      "year": 2006
+    },
+    {
+      "id": "eu-as532",
+      "name": "Airbus H225M Caracal",
+      "nato_name": null,
+      "type": "transport_helicopter",
+      "country_of_origin": "FR",
+      "manufacturer": "Airbus Helicopters",
+      "service_history": {
+        "introduced": 2005,
+        "first_flight": 1999,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 26,
+            "status": "active"
+          },
+          {
+            "country": "BR",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "KW",
+            "quantity": 30,
+            "status": "active"
+          },
+          {
+            "country": "MY",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "MX",
+            "quantity": 15,
+            "status": "active"
+          },
+          {
+            "country": "TH",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "ID",
+            "quantity": 6,
+            "status": "active"
+          }
+        ],
+        "notes": "Military Super Puma"
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 24,
+        "length_m": 19.5,
+        "rotor_diameter_m": 16.2,
+        "height_m": 4.97,
+        "empty_weight_kg": 5256,
+        "max_takeoff_weight_kg": 11000
+      },
+      "performance": {
+        "max_speed_kmh": 324,
+        "cruise_speed_kmh": 260,
+        "range_km": 857,
+        "service_ceiling_m": 5900
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Turbomeca Makila 2A1",
+        "power_shp": 2382
+      },
+      "capacity": {
+        "cargo_internal_kg": 4000,
+        "cargo_slung_kg": 4750
+      },
+      "armament": {
+        "guns": {
+          "type": "FN MAG",
+          "caliber_mm": 7.62,
+          "quantity": 2
+        },
+        "missiles": {
+          "type": "Optional weapons stations"
+        }
+      },
+      "unit_cost_usd": 28000000,
+      "cost_year": 2018,
+      "confidence": "high",
+      "sources": [
+        "Airbus Helicopters",
+        "Jane's"
+      ],
+      "notes": "Military Super Puma. French CSAR role. Brazil's main transport helo. Combat search and rescue capable.",
+      "year": 2001
+    },
+    {
+      "id": "uk-merlin",
+      "name": "AgustaWestland AW101 Merlin",
+      "nato_name": null,
+      "type": "transport_helicopter",
+      "country_of_origin": "GB",
+      "manufacturer": "AgustaWestland (Leonardo)",
+      "service_history": {
+        "introduced": 1999,
+        "first_flight": 1987,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "UK",
+            "quantity": 44,
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "DK",
+            "quantity": 14,
+            "status": "active"
+          },
+          {
+            "country": "PT",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "CA",
+            "quantity": 28,
+            "status": "active"
+          },
+          {
+            "country": "JP",
+            "quantity": 14,
+            "status": "active"
+          },
+          {
+            "country": "NO",
+            "quantity": 16,
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 4,
+            "status": "active"
+          }
+        ],
+        "notes": "Anglo-Italian medium-heavy helicopter"
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 30,
+        "length_m": 22.8,
+        "rotor_diameter_m": 18.6,
+        "height_m": 6.62,
+        "empty_weight_kg": 10500,
+        "max_takeoff_weight_kg": 15600
+      },
+      "performance": {
+        "max_speed_kmh": 309,
+        "cruise_speed_kmh": 278,
+        "range_km": 1389,
+        "service_ceiling_m": 4575
+      },
+      "powerplant": {
+        "engines": 3,
+        "type": "Rolls-Royce Turbomeca RTM322",
+        "power_shp": 2270
+      },
+      "capacity": {
+        "cargo_internal_kg": 5443,
+        "cargo_slung_kg": 5443,
+        "notes": "Can carry Land Rover internally"
+      },
+      "variants": [
+        {
+          "designation": "HC4/HC4A",
+          "notes": "UK Commando assault"
+        },
+        {
+          "designation": "HM2",
+          "notes": "UK ASW/ASuW naval"
+        },
+        {
+          "designation": "EH101-410/411",
+          "notes": "Italian naval/transport"
+        },
+        {
+          "designation": "CH-148 Cyclone",
+          "notes": "Canadian naval"
+        }
+      ],
+      "unit_cost_usd": 45000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Leonardo",
+        "Jane's"
+      ],
+      "notes": "Three engines for maritime safety. UK carrier operations. VIP transport (Marine One candidate). Canadian Cyclone variant.",
+      "year": 1999
+    },
+    {
+      "id": "cn-z20",
+      "name": "Harbin Z-20",
+      "nato_name": null,
+      "type": "utility_helicopter",
+      "country_of_origin": "CN",
+      "manufacturer": "Harbin Aircraft Industry Group",
+      "service_history": {
+        "introduced": 2019,
+        "first_flight": 2013,
+        "retired": null,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 100,
+            "status": "active",
+            "notes": "Production ramping up"
+          }
+        ],
+        "notes": "Chinese Black Hawk equivalent"
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 12,
+        "length_m": 20.0,
+        "rotor_diameter_m": 16.4,
+        "height_m": 5.2,
+        "max_takeoff_weight_kg": 10000
+      },
+      "performance": {
+        "max_speed_kmh": 290,
+        "cruise_speed_kmh": 260,
+        "range_km": 600,
+        "service_ceiling_m": 6000
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "WZ-10 turboshaft",
+        "power_shp": 1600,
+        "notes": "Indigenous engine"
+      },
+      "variants": [
+        {
+          "designation": "Z-20A",
+          "notes": "Army transport"
+        },
+        {
+          "designation": "Z-20F",
+          "notes": "Naval variant"
+        },
+        {
+          "designation": "Z-20J",
+          "notes": "Naval ASW (sonar, torpedoes)"
+        }
+      ],
+      "unit_cost_usd": 20000000,
+      "cost_year": 2022,
+      "confidence": "low",
+      "sources": [
+        "Chinese media",
+        "Jane's"
+      ],
+      "notes": "Chinese UH-60 equivalent. Developed after China was denied more S-70s. Indigenous engines. Naval variant for destroyers/frigates.",
+      "year": 2019
+    }
+  ]
+}

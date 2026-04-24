@@ -1,0 +1,442 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-23",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "Boeing",
+      "Lockheed Martin"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-ea18g",
+      "name": "EA-18G Growler",
+      "nato_name": null,
+      "type": "electronic_warfare",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 2009,
+        "first_flight": 2006,
+        "retired": null,
+        "production_count": 170,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 158,
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 12,
+            "status": "active"
+          }
+        ],
+        "notes": "World's most advanced EW aircraft"
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 18.31,
+        "wingspan_m": 13.62,
+        "height_m": 4.88,
+        "empty_weight_kg": 14552,
+        "max_takeoff_weight_kg": 29932
+      },
+      "performance": {
+        "max_speed_mach": 1.8,
+        "max_speed_kmh": 1900,
+        "combat_radius_km": 722,
+        "ferry_range_km": 2346,
+        "service_ceiling_m": 15240,
+        "max_g_load": 7.5
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "General Electric F414-GE-400",
+        "thrust_afterburner_kn": 98
+      },
+      "avionics": {
+        "radar": "AN/APG-79 AESA",
+        "ew_suite": "AN/ALQ-218(V)2 receiver + AN/ALQ-99 (or NGJ)",
+        "notes": "Can locate, identify, and jam enemy radar/communications"
+      },
+      "armament": {
+        "missiles": [
+          {
+            "type": "AIM-120 AMRAAM",
+            "quantity": 2
+          },
+          {
+            "type": "AGM-88 HARM/AARGM",
+            "quantity": 4
+          }
+        ],
+        "jamming_pods": {
+          "type": "ALQ-99 or NGJ-MB",
+          "quantity": 5
+        },
+        "gun": "None (removed for EW equipment)"
+      },
+      "operational_history": {
+        "combat": [
+          "Libya 2011",
+          "Syria/ISIS 2014+"
+        ],
+        "notes": "Carrier-based SEAD/DEAD. Can jam from standoff range."
+      },
+      "unit_cost_usd": 68200000,
+      "cost_year": 2018,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "USN"
+      ],
+      "notes": "F/A-18F based. Replaced EA-6B Prowler. Only dedicated EW fighter in production. NGJ-MB upgrade ongoing. Australia only export customer.",
+      "year": 2009
+    },
+    {
+      "id": "us-ec130h",
+      "name": "EC-130H Compass Call",
+      "nato_name": null,
+      "type": "electronic_warfare",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin / BAE Systems",
+      "service_history": {
+        "introduced": 1983,
+        "first_flight": 1981,
+        "retired": null,
+        "production_count": 14,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 14,
+            "status": "active",
+            "notes": "Being replaced by EC-37B"
+          }
+        ],
+        "notes": "Airborne electronic attack"
+      },
+      "specifications": {
+        "crew": 13,
+        "length_m": 29.8,
+        "wingspan_m": 40.4,
+        "height_m": 11.7,
+        "max_takeoff_weight_kg": 70307
+      },
+      "performance": {
+        "max_speed_kmh": 621,
+        "cruise_speed_kmh": 480,
+        "range_km": 3800,
+        "endurance_hours": 8,
+        "service_ceiling_m": 7620
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "Allison T56-A-15",
+        "power_shp": 4591
+      },
+      "ew_systems": {
+        "primary": "Communications jamming (COMJAM)",
+        "capabilities": [
+          "VHF/UHF communications disruption",
+          "Command and control disruption",
+          "Early warning radar jamming",
+          "Data link disruption"
+        ],
+        "notes": "Disrupts enemy C2 networks"
+      },
+      "operational_history": {
+        "combat": [
+          "Panama 1989",
+          "Gulf War 1991",
+          "Kosovo 1999",
+          "Afghanistan 2001",
+          "Iraq 2003",
+          "Libya 2011",
+          "Syria 2014+"
+        ],
+        "notes": "Critical for opening night of air campaigns"
+      },
+      "unit_cost_usd": 210000000,
+      "cost_year": 2015,
+      "confidence": "medium",
+      "sources": [
+        "USAF",
+        "Jane's"
+      ],
+      "notes": "C-130H based. Jams enemy communications. 'First night' aircraft. Being replaced by EC-37B Compass Call (Gulfstream based).",
+      "year": 1982
+    },
+    {
+      "id": "us-ec37b",
+      "name": "EC-37B Compass Call",
+      "nato_name": null,
+      "type": "electronic_warfare",
+      "country_of_origin": "US",
+      "manufacturer": "L3Harris / Gulfstream",
+      "service_history": {
+        "introduced": 2024,
+        "first_flight": 2022,
+        "retired": null,
+        "production_count": 2,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 2,
+            "status": "active",
+            "notes": "10 planned"
+          }
+        ],
+        "notes": "EC-130H replacement"
+      },
+      "specifications": {
+        "crew": 5,
+        "length_m": 29.4,
+        "wingspan_m": 28.5,
+        "max_takeoff_weight_kg": 45000
+      },
+      "performance": {
+        "max_speed_kmh": 940,
+        "cruise_speed_kmh": 850,
+        "range_km": 11000,
+        "endurance_hours": 10,
+        "service_ceiling_m": 13700
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Rolls-Royce BR710",
+        "thrust_kn": 68.5
+      },
+      "ew_systems": {
+        "primary": "Advanced communications/radar jamming",
+        "capabilities": [
+          "Open mission systems architecture",
+          "Rapid technology insertion",
+          "Network attack capabilities"
+        ]
+      },
+      "unit_cost_usd": 300000000,
+      "cost_year": 2024,
+      "confidence": "medium",
+      "sources": [
+        "USAF",
+        "L3Harris"
+      ],
+      "notes": "Gulfstream G550 based. Faster, higher, longer range than EC-130H. Reduced crew (5 vs 13). First delivery 2024.",
+      "year": 2023
+    },
+    {
+      "id": "ru-il22pp",
+      "name": "Ilyushin Il-22PP Porubshchik",
+      "nato_name": null,
+      "type": "electronic_warfare",
+      "country_of_origin": "RU",
+      "manufacturer": "Ilyushin",
+      "service_history": {
+        "introduced": 2016,
+        "first_flight": 2011,
+        "retired": null,
+        "production_count": 3,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 3,
+            "status": "active"
+          }
+        ],
+        "notes": "Russian standoff jammer"
+      },
+      "specifications": {
+        "crew": 10,
+        "length_m": 43.4,
+        "wingspan_m": 37.4,
+        "max_takeoff_weight_kg": 105000
+      },
+      "performance": {
+        "max_speed_kmh": 825,
+        "cruise_speed_kmh": 700,
+        "range_km": 5300,
+        "endurance_hours": 7,
+        "service_ceiling_m": 10000
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "Soloviev D-30KP",
+        "thrust_kn": 118
+      },
+      "ew_systems": {
+        "primary": "Porubshchik EW system",
+        "capabilities": [
+          "Radar jamming",
+          "Communications jamming",
+          "Datalink disruption"
+        ],
+        "notes": "Large external antenna arrays"
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Syria",
+            "year": 2016
+          },
+          {
+            "conflict": "Ukraine",
+            "year": 2022,
+            "notes": "Supporting Russian operations"
+          }
+        ]
+      },
+      "unit_cost_usd": 150000000,
+      "cost_year": 2016,
+      "confidence": "low",
+      "sources": [
+        "Russian MoD",
+        "Jane's"
+      ],
+      "notes": "Il-22 (Il-18) based. Russia's answer to EC-130. Only 3 in service. Used in Ukraine. Large antenna fairings visible.",
+      "year": 2016
+    },
+    {
+      "id": "cn-y9dz",
+      "name": "Shaanxi Y-9DZ",
+      "nato_name": null,
+      "type": "electronic_warfare",
+      "country_of_origin": "CN",
+      "manufacturer": "Shaanxi Aircraft Corporation",
+      "service_history": {
+        "introduced": 2018,
+        "first_flight": 2015,
+        "retired": null,
+        "production_count": 10,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 10,
+            "status": "active"
+          }
+        ],
+        "notes": "Chinese EW aircraft"
+      },
+      "specifications": {
+        "crew": 8,
+        "length_m": 34.2,
+        "wingspan_m": 38.0,
+        "max_takeoff_weight_kg": 65000
+      },
+      "performance": {
+        "cruise_speed_kmh": 550,
+        "range_km": 5000,
+        "endurance_hours": 10,
+        "service_ceiling_m": 10400
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "WJ-6C turboprop",
+        "power_shp": 5100
+      },
+      "ew_systems": {
+        "capabilities": [
+          "Communications jamming",
+          "Radar jamming",
+          "Electronic intelligence"
+        ],
+        "notes": "Distinctive cheek fairings and antenna pods"
+      },
+      "unit_cost_usd": 80000000,
+      "cost_year": 2020,
+      "confidence": "low",
+      "sources": [
+        "Chinese media",
+        "Jane's"
+      ],
+      "notes": "Y-9 (Y-8) based. Chinese Compass Call equivalent. Supports PLAAF/PLAN operations. Distinctive antenna fairings.",
+      "year": 2014
+    },
+    {
+      "id": "us-rc135v",
+      "name": "RC-135V/W Rivet Joint",
+      "nato_name": null,
+      "type": "sigint",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing (converted C-135)",
+      "service_history": {
+        "introduced": 1973,
+        "first_flight": 1964,
+        "retired": null,
+        "production_count": 22,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 17,
+            "status": "active"
+          },
+          {
+            "country": "UK",
+            "quantity": 3,
+            "status": "active",
+            "notes": "Airseeker"
+          }
+        ],
+        "notes": "Primary US SIGINT platform"
+      },
+      "specifications": {
+        "crew": 32,
+        "length_m": 41.5,
+        "wingspan_m": 39.9,
+        "height_m": 12.7,
+        "max_takeoff_weight_kg": 146000
+      },
+      "performance": {
+        "max_speed_kmh": 933,
+        "cruise_speed_kmh": 800,
+        "range_km": 5300,
+        "endurance_hours": 12,
+        "service_ceiling_m": 15200
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "CFM56-2B-1",
+        "thrust_kn": 97.9
+      },
+      "sigint_systems": {
+        "elint": "Electronic intelligence",
+        "comint": "Communications intelligence",
+        "geolocation": "Precision emitter location",
+        "notes": "Real-time analysis and dissemination"
+      },
+      "operational_history": {
+        "notes": "Constant operations worldwide. Regular Ukraine monitoring from Poland/Romania."
+      },
+      "variants": [
+        {
+          "designation": "RC-135V",
+          "notes": "Rivet Joint"
+        },
+        {
+          "designation": "RC-135W",
+          "notes": "Rivet Joint (similar to V)"
+        },
+        {
+          "designation": "RC-135U",
+          "notes": "Combat Sent (radar analysis)"
+        },
+        {
+          "designation": "RC-135S",
+          "notes": "Cobra Ball (missile tracking)"
+        }
+      ],
+      "unit_cost_usd": 330000000,
+      "cost_year": 2010,
+      "confidence": "medium",
+      "sources": [
+        "USAF",
+        "Jane's"
+      ],
+      "notes": "707/C-135 based. 32-person crew for SIGINT. UK operates 3 as 'Airseeker'. Constant operations - critical ISR asset.",
+      "year": 1964
+    }
+  ]
+}

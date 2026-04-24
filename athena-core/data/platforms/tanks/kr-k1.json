@@ -1,0 +1,390 @@
+{
+  "platforms": [
+    {
+      "id": "kr-k1-tank",
+      "name": "K1 88-Tank",
+      "country": "KR",
+      "manufacturer": "Hyundai Rotem",
+      "type": "main_battle_tank",
+      "role": "armored warfare",
+      "introduced": 1987,
+      "status": "active",
+      "crew": 4,
+      "specifications": {
+        "weight": {"value": 51.1, "unit": "tons"},
+        "length": {"value": 9.67, "unit": "m", "note": "with gun forward"},
+        "width": {"value": 3.59, "unit": "m"},
+        "height": {"value": 2.25, "unit": "m"},
+        "ground_clearance": {"value": 0.46, "unit": "m"},
+        "track_width": {"value": 630, "unit": "mm"}
+      },
+      "mobility": {
+        "engine": "MTU MB 871 Ka-501 diesel",
+        "power": {"value": 1200, "unit": "hp"},
+        "power_to_weight": {"value": 23.5, "unit": "hp/ton"},
+        "transmission": "ZF LSG 3000 automatic, 4 forward, 2 reverse",
+        "max_speed_road": {"value": 65, "unit": "km/h"},
+        "max_speed_offroad": {"value": 40, "unit": "km/h"},
+        "max_speed_reverse": {"value": 30, "unit": "km/h"},
+        "range_road": {"value": 500, "unit": "km"},
+        "range_offroad": {"value": 300, "unit": "km"},
+        "fuel_capacity": {"value": 1196, "unit": "liters"},
+        "gradient": {"value": 60, "unit": "%"},
+        "side_slope": {"value": 30, "unit": "%"},
+        "vertical_obstacle": {"value": 1.0, "unit": "m"},
+        "trench": {"value": 2.74, "unit": "m"},
+        "fording": {"value": 1.2, "unit": "m"},
+        "fording_prepared": {"value": 2.2, "unit": "m"}
+      },
+      "armament": {
+        "main_gun": {
+          "designation": "KM68A1",
+          "caliber": {"value": 105, "unit": "mm"},
+          "length": "L/52",
+          "elevation": {"min": -10, "max": 20, "unit": "degrees"},
+          "traverse": {"value": 360, "unit": "degrees"},
+          "rotation_speed": {"value": 40, "unit": "deg/s"},
+          "rate_of_fire": {"value": 10, "unit": "rounds/min"},
+          "ammunition_stowage": 47,
+          "ammunition_types": ["K270 APFSDS", "K271 HEAT", "K275 HE"]
+        },
+        "secondary": [
+          {
+            "designation": "M60E2-1",
+            "caliber": {"value": 7.62, "unit": "mm"},
+            "mount": "coaxial",
+            "ammunition": 7200
+          },
+          {
+            "designation": "K6",
+            "caliber": {"value": 12.7, "unit": "mm"},
+            "mount": "commander's cupola",
+            "ammunition": 2000
+          },
+          {
+            "designation": "M60D",
+            "caliber": {"value": 7.62, "unit": "mm"},
+            "mount": "loader's hatch",
+            "ammunition": 1400
+          }
+        ],
+        "smoke_grenade_launchers": {
+          "type": "M239",
+          "quantity": 12
+        }
+      },
+      "protection": {
+        "armor_type": "composite armor (Special Armor)",
+        "frontal_arc": {"value": "400-450", "unit": "mm RHAe", "note": "vs APFSDS"},
+        "turret_front": {"value": "450-500", "unit": "mm RHAe"},
+        "hull_front": {"value": "400", "unit": "mm RHAe"},
+        "turret_sides": {"value": "180-200", "unit": "mm RHAe"},
+        "hull_sides": {"value": "80-100", "unit": "mm RHAe"},
+        "active_protection": null,
+        "reactive_armor": null,
+        "nbc_protection": true,
+        "laser_warning": false
+      },
+      "sensors": {
+        "fire_control": "Hughes GPTTS (Gunner's Primary Tank Thermal Sight)",
+        "gunner_sight": {
+          "designation": "GPTTS",
+          "magnification": "3x/10x",
+          "stabilized": true
+        },
+        "commander_sight": {
+          "designation": "CITV (Commander's Independent Thermal Viewer)",
+          "independent": true,
+          "thermal": true
+        },
+        "thermal_imaging": {
+          "gunner": "1st gen thermal",
+          "commander": "1st gen thermal"
+        },
+        "laser_rangefinder": {
+          "type": "Nd:YAG",
+          "range": {"value": 8000, "unit": "m"}
+        },
+        "ballistic_computer": true,
+        "hunter_killer": true,
+        "battlefield_management": null
+      },
+      "operational": {
+        "unit_cost": {"value": 3.5, "unit": "million USD", "year": 1987},
+        "units_produced": 1027,
+        "operators": ["South Korea"],
+        "combat_history": [],
+        "notes": [
+          "Jointly developed with General Dynamics",
+          "Based on XM1 prototype that became M1 Abrams",
+          "First indigenous Korean MBT",
+          "Lower profile than M1 Abrams",
+          "Sometimes called K1 88-Tank or ROKIT"
+        ]
+      },
+      "sources": [
+        "ROK Army official data",
+        "Jane's Armour and Artillery",
+        "IISS Military Balance 2023"
+      ]
+    },
+    {
+      "id": "k1a1",
+      "name": "K1A1",
+      "country": "KR",
+      "manufacturer": "Hyundai Rotem",
+      "type": "main_battle_tank",
+      "role": "armored warfare",
+      "introduced": 1999,
+      "status": "active",
+      "crew": 4,
+      "specifications": {
+        "weight": {"value": 53.2, "unit": "tons"},
+        "length": {"value": 9.71, "unit": "m", "note": "with gun forward"},
+        "width": {"value": 3.59, "unit": "m"},
+        "height": {"value": 2.25, "unit": "m"},
+        "ground_clearance": {"value": 0.46, "unit": "m"},
+        "track_width": {"value": 630, "unit": "mm"}
+      },
+      "mobility": {
+        "engine": "MTU MB 871 Ka-501 diesel",
+        "power": {"value": 1200, "unit": "hp"},
+        "power_to_weight": {"value": 22.6, "unit": "hp/ton"},
+        "transmission": "ZF LSG 3000 automatic, 4 forward, 2 reverse",
+        "max_speed_road": {"value": 65, "unit": "km/h"},
+        "max_speed_offroad": {"value": 40, "unit": "km/h"},
+        "max_speed_reverse": {"value": 30, "unit": "km/h"},
+        "range_road": {"value": 450, "unit": "km"},
+        "range_offroad": {"value": 280, "unit": "km"},
+        "fuel_capacity": {"value": 1196, "unit": "liters"},
+        "gradient": {"value": 60, "unit": "%"},
+        "side_slope": {"value": 30, "unit": "%"},
+        "vertical_obstacle": {"value": 1.0, "unit": "m"},
+        "trench": {"value": 2.74, "unit": "m"},
+        "fording": {"value": 1.2, "unit": "m"},
+        "fording_prepared": {"value": 2.2, "unit": "m"}
+      },
+      "armament": {
+        "main_gun": {
+          "designation": "KM256 (licensed Rheinmetall)",
+          "caliber": {"value": 120, "unit": "mm"},
+          "length": "L/44",
+          "elevation": {"min": -10, "max": 20, "unit": "degrees"},
+          "traverse": {"value": 360, "unit": "degrees"},
+          "rotation_speed": {"value": 40, "unit": "deg/s"},
+          "rate_of_fire": {"value": 8, "unit": "rounds/min"},
+          "ammunition_stowage": 32,
+          "ammunition_types": ["K276 APFSDS", "K277 HEAT-MP", "K278 HE"]
+        },
+        "secondary": [
+          {
+            "designation": "M60E2-1",
+            "caliber": {"value": 7.62, "unit": "mm"},
+            "mount": "coaxial",
+            "ammunition": 12000
+          },
+          {
+            "designation": "K6",
+            "caliber": {"value": 12.7, "unit": "mm"},
+            "mount": "commander's cupola",
+            "ammunition": 3200
+          },
+          {
+            "designation": "M60D",
+            "caliber": {"value": 7.62, "unit": "mm"},
+            "mount": "loader's hatch",
+            "ammunition": 1400
+          }
+        ],
+        "smoke_grenade_launchers": {
+          "type": "M250",
+          "quantity": 12
+        }
+      },
+      "protection": {
+        "armor_type": "improved composite armor (KSAP)",
+        "frontal_arc": {"value": "500-550", "unit": "mm RHAe", "note": "vs APFSDS"},
+        "turret_front": {"value": "550-600", "unit": "mm RHAe"},
+        "hull_front": {"value": "450-500", "unit": "mm RHAe"},
+        "turret_sides": {"value": "200-250", "unit": "mm RHAe"},
+        "hull_sides": {"value": "100-150", "unit": "mm RHAe"},
+        "active_protection": null,
+        "reactive_armor": null,
+        "nbc_protection": true,
+        "laser_warning": true
+      },
+      "sensors": {
+        "fire_control": "Samsung KGPS (Korean Gunner's Primary Sight)",
+        "gunner_sight": {
+          "designation": "KGPS",
+          "magnification": "3x/10x",
+          "stabilized": true
+        },
+        "commander_sight": {
+          "designation": "KCPS panoramic",
+          "independent": true,
+          "thermal": true
+        },
+        "thermal_imaging": {
+          "gunner": "2nd gen thermal",
+          "commander": "2nd gen thermal"
+        },
+        "laser_rangefinder": {
+          "type": "CO2",
+          "range": {"value": 8000, "unit": "m"}
+        },
+        "ballistic_computer": true,
+        "hunter_killer": true,
+        "battlefield_management": "early C4I capability"
+      },
+      "operational": {
+        "unit_cost": {"value": 4.5, "unit": "million USD", "year": 1999},
+        "units_produced": 484,
+        "operators": ["South Korea"],
+        "combat_history": [],
+        "notes": [
+          "Major upgrade with 120mm gun",
+          "Improved armor protection",
+          "Enhanced fire control system",
+          "Heavier due to larger gun and improved armor",
+          "Bridge between K1 and K2"
+        ]
+      },
+      "sources": [
+        "ROK Army specifications",
+        "Defense Update Magazine",
+        "Military Today analysis"
+      ]
+    },
+    {
+      "id": "k1a2",
+      "name": "K1A2",
+      "country": "KR",
+      "manufacturer": "Hyundai Rotem",
+      "type": "main_battle_tank",
+      "role": "armored warfare",
+      "introduced": 2013,
+      "status": "active",
+      "crew": 4,
+      "specifications": {
+        "weight": {"value": 54.5, "unit": "tons"},
+        "length": {"value": 9.71, "unit": "m", "note": "with gun forward"},
+        "width": {"value": 3.59, "unit": "m"},
+        "height": {"value": 2.40, "unit": "m", "note": "with RWS"},
+        "ground_clearance": {"value": 0.46, "unit": "m"},
+        "track_width": {"value": 630, "unit": "mm"}
+      },
+      "mobility": {
+        "engine": "MTU MB 871 Ka-501 diesel",
+        "power": {"value": 1200, "unit": "hp"},
+        "power_to_weight": {"value": 22.0, "unit": "hp/ton"},
+        "transmission": "ZF LSG 3000 automatic, 4 forward, 2 reverse",
+        "max_speed_road": {"value": 65, "unit": "km/h"},
+        "max_speed_offroad": {"value": 40, "unit": "km/h"},
+        "max_speed_reverse": {"value": 30, "unit": "km/h"},
+        "range_road": {"value": 450, "unit": "km"},
+        "range_offroad": {"value": 280, "unit": "km"},
+        "fuel_capacity": {"value": 1196, "unit": "liters"},
+        "gradient": {"value": 60, "unit": "%"},
+        "side_slope": {"value": 30, "unit": "%"},
+        "vertical_obstacle": {"value": 1.0, "unit": "m"},
+        "trench": {"value": 2.74, "unit": "m"},
+        "fording": {"value": 1.2, "unit": "m"},
+        "fording_prepared": {"value": 2.2, "unit": "m"}
+      },
+      "armament": {
+        "main_gun": {
+          "designation": "KM256",
+          "caliber": {"value": 120, "unit": "mm"},
+          "length": "L/44",
+          "elevation": {"min": -10, "max": 20, "unit": "degrees"},
+          "traverse": {"value": 360, "unit": "degrees"},
+          "rotation_speed": {"value": 40, "unit": "deg/s"},
+          "rate_of_fire": {"value": 8, "unit": "rounds/min"},
+          "ammunition_stowage": 32,
+          "ammunition_types": ["K276 APFSDS", "K277 HEAT-MP", "K279 KSTAM (top-attack)"]
+        },
+        "secondary": [
+          {
+            "designation": "M60E2-1",
+            "caliber": {"value": 7.62, "unit": "mm"},
+            "mount": "coaxial",
+            "ammunition": 12000
+          },
+          {
+            "designation": "K6 RWS",
+            "caliber": {"value": 12.7, "unit": "mm"},
+            "mount": "remote weapon station",
+            "ammunition": 3200
+          }
+        ],
+        "smoke_grenade_launchers": {
+          "type": "K415",
+          "quantity": 12
+        }
+      },
+      "protection": {
+        "armor_type": "advanced modular composite (KSAP-II)",
+        "frontal_arc": {"value": "600-650", "unit": "mm RHAe", "note": "vs APFSDS"},
+        "turret_front": {"value": "650-700", "unit": "mm RHAe", "note": "with add-on"},
+        "hull_front": {"value": "550-600", "unit": "mm RHAe"},
+        "turret_sides": {"value": "300-350", "unit": "mm RHAe", "note": "with modules"},
+        "hull_sides": {"value": "150-200", "unit": "mm RHAe", "note": "with skirts"},
+        "active_protection": null,
+        "reactive_armor": "Korean ERA (optional)",
+        "nbc_protection": true,
+        "laser_warning": true,
+        "special_features": [
+          "IED jammers",
+          "Underbelly armor upgrade",
+          "Improved side protection"
+        ]
+      },
+      "sensors": {
+        "fire_control": "K1A2 FCS with Samsung components",
+        "gunner_sight": {
+          "designation": "KGPS-II",
+          "magnification": "3x/10x",
+          "stabilized": true
+        },
+        "commander_sight": {
+          "designation": "KCPS-II panoramic",
+          "independent": true,
+          "thermal": true
+        },
+        "thermal_imaging": {
+          "gunner": "3rd gen uncooled",
+          "commander": "3rd gen uncooled",
+          "driver": "thermal camera"
+        },
+        "laser_rangefinder": {
+          "type": "eye-safe",
+          "range": {"value": 10000, "unit": "m"}
+        },
+        "ballistic_computer": true,
+        "hunter_killer": true,
+        "battlefield_management": "C4I/BMS integration",
+        "friend_foe_identification": true
+      },
+      "operational": {
+        "unit_cost": {"value": 6.0, "unit": "million USD", "year": 2013},
+        "units_produced": 200,
+        "operators": ["South Korea"],
+        "combat_history": [],
+        "notes": [
+          "Latest K1 upgrade program",
+          "Improved protection against IEDs",
+          "Enhanced C4I integration",
+          "RWS replaces manned commander's MG",
+          "KSTAM smart munition capability",
+          "Service life extension to 2030s"
+        ]
+      },
+      "sources": [
+        "ROK MND Defense White Paper",
+        "Hyundai Rotem specifications",
+        "Defense Industry Daily"
+      ]
+    }
+  ]
+}

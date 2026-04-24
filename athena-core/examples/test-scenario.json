@@ -1,0 +1,121 @@
+{
+  "id": "test-scenario-001",
+  "name": "Test Scenario",
+  "version": "1.0.0",
+  "scale": "meso",
+  "temporal": {
+    "tick_duration_seconds": 3600,
+    "max_ticks": 72
+  },
+  "spatial_bounds": {
+    "min_lat": 54.0,
+    "max_lat": 56.0,
+    "min_lon": 20.0,
+    "max_lon": 22.0
+  },
+  "actors": [
+    {
+      "id": "blue-1",
+      "name": "Blue Force Alpha",
+      "type": "unit",
+      "side": "blue",
+      "position": {
+        "lat": 55.0,
+        "lon": 20.5,
+        "alt": 0
+      },
+      "mobility": {
+        "max_speed_kmh": 40,
+        "terrain_factor": 1.0
+      },
+      "firepower": {
+        "base_firepower": 10,
+        "range_km": 5,
+        "accuracy": 0.7
+      },
+      "health": 1.0,
+      "supply": 1.0,
+      "morale": 0.9
+    },
+    {
+      "id": "blue-2",
+      "name": "Blue Force Bravo",
+      "type": "unit",
+      "side": "blue",
+      "position": {
+        "lat": 55.1,
+        "lon": 20.6,
+        "alt": 0
+      },
+      "mobility": {
+        "max_speed_kmh": 50,
+        "terrain_factor": 1.0
+      },
+      "firepower": {
+        "base_firepower": 8,
+        "range_km": 4,
+        "accuracy": 0.65
+      },
+      "health": 1.0,
+      "supply": 0.9,
+      "morale": 0.85
+    },
+    {
+      "id": "red-1",
+      "name": "Red Force Alpha",
+      "type": "unit",
+      "side": "red",
+      "position": {
+        "lat": 55.5,
+        "lon": 21.0,
+        "alt": 0
+      },
+      "mobility": {
+        "max_speed_kmh": 35,
+        "terrain_factor": 1.0
+      },
+      "firepower": {
+        "base_firepower": 12,
+        "range_km": 6,
+        "accuracy": 0.6
+      },
+      "health": 1.0,
+      "supply": 0.8,
+      "morale": 0.8
+    },
+    {
+      "id": "red-2",
+      "name": "Red Force Bravo",
+      "type": "unit",
+      "side": "red",
+      "position": {
+        "lat": 55.4,
+        "lon": 21.2,
+        "alt": 0
+      },
+      "mobility": {
+        "max_speed_kmh": 45,
+        "terrain_factor": 1.0
+      },
+      "firepower": {
+        "base_firepower": 9,
+        "range_km": 5,
+        "accuracy": 0.7
+      },
+      "health": 1.0,
+      "supply": 0.85,
+      "morale": 0.75
+    }
+  ],
+  "parameters": {
+    "attrition_coefficient": {
+      "value": 0.15,
+      "uncertainty": {
+        "type": "uniform",
+        "min": 0.10,
+        "max": 0.20
+      },
+      "sensitivity": true
+    }
+  }
+}

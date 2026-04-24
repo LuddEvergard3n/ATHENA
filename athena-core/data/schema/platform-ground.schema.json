@@ -1,0 +1,266 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "athena/platform-ground.schema.json",
+  "title": "ATHENA Ground Platform Schema",
+  "description": "Schema for ground combat platforms (tanks, IFVs, APCs, artillery)",
+  "type": "object",
+  "required": ["id", "name", "type", "country_of_origin", "specifications"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier (e.g., 'us-m1a2-sep-v3')"
+    },
+    "name": {
+      "type": "string",
+      "description": "Official designation"
+    },
+    "nato_designation": {
+      "type": "string",
+      "description": "NATO reporting name (if applicable)"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["mbt", "ifv", "apc", "spg", "mlrs", "towed_artillery", "spaa", "recon", "engineering"]
+    },
+    "country_of_origin": {
+      "type": "string",
+      "description": "ISO 3166-1 alpha-2 country code"
+    },
+    "manufacturer": {
+      "type": "string"
+    },
+    "service_history": {
+      "type": "object",
+      "properties": {
+        "introduced": { "type": "integer", "description": "Year of introduction" },
+        "retired": { "type": ["integer", "null"], "description": "Year of retirement (null if active)" },
+        "production_count": { "type": "integer" },
+        "operators": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "country": { "type": "string" },
+              "quantity": { "type": "integer" },
+              "variants": { "type": "array", "items": { "type": "string" } },
+              "status": { "type": "string", "enum": ["active", "reserve", "retired"] }
+            }
+          }
+        }
+      }
+    },
+    "specifications": {
+      "type": "object",
+      "properties": {
+        "crew": { "type": "integer" },
+        "passengers": { "type": "integer", "description": "Troop capacity for IFV/APC" },
+        "weight_kg": { "type": "number", "description": "Combat loaded weight" },
+        "length_m": { "type": "number", "description": "Hull length" },
+        "length_gun_forward_m": { "type": "number" },
+        "width_m": { "type": "number" },
+        "height_m": { "type": "number" },
+        "ground_clearance_m": { "type": "number" }
+      }
+    },
+    "mobility": {
+      "type": "object",
+      "properties": {
+        "engine": {
+          "type": "object",
+          "properties": {
+            "model": { "type": "string" },
+            "type": { "type": "string", "enum": ["diesel", "turbine", "hybrid", "electric"] },
+            "power_hp": { "type": "number" },
+            "power_kw": { "type": "number" }
+          }
+        },
+        "power_to_weight_hp_ton": { "type": "number" },
+        "transmission": { "type": "string" },
+        "suspension": { "type": "string" },
+        "max_speed_road_kmh": { "type": "number" },
+        "max_speed_offroad_kmh": { "type": "number" },
+        "max_speed_reverse_kmh": { "type": "number" },
+        "range_road_km": { "type": "number" },
+        "range_offroad_km": { "type": "number" },
+        "fuel_capacity_liters": { "type": "number" },
+        "fuel_consumption_l_per_100km": { "type": "number" },
+        "fording_depth_m": { "type": "number" },
+        "fording_depth_prepared_m": { "type": "number" },
+        "gradient_percent": { "type": "number" },
+        "side_slope_percent": { "type": "number" },
+        "trench_crossing_m": { "type": "number" },
+        "vertical_obstacle_m": { "type": "number" },
+        "amphibious": { "type": "boolean" },
+        "swim_speed_kmh": { "type": "number" }
+      }
+    },
+    "armament": {
+      "type": "object",
+      "properties": {
+        "main": {
+          "type": "object",
+          "properties": {
+            "weapon_id": { "type": "string", "description": "Reference to weapon catalog" },
+            "designation": { "type": "string" },
+            "caliber_mm": { "type": "number" },
+            "barrel_length_calibers": { "type": "number" },
+            "type": { "type": "string", "enum": ["rifled", "smoothbore"] },
+            "elevation_min_deg": { "type": "number" },
+            "elevation_max_deg": { "type": "number" },
+            "traverse_deg": { "type": "number", "description": "360 for full rotation" },
+            "stabilization": { "type": "string", "enum": ["none", "vertical", "two-axis"] },
+            "autoloader": { "type": "boolean" },
+            "rate_of_fire_rpm": { "type": "number" },
+            "muzzle_velocity_ms": { "type": "number" },
+            "effective_range_m": { "type": "number" },
+            "max_range_m": { "type": "number" },
+            "ammunition_carried": { "type": "integer" },
+            "ammunition_ready": { "type": "integer", "description": "Rounds in autoloader/ready rack" },
+            "ammunition_types": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "type": { "type": "string" },
+                  "designation": { "type": "string" },
+                  "penetration_mm_rha": { "type": "number" },
+                  "penetration_range_m": { "type": "number" }
+                }
+              }
+            }
+          }
+        },
+        "secondary": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "weapon_id": { "type": "string" },
+              "designation": { "type": "string" },
+              "caliber_mm": { "type": "number" },
+              "mount": { "type": "string", "enum": ["coaxial", "commander", "loader", "pintle", "remote"] },
+              "ammunition_carried": { "type": "integer" }
+            }
+          }
+        },
+        "atgm": {
+          "type": "object",
+          "properties": {
+            "weapon_id": { "type": "string" },
+            "designation": { "type": "string" },
+            "missiles_carried": { "type": "integer" },
+            "launch_method": { "type": "string", "enum": ["gun-launched", "tube", "rail"] }
+          }
+        }
+      }
+    },
+    "protection": {
+      "type": "object",
+      "properties": {
+        "armor_type": {
+          "type": "string",
+          "enum": ["steel", "composite", "reactive", "composite_reactive", "spaced"]
+        },
+        "armor_composition": { "type": "string" },
+        "protection_front_turret_mm_rha": { "type": "number" },
+        "protection_front_hull_mm_rha": { "type": "number" },
+        "protection_side_mm_rha": { "type": "number" },
+        "protection_rear_mm_rha": { "type": "number" },
+        "protection_top_mm_rha": { "type": "number" },
+        "protection_floor_mm_rha": { "type": "number" },
+        "era_coverage": { "type": "string", "description": "Areas covered by ERA" },
+        "aps": {
+          "type": "object",
+          "properties": {
+            "system": { "type": "string" },
+            "type": { "type": "string", "enum": ["hard-kill", "soft-kill", "hybrid"] },
+            "coverage_deg": { "type": "number" },
+            "reload_time_s": { "type": "number" },
+            "intercepts": { "type": "integer" }
+          }
+        },
+        "mine_protection_kg_tnt": { "type": "number" },
+        "ied_protection_kg_tnt": { "type": "number" },
+        "nbc_protection": { "type": "boolean" },
+        "fire_suppression": { "type": "boolean" },
+        "ammunition_compartment": { "type": "string", "enum": ["none", "bustle", "hull_floor", "turret_ring"] },
+        "blowout_panels": { "type": "boolean" }
+      }
+    },
+    "sensors_and_fcs": {
+      "type": "object",
+      "properties": {
+        "fire_control_system": { "type": "string" },
+        "commander_sight": {
+          "type": "object",
+          "properties": {
+            "type": { "type": "string" },
+            "day_magnification": { "type": "string" },
+            "thermal": { "type": "boolean" },
+            "thermal_generation": { "type": "string" },
+            "independent": { "type": "boolean" },
+            "hunter_killer": { "type": "boolean" }
+          }
+        },
+        "gunner_sight": {
+          "type": "object",
+          "properties": {
+            "type": { "type": "string" },
+            "day_magnification": { "type": "string" },
+            "thermal": { "type": "boolean" },
+            "thermal_generation": { "type": "string" }
+          }
+        },
+        "laser_rangefinder": { "type": "boolean" },
+        "laser_rangefinder_range_m": { "type": "number" },
+        "ballistic_computer": { "type": "boolean" },
+        "wind_sensor": { "type": "boolean" },
+        "muzzle_reference_system": { "type": "boolean" },
+        "cant_sensor": { "type": "boolean" },
+        "driver_vision": {
+          "type": "object",
+          "properties": {
+            "day": { "type": "string" },
+            "night": { "type": "string" },
+            "thermal": { "type": "boolean" }
+          }
+        },
+        "battle_management_system": { "type": "string" },
+        "data_link": { "type": "boolean" },
+        "gps": { "type": "boolean" },
+        "inertial_navigation": { "type": "boolean" }
+      }
+    },
+    "signature": {
+      "type": "object",
+      "properties": {
+        "visual_camouflage": { "type": "string" },
+        "ir_signature_reduction": { "type": "boolean" },
+        "radar_signature_reduction": { "type": "boolean" },
+        "acoustic_signature_db": { "type": "number" },
+        "smoke_grenade_launchers": { "type": "integer" },
+        "smoke_grenade_type": { "type": "string" }
+      }
+    },
+    "unit_cost_usd": {
+      "type": "number",
+      "description": "Approximate unit cost in USD (year specified)"
+    },
+    "cost_year": {
+      "type": "integer"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low", "estimated"],
+      "description": "Confidence level in data accuracy"
+    },
+    "sources": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Data sources for verification"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

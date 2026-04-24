@@ -1,0 +1,886 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "us-m1-abrams",
+      "name": "M1 Abrams",
+      "type": "mbt",
+      "country_of_origin": "US",
+      "manufacturer": "Chrysler Defense / General Dynamics Land Systems",
+      "service_history": {
+        "introduced": 1980,
+        "retired": 1996,
+        "production_count": 3273,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 3273,
+            "variants": [
+              "M1",
+              "IPM1"
+            ],
+            "status": "retired"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "passengers": 0,
+        "weight_kg": 54400,
+        "length_m": 7.92,
+        "length_gun_forward_m": 9.77,
+        "width_m": 3.66,
+        "height_m": 2.37,
+        "ground_clearance_m": 0.48
+      },
+      "mobility": {
+        "engine": {
+          "model": "Honeywell AGT-1500",
+          "type": "turbine",
+          "power_hp": 1500,
+          "power_kw": 1119
+        },
+        "power_to_weight_hp_ton": 27.6,
+        "transmission": "Allison X-1100-3B",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 72,
+        "max_speed_offroad_kmh": 48,
+        "max_speed_reverse_kmh": 40,
+        "range_road_km": 480,
+        "fuel_capacity_liters": 1900,
+        "fuel_consumption_l_per_100km": 395,
+        "fording_depth_m": 1.22,
+        "fording_depth_prepared_m": 2.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.74,
+        "vertical_obstacle_m": 1.07,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "M68A1",
+          "caliber_mm": 105,
+          "barrel_length_calibers": 51,
+          "type": "rifled",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 8,
+          "effective_range_m": 2500,
+          "max_range_m": 4000,
+          "ammunition_carried": 55,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "M774",
+              "penetration_mm_rha": 350,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "M456A2",
+              "penetration_mm_rha": 400,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HESH",
+              "designation": "M393A2",
+              "penetration_mm_rha": 150,
+              "penetration_range_m": 2000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "M2HB",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 1000
+          },
+          {
+            "designation": "M240",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 10000
+          },
+          {
+            "designation": "M240",
+            "caliber_mm": 7.62,
+            "mount": "loader",
+            "ammunition_carried": 0
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite",
+        "armor_composition": "Chobham (Burlington)",
+        "protection_front_turret_mm_rha": 450,
+        "protection_front_hull_mm_rha": 350,
+        "protection_side_mm_rha": 80,
+        "protection_rear_mm_rha": 30,
+        "protection_top_mm_rha": 40,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "bustle",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Hughes/Kollmorgen",
+        "gunner_sight": {
+          "type": "GPS (Gunner's Primary Sight)",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "thermal_generation": "1st"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 8000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": true,
+        "cant_sensor": true,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "M250"
+      },
+      "unit_cost_usd": 4300000,
+      "cost_year": 1985,
+      "confidence": "high",
+      "sources": [
+        "GlobalSecurity.org M1 Abrams specifications",
+        "Tank Encyclopedia M1 Abrams",
+        "Military Factory M1 Abrams",
+        "Wikipedia M1 Abrams"
+      ],
+      "notes": "First production variant. Replaced by M1A1 from 1985.",
+      "year": 1980
+    },
+    {
+      "id": "us-m1a1-abrams",
+      "name": "M1A1 Abrams",
+      "type": "mbt",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics Land Systems",
+      "service_history": {
+        "introduced": 1985,
+        "retired": null,
+        "production_count": 5997,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 4976,
+            "variants": [
+              "M1A1",
+              "M1A1HA",
+              "M1A1HC",
+              "M1A1AIM",
+              "M1A1SA"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 755,
+            "variants": [
+              "M1A1"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 59,
+            "variants": [
+              "M1A1 AIM SA"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "quantity": 140,
+            "variants": [
+              "M1A1M"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "passengers": 0,
+        "weight_kg": 57150,
+        "length_m": 7.92,
+        "length_gun_forward_m": 9.83,
+        "width_m": 3.66,
+        "height_m": 2.44,
+        "ground_clearance_m": 0.48
+      },
+      "mobility": {
+        "engine": {
+          "model": "Honeywell AGT-1500",
+          "type": "turbine",
+          "power_hp": 1500,
+          "power_kw": 1119
+        },
+        "power_to_weight_hp_ton": 26.2,
+        "transmission": "Allison X-1100-3B",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 67,
+        "max_speed_offroad_kmh": 48,
+        "max_speed_reverse_kmh": 40,
+        "range_road_km": 465,
+        "fuel_capacity_liters": 1900,
+        "fuel_consumption_l_per_100km": 408,
+        "fording_depth_m": 1.22,
+        "fording_depth_prepared_m": 2.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.74,
+        "vertical_obstacle_m": 1.07,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "M256",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 44,
+          "type": "smoothbore",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 6,
+          "muzzle_velocity_ms": 1750,
+          "effective_range_m": 4000,
+          "max_range_m": 5000,
+          "ammunition_carried": 40,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "M829",
+              "penetration_mm_rha": 540,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "APFSDS",
+              "designation": "M829A1",
+              "penetration_mm_rha": 630,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT-MP",
+              "designation": "M830",
+              "penetration_mm_rha": 480,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "Canister",
+              "designation": "M1028",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 500
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "M2HB",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 900
+          },
+          {
+            "designation": "M240",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 10400
+          },
+          {
+            "designation": "M240",
+            "caliber_mm": 7.62,
+            "mount": "loader",
+            "ammunition_carried": 0
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite",
+        "armor_composition": "Chobham with depleted uranium mesh (M1A1HA+)",
+        "protection_front_turret_mm_rha": 600,
+        "protection_front_hull_mm_rha": 500,
+        "protection_side_mm_rha": 150,
+        "protection_rear_mm_rha": 30,
+        "protection_top_mm_rha": 40,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "bustle",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Hughes/Kollmorgen",
+        "gunner_sight": {
+          "type": "GPS (Gunner's Primary Sight)",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "thermal_generation": "1st"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 8000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": true,
+        "cant_sensor": true,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "M250"
+      },
+      "unit_cost_usd": 6210000,
+      "cost_year": 1999,
+      "confidence": "high",
+      "sources": [
+        "Army Recognition M1A1 Abrams",
+        "GlobalSecurity.org M1A1 specifications",
+        "Tank Encyclopedia M1 Abrams",
+        "Wikipedia M1 Abrams"
+      ],
+      "notes": "Upgraded gun to 120mm smoothbore. M1A1HA introduced depleted uranium armor.",
+      "year": 1985
+    },
+    {
+      "id": "us-m1a2-abrams",
+      "name": "M1A2 Abrams",
+      "type": "mbt",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics Land Systems",
+      "service_history": {
+        "introduced": 1992,
+        "retired": null,
+        "production_count": 77,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 77,
+            "variants": [
+              "M1A2"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "KW",
+            "quantity": 218,
+            "variants": [
+              "M1A2"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 315,
+            "variants": [
+              "M1A2S"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "passengers": 0,
+        "weight_kg": 63050,
+        "length_m": 7.92,
+        "length_gun_forward_m": 9.83,
+        "width_m": 3.66,
+        "height_m": 2.44,
+        "ground_clearance_m": 0.48
+      },
+      "mobility": {
+        "engine": {
+          "model": "Honeywell AGT-1500",
+          "type": "turbine",
+          "power_hp": 1500,
+          "power_kw": 1119
+        },
+        "power_to_weight_hp_ton": 23.8,
+        "transmission": "Allison X-1100-3B",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 67,
+        "max_speed_offroad_kmh": 40,
+        "max_speed_reverse_kmh": 40,
+        "range_road_km": 426,
+        "fuel_capacity_liters": 1900,
+        "fuel_consumption_l_per_100km": 446,
+        "fording_depth_m": 1.22,
+        "fording_depth_prepared_m": 2.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.74,
+        "vertical_obstacle_m": 1.07,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "M256",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 44,
+          "type": "smoothbore",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 6,
+          "muzzle_velocity_ms": 1750,
+          "effective_range_m": 4000,
+          "max_range_m": 5000,
+          "ammunition_carried": 42,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "M829A2",
+              "penetration_mm_rha": 680,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "APFSDS",
+              "designation": "M829A3",
+              "penetration_mm_rha": 750,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT-MP",
+              "designation": "M830A1 MPAT",
+              "penetration_mm_rha": 480,
+              "penetration_range_m": 2000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "M2HB",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 900
+          },
+          {
+            "designation": "M240",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 10400
+          },
+          {
+            "designation": "M240",
+            "caliber_mm": 7.62,
+            "mount": "loader",
+            "ammunition_carried": 0
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite",
+        "armor_composition": "2nd generation Chobham with depleted uranium",
+        "protection_front_turret_mm_rha": 700,
+        "protection_front_hull_mm_rha": 600,
+        "protection_side_mm_rha": 200,
+        "protection_rear_mm_rha": 30,
+        "protection_top_mm_rha": 50,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "bustle",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "IVIS (Inter-Vehicular Information System)",
+        "commander_sight": {
+          "type": "CITV (Commander's Independent Thermal Viewer)",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "GPS-LOS (Gunner's Primary Sight Line of Sight)",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 8000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": true,
+        "cant_sensor": true,
+        "battle_management_system": "IVIS",
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "M250"
+      },
+      "unit_cost_usd": 8920000,
+      "cost_year": 2016,
+      "confidence": "high",
+      "sources": [
+        "Army Recognition M1A2",
+        "GlobalSecurity.org M1A2 specifications",
+        "Tank Encyclopedia M1 Abrams",
+        "Wikipedia M1 Abrams"
+      ],
+      "notes": "Added CITV for hunter-killer capability. Digital data bus and improved FCS.",
+      "year": 1992
+    },
+    {
+      "id": "us-m1a2-sep-v2",
+      "name": "M1A2 SEP v2",
+      "type": "mbt",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics Land Systems",
+      "service_history": {
+        "introduced": 2007,
+        "retired": null,
+        "production_count": 434,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 434,
+            "variants": [
+              "M1A2 SEPv2"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "passengers": 0,
+        "weight_kg": 66800,
+        "length_m": 7.92,
+        "length_gun_forward_m": 9.83,
+        "width_m": 3.66,
+        "height_m": 2.44,
+        "ground_clearance_m": 0.48
+      },
+      "mobility": {
+        "engine": {
+          "model": "Honeywell AGT-1500",
+          "type": "turbine",
+          "power_hp": 1500,
+          "power_kw": 1119
+        },
+        "power_to_weight_hp_ton": 22.5,
+        "transmission": "Allison X-1100-3B",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 67,
+        "max_speed_offroad_kmh": 40,
+        "max_speed_reverse_kmh": 40,
+        "range_road_km": 400,
+        "fuel_capacity_liters": 1900,
+        "fuel_consumption_l_per_100km": 475,
+        "fording_depth_m": 1.22,
+        "fording_depth_prepared_m": 2.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.74,
+        "vertical_obstacle_m": 1.07,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "M256",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 44,
+          "type": "smoothbore",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 6,
+          "muzzle_velocity_ms": 1750,
+          "effective_range_m": 4000,
+          "max_range_m": 5000,
+          "ammunition_carried": 42,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "M829A3",
+              "penetration_mm_rha": 750,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "APFSDS",
+              "designation": "M829A4",
+              "penetration_mm_rha": 800,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT-MP",
+              "designation": "M830A1 MPAT",
+              "penetration_mm_rha": 480,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "AMP",
+              "designation": "XM1147",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 2000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "M2HB (CROWS)",
+            "caliber_mm": 12.7,
+            "mount": "remote",
+            "ammunition_carried": 900
+          },
+          {
+            "designation": "M240",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 10400
+          },
+          {
+            "designation": "M240",
+            "caliber_mm": 7.62,
+            "mount": "loader",
+            "ammunition_carried": 0
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite",
+        "armor_composition": "3rd generation Chobham with depleted uranium and graphite coating",
+        "protection_front_turret_mm_rha": 900,
+        "protection_front_hull_mm_rha": 700,
+        "protection_side_mm_rha": 300,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 70,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "bustle",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "2nd Gen FLIR FCS",
+        "commander_sight": {
+          "type": "CITV",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "thermal_generation": "2nd Gen FLIR",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "GPS-LOS",
+          "day_magnification": "3x/10x/50x",
+          "thermal": true,
+          "thermal_generation": "2nd Gen FLIR"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": true,
+        "cant_sensor": true,
+        "battle_management_system": "FBCB2 (Force XXI Battle Command)",
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "M250"
+      },
+      "unit_cost_usd": 9000000,
+      "cost_year": 2016,
+      "confidence": "high",
+      "sources": [
+        "Army Recognition M1A2 SEP V2",
+        "DOT&E FY2020 Abrams report",
+        "Tank Encyclopedia M1 Abrams"
+      ],
+      "notes": "SEPv2 adds CROWS, improved displays, better armor, upgraded transmission.",
+      "year": 2008
+    },
+    {
+      "id": "us-m1a2-sep-v3",
+      "name": "M1A2 SEP v3 (M1A2C)",
+      "type": "mbt",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics Land Systems",
+      "service_history": {
+        "introduced": 2020,
+        "retired": null,
+        "production_count": 0,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 0,
+            "variants": [
+              "M1A2C"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "passengers": 0,
+        "weight_kg": 73600,
+        "length_m": 7.92,
+        "length_gun_forward_m": 9.83,
+        "width_m": 3.66,
+        "height_m": 2.44,
+        "ground_clearance_m": 0.48
+      },
+      "mobility": {
+        "engine": {
+          "model": "Honeywell AGT-1500",
+          "type": "turbine",
+          "power_hp": 1500,
+          "power_kw": 1119
+        },
+        "power_to_weight_hp_ton": 20.4,
+        "transmission": "Allison X-1100-3B (upgraded)",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 64,
+        "max_speed_offroad_kmh": 40,
+        "max_speed_reverse_kmh": 40,
+        "range_road_km": 380,
+        "fuel_capacity_liters": 1900,
+        "fuel_consumption_l_per_100km": 500,
+        "fording_depth_m": 1.22,
+        "fording_depth_prepared_m": 2.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.74,
+        "vertical_obstacle_m": 1.07,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "M256A1",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 44,
+          "type": "smoothbore",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 6,
+          "muzzle_velocity_ms": 1750,
+          "effective_range_m": 4000,
+          "max_range_m": 8000,
+          "ammunition_carried": 42,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "M829A4",
+              "penetration_mm_rha": 800,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "AMP",
+              "designation": "M1147 AMP",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 2000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "M2HB (LP CROWS)",
+            "caliber_mm": 12.7,
+            "mount": "remote",
+            "ammunition_carried": 900
+          },
+          {
+            "designation": "M240",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 10400
+          },
+          {
+            "designation": "M240",
+            "caliber_mm": 7.62,
+            "mount": "loader",
+            "ammunition_carried": 0
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "3rd gen+ Chobham with DU, ARAT ERA optional",
+        "protection_front_turret_mm_rha": 1000,
+        "protection_front_hull_mm_rha": 800,
+        "protection_side_mm_rha": 350,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 80,
+        "era_coverage": "turret front, hull front, sides (optional TUSK)",
+        "aps": {
+          "system": "Trophy",
+          "type": "hard-kill",
+          "coverage_deg": 360,
+          "intercepts": 2
+        },
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "bustle",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "3rd Gen FLIR FCS with ADL",
+        "commander_sight": {
+          "type": "CITV IFLIR",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "thermal_generation": "3rd Gen FLIR",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "IFLIR",
+          "day_magnification": "3x/10x/50x",
+          "thermal": true,
+          "thermal_generation": "3rd Gen FLIR"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": true,
+        "cant_sensor": true,
+        "battle_management_system": "FBCB2-JCR",
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "M250",
+        "ir_signature_reduction": true
+      },
+      "unit_cost_usd": 12000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Army Recognition M1A2 SEP V3",
+        "DOT&E FY2020 Abrams report",
+        "Tank Encyclopedia M1 Abrams"
+      ],
+      "notes": "SEPv3/M1A2C adds Trophy APS, 3rd Gen FLIR, ADL, AMP ammunition capability. Most advanced Abrams variant.",
+      "year": 2020
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "category": "small-arms",
+  "subcategory": "machine-guns",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31"
+  },
+  "platforms": [
+    {
+      "id": "us-m240",
+      "name": "M240B/L/H",
+      "type": "gpmg",
+      "country": "US",
+      "year": 1977,
+      "manufacturer": "FN Herstal",
+      "specifications": {
+        "caliber": "7.62x51mm NATO",
+        "action": "Gas-operated, open bolt",
+        "rate_of_fire_rpm": 650,
+        "muzzle_velocity_mps": 853,
+        "effective_range_m": 1100,
+        "weight_kg": 12.5
+      },
+      "operators": ["US", "CA", "AU", "GB (L7A2)", "50+ countries"],
+      "variants": ["M240B", "M240L (titanium)", "M240H"],
+      "notes": "US standard GPMG, FN MAG derivative"
+    },
+    {
+      "id": "us-m249",
+      "name": "M249 SAW",
+      "type": "lmg",
+      "country": "US",
+      "year": 1984,
+      "manufacturer": "FN Herstal",
+      "specifications": {
+        "caliber": "5.56x45mm NATO",
+        "action": "Gas-operated, open bolt",
+        "rate_of_fire_rpm": 850,
+        "muzzle_velocity_mps": 915,
+        "effective_range_m": 800,
+        "weight_kg": 7.5,
+        "feed": "Belt or magazine"
+      },
+      "operators": ["US", "AU", "CA", "ID", "PH"],
+      "variants": ["M249", "Mk 46", "Mk 48 (7.62mm)"],
+      "notes": "US squad automatic weapon, FN Minimi"
+    },
+    {
+      "id": "us-xm250",
+      "name": "SIG XM250 NGSW-AR",
+      "type": "lmg",
+      "country": "US",
+      "year": 2022,
+      "manufacturer": "SIG Sauer",
+      "specifications": {
+        "caliber": "6.8x51mm (.277 Fury)",
+        "action": "Gas-operated",
+        "rate_of_fire_rpm": 600,
+        "effective_range_m": 1200,
+        "weight_kg": 5.8
+      },
+      "operators": ["US"],
+      "notes": "M249 replacement, NGSW program"
+    },
+    {
+      "id": "us-m2",
+      "name": "M2 Browning HMG",
+      "type": "hmg",
+      "country": "US",
+      "year": 1933,
+      "manufacturer": "Various",
+      "specifications": {
+        "caliber": ".50 BMG (12.7x99mm)",
+        "action": "Recoil-operated, short recoil",
+        "rate_of_fire_rpm": 550,
+        "muzzle_velocity_mps": 890,
+        "effective_range_m": 1800,
+        "weight_kg": 38.0
+      },
+      "operators": ["100+ countries"],
+      "variants": ["M2HB", "M2A1 (QCB)"],
+      "notes": "Most iconic HMG, in service since 1933"
+    },
+    {
+      "id": "be-mag",
+      "name": "FN MAG (M240)",
+      "type": "gpmg",
+      "country": "BE",
+      "year": 1958,
+      "manufacturer": "FN Herstal",
+      "specifications": {
+        "caliber": "7.62x51mm NATO",
+        "action": "Gas-operated, open bolt",
+        "rate_of_fire_rpm": 700,
+        "effective_range_m": 1100,
+        "weight_kg": 11.8
+      },
+      "operators": ["80+ countries"],
+      "notes": "World's most successful GPMG"
+    },
+    {
+      "id": "be-minimi",
+      "name": "FN Minimi",
+      "type": "lmg",
+      "country": "BE",
+      "year": 1975,
+      "manufacturer": "FN Herstal",
+      "specifications": {
+        "caliber": "5.56x45mm NATO",
+        "rate_of_fire_rpm": 850,
+        "effective_range_m": 800,
+        "weight_kg": 6.8
+      },
+      "operators": ["45+ countries"],
+      "variants": ["Mk3", "Para", "7.62 Mk3"],
+      "notes": "Basis for US M249, NATO standard LMG"
+    },
+    {
+      "id": "de-mg3",
+      "name": "Rheinmetall MG3",
+      "type": "gpmg",
+      "country": "DE",
+      "year": 1968,
+      "manufacturer": "Rheinmetall",
+      "specifications": {
+        "caliber": "7.62x51mm NATO",
+        "action": "Recoil-operated",
+        "rate_of_fire_rpm": 1200,
+        "effective_range_m": 1000,
+        "weight_kg": 11.5
+      },
+      "operators": ["DE", "TR", "ES", "IT", "GR", "PT"],
+      "notes": "MG42 derivative, very high ROF"
+    },
+    {
+      "id": "de-mg5",
+      "name": "Heckler & Koch MG5",
+      "type": "gpmg",
+      "country": "DE",
+      "year": 2015,
+      "manufacturer": "Heckler & Koch",
+      "specifications": {
+        "caliber": "7.62x51mm NATO",
+        "action": "Short-stroke gas piston",
+        "rate_of_fire_rpm": 800,
+        "effective_range_m": 1000,
+        "weight_kg": 11.0
+      },
+      "operators": ["DE"],
+      "notes": "MG3 replacement in Bundeswehr"
+    },
+    {
+      "id": "uk-l7a2",
+      "name": "L7A2 GPMG",
+      "type": "gpmg",
+      "country": "GB",
+      "year": 1963,
+      "manufacturer": "RSAF Enfield",
+      "specifications": {
+        "caliber": "7.62x51mm NATO",
+        "rate_of_fire_rpm": 750,
+        "effective_range_m": 1100,
+        "weight_kg": 10.9
+      },
+      "operators": ["GB", "AU", "NZ", "IN"],
+      "notes": "British FN MAG variant"
+    },
+    {
+      "id": "ru-pkm",
+      "name": "PKM / PKP Pecheneg",
+      "type": "gpmg",
+      "country": "RU",
+      "year": 1969,
+      "manufacturer": "Various",
+      "specifications": {
+        "caliber": "7.62x54mmR",
+        "action": "Gas-operated, rotating bolt",
+        "rate_of_fire_rpm": 650,
+        "muzzle_velocity_mps": 825,
+        "effective_range_m": 1000,
+        "weight_kg": 7.5
+      },
+      "operators": ["RU", "CN", "40+ countries"],
+      "variants": ["PKM", "PKP Pecheneg", "PKM-1"],
+      "notes": "Most common Eastern GPMG"
+    },
+    {
+      "id": "ru-rpk16",
+      "name": "RPK-16",
+      "type": "lmg",
+      "country": "RU",
+      "year": 2017,
+      "manufacturer": "Kalashnikov Concern",
+      "specifications": {
+        "caliber": "5.45x39mm",
+        "action": "Gas-operated",
+        "rate_of_fire_rpm": 700,
+        "effective_range_m": 600,
+        "weight_kg": 4.8,
+        "magazine_capacity": 95
+      },
+      "operators": ["RU"],
+      "notes": "Modern Russian squad LMG"
+    },
+    {
+      "id": "ru-kord",
+      "name": "Kord 6P50",
+      "type": "hmg",
+      "country": "RU",
+      "year": 1998,
+      "manufacturer": "Degtyarev",
+      "specifications": {
+        "caliber": "12.7x108mm",
+        "action": "Gas-operated",
+        "rate_of_fire_rpm": 750,
+        "effective_range_m": 2000,
+        "weight_kg": 25.5
+      },
+      "operators": ["RU", "IN", "KZ"],
+      "notes": "Russian .50 cal HMG"
+    },
+    {
+      "id": "ru-nsv",
+      "name": "NSV Utes",
+      "type": "hmg",
+      "country": "SU",
+      "year": 1971,
+      "manufacturer": "TsNIItochmash",
+      "specifications": {
+        "caliber": "12.7x108mm",
+        "action": "Gas-operated",
+        "rate_of_fire_rpm": 700,
+        "effective_range_m": 2000,
+        "weight_kg": 25.0
+      },
+      "operators": ["RU", "UA", "Many former Soviet"],
+      "notes": "Soviet .50 cal, still common"
+    },
+    {
+      "id": "cn-qjy88",
+      "name": "QJY-88",
+      "type": "gpmg",
+      "country": "CN",
+      "year": 1988,
+      "manufacturer": "Norinco",
+      "specifications": {
+        "caliber": "5.8x42mm",
+        "action": "Gas-operated",
+        "rate_of_fire_rpm": 750,
+        "effective_range_m": 800,
+        "weight_kg": 7.6
+      },
+      "operators": ["CN"],
+      "notes": "PLA squad machine gun"
+    },
+    {
+      "id": "cn-qjz89",
+      "name": "QJZ-89",
+      "type": "hmg",
+      "country": "CN",
+      "year": 1989,
+      "manufacturer": "Norinco",
+      "specifications": {
+        "caliber": "12.7x108mm",
+        "action": "Gas-operated",
+        "rate_of_fire_rpm": 600,
+        "effective_range_m": 1500,
+        "weight_kg": 26.5
+      },
+      "operators": ["CN"],
+      "notes": "PLA heavy machine gun"
+    },
+    {
+      "id": "il-negev",
+      "name": "IWI Negev",
+      "type": "lmg",
+      "country": "IL",
+      "year": 1997,
+      "manufacturer": "IWI",
+      "specifications": {
+        "caliber": "5.56x45mm / 7.62x51mm",
+        "action": "Gas-operated",
+        "rate_of_fire_rpm": 850,
+        "effective_range_m": 800,
+        "weight_kg": 7.2
+      },
+      "operators": ["IL", "CO", "UA"],
+      "variants": ["Negev", "Negev NG7"],
+      "notes": "IDF light machine gun"
+    },
+    {
+      "id": "sg-ultimax",
+      "name": "CIS Ultimax 100",
+      "type": "lmg",
+      "country": "SG",
+      "year": 1982,
+      "manufacturer": "ST Engineering",
+      "specifications": {
+        "caliber": "5.56x45mm NATO",
+        "action": "Gas-operated",
+        "rate_of_fire_rpm": 500,
+        "effective_range_m": 800,
+        "weight_kg": 4.9
+      },
+      "operators": ["SG", "HR", "PH"],
+      "notes": "Very low recoil LMG"
+    },
+    {
+      "id": "kr-k3",
+      "name": "Daewoo K3",
+      "type": "lmg",
+      "country": "KR",
+      "year": 1992,
+      "manufacturer": "S&T Motiv",
+      "specifications": {
+        "caliber": "5.56x45mm NATO",
+        "rate_of_fire_rpm": 800,
+        "effective_range_m": 800,
+        "weight_kg": 6.8
+      },
+      "operators": ["KR"],
+      "notes": "Korean FN Minimi variant"
+    }
+  ]
+}

@@ -1,0 +1,505 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition",
+      "Sinodefense"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "kr-k21",
+      "name": "K21",
+      "type": "ifv",
+      "country_of_origin": "KR",
+      "manufacturer": "Doosan DST / Hanwha Defense",
+      "service_history": {
+        "introduced": 2009,
+        "retired": null,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 476,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 9,
+        "weight_kg": 25600,
+        "length_m": 6.9,
+        "width_m": 3.4,
+        "height_m": 2.6,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Doosan D2840LXE",
+          "type": "diesel_turbocharged",
+          "power_hp": 750,
+          "power_kw": 559
+        },
+        "power_to_weight_hp_ton": 29.3,
+        "transmission": "S&T Dynamics automatic",
+        "suspension": "in-arm suspension unit (ISU)",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 45,
+        "max_speed_water_kmh": 7,
+        "range_road_km": 450,
+        "fuel_capacity_liters": 550,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "fording_depth_m": 1.2,
+        "amphibious": true,
+        "propulsion_water": "tracks"
+      },
+      "armament": {
+        "main": {
+          "designation": "S&T Dynamics K40",
+          "caliber_mm": 40,
+          "type": "autocannon",
+          "elevation_min_deg": -7,
+          "elevation_max_deg": 45,
+          "traverse_deg": 360,
+          "stabilization": "two-axis electric",
+          "rate_of_fire_rpm": 300,
+          "effective_range_m": 3000,
+          "ammunition_carried": 288,
+          "ammunition_types": [
+            {
+              "type": "APFSDS-T",
+              "penetration_mm_rha": 90,
+              "penetration_range_m": 1000
+            },
+            {
+              "type": "HE-T"
+            },
+            {
+              "type": "PGMM",
+              "notes": "Programmable guided munition"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "7.62mm MG",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2400
+          }
+        ],
+        "atgm": {
+          "designation": "Hyungung",
+          "missiles_carried": 2,
+          "range_m": 2500,
+          "penetration_mm_rha": 700,
+          "guidance": "wireless command"
+        }
+      },
+      "protection": {
+        "armor_type": "fiberglass_composite",
+        "armor_composition": "Fiberglass composite with steel/aluminum",
+        "stanag_level": "4569 Level 4",
+        "protection_front_mm_rha": 30,
+        "protection_side_mm_rha": 14,
+        "mine_protection": "Double bottom",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Samsung Thales",
+        "commander_sight": {
+          "type": "KPICS",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true,
+        "automatic_target_tracker": true,
+        "battle_management_system": "KBMS"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "ir_signature_reduction": true
+      },
+      "unit_cost_usd": 5000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia K21",
+        "Army Recognition",
+        "Jane's"
+      ],
+      "notes": "40mm L/70 autocannon. Amphibious. Composite armor for reduced weight. Korean ATGM. K21-105 FSV variant with 105mm gun.",
+      "year": 2009
+    },
+    {
+      "id": "jp-type89",
+      "name": "Type 89 IFV",
+      "type": "ifv",
+      "country_of_origin": "JP",
+      "manufacturer": "Mitsubishi Heavy Industries",
+      "service_history": {
+        "introduced": 1989,
+        "retired": null,
+        "production_count": 120,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 68,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 7,
+        "weight_kg": 26500,
+        "length_m": 6.8,
+        "width_m": 3.2,
+        "height_m": 2.5,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Mitsubishi 6SY31WA",
+          "type": "diesel_turbocharged",
+          "power_hp": 600,
+          "power_kw": 447
+        },
+        "power_to_weight_hp_ton": 22.6,
+        "transmission": "Automatic MT75",
+        "suspension": "torsion bar with hydraulic dampers",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 45,
+        "range_road_km": 400,
+        "gradient_percent": 60,
+        "fording_depth_m": 1.0,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "Oerlikon KDE",
+          "caliber_mm": 35,
+          "type": "autocannon",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 60,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 200,
+          "effective_range_m": 3000,
+          "ammunition_carried": 300,
+          "ammunition_types": [
+            {
+              "type": "APDS-T",
+              "penetration_mm_rha": 90,
+              "penetration_range_m": 1000
+            },
+            {
+              "type": "HEI-T"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "Type 74",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "Type 79 Jyu-MAT",
+          "missiles_carried": 2,
+          "range_m": 4000,
+          "penetration_mm_rha": 700
+        }
+      },
+      "protection": {
+        "armor_type": "steel_aluminum",
+        "protection_front_mm_rha": 35,
+        "protection_side_mm_rha": 15,
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "JGSDF FCS",
+        "commander_sight": {
+          "type": "Panoramic",
+          "thermal": false,
+          "independent": false
+        },
+        "gunner_sight": {
+          "type": "Day/thermal",
+          "thermal": true,
+          "thermal_generation": "1st"
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 6
+      },
+      "unit_cost_usd": 7000000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Type 89 IFV",
+        "Army Recognition",
+        "Jane's"
+      ],
+      "notes": "Most expensive IFV ever built ($7M). Limited production due to cost. Being replaced by Type 16 MCV in some roles. 35mm Oerlikon.",
+      "year": 1989
+    },
+    {
+      "id": "cn-zbd04a",
+      "name": "ZBD-04A",
+      "type": "ifv",
+      "country_of_origin": "CN",
+      "manufacturer": "Norinco",
+      "service_history": {
+        "introduced": 2008,
+        "retired": null,
+        "production_count": 2000,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 2000,
+            "variants": [
+              "ZBD-04",
+              "ZBD-04A"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 7,
+        "weight_kg": 21500,
+        "length_m": 7.14,
+        "width_m": 3.14,
+        "height_m": 2.4,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Deutz BF6M1015CP",
+          "type": "diesel_turbocharged",
+          "power_hp": 590,
+          "power_kw": 440
+        },
+        "power_to_weight_hp_ton": 27.4,
+        "transmission": "Automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 75,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_water_kmh": 20,
+        "range_road_km": 500,
+        "amphibious": true,
+        "propulsion_water": "waterjets"
+      },
+      "armament": {
+        "main": {
+          "designation": "ZPT99",
+          "caliber_mm": 100,
+          "type": "rifled_low_velocity",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 18,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 10,
+          "effective_range_m": 4000,
+          "ammunition_carried": 30,
+          "notes": "Based on BMP-3 2A70"
+        },
+        "secondary": [
+          {
+            "designation": "ZPZ02",
+            "caliber_mm": 30,
+            "mount": "coaxial",
+            "ammunition_carried": 500,
+            "notes": "Autocannon"
+          },
+          {
+            "designation": "Type 86",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "HJ-73C",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched",
+          "range_m": 4000,
+          "penetration_mm_rha": 600
+        }
+      },
+      "protection": {
+        "armor_type": "aluminum_steel",
+        "protection_front_mm_rha": 45,
+        "protection_side_mm_rha": 20,
+        "protection_upgrade": "ERA available",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Digital",
+        "commander_sight": {
+          "type": "Panoramic",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true
+        },
+        "gunner_sight": {
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8
+      },
+      "unit_cost_usd": 2000000,
+      "cost_year": 2015,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia ZBD-04",
+        "Sinodefense",
+        "Army Recognition"
+      ],
+      "notes": "Chinese BMP-3 derivative. 100mm+30mm armament. Highly amphibious (20 km/h water). ZBD-04A improved armor and FCS.",
+      "year": 2004
+    },
+    {
+      "id": "cn-zbd08",
+      "name": "ZBD-08 (ZBL-08)",
+      "type": "ifv",
+      "country_of_origin": "CN",
+      "manufacturer": "Norinco",
+      "service_history": {
+        "introduced": 2009,
+        "retired": null,
+        "production_count": 1500,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 1500,
+            "status": "active"
+          },
+          {
+            "country": "VE",
+            "quantity": 130,
+            "status": "active"
+          },
+          {
+            "country": "CM",
+            "quantity": 24,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 7,
+        "weight_kg": 21000,
+        "length_m": 8.0,
+        "width_m": 3.0,
+        "height_m": 2.1,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Deutz BF6M1015CP",
+          "type": "diesel_turbocharged",
+          "power_hp": 440,
+          "power_kw": 328
+        },
+        "power_to_weight_hp_ton": 21.0,
+        "drivetrain": "8x8",
+        "transmission": "Automatic",
+        "suspension": "independent",
+        "max_speed_road_kmh": 100,
+        "max_speed_offroad_kmh": 60,
+        "max_speed_water_kmh": 8,
+        "range_road_km": 800,
+        "amphibious": true,
+        "propulsion_water": "waterjets",
+        "tyre_pressure_central": true
+      },
+      "armament": {
+        "main": {
+          "designation": "ZPT99A",
+          "caliber_mm": 30,
+          "type": "autocannon",
+          "elevation_min_deg": -8,
+          "elevation_max_deg": 55,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 350,
+          "effective_range_m": 2000,
+          "ammunition_carried": 400
+        },
+        "secondary": [
+          {
+            "designation": "Type 86",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 1000
+          }
+        ],
+        "atgm": {
+          "designation": "HJ-73D",
+          "missiles_carried": 2,
+          "range_m": 3000,
+          "penetration_mm_rha": 600
+        }
+      },
+      "protection": {
+        "armor_type": "steel",
+        "stanag_level": "4569 Level 4",
+        "protection_front_mm_rha": 20,
+        "mine_protection": "V-hull",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Digital",
+        "gunner_sight": {
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 6
+      },
+      "unit_cost_usd": 1500000,
+      "cost_year": 2015,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia ZBL-08",
+        "Sinodefense",
+        "Army Recognition"
+      ],
+      "notes": "Wheeled 8x8 IFV. High road speed (100 km/h). Amphibious. Multiple turret options. Export as VN1.",
+      "year": 2008
+    }
+  ]
+}

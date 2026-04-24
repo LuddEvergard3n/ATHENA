@@ -1,0 +1,310 @@
+{
+  "category": "sam",
+  "subcategory": "additional",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land-Based Air Defence"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "ru-s350",
+      "name": "S-350E Vityaz (SA-X-28)",
+      "type": "medium-range-sam",
+      "country": "RU",
+      "year": 2019,
+      "manufacturer": "Almaz-Antey",
+      "service_history": {
+        "introduced": 2019,
+        "production_count": 50,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 50,
+            "status": "active",
+            "notes": "Replacing S-300PS/PM"
+          }
+        ],
+        "notes": "Modern medium-range system"
+      },
+      "specifications": {
+        "range_km": 120,
+        "altitude_km": 30,
+        "missiles_per_tel": 12,
+        "missile_type": "9M96E/E2",
+        "guidance": "Active radar homing",
+        "reload_time_min": 15
+      },
+      "performance": {
+        "max_targets_tracked": 100,
+        "max_targets_engaged": 16,
+        "target_types": ["aircraft", "cruise missiles", "ballistic missiles (limited)"]
+      }
+    },
+    {
+      "id": "ru-s500",
+      "name": "S-500 Prometey (SA-X-30)",
+      "type": "strategic-sam",
+      "country": "RU",
+      "year": 2021,
+      "manufacturer": "Almaz-Antey",
+      "service_history": {
+        "introduced": 2021,
+        "production_count": 10,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 10,
+            "status": "active",
+            "notes": "Moscow ABM defense"
+          }
+        ],
+        "notes": "Strategic anti-ballistic/anti-satellite"
+      },
+      "specifications": {
+        "range_km": 600,
+        "altitude_km": 200,
+        "missile_types": ["40N6M", "77N6", "77N6-N1"],
+        "guidance": "Active radar homing",
+        "target_detection_range_km": 800
+      },
+      "performance": {
+        "max_targets_tracked": 10,
+        "max_targets_engaged": 10,
+        "target_types": ["ballistic missiles", "hypersonic targets", "satellites", "stealth aircraft"],
+        "intercept_speed_mach": 7
+      }
+    },
+    {
+      "id": "in-akash",
+      "name": "Akash",
+      "type": "medium-range-sam",
+      "country": "IN",
+      "year": 2009,
+      "manufacturer": "DRDO/BEL",
+      "service_history": {
+        "introduced": 2009,
+        "production_count": 2000,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 2000,
+            "status": "active",
+            "notes": "IAF and Indian Army"
+          }
+        ],
+        "notes": "Indigenous Indian SAM"
+      },
+      "specifications": {
+        "range_km": 30,
+        "altitude_km": 18,
+        "missiles_per_launcher": 3,
+        "missile_weight_kg": 720,
+        "warhead_kg": 55,
+        "guidance": "Command guidance + SARH"
+      },
+      "performance": {
+        "max_targets_engaged": 4,
+        "reaction_time_sec": 15
+      }
+    },
+    {
+      "id": "in-akash-ng",
+      "name": "Akash-NG",
+      "type": "medium-range-sam",
+      "country": "IN",
+      "year": 2024,
+      "manufacturer": "DRDO/BEL",
+      "service_history": {
+        "introduced": 2024,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 100,
+            "status": "active"
+          }
+        ],
+        "notes": "Next-generation Akash"
+      },
+      "specifications": {
+        "range_km": 60,
+        "altitude_km": 20,
+        "missile_type": "Akash-NG",
+        "guidance": "Active radar homing"
+      },
+      "performance": {
+        "target_types": ["aircraft", "cruise missiles", "air-to-ground missiles"]
+      }
+    },
+    {
+      "id": "tr-hisar-o",
+      "name": "HISAR-O+",
+      "type": "medium-range-sam",
+      "country": "TR",
+      "year": 2021,
+      "manufacturer": "Aselsan/Roketsan",
+      "service_history": {
+        "introduced": 2021,
+        "production_count": 50,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 50,
+            "status": "active"
+          }
+        ],
+        "notes": "Turkish indigenous medium-range"
+      },
+      "specifications": {
+        "range_km": 25,
+        "altitude_km": 10,
+        "missile_type": "HISAR-O",
+        "guidance": "Active radar + IIR"
+      }
+    },
+    {
+      "id": "tr-siper",
+      "name": "SIPER",
+      "type": "long-range-sam",
+      "country": "TR",
+      "year": 2025,
+      "manufacturer": "Aselsan/Roketsan",
+      "service_history": {
+        "introduced": 2025,
+        "production_count": 20,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 20,
+            "status": "production"
+          }
+        ],
+        "notes": "Turkish long-range SAM"
+      },
+      "specifications": {
+        "range_km": 150,
+        "altitude_km": 30,
+        "guidance": "Active radar homing",
+        "vls_compatible": true
+      },
+      "performance": {
+        "target_types": ["aircraft", "cruise missiles", "tactical ballistic missiles"]
+      }
+    },
+    {
+      "id": "cn-hq16",
+      "name": "HQ-16 (Red Flag 16)",
+      "type": "medium-range-sam",
+      "country": "CN",
+      "year": 2011,
+      "manufacturer": "CASIC",
+      "service_history": {
+        "introduced": 2011,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 400,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 50,
+            "status": "active",
+            "notes": "LY-80 export variant"
+          }
+        ],
+        "notes": "Naval and land-based versions"
+      },
+      "specifications": {
+        "range_km": 70,
+        "altitude_km": 25,
+        "guidance": "SARH + ARH terminal"
+      }
+    },
+    {
+      "id": "cn-hq17",
+      "name": "HQ-17 (Red Flag 17)",
+      "type": "shorad",
+      "country": "CN",
+      "year": 2014,
+      "manufacturer": "CASIC",
+      "service_history": {
+        "introduced": 2014,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 200,
+            "status": "active"
+          }
+        ],
+        "notes": "Chinese Tor-M1 equivalent"
+      },
+      "specifications": {
+        "range_km": 12,
+        "altitude_km": 10,
+        "missiles_per_vehicle": 8,
+        "guidance": "Radio command + ARH",
+        "reaction_time_sec": 8
+      }
+    },
+    {
+      "id": "jp-type11",
+      "name": "Type 11 SAM (Tan-SAM Kai)",
+      "type": "shorad",
+      "country": "JP",
+      "year": 2014,
+      "manufacturer": "Toshiba",
+      "service_history": {
+        "introduced": 2014,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 100,
+            "status": "active",
+            "notes": "JGSDF"
+          }
+        ]
+      },
+      "specifications": {
+        "range_km": 10,
+        "altitude_km": 5,
+        "guidance": "Active radar homing",
+        "vehicular": true
+      }
+    },
+    {
+      "id": "jp-type12",
+      "name": "Type 12 Surface-to-Ship Missile",
+      "type": "coastal-defense",
+      "country": "JP",
+      "year": 2012,
+      "manufacturer": "Mitsubishi Heavy Industries",
+      "service_history": {
+        "introduced": 2012,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 200,
+            "status": "active"
+          }
+        ],
+        "notes": "Extended range variant in development"
+      },
+      "specifications": {
+        "range_km": 200,
+        "range_extended_km": 1500,
+        "speed_mach": 0.9,
+        "warhead_kg": 225,
+        "guidance": "INS + GPS + active radar"
+      }
+    }
+  ]
+}

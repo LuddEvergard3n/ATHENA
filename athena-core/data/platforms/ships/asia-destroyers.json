@@ -1,0 +1,319 @@
+{
+  "category": "ships",
+  "subcategory": "asia-destroyers",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Fighting Ships"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "jp-kongo",
+      "name": "Kongō-class (DDG-173)",
+      "type": "destroyer",
+      "country": "JP",
+      "year": 1993,
+      "manufacturer": "MHI",
+      "service_history": {
+        "introduced": 1993,
+        "production_count": 4,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 4,
+            "status": "active",
+            "notes": "JMSDF AEGIS destroyers"
+          }
+        ],
+        "notes": "Japan's first AEGIS destroyers"
+      },
+      "specifications": {
+        "displacement_tons": 9485,
+        "length_m": 161,
+        "beam_m": 21,
+        "draft_m": 6.2,
+        "speed_knots": 30,
+        "range_nm": 4500,
+        "crew": 300
+      },
+      "armament": {
+        "missiles": {
+          "vls_cells": 90,
+          "types": ["SM-2MR", "SM-3 Block IA", "ESSM"]
+        },
+        "guns": ["1× 5-inch/54 Mk 45"],
+        "torpedoes": "2× Mk 32 triple tubes",
+        "ciws": "2× Phalanx"
+      },
+      "sensors": {
+        "radar": "AN/SPY-1D AEGIS"
+      }
+    },
+    {
+      "id": "jp-atago",
+      "name": "Atago-class (DDG-177)",
+      "type": "destroyer",
+      "country": "JP",
+      "year": 2007,
+      "manufacturer": "MHI",
+      "service_history": {
+        "introduced": 2007,
+        "production_count": 2,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 2,
+            "status": "active"
+          }
+        ],
+        "notes": "Improved Kongō with helicopter hangar"
+      },
+      "specifications": {
+        "displacement_tons": 10000,
+        "length_m": 165,
+        "beam_m": 21,
+        "draft_m": 6.2,
+        "speed_knots": 30,
+        "crew": 310
+      },
+      "armament": {
+        "missiles": {
+          "vls_cells": 96,
+          "types": ["SM-2MR", "SM-3 Block IIA", "ESSM", "Type 07 VLA"]
+        },
+        "guns": ["1× 5-inch/62 Mk 45 Mod 4"],
+        "torpedoes": "2× Mk 32 triple tubes",
+        "helicopters": 1
+      },
+      "sensors": {
+        "radar": "AN/SPY-1D(V) AEGIS"
+      }
+    },
+    {
+      "id": "jp-mogami",
+      "name": "Mogami-class (FFM)",
+      "type": "frigate",
+      "country": "JP",
+      "year": 2022,
+      "manufacturer": "MHI / Mitsui E&S",
+      "service_history": {
+        "introduced": 2022,
+        "production_count": 22,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 6,
+            "status": "active",
+            "notes": "22 planned"
+          }
+        ],
+        "notes": "Multi-mission stealth frigate"
+      },
+      "specifications": {
+        "displacement_tons": 5500,
+        "length_m": 133,
+        "beam_m": 16.3,
+        "draft_m": 4.7,
+        "speed_knots": 30,
+        "crew": 90,
+        "radar_cross_section": "reduced"
+      },
+      "armament": {
+        "missiles": {
+          "vls_cells": 16,
+          "types": ["Type 17 SSM", "ESSM"]
+        },
+        "guns": ["1× 5-inch/62 Mk 45 Mod 4"],
+        "torpedoes": "2× HOS-303 triple tubes",
+        "mcm": "Mine countermeasures capability"
+      }
+    },
+    {
+      "id": "kr-kdx2",
+      "name": "Chungmugong Yi Sun-sin-class (KDX-II)",
+      "type": "destroyer",
+      "country": "KR",
+      "year": 2003,
+      "manufacturer": "Daewoo / Hyundai",
+      "service_history": {
+        "introduced": 2003,
+        "production_count": 6,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 6,
+            "status": "active"
+          }
+        ],
+        "notes": "ROK Navy workhorses"
+      },
+      "specifications": {
+        "displacement_tons": 5520,
+        "length_m": 150,
+        "beam_m": 17.4,
+        "draft_m": 4.5,
+        "speed_knots": 29,
+        "crew": 300
+      },
+      "armament": {
+        "missiles": {
+          "vls_cells": 32,
+          "types": ["SM-2MR", "Hyunmoo-3", "K-SAAM"]
+        },
+        "ssm": "8× Harpoon",
+        "guns": ["1× 5-inch/62 Mk 45 Mod 4"],
+        "ciws": "1× Phalanx, 1× Goalkeeper"
+      }
+    },
+    {
+      "id": "kr-daegu",
+      "name": "Daegu-class (FFX Batch II)",
+      "type": "frigate",
+      "country": "KR",
+      "year": 2018,
+      "manufacturer": "Daewoo / Hyundai",
+      "service_history": {
+        "introduced": 2018,
+        "production_count": 8,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 6,
+            "status": "active",
+            "notes": "8 planned"
+          }
+        ]
+      },
+      "specifications": {
+        "displacement_tons": 3500,
+        "length_m": 122,
+        "beam_m": 14,
+        "draft_m": 4,
+        "speed_knots": 30,
+        "crew": 140
+      },
+      "armament": {
+        "missiles": {
+          "vls_cells": 16,
+          "types": ["K-SAAM", "Haegung SAM"]
+        },
+        "ssm": "8× SSM-700K Haeseong",
+        "guns": ["1× 5-inch/62 Mk 45"],
+        "torpedoes": "2× triple tubes"
+      }
+    },
+    {
+      "id": "kr-incheon",
+      "name": "Incheon-class (FFX Batch I)",
+      "type": "frigate",
+      "country": "KR",
+      "year": 2013,
+      "manufacturer": "Hyundai Heavy Industries",
+      "service_history": {
+        "introduced": 2013,
+        "production_count": 6,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 6,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "displacement_tons": 2800,
+        "length_m": 114,
+        "beam_m": 14,
+        "draft_m": 4,
+        "speed_knots": 30,
+        "crew": 140
+      },
+      "armament": {
+        "ssm": "4× SSM-700K Haeseong",
+        "guns": ["1× 76mm OTO Melara"],
+        "ciws": "1× Phalanx"
+      }
+    },
+    {
+      "id": "in-visakhapatnam",
+      "name": "Visakhapatnam-class (Project 15B)",
+      "type": "destroyer",
+      "country": "IN",
+      "year": 2021,
+      "manufacturer": "Mazagon Dock",
+      "service_history": {
+        "introduced": 2021,
+        "production_count": 4,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 2,
+            "status": "active",
+            "notes": "4 planned"
+          }
+        ],
+        "notes": "Indian indigenous stealth destroyer"
+      },
+      "specifications": {
+        "displacement_tons": 7400,
+        "length_m": 163,
+        "beam_m": 17.4,
+        "draft_m": 6.5,
+        "speed_knots": 30,
+        "crew": 312
+      },
+      "armament": {
+        "missiles": {
+          "vls_cells": 32,
+          "types": ["BrahMos", "Barak-8"]
+        },
+        "guns": ["1× 76mm OTO Melara"],
+        "torpedoes": "2× triple tubes",
+        "helicopters": 2
+      },
+      "sensors": {
+        "radar": "EL/M-2248 MF-STAR AESA"
+      }
+    },
+    {
+      "id": "in-nilgiri",
+      "name": "Nilgiri-class (Project 17A)",
+      "type": "frigate",
+      "country": "IN",
+      "year": 2024,
+      "manufacturer": "Mazagon Dock / GRSE",
+      "service_history": {
+        "introduced": 2024,
+        "production_count": 7,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 1,
+            "status": "active",
+            "notes": "7 planned"
+          }
+        ],
+        "notes": "Advanced stealth frigate"
+      },
+      "specifications": {
+        "displacement_tons": 6670,
+        "length_m": 149,
+        "beam_m": 17.8,
+        "draft_m": 5.2,
+        "speed_knots": 28,
+        "crew": 226
+      },
+      "armament": {
+        "missiles": {
+          "vls_cells": 32,
+          "types": ["BrahMos", "Barak-8"]
+        },
+        "guns": ["1× 76mm OTO Melara Super Rapid"],
+        "helicopters": 1
+      }
+    }
+  ]
+}

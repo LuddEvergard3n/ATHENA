@@ -1,0 +1,253 @@
+{
+  "category": "optics",
+  "subcategory": "night-vision-thermal",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": ["Jane's Infantry Weapons", "Manufacturer data"]
+  },
+  "platforms": [
+    {
+      "id": "us-pvs14",
+      "name": "AN/PVS-14 MNVD",
+      "type": "nvg",
+      "country": "US",
+      "year": 2000,
+      "manufacturer": "L3Harris/Elbit",
+      "specifications": {
+        "generation": "Gen III",
+        "magnification": "1x",
+        "fov_degrees": 40,
+        "weight_g": 350,
+        "battery_hours": 40
+      },
+      "operators": ["US", "NATO", "50+ countries"],
+      "notes": "World's most common military NVG"
+    },
+    {
+      "id": "us-pvs31",
+      "name": "AN/PVS-31A BNVD",
+      "type": "nvg",
+      "country": "US",
+      "year": 2015,
+      "manufacturer": "L3Harris",
+      "specifications": {
+        "generation": "Gen III WP",
+        "configuration": "Binocular",
+        "fov_degrees": 51,
+        "weight_g": 540
+      },
+      "operators": ["US SOCOM", "NATO SOF"],
+      "notes": "Premium binocular NVG for SOF"
+    },
+    {
+      "id": "us-gpnvg18",
+      "name": "GPNVG-18 (Panoramic)",
+      "type": "nvg",
+      "country": "US",
+      "year": 2009,
+      "manufacturer": "L3Harris",
+      "specifications": {
+        "generation": "Gen III",
+        "tubes": 4,
+        "fov_degrees": 97,
+        "weight_g": 765
+      },
+      "operators": ["US SOCOM"],
+      "notes": "Panoramic NVG, UBL raid famous"
+    },
+    {
+      "id": "us-envg-b",
+      "name": "AN/PSQ-20B ENVG-B",
+      "type": "fused-nvg",
+      "country": "US",
+      "year": 2019,
+      "manufacturer": "L3Harris",
+      "specifications": {
+        "type": "Fused NV + Thermal",
+        "resolution": "640x480 thermal",
+        "weight_g": 600,
+        "wireless": "IVAS compatible"
+      },
+      "operators": ["US"],
+      "notes": "Enhanced NVG with thermal fusion"
+    },
+    {
+      "id": "us-ivas",
+      "name": "IVAS (Integrated Visual Augmentation)",
+      "type": "augmented-reality",
+      "country": "US",
+      "year": 2024,
+      "manufacturer": "Microsoft",
+      "specifications": {
+        "type": "AR/NV/Thermal fused",
+        "display": "Holographic",
+        "capability": "Mapping, targeting, IFF"
+      },
+      "operators": ["US"],
+      "notes": "HoloLens-based soldier AR system"
+    },
+    {
+      "id": "ru-1pn138",
+      "name": "1PN138 (Ratnik)",
+      "type": "nvg",
+      "country": "RU",
+      "year": 2015,
+      "manufacturer": "NPZ",
+      "specifications": {
+        "generation": "Gen 2+/3",
+        "magnification": "1x",
+        "weight_g": 500
+      },
+      "operators": ["RU"],
+      "notes": "Russian Ratnik program NVG"
+    },
+    {
+      "id": "ru-1pn139",
+      "name": "1PN139",
+      "type": "nvg",
+      "country": "RU",
+      "year": 2019,
+      "manufacturer": "NPZ",
+      "specifications": {
+        "generation": "Gen 3",
+        "configuration": "Binocular"
+      },
+      "operators": ["RU"],
+      "notes": "Improved Russian binocular NVG"
+    },
+    {
+      "id": "fr-lucie",
+      "name": "Thales LUCIE",
+      "type": "nvg",
+      "country": "FR",
+      "year": 2011,
+      "manufacturer": "Thales",
+      "specifications": {
+        "generation": "Gen 3",
+        "configuration": "Binocular",
+        "fov_degrees": 51
+      },
+      "operators": ["FR", "NL", "BE", "AU"],
+      "notes": "French/NATO standard NVG"
+    },
+    {
+      "id": "de-ontas",
+      "name": "Hensoldt ONTAS",
+      "type": "targeting-thermal",
+      "country": "DE",
+      "year": 2018,
+      "manufacturer": "Hensoldt",
+      "specifications": {
+        "type": "Observation/Targeting",
+        "thermal": "Cooled MWIR",
+        "range_km": 10
+      },
+      "operators": ["DE"],
+      "notes": "German long-range thermal sight"
+    },
+    {
+      "id": "us-acog",
+      "name": "Trijicon ACOG",
+      "type": "combat-optic",
+      "country": "US",
+      "year": 1987,
+      "manufacturer": "Trijicon",
+      "specifications": {
+        "magnification": "4x32",
+        "illumination": "Tritium/fiber optic",
+        "weight_g": 295
+      },
+      "operators": ["US", "UK", "AU", "Many"],
+      "notes": "Iconic combat optic"
+    },
+    {
+      "id": "us-elcan",
+      "name": "ELCAN Specter DR",
+      "type": "combat-optic",
+      "country": "CA",
+      "year": 2008,
+      "manufacturer": "ELCAN/Raytheon",
+      "specifications": {
+        "magnification": "1x-4x dual role",
+        "weight_g": 600
+      },
+      "operators": ["US SOCOM", "CA", "UK", "AU"],
+      "notes": "Dual-role combat optic"
+    },
+    {
+      "id": "us-eotech",
+      "name": "EOTech EXPS3",
+      "type": "holographic-sight",
+      "country": "US",
+      "year": 2009,
+      "manufacturer": "EOTech",
+      "specifications": {
+        "type": "Holographic",
+        "magnification": "1x",
+        "nv_compatible": true
+      },
+      "operators": ["US", "Many"],
+      "notes": "Standard holographic sight"
+    },
+    {
+      "id": "us-aimpoint",
+      "name": "Aimpoint CompM5",
+      "type": "red-dot",
+      "country": "SE",
+      "year": 2017,
+      "manufacturer": "Aimpoint",
+      "specifications": {
+        "type": "Red dot",
+        "magnification": "1x",
+        "battery_years": 5,
+        "nv_compatible": true
+      },
+      "operators": ["US", "SE", "FR", "Many"],
+      "notes": "Premium military red dot"
+    },
+    {
+      "id": "us-flir-thermal",
+      "name": "FLIR ThermoSight Pro",
+      "type": "weapon-thermal",
+      "country": "US",
+      "year": 2018,
+      "manufacturer": "Teledyne FLIR",
+      "specifications": {
+        "resolution": "640x480",
+        "range_m": 1200,
+        "weight_g": 680
+      },
+      "operators": ["US", "Many"],
+      "notes": "Clip-on thermal weapon sight"
+    },
+    {
+      "id": "il-meprolight",
+      "name": "Meprolight MEPRO MX3",
+      "type": "magnified-optic",
+      "country": "IL",
+      "year": 2015,
+      "manufacturer": "Meprolight",
+      "specifications": {
+        "magnification": "3x",
+        "weight_g": 300
+      },
+      "operators": ["IL", "Many"],
+      "notes": "IDF standard magnified optic"
+    },
+    {
+      "id": "cn-yma3",
+      "name": "YMA-3 NVG",
+      "type": "nvg",
+      "country": "CN",
+      "year": 2015,
+      "manufacturer": "NORINCO",
+      "specifications": {
+        "generation": "Gen 2+",
+        "configuration": "Monocular"
+      },
+      "operators": ["CN"],
+      "notes": "PLA standard night vision"
+    }
+  ]
+}

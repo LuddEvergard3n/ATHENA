@@ -1,0 +1,632 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition",
+      "CSIS Missile Defense"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "il-iron-dome",
+      "name": "Iron Dome",
+      "type": "sam",
+      "country_of_origin": "IL",
+      "manufacturer": "Rafael Advanced Defense Systems",
+      "service_history": {
+        "introduced": 2011,
+        "retired": null,
+        "production_count": 15,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 10,
+            "status": "active"
+          },
+          {
+            "country": "US",
+            "quantity": 2,
+            "status": "active"
+          },
+          {
+            "country": "AZ",
+            "quantity": 2,
+            "status": "active"
+          },
+          {
+            "country": "CY",
+            "quantity": 1,
+            "status": "ordered"
+          }
+        ],
+        "notes": "Batteries"
+      },
+      "system_components": {
+        "radar": {
+          "designation": "EL/M-2084",
+          "type": "AESA",
+          "range_km": 100,
+          "targets_tracked": 200,
+          "manufacturer": "Elta Systems"
+        },
+        "command": {
+          "designation": "BMC",
+          "type": "Battle Management & Weapon Control"
+        },
+        "launcher": {
+          "designation": "Mobile Launcher",
+          "missiles_per_launcher": 20,
+          "launchers_per_battery": 3
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "Tamir",
+            "type": "active_radar",
+            "range_max_km": 70,
+            "range_min_km": 4,
+            "altitude_max_km": 10,
+            "speed_mach": 2.2,
+            "warhead_kg": 11,
+            "guidance": "active radar + electro-optical",
+            "targets": [
+              "rocket",
+              "mortar",
+              "artillery",
+              "cruise_missile",
+              "UAV"
+            ],
+            "intercept_rate_percent": 90,
+            "notes": "Cost-effective interception decision"
+          }
+        ]
+      },
+      "mobility": {
+        "deployment_time_min": 15,
+        "vehicles": "Truck-mounted"
+      },
+      "unit_cost_usd": 50000000,
+      "cost_year": 2023,
+      "cost_notes": "Per battery",
+      "missile_cost_usd": 50000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Iron Dome",
+        "Rafael",
+        "CSIS Missile Defense"
+      ],
+      "notes": "World's most combat-proven air defense. 4000+ interceptions. 90%+ success rate. Selective engagement (cost-benefit analysis). Gaza operations 2012-2024. Low intercept cost ($50k vs $800+ threat).",
+      "year": 2011
+    },
+    {
+      "id": "il-davids-sling",
+      "name": "David's Sling (Magic Wand)",
+      "type": "sam",
+      "country_of_origin": "IL",
+      "manufacturer": "Rafael / Raytheon",
+      "service_history": {
+        "introduced": 2017,
+        "retired": null,
+        "production_count": 5,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "FI",
+            "quantity": 1,
+            "status": "ordered"
+          }
+        ],
+        "notes": "Batteries"
+      },
+      "system_components": {
+        "radar": {
+          "designation": "EL/M-2084 MMR",
+          "type": "AESA",
+          "range_km": 500,
+          "targets_tracked": 1200
+        },
+        "command": {
+          "designation": "BMC",
+          "type": "Battle Management"
+        },
+        "launcher": {
+          "designation": "Vertical Launcher",
+          "missiles_per_launcher": 12
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "Stunner (SkyCeptor)",
+            "type": "hit-to-kill",
+            "range_max_km": 300,
+            "altitude_max_km": 15,
+            "speed_mach": 7.5,
+            "warhead": "kinetic hit-to-kill or proximity",
+            "guidance": "radar + infrared dual-seeker",
+            "targets": [
+              "TBM",
+              "MRBM",
+              "cruise_missile",
+              "aircraft"
+            ],
+            "notes": "Two-stage, dual-seeker"
+          }
+        ]
+      },
+      "mobility": {
+        "deployment_time_min": 30,
+        "vehicles": "Truck-mounted TEL"
+      },
+      "unit_cost_usd": 200000000,
+      "cost_year": 2023,
+      "cost_notes": "Per battery",
+      "missile_cost_usd": 1000000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia David's Sling",
+        "Rafael",
+        "CSIS Missile Defense"
+      ],
+      "notes": "Middle-tier Israeli air defense. Between Iron Dome and Arrow. First combat use 2023 (Hezbollah cruise missiles). 300km range. US SkyCeptor variant for Patriot integration.",
+      "year": 2017
+    },
+    {
+      "id": "il-arrow-3",
+      "name": "Arrow 3",
+      "type": "abm",
+      "country_of_origin": "IL",
+      "manufacturer": "IAI / Boeing",
+      "service_history": {
+        "introduced": 2017,
+        "retired": null,
+        "production_count": 3,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 2,
+            "status": "active"
+          },
+          {
+            "country": "DE",
+            "quantity": 1,
+            "status": "ordered"
+          }
+        ],
+        "notes": "Batteries"
+      },
+      "system_components": {
+        "radar": {
+          "designation": "EL/M-2080 Green Pine",
+          "type": "AESA",
+          "range_km": 500,
+          "targets_tracked": 30
+        },
+        "command": {
+          "designation": "Citron Tree BMC",
+          "type": "Battle Management"
+        },
+        "launcher": {
+          "designation": "6-cell vertical launcher",
+          "missiles_per_launcher": 6
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "Arrow 3",
+            "type": "exo-atmospheric",
+            "range_max_km": 2400,
+            "altitude_max_km": 100,
+            "speed_mach": 9,
+            "warhead": "kinetic hit-to-kill",
+            "guidance": "infrared seeker",
+            "targets": [
+              "IRBM",
+              "ICBM"
+            ],
+            "notes": "Exo-atmospheric interception"
+          }
+        ]
+      },
+      "unit_cost_usd": 500000000,
+      "cost_year": 2023,
+      "cost_notes": "Per battery",
+      "missile_cost_usd": 3000000,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Arrow 3",
+        "IAI",
+        "CSIS Missile Defense"
+      ],
+      "notes": "Upper-tier Israeli BMD. Exo-atmospheric interception (in space). First operational use October 2024 (Houthi missile). Germany purchase for European defense. Part of multi-layered Israeli defense.",
+      "year": 2017
+    },
+    {
+      "id": "cn-hq9",
+      "name": "HQ-9B (Red Banner 9)",
+      "type": "sam",
+      "country_of_origin": "CN",
+      "manufacturer": "CASIC / CPMIEC",
+      "service_history": {
+        "introduced": 2007,
+        "retired": null,
+        "production_count": 40,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 35,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 3,
+            "status": "active"
+          },
+          {
+            "country": "UZ",
+            "quantity": 1,
+            "status": "ordered"
+          }
+        ],
+        "notes": "Battalions"
+      },
+      "system_components": {
+        "radar": {
+          "designation": "HT-233 phased array",
+          "type": "phased_array",
+          "range_km": 300,
+          "targets_tracked": 100
+        },
+        "launcher": {
+          "designation": "4-tube TEL",
+          "missiles_per_launcher": 4,
+          "launchers_per_battalion": 8
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "HQ-9B",
+            "type": "active_radar",
+            "range_max_km": 300,
+            "altitude_max_km": 30,
+            "speed_mach": 4.2,
+            "warhead_kg": 180,
+            "guidance": "active radar + mid-course command",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "TBM"
+            ]
+          }
+        ]
+      },
+      "mobility": {
+        "deployment_time_min": 6,
+        "vehicles": "TAS-5380 8x8"
+      },
+      "unit_cost_usd": 250000000,
+      "cost_year": 2020,
+      "cost_notes": "Per battalion",
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia HQ-9",
+        "Army Recognition",
+        "Sinodefense"
+      ],
+      "notes": "Chinese long-range SAM. S-300 equivalent. FD-2000 export version. Lost Turkey contract to S-400. Active radar seeker (unlike early S-300). Limited export success.",
+      "year": 2007
+    },
+    {
+      "id": "cn-hq22",
+      "name": "HQ-22 (FK-3)",
+      "type": "sam",
+      "country_of_origin": "CN",
+      "manufacturer": "CASIC",
+      "service_history": {
+        "introduced": 2017,
+        "retired": null,
+        "production_count": 30,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 20,
+            "status": "active"
+          },
+          {
+            "country": "RS",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 6,
+            "status": "active"
+          }
+        ],
+        "notes": "Batteries"
+      },
+      "system_components": {
+        "radar": {
+          "designation": "H-200 phased array",
+          "type": "phased_array",
+          "range_km": 150
+        },
+        "launcher": {
+          "designation": "4-tube TEL",
+          "missiles_per_launcher": 4
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "HQ-22",
+            "type": "semi-active_radar",
+            "range_max_km": 170,
+            "altitude_max_km": 27,
+            "speed_mach": 6,
+            "warhead_kg": 80,
+            "guidance": "semi-active radar + command",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "UAV"
+            ]
+          }
+        ]
+      },
+      "mobility": {
+        "deployment_time_min": 8,
+        "vehicles": "8x8 truck"
+      },
+      "unit_cost_usd": 120000000,
+      "cost_year": 2020,
+      "cost_notes": "Per battery",
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia HQ-22",
+        "Army Recognition"
+      ],
+      "notes": "Medium-range Chinese SAM. FK-3 export version. Serbia purchase controversial (NATO member). Cheaper alternative to HQ-9. SARH guidance.",
+      "year": 2016
+    },
+    {
+      "id": "kr-kmsam",
+      "name": "KM-SAM Cheolmae-2 (M-SAM)",
+      "type": "sam",
+      "country_of_origin": "KR",
+      "manufacturer": "LIG Nex1 / Samsung Thales",
+      "service_history": {
+        "introduced": 2015,
+        "retired": null,
+        "production_count": 30,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 28,
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 2,
+            "status": "ordered"
+          }
+        ],
+        "notes": "Batteries"
+      },
+      "system_components": {
+        "radar": {
+          "designation": "Multi-function radar",
+          "type": "AESA",
+          "range_km": 100,
+          "targets_tracked": 40
+        },
+        "launcher": {
+          "designation": "8-cell VLS",
+          "missiles_per_launcher": 8
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "Cheolmae-2",
+            "type": "active_radar",
+            "range_max_km": 40,
+            "altitude_max_km": 20,
+            "speed_mach": 4.5,
+            "warhead_kg": 60,
+            "guidance": "active radar + mid-course datalink",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "TBM"
+            ]
+          },
+          {
+            "designation": "Cheolmae-2 Block II",
+            "type": "active_radar",
+            "range_max_km": 60,
+            "altitude_max_km": 25,
+            "guidance": "active radar + IR",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "TBM",
+              "helicopter"
+            ],
+            "notes": "Extended range, dual seeker"
+          }
+        ]
+      },
+      "mobility": {
+        "deployment_time_min": 10,
+        "vehicles": "8x8 truck"
+      },
+      "unit_cost_usd": 150000000,
+      "cost_year": 2022,
+      "cost_notes": "Per battery",
+      "confidence": "high",
+      "sources": [
+        "Wikipedia KM-SAM",
+        "Army Recognition"
+      ],
+      "notes": "Korean medium-range SAM. Counters DPRK aircraft/missiles. Russian technology assistance (S-350 similarity). Block II with enhanced BMD capability.",
+      "year": 2015
+    },
+    {
+      "id": "kr-lsam",
+      "name": "L-SAM",
+      "type": "sam",
+      "country_of_origin": "KR",
+      "manufacturer": "LIG Nex1 / Agency for Defense Development",
+      "service_history": {
+        "introduced": 2024,
+        "retired": null,
+        "production_count": 5,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 5,
+            "status": "entering service"
+          }
+        ],
+        "notes": "Batteries"
+      },
+      "system_components": {
+        "radar": {
+          "designation": "AESA multi-function",
+          "type": "AESA",
+          "range_km": 300
+        },
+        "launcher": {
+          "designation": "Cold-launch VLS",
+          "missiles_per_launcher": 8
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "L-SAM",
+            "type": "hit-to-kill",
+            "range_max_km": 150,
+            "altitude_max_km": 60,
+            "speed_mach": 6,
+            "warhead": "kinetic hit-to-kill",
+            "guidance": "active radar + IR",
+            "targets": [
+              "TBM",
+              "aircraft",
+              "cruise_missile"
+            ]
+          },
+          {
+            "designation": "L-SAM-II",
+            "type": "hit-to-kill",
+            "range_max_km": 200,
+            "altitude_max_km": 80,
+            "guidance": "active radar + IR seeker",
+            "targets": [
+              "MRBM",
+              "TBM"
+            ],
+            "notes": "Enhanced BMD, in development"
+          }
+        ]
+      },
+      "unit_cost_usd": 300000000,
+      "cost_year": 2024,
+      "cost_notes": "Per battery",
+      "confidence": "low",
+      "sources": [
+        "Wikipedia Korean Air and Missile Defense",
+        "Army Recognition"
+      ],
+      "notes": "Korean long-range SAM / ABM. THAAD equivalent. Part of KAMD (Korea Air and Missile Defense). Counters DPRK ballistic missiles. First tests 2023. Hit-to-kill technology.",
+      "year": 2024
+    },
+    {
+      "id": "jp-type03",
+      "name": "Type 03 Chu-SAM",
+      "type": "sam",
+      "country_of_origin": "JP",
+      "manufacturer": "Mitsubishi Heavy Industries",
+      "service_history": {
+        "introduced": 2003,
+        "retired": null,
+        "production_count": 25,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 25,
+            "status": "active"
+          }
+        ],
+        "notes": "Fire units"
+      },
+      "system_components": {
+        "radar": {
+          "designation": "AESA phased array",
+          "type": "AESA",
+          "range_km": 100,
+          "targets_tracked": 100
+        },
+        "launcher": {
+          "designation": "6-cell canister",
+          "missiles_per_launcher": 6
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "Type 03",
+            "type": "active_radar",
+            "range_max_km": 50,
+            "altitude_max_km": 10,
+            "speed_mach": 2.5,
+            "guidance": "active radar + command",
+            "targets": [
+              "aircraft",
+              "cruise_missile"
+            ]
+          },
+          {
+            "designation": "Type 03 Kai (improved)",
+            "type": "active_radar",
+            "range_max_km": 70,
+            "altitude_max_km": 20,
+            "guidance": "active radar",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "TBM"
+            ]
+          }
+        ]
+      },
+      "mobility": {
+        "deployment_time_min": 20,
+        "vehicles": "Truck-mounted"
+      },
+      "unit_cost_usd": 200000000,
+      "cost_year": 2015,
+      "cost_notes": "Per fire unit",
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Type 03",
+        "Japanese Ministry of Defense"
+      ],
+      "notes": "Japanese medium-range SAM. JASDF operated. Type 03 Kai with BMD capability. Very expensive (domestic production). Complements Patriot.",
+      "year": 2003
+    }
+  ]
+}

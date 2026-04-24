@@ -1,0 +1,655 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-23",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "Baykar",
+      "IAI"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "tr-tb2",
+      "name": "Bayraktar TB2",
+      "nato_name": null,
+      "type": "ucav",
+      "country_of_origin": "TR",
+      "manufacturer": "Baykar Defense",
+      "service_history": {
+        "introduced": 2014,
+        "first_flight": 2014,
+        "retired": null,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 140,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 50,
+            "status": "active",
+            "notes": "Ukraine war"
+          },
+          {
+            "country": "AZ",
+            "quantity": 36,
+            "status": "active",
+            "notes": "Nagorno-Karabakh"
+          },
+          {
+            "country": "QA",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "LY",
+            "quantity": 20,
+            "status": "active",
+            "notes": "GNA"
+          },
+          {
+            "country": "MA",
+            "quantity": 13,
+            "status": "active"
+          },
+          {
+            "country": "ET",
+            "quantity": 4,
+            "status": "active",
+            "notes": "Tigray conflict"
+          },
+          {
+            "country": "PK",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "TM",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "KG",
+            "quantity": 3,
+            "status": "active"
+          },
+          {
+            "country": "NG",
+            "quantity": 12,
+            "status": "ordered"
+          },
+          {
+            "country": "PL",
+            "quantity": 24,
+            "status": "ordered"
+          },
+          {
+            "country": "AL",
+            "quantity": 6,
+            "status": "ordered"
+          },
+          {
+            "country": "RO",
+            "quantity": 18,
+            "status": "ordered"
+          }
+        ],
+        "notes": "Most combat-proven modern UCAV. 30+ operators."
+      },
+      "specifications": {
+        "crew": 0,
+        "ground_crew": 3,
+        "length_m": 6.5,
+        "wingspan_m": 12.0,
+        "height_m": 2.2,
+        "empty_weight_kg": 630,
+        "max_takeoff_weight_kg": 700,
+        "internal_fuel_kg": 75
+      },
+      "performance": {
+        "max_speed_kmh": 220,
+        "cruise_speed_kmh": 130,
+        "loiter_speed_kmh": 100,
+        "combat_radius_km": 150,
+        "operational_altitude_m": 5500,
+        "endurance_hours": 27,
+        "service_ceiling_m": 8230
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Rotax 912",
+        "power_hp": 100
+      },
+      "avionics": {
+        "sensors": "Aselsan CATS EO/IR",
+        "laser_designator": true,
+        "datalink": "Turkish indigenous",
+        "satcom": "Optional SATCOM upgrade"
+      },
+      "armament": {
+        "hardpoints": 4,
+        "max_payload_kg": 150,
+        "weapons": [
+          {
+            "type": "smart_munition",
+            "designation": "MAM-L",
+            "quantity": 4,
+            "weight_kg": 22
+          },
+          {
+            "type": "smart_munition",
+            "designation": "MAM-C",
+            "quantity": 4,
+            "weight_kg": 6.5
+          },
+          {
+            "type": "missile",
+            "designation": "Roketsan Cirit",
+            "quantity": 4
+          }
+        ]
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Syria (Idlib)",
+            "year": 2020,
+            "notes": "Destroyed SAA armor/AD"
+          },
+          {
+            "conflict": "Libya",
+            "year": 2019,
+            "notes": "GNA operations"
+          },
+          {
+            "conflict": "Nagorno-Karabakh",
+            "year": 2020,
+            "notes": "Decisive role for Azerbaijan"
+          },
+          {
+            "conflict": "Ukraine",
+            "year": 2022,
+            "notes": "Initial success, then losses"
+          },
+          {
+            "conflict": "Ethiopia (Tigray)",
+            "year": 2021
+          }
+        ],
+        "notes": "Changed modern warfare. Nagorno-Karabakh: destroyed 500+ Armenian vehicles."
+      },
+      "unit_cost_usd": 5000000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "Baykar",
+        "Jane's",
+        "IISS"
+      ],
+      "notes": "Game-changer drone. Low cost, high effectiveness. Nagorno-Karabakh war showcased potential. Ukraine: 'Saint Bayraktar' early war. 500+ built. 30+ countries.",
+      "year": 2014
+    },
+    {
+      "id": "tr-akinci",
+      "name": "Bayraktar Akinci",
+      "nato_name": null,
+      "type": "ucav",
+      "country_of_origin": "TR",
+      "manufacturer": "Baykar Defense",
+      "service_history": {
+        "introduced": 2021,
+        "first_flight": 2019,
+        "retired": null,
+        "production_count": 30,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 25,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 4,
+            "status": "ordered"
+          }
+        ],
+        "notes": "Heavy combat UAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 12.5,
+        "wingspan_m": 20.0,
+        "height_m": 4.1,
+        "empty_weight_kg": 3200,
+        "max_takeoff_weight_kg": 6000
+      },
+      "performance": {
+        "max_speed_kmh": 360,
+        "cruise_speed_kmh": 240,
+        "combat_radius_km": 300,
+        "ferry_range_km": 2500,
+        "service_ceiling_m": 12200,
+        "endurance_hours": 24
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Motor Sich AI-450T",
+        "power_hp": 450
+      },
+      "avionics": {
+        "radar": "Aselsan AESA",
+        "radar_range_km": 150,
+        "sensors": "CATS EO/IR, SARPER SAR/GMTI",
+        "ew_suite": "SPEWS-II ECM"
+      },
+      "armament": {
+        "hardpoints": 6,
+        "max_payload_kg": 1350,
+        "weapons": [
+          {
+            "type": "cruise_missile",
+            "designation": "SOM-A",
+            "quantity": 2,
+            "range_km": 250
+          },
+          {
+            "type": "anti_ship",
+            "designation": "Atmaca",
+            "quantity": 2
+          },
+          {
+            "type": "smart_munition",
+            "designation": "MAM-L/MAM-T",
+            "quantity": 6
+          },
+          {
+            "type": "aam",
+            "designation": "Bozdogan",
+            "quantity": 2,
+            "notes": "Air-to-air capable"
+          }
+        ]
+      },
+      "unit_cost_usd": 30000000,
+      "cost_year": 2022,
+      "confidence": "medium",
+      "sources": [
+        "Baykar",
+        "Jane's"
+      ],
+      "notes": "'Raider'. Heavy UCAV. Cruise missile capable. Air-to-air capable (world first for UCAV). Twin-engine reliability. Export potential high.",
+      "year": 2021
+    },
+    {
+      "id": "il-heron",
+      "name": "IAI Heron",
+      "nato_name": null,
+      "type": "reconnaissance",
+      "country_of_origin": "IL",
+      "manufacturer": "Israel Aerospace Industries",
+      "service_history": {
+        "introduced": 1994,
+        "first_flight": 1994,
+        "retired": null,
+        "production_count": 300,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "TR",
+            "quantity": 10,
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "BR",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "CA",
+            "quantity": 5,
+            "status": "active"
+          },
+          {
+            "country": "DE",
+            "quantity": 5,
+            "status": "active"
+          },
+          {
+            "country": "FR",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "SG",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "quantity": 3,
+            "status": "active"
+          }
+        ],
+        "notes": "Major export success"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 8.5,
+        "wingspan_m": 16.6,
+        "height_m": 2.3,
+        "empty_weight_kg": 650,
+        "max_takeoff_weight_kg": 1150
+      },
+      "performance": {
+        "max_speed_kmh": 220,
+        "cruise_speed_kmh": 130,
+        "endurance_hours": 45,
+        "service_ceiling_m": 10000,
+        "notes": "45+ hour endurance"
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Rotax 914",
+        "power_hp": 115
+      },
+      "avionics": {
+        "sensors": "MOSP EO/IR, SAR/GMTI optional",
+        "datalink": "LOS and SATCOM"
+      },
+      "armament": {
+        "weapons": "Reconnaissance only (armed versions available)"
+      },
+      "variants": [
+        {
+          "designation": "Heron 1",
+          "notes": "Original"
+        },
+        {
+          "designation": "Heron TP (Eitan)",
+          "notes": "Larger, armed variant"
+        }
+      ],
+      "unit_cost_usd": 10000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "IAI",
+        "Jane's"
+      ],
+      "notes": "Israeli MALE UAV. 45-hour endurance. Major export success. India operates 100+. Germany leases for Afghanistan/Mali.",
+      "year": 1994
+    },
+    {
+      "id": "il-eitan-uav",
+      "name": "IAI Eitan (Heron TP)",
+      "nato_name": null,
+      "type": "ucav",
+      "country_of_origin": "IL",
+      "manufacturer": "Israel Aerospace Industries",
+      "service_history": {
+        "introduced": 2010,
+        "first_flight": 2006,
+        "retired": null,
+        "production_count": 30,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 30,
+            "status": "active",
+            "notes": "IAF"
+          }
+        ],
+        "notes": "Israel's largest UAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 14.0,
+        "wingspan_m": 26.0,
+        "height_m": 3.0,
+        "empty_weight_kg": 2700,
+        "max_takeoff_weight_kg": 5400
+      },
+      "performance": {
+        "max_speed_kmh": 370,
+        "cruise_speed_kmh": 200,
+        "endurance_hours": 36,
+        "service_ceiling_m": 13700,
+        "range_km": 7400
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Pratt & Whitney PT6A-67A",
+        "power_shp": 1200
+      },
+      "avionics": {
+        "radar": "IAI AESA",
+        "radar_range_km": 200,
+        "sensors": "EO/IR, SAR/GMTI, ELINT",
+        "datalink": "SATCOM (global range)"
+      },
+      "armament": {
+        "hardpoints": 4,
+        "max_payload_kg": 1000,
+        "weapons": [
+          {
+            "type": "precision",
+            "designation": "GBU-12/Spice",
+            "notes": "Precision guided munitions"
+          }
+        ]
+      },
+      "unit_cost_usd": 35000000,
+      "cost_year": 2015,
+      "confidence": "medium",
+      "sources": [
+        "IAI",
+        "Jane's"
+      ],
+      "notes": "'Heron TP'. Israel's largest UAV. Turboprop powered. Can reach Iran. Strategic reconnaissance and strike.",
+      "year": 2010
+    },
+    {
+      "id": "il-harop",
+      "name": "IAI Harop",
+      "nato_name": null,
+      "type": "loitering_munition",
+      "country_of_origin": "IL",
+      "manufacturer": "Israel Aerospace Industries",
+      "service_history": {
+        "introduced": 2009,
+        "first_flight": 2003,
+        "retired": null,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "AZ",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "DE",
+            "quantity": 60,
+            "status": "ordered"
+          },
+          {
+            "country": "KR",
+            "quantity": 50,
+            "status": "active"
+          }
+        ],
+        "notes": "'Kamikaze drone'"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 2.5,
+        "wingspan_m": 3.0,
+        "max_takeoff_weight_kg": 135,
+        "warhead_kg": 23
+      },
+      "performance": {
+        "max_speed_kmh": 417,
+        "cruise_speed_kmh": 185,
+        "endurance_hours": 6,
+        "range_km": 1000
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Pusher propeller",
+        "power_hp": 38
+      },
+      "sensors": {
+        "type": "EO/IR seeker",
+        "anti_radiation": true,
+        "notes": "Can home on radar emissions"
+      },
+      "armament": {
+        "warhead": "23 kg HE fragmentation",
+        "penetration": "Can penetrate APC armor"
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Nagorno-Karabakh",
+            "year": 2020,
+            "notes": "Azerbaijan destroyed Armenian AD"
+          }
+        ]
+      },
+      "unit_cost_usd": 100000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "IAI",
+        "Jane's"
+      ],
+      "notes": "Loitering munition (suicide drone). 6-hour loiter time. Can abort if no target. Azerbaijan used to destroy Armenian S-300s. Germany ordered for Bundeswehr.",
+      "year": 2009
+    },
+    {
+      "id": "il-hermes900",
+      "name": "Elbit Hermes 900",
+      "nato_name": null,
+      "type": "ucav",
+      "country_of_origin": "IL",
+      "manufacturer": "Elbit Systems",
+      "service_history": {
+        "introduced": 2012,
+        "first_flight": 2009,
+        "retired": null,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 20,
+            "status": "active"
+          },
+          {
+            "country": "BR",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "CH",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "CL",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "CO",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "MX",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "PH",
+            "quantity": 9,
+            "status": "ordered"
+          },
+          {
+            "country": "EU",
+            "quantity": 7,
+            "status": "active",
+            "notes": "FRONTEX"
+          }
+        ],
+        "notes": "Popular export"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 8.3,
+        "wingspan_m": 15.0,
+        "max_takeoff_weight_kg": 1180
+      },
+      "performance": {
+        "max_speed_kmh": 220,
+        "cruise_speed_kmh": 112,
+        "endurance_hours": 36,
+        "service_ceiling_m": 9144
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Rotax 914",
+        "power_hp": 115
+      },
+      "armament": {
+        "max_payload_kg": 350,
+        "weapons": [
+          {
+            "designation": "Spike missile",
+            "quantity": 2
+          },
+          {
+            "designation": "Lizard LGB",
+            "quantity": 2
+          }
+        ]
+      },
+      "unit_cost_usd": 15000000,
+      "cost_year": 2018,
+      "confidence": "high",
+      "sources": [
+        "Elbit",
+        "Jane's"
+      ],
+      "notes": "Medium-altitude ISR/strike. Popular export. EU FRONTEX border patrol. Can carry Spike missiles.",
+      "year": 2012
+    }
+  ]
+}

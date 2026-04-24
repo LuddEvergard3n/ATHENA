@@ -1,0 +1,545 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-23",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "CSIS",
+      "Iranian media"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "cn-wingloong2",
+      "name": "CAIG Wing Loong II",
+      "nato_name": null,
+      "type": "ucav",
+      "country_of_origin": "CN",
+      "manufacturer": "Chengdu Aircraft Industry Group",
+      "service_history": {
+        "introduced": 2017,
+        "first_flight": 2017,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 50,
+            "status": "active",
+            "notes": "PLAAF"
+          },
+          {
+            "country": "AE",
+            "quantity": 15,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 20,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 10,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 48,
+            "status": "active"
+          },
+          {
+            "country": "KZ",
+            "quantity": 3,
+            "status": "active"
+          },
+          {
+            "country": "UZ",
+            "quantity": 3,
+            "status": "active"
+          },
+          {
+            "country": "NG",
+            "quantity": 5,
+            "status": "active"
+          },
+          {
+            "country": "ID",
+            "quantity": 12,
+            "status": "ordered"
+          }
+        ],
+        "notes": "China's primary export UCAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 11.0,
+        "wingspan_m": 20.5,
+        "height_m": 4.1,
+        "empty_weight_kg": 2800,
+        "max_takeoff_weight_kg": 4200
+      },
+      "performance": {
+        "max_speed_kmh": 340,
+        "cruise_speed_kmh": 200,
+        "combat_radius_km": 1200,
+        "endurance_hours": 32,
+        "service_ceiling_m": 9000
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "WJ-9A turboprop",
+        "power_shp": 400
+      },
+      "avionics": {
+        "radar": "SAR/GMTI (optional)",
+        "sensors": "EO/IR ball turret",
+        "datalink": "SATCOM capable"
+      },
+      "armament": {
+        "hardpoints": 6,
+        "max_payload_kg": 480,
+        "weapons": [
+          {
+            "type": "missile",
+            "designation": "BA-7 (Hellfire equivalent)",
+            "quantity": 12
+          },
+          {
+            "type": "bomb",
+            "designation": "FT-9/50 precision bombs",
+            "quantity": 4
+          },
+          {
+            "type": "missile",
+            "designation": "YJ-9E anti-tank",
+            "quantity": 4
+          }
+        ]
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Yemen",
+            "year": 2019,
+            "notes": "UAE operations"
+          },
+          {
+            "conflict": "Libya",
+            "year": 2020,
+            "notes": "UAE/Egypt supply to LNA"
+          }
+        ]
+      },
+      "unit_cost_usd": 2000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "CAIG",
+        "Jane's",
+        "CSIS"
+      ],
+      "notes": "Chinese MQ-9 equivalent. Major export to countries denied US drones. Saudi Arabia, UAE, Pakistan major customers. $2M vs $32M for MQ-9.",
+      "year": 2017
+    },
+    {
+      "id": "cn-ch5",
+      "name": "CASC CH-5 Rainbow",
+      "nato_name": null,
+      "type": "ucav",
+      "country_of_origin": "CN",
+      "manufacturer": "China Aerospace Science and Technology Corporation",
+      "service_history": {
+        "introduced": 2017,
+        "first_flight": 2016,
+        "retired": null,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 30,
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "JO",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 18,
+            "status": "active"
+          },
+          {
+            "country": "MM",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "DZ",
+            "quantity": 6,
+            "status": "active"
+          }
+        ],
+        "notes": "Largest Chinese export UCAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 11.0,
+        "wingspan_m": 21.0,
+        "max_takeoff_weight_kg": 3300
+      },
+      "performance": {
+        "max_speed_kmh": 300,
+        "cruise_speed_kmh": 180,
+        "endurance_hours": 60,
+        "service_ceiling_m": 9000,
+        "notes": "60-hour endurance claimed"
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Turboprop",
+        "power_shp": 350
+      },
+      "armament": {
+        "hardpoints": 6,
+        "max_payload_kg": 1000,
+        "weapons": [
+          {
+            "type": "missile",
+            "designation": "AR-1/2 (Hellfire class)",
+            "quantity": 16
+          },
+          {
+            "type": "bomb",
+            "designation": "FT-series guided bombs",
+            "quantity": 4
+          }
+        ]
+      },
+      "unit_cost_usd": 3000000,
+      "cost_year": 2018,
+      "confidence": "medium",
+      "sources": [
+        "CASC",
+        "Jane's"
+      ],
+      "notes": "Rainbow (Caihong) series. Competitor to Wing Loong. Iraq major customer (used vs ISIS). Low cost export focus.",
+      "year": 2017
+    },
+    {
+      "id": "cn-wz7",
+      "name": "Guizhou WZ-7 Soaring Dragon",
+      "nato_name": null,
+      "type": "reconnaissance",
+      "country_of_origin": "CN",
+      "manufacturer": "Guizhou Aircraft Corporation",
+      "service_history": {
+        "introduced": 2019,
+        "first_flight": 2009,
+        "retired": null,
+        "production_count": 20,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 20,
+            "status": "active",
+            "notes": "PLAAF"
+          }
+        ],
+        "notes": "HALE reconnaissance UAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "wingspan_m": 25.0,
+        "length_m": 14.3,
+        "max_takeoff_weight_kg": 7500
+      },
+      "performance": {
+        "max_speed_kmh": 750,
+        "cruise_speed_kmh": 650,
+        "endurance_hours": 10,
+        "service_ceiling_m": 18000,
+        "notes": "Unique joined-wing design"
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Turbofan (WP-13 derivative)",
+        "thrust_dry_kn": 44
+      },
+      "avionics": {
+        "radar": "SAR/GMTI",
+        "sensors": "ELINT, EO/IR",
+        "notes": "Strategic reconnaissance"
+      },
+      "unit_cost_usd": 40000000,
+      "cost_year": 2020,
+      "confidence": "low",
+      "sources": [
+        "Jane's",
+        "Chinese media"
+      ],
+      "notes": "Chinese Global Hawk equivalent. Unique joined-wing design for efficiency. South China Sea patrols. First Island Chain surveillance.",
+      "year": 2019
+    },
+    {
+      "id": "ir-shahed136",
+      "name": "HESA Shahed-136",
+      "nato_name": null,
+      "type": "loitering_munition",
+      "country_of_origin": "IR",
+      "manufacturer": "Iran Aircraft Manufacturing Industrial Company",
+      "service_history": {
+        "introduced": 2021,
+        "first_flight": 2020,
+        "retired": null,
+        "production_count": 5000,
+        "operators": [
+          {
+            "country": "IR",
+            "quantity": 1000,
+            "status": "active"
+          },
+          {
+            "country": "RU",
+            "quantity": 4000,
+            "status": "active",
+            "notes": "Geran-2 designation"
+          }
+        ],
+        "notes": "Mass-produced kamikaze drone"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 3.5,
+        "wingspan_m": 2.5,
+        "max_takeoff_weight_kg": 200,
+        "warhead_kg": 40
+      },
+      "performance": {
+        "max_speed_kmh": 185,
+        "cruise_speed_kmh": 150,
+        "range_km": 2500,
+        "endurance_hours": 10
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "MD-550 (Chinese clone of German Limbach)",
+        "power_hp": 50
+      },
+      "guidance": {
+        "type": "GPS/INS",
+        "accuracy_cep_m": 5,
+        "notes": "Autonomous navigation to preset coordinates"
+      },
+      "armament": {
+        "warhead": "40 kg HE fragmentation",
+        "notes": "Explosive formed penetrator optional"
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Ukraine",
+            "year": 2022,
+            "notes": "Massive use by Russia (Geran-2)"
+          },
+          {
+            "conflict": "Saudi Arabia",
+            "year": 2019,
+            "notes": "Abqaiq attack"
+          }
+        ],
+        "notes": "Ukraine: 1000s launched. $20k vs $500k+ for interceptors."
+      },
+      "unit_cost_usd": 20000,
+      "cost_year": 2022,
+      "confidence": "medium",
+      "sources": [
+        "Ukrainian sources",
+        "Jane's",
+        "RUSI"
+      ],
+      "notes": "'Geran-2' in Russian service. Cheap, mass-produced. GPS-guided cruise to target then dives. Ukraine: overwhelms air defenses through volume. Cost asymmetry problem.",
+      "year": 2021
+    },
+    {
+      "id": "ir-mohajer6",
+      "name": "Qods Mohajer-6",
+      "nato_name": null,
+      "type": "ucav",
+      "country_of_origin": "IR",
+      "manufacturer": "Qods Aviation Industries",
+      "service_history": {
+        "introduced": 2017,
+        "first_flight": 2017,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "IR",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "RU",
+            "quantity": 100,
+            "status": "active",
+            "notes": "Ukraine war"
+          }
+        ],
+        "notes": "Iranian tactical UCAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 5.55,
+        "wingspan_m": 10.0,
+        "max_takeoff_weight_kg": 690
+      },
+      "performance": {
+        "max_speed_kmh": 200,
+        "cruise_speed_kmh": 150,
+        "endurance_hours": 12,
+        "service_ceiling_m": 5500,
+        "range_km": 200
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Rotax 912 equivalent",
+        "power_hp": 100
+      },
+      "avionics": {
+        "sensors": "EO/IR turret",
+        "datalink": "LOS",
+        "notes": "Can transmit video to artillery units"
+      },
+      "armament": {
+        "hardpoints": 2,
+        "max_payload_kg": 40,
+        "weapons": [
+          {
+            "type": "bomb",
+            "designation": "Qaem PGM",
+            "quantity": 2
+          },
+          {
+            "type": "missile",
+            "designation": "Almas (Spike copy)",
+            "quantity": 2
+          }
+        ]
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Syria",
+            "year": 2018
+          },
+          {
+            "conflict": "Ukraine",
+            "year": 2023,
+            "notes": "Russian use"
+          }
+        ]
+      },
+      "unit_cost_usd": 500000,
+      "cost_year": 2022,
+      "confidence": "medium",
+      "sources": [
+        "Iranian media",
+        "Jane's"
+      ],
+      "notes": "Iranian Bayraktar equivalent. Russia uses in Ukraine. Armed reconnaissance. Lower capability than TB2 but available.",
+      "year": 2018
+    },
+    {
+      "id": "ru-orion",
+      "name": "Kronshtadt Orion",
+      "nato_name": null,
+      "type": "ucav",
+      "country_of_origin": "RU",
+      "manufacturer": "Kronshtadt Group",
+      "service_history": {
+        "introduced": 2020,
+        "first_flight": 2016,
+        "retired": null,
+        "production_count": 30,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 30,
+            "status": "active",
+            "notes": "VKS"
+          }
+        ],
+        "notes": "Russia's first indigenous MALE UAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 8.0,
+        "wingspan_m": 16.0,
+        "max_takeoff_weight_kg": 1200
+      },
+      "performance": {
+        "max_speed_kmh": 200,
+        "cruise_speed_kmh": 120,
+        "endurance_hours": 24,
+        "service_ceiling_m": 7500,
+        "range_km": 300
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "APD-115 (Austrian Rotax clone)",
+        "power_hp": 115
+      },
+      "avionics": {
+        "sensors": "EO/IR",
+        "datalink": "LOS"
+      },
+      "armament": {
+        "hardpoints": 4,
+        "max_payload_kg": 200,
+        "weapons": [
+          {
+            "type": "bomb",
+            "designation": "OFAB-50",
+            "quantity": 4
+          },
+          {
+            "type": "missile",
+            "designation": "Kornet-M (ATGM)",
+            "quantity": 2
+          }
+        ]
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Syria",
+            "year": 2020
+          },
+          {
+            "conflict": "Ukraine",
+            "year": 2022,
+            "notes": "Limited use"
+          }
+        ]
+      },
+      "unit_cost_usd": 5000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Russian MoD",
+        "Jane's"
+      ],
+      "notes": "Russia's first armed UCAV. Delayed development. Limited numbers. Relies on Iranian drones (Shahed, Mohajer) due to production issues.",
+      "year": 2020
+    }
+  ]
+}

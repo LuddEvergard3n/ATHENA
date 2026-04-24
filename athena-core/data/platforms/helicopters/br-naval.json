@@ -1,0 +1,97 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-02-14",
+    "sources": [
+      "Airforce Technology Super Lynx",
+      "Shephard Media Brazilian Naval Helicopter",
+      "Leonardo Press Release",
+      "IISS Military Balance 2024"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "br-ah11b-super-lynx",
+      "name": "AH-11B Super Lynx Mk21B",
+      "nato_name": null,
+      "type": "naval_helicopter",
+      "generation": null,
+      "country_of_origin": "GB",
+      "manufacturer": "Leonardo Helicopters (ex-AgustaWestland)",
+      "service_history": {
+        "introduced": 2014,
+        "first_flight": 1999,
+        "retired": null,
+        "production_count": 8,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 8,
+            "variants": ["Mk21B"],
+            "status": "active",
+            "notes": "Upgraded from Mk21A standard. Operated by Brazilian Navy HA-1 squadron. Embarked on frigates and corvettes."
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "seating_configuration": "side_by_side",
+        "length_m": 15.24,
+        "rotor_diameter_m": 12.80,
+        "height_m": 3.67,
+        "empty_weight_kg": 3291,
+        "max_takeoff_weight_kg": 5330
+      },
+      "performance": {
+        "max_speed_kmh": 324,
+        "cruise_speed_kmh": 245,
+        "combat_radius_km": 282,
+        "ferry_range_km": 564,
+        "service_ceiling_m": 3660,
+        "endurance_hours": 3.4
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "LHTEC CTS800-4N",
+        "power_shp": 1362,
+        "notes": "T800 derivative. Full authority digital engine control (FADEC)."
+      },
+      "avionics": {
+        "radar": "Seaspray search/targeting radar",
+        "flir": "Thermal imaging system",
+        "ew_suite": "ESM/ECM integrated",
+        "data_link": "Link 11/16 compatible",
+        "cockpit": "All-glass NVG-compatible"
+      },
+      "armament": {
+        "missiles": [
+          {
+            "type": "Sea Skua AShM",
+            "quantity": 4,
+            "range_km": 25,
+            "guidance": "Semi-active radar homing"
+          }
+        ],
+        "torpedoes": [
+          {
+            "type": "Mk 46 / A244S",
+            "quantity": 2,
+            "notes": "Lightweight ASW torpedoes"
+          }
+        ]
+      },
+      "roles": ["ASuW", "ASW", "surface_surveillance", "OTH_targeting", "SAR"],
+      "unit_cost_usd": 30000000,
+      "cost_year": 2014,
+      "confidence": "high",
+      "sources": [
+        "Airforce Technology Super Lynx",
+        "Shephard Media Brazilian naval helicopter upgrade",
+        "Leonardo press release",
+        "Brazilian Navy official"
+      ],
+      "notes": "Designated AH-11B in Brazilian Navy (NOT AH-2 Sabre — that is the Eurocopter Tiger for Brazilian Army). Mk21B upgrade program by Leonardo: €117M for 8 aircraft. New CTS800-4N engines, glass cockpit, improved sensors. Primary shipboard helicopter for Brazilian Navy surface fleet. Capable of over-the-horizon targeting for ship-launched missiles."
+    }
+  ]
+}

@@ -1,0 +1,505 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "uk-mastiff",
+      "name": "Mastiff PPV",
+      "type": "mrap",
+      "country_of_origin": "GB",
+      "manufacturer": "Force Protection / NP Aerospace",
+      "service_history": {
+        "introduced": 2007,
+        "retired": null,
+        "production_count": 400,
+        "operators": [
+          {
+            "country": "UK",
+            "quantity": 400,
+            "variants": [
+              "Mastiff 2",
+              "Mastiff 3"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 8,
+        "weight_kg": 23500,
+        "length_m": 7.08,
+        "width_m": 2.54,
+        "height_m": 2.64,
+        "ground_clearance_m": 0.36
+      },
+      "mobility": {
+        "engine": {
+          "model": "Caterpillar C7",
+          "type": "diesel_turbocharged",
+          "power_hp": 330,
+          "power_kw": 246
+        },
+        "power_to_weight_hp_ton": 14.0,
+        "drivetrain": "6x6",
+        "transmission": "Allison 3000SP automatic",
+        "max_speed_road_kmh": 90,
+        "range_road_km": 600,
+        "gradient_percent": 60,
+        "fording_depth_m": 0.91,
+        "amphibious": false,
+        "run_flat_tires": true
+      },
+      "armament": {
+        "main": {
+          "designation": "GPMG or M2HB",
+          "caliber_mm": 7.62,
+          "type": "machine_gun",
+          "mount": "Protected Weapon Station",
+          "options": [
+            "L7A2 GPMG",
+            "M2HB 12.7mm",
+            "HK GMG 40mm"
+          ]
+        }
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 4",
+        "mine_protection": "STANAG 4569 Level 4a",
+        "ied_protection": "V-hull, enhanced belly",
+        "nbc_protection": false,
+        "fire_suppression": true,
+        "notes": "Cougar based, optimized for IED protection"
+      },
+      "sensors_and_fcs": {
+        "commander_sight": {
+          "type": "Day/thermal",
+          "thermal": true
+        },
+        "battle_management_system": "BOWMAN"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 0
+      },
+      "unit_cost_usd": 1400000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Mastiff PPV",
+        "Army Recognition",
+        "UK MoD"
+      ],
+      "notes": "Cougar derivative. Afghanistan workhorse. Protected Patrol Vehicle. Mastiff 3 has enhanced protection. 400+ in UK service.",
+      "year": 2007
+    },
+    {
+      "id": "uk-bulldog",
+      "name": "FV432 Bulldog",
+      "type": "apc",
+      "country_of_origin": "GB",
+      "manufacturer": "GKN Sankey",
+      "service_history": {
+        "introduced": 1963,
+        "retired": null,
+        "production_count": 3000,
+        "operators": [
+          {
+            "country": "UK",
+            "quantity": 1200,
+            "variants": [
+              "Mk3 Bulldog"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 50,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 10,
+        "weight_kg": 15280,
+        "length_m": 5.25,
+        "width_m": 2.8,
+        "height_m": 2.28,
+        "ground_clearance_m": 0.41
+      },
+      "mobility": {
+        "engine": {
+          "model": "Rolls-Royce K60",
+          "type": "multi-fuel",
+          "power_hp": 240,
+          "power_kw": 179
+        },
+        "power_to_weight_hp_ton": 15.7,
+        "transmission": "TX-200-4A semi-automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 52,
+        "max_speed_offroad_kmh": 30,
+        "range_road_km": 580,
+        "fording_depth_m": 1.07,
+        "gradient_percent": 60,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "L7A2 GPMG",
+          "caliber_mm": 7.62,
+          "type": "machine_gun",
+          "mount": "cupola",
+          "ammunition_carried": 1600
+        }
+      },
+      "protection": {
+        "armor_type": "aluminum_steel",
+        "protection_front_mm_rha": 12,
+        "protection_side_mm_rha": 12,
+        "protection_upgrade": "ROMOR ERA available",
+        "stanag_level": "4569 Level 2",
+        "nbc_protection": true,
+        "fire_suppression": false
+      },
+      "sensors_and_fcs": {
+        "commander_sight": {
+          "type": "Periscope",
+          "thermal": false
+        }
+      },
+      "signature": {
+        "smoke_grenade_launchers": 6
+      },
+      "unit_cost_usd": 500000,
+      "cost_year": 1995,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia FV432",
+        "Army Recognition"
+      ],
+      "notes": "British M113 equivalent. 60+ years service. Bulldog Mk3 modernization: new engine, add-on armor. 50 sent to Ukraine 2023.",
+      "year": 2006
+    },
+    {
+      "id": "za-ratel",
+      "name": "Ratel 20",
+      "type": "ifv",
+      "country_of_origin": "ZA",
+      "manufacturer": "Sandock-Austral",
+      "service_history": {
+        "introduced": 1976,
+        "retired": null,
+        "production_count": 1200,
+        "operators": [
+          {
+            "country": "ZA",
+            "quantity": 500,
+            "variants": [
+              "Ratel 20",
+              "Ratel 60",
+              "Ratel 90"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "MA",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "JO",
+            "quantity": 200,
+            "status": "reserve"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 7,
+        "weight_kg": 19000,
+        "length_m": 7.21,
+        "width_m": 2.52,
+        "height_m": 2.92,
+        "ground_clearance_m": 0.34
+      },
+      "mobility": {
+        "engine": {
+          "model": "B\u00fcssing D3256 BTXF",
+          "type": "diesel_turbocharged",
+          "power_hp": 282,
+          "power_kw": 210
+        },
+        "power_to_weight_hp_ton": 14.8,
+        "drivetrain": "6x6",
+        "transmission": "Manual 6F/2R",
+        "max_speed_road_kmh": 105,
+        "max_speed_offroad_kmh": 45,
+        "range_road_km": 1000,
+        "fuel_capacity_liters": 430,
+        "gradient_percent": 60,
+        "fording_depth_m": 1.2,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "GI-2 (F2)",
+          "caliber_mm": 20,
+          "type": "autocannon",
+          "elevation_min_deg": -8,
+          "elevation_max_deg": 38,
+          "traverse_deg": 360,
+          "stabilization": "none",
+          "rate_of_fire_rpm": 720,
+          "effective_range_m": 1500,
+          "ammunition_carried": 1200
+        },
+        "secondary": [
+          {
+            "designation": "Browning M1919A4",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2400
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 20,
+        "protection_side_mm_rha": 12,
+        "stanag_level": "4569 Level 2",
+        "mine_protection": "V-hull design",
+        "nbc_protection": false,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "commander_sight": {
+          "type": "Periscope",
+          "thermal": false
+        },
+        "gunner_sight": {
+          "type": "Day optical",
+          "thermal": false
+        }
+      },
+      "signature": {
+        "smoke_grenade_launchers": 4
+      },
+      "unit_cost_usd": 600000,
+      "cost_year": 1990,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Ratel IFV",
+        "Army Recognition"
+      ],
+      "notes": "Border War veteran. First wheeled IFV. 1000 km range. Ratel 60 has 60mm breech mortar, Ratel 90 has 90mm gun. Combat proven Angola.",
+      "year": 1976
+    },
+    {
+      "id": "za-mamba",
+      "name": "Mamba APC",
+      "type": "mrap",
+      "country_of_origin": "ZA",
+      "manufacturer": "TFM (now Denel)",
+      "service_history": {
+        "introduced": 1995,
+        "retired": null,
+        "production_count": 1000,
+        "operators": [
+          {
+            "country": "ZA",
+            "quantity": 100,
+            "status": "reserve"
+          },
+          {
+            "country": "IQ",
+            "quantity": 300,
+            "status": "active"
+          },
+          {
+            "country": "US",
+            "quantity": 150,
+            "status": "reserve"
+          },
+          {
+            "country": "UK",
+            "quantity": 50,
+            "status": "reserve"
+          },
+          {
+            "country": "DK",
+            "quantity": 50,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 8,
+        "weight_kg": 6800,
+        "length_m": 5.58,
+        "width_m": 2.35,
+        "height_m": 2.49,
+        "ground_clearance_m": 0.41
+      },
+      "mobility": {
+        "engine": {
+          "model": "Mercedes-Benz OM352",
+          "type": "diesel",
+          "power_hp": 125,
+          "power_kw": 93
+        },
+        "power_to_weight_hp_ton": 18.4,
+        "drivetrain": "4x4",
+        "max_speed_road_kmh": 102,
+        "range_road_km": 900,
+        "fording_depth_m": 0.8,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "Pintle mount",
+          "caliber_mm": 7.62,
+          "type": "machine_gun",
+          "options": [
+            "7.62mm GPMG",
+            "12.7mm M2HB"
+          ]
+        }
+      },
+      "protection": {
+        "armor_type": "steel",
+        "stanag_level": "4569 Level 1",
+        "mine_protection": "STANAG 4569 Level 2a",
+        "ied_protection": "V-hull 7kg TNT",
+        "nbc_protection": false,
+        "notes": "Pioneer mine-resistant design"
+      },
+      "sensors_and_fcs": {
+        "commander_sight": {
+          "type": "Basic",
+          "thermal": false
+        }
+      },
+      "signature": {
+        "smoke_grenade_launchers": 0
+      },
+      "unit_cost_usd": 200000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Mamba APC",
+        "Army Recognition"
+      ],
+      "notes": "Pioneer MRAP design. V-hull concept origin. Influenced Cougar, Buffalo, MaxxPro. Cheap, effective mine protection. Iraq widely used.",
+      "year": 1995
+    },
+    {
+      "id": "za-casspir",
+      "name": "Casspir",
+      "type": "mrap",
+      "country_of_origin": "ZA",
+      "manufacturer": "Mechem (now Denel)",
+      "service_history": {
+        "introduced": 1980,
+        "retired": null,
+        "production_count": 2000,
+        "operators": [
+          {
+            "country": "ZA",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 200,
+            "variants": [
+              "Casspir Mk3"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "UG",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "PE",
+            "quantity": 50,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 12,
+        "weight_kg": 12580,
+        "length_m": 6.87,
+        "width_m": 2.5,
+        "height_m": 2.85,
+        "ground_clearance_m": 0.41
+      },
+      "mobility": {
+        "engine": {
+          "model": "ADE 352T",
+          "type": "diesel_turbocharged",
+          "power_hp": 170,
+          "power_kw": 127
+        },
+        "power_to_weight_hp_ton": 13.5,
+        "drivetrain": "4x4",
+        "max_speed_road_kmh": 90,
+        "range_road_km": 850,
+        "fording_depth_m": 1.0,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "Pintle or turret",
+          "caliber_mm": 7.62,
+          "type": "machine_gun",
+          "options": [
+            "7.62mm GPMG",
+            "12.7mm M2HB",
+            "20mm cannon"
+          ]
+        }
+      },
+      "protection": {
+        "armor_type": "steel",
+        "stanag_level": "4569 Level 2",
+        "mine_protection": "21kg TNT under any wheel",
+        "ied_protection": "V-hull double floor",
+        "nbc_protection": false,
+        "notes": "Legendary mine protection"
+      },
+      "sensors_and_fcs": {
+        "commander_sight": {
+          "type": "Basic",
+          "thermal": false
+        }
+      },
+      "signature": {
+        "smoke_grenade_launchers": 0
+      },
+      "unit_cost_usd": 350000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Casspir",
+        "Army Recognition"
+      ],
+      "notes": "Legendary MRAP. Border War developed. 21kg mine survival. Influenced all modern MRAPs. Mk4 upgraded version available.",
+      "year": 1980
+    }
+  ]
+}

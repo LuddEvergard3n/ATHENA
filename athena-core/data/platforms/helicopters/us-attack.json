@@ -1,0 +1,561 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-22",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "Boeing",
+      "Bell",
+      "US Army"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-ah64e",
+      "name": "AH-64E Apache Guardian",
+      "nato_name": null,
+      "type": "attack_helicopter",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 2011,
+        "first_flight": 2009,
+        "retired": null,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 690,
+            "variants": [
+              "AH-64D",
+              "AH-64E"
+            ],
+            "status": "active",
+            "notes": "US Army"
+          },
+          {
+            "country": "UK",
+            "quantity": 50,
+            "variants": [
+              "AH-64E"
+            ],
+            "status": "active",
+            "notes": "Army Air Corps"
+          },
+          {
+            "country": "IL",
+            "quantity": 48,
+            "variants": [
+              "AH-64D Saraf"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "NL",
+            "quantity": 28,
+            "variants": [
+              "AH-64D"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "JP",
+            "quantity": 50,
+            "variants": [
+              "AH-64D"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 46,
+            "variants": [
+              "AH-64D"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "GR",
+            "quantity": 29,
+            "variants": [
+              "AH-64D"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 70,
+            "variants": [
+              "AH-64E"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 30,
+            "variants": [
+              "AH-64D"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "quantity": 36,
+            "variants": [
+              "AH-64E"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "TW",
+            "quantity": 30,
+            "variants": [
+              "AH-64E"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 22,
+            "variants": [
+              "AH-64E"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "ID",
+            "quantity": 8,
+            "variants": [
+              "AH-64E"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "QA",
+            "quantity": 24,
+            "variants": [
+              "AH-64E"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "KW",
+            "quantity": 16,
+            "variants": [
+              "AH-64D"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "SG",
+            "quantity": 20,
+            "variants": [
+              "AH-64D"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "MA",
+            "quantity": 24,
+            "variants": [
+              "AH-64E"
+            ],
+            "status": "ordered"
+          },
+          {
+            "country": "PL",
+            "quantity": 96,
+            "variants": [
+              "AH-64E"
+            ],
+            "status": "ordered"
+          }
+        ],
+        "notes": "2400+ total Apache family, 17+ operators"
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 17.73,
+        "rotor_diameter_m": 14.63,
+        "height_m": 3.87,
+        "empty_weight_kg": 5165,
+        "max_takeoff_weight_kg": 10433,
+        "internal_fuel_kg": 1421
+      },
+      "performance": {
+        "max_speed_kmh": 293,
+        "cruise_speed_kmh": 265,
+        "combat_radius_km": 480,
+        "ferry_range_km": 1900,
+        "service_ceiling_m": 6400,
+        "rate_of_climb_mps": 12.7,
+        "hover_ceiling_ige_m": 4570,
+        "hover_ceiling_oge_m": 3505
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "General Electric T700-GE-701D",
+        "power_shp": 2000,
+        "notes": "Upgraded engines for hot/high performance"
+      },
+      "avionics": {
+        "radar": "AN/APG-78 Longbow FCR",
+        "radar_range_km": 8,
+        "radar_targets": 128,
+        "flir": "AN/AAQ-11 TADS/PNVS (M-TADS on E)",
+        "ew_suite": "AN/APR-39A(V)4 RWR, AN/AVR-2B LWR",
+        "datalink": "Link 16, Longbow data modem",
+        "helmet_mounted_display": "IHADSS",
+        "sensor_fusion": true,
+        "notes": "Mast-mounted Longbow radar, fire-and-forget capability"
+      },
+      "armament": {
+        "gun": {
+          "type": "M230 Chain Gun",
+          "caliber_mm": 30,
+          "rounds": 1200,
+          "rate_of_fire_rpm": 625,
+          "notes": "Slaved to helmet sight"
+        },
+        "missiles": {
+          "atgm": [
+            "AGM-114 Hellfire (16)",
+            "AGM-179 JAGM"
+          ],
+          "aam": [
+            "AIM-92 Stinger (4)",
+            "AIM-9X (with integration)"
+          ]
+        },
+        "rockets": {
+          "type": "Hydra 70mm",
+          "pods": 4,
+          "total_rockets": 76,
+          "guided_option": "APKWS"
+        },
+        "hardpoints": 4,
+        "max_payload_kg": 771
+      },
+      "survivability": {
+        "armor": "Kevlar composite, ballistic tolerant",
+        "crew_protection": "Blast-attenuating seats, armored crew stations",
+        "redundant_systems": true,
+        "ir_suppression": "Black Hole HIRSS",
+        "notes": "Designed to survive 23mm hits"
+      },
+      "variants": [
+        {
+          "designation": "AH-64A",
+          "notes": "Original, retired from US service"
+        },
+        {
+          "designation": "AH-64D Longbow",
+          "notes": "Longbow radar, glass cockpit"
+        },
+        {
+          "designation": "AH-64E Guardian",
+          "notes": "Current production, improved engines, UAS control"
+        },
+        {
+          "designation": "AH-64E v6",
+          "notes": "Latest, enhanced sensors and networks"
+        }
+      ],
+      "unit_cost_usd": 35500000,
+      "cost_year": 2023,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "US Army",
+        "Jane's"
+      ],
+      "notes": "World's most capable attack helicopter. Longbow radar enables fire-and-forget. Gulf War: destroyed 500+ Iraqi armored vehicles. Iraq/Afghanistan extensive combat. Can control UAVs (manned-unmanned teaming).",
+      "year": 2011
+    },
+    {
+      "id": "us-ah1z",
+      "name": "AH-1Z Viper",
+      "nato_name": null,
+      "type": "attack_helicopter",
+      "country_of_origin": "US",
+      "manufacturer": "Bell",
+      "service_history": {
+        "introduced": 2010,
+        "first_flight": 2000,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 189,
+            "status": "active",
+            "notes": "USMC"
+          },
+          {
+            "country": "BH",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "CZ",
+            "quantity": 8,
+            "status": "ordered"
+          },
+          {
+            "country": "NG",
+            "quantity": 12,
+            "status": "ordered"
+          },
+          {
+            "country": "SK",
+            "quantity": 12,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 17.8,
+        "rotor_diameter_m": 14.6,
+        "height_m": 4.4,
+        "empty_weight_kg": 5580,
+        "max_takeoff_weight_kg": 8390,
+        "internal_fuel_kg": 1520
+      },
+      "performance": {
+        "max_speed_kmh": 411,
+        "cruise_speed_kmh": 296,
+        "combat_radius_km": 231,
+        "ferry_range_km": 685,
+        "service_ceiling_m": 6100,
+        "rate_of_climb_mps": 14.2
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "General Electric T700-GE-401C",
+        "power_shp": 1800
+      },
+      "avionics": {
+        "radar": null,
+        "flir": "AN/AAQ-30 Hawkeye TSS",
+        "ew_suite": "AN/APR-39 RWR, AN/ALE-47 CM",
+        "helmet_mounted_display": "JHMCS II",
+        "datalink": "Link 16"
+      },
+      "armament": {
+        "gun": {
+          "type": "M197 Gatling Gun",
+          "caliber_mm": 20,
+          "rounds": 750,
+          "rate_of_fire_rpm": 750
+        },
+        "missiles": {
+          "atgm": [
+            "AGM-114 Hellfire (16)",
+            "AGM-179 JAGM"
+          ],
+          "aam": [
+            "AIM-9 Sidewinder (2)"
+          ]
+        },
+        "rockets": {
+          "type": "Hydra 70mm / Zuni 127mm",
+          "total_rockets": 76
+        },
+        "hardpoints": 6
+      },
+      "survivability": {
+        "armor": "Ballistic tolerant structure",
+        "self_sealing_fuel_tanks": true,
+        "notes": "85% commonality with UH-1Y"
+      },
+      "variants": [
+        {
+          "designation": "AH-1W SuperCobra",
+          "notes": "Predecessor, retired 2020"
+        },
+        {
+          "designation": "AH-1Z Viper",
+          "notes": "Current, 4-blade rotor"
+        }
+      ],
+      "unit_cost_usd": 31000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Bell",
+        "USMC",
+        "Jane's"
+      ],
+      "notes": "USMC primary attack helicopter. Marinized for shipboard ops. Evolved from AH-1 Cobra lineage. 85% parts commonality with UH-1Y Venom. Faster than Apache but no radar.",
+      "year": 2010
+    },
+    {
+      "id": "us-oh58d",
+      "name": "OH-58D Kiowa Warrior",
+      "nato_name": null,
+      "type": "armed_reconnaissance",
+      "country_of_origin": "US",
+      "manufacturer": "Bell",
+      "service_history": {
+        "introduced": 1985,
+        "first_flight": 1983,
+        "retired": 2017,
+        "production_count": 507,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 0,
+            "status": "retired",
+            "notes": "Retired 2017, replaced by AH-64E"
+          },
+          {
+            "country": "TW",
+            "quantity": 39,
+            "status": "active"
+          },
+          {
+            "country": "HR",
+            "quantity": 16,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 15,
+            "status": "retired"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 12.98,
+        "rotor_diameter_m": 10.67,
+        "empty_weight_kg": 1814,
+        "max_takeoff_weight_kg": 2495
+      },
+      "performance": {
+        "max_speed_kmh": 241,
+        "cruise_speed_kmh": 204,
+        "combat_radius_km": 299,
+        "service_ceiling_m": 4575
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Rolls-Royce 250-C30R/3",
+        "power_shp": 650
+      },
+      "avionics": {
+        "sensor_suite": "Mast-Mounted Sight (MMS)",
+        "flir": true,
+        "laser_designator": true
+      },
+      "armament": {
+        "gun": {
+          "type": "M296 .50 cal",
+          "caliber_mm": 12.7
+        },
+        "missiles": {
+          "atgm": [
+            "AGM-114 Hellfire (4)"
+          ],
+          "aam": [
+            "AIM-92 Stinger (2)"
+          ]
+        },
+        "rockets": {
+          "type": "Hydra 70mm",
+          "total_rockets": 14
+        }
+      },
+      "unit_cost_usd": 6000000,
+      "cost_year": 1995,
+      "confidence": "high",
+      "sources": [
+        "Bell",
+        "US Army",
+        "Jane's"
+      ],
+      "notes": "Armed scout helicopter. Mast-mounted sight for NOE observation. Extensive Iraq/Afghanistan combat. Retired from US service 2017 (mission absorbed by AH-64E). Still operated by Taiwan, Croatia.",
+      "year": 1985
+    },
+    {
+      "id": "us-rah66",
+      "name": "RAH-66 Comanche",
+      "nato_name": null,
+      "type": "stealth_reconnaissance_attack",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing-Sikorsky",
+      "service_history": {
+        "introduced": null,
+        "first_flight": 1996,
+        "retired": null,
+        "production_count": 2,
+        "operators": [],
+        "notes": "Program cancelled 2004"
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 14.28,
+        "rotor_diameter_m": 11.9,
+        "empty_weight_kg": 4218,
+        "max_takeoff_weight_kg": 7896
+      },
+      "performance": {
+        "max_speed_kmh": 328,
+        "cruise_speed_kmh": 306,
+        "combat_radius_km": 278,
+        "service_ceiling_m": 4566
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "LHTEC T800-LHT-801",
+        "power_shp": 1563
+      },
+      "avionics": {
+        "radar": "AN/APG-78 Longbow (option)",
+        "flir": "Integrated sensor suite",
+        "ew_suite": "Integrated defensive suite",
+        "stealth_features": true
+      },
+      "armament": {
+        "gun": {
+          "type": "XM301 20mm",
+          "caliber_mm": 20,
+          "rounds": 500,
+          "retractable": true
+        },
+        "missiles": {
+          "atgm": [
+            "AGM-114 Hellfire (internal bay)"
+          ],
+          "aam": [
+            "AIM-92 Stinger"
+          ]
+        }
+      },
+      "stealth": {
+        "rcs_reduction": "Faceted fuselage",
+        "internal_weapons_bay": true,
+        "ir_suppression": true,
+        "notes": "First stealth helicopter, 360x lower RCS than Apache"
+      },
+      "unit_cost_usd": 59000000,
+      "cost_year": 2004,
+      "confidence": "medium",
+      "sources": [
+        "Boeing",
+        "US Army",
+        "Jane's"
+      ],
+      "notes": "CANCELLED. World's first stealth helicopter. Internal weapons bays, faceted design. $7B spent before cancellation. Technology transferred to other programs (stealth Black Hawks used in Bin Laden raid).",
+      "year": 2004
+    }
+  ]
+}

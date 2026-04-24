@@ -1,0 +1,823 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "cn-type96",
+      "name": "Type 96 (ZTZ-96)",
+      "type": "mbt",
+      "country_of_origin": "CN",
+      "manufacturer": "NORINCO / First Inner Mongolia Machinery Factory",
+      "service_history": {
+        "introduced": 1997,
+        "retired": null,
+        "production_count": 2500,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 2500,
+            "variants": [
+              "Type 96",
+              "Type 96A",
+              "Type 96B"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "SD",
+            "quantity": 100,
+            "variants": [
+              "Type 96"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 42500,
+        "length_m": 6.33,
+        "length_gun_forward_m": 10.65,
+        "width_m": 3.3,
+        "height_m": 2.3,
+        "ground_clearance_m": 0.48
+      },
+      "mobility": {
+        "engine": {
+          "model": "12150L7BW",
+          "type": "diesel",
+          "power_hp": 730,
+          "power_kw": 544
+        },
+        "power_to_weight_hp_ton": 17.2,
+        "transmission": "Manual, 7 forward, 1 reverse",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 57,
+        "max_speed_offroad_kmh": 40,
+        "max_speed_reverse_kmh": 9,
+        "range_road_km": 400,
+        "fuel_capacity_liters": 1000,
+        "fording_depth_m": 1.4,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.7,
+        "vertical_obstacle_m": 0.8,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "ZPT-98",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1730,
+          "effective_range_m": 3000,
+          "ammunition_carried": 42,
+          "ammunition_ready": 22,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "DTW-125",
+              "penetration_mm_rha": 500,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "Type 85-II HEAT",
+              "penetration_mm_rha": 500,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE-FRAG",
+              "designation": "Type 96 HE",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 3500
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "QJC-88 (W85)",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 500
+          },
+          {
+            "designation": "Type 86",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2500
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite",
+        "armor_composition": "Steel with modular composite inserts",
+        "protection_front_turret_mm_rha": 450,
+        "protection_front_hull_mm_rha": 400,
+        "protection_side_mm_rha": 80,
+        "protection_rear_mm_rha": 40,
+        "protection_top_mm_rha": 30,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "turret_ring",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "ISFCS-212",
+        "gunner_sight": {
+          "type": "TGCS-96",
+          "day_magnification": "3x/8x",
+          "thermal": false
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 5000,
+        "ballistic_computer": true,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "81mm"
+      },
+      "unit_cost_usd": 1500000,
+      "cost_year": 2000,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Type 96 tank",
+        "GlobalSecurity Type 96",
+        "Military Factory Type 96"
+      ],
+      "notes": "Domestic Type 85-IIM derivative. Backbone of PLA armored force alongside Type 96A/B. Low cost alternative to Type 99.",
+      "year": 1997
+    },
+    {
+      "id": "cn-type96a",
+      "name": "Type 96A (ZTZ-96A)",
+      "type": "mbt",
+      "country_of_origin": "CN",
+      "manufacturer": "NORINCO",
+      "service_history": {
+        "introduced": 2006,
+        "retired": null,
+        "production_count": 1500,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 1500,
+            "variants": [
+              "Type 96A",
+              "Type 96G"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 43000,
+        "length_m": 6.33,
+        "length_gun_forward_m": 10.65,
+        "width_m": 3.3,
+        "height_m": 2.3,
+        "ground_clearance_m": 0.48
+      },
+      "mobility": {
+        "engine": {
+          "model": "12150ZL",
+          "type": "diesel",
+          "power_hp": 800,
+          "power_kw": 597
+        },
+        "power_to_weight_hp_ton": 18.6,
+        "transmission": "Manual, 7 forward, 1 reverse",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 60,
+        "max_speed_offroad_kmh": 40,
+        "max_speed_reverse_kmh": 9,
+        "range_road_km": 400,
+        "fuel_capacity_liters": 1000,
+        "fording_depth_m": 1.4,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.7,
+        "vertical_obstacle_m": 0.8,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "ZPT-98",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1730,
+          "effective_range_m": 3500,
+          "ammunition_carried": 42,
+          "ammunition_ready": 22,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "DTW-125 Type II",
+              "penetration_mm_rha": 600,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "Type 96A HEAT",
+              "penetration_mm_rha": 500,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "ATGM",
+              "designation": "GP125",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "QJC-88",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 500
+          },
+          {
+            "designation": "Type 86",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2500
+          }
+        ],
+        "atgm": {
+          "designation": "GP125 (Invar-type)",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "Welded turret with FY-4 ERA",
+        "protection_front_turret_mm_rha": 600,
+        "protection_front_hull_mm_rha": 500,
+        "protection_side_mm_rha": 120,
+        "protection_rear_mm_rha": 45,
+        "protection_top_mm_rha": 35,
+        "era_coverage": "Turret front/sides, glacis",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "turret_ring",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "ISFCS-212B",
+        "commander_sight": {
+          "type": "TCS-2 Electro-optical",
+          "day_magnification": "8x",
+          "thermal": false,
+          "independent": false
+        },
+        "gunner_sight": {
+          "type": "BGTS-212B",
+          "day_magnification": "3x/8x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 5000,
+        "ballistic_computer": true,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "81mm",
+        "ir_signature_reduction": false
+      },
+      "unit_cost_usd": 1800000,
+      "cost_year": 2010,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Type 96 tank",
+        "GlobalSecurity Type 96A",
+        "Army Recognition Type 96A"
+      ],
+      "notes": "Third-generation upgrade. FY-4 arrow-shaped ERA. TCS-2 laser defense system (Shtora-like). Thermal imager. ATGM capability added.",
+      "year": 2006
+    },
+    {
+      "id": "cn-type96b",
+      "name": "Type 96B (ZTZ-96B)",
+      "type": "mbt",
+      "country_of_origin": "CN",
+      "manufacturer": "NORINCO",
+      "service_history": {
+        "introduced": 2016,
+        "retired": null,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 500,
+            "variants": [
+              "Type 96B"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 44000,
+        "length_m": 6.33,
+        "length_gun_forward_m": 10.65,
+        "width_m": 3.3,
+        "height_m": 2.3,
+        "ground_clearance_m": 0.48
+      },
+      "mobility": {
+        "engine": {
+          "model": "12150ZLC",
+          "type": "diesel",
+          "power_hp": 1200,
+          "power_kw": 895
+        },
+        "power_to_weight_hp_ton": 27.3,
+        "transmission": "Automatic",
+        "suspension": "hydropneumatic",
+        "max_speed_road_kmh": 74,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 15,
+        "range_road_km": 450,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.4,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.7,
+        "vertical_obstacle_m": 0.8,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "ZPT-98 (improved)",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1730,
+          "effective_range_m": 4000,
+          "ammunition_carried": 42,
+          "ammunition_ready": 22,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "DTW-125 Type III",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "ATGM",
+              "designation": "GP125",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "QJC-02",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 500
+          },
+          {
+            "designation": "Type 86",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2500
+          }
+        ],
+        "atgm": {
+          "designation": "GP125",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "Improved composite with FY-4 ERA",
+        "protection_front_turret_mm_rha": 650,
+        "protection_front_hull_mm_rha": 550,
+        "protection_side_mm_rha": 150,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 40,
+        "era_coverage": "Turret, glacis, hull sides",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "turret_ring",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "ISFCS-212C",
+        "commander_sight": {
+          "type": "Panoramic",
+          "day_magnification": "4x/12x",
+          "thermal": false,
+          "independent": true
+        },
+        "gunner_sight": {
+          "type": "BGTS-212C",
+          "day_magnification": "3x/12x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 6000,
+        "ballistic_computer": true,
+        "battle_management_system": "Yes",
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "81mm"
+      },
+      "unit_cost_usd": 2200000,
+      "cost_year": 2016,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Type 96 tank",
+        "GlobalSecurity Type 96B",
+        "National Interest Type 96"
+      ],
+      "notes": "Latest Type 96 variant. 1200hp engine, hydropneumatic suspension, automatic transmission. High power-to-weight ratio (27.3 hp/ton). Intended to replace Type 59/69/79 as PLA backbone. Over 100 modifications from 96A.",
+      "year": 2016
+    },
+    {
+      "id": "cn-type99",
+      "name": "Type 99 (ZTZ-99)",
+      "type": "mbt",
+      "country_of_origin": "CN",
+      "manufacturer": "NORINCO",
+      "service_history": {
+        "introduced": 2001,
+        "retired": null,
+        "production_count": 600,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 600,
+            "variants": [
+              "Type 99",
+              "Type 99G"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 54000,
+        "length_m": 7.0,
+        "length_gun_forward_m": 11.0,
+        "width_m": 3.5,
+        "height_m": 2.35,
+        "ground_clearance_m": 0.47
+      },
+      "mobility": {
+        "engine": {
+          "model": "150HB",
+          "type": "diesel",
+          "power_hp": 1200,
+          "power_kw": 895
+        },
+        "power_to_weight_hp_ton": 22.2,
+        "transmission": "Semi-automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 48,
+        "max_speed_reverse_kmh": 12,
+        "range_road_km": 450,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.4,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.7,
+        "vertical_obstacle_m": 0.85,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "ZPT-98",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 50,
+          "type": "smoothbore",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1780,
+          "effective_range_m": 4000,
+          "ammunition_carried": 42,
+          "ammunition_ready": 22,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "DTW-125 Type II",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "Type 99 HEAT",
+              "penetration_mm_rha": 500,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "ATGM",
+              "designation": "GP125 (9M119 type)",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "QJC-88",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 300
+          },
+          {
+            "designation": "Type 86",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "GP125",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "Welded turret with 3rd gen ERA",
+        "protection_front_turret_mm_rha": 800,
+        "protection_front_hull_mm_rha": 700,
+        "protection_side_mm_rha": 200,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 40,
+        "era_coverage": "Turret front/sides, glacis, storage baskets",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "turret_ring",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "ISFCS-212",
+        "commander_sight": {
+          "type": "CITV",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "BGTS",
+          "day_magnification": "5x/11.4x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 5000,
+        "ballistic_computer": true,
+        "battle_management_system": "Yes",
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "81mm"
+      },
+      "unit_cost_usd": 2500000,
+      "cost_year": 2001,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Type 99 tank",
+        "GlobalSecurity Type 99",
+        "Army Technology ZTZ-99",
+        "Military Factory Type 99"
+      ],
+      "notes": "China's first 3rd gen MBT. Based on T-72 chassis with Western-style welded turret. Hunter-killer capability. Deployed with elite units due to high cost. Type 99G added improved ERA and electro-optical countermeasures.",
+      "year": 2001
+    },
+    {
+      "id": "cn-type99a",
+      "name": "Type 99A (ZTZ-99A)",
+      "type": "mbt",
+      "country_of_origin": "CN",
+      "manufacturer": "NORINCO",
+      "service_history": {
+        "introduced": 2011,
+        "retired": null,
+        "production_count": 600,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 600,
+            "variants": [
+              "Type 99A",
+              "Type 99A2"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 58000,
+        "length_m": 7.3,
+        "length_gun_forward_m": 10.92,
+        "width_m": 3.37,
+        "height_m": 2.4,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "150HB-2",
+          "type": "diesel",
+          "power_hp": 1500,
+          "power_kw": 1119
+        },
+        "power_to_weight_hp_ton": 25.9,
+        "transmission": "Semi-automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 80,
+        "max_speed_offroad_kmh": 55,
+        "max_speed_reverse_kmh": 15,
+        "range_road_km": 600,
+        "fuel_capacity_liters": 1500,
+        "fording_depth_m": 1.4,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.7,
+        "vertical_obstacle_m": 0.85,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "ZPT-98 (improved)",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 50,
+          "type": "smoothbore",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 15,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "rate_of_fire_rpm": 10,
+          "muzzle_velocity_ms": 1780,
+          "effective_range_m": 5000,
+          "ammunition_carried": 42,
+          "ammunition_ready": 22,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "DTC10-125",
+              "penetration_mm_rha": 960,
+              "penetration_range_m": 1000
+            },
+            {
+              "type": "APFSDS",
+              "designation": "DTC10-125",
+              "penetration_mm_rha": 800,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "ATGM",
+              "designation": "GP125 (Invar-M type)",
+              "penetration_mm_rha": 850,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "QJC-88",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 300
+          },
+          {
+            "designation": "Type 86",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "GP125 (Invar-M type)",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "New turret design with Relikt-type ERA",
+        "protection_front_turret_mm_rha": 1000,
+        "protection_front_hull_mm_rha": 800,
+        "protection_side_mm_rha": 300,
+        "protection_rear_mm_rha": 60,
+        "protection_top_mm_rha": 60,
+        "era_coverage": "Full turret, glacis, hull sides with 3rd gen ERA",
+        "aps": {
+          "system": "GL-5 (indigenous)",
+          "type": "hard-kill",
+          "coverage_deg": 360
+        },
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "turret_ring",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "ISFCS-212A",
+        "commander_sight": {
+          "type": "CITV (3rd gen)",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "BGTS (3rd gen)",
+          "day_magnification": "5x/11.4x",
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 6000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": true,
+        "battle_management_system": "Integrated digital C4I",
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true,
+        "driver_vision": {
+          "thermal": true
+        }
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "81mm",
+        "ir_signature_reduction": true
+      },
+      "unit_cost_usd": 2500000,
+      "cost_year": 2015,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Type 99 tank",
+        "Army Recognition Type 99A",
+        "GlobalSecurity Type 99",
+        "Tank Encyclopedia Type 99"
+      ],
+      "notes": "Most advanced Chinese MBT. Completely redesigned turret with lower profile. GL-5 hard-kill APS. DTC10-125 APFSDS with self-sharpening penetrator (claimed 960mm @ 1km). 1500hp engine, 80 km/h road speed. ~1200 total Type 99/99A in service.",
+      "year": 2011
+    }
+  ]
+}

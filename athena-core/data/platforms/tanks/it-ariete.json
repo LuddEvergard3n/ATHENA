@@ -1,0 +1,376 @@
+{
+  "platforms": [
+    {
+      "id": "c1-ariete",
+      "name": "C1 Ariete",
+      "country": "IT",
+      "manufacturer": "Iveco Fiat - Oto Melara",
+      "type": "main_battle_tank",
+      "role": "armored warfare",
+      "introduced": 1995,
+      "status": "active",
+      "crew": 4,
+      "specifications": {
+        "weight": {"value": 54.0, "unit": "tons"},
+        "length": {"value": 9.67, "unit": "m", "note": "with gun forward"},
+        "width": {"value": 3.60, "unit": "m"},
+        "height": {"value": 2.50, "unit": "m"},
+        "ground_clearance": {"value": 0.44, "unit": "m"},
+        "track_width": {"value": 610, "unit": "mm"}
+      },
+      "mobility": {
+        "engine": "Iveco V12 MTCA diesel",
+        "power": {"value": 1250, "unit": "hp"},
+        "power_to_weight": {"value": 23.1, "unit": "hp/ton"},
+        "transmission": "automatic, 4 forward, 2 reverse",
+        "max_speed_road": {"value": 65, "unit": "km/h"},
+        "max_speed_offroad": {"value": 45, "unit": "km/h"},
+        "range_road": {"value": 550, "unit": "km"},
+        "range_offroad": {"value": 350, "unit": "km"},
+        "fuel_capacity": {"value": 1200, "unit": "liters"},
+        "gradient": {"value": 60, "unit": "%"},
+        "side_slope": {"value": 30, "unit": "%"},
+        "vertical_obstacle": {"value": 1.0, "unit": "m"},
+        "trench": {"value": 3.0, "unit": "m"},
+        "fording": {"value": 1.2, "unit": "m"},
+        "fording_prepared": {"value": 4.0, "unit": "m", "note": "with snorkel"}
+      },
+      "armament": {
+        "main_gun": {
+          "designation": "OTO Melara 120/44",
+          "caliber": {"value": 120, "unit": "mm"},
+          "length": "L/44",
+          "elevation": {"min": -9, "max": 20, "unit": "degrees"},
+          "traverse": {"value": 360, "unit": "degrees"},
+          "rotation_speed": {"value": 40, "unit": "deg/s"},
+          "rate_of_fire": {"value": 9, "unit": "rounds/min"},
+          "ammunition_stowage": 42,
+          "ammunition_types": ["APFSDS", "HEAT-MP", "HE"]
+        },
+        "secondary": [
+          {
+            "designation": "MG 42/59",
+            "caliber": {"value": 7.62, "unit": "mm"},
+            "mount": "coaxial",
+            "ammunition": 2500
+          },
+          {
+            "designation": "MG 42/59",
+            "caliber": {"value": 7.62, "unit": "mm"},
+            "mount": "commander's cupola",
+            "ammunition": 1500
+          }
+        ],
+        "smoke_grenade_launchers": {
+          "type": "Wegmann 76mm",
+          "quantity": 8
+        }
+      },
+      "protection": {
+        "armor_type": "composite armor (similar to British Chobham)",
+        "frontal_arc": {"value": "550-600", "unit": "mm RHAe", "note": "estimated vs APFSDS"},
+        "turret_front": {"value": "600-700", "unit": "mm RHAe", "note": "estimated"},
+        "hull_front": {"value": "550-600", "unit": "mm RHAe", "note": "estimated"},
+        "turret_sides": {"value": "200-250", "unit": "mm RHAe"},
+        "hull_sides": {"value": "80-150", "unit": "mm RHAe"},
+        "active_protection": null,
+        "reactive_armor": null,
+        "nbc_protection": true,
+        "laser_warning": true
+      },
+      "sensors": {
+        "fire_control": "TURMS (Tank Universal Reconfigurable Modular System)",
+        "gunner_sight": {
+          "designation": "Galileo Avionica TURMS",
+          "magnification": "3x/10x",
+          "stabilized": true
+        },
+        "commander_sight": {
+          "designation": "panoramic sight",
+          "independent": true,
+          "thermal": true
+        },
+        "thermal_imaging": {
+          "gunner": "integrated",
+          "commander": "integrated"
+        },
+        "laser_rangefinder": {
+          "type": "Nd:YAG",
+          "range": {"value": 5000, "unit": "m"}
+        },
+        "ballistic_computer": true,
+        "hunter_killer": true,
+        "battlefield_management": "SICCONA"
+      },
+      "operational": {
+        "unit_cost": {"value": 7.5, "unit": "million USD", "year": 2020},
+        "units_produced": 200,
+        "operators": ["Italy"],
+        "combat_history": [],
+        "notes": [
+          "Only MBT designed and produced entirely in Italy",
+          "Never used in combat operations",
+          "Considered undergunned compared to contemporary tanks",
+          "Excellent fire control system for its time"
+        ]
+      },
+      "sources": [
+        "Jane's Tanks and Combat Vehicles Recognition Guide",
+        "IISS Military Balance 2023",
+        "Italian Army official specifications"
+      ]
+    },
+    {
+      "id": "c1-ariete-pso",
+      "name": "C1 Ariete PSO",
+      "country": "IT",
+      "manufacturer": "Leonardo (formerly Oto Melara)",
+      "type": "main_battle_tank",
+      "role": "urban warfare",
+      "introduced": 2010,
+      "status": "prototype",
+      "crew": 4,
+      "specifications": {
+        "weight": {"value": 59.0, "unit": "tons", "note": "with PSO kit"},
+        "length": {"value": 9.67, "unit": "m", "note": "with gun forward"},
+        "width": {"value": 3.80, "unit": "m", "note": "with PSO modules"},
+        "height": {"value": 2.50, "unit": "m"},
+        "ground_clearance": {"value": 0.44, "unit": "m"},
+        "track_width": {"value": 610, "unit": "mm"}
+      },
+      "mobility": {
+        "engine": "Iveco V12 MTCA diesel",
+        "power": {"value": 1250, "unit": "hp"},
+        "power_to_weight": {"value": 21.2, "unit": "hp/ton"},
+        "transmission": "automatic, 4 forward, 2 reverse",
+        "max_speed_road": {"value": 60, "unit": "km/h", "note": "reduced due to weight"},
+        "max_speed_offroad": {"value": 40, "unit": "km/h"},
+        "range_road": {"value": 500, "unit": "km"},
+        "range_offroad": {"value": 300, "unit": "km"},
+        "fuel_capacity": {"value": 1200, "unit": "liters"},
+        "gradient": {"value": 60, "unit": "%"},
+        "side_slope": {"value": 30, "unit": "%"},
+        "vertical_obstacle": {"value": 1.0, "unit": "m"},
+        "trench": {"value": 3.0, "unit": "m"},
+        "fording": {"value": 1.2, "unit": "m"},
+        "fording_prepared": {"value": 4.0, "unit": "m"}
+      },
+      "armament": {
+        "main_gun": {
+          "designation": "OTO Melara 120/44",
+          "caliber": {"value": 120, "unit": "mm"},
+          "length": "L/44",
+          "elevation": {"min": -9, "max": 20, "unit": "degrees"},
+          "traverse": {"value": 360, "unit": "degrees"},
+          "rotation_speed": {"value": 40, "unit": "deg/s"},
+          "rate_of_fire": {"value": 9, "unit": "rounds/min"},
+          "ammunition_stowage": 42,
+          "ammunition_types": ["APFSDS", "HEAT-MP", "HE", "Canister"]
+        },
+        "secondary": [
+          {
+            "designation": "MG 42/59",
+            "caliber": {"value": 7.62, "unit": "mm"},
+            "mount": "coaxial",
+            "ammunition": 2500
+          },
+          {
+            "designation": "Hitrole-G RWS",
+            "caliber": {"value": 12.7, "unit": "mm"},
+            "mount": "remote weapon station",
+            "ammunition": 500
+          }
+        ],
+        "smoke_grenade_launchers": {
+          "type": "Wegmann 76mm",
+          "quantity": 12
+        }
+      },
+      "protection": {
+        "armor_type": "composite + PSO kit (Peace Support Operations)",
+        "frontal_arc": {"value": "600-650", "unit": "mm RHAe", "note": "with PSO modules"},
+        "turret_front": {"value": "650-750", "unit": "mm RHAe", "note": "with add-on armor"},
+        "hull_front": {"value": "600-650", "unit": "mm RHAe", "note": "with add-on armor"},
+        "turret_sides": {"value": "300-350", "unit": "mm RHAe", "note": "with cage armor"},
+        "hull_sides": {"value": "200-250", "unit": "mm RHAe", "note": "with side skirts"},
+        "active_protection": null,
+        "reactive_armor": "optional ERA blocks",
+        "nbc_protection": true,
+        "laser_warning": true,
+        "special_features": [
+          "360° camera system",
+          "Anti-sniper detection system",
+          "IED jammers",
+          "Dozer blade attachment points"
+        ]
+      },
+      "sensors": {
+        "fire_control": "TURMS enhanced",
+        "gunner_sight": {
+          "designation": "Galileo Avionica TURMS",
+          "magnification": "3x/10x",
+          "stabilized": true
+        },
+        "commander_sight": {
+          "designation": "ATTILA-D panoramic",
+          "independent": true,
+          "thermal": true
+        },
+        "thermal_imaging": {
+          "gunner": "3rd gen CATHERINE",
+          "commander": "3rd gen CATHERINE"
+        },
+        "laser_rangefinder": {
+          "type": "Nd:YAG",
+          "range": {"value": 5000, "unit": "m"}
+        },
+        "ballistic_computer": true,
+        "hunter_killer": true,
+        "battlefield_management": "SICCONA enhanced",
+        "urban_warfare_systems": [
+          "Close-in situational awareness system",
+          "Infantry phone",
+          "Public address system"
+        ]
+      },
+      "operational": {
+        "unit_cost": {"value": 9.0, "unit": "million USD", "year": 2020, "note": "estimated"},
+        "units_produced": 0,
+        "operators": [],
+        "combat_history": [],
+        "notes": [
+          "Developed for urban and peace support operations",
+          "Never entered production",
+          "Demonstrated at various defense exhibitions",
+          "Influenced future Italian armor modernization programs"
+        ]
+      },
+      "sources": [
+        "Defense Update Magazine",
+        "Army Recognition",
+        "Leonardo company specifications"
+      ]
+    },
+    {
+      "id": "c1-ariete-amv",
+      "name": "C1 Ariete AMV",
+      "country": "IT",
+      "manufacturer": "Leonardo/CIO consortium",
+      "type": "main_battle_tank",
+      "role": "armored warfare",
+      "introduced": 2025,
+      "status": "development",
+      "crew": 4,
+      "specifications": {
+        "weight": {"value": 55.0, "unit": "tons", "note": "estimated"},
+        "length": {"value": 9.67, "unit": "m", "note": "with gun forward"},
+        "width": {"value": 3.60, "unit": "m"},
+        "height": {"value": 2.50, "unit": "m"},
+        "ground_clearance": {"value": 0.44, "unit": "m"},
+        "track_width": {"value": 610, "unit": "mm"}
+      },
+      "mobility": {
+        "engine": "upgraded powerpack (details classified)",
+        "power": {"value": 1500, "unit": "hp", "note": "target specification"},
+        "power_to_weight": {"value": 27.3, "unit": "hp/ton"},
+        "transmission": "automatic, enhanced",
+        "max_speed_road": {"value": 70, "unit": "km/h"},
+        "max_speed_offroad": {"value": 50, "unit": "km/h"},
+        "range_road": {"value": 600, "unit": "km"},
+        "range_offroad": {"value": 400, "unit": "km"},
+        "fuel_capacity": {"value": 1200, "unit": "liters"},
+        "gradient": {"value": 60, "unit": "%"},
+        "side_slope": {"value": 30, "unit": "%"},
+        "vertical_obstacle": {"value": 1.0, "unit": "m"},
+        "trench": {"value": 3.0, "unit": "m"},
+        "fording": {"value": 1.2, "unit": "m"},
+        "fording_prepared": {"value": 4.0, "unit": "m"}
+      },
+      "armament": {
+        "main_gun": {
+          "designation": "OTO Melara 120/55",
+          "caliber": {"value": 120, "unit": "mm"},
+          "length": "L/55",
+          "elevation": {"min": -9, "max": 20, "unit": "degrees"},
+          "traverse": {"value": 360, "unit": "degrees"},
+          "rotation_speed": {"value": 45, "unit": "deg/s"},
+          "rate_of_fire": {"value": 10, "unit": "rounds/min"},
+          "ammunition_stowage": 42,
+          "ammunition_types": ["APFSDS DM63", "HEAT-MP", "HE", "Programmable HE"]
+        },
+        "secondary": [
+          {
+            "designation": "FN MAG",
+            "caliber": {"value": 7.62, "unit": "mm"},
+            "mount": "coaxial",
+            "ammunition": 3000
+          },
+          {
+            "designation": "Hitrole-G RWS",
+            "caliber": {"value": 12.7, "unit": "mm"},
+            "mount": "remote weapon station",
+            "ammunition": 600
+          }
+        ],
+        "smoke_grenade_launchers": {
+          "type": "Multi-spectral",
+          "quantity": 12
+        }
+      },
+      "protection": {
+        "armor_type": "advanced modular composite",
+        "frontal_arc": {"value": "700-800", "unit": "mm RHAe", "note": "estimated with new modules"},
+        "turret_front": {"value": "800-900", "unit": "mm RHAe", "note": "estimated"},
+        "hull_front": {"value": "700-800", "unit": "mm RHAe", "note": "estimated"},
+        "turret_sides": {"value": "400-450", "unit": "mm RHAe"},
+        "hull_sides": {"value": "200-300", "unit": "mm RHAe"},
+        "active_protection": "Trophy or similar (under evaluation)",
+        "reactive_armor": "latest generation ERA",
+        "nbc_protection": true,
+        "laser_warning": true
+      },
+      "sensors": {
+        "fire_control": "Leonardo FCS (next generation)",
+        "gunner_sight": {
+          "designation": "LOTHAR",
+          "magnification": "variable",
+          "stabilized": true
+        },
+        "commander_sight": {
+          "designation": "JANUS panoramic",
+          "independent": true,
+          "thermal": true
+        },
+        "thermal_imaging": {
+          "gunner": "3rd gen high-resolution",
+          "commander": "3rd gen high-resolution"
+        },
+        "laser_rangefinder": {
+          "type": "eye-safe",
+          "range": {"value": 8000, "unit": "m"}
+        },
+        "ballistic_computer": true,
+        "hunter_killer": true,
+        "battlefield_management": "next-gen C4I system",
+        "ai_assistance": "target recognition and tracking"
+      },
+      "operational": {
+        "unit_cost": {"value": 10.0, "unit": "million USD", "year": 2025, "note": "projected"},
+        "units_produced": 0,
+        "operators": ["Italy (planned)"],
+        "combat_history": [],
+        "notes": [
+          "Mid-life update program for C1 Ariete",
+          "125 units planned for upgrade",
+          "Part of Italian Army modernization plan",
+          "Expected IOC 2027-2028"
+        ]
+      },
+      "sources": [
+        "Defense News",
+        "Italian MoD statements 2024",
+        "Leonardo press releases"
+      ]
+    }
+  ]
+}

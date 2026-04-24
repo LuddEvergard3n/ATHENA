@@ -1,0 +1,218 @@
+{
+  "category": "comms",
+  "subcategory": "tactical-radios",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31"
+  },
+  "platforms": [
+    {
+      "id": "us-prc117g",
+      "name": "AN/PRC-117G",
+      "type": "multiband-radio",
+      "country": "US",
+      "year": 2011,
+      "manufacturer": "L3Harris",
+      "specifications": {
+        "frequency": "30 MHz - 2 GHz",
+        "waveforms": ["SINCGARS", "HAVEQUICK", "SATCOM", "MUOS"],
+        "power_w": 20,
+        "weight_kg": 5.4,
+        "encryption": "Type 1"
+      },
+      "operators": ["US", "NATO", "AU", "Many"],
+      "notes": "Standard US tactical manpack radio"
+    },
+    {
+      "id": "us-prc152a",
+      "name": "AN/PRC-152A",
+      "type": "handheld-radio",
+      "country": "US",
+      "year": 2014,
+      "manufacturer": "L3Harris",
+      "specifications": {
+        "frequency": "30 MHz - 2 GHz",
+        "waveforms": ["SINCGARS", "HAVEQUICK", "Soldier Radio"],
+        "power_w": 5,
+        "weight_kg": 1.0
+      },
+      "operators": ["US", "Many NATO"],
+      "notes": "Advanced handheld multiband"
+    },
+    {
+      "id": "us-prc163",
+      "name": "AN/PRC-163",
+      "type": "handheld-radio",
+      "country": "US",
+      "year": 2020,
+      "manufacturer": "L3Harris",
+      "specifications": {
+        "frequency": "30 MHz - 2.5 GHz",
+        "waveforms": ["MUOS SATCOM", "TSM", "Full MBMMR"],
+        "networking": "Mesh capable",
+        "weight_kg": 0.9
+      },
+      "operators": ["US"],
+      "notes": "Latest US handheld, MUOS capable"
+    },
+    {
+      "id": "us-prc158",
+      "name": "AN/PRC-158 Manpack",
+      "type": "manpack-radio",
+      "country": "US",
+      "year": 2021,
+      "manufacturer": "L3Harris",
+      "specifications": {
+        "frequency": "2 MHz - 2.5 GHz",
+        "waveforms": ["All DOD standard"],
+        "power_w": 30,
+        "weight_kg": 6.0
+      },
+      "operators": ["US"],
+      "notes": "HMS manpack, 117G replacement"
+    },
+    {
+      "id": "uk-bowman",
+      "name": "Bowman (UK)",
+      "type": "tactical-system",
+      "country": "GB",
+      "year": 2004,
+      "manufacturer": "General Dynamics UK",
+      "specifications": {
+        "components": ["PRC-354 HH", "PRC-355 Manpack", "VRC-353 Vehicle"],
+        "frequency": "VHF/UHF",
+        "encryption": "FASCINATOR"
+      },
+      "operators": ["GB"],
+      "notes": "British tactical comms system"
+    },
+    {
+      "id": "uk-morpheus",
+      "name": "Morpheus (UK)",
+      "type": "tactical-system",
+      "country": "GB",
+      "year": 2024,
+      "manufacturer": "Various",
+      "specifications": {
+        "capability": "Software-defined, mesh networking"
+      },
+      "operators": ["GB"],
+      "notes": "Bowman replacement program"
+    },
+    {
+      "id": "ru-azart",
+      "name": "Azart (R-187P1)",
+      "type": "handheld-radio",
+      "country": "RU",
+      "year": 2015,
+      "manufacturer": "Angstrem",
+      "specifications": {
+        "frequency": "27 - 520 MHz",
+        "power_w": 5,
+        "encryption": "GOST",
+        "weight_kg": 0.7
+      },
+      "operators": ["RU"],
+      "notes": "Russian Ratnik program radio"
+    },
+    {
+      "id": "ru-p-260",
+      "name": "P-260 Aqueduct",
+      "type": "tactical-network",
+      "country": "RU",
+      "year": 2010,
+      "manufacturer": "Angstrem",
+      "specifications": {
+        "type": "Software-defined radio network",
+        "capability": "Voice, data, video"
+      },
+      "operators": ["RU"],
+      "notes": "Russian tactical network system"
+    },
+    {
+      "id": "fr-contact",
+      "name": "CONTACT Radio",
+      "type": "tactical-system",
+      "country": "FR",
+      "year": 2019,
+      "manufacturer": "Thales",
+      "specifications": {
+        "types": ["Handheld", "Manpack", "Vehicle"],
+        "networking": "Mesh, IP-based",
+        "waveforms": "Software-defined"
+      },
+      "operators": ["FR"],
+      "notes": "French next-gen tactical comms"
+    },
+    {
+      "id": "de-svg",
+      "name": "SEM 52SL (SVFuA)",
+      "type": "vehicle-radio",
+      "country": "DE",
+      "year": 2016,
+      "manufacturer": "Rohde & Schwarz",
+      "specifications": {
+        "frequency": "VHF/UHF",
+        "capability": "Voice, data, interoperability"
+      },
+      "operators": ["DE"],
+      "notes": "Bundeswehr vehicle radio system"
+    },
+    {
+      "id": "il-elbit-pnr1000",
+      "name": "Elbit PNR-1000",
+      "type": "handheld-radio",
+      "country": "IL",
+      "year": 2015,
+      "manufacturer": "Elbit Systems",
+      "specifications": {
+        "frequency": "VHF/UHF",
+        "networking": "Mesh capable"
+      },
+      "operators": ["IL", "Many export"],
+      "notes": "Israeli tactical radio"
+    },
+    {
+      "id": "cn-plc181",
+      "name": "PLC-181",
+      "type": "manpack-radio",
+      "country": "CN",
+      "year": 2015,
+      "manufacturer": "Various",
+      "specifications": {
+        "frequency": "HF/VHF/UHF",
+        "capability": "SDR, data"
+      },
+      "operators": ["CN"],
+      "notes": "PLA tactical radio"
+    },
+    {
+      "id": "tr-aselsan-9661",
+      "name": "ASELSAN 9661",
+      "type": "multiband-radio",
+      "country": "TR",
+      "year": 2018,
+      "manufacturer": "ASELSAN",
+      "specifications": {
+        "frequency": "30 MHz - 512 MHz",
+        "sdr": true
+      },
+      "operators": ["TR"],
+      "notes": "Turkish indigenous tactical radio"
+    },
+    {
+      "id": "in-sectra",
+      "name": "BEL Sectra",
+      "type": "tactical-radio",
+      "country": "IN",
+      "year": 2010,
+      "manufacturer": "BEL",
+      "specifications": {
+        "frequency": "VHF/UHF",
+        "encryption": "Indigenous"
+      },
+      "operators": ["IN"],
+      "notes": "Indian indigenous tactical radio"
+    }
+  ]
+}

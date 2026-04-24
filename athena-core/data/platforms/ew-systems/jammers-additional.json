@@ -1,0 +1,239 @@
+{
+  "platforms": [
+    {
+      "id": "uk-talisman-ecm",
+      "name": "Talisman ECM Suite",
+      "type": "aircraft_ecm",
+      "country_of_origin": "GB",
+      "manufacturer": "BAE Systems",
+      "service_entry": 2012,
+      "specifications": {
+        "frequency_coverage": "Wide band",
+        "jamming_techniques": ["Noise", "Deception", "DRFM"]
+      },
+      "platforms": ["Tornado GR.4", "Typhoon (planned)"],
+      "features": {
+        "digital_rf_memory": true,
+        "threat_library": true,
+        "automatic_response": true
+      },
+      "service_history": {
+        "introduced": 2012,
+        "status": "active",
+        "operators": [{"country": "GB"}]
+      },
+      "notes": "UK fast jet self-protection pod. DRFM-based. Used on Tornado in Libya."
+    },
+    {
+      "id": "us-dronedefender",
+      "name": "DroneDefender V2",
+      "type": "drone_jammer",
+      "country_of_origin": "US",
+      "manufacturer": "Battelle",
+      "service_entry": 2016,
+      "specifications": {
+        "weight_kg": 6.8,
+        "range_m": 400,
+        "frequencies": ["GPS L1/L2", "2.4 GHz", "5.8 GHz"],
+        "battery_hours": 5
+      },
+      "features": {
+        "rifle_form": true,
+        "directional": true,
+        "non_kinetic": true,
+        "effects": ["Forces landing", "Return to home", "Hover in place"]
+      },
+      "service_history": {
+        "introduced": 2016,
+        "status": "active",
+        "operators": ["US DoD", "DHS", "Allied nations"]
+      },
+      "unit_cost_usd": 30000,
+      "notes": "Handheld anti-drone rifle. Point and disrupt. Used to protect VIPs and bases."
+    },
+    {
+      "id": "us-dronebuster",
+      "name": "Dronebuster",
+      "type": "drone_jammer",
+      "country_of_origin": "US",
+      "manufacturer": "Flex Force / Radio Hill Technologies",
+      "service_entry": 2017,
+      "specifications": {
+        "weight_kg": 2.9,
+        "range_m": 1000,
+        "frequencies": ["GPS", "GLONASS", "ISM bands"],
+        "battery_hours": 3
+      },
+      "features": {
+        "pistol_grip": true,
+        "one_hand_operation": true,
+        "gps_spoof_capable": true
+      },
+      "service_history": {
+        "introduced": 2017,
+        "status": "active",
+        "operators": ["US Army", "US Navy"]
+      },
+      "unit_cost_usd": 15000,
+      "notes": "Lightweight one-handed drone jammer. Can spoof GPS to redirect drones."
+    },
+    {
+      "id": "lt-edgetech-eod",
+      "name": "EDM4S SkyWiper",
+      "type": "drone_jammer",
+      "country_of_origin": "LT",
+      "manufacturer": "NT Service / ECJAM",
+      "service_entry": 2020,
+      "specifications": {
+        "weight_kg": 5.5,
+        "range_m": 3000,
+        "frequencies": ["433 MHz", "900 MHz", "2.4 GHz", "5.8 GHz", "GPS/GLONASS"],
+        "battery_hours": 2
+      },
+      "service_history": {
+        "introduced": 2020,
+        "status": "active"
+      },
+      "combat_use": [
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "notes": "Lithuanian drone jammer. Widely used in Ukraine. 3km effective range."
+    },
+    {
+      "id": "au-droneshield-rfone",
+      "name": "DroneShield RfOne",
+      "type": "drone_detection_jammer",
+      "country_of_origin": "AU",
+      "manufacturer": "DroneShield",
+      "service_entry": 2018,
+      "specifications": {
+        "detection_range_km": 5,
+        "jamming_range_km": 2,
+        "coverage_deg": 360
+      },
+      "features": {
+        "ai_classification": true,
+        "drone_library": "1000+ signatures",
+        "modular": true
+      },
+      "service_history": {
+        "introduced": 2018,
+        "status": "active",
+        "operators": ["US DoD", "AU Defence", "NATO"]
+      },
+      "notes": "Australian C-UAS system. AI-based drone classification. Fixed or mobile."
+    },
+    {
+      "id": "ru-pole-21-gps",
+      "name": "Pole-21 GPS Jammer",
+      "type": "gps_jammer",
+      "country_of_origin": "RU",
+      "manufacturer": "Protek",
+      "service_entry": 2016,
+      "specifications": {
+        "range_km": 25,
+        "frequencies": "GPS L1/L2, GLONASS",
+        "coverage_deg": 360
+      },
+      "features": {
+        "area_denial": true,
+        "mobile": true,
+        "networked": true
+      },
+      "service_history": {
+        "introduced": 2016,
+        "status": "active"
+      },
+      "combat_use": [
+        {"conflict": "Syria", "year": 2016},
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "notes": "Russian GPS denial system. Creates GPS-denied zones. Widely deployed in Ukraine."
+    },
+    {
+      "id": "ru-shipunov-lesochek",
+      "name": "RP-377VM Lesochek",
+      "type": "ied_jammer",
+      "country_of_origin": "RU",
+      "manufacturer": "NII Vektor",
+      "service_entry": 2010,
+      "specifications": {
+        "weight_kg": 15,
+        "coverage_m": 50,
+        "frequencies": "Cell bands, RC frequencies"
+      },
+      "features": {
+        "vehicle_mounted": true,
+        "ied_protection": true,
+        "rcied_jamming": true
+      },
+      "service_history": {
+        "introduced": 2010,
+        "status": "active"
+      },
+      "notes": "Russian vehicle-mounted jammer. Protects against RCIED. Common on Russian vehicles."
+    },
+    {
+      "id": "us-thor-iii-jammer",
+      "name": "THOR III",
+      "type": "ied_jammer",
+      "country_of_origin": "US",
+      "manufacturer": "Sierra Nevada Corporation",
+      "service_entry": 2008,
+      "specifications": {
+        "weight_kg": 23,
+        "coverage": "Vehicle protection bubble"
+      },
+      "features": {
+        "vehicle_mounted": true,
+        "software_defined": true,
+        "upgradeable": true
+      },
+      "service_history": {
+        "introduced": 2008,
+        "status": "active"
+      },
+      "notes": "US CREW (Counter-RCIED) system. Evolved from Iraq/Afghanistan experience."
+    },
+    {
+      "id": "il-netline-c-guard",
+      "name": "C-Guard Micro",
+      "type": "personal_jammer",
+      "country_of_origin": "IL",
+      "manufacturer": "Netline Communications",
+      "service_entry": 2015,
+      "specifications": {
+        "weight_kg": 1.2,
+        "coverage_m": 30,
+        "battery_hours": 8
+      },
+      "features": {
+        "wearable": true,
+        "dismount_protection": true
+      },
+      "service_history": {
+        "introduced": 2015,
+        "status": "active"
+      },
+      "notes": "Israeli personal ECM. Worn by soldiers. Protects against RCIED on foot patrols."
+    },
+    {
+      "id": "cn-ceiec-jammer",
+      "name": "CEIEC Mobile Jamming Station",
+      "type": "strategic_jammer",
+      "country_of_origin": "CN",
+      "manufacturer": "CEIEC",
+      "service_entry": 2015,
+      "specifications": {
+        "range_km": 200,
+        "frequencies": "HF to SHF",
+        "platform": "Truck-mounted"
+      },
+      "service_history": {
+        "introduced": 2015,
+        "status": "active"
+      },
+      "notes": "Chinese strategic communications jammer. Theater-level effects."
+    }
+  ]
+}

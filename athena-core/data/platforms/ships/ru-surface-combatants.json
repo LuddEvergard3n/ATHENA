@@ -1,0 +1,223 @@
+{
+  "platforms": [
+    {
+      "id": "ru-project-22350-admiral-gorshkov",
+      "name": "Admiral Gorshkov-class (Project 22350)",
+      "type": "frigate",
+      "country_of_origin": "RU",
+      "manufacturer": "Severnaya Verf",
+      "service_entry": 2018,
+      "specifications": {
+        "displacement_tons": 5400,
+        "length_m": 135,
+        "beam_m": 16,
+        "draft_m": 4.5,
+        "crew": 210,
+        "max_speed_knots": 29,
+        "range_nm": 4500
+      },
+      "propulsion": {
+        "type": "CODAD",
+        "engines": "4x diesel engines",
+        "power_hp": 65000,
+        "note": "Replaced Ukrainian turbines with Russian diesels"
+      },
+      "armament": {
+        "vls": {
+          "type": "3S14 UKSK",
+          "cells": 16,
+          "missiles": [
+            "3M22 Zircon hypersonic (Mach 9, 1000km)",
+            "3M14 Kalibr cruise missile",
+            "P-800 Oniks ASCM"
+          ]
+        },
+        "sam": {
+          "type": "Redut VLS",
+          "cells": 32,
+          "missiles": ["9M96E/E2", "9M100"]
+        },
+        "gun": {
+          "type": "A-192M Armat",
+          "caliber": "130mm",
+          "range_km": 23
+        },
+        "ciws": "2x Palash CIWS",
+        "torpedo_tubes": "2x quadruple 324mm",
+        "helicopters": 1,
+        "helicopter_type": "Ka-27"
+      },
+      "sensors": {
+        "radar": "Poliment AESA (4 arrays)",
+        "sonar": "Zarya-3 bow sonar"
+      },
+      "service_history": {
+        "introduced": 2018,
+        "status": "active",
+        "built": 2,
+        "building": 6,
+        "ships": [
+          {"name": "Admiral Gorshkov", "status": "active"},
+          {"name": "Admiral Kasatonov", "status": "active"},
+          {"name": "Admiral Golovko", "status": "trials"},
+          {"name": "Admiral Isakov", "status": "building"}
+        ]
+      },
+      "unit_cost_usd": 500000000,
+      "notes": "Most modern Russian frigate. First ship to test Zircon hypersonic. Poliment radar is Russia's first shipboard AESA."
+    },
+    {
+      "id": "ru-project-1144-kirov",
+      "name": "Kirov-class (Project 1144 Orlan)",
+      "type": "battlecruiser",
+      "country_of_origin": "RU",
+      "manufacturer": "Baltic Shipyard",
+      "nato_name": "Kirov-class",
+      "service_entry": 1980,
+      "specifications": {
+        "displacement_tons": 28000,
+        "length_m": 252,
+        "beam_m": 28.5,
+        "draft_m": 9.1,
+        "crew": 710,
+        "max_speed_knots": 32,
+        "range": "Unlimited (nuclear)"
+      },
+      "propulsion": {
+        "type": "CONAS",
+        "reactors": "2x KN-3 nuclear",
+        "power_shp": 140000,
+        "note": "Nuclear + steam boost"
+      },
+      "armament": {
+        "ascm": "20x P-700 Granit (SS-N-19 Shipwreck)",
+        "sam_long": "96x S-300F Fort (SA-N-6)",
+        "sam_medium": "128x 3K95 Kinzhal (SA-N-9)",
+        "sam_ciws": "6x Kashtan CIWS",
+        "guns": "1x AK-130 twin 130mm",
+        "torpedo_tubes": "10x 533mm",
+        "asw_rockets": "1x RBU-12000",
+        "helicopters": 3
+      },
+      "service_history": {
+        "introduced": 1980,
+        "status": "active",
+        "built": 4,
+        "active": 1,
+        "ships": [
+          {"name": "Admiral Nakhimov", "hull": "ex-Kalinin", "status": "modernizing"},
+          {"name": "Pyotr Velikiy", "status": "active"},
+          {"name": "Admiral Lazarev", "status": "reserve"},
+          {"name": "Admiral Ushakov", "hull": "ex-Kirov", "status": "decommissioned"}
+        ]
+      },
+      "notes": "Largest surface combatants built since WWII (excluding carriers). Only Pyotr Velikiy operational. Nakhimov undergoing major modernization with Zircon."
+    },
+    {
+      "id": "ru-project-1143-5-kuznetsov",
+      "name": "Admiral Kuznetsov",
+      "type": "aircraft_carrier",
+      "country_of_origin": "RU",
+      "manufacturer": "Nikolayev South Shipyard",
+      "designation": "Project 1143.5",
+      "nato_name": "Kuznetsov-class",
+      "service_entry": 1990,
+      "specifications": {
+        "displacement_tons": 59000,
+        "length_m": 305,
+        "beam_m": 72,
+        "draft_m": 10.4,
+        "crew": 1960,
+        "max_speed_knots": 29,
+        "range_nm": 8500
+      },
+      "propulsion": {
+        "type": "Conventional",
+        "boilers": "8x steam boilers",
+        "turbines": "4x steam turbines",
+        "power_shp": 200000
+      },
+      "flight_operations": {
+        "type": "STOBAR",
+        "ski_jump_angle_deg": 12,
+        "aircraft_capacity": 41,
+        "typical_air_wing": [
+          "Su-33 Flanker-D",
+          "MiG-29K Fulcrum-D",
+          "Ka-27/Ka-31 helicopters"
+        ]
+      },
+      "armament": {
+        "ascm": "12x P-700 Granit (SS-N-19)",
+        "sam": "192x 3K95 Kinzhal",
+        "ciws": "8x Kashtan CIWS",
+        "gun": "6x AK-630"
+      },
+      "service_history": {
+        "introduced": 1990,
+        "status": "refitting",
+        "deployments": ["Syria 2016-2017"],
+        "note": "Multiple fires and accidents during refit"
+      },
+      "notes": "Russia's only aircraft carrier. Technically 'aircraft-carrying cruiser'. Troubled refit - multiple fires. Operational status uncertain."
+    },
+    {
+      "id": "ru-project-20380-steregushchiy",
+      "name": "Steregushchiy-class (Project 20380)",
+      "type": "corvette",
+      "country_of_origin": "RU",
+      "manufacturer": "Severnaya Verf",
+      "service_entry": 2008,
+      "specifications": {
+        "displacement_tons": 2200,
+        "length_m": 105,
+        "beam_m": 13,
+        "draft_m": 3.7,
+        "crew": 100,
+        "max_speed_knots": 27,
+        "range_nm": 4000
+      },
+      "armament": {
+        "ascm": "8x Kh-35 Uran (SS-N-25)",
+        "sam": "12x Redut VLS",
+        "gun": "A-190 100mm",
+        "ciws": "2x AK-630M or Kashtan",
+        "torpedoes": "8x 324mm"
+      },
+      "service_history": {
+        "introduced": 2008,
+        "status": "active",
+        "built": 12,
+        "operators": [
+          {"country": "RU", "quantity": 12}
+        ]
+      },
+      "notes": "Stealth corvette for littoral operations. Project 20385 variant has Kalibr capability."
+    },
+    {
+      "id": "ru-project-22160-bykov",
+      "name": "Bykov-class (Project 22160)",
+      "type": "patrol_ship",
+      "country_of_origin": "RU",
+      "manufacturer": "Zelenodolsk Shipyard",
+      "service_entry": 2018,
+      "specifications": {
+        "displacement_tons": 1800,
+        "length_m": 94,
+        "max_speed_knots": 25,
+        "range_nm": 6000
+      },
+      "armament": {
+        "gun": "AK-176MA 76mm",
+        "sam": "Gibka SAM system",
+        "missiles": "Kalibr-NK container system (modular)"
+      },
+      "service_history": {
+        "introduced": 2018,
+        "built": 6,
+        "combat_use": ["Ukraine 2022 - Kalibr strikes"]
+      },
+      "notes": "Modular patrol ship. Used for Kalibr strikes in Ukraine conflict."
+    }
+  ]
+}

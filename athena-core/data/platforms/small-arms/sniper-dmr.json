@@ -1,0 +1,368 @@
+{
+  "category": "small-arms",
+  "subcategory": "sniper-dmr",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31"
+  },
+  "platforms": [
+    {
+      "id": "us-m24",
+      "name": "M24 SWS",
+      "type": "sniper-rifle",
+      "country": "US",
+      "year": 1988,
+      "manufacturer": "Remington",
+      "specifications": {
+        "caliber": "7.62x51mm NATO",
+        "action": "Bolt-action",
+        "muzzle_velocity_mps": 790,
+        "effective_range_m": 800,
+        "weight_kg": 5.5,
+        "magazine_capacity": 5
+      },
+      "operators": ["US Army"],
+      "notes": "US Army sniper rifle, Remington 700 based"
+    },
+    {
+      "id": "us-m110",
+      "name": "M110 SASS",
+      "type": "dmr",
+      "country": "US",
+      "year": 2008,
+      "manufacturer": "Knight's Armament",
+      "specifications": {
+        "caliber": "7.62x51mm NATO",
+        "action": "Gas-operated, semi-auto",
+        "effective_range_m": 800,
+        "weight_kg": 6.9,
+        "magazine_capacity": 20
+      },
+      "operators": ["US"],
+      "notes": "US Army semi-auto sniper"
+    },
+    {
+      "id": "us-m110a1",
+      "name": "M110A1 SDMR (HK G28)",
+      "type": "dmr",
+      "country": "US",
+      "year": 2019,
+      "manufacturer": "Heckler & Koch",
+      "specifications": {
+        "caliber": "7.62x51mm NATO",
+        "action": "Gas-operated, semi-auto",
+        "effective_range_m": 800,
+        "weight_kg": 5.8,
+        "magazine_capacity": 20
+      },
+      "operators": ["US"],
+      "notes": "New US Army squad DMR"
+    },
+    {
+      "id": "us-m107",
+      "name": "Barrett M107 / M82",
+      "type": "anti-materiel-rifle",
+      "country": "US",
+      "year": 1989,
+      "manufacturer": "Barrett Firearms",
+      "specifications": {
+        "caliber": ".50 BMG (12.7x99mm)",
+        "action": "Short recoil, semi-auto",
+        "muzzle_velocity_mps": 853,
+        "effective_range_m": 1800,
+        "weight_kg": 14.0,
+        "magazine_capacity": 10
+      },
+      "operators": ["US", "40+ countries"],
+      "notes": "Most famous anti-materiel rifle"
+    },
+    {
+      "id": "us-mk13",
+      "name": "Mk 13 Mod 7",
+      "type": "sniper-rifle",
+      "country": "US",
+      "year": 2017,
+      "manufacturer": "USMC",
+      "specifications": {
+        "caliber": ".300 Win Mag",
+        "action": "Bolt-action",
+        "effective_range_m": 1400,
+        "weight_kg": 7.1,
+        "magazine_capacity": 5
+      },
+      "operators": ["US SOCOM", "USMC"],
+      "notes": "SOCOM precision sniper rifle"
+    },
+    {
+      "id": "us-xm7-sniper",
+      "name": "XM157 (NGSW-FC) Spotter",
+      "type": "dmr",
+      "country": "US",
+      "year": 2022,
+      "manufacturer": "SIG Sauer",
+      "specifications": {
+        "caliber": "6.8x51mm (.277 Fury)",
+        "action": "Semi-auto",
+        "effective_range_m": 1000,
+        "fire_control": "Vortex XM157 smart optic"
+      },
+      "operators": ["US"],
+      "notes": "Next-gen squad designated marksman"
+    },
+    {
+      "id": "de-g28",
+      "name": "Heckler & Koch G28",
+      "type": "dmr",
+      "country": "DE",
+      "year": 2012,
+      "manufacturer": "Heckler & Koch",
+      "specifications": {
+        "caliber": "7.62x51mm NATO",
+        "action": "Short-stroke gas piston",
+        "effective_range_m": 800,
+        "weight_kg": 5.8,
+        "magazine_capacity": 20
+      },
+      "operators": ["DE", "US (M110A1)", "LT"],
+      "notes": "HK417 derivative, Bundeswehr DMR"
+    },
+    {
+      "id": "de-g29",
+      "name": "Heckler & Koch G29",
+      "type": "sniper-rifle",
+      "country": "DE",
+      "year": 2014,
+      "manufacturer": "Heckler & Koch",
+      "specifications": {
+        "caliber": ".300 Win Mag",
+        "action": "Bolt-action",
+        "effective_range_m": 1200,
+        "weight_kg": 6.5
+      },
+      "operators": ["DE"],
+      "notes": "Bundeswehr precision rifle"
+    },
+    {
+      "id": "uk-l115a3",
+      "name": "Accuracy Int. L115A3 (AWM)",
+      "type": "sniper-rifle",
+      "country": "GB",
+      "year": 2007,
+      "manufacturer": "Accuracy International",
+      "specifications": {
+        "caliber": ".338 Lapua Magnum",
+        "action": "Bolt-action",
+        "muzzle_velocity_mps": 936,
+        "effective_range_m": 1500,
+        "weight_kg": 6.8,
+        "magazine_capacity": 5
+      },
+      "operators": ["GB", "AU", "DE", "NL", "PL"],
+      "notes": "World record 2475m kill"
+    },
+    {
+      "id": "uk-l129a1",
+      "name": "L129A1 Sharpshooter",
+      "type": "dmr",
+      "country": "GB",
+      "year": 2010,
+      "manufacturer": "LMT Defense",
+      "specifications": {
+        "caliber": "7.62x51mm NATO",
+        "action": "Gas-operated, semi-auto",
+        "effective_range_m": 800,
+        "weight_kg": 5.1,
+        "magazine_capacity": 20
+      },
+      "operators": ["GB"],
+      "notes": "British Army DMR"
+    },
+    {
+      "id": "ru-svd",
+      "name": "SVD Dragunov",
+      "type": "dmr",
+      "country": "RU",
+      "year": 1963,
+      "manufacturer": "Izhmash",
+      "specifications": {
+        "caliber": "7.62x54mmR",
+        "action": "Gas-operated, semi-auto",
+        "effective_range_m": 800,
+        "weight_kg": 4.3,
+        "magazine_capacity": 10
+      },
+      "operators": ["RU", "CN", "Many others"],
+      "variants": ["SVD", "SVDS", "SVU"],
+      "notes": "Classic Soviet DMR, still widely used"
+    },
+    {
+      "id": "ru-svdm",
+      "name": "SVDM (Modernized)",
+      "type": "dmr",
+      "country": "RU",
+      "year": 2015,
+      "manufacturer": "Kalashnikov Concern",
+      "specifications": {
+        "caliber": "7.62x54mmR",
+        "action": "Gas-operated, semi-auto",
+        "effective_range_m": 900,
+        "weight_kg": 5.0,
+        "magazine_capacity": 10
+      },
+      "operators": ["RU"],
+      "notes": "Updated Dragunov with rails"
+    },
+    {
+      "id": "ru-sv98",
+      "name": "SV-98",
+      "type": "sniper-rifle",
+      "country": "RU",
+      "year": 1998,
+      "manufacturer": "Izhmash",
+      "specifications": {
+        "caliber": "7.62x54mmR",
+        "action": "Bolt-action",
+        "effective_range_m": 1000,
+        "weight_kg": 5.5,
+        "magazine_capacity": 10
+      },
+      "operators": ["RU"],
+      "notes": "Russian police/military bolt-action"
+    },
+    {
+      "id": "ru-orsis-t5000",
+      "name": "ORSIS T-5000",
+      "type": "sniper-rifle",
+      "country": "RU",
+      "year": 2011,
+      "manufacturer": "ORSIS",
+      "specifications": {
+        "caliber": ".308 Win / .338 LM / .300 WM",
+        "action": "Bolt-action",
+        "effective_range_m": 1500,
+        "weight_kg": 6.2,
+        "magazine_capacity": 5
+      },
+      "operators": ["RU"],
+      "notes": "Modern Russian precision rifle"
+    },
+    {
+      "id": "ru-asvk",
+      "name": "ASVK/Kord (6S8)",
+      "type": "anti-materiel-rifle",
+      "country": "RU",
+      "year": 2013,
+      "manufacturer": "Degtyarev",
+      "specifications": {
+        "caliber": "12.7x108mm",
+        "action": "Bullpup, semi-auto",
+        "effective_range_m": 1500,
+        "weight_kg": 12.5,
+        "magazine_capacity": 5
+      },
+      "operators": ["RU"],
+      "notes": "Russian .50 cal sniper rifle"
+    },
+    {
+      "id": "cn-qbu88",
+      "name": "QBU-88",
+      "type": "dmr",
+      "country": "CN",
+      "year": 1988,
+      "manufacturer": "Norinco",
+      "specifications": {
+        "caliber": "5.8x42mm",
+        "action": "Gas-operated, semi-auto",
+        "effective_range_m": 800,
+        "weight_kg": 4.1,
+        "magazine_capacity": 10
+      },
+      "operators": ["CN"],
+      "notes": "PLA squad marksman rifle, bullpup"
+    },
+    {
+      "id": "cn-qbu191",
+      "name": "QBU-191",
+      "type": "dmr",
+      "country": "CN",
+      "year": 2019,
+      "manufacturer": "Norinco",
+      "specifications": {
+        "caliber": "5.8x42mm DBP191",
+        "action": "Gas-operated, semi-auto",
+        "effective_range_m": 800,
+        "weight_kg": 4.0,
+        "magazine_capacity": 10
+      },
+      "operators": ["CN"],
+      "notes": "New PLA DMR, conventional layout"
+    },
+    {
+      "id": "cn-qlu11",
+      "name": "QLU-11 (M99)",
+      "type": "anti-materiel-rifle",
+      "country": "CN",
+      "year": 2011,
+      "manufacturer": "Norinco",
+      "specifications": {
+        "caliber": "12.7x108mm",
+        "action": "Gas-operated, semi-auto",
+        "effective_range_m": 1500,
+        "weight_kg": 12.0,
+        "magazine_capacity": 5
+      },
+      "operators": ["CN"],
+      "notes": "Chinese .50 cal sniper"
+    },
+    {
+      "id": "il-dta-srs",
+      "name": "IWI Dan .338",
+      "type": "sniper-rifle",
+      "country": "IL",
+      "year": 2014,
+      "manufacturer": "IWI",
+      "specifications": {
+        "caliber": ".338 Lapua Magnum",
+        "action": "Bolt-action",
+        "effective_range_m": 1200,
+        "weight_kg": 6.0
+      },
+      "operators": ["IL"],
+      "notes": "IDF precision rifle"
+    },
+    {
+      "id": "at-ssg08",
+      "name": "Steyr SSG 08",
+      "type": "sniper-rifle",
+      "country": "AT",
+      "year": 2008,
+      "manufacturer": "Steyr Mannlicher",
+      "specifications": {
+        "caliber": ".308 Win / .300 WM / .338 LM",
+        "action": "Bolt-action",
+        "effective_range_m": 1200,
+        "weight_kg": 5.5,
+        "magazine_capacity": 10
+      },
+      "operators": ["AT", "Many NATO"],
+      "notes": "Austrian precision rifle"
+    },
+    {
+      "id": "fi-sako-trg",
+      "name": "Sako TRG-42",
+      "type": "sniper-rifle",
+      "country": "FI",
+      "year": 1992,
+      "manufacturer": "Sako",
+      "specifications": {
+        "caliber": ".338 Lapua Mag / .300 WM",
+        "action": "Bolt-action",
+        "effective_range_m": 1500,
+        "weight_kg": 5.1,
+        "magazine_capacity": 5
+      },
+      "operators": ["FI", "FR", "IT", "ES", "TR"],
+      "notes": "Finnish precision rifle"
+    }
+  ]
+}

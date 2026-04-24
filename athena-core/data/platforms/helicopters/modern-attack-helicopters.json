@@ -1,0 +1,504 @@
+{
+  "platforms": [
+    {
+      "id": "us-ah-64e-apache-guardian",
+      "name": "AH-64E Apache Guardian",
+      "type": "attack_helicopter",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_entry": 2011,
+      "specifications": {
+        "crew": 2,
+        "length_m": 17.73,
+        "rotor_diameter_m": 14.63,
+        "height_m": 3.87,
+        "empty_weight_kg": 5165,
+        "max_takeoff_weight_kg": 10433,
+        "max_speed_kmh": 293,
+        "cruise_speed_kmh": 265,
+        "range_km": 476,
+        "combat_radius_km": 480,
+        "service_ceiling_m": 6400,
+        "rate_of_climb_m_s": 12.7
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "GE T700-GE-701D",
+        "type": "turboshaft",
+        "power_shp": 2000
+      },
+      "armament": {
+        "gun": {
+          "type": "M230 Chain Gun",
+          "caliber_mm": 30,
+          "rounds": 1200,
+          "rate_of_fire_rpm": 625
+        },
+        "hardpoints": 4,
+        "missiles": [
+          "AGM-114 Hellfire (16 max)",
+          "AGM-179 JAGM",
+          "AIM-92 Stinger (AAM)",
+          "AIM-9 Sidewinder"
+        ],
+        "rockets": "Hydra 70mm (76 max)"
+      },
+      "avionics": {
+        "radar": "AN/APG-78 Longbow FCR",
+        "radar_range_km": 8,
+        "radar_targets": 128,
+        "flir": "TADS/PNVS",
+        "helmet": "IHADSS",
+        "data_link": "Link 16, MUMT-X"
+      },
+      "service_history": {
+        "introduced": 2011,
+        "status": "active",
+        "production_count": 500,
+        "operators": [
+          {"country": "US", "quantity": 690},
+          {"country": "GB", "quantity": 50, "name": "AH-64E"},
+          {"country": "NL", "quantity": 28},
+          {"country": "JP", "quantity": 50},
+          {"country": "KR", "quantity": 36},
+          {"country": "TW", "quantity": 30},
+          {"country": "IN", "quantity": 22},
+          {"country": "QA", "quantity": 24},
+          {"country": "SA", "quantity": 48}
+        ]
+      },
+      "unit_cost_usd": 35000000,
+      "notes": "Most advanced Apache variant. Longbow radar for fire-and-forget. MUMT-X for UAV control. Version 6.5 upgrade ongoing."
+    },
+    {
+      "id": "ru-ka-52m-alligator",
+      "name": "Ka-52M Alligator",
+      "type": "attack_helicopter",
+      "country_of_origin": "RU",
+      "manufacturer": "Kamov (Russian Helicopters)",
+      "nato_name": "Hokum-B",
+      "service_entry": 2022,
+      "specifications": {
+        "crew": 2,
+        "length_m": 16.0,
+        "rotor_diameter_m": 14.5,
+        "height_m": 4.9,
+        "empty_weight_kg": 7800,
+        "max_takeoff_weight_kg": 12200,
+        "max_speed_kmh": 300,
+        "cruise_speed_kmh": 260,
+        "range_km": 520,
+        "combat_radius_km": 460,
+        "service_ceiling_m": 5500
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "VK-2500P",
+        "power_shp": 2400
+      },
+      "armament": {
+        "gun": {
+          "type": "2A42",
+          "caliber_mm": 30,
+          "rounds": 460,
+          "traverse": "Fixed to fuselage"
+        },
+        "hardpoints": 6,
+        "missiles": [
+          "9K121 Vikhr-1 ATGM (12 max)",
+          "Kh-25ML",
+          "LMUR (Product 305) 14.5km range",
+          "9M120 Ataka",
+          "R-73 / Igla-V AAM"
+        ],
+        "rockets": "S-8 / S-13"
+      },
+      "avionics": {
+        "radar": "FH01 Arbalet (Crossbow)",
+        "irst": "GOES-451",
+        "ew_suite": "Vitebsk L370"
+      },
+      "features": {
+        "rotor_system": "Coaxial contra-rotating",
+        "ejection_seats": true,
+        "side_by_side_cockpit": true
+      },
+      "service_history": {
+        "introduced": 2022,
+        "status": "active",
+        "operators": [
+          {"country": "RU", "quantity": 140},
+          {"country": "EG", "quantity": 46}
+        ]
+      },
+      "combat_use": [
+        {"conflict": "Syria", "year": 2016},
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "unit_cost_usd": 32000000,
+      "notes": "Upgraded Ka-52 with LMUR missile (14.5km standoff). Coaxial rotors eliminate tail rotor. Ejection seats unique to attack helos."
+    },
+    {
+      "id": "ru-mi-28nm-night-hunter",
+      "name": "Mi-28NM Night Hunter",
+      "type": "attack_helicopter",
+      "country_of_origin": "RU",
+      "manufacturer": "Mil Moscow (Russian Helicopters)",
+      "nato_name": "Havoc",
+      "service_entry": 2020,
+      "specifications": {
+        "crew": 2,
+        "length_m": 17.01,
+        "rotor_diameter_m": 17.2,
+        "height_m": 4.7,
+        "empty_weight_kg": 8095,
+        "max_takeoff_weight_kg": 12100,
+        "max_speed_kmh": 324,
+        "cruise_speed_kmh": 265,
+        "range_km": 500,
+        "service_ceiling_m": 5700
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "VK-2500-03",
+        "power_shp": 2500
+      },
+      "armament": {
+        "gun": {
+          "type": "2A42",
+          "caliber_mm": 30,
+          "rounds": 250,
+          "turret": "NPPU-28 (chin mount)"
+        },
+        "missiles": [
+          "Khrizantema-M ATGM",
+          "Ataka-VM",
+          "LMUR (Product 305)",
+          "Igla-V AAM"
+        ],
+        "rockets": "S-8 / S-13"
+      },
+      "avionics": {
+        "radar": "N025 radar (mast-mounted)",
+        "flir": "OPS-28 day/night",
+        "ew_suite": "President-S"
+      },
+      "service_history": {
+        "introduced": 2020,
+        "status": "active",
+        "operators": [
+          {"country": "RU", "quantity": 100}
+        ]
+      },
+      "unit_cost_usd": 30000000,
+      "notes": "Deep modernization of Mi-28N. Mast-mounted radar. LMUR gives standoff capability. Night/all-weather operations."
+    },
+    {
+      "id": "cn-z-10me-attack",
+      "name": "Z-10ME",
+      "type": "attack_helicopter",
+      "country_of_origin": "CN",
+      "manufacturer": "Changhe/HAIG",
+      "service_entry": 2021,
+      "specifications": {
+        "crew": 2,
+        "length_m": 14.15,
+        "rotor_diameter_m": 13.0,
+        "height_m": 3.85,
+        "max_takeoff_weight_kg": 7000,
+        "max_speed_kmh": 295,
+        "cruise_speed_kmh": 230,
+        "range_km": 800,
+        "service_ceiling_m": 6400
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "WZ-9",
+        "power_shp": 1350
+      },
+      "armament": {
+        "gun": {
+          "type": "Type 23 chain gun",
+          "caliber_mm": 23
+        },
+        "missiles": [
+          "HJ-10 Red Arrow ATGM (8km)",
+          "TY-90 AAM",
+          "PL-90 AAM"
+        ],
+        "rockets": "90mm rockets"
+      },
+      "avionics": {
+        "radar": "Millimeter-wave radar",
+        "flir": "Ball turret EO/IR"
+      },
+      "service_history": {
+        "introduced": 2021,
+        "status": "active",
+        "operators": [
+          {"country": "CN", "quantity": 200},
+          {"country": "PK", "quantity": 30}
+        ]
+      },
+      "unit_cost_usd": 20000000,
+      "notes": "Export variant of Z-10. More powerful engines than baseline. Improved avionics. Competes with AH-64 in export market."
+    },
+    {
+      "id": "cn-z-19e-black-whirlwind",
+      "name": "Z-19E Black Whirlwind",
+      "type": "armed_reconnaissance",
+      "country_of_origin": "CN",
+      "manufacturer": "Harbin Aircraft Industry Group",
+      "service_entry": 2017,
+      "specifications": {
+        "crew": 2,
+        "length_m": 12.0,
+        "rotor_diameter_m": 11.0,
+        "max_takeoff_weight_kg": 4500,
+        "max_speed_kmh": 280,
+        "range_km": 700
+      },
+      "armament": {
+        "gun": {
+          "type": "23mm cannon",
+          "mount": "chin turret"
+        },
+        "missiles": [
+          "HJ-8 ATGM",
+          "TY-90 AAM"
+        ]
+      },
+      "service_history": {
+        "introduced": 2017,
+        "status": "active",
+        "operators": [
+          {"country": "CN", "quantity": 150}
+        ]
+      },
+      "notes": "Light attack/reconnaissance helicopter. Based on Z-9/SA365. Fenestron tail rotor."
+    },
+    {
+      "id": "eu-tiger-had",
+      "name": "Eurocopter Tiger HAD",
+      "type": "attack_helicopter",
+      "country_of_origin": "EU",
+      "manufacturer": "Airbus Helicopters",
+      "service_entry": 2013,
+      "specifications": {
+        "crew": 2,
+        "length_m": 15.8,
+        "rotor_diameter_m": 13.0,
+        "height_m": 3.83,
+        "empty_weight_kg": 3060,
+        "max_takeoff_weight_kg": 6600,
+        "max_speed_kmh": 290,
+        "cruise_speed_kmh": 230,
+        "range_km": 800,
+        "endurance_hours": 3.25,
+        "service_ceiling_m": 4000
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "MTU/Turbomeca MTR390-E",
+        "power_shp": 1565
+      },
+      "armament": {
+        "gun": {
+          "type": "GIAT M781",
+          "caliber_mm": 30,
+          "rounds": 450
+        },
+        "missiles": [
+          "AGM-114K Hellfire II (8 max)",
+          "HOT 3 ATGM",
+          "PARS 3 LR",
+          "Mistral AAM"
+        ],
+        "rockets": "68mm SNEB"
+      },
+      "avionics": {
+        "radar": "Strix mast-mounted sight",
+        "flir": "OSIRIS sight",
+        "hmd": "TopOwl HMD"
+      },
+      "variants": [
+        "HAD - Appui-Destruction (France/Spain)",
+        "ARH - Armed Reconnaissance (Australia)",
+        "UHT - Unterstützungshubschrauber (Germany)"
+      ],
+      "service_history": {
+        "introduced": 2013,
+        "status": "active",
+        "operators": [
+          {"country": "FR", "quantity": 67},
+          {"country": "DE", "quantity": 51},
+          {"country": "ES", "quantity": 24},
+          {"country": "AU", "quantity": 22}
+        ]
+      },
+      "combat_use": [
+        {"conflict": "Libya", "year": 2011},
+        {"conflict": "Mali", "year": 2013}
+      ],
+      "unit_cost_usd": 45000000,
+      "notes": "Franco-German program. Composite airframe. Combat proven in Libya and Mali. Tiger Mk3 upgrade planned."
+    },
+    {
+      "id": "tr-t129-atak",
+      "name": "T129 ATAK",
+      "type": "attack_helicopter",
+      "country_of_origin": "TR",
+      "manufacturer": "Turkish Aerospace Industries",
+      "service_entry": 2014,
+      "specifications": {
+        "crew": 2,
+        "length_m": 14.6,
+        "rotor_diameter_m": 11.9,
+        "max_takeoff_weight_kg": 5000,
+        "max_speed_kmh": 278,
+        "range_km": 561,
+        "service_ceiling_m": 6096
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "LHTEC CTS800-4A",
+        "power_shp": 1361
+      },
+      "armament": {
+        "gun": {
+          "type": "M197 3-barrel",
+          "caliber_mm": 20
+        },
+        "missiles": [
+          "UMTAS ATGM",
+          "L-UMTAS (laser)",
+          "Cirit laser-guided",
+          "Stinger AAM"
+        ]
+      },
+      "avionics": {
+        "flir": "Aselsan ASELFLIR-300T"
+      },
+      "service_history": {
+        "introduced": 2014,
+        "status": "active",
+        "operators": [
+          {"country": "TR", "quantity": 60},
+          {"country": "PK", "quantity": 30}
+        ]
+      },
+      "combat_use": [
+        {"conflict": "Syria", "year": 2016},
+        {"conflict": "Libya", "year": 2020}
+      ],
+      "unit_cost_usd": 25000000,
+      "notes": "Based on AW129 Mangusta. Indigenous Turkish weapons. Combat proven. T929 ATAK-2 heavy variant in development."
+    },
+    {
+      "id": "in-hal-lch-prachand",
+      "name": "HAL LCH Prachand",
+      "type": "attack_helicopter",
+      "country_of_origin": "IN",
+      "manufacturer": "Hindustan Aeronautics Limited",
+      "service_entry": 2022,
+      "specifications": {
+        "crew": 2,
+        "length_m": 15.8,
+        "rotor_diameter_m": 13.3,
+        "max_takeoff_weight_kg": 5800,
+        "max_speed_kmh": 268,
+        "range_km": 550,
+        "service_ceiling_m": 6500
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "HAL/Turbomeca Shakti",
+        "power_shp": 1400
+      },
+      "armament": {
+        "gun": {
+          "type": "M621 cannon",
+          "caliber_mm": 20
+        },
+        "missiles": [
+          "Helina/SANT ATGM",
+          "Mistral AAM",
+          "70mm rockets"
+        ]
+      },
+      "features": {
+        "high_altitude_capable": true,
+        "ceiling_himalayan_m": 4500
+      },
+      "service_history": {
+        "introduced": 2022,
+        "status": "active",
+        "operators": [
+          {"country": "IN", "quantity": 15, "ordered": 65}
+        ]
+      },
+      "unit_cost_usd": 26000000,
+      "notes": "World's lightest attack helicopter. Designed for high-altitude Himalayan operations. Indigenous development."
+    },
+    {
+      "id": "za-rooivalk-mk1",
+      "name": "Denel AH-2 Rooivalk",
+      "type": "attack_helicopter",
+      "country_of_origin": "ZA",
+      "manufacturer": "Denel Aviation",
+      "service_entry": 1999,
+      "specifications": {
+        "crew": 2,
+        "max_takeoff_weight_kg": 8750,
+        "max_speed_kmh": 309,
+        "range_km": 740
+      },
+      "armament": {
+        "gun": {
+          "type": "F2 cannon",
+          "caliber_mm": 20
+        },
+        "missiles": [
+          "Mokopa ATGM",
+          "Ingwe ATGM",
+          "Mistral AAM"
+        ]
+      },
+      "service_history": {
+        "introduced": 1999,
+        "status": "active",
+        "operators": [
+          {"country": "ZA", "quantity": 11}
+        ]
+      },
+      "combat_use": [
+        {"conflict": "DRC", "year": 2013}
+      ],
+      "notes": "Indigenous South African attack helicopter. Combat deployed in DRC. Hot-and-high optimized."
+    },
+    {
+      "id": "jp-ah-1s-cobra",
+      "name": "Fuji AH-1S Cobra",
+      "type": "attack_helicopter",
+      "country_of_origin": "JP",
+      "manufacturer": "Fuji Heavy Industries",
+      "service_entry": 1984,
+      "specifications": {
+        "crew": 2,
+        "max_takeoff_weight_kg": 4535,
+        "max_speed_kmh": 277
+      },
+      "armament": {
+        "gun": "M197 20mm",
+        "missiles": ["BGM-71 TOW"]
+      },
+      "service_history": {
+        "status": "active",
+        "operators": [
+          {"country": "JP", "quantity": 70}
+        ]
+      },
+      "notes": "License-built Bell AH-1 Cobra. Being replaced by AH-64DJP."
+    }
+  ]
+}

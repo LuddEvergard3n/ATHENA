@@ -1,0 +1,144 @@
+{
+  "category": "small-arms",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-02-16",
+    "sources": [
+      "IMBEL official",
+      "Jane's Infantry Weapons",
+      "Brazilian Army"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "br-ia2-556",
+      "name": "IMBEL IA2 5.56mm",
+      "type": "assault_rifle",
+      "country_of_origin": "BR",
+      "manufacturer": "IMBEL",
+      "year": 2013,
+      "service_history": {
+        "introduced": 2013,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 50000,
+            "status": "active",
+            "notes": "Standard issue assault rifle for Brazilian Army. Replacing FAL variants."
+          }
+        ]
+      },
+      "specifications": {
+        "caliber": "5.56x45mm NATO",
+        "caliber_mm": 5.56,
+        "action": "gas_operated_rotating_bolt",
+        "fire_modes": ["semi", "full_auto"],
+        "rate_of_fire_rpm": 750,
+        "effective_range_m": 600,
+        "muzzle_velocity_mps": 915,
+        "barrel_length_mm": 368,
+        "weight_empty_kg": 3.75,
+        "magazine_capacity": 30,
+        "rail_system": "Picatinny"
+      },
+      "notes": "Indigenously designed by IMBEL. Modular assault rifle replacing the FAL/PARA-FAL. Ambidextrous controls, Picatinny rails. 5.56mm and 7.62mm variants. Also available in DMR and carbine configurations."
+    },
+    {
+      "id": "br-ia2-762",
+      "name": "IMBEL IA2 7.62mm",
+      "type": "battle_rifle",
+      "country_of_origin": "BR",
+      "manufacturer": "IMBEL",
+      "year": 2013,
+      "service_history": {
+        "introduced": 2013,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 15000,
+            "status": "active",
+            "notes": "Marksman and designated marksman rifle variant."
+          }
+        ]
+      },
+      "specifications": {
+        "caliber": "7.62x51mm NATO",
+        "caliber_mm": 7.62,
+        "action": "gas_operated_rotating_bolt",
+        "fire_modes": ["semi", "full_auto"],
+        "rate_of_fire_rpm": 700,
+        "effective_range_m": 800,
+        "muzzle_velocity_mps": 840,
+        "barrel_length_mm": 457,
+        "weight_empty_kg": 4.3,
+        "magazine_capacity": 20,
+        "rail_system": "Picatinny"
+      },
+      "notes": "7.62mm variant of IA2 platform. Used as designated marksman rifle and for jungle warfare where heavier round is preferred for penetrating vegetation."
+    },
+    {
+      "id": "br-fn-mag",
+      "name": "FN MAG 58 (MAG-M2 EB)",
+      "type": "gpmg",
+      "country_of_origin": "BE",
+      "manufacturer": "FN Herstal / IMBEL (license)",
+      "year": 1970,
+      "service_history": {
+        "introduced": 1970,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 8000,
+            "status": "active",
+            "notes": "Standard GPMG across Brazilian Armed Forces."
+          }
+        ]
+      },
+      "specifications": {
+        "caliber": "7.62x51mm NATO",
+        "caliber_mm": 7.62,
+        "action": "gas_operated",
+        "fire_modes": ["full_auto"],
+        "rate_of_fire_rpm": 850,
+        "effective_range_m": 1000,
+        "muzzle_velocity_mps": 840,
+        "weight_empty_kg": 11.79,
+        "feed_system": "disintegrating belt",
+        "magazine_capacity": 200
+      },
+      "notes": "Standard GPMG. Used in infantry squads, vehicle-mounted (Guarani, Cascavel), and coaxial MG in armored vehicles. License-produced by IMBEL."
+    },
+    {
+      "id": "br-m2hb",
+      "name": "M2HB Browning .50 cal",
+      "type": "hmg",
+      "country_of_origin": "US",
+      "manufacturer": "Various",
+      "year": 1955,
+      "service_history": {
+        "introduced": 1955,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 4000,
+            "status": "active",
+            "notes": "Vehicle-mounted and fixed HMG across all services."
+          }
+        ]
+      },
+      "specifications": {
+        "caliber": "12.7x99mm NATO",
+        "caliber_mm": 12.7,
+        "action": "short_recoil",
+        "fire_modes": ["full_auto"],
+        "rate_of_fire_rpm": 550,
+        "effective_range_m": 1800,
+        "muzzle_velocity_mps": 890,
+        "weight_empty_kg": 38.0,
+        "feed_system": "disintegrating belt",
+        "magazine_capacity": 100
+      },
+      "notes": "Standard heavy machine gun. Vehicle-mounted on Guarani APC, Cascavel, M113, and naval vessels. Also used in anti-aircraft role."
+    }
+  ]
+}

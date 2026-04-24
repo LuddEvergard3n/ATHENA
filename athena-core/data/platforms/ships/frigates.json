@@ -1,0 +1,829 @@
+{
+  "$schema": "../../schema/platform-naval.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-23",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Fighting Ships",
+      "Naval News"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-ffg62",
+      "name": "Constellation-class (FFG-62)",
+      "nato_name": null,
+      "type": "frigate",
+      "class": "Constellation",
+      "country_of_origin": "US",
+      "manufacturer": "Fincantieri Marinette Marine",
+      "service_history": {
+        "introduced": 2026,
+        "retired": null,
+        "production_count": 1,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 1,
+            "status": "building",
+            "notes": "20 planned"
+          }
+        ],
+        "notes": "US Navy returns to frigates"
+      },
+      "specifications": {
+        "crew": 200,
+        "displacement_full_tons": 7400,
+        "length_m": 151.2,
+        "beam_m": 19.8,
+        "draft_m": 7.8
+      },
+      "performance": {
+        "max_speed_knots": 26,
+        "range_nm": 6000,
+        "endurance_days": 45
+      },
+      "powerplant": {
+        "type": "CODLAG",
+        "engines": "1x Rolls-Royce MT30 + 2x Caterpillar diesels",
+        "electric_motors": "2x",
+        "notes": "Hybrid propulsion"
+      },
+      "armament": {
+        "vls": {
+          "type": "Mk 41 VLS",
+          "cells": 32,
+          "missiles": [
+            "ESSM",
+            "SM-2",
+            "VL-ASROC"
+          ]
+        },
+        "guns": {
+          "type": "Mk 110 57mm",
+          "quantity": 1
+        },
+        "missiles": {
+          "type": "NSM (Naval Strike Missile)",
+          "quantity": 16
+        },
+        "ciws": {
+          "type": "SeaRAM",
+          "quantity": 1
+        },
+        "torpedoes": {
+          "type": "Mk 32",
+          "tubes": 4
+        }
+      },
+      "sensors": {
+        "radar": "AN/SPY-6(V)3 EASR",
+        "sonar": "AN/SQS-62 Variable Depth Sonar (towed array)"
+      },
+      "aviation": {
+        "hangar": true,
+        "helicopters": 1,
+        "type": "MH-60R Seahawk"
+      },
+      "unit_cost_usd": 1200000000,
+      "cost_year": 2024,
+      "confidence": "medium",
+      "sources": [
+        "USN",
+        "Fincantieri"
+      ],
+      "notes": "Based on FREMM. First US frigate since Oliver Hazard Perry. 20 planned. SPY-6(V)3 radar. Multi-mission capability.",
+      "year": 2026
+    },
+    {
+      "id": "uk-type26",
+      "name": "Type 26 City-class",
+      "nato_name": null,
+      "type": "frigate",
+      "class": "Type 26",
+      "country_of_origin": "GB",
+      "manufacturer": "BAE Systems",
+      "service_history": {
+        "introduced": 2027,
+        "retired": null,
+        "production_count": 1,
+        "operators": [
+          {
+            "country": "UK",
+            "quantity": 1,
+            "status": "building",
+            "notes": "8 planned"
+          },
+          {
+            "country": "AU",
+            "quantity": 0,
+            "status": "building",
+            "notes": "Hunter-class, 9 planned"
+          },
+          {
+            "country": "CA",
+            "quantity": 0,
+            "status": "ordered",
+            "notes": "Canadian Surface Combatant, 15 planned"
+          }
+        ],
+        "notes": "Global Combat Ship design"
+      },
+      "specifications": {
+        "crew": 157,
+        "displacement_full_tons": 6900,
+        "length_m": 149.9,
+        "beam_m": 20.8,
+        "draft_m": 7.4
+      },
+      "performance": {
+        "max_speed_knots": 26,
+        "range_nm": 7000,
+        "endurance_days": 60
+      },
+      "powerplant": {
+        "type": "CODLOG",
+        "engines": "1x Rolls-Royce MT30 + 4x MTU diesels",
+        "electric_motors": "2x",
+        "notes": "Ultra-quiet for ASW"
+      },
+      "armament": {
+        "vls": {
+          "type": "Mk 41 VLS",
+          "cells": 24,
+          "flexible_deck": 48,
+          "notes": "+48 cell 'flexible deck' for future missiles"
+        },
+        "guns": {
+          "type": "Mk 45 5in/62",
+          "quantity": 1
+        },
+        "missiles": {
+          "type": "Sea Ceptor",
+          "quantity": 48
+        },
+        "ciws": {
+          "type": "Phalanx",
+          "quantity": 2
+        },
+        "torpedoes": {
+          "type": "Mk 32",
+          "tubes": 4
+        }
+      },
+      "sensors": {
+        "radar": "Artisan 3D / Type 997",
+        "sonar": {
+          "bow": "Type 2150",
+          "towed": "Type 2087",
+          "notes": "World-class ASW suite"
+        }
+      },
+      "aviation": {
+        "hangar": true,
+        "helicopters": 1,
+        "uav": "Possible",
+        "type": "Merlin HM2 or Wildcat"
+      },
+      "stealth": {
+        "features": [
+          "Reduced radar signature",
+          "IR suppression",
+          "Acoustic quieting"
+        ],
+        "notes": "Designed for ASW from inception"
+      },
+      "unit_cost_usd": 1500000000,
+      "cost_year": 2024,
+      "confidence": "medium",
+      "sources": [
+        "Royal Navy",
+        "BAE Systems"
+      ],
+      "notes": "Optimized for ASW. Ultra-quiet. Flexible deck for future weapons. Australia and Canada orders make it major export. First delivery 2027.",
+      "year": 2026
+    },
+    {
+      "id": "uk-type31",
+      "name": "Type 31 Inspiration-class",
+      "nato_name": null,
+      "type": "frigate",
+      "class": "Type 31",
+      "country_of_origin": "GB",
+      "manufacturer": "Babcock",
+      "service_history": {
+        "introduced": 2027,
+        "retired": null,
+        "production_count": 0,
+        "operators": [
+          {
+            "country": "UK",
+            "quantity": 0,
+            "status": "building",
+            "notes": "5 planned"
+          },
+          {
+            "country": "ID",
+            "quantity": 2,
+            "status": "ordered",
+            "notes": "Arrowhead 140"
+          },
+          {
+            "country": "PL",
+            "quantity": 3,
+            "status": "ordered",
+            "notes": "Miecznik program"
+          }
+        ],
+        "notes": "Low-cost general-purpose frigate"
+      },
+      "specifications": {
+        "crew": 100,
+        "displacement_full_tons": 5700,
+        "length_m": 138.7,
+        "beam_m": 19.7,
+        "draft_m": 7.2
+      },
+      "performance": {
+        "max_speed_knots": 28,
+        "range_nm": 9000
+      },
+      "powerplant": {
+        "type": "CODAD",
+        "engines": "4x MTU 20V 8000 M71L diesels"
+      },
+      "armament": {
+        "vls": {
+          "type": "Mk 41 VLS",
+          "cells": 12
+        },
+        "guns": {
+          "type": "Mk 110 57mm",
+          "quantity": 1
+        },
+        "missiles": {
+          "type": "Sea Ceptor",
+          "quantity": 12
+        },
+        "ciws": {
+          "type": "Phalanx",
+          "quantity": 2
+        },
+        "ssm": {
+          "type": "NSM",
+          "quantity": 8,
+          "notes": "Optional"
+        }
+      },
+      "sensors": {
+        "radar": "Thales NS100",
+        "sonar": "Optional"
+      },
+      "aviation": {
+        "hangar": true,
+        "helicopters": 1,
+        "type": "Wildcat"
+      },
+      "unit_cost_usd": 350000000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "Royal Navy",
+        "Babcock"
+      ],
+      "notes": "Affordable frigate (~\u00a3250M). Based on Iver Huitfeldt/MEKO. Export-oriented (Arrowhead 140 design). Indonesia and Poland orders.",
+      "year": 2027
+    },
+    {
+      "id": "it-fremm",
+      "name": "FREMM-class (Bergamini)",
+      "nato_name": null,
+      "type": "frigate",
+      "class": "FREMM",
+      "country_of_origin": "IT",
+      "manufacturer": "Fincantieri",
+      "service_history": {
+        "introduced": 2013,
+        "retired": null,
+        "production_count": 10,
+        "operators": [
+          {
+            "country": "IT",
+            "quantity": 10,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 2,
+            "status": "active"
+          }
+        ],
+        "notes": "Italian FREMM variant"
+      },
+      "specifications": {
+        "crew": 145,
+        "displacement_full_tons": 6700,
+        "length_m": 144,
+        "beam_m": 19.4,
+        "draft_m": 5
+      },
+      "performance": {
+        "max_speed_knots": 27,
+        "range_nm": 6000
+      },
+      "powerplant": {
+        "type": "CODLAG",
+        "engines": "1x GE/Fiat LM2500+G4 + 2x MTU diesels"
+      },
+      "armament": {
+        "vls": {
+          "type": "Sylver A50",
+          "cells": 16
+        },
+        "guns": {
+          "type": "OTO Melara 127/64 LW",
+          "quantity": 1,
+          "notes": "Vulcano guided munition capable"
+        },
+        "missiles": [
+          {
+            "type": "Aster 15/30",
+            "quantity": 16
+          },
+          {
+            "type": "Teseo/Otomat Mk 2A",
+            "quantity": 8
+          }
+        ],
+        "ciws": {
+          "type": "76mm Super Rapid",
+          "quantity": 2
+        },
+        "torpedoes": {
+          "type": "MU90",
+          "tubes": 4
+        }
+      },
+      "sensors": {
+        "radar": "Leonardo Kronos 3D",
+        "sonar": "Leonardo BLACK SHARK"
+      },
+      "aviation": {
+        "hangar": true,
+        "helicopters": 1,
+        "type": "NH90 or SH-90A"
+      },
+      "unit_cost_usd": 600000000,
+      "cost_year": 2018,
+      "confidence": "high",
+      "sources": [
+        "Italian Navy",
+        "Fincantieri"
+      ],
+      "notes": "Italian FREMM. 127mm with Vulcano guided rounds. ASW and GP variants. Egypt bought 2 (originally ordered by Egypt).",
+      "year": 2013
+    },
+    {
+      "id": "fr-fremm",
+      "name": "FREMM Aquitaine-class",
+      "nato_name": null,
+      "type": "frigate",
+      "class": "FREMM",
+      "country_of_origin": "FR",
+      "manufacturer": "Naval Group",
+      "service_history": {
+        "introduced": 2012,
+        "retired": null,
+        "production_count": 8,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 8,
+            "status": "active"
+          },
+          {
+            "country": "MA",
+            "quantity": 1,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 1,
+            "status": "active"
+          }
+        ],
+        "notes": "French FREMM variant"
+      },
+      "specifications": {
+        "crew": 108,
+        "displacement_full_tons": 6000,
+        "length_m": 142,
+        "beam_m": 20,
+        "draft_m": 5
+      },
+      "performance": {
+        "max_speed_knots": 27,
+        "range_nm": 6000
+      },
+      "powerplant": {
+        "type": "CODLOG",
+        "engines": "1x GE LM2500+G4 + 4x MTU diesels"
+      },
+      "armament": {
+        "vls": [
+          {
+            "type": "Sylver A70",
+            "cells": 16,
+            "notes": "MdCN cruise missile capable"
+          },
+          {
+            "type": "Sylver A50",
+            "cells": 16
+          }
+        ],
+        "guns": {
+          "type": "OTO Melara 76mm",
+          "quantity": 1
+        },
+        "missiles": [
+          {
+            "type": "Aster 15",
+            "quantity": 16
+          },
+          {
+            "type": "MdCN",
+            "quantity": 16,
+            "notes": "Naval cruise missile"
+          },
+          {
+            "type": "Exocet MM40 Block 3",
+            "quantity": 8
+          }
+        ],
+        "torpedoes": {
+          "type": "MU90",
+          "tubes": 4
+        }
+      },
+      "sensors": {
+        "radar": "Thales Herakles",
+        "sonar": "CAPTAS 4 towed array"
+      },
+      "aviation": {
+        "hangar": true,
+        "helicopters": 1,
+        "type": "NH90 Caiman"
+      },
+      "unit_cost_usd": 800000000,
+      "cost_year": 2018,
+      "confidence": "high",
+      "sources": [
+        "French Navy",
+        "Naval Group"
+      ],
+      "notes": "French FREMM. A70 VLS for MdCN cruise missiles. ASW-optimized. Morocco and Egypt each have 1.",
+      "year": 2012
+    },
+    {
+      "id": "cn-type054a",
+      "name": "Type 054A Jiangkai II-class",
+      "nato_name": "Jiangkai II",
+      "type": "frigate",
+      "class": "Type 054A",
+      "country_of_origin": "CN",
+      "manufacturer": "Hudong-Zhonghua / Huangpu",
+      "service_history": {
+        "introduced": 2008,
+        "retired": null,
+        "production_count": 42,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 40,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 4,
+            "status": "active"
+          }
+        ],
+        "notes": "PLAN workhorse frigate"
+      },
+      "specifications": {
+        "crew": 165,
+        "displacement_full_tons": 4050,
+        "length_m": 134.1,
+        "beam_m": 16,
+        "draft_m": 5
+      },
+      "performance": {
+        "max_speed_knots": 27,
+        "range_nm": 8000
+      },
+      "powerplant": {
+        "type": "CODAD",
+        "engines": "4x SEMT Pielstick PA6 diesels"
+      },
+      "armament": {
+        "vls": {
+          "type": "H/AJK-16",
+          "cells": 32
+        },
+        "guns": {
+          "type": "H/PJ-26 76mm",
+          "quantity": 1
+        },
+        "missiles": [
+          {
+            "type": "HQ-16 SAM",
+            "quantity": 32
+          },
+          {
+            "type": "YJ-83 AShM",
+            "quantity": 8
+          }
+        ],
+        "ciws": {
+          "type": "Type 730",
+          "quantity": 2
+        },
+        "torpedoes": {
+          "type": "Yu-7",
+          "tubes": 4
+        }
+      },
+      "sensors": {
+        "radar": "Type 382/Top Plate 3D",
+        "sonar": "SJD-9 bow-mounted"
+      },
+      "aviation": {
+        "hangar": true,
+        "helicopters": 1,
+        "type": "Ka-28 or Z-9C"
+      },
+      "unit_cost_usd": 350000000,
+      "cost_year": 2018,
+      "confidence": "medium",
+      "sources": [
+        "PLAN media",
+        "Jane's"
+      ],
+      "notes": "Most numerous PLAN surface combatant. 42+ built (rapid production). Pakistan bought 4. Reliable, effective design.",
+      "year": 2008
+    },
+    {
+      "id": "de-type125",
+      "name": "Baden-W\u00fcrttemberg-class (F125)",
+      "nato_name": null,
+      "type": "frigate",
+      "class": "F125",
+      "country_of_origin": "DE",
+      "manufacturer": "ThyssenKrupp Marine Systems",
+      "service_history": {
+        "introduced": 2019,
+        "retired": null,
+        "production_count": 4,
+        "operators": [
+          {
+            "country": "DE",
+            "quantity": 4,
+            "status": "active"
+          }
+        ],
+        "notes": "German stabilization frigate"
+      },
+      "specifications": {
+        "crew": 120,
+        "displacement_full_tons": 7200,
+        "length_m": 149.5,
+        "beam_m": 18.8,
+        "draft_m": 5
+      },
+      "performance": {
+        "max_speed_knots": 26,
+        "range_nm": 4000,
+        "notes": "Can operate with 2 crews (intensive deployment)"
+      },
+      "powerplant": {
+        "type": "CODLAG",
+        "engines": "1x GE LM2500 + 4x MTU diesels"
+      },
+      "armament": {
+        "vls": {
+          "type": "Mk 41",
+          "cells": 8
+        },
+        "guns": [
+          {
+            "type": "127mm L64",
+            "quantity": 1
+          },
+          {
+            "type": "27mm MLG27",
+            "quantity": 2
+          }
+        ],
+        "missiles": [
+          {
+            "type": "ESSM",
+            "quantity": 32
+          },
+          {
+            "type": "RBS-15 Mk3",
+            "quantity": 8
+          }
+        ],
+        "ciws": {
+          "type": "RAM",
+          "quantity": 2
+        }
+      },
+      "sensors": {
+        "radar": "Thales SMART-L",
+        "sonar": "Minimal (not ASW-focused)"
+      },
+      "aviation": {
+        "hangar": true,
+        "helicopters": 2,
+        "type": "NH90"
+      },
+      "unit_cost_usd": 850000000,
+      "cost_year": 2017,
+      "confidence": "high",
+      "sources": [
+        "German Navy",
+        "TKMS"
+      ],
+      "notes": "Stabilization ops focused. 2-crew concept. Troubled development. Low ASW capability criticized. Large for frigate classification.",
+      "year": 2019
+    },
+    {
+      "id": "in-talwar",
+      "name": "Talwar-class (Project 11356)",
+      "nato_name": null,
+      "type": "frigate",
+      "class": "Talwar",
+      "country_of_origin": "RU",
+      "manufacturer": "Yantar Shipyard",
+      "service_history": {
+        "introduced": 2003,
+        "retired": null,
+        "production_count": 6,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 6,
+            "status": "active"
+          }
+        ],
+        "notes": "Russian-built for India"
+      },
+      "specifications": {
+        "crew": 180,
+        "displacement_full_tons": 4035,
+        "length_m": 124.8,
+        "beam_m": 15.2,
+        "draft_m": 4.5
+      },
+      "performance": {
+        "max_speed_knots": 30,
+        "range_nm": 4500
+      },
+      "powerplant": {
+        "type": "COGAG",
+        "engines": "2x DS-71 + 2x DT-59 gas turbines"
+      },
+      "armament": {
+        "vls": {
+          "type": "3S14 UKSK",
+          "cells": 8
+        },
+        "guns": {
+          "type": "A-190E 100mm",
+          "quantity": 1
+        },
+        "missiles": [
+          {
+            "type": "BrahMos",
+            "quantity": 8
+          },
+          {
+            "type": "3K90 Shtil-1 (SA-N-12)",
+            "quantity": 24
+          }
+        ],
+        "ciws": {
+          "type": "AK-630M",
+          "quantity": 2
+        },
+        "torpedoes": {
+          "type": "DTA-53",
+          "tubes": 4
+        }
+      },
+      "sensors": {
+        "radar": "Fregat-M2EM / MR-90 Orekh"
+      },
+      "aviation": {
+        "hangar": true,
+        "helicopters": 1,
+        "type": "Ka-28"
+      },
+      "unit_cost_usd": 400000000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "Indian Navy",
+        "Jane's"
+      ],
+      "notes": "Krivak IV derivative. BrahMos supersonic missiles. 6 in Indian service. Additional frigates cancelled due to Ukraine engines issue.",
+      "year": 2003
+    },
+    {
+      "id": "tr-istif",
+      "name": "Istanbul-class (ISTIF)",
+      "nato_name": null,
+      "type": "frigate",
+      "class": "Istanbul",
+      "country_of_origin": "TR",
+      "manufacturer": "Istanbul Naval Shipyard",
+      "service_history": {
+        "introduced": 2024,
+        "retired": null,
+        "production_count": 1,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 1,
+            "status": "active",
+            "notes": "4 planned"
+          }
+        ],
+        "notes": "Turkey's indigenous frigate"
+      },
+      "specifications": {
+        "crew": 200,
+        "displacement_full_tons": 3000,
+        "length_m": 113.2,
+        "beam_m": 14.4,
+        "draft_m": 4
+      },
+      "performance": {
+        "max_speed_knots": 29,
+        "range_nm": 5000
+      },
+      "powerplant": {
+        "type": "CODAG",
+        "engines": "1x GE LM2500 + 2x MTU diesels"
+      },
+      "armament": {
+        "vls": {
+          "type": "Mk 41 VLS",
+          "cells": 16
+        },
+        "guns": {
+          "type": "76mm",
+          "quantity": 1
+        },
+        "missiles": [
+          {
+            "type": "ESSM/Hisar-D",
+            "quantity": 64
+          },
+          {
+            "type": "Atmaca AShM",
+            "quantity": 8
+          }
+        ],
+        "ciws": {
+          "type": "G\u00f6kdeniz",
+          "quantity": 1
+        },
+        "torpedoes": {
+          "type": "Mk 32",
+          "tubes": 4
+        }
+      },
+      "sensors": {
+        "radar": "Aselsan \u00c7AFRAD AESA",
+        "sonar": "KULA\u00c7"
+      },
+      "aviation": {
+        "hangar": true,
+        "helicopters": 1,
+        "type": "S-70B"
+      },
+      "unit_cost_usd": 450000000,
+      "cost_year": 2024,
+      "confidence": "medium",
+      "sources": [
+        "Turkish Navy",
+        "Jane's"
+      ],
+      "notes": "Indigenous design. Indigenous weapons (Atmaca, Hisar). AESA radar. First of class 2024. 4 planned.",
+      "year": 2024
+    }
+  ]
+}

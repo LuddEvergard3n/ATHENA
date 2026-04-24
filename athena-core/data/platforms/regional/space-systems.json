@@ -1,0 +1,205 @@
+{
+  "platforms": [
+    {
+      "id": "us-gps-iii-satellite",
+      "name": "GPS III/IIIF Satellite",
+      "type": "navigation_satellite",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "service_entry": 2018,
+      "specifications": {
+        "constellation_size": 31,
+        "orbit": "MEO 20,180 km",
+        "design_life_years": 15,
+        "accuracy_m": 0.7,
+        "weight_kg": 3681
+      },
+      "signals": [
+        {"code": "L1 C/A", "frequency_mhz": 1575.42, "note": "Civil"},
+        {"code": "L2C", "frequency_mhz": 1227.60, "note": "Civil"},
+        {"code": "L5", "frequency_mhz": 1176.45, "note": "Safety-of-life"},
+        {"code": "M-code", "note": "Military encrypted"}
+      ],
+      "features": {
+        "m_code": "Enhanced military signal",
+        "anti_jamming": "3x better than GPS IIF",
+        "accuracy_improvement": "3x better than GPS IIF",
+        "regional_military_capability": true
+      },
+      "service_history": {
+        "introduced": 2018,
+        "status": "active",
+        "launched": 6,
+        "planned": 32
+      },
+      "unit_cost_usd": 529000000,
+      "notes": "Latest GPS generation. M-code anti-jam military signal. Nuclear detection sensors. Regional military capability."
+    },
+    {
+      "id": "eu-galileo-satellite",
+      "name": "Galileo Navigation Satellite",
+      "type": "navigation_satellite",
+      "country_of_origin": "EU",
+      "manufacturer": "OHB/Airbus",
+      "operator": "European Union Agency for the Space Programme",
+      "service_entry": 2016,
+      "specifications": {
+        "constellation_size": 30,
+        "operational": 24,
+        "active_spares": 6,
+        "orbit": "MEO 23,222 km",
+        "accuracy_m": 1,
+        "accuracy_prs_cm": 10
+      },
+      "signals": [
+        {"code": "E1", "note": "Open Service"},
+        {"code": "E5a", "note": "Open Service"},
+        {"code": "E5b", "note": "Open Service"},
+        {"code": "E6", "note": "Commercial/Governmental"},
+        {"code": "PRS", "note": "Public Regulated Service (encrypted)"}
+      ],
+      "features": {
+        "search_and_rescue": "SAR/Galileo",
+        "return_link": true,
+        "high_accuracy": true
+      },
+      "service_history": {
+        "initial_services": 2016,
+        "full_operational": 2024,
+        "status": "operational"
+      },
+      "notes": "European GNSS. Independent of US GPS. PRS for government/military use. SAR return link capability."
+    },
+    {
+      "id": "us-x-37b-otv",
+      "name": "X-37B Orbital Test Vehicle",
+      "type": "spaceplane",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "operator": "US Space Force",
+      "service_entry": 2010,
+      "specifications": {
+        "length_m": 8.92,
+        "wingspan_m": 4.55,
+        "height_m": 2.9,
+        "launch_weight_kg": 4990,
+        "payload_bay_m": "2.1 x 1.2",
+        "orbit_altitude_km": "250-500"
+      },
+      "features": {
+        "reusable": true,
+        "autonomous": true,
+        "endurance_days": 908,
+        "solar_powered": true
+      },
+      "missions": [
+        {"name": "OTV-1", "year": 2010, "duration_days": 224},
+        {"name": "OTV-2", "year": 2011, "duration_days": 469},
+        {"name": "OTV-3", "year": 2012, "duration_days": 675},
+        {"name": "OTV-4", "year": 2015, "duration_days": 718},
+        {"name": "OTV-5", "year": 2017, "duration_days": 780},
+        {"name": "OTV-6", "year": 2020, "duration_days": 908}
+      ],
+      "service_history": {
+        "introduced": 2010,
+        "status": "active",
+        "vehicles": 2
+      },
+      "notes": "Classified missions. Record 908 days in orbit. Autonomous landing. Experiments and ISR suspected."
+    },
+    {
+      "id": "cn-shenlong-spaceplane",
+      "name": "Shenlong Reusable Spacecraft",
+      "type": "spaceplane",
+      "country_of_origin": "CN",
+      "manufacturer": "CASIC",
+      "service_entry": 2020,
+      "specifications": {
+        "details": "Classified",
+        "orbit_duration_days": 276
+      },
+      "missions": [
+        {"year": 2020, "duration_days": 2},
+        {"year": 2022, "duration_days": 276},
+        {"year": 2023, "status": "ongoing"}
+      ],
+      "notes": "Chinese X-37B equivalent. Highly classified. Multiple sub-satellite releases observed."
+    },
+    {
+      "id": "ru-nudol-asat",
+      "name": "Nudol PL-19 (A-235)",
+      "type": "asat_weapon",
+      "country_of_origin": "RU",
+      "manufacturer": "Almaz-Antey",
+      "service_entry": 2021,
+      "specifications": {
+        "range_km": 1500,
+        "altitude_km": 800,
+        "intercept": "Direct ascent kinetic"
+      },
+      "tests": [
+        {"year": 2021, "target": "Cosmos 1408 (defunct satellite)", "result": "Success, debris field"}
+      ],
+      "service_history": {
+        "introduced": 2021,
+        "status": "operational"
+      },
+      "notes": "Russian direct-ascent ASAT. 2021 test created large debris field. International condemnation."
+    },
+    {
+      "id": "us-sbirs-geo",
+      "name": "SBIRS GEO",
+      "type": "early_warning_satellite",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "full_name": "Space Based Infrared System",
+      "service_entry": 2011,
+      "specifications": {
+        "orbit": "Geosynchronous 35,786 km",
+        "sensors": "Scanning + Staring IR",
+        "coverage": "Hemispheric"
+      },
+      "mission": {
+        "primary": "Missile launch detection",
+        "secondary": ["Battlespace awareness", "Technical intelligence"]
+      },
+      "constellation": {
+        "geo_satellites": 6,
+        "heo_payloads": 4
+      },
+      "service_history": {
+        "introduced": 2011,
+        "status": "active"
+      },
+      "notes": "US missile warning constellation. Detects ICBM/SLBM/theater missiles. Replaces DSP satellites."
+    },
+    {
+      "id": "ru-ew-1-tundra-ews",
+      "name": "EKS Tundra (14F142)",
+      "type": "early_warning_satellite",
+      "country_of_origin": "RU",
+      "manufacturer": "RSC Energia / Cometa",
+      "nato_name": "Cosmos series",
+      "service_entry": 2015,
+      "specifications": {
+        "orbit": "Highly Elliptical (Molniya)",
+        "apogee_km": 35800,
+        "perigee_km": 1600,
+        "period_hours": 12
+      },
+      "mission": {
+        "primary": "Missile launch early warning",
+        "coverage": "Northern hemisphere focus"
+      },
+      "constellation": {
+        "planned": 10,
+        "operational": 6
+      },
+      "service_history": {
+        "introduced": 2015,
+        "status": "active"
+      },
+      "notes": "Russian unified space system (EKS). Replaces Oko satellites. HEO provides Arctic coverage."
+    }
+  ]
+}

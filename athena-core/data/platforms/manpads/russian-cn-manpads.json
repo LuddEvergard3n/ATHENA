@@ -1,0 +1,827 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-19",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Infantry Weapons",
+      "Army Recognition"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "ru-igla-s",
+      "name": "9K338 Igla-S (SA-24 Grinch)",
+      "type": "manpads",
+      "country_of_origin": "RU",
+      "manufacturer": "KBM / Kolomna",
+      "service_history": {
+        "introduced": 2004,
+        "retired": null,
+        "production_count": 10000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 5000,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "VN",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 1500,
+            "status": "active"
+          },
+          {
+            "country": "VE",
+            "quantity": 1800,
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "LY",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "DZ",
+            "quantity": 300,
+            "status": "active"
+          },
+          {
+            "country": "AZ",
+            "quantity": 200,
+            "status": "active"
+          }
+        ],
+        "notes": "15+ operators"
+      },
+      "specifications": {
+        "crew": 1,
+        "weight_missile_kg": 11.7,
+        "weight_launcher_kg": 6.3,
+        "weight_total_kg": 18,
+        "length_mm": 1635,
+        "diameter_mm": 72
+      },
+      "performance": {
+        "range_min_m": 500,
+        "range_max_m": 6000,
+        "altitude_max_m": 3500,
+        "altitude_min_m": 10,
+        "speed_mps": 600,
+        "speed_mach": 1.9,
+        "guidance": "passive_infrared_dual_band",
+        "all_aspect": true,
+        "acquisition_time_sec": 5,
+        "targets": [
+          "fixed_wing",
+          "helicopter",
+          "uav",
+          "cruise_missile"
+        ]
+      },
+      "warhead": {
+        "type": "he_fragmentation",
+        "weight_kg": 2.5,
+        "fuze": "contact_proximity"
+      },
+      "unit_cost_usd": 60000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Igla-S",
+        "Army Recognition"
+      ],
+      "notes": "Most advanced Russian MANPADS before Verba. Dual-band IR seeker (defeats flares). Proximity fuze. 6km range. Widely exported. Syria: used by multiple factions.",
+      "year": 2004
+    },
+    {
+      "id": "ru-igla-1",
+      "name": "9K310 Igla-1 (SA-16 Gimlet)",
+      "type": "manpads",
+      "country_of_origin": "SU",
+      "manufacturer": "KBM / Kolomna",
+      "service_history": {
+        "introduced": 1983,
+        "retired": null,
+        "production_count": 40000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 10000,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 2000,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "status": "active"
+          },
+          {
+            "country": "KZ",
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 3000,
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "status": "active"
+          },
+          {
+            "country": "CZ",
+            "status": "active"
+          },
+          {
+            "country": "SK",
+            "status": "active"
+          },
+          {
+            "country": "RO",
+            "status": "active"
+          },
+          {
+            "country": "VN",
+            "status": "active"
+          },
+          {
+            "country": "KP",
+            "status": "active"
+          }
+        ],
+        "notes": "40+ operators, former Soviet bloc"
+      },
+      "specifications": {
+        "crew": 1,
+        "weight_missile_kg": 10.8,
+        "weight_launcher_kg": 6,
+        "weight_total_kg": 16.8,
+        "length_mm": 1574,
+        "diameter_mm": 72
+      },
+      "performance": {
+        "range_min_m": 500,
+        "range_max_m": 5200,
+        "altitude_max_m": 3500,
+        "altitude_min_m": 10,
+        "speed_mps": 570,
+        "speed_mach": 1.7,
+        "guidance": "passive_infrared",
+        "all_aspect": true,
+        "targets": [
+          "fixed_wing",
+          "helicopter"
+        ]
+      },
+      "warhead": {
+        "type": "he_fragmentation",
+        "weight_kg": 1.27,
+        "fuze": "contact_delay"
+      },
+      "unit_cost_usd": 25000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia 9K38 Igla",
+        "Army Recognition"
+      ],
+      "notes": "Soviet-era MANPADS, still widespread. Improved Strela-3 replacement. All-aspect engagement. Chechnya, Syria, Ukraine combat. Poland/Czech license production (Grom).",
+      "year": 1981
+    },
+    {
+      "id": "ru-verba",
+      "name": "9K333 Verba (SA-25)",
+      "type": "manpads",
+      "country_of_origin": "RU",
+      "manufacturer": "KBM / Kolomna",
+      "service_history": {
+        "introduced": 2015,
+        "retired": null,
+        "production_count": 3000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 3000,
+            "status": "active"
+          }
+        ],
+        "notes": "No known exports"
+      },
+      "specifications": {
+        "crew": 1,
+        "weight_missile_kg": 11.7,
+        "weight_launcher_kg": 6.5,
+        "weight_total_kg": 18.2,
+        "length_mm": 1635,
+        "diameter_mm": 72
+      },
+      "performance": {
+        "range_min_m": 500,
+        "range_max_m": 6500,
+        "altitude_max_m": 4500,
+        "altitude_min_m": 10,
+        "speed_mps": 650,
+        "speed_mach": 2.0,
+        "guidance": "passive_infrared_three_band",
+        "all_aspect": true,
+        "acquisition_time_sec": 3,
+        "targets": [
+          "fixed_wing",
+          "helicopter",
+          "uav",
+          "cruise_missile"
+        ]
+      },
+      "warhead": {
+        "type": "he_fragmentation",
+        "weight_kg": 2.5,
+        "fuze": "contact_proximity"
+      },
+      "unit_cost_usd": 80000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia 9K333 Verba",
+        "Army Recognition"
+      ],
+      "notes": "Russia's newest MANPADS. Three-band IR seeker (most advanced). 6.5km range. No known exports. Ukraine war: limited deployment due to cost/complexity.",
+      "year": 2015
+    },
+    {
+      "id": "ru-strela-3",
+      "name": "9K34 Strela-3 (SA-14 Gremlin)",
+      "type": "manpads",
+      "country_of_origin": "SU",
+      "manufacturer": "KBM / Kolomna",
+      "service_history": {
+        "introduced": 1974,
+        "retired": null,
+        "production_count": 100000,
+        "operators": [
+          {
+            "country": "RU",
+            "status": "reserve"
+          },
+          {
+            "country": "UA",
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "status": "active"
+          },
+          {
+            "country": "LY",
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "status": "active"
+          },
+          {
+            "country": "VN",
+            "status": "active"
+          },
+          {
+            "country": "KP",
+            "status": "active"
+          },
+          {
+            "country": "CU",
+            "status": "active"
+          },
+          {
+            "country": "NI",
+            "status": "active"
+          },
+          {
+            "country": "AF",
+            "status": "active"
+          }
+        ],
+        "notes": "50+ operators, legacy system"
+      },
+      "specifications": {
+        "crew": 1,
+        "weight_missile_kg": 10.3,
+        "weight_launcher_kg": 5.7,
+        "weight_total_kg": 16,
+        "length_mm": 1470,
+        "diameter_mm": 72
+      },
+      "performance": {
+        "range_min_m": 500,
+        "range_max_m": 4100,
+        "altitude_max_m": 3000,
+        "altitude_min_m": 30,
+        "speed_mps": 470,
+        "speed_mach": 1.4,
+        "guidance": "passive_infrared",
+        "all_aspect": false,
+        "notes": "Rear-aspect only (tail-chase)"
+      },
+      "warhead": {
+        "type": "he_fragmentation",
+        "weight_kg": 1.17,
+        "fuze": "contact"
+      },
+      "unit_cost_usd": 15000,
+      "cost_year": 1990,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Strela-3",
+        "Army Recognition"
+      ],
+      "notes": "Cold War era MANPADS. Rear-aspect only (obsolete). Still in service with many nations. Falklands War, Iran-Iraq War, Afghan War combat. Superseded by Igla.",
+      "year": 1974
+    },
+    {
+      "id": "ru-strela-2",
+      "name": "9K32 Strela-2 (SA-7 Grail)",
+      "type": "manpads",
+      "country_of_origin": "SU",
+      "manufacturer": "KBM / Kolomna",
+      "service_history": {
+        "introduced": 1968,
+        "retired": null,
+        "production_count": 500000,
+        "operators": [
+          {
+            "country": "RU",
+            "status": "reserve"
+          },
+          {
+            "country": "UA",
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "status": "reserve"
+          },
+          {
+            "country": "SY",
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "status": "active"
+          },
+          {
+            "country": "VN",
+            "status": "active"
+          },
+          {
+            "country": "KP",
+            "status": "active"
+          },
+          {
+            "country": "CU",
+            "status": "active"
+          },
+          {
+            "country": "AF",
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "variants": [
+              "Anza Mk1"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "CN",
+            "variants": [
+              "HN-5"
+            ],
+            "status": "active"
+          }
+        ],
+        "notes": "Most produced MANPADS ever, 60+ operators"
+      },
+      "specifications": {
+        "crew": 1,
+        "weight_missile_kg": 9.15,
+        "weight_launcher_kg": 5.85,
+        "weight_total_kg": 15,
+        "length_mm": 1440,
+        "diameter_mm": 72
+      },
+      "performance": {
+        "range_min_m": 500,
+        "range_max_m": 3700,
+        "altitude_max_m": 2300,
+        "altitude_min_m": 50,
+        "speed_mps": 430,
+        "speed_mach": 1.3,
+        "guidance": "passive_infrared",
+        "all_aspect": false,
+        "notes": "Rear-aspect only"
+      },
+      "warhead": {
+        "type": "he_fragmentation",
+        "weight_kg": 1.15,
+        "fuze": "contact"
+      },
+      "unit_cost_usd": 10000,
+      "cost_year": 1980,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Strela-2",
+        "Army Recognition"
+      ],
+      "notes": "World's first MANPADS. 500,000+ produced. Extremely widespread. Obsolete but still dangerous. Vietnam War, Yom Kippur War, countless conflicts. Easy to obtain on black market.",
+      "year": 1968
+    },
+    {
+      "id": "cn-qw1",
+      "name": "QW-1 Vanguard",
+      "type": "manpads",
+      "country_of_origin": "CN",
+      "manufacturer": "CPMIEC / Norinco",
+      "service_history": {
+        "introduced": 1994,
+        "retired": null,
+        "production_count": 20000,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 10000,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 2000,
+            "variants": [
+              "Anza Mk2"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "BD",
+            "status": "active"
+          },
+          {
+            "country": "SD",
+            "status": "active"
+          },
+          {
+            "country": "MM",
+            "status": "active"
+          },
+          {
+            "country": "LK",
+            "status": "active"
+          },
+          {
+            "country": "KH",
+            "status": "active"
+          }
+        ],
+        "notes": "10+ operators"
+      },
+      "specifications": {
+        "crew": 1,
+        "weight_missile_kg": 10.7,
+        "weight_launcher_kg": 5.5,
+        "weight_total_kg": 16.2,
+        "length_mm": 1447,
+        "diameter_mm": 72
+      },
+      "performance": {
+        "range_min_m": 500,
+        "range_max_m": 5000,
+        "altitude_max_m": 4000,
+        "altitude_min_m": 30,
+        "speed_mps": 600,
+        "speed_mach": 1.8,
+        "guidance": "passive_infrared",
+        "all_aspect": true,
+        "targets": [
+          "fixed_wing",
+          "helicopter"
+        ]
+      },
+      "warhead": {
+        "type": "he_fragmentation",
+        "weight_kg": 1.42,
+        "fuze": "contact_delay"
+      },
+      "variants": [
+        {
+          "designation": "QW-1",
+          "range_m": 5000,
+          "notes": "Basic"
+        },
+        {
+          "designation": "QW-1M",
+          "range_m": 5000,
+          "notes": "Improved ECCM"
+        },
+        {
+          "designation": "QW-11",
+          "range_m": 6000,
+          "notes": "Enhanced"
+        }
+      ],
+      "unit_cost_usd": 30000,
+      "cost_year": 2010,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia QW-1 Vanguard",
+        "Army Recognition",
+        "Sinodefense"
+      ],
+      "notes": "Chinese Igla equivalent. All-aspect IR seeker. 5km range. Pakistan produces as Anza Mk2. Export to developing nations.",
+      "year": 1994
+    },
+    {
+      "id": "cn-qw2",
+      "name": "QW-2",
+      "type": "manpads",
+      "country_of_origin": "CN",
+      "manufacturer": "CPMIEC / Norinco",
+      "service_history": {
+        "introduced": 2002,
+        "retired": null,
+        "production_count": 10000,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 7000,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "variants": [
+              "Anza Mk3"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "BD",
+            "status": "active"
+          },
+          {
+            "country": "TH",
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 1,
+        "weight_missile_kg": 11,
+        "weight_launcher_kg": 6,
+        "weight_total_kg": 17,
+        "length_mm": 1500,
+        "diameter_mm": 72
+      },
+      "performance": {
+        "range_min_m": 500,
+        "range_max_m": 6000,
+        "altitude_max_m": 4000,
+        "altitude_min_m": 10,
+        "speed_mps": 650,
+        "speed_mach": 2.0,
+        "guidance": "passive_infrared_dual_band",
+        "all_aspect": true,
+        "targets": [
+          "fixed_wing",
+          "helicopter",
+          "uav",
+          "cruise_missile"
+        ]
+      },
+      "warhead": {
+        "type": "he_fragmentation",
+        "weight_kg": 1.42,
+        "fuze": "contact_proximity"
+      },
+      "unit_cost_usd": 50000,
+      "cost_year": 2015,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia QW-2",
+        "Army Recognition",
+        "Sinodefense"
+      ],
+      "notes": "Improved Chinese MANPADS. Dual-band seeker (defeats flares). 6km range. Proximity fuze. Pakistan produces as Anza Mk3.",
+      "year": 2002
+    },
+    {
+      "id": "cn-fn6",
+      "name": "FN-6 (Feinu-6)",
+      "type": "manpads",
+      "country_of_origin": "CN",
+      "manufacturer": "CPMIEC",
+      "service_history": {
+        "introduced": 2006,
+        "retired": null,
+        "production_count": 8000,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 5000,
+            "status": "active"
+          },
+          {
+            "country": "MY",
+            "status": "active"
+          },
+          {
+            "country": "PE",
+            "status": "active"
+          },
+          {
+            "country": "SD",
+            "status": "active"
+          },
+          {
+            "country": "CM",
+            "status": "active"
+          }
+        ],
+        "notes": "Captured by Syrian rebels (from Sudan)"
+      },
+      "specifications": {
+        "crew": 1,
+        "weight_missile_kg": 10.8,
+        "weight_launcher_kg": 5.5,
+        "weight_total_kg": 16,
+        "length_mm": 1490,
+        "diameter_mm": 72
+      },
+      "performance": {
+        "range_min_m": 500,
+        "range_max_m": 5500,
+        "altitude_max_m": 3800,
+        "altitude_min_m": 15,
+        "speed_mps": 600,
+        "speed_mach": 1.8,
+        "guidance": "passive_infrared_dual_band",
+        "all_aspect": true,
+        "targets": [
+          "fixed_wing",
+          "helicopter",
+          "uav"
+        ]
+      },
+      "warhead": {
+        "type": "he_fragmentation",
+        "weight_kg": 1.5,
+        "fuze": "contact_proximity"
+      },
+      "unit_cost_usd": 40000,
+      "cost_year": 2015,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia FN-6",
+        "Army Recognition"
+      ],
+      "notes": "Chinese export MANPADS. Dual-band seeker. Syrian rebels captured from Sudan stocks. Used to shoot down Syrian aircraft.",
+      "year": 2006
+    },
+    {
+      "id": "pl-grom",
+      "name": "Grom / Piorun",
+      "type": "manpads",
+      "country_of_origin": "PL",
+      "manufacturer": "Mesko",
+      "service_history": {
+        "introduced": 1995,
+        "retired": null,
+        "production_count": 5000,
+        "operators": [
+          {
+            "country": "PL",
+            "quantity": 3000,
+            "status": "active"
+          },
+          {
+            "country": "GE",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "ID",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "LT",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 1000,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 1,
+        "weight_missile_kg": 10.5,
+        "weight_total_kg": 16.5,
+        "length_mm": 1570,
+        "diameter_mm": 72
+      },
+      "performance": {
+        "range_min_m": 400,
+        "range_max_m": 5500,
+        "altitude_max_m": 3500,
+        "altitude_min_m": 10,
+        "speed_mps": 650,
+        "speed_mach": 2.0,
+        "guidance": "passive_infrared_dual_band",
+        "all_aspect": true,
+        "targets": [
+          "fixed_wing",
+          "helicopter",
+          "uav",
+          "cruise_missile"
+        ]
+      },
+      "warhead": {
+        "type": "he_fragmentation",
+        "weight_kg": 1.27,
+        "fuze": "contact_proximity"
+      },
+      "variants": [
+        {
+          "designation": "Grom-1",
+          "notes": "Licensed Igla-1"
+        },
+        {
+          "designation": "Grom-2",
+          "notes": "Improved seeker"
+        },
+        {
+          "designation": "Piorun",
+          "range_m": 6500,
+          "notes": "Modern version, programmable seeker"
+        }
+      ],
+      "unit_cost_usd": 70000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Grom (missile)",
+        "Army Recognition"
+      ],
+      "notes": "Polish Igla derivative. Grom = 'Thunder'. Piorun ('Thunderbolt') is latest version with improved seeker. Ukraine: highly effective, major deliveries.",
+      "year": 1995
+    }
+  ]
+}

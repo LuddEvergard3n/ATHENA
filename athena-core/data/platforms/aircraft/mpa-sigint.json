@@ -1,0 +1,660 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-23",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "Boeing",
+      "Kawasaki"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-p8a",
+      "name": "P-8A Poseidon",
+      "nato_name": null,
+      "type": "maritime_patrol",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 2013,
+        "first_flight": 2009,
+        "retired": null,
+        "production_count": 170,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 128,
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 14,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "UK",
+            "quantity": 9,
+            "status": "active"
+          },
+          {
+            "country": "NO",
+            "quantity": 5,
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "NZ",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "DE",
+            "quantity": 5,
+            "status": "ordered"
+          },
+          {
+            "country": "CA",
+            "quantity": 16,
+            "status": "ordered"
+          }
+        ],
+        "notes": "P-3 Orion replacement"
+      },
+      "specifications": {
+        "crew": 9,
+        "length_m": 39.5,
+        "wingspan_m": 37.6,
+        "height_m": 12.8,
+        "empty_weight_kg": 62730,
+        "max_takeoff_weight_kg": 85820
+      },
+      "performance": {
+        "max_speed_kmh": 907,
+        "cruise_speed_kmh": 815,
+        "patrol_speed_kmh": 333,
+        "range_km": 3700,
+        "max_range_km": 7500,
+        "endurance_hours": 10,
+        "service_ceiling_m": 12500
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "CFM56-7BE",
+        "thrust_kn": 121
+      },
+      "sensors": {
+        "radar": "AN/APY-10 (multi-mode)",
+        "radar_range_km": 370,
+        "sonobuoys": 126,
+        "magnetic_anomaly_detector": "AN/ASQ-508A",
+        "eo_ir": "AN/AAS-44C(V)",
+        "ew_suite": "AN/ALQ-240 ESM",
+        "notes": "Can deploy sonobuoys, torpedoes, depth charges"
+      },
+      "armament": {
+        "torpedoes": {
+          "type": "Mk 54",
+          "quantity": 5
+        },
+        "missiles": {
+          "type": "Harpoon",
+          "quantity": 4,
+          "notes": "External pylons"
+        },
+        "mines": {
+          "type": "Mk 65",
+          "notes": "Can carry mines"
+        },
+        "depth_charges": true
+      },
+      "operational_history": {
+        "notes": "Extensive South China Sea operations. Submarine tracking missions."
+      },
+      "unit_cost_usd": 256000000,
+      "cost_year": 2021,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "USN"
+      ],
+      "notes": "737-800 based. Higher altitude than P-3. No MAD boom (uses sonobuoys + MQ-4C Triton). Major export success. 128+ for USN.",
+      "year": 2013
+    },
+    {
+      "id": "us-p3c",
+      "name": "P-3C Orion",
+      "nato_name": null,
+      "type": "maritime_patrol",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed",
+      "service_history": {
+        "introduced": 1969,
+        "first_flight": 1959,
+        "retired": null,
+        "production_count": 757,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 25,
+            "status": "reserve"
+          },
+          {
+            "country": "JP",
+            "quantity": 70,
+            "status": "active",
+            "notes": "Largest fleet"
+          },
+          {
+            "country": "NZ",
+            "quantity": 6,
+            "status": "retired",
+            "notes": "Replaced by P-8"
+          },
+          {
+            "country": "AU",
+            "quantity": 15,
+            "status": "retired"
+          },
+          {
+            "country": "NO",
+            "quantity": 6,
+            "status": "retired"
+          },
+          {
+            "country": "TW",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "quantity": 16,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 10,
+            "status": "active"
+          },
+          {
+            "country": "BR",
+            "quantity": 8,
+            "status": "active"
+          },
+          {
+            "country": "DE",
+            "quantity": 8,
+            "status": "retired"
+          },
+          {
+            "country": "NL",
+            "quantity": 13,
+            "status": "retired"
+          }
+        ],
+        "notes": "Cold War ASW workhorse"
+      },
+      "specifications": {
+        "crew": 11,
+        "length_m": 35.6,
+        "wingspan_m": 30.4,
+        "height_m": 10.3,
+        "empty_weight_kg": 27890,
+        "max_takeoff_weight_kg": 64400
+      },
+      "performance": {
+        "max_speed_kmh": 761,
+        "cruise_speed_kmh": 608,
+        "patrol_speed_kmh": 380,
+        "range_km": 4400,
+        "endurance_hours": 16,
+        "service_ceiling_m": 8600
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "Allison T56-A-14",
+        "power_shp": 4600
+      },
+      "sensors": {
+        "radar": "AN/APS-137D(V)5",
+        "sonobuoys": 84,
+        "magnetic_anomaly_detector": "AN/ASQ-81 MAD boom",
+        "notes": "Distinctive MAD tail boom"
+      },
+      "armament": {
+        "torpedoes": {
+          "type": "Mk 46/50",
+          "quantity": 8
+        },
+        "missiles": {
+          "type": "Harpoon",
+          "quantity": 6
+        },
+        "mines": true,
+        "depth_charges": true,
+        "weapons_bay_kg": 9072
+      },
+      "unit_cost_usd": 36000000,
+      "cost_year": 1990,
+      "confidence": "high",
+      "sources": [
+        "Lockheed",
+        "USN"
+      ],
+      "notes": "Electra airliner derivative. 757 built (most produced MPA). MAD boom distinctive feature. Japan still operates 70. Being replaced by P-8/P-1.",
+      "year": 1969
+    },
+    {
+      "id": "jp-p1",
+      "name": "Kawasaki P-1",
+      "nato_name": null,
+      "type": "maritime_patrol",
+      "country_of_origin": "JP",
+      "manufacturer": "Kawasaki Heavy Industries",
+      "service_history": {
+        "introduced": 2013,
+        "first_flight": 2007,
+        "retired": null,
+        "production_count": 40,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 40,
+            "status": "active",
+            "notes": "70 planned"
+          }
+        ],
+        "notes": "Japan's indigenous MPA"
+      },
+      "specifications": {
+        "crew": 13,
+        "length_m": 38.0,
+        "wingspan_m": 35.4,
+        "height_m": 12.1,
+        "empty_weight_kg": 53200,
+        "max_takeoff_weight_kg": 79700
+      },
+      "performance": {
+        "max_speed_kmh": 996,
+        "patrol_speed_kmh": 370,
+        "range_km": 8000,
+        "endurance_hours": 16,
+        "service_ceiling_m": 13500
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "IHI F7-10 turbofan",
+        "thrust_kn": 60
+      },
+      "sensors": {
+        "radar": "HPS-106 AESA",
+        "sonobuoys": 100,
+        "magnetic_anomaly_detector": "HSQ-102 (retractable)",
+        "eo_ir": "HAQ-2",
+        "ew": "HLR-109B ESM"
+      },
+      "armament": {
+        "torpedoes": {
+          "type": "Type 97",
+          "quantity": 8
+        },
+        "missiles": {
+          "type": "ASM-1C/ASM-2",
+          "quantity": 8
+        },
+        "weapons_bay_kg": 9000
+      },
+      "unit_cost_usd": 150000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Kawasaki",
+        "JMSDF"
+      ],
+      "notes": "Most advanced Japanese aircraft. 4 engines (2-engine loiter mode). Indigenous everything. Fly-by-light controls. 70 planned total.",
+      "year": 2013
+    },
+    {
+      "id": "ru-tu142",
+      "name": "Tu-142MK Bear-F",
+      "nato_name": "Bear-F",
+      "type": "maritime_patrol",
+      "country_of_origin": "SU",
+      "manufacturer": "Tupolev",
+      "service_history": {
+        "introduced": 1972,
+        "first_flight": 1968,
+        "retired": null,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 8,
+            "status": "active"
+          }
+        ],
+        "notes": "World's largest MPA"
+      },
+      "specifications": {
+        "crew": 10,
+        "length_m": 53.1,
+        "wingspan_m": 50.0,
+        "height_m": 14.7,
+        "empty_weight_kg": 90000,
+        "max_takeoff_weight_kg": 185000
+      },
+      "performance": {
+        "max_speed_kmh": 855,
+        "cruise_speed_kmh": 720,
+        "range_km": 12500,
+        "endurance_hours": 20,
+        "service_ceiling_m": 13500
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "Kuznetsov NK-12MP",
+        "power_shp": 15000,
+        "notes": "Contra-rotating turboprops"
+      },
+      "sensors": {
+        "radar": "Korshun-KN",
+        "sonobuoys": 198,
+        "magnetic_anomaly_detector": "Berkut MAD",
+        "notes": "Extensive sensor suite"
+      },
+      "armament": {
+        "torpedoes": {
+          "type": "Orlan/UMGT-1",
+          "quantity": 8
+        },
+        "depth_charges": {
+          "quantity": 9
+        },
+        "mines": true,
+        "weapons_bay_kg": 8845
+      },
+      "unit_cost_usd": 100000000,
+      "cost_year": 1990,
+      "confidence": "medium",
+      "sources": [
+        "Tupolev",
+        "Jane's"
+      ],
+      "notes": "Tu-95 derivative for ASW. Largest MPA ever. Russia: 12 in service. India operates 8. 20-hour endurance.",
+      "year": 1972
+    },
+    {
+      "id": "fr-atl2",
+      "name": "Dassault Atlantique 2",
+      "nato_name": null,
+      "type": "maritime_patrol",
+      "country_of_origin": "FR",
+      "manufacturer": "Dassault Aviation",
+      "service_history": {
+        "introduced": 1989,
+        "first_flight": 1981,
+        "retired": null,
+        "production_count": 28,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 18,
+            "status": "active"
+          }
+        ],
+        "notes": "French MPA"
+      },
+      "specifications": {
+        "crew": 12,
+        "length_m": 33.6,
+        "wingspan_m": 37.4,
+        "height_m": 11.3,
+        "empty_weight_kg": 25700,
+        "max_takeoff_weight_kg": 46200
+      },
+      "performance": {
+        "max_speed_kmh": 650,
+        "patrol_speed_kmh": 315,
+        "range_km": 9100,
+        "endurance_hours": 18,
+        "service_ceiling_m": 9100
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Rolls-Royce Tyne RTy.20 Mk 21",
+        "power_shp": 6100
+      },
+      "sensors": {
+        "radar": "Thales Searchmaster AESA",
+        "sonobuoys": 78,
+        "magnetic_anomaly_detector": "Thales FLASH",
+        "eo_ir": "MX-20HD"
+      },
+      "armament": {
+        "torpedoes": {
+          "type": "MU90",
+          "quantity": 8
+        },
+        "missiles": {
+          "type": "AM39 Exocet",
+          "quantity": 4
+        },
+        "depth_charges": true
+      },
+      "unit_cost_usd": 100000000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "Dassault",
+        "French Navy"
+      ],
+      "notes": "NATO joint development (Breguet Atlantic origin). France-only ATL2. 18-hour endurance. Being modernized with AESA radar.",
+      "year": 1989
+    },
+    {
+      "id": "cn-y8q",
+      "name": "Shaanxi Y-8Q (KQ-200)",
+      "nato_name": null,
+      "type": "maritime_patrol",
+      "country_of_origin": "CN",
+      "manufacturer": "Shaanxi Aircraft Corporation",
+      "service_history": {
+        "introduced": 2017,
+        "first_flight": 2012,
+        "retired": null,
+        "production_count": 20,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 20,
+            "status": "active"
+          }
+        ],
+        "notes": "China's first purpose-built MPA"
+      },
+      "specifications": {
+        "crew": 10,
+        "length_m": 38.4,
+        "wingspan_m": 38.0,
+        "height_m": 11.6,
+        "max_takeoff_weight_kg": 65000
+      },
+      "performance": {
+        "max_speed_kmh": 662,
+        "cruise_speed_kmh": 550,
+        "range_km": 5500,
+        "endurance_hours": 12,
+        "service_ceiling_m": 10400
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "WJ-6C turboprop",
+        "power_shp": 5100
+      },
+      "sensors": {
+        "radar": "Surface search radar (nose)",
+        "sonobuoys": 100,
+        "magnetic_anomaly_detector": "MAD boom (tail)",
+        "notes": "Chin-mounted FLIR/EO"
+      },
+      "armament": {
+        "torpedoes": {
+          "type": "Yu-7",
+          "quantity": 4
+        },
+        "missiles": {
+          "type": "YJ-83K",
+          "quantity": 4
+        },
+        "weapons_bay_kg": 6000
+      },
+      "unit_cost_usd": 50000000,
+      "cost_year": 2018,
+      "confidence": "low",
+      "sources": [
+        "Chinese media",
+        "Jane's"
+      ],
+      "notes": "Y-8 (An-12) based. MAD boom, sonobuoys. Monitors South China Sea, First Island Chain. 20+ in service.",
+      "year": 2012
+    },
+    {
+      "id": "in-p8i",
+      "name": "P-8I Neptune",
+      "nato_name": null,
+      "type": "maritime_patrol",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 2013,
+        "first_flight": 2009,
+        "retired": null,
+        "production_count": 12,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 12,
+            "status": "active",
+            "notes": "6 more ordered"
+          }
+        ],
+        "notes": "Indian P-8 variant"
+      },
+      "specifications": {
+        "crew": 9,
+        "length_m": 39.5,
+        "wingspan_m": 37.6,
+        "max_takeoff_weight_kg": 85820
+      },
+      "performance": {
+        "max_speed_kmh": 907,
+        "cruise_speed_kmh": 815,
+        "range_km": 3700,
+        "endurance_hours": 10
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "CFM56-7BE",
+        "thrust_kn": 121
+      },
+      "sensors": {
+        "radar": "AN/APY-10",
+        "sonobuoys": 126,
+        "magnetic_anomaly_detector": "AN/ASQ-508A (added)",
+        "notes": "Has MAD (unlike USN P-8A)"
+      },
+      "armament": {
+        "torpedoes": {
+          "type": "Mk 54",
+          "quantity": 5
+        },
+        "missiles": {
+          "type": "Harpoon",
+          "quantity": 4
+        }
+      },
+      "unit_cost_usd": 220000000,
+      "cost_year": 2018,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "Indian Navy"
+      ],
+      "notes": "Indian variant with MAD (P-8A doesn't have it). 12 delivered, 6 more ordered. Indian Ocean dominance.",
+      "year": 2013
+    },
+    {
+      "id": "us-ep3",
+      "name": "EP-3E Aries II",
+      "nato_name": null,
+      "type": "sigint",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed",
+      "service_history": {
+        "introduced": 1969,
+        "first_flight": 1959,
+        "retired": null,
+        "production_count": 12,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 11,
+            "status": "active"
+          }
+        ],
+        "notes": "Signals intelligence platform"
+      },
+      "specifications": {
+        "crew": 24,
+        "length_m": 35.6,
+        "wingspan_m": 30.4,
+        "height_m": 10.3,
+        "max_takeoff_weight_kg": 61235
+      },
+      "performance": {
+        "max_speed_kmh": 761,
+        "cruise_speed_kmh": 608,
+        "range_km": 5556,
+        "endurance_hours": 12,
+        "service_ceiling_m": 8625
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "Allison T56-A-14",
+        "power_shp": 4600
+      },
+      "sensors": {
+        "sigint": "Multiple ELINT/COMINT systems",
+        "notes": "Heavily modified for signals intelligence"
+      },
+      "operational_history": {
+        "notable": "2001 Hainan Island incident with Chinese J-8"
+      },
+      "unit_cost_usd": 75000000,
+      "cost_year": 1995,
+      "confidence": "medium",
+      "sources": [
+        "USN",
+        "Jane's"
+      ],
+      "notes": "P-3 SIGINT variant. 24-person crew for intelligence collection. Famous 2001 China collision incident. Being replaced.",
+      "year": 1969
+    }
+  ]
+}

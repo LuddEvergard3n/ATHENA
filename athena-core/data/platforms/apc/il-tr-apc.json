@@ -1,0 +1,635 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "il-namer",
+      "name": "Namer",
+      "type": "heavy_apc",
+      "country_of_origin": "IL",
+      "manufacturer": "Israel Military Industries / GDLS",
+      "service_history": {
+        "introduced": 2008,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 200,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 9,
+        "weight_kg": 60000,
+        "length_m": 7.45,
+        "width_m": 3.72,
+        "height_m": 2.65,
+        "ground_clearance_m": 0.53,
+        "notes": "Heaviest APC in service globally"
+      },
+      "mobility": {
+        "engine": {
+          "model": "AVDS-1790-9AR",
+          "type": "diesel_turbocharged",
+          "power_hp": 1200,
+          "power_kw": 895
+        },
+        "power_to_weight_hp_ton": 20.0,
+        "transmission": "Ashot Ashkelon RENK RK 325",
+        "suspension": "Torsion bar",
+        "max_speed_road_kmh": 60,
+        "max_speed_offroad_kmh": 40,
+        "range_road_km": 500,
+        "fuel_capacity_liters": 1400,
+        "gradient_percent": 60,
+        "fording_depth_m": 1.4,
+        "trench_crossing_m": 2.6,
+        "vertical_obstacle_m": 0.9,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "Samson RCWS-30",
+          "caliber_mm": 30,
+          "type": "remote_weapon_station",
+          "options": [
+            "Mk44 30mm",
+            "M2HB 12.7mm",
+            "M240 7.62mm"
+          ],
+          "elevation_min_deg": -20,
+          "elevation_max_deg": 60,
+          "traverse_deg": 360,
+          "stabilization": "two-axis"
+        },
+        "secondary": [
+          {
+            "designation": "Trophy APS launchers",
+            "type": "active_protection"
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite_era",
+        "armor_composition": "Merkava IV hull, composite + ERA",
+        "protection_front_mm_rha": 700,
+        "protection_side_mm_rha": 350,
+        "stanag_level": "4569 Level 6",
+        "aps": {
+          "system": "Trophy",
+          "type": "hard-kill",
+          "coverage_deg": 360
+        },
+        "mine_protection": "Enhanced belly, 10kg TNT",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true,
+        "notes": "MBT-level protection for infantry"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Elbit Samson",
+        "commander_sight": {
+          "type": "Panoramic",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_warning_receiver": true,
+        "ballistic_computer": true,
+        "automatic_target_tracker": true,
+        "battle_management_system": "Torch"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "ir_signature_reduction": true
+      },
+      "unit_cost_usd": 3000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Namer",
+        "Army Recognition",
+        "Jane's"
+      ],
+      "notes": "World's heaviest APC. Merkava IV based. Trophy APS. 60t for maximum protection. Lebanon, Gaza combat. Turretless version and RCWS-30 version.",
+      "year": 2008
+    },
+    {
+      "id": "il-eitan",
+      "name": "Eitan",
+      "type": "apc",
+      "country_of_origin": "IL",
+      "manufacturer": "Israel Military Industries",
+      "service_history": {
+        "introduced": 2022,
+        "retired": null,
+        "production_count": 300,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 300,
+            "status": "entering service"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 9,
+        "weight_kg": 35000,
+        "length_m": 8.0,
+        "width_m": 3.0,
+        "height_m": 2.5,
+        "ground_clearance_m": 0.5
+      },
+      "mobility": {
+        "engine": {
+          "model": "Caterpillar C13",
+          "type": "diesel_turbocharged",
+          "power_hp": 750,
+          "power_kw": 559
+        },
+        "power_to_weight_hp_ton": 21.4,
+        "drivetrain": "8x8",
+        "transmission": "Allison 4800SP automatic",
+        "suspension": "Independent hydropneumatic",
+        "max_speed_road_kmh": 90,
+        "max_speed_offroad_kmh": 50,
+        "range_road_km": 600,
+        "gradient_percent": 60,
+        "fording_depth_m": 1.3,
+        "amphibious": false,
+        "tyre_pressure_central": true,
+        "run_flat_tires": true
+      },
+      "armament": {
+        "main": {
+          "designation": "Samson RCWS-30",
+          "caliber_mm": 30,
+          "type": "remote_weapon_station",
+          "options": [
+            "Mk44 30mm",
+            "M2HB 12.7mm"
+          ],
+          "elevation_min_deg": -20,
+          "elevation_max_deg": 60,
+          "traverse_deg": 360,
+          "stabilization": "two-axis"
+        },
+        "atgm": {
+          "designation": "Spike LR (optional)",
+          "missiles_carried": 2,
+          "range_m": 4000
+        }
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 5",
+        "mine_protection": "STANAG 4569 Level 4a/4b",
+        "aps": {
+          "system": "Trophy",
+          "type": "hard-kill",
+          "coverage_deg": 360
+        },
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Elbit Samson",
+        "commander_sight": {
+          "type": "Panoramic",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_warning_receiver": true,
+        "ballistic_computer": true,
+        "automatic_target_tracker": true,
+        "battle_management_system": "Torch"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "ir_signature_reduction": true
+      },
+      "unit_cost_usd": 4500000,
+      "cost_year": 2022,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Eitan",
+        "Army Recognition",
+        "Jane's"
+      ],
+      "notes": "First Israeli wheeled APC. Trophy APS integrated. IFV variant with 30mm. Complements tracked Namer. Iron Fist APS option.",
+      "year": 2010
+    },
+    {
+      "id": "il-achzarit",
+      "name": "Achzarit",
+      "type": "heavy_apc",
+      "country_of_origin": "IL",
+      "manufacturer": "IMI",
+      "service_history": {
+        "introduced": 1988,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 200,
+            "status": "reserve"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 7,
+        "weight_kg": 44000,
+        "length_m": 6.2,
+        "width_m": 3.64,
+        "height_m": 2.0,
+        "ground_clearance_m": 0.46
+      },
+      "mobility": {
+        "engine": {
+          "model": "Detroit Diesel 8V-92TA",
+          "type": "diesel_turbocharged",
+          "power_hp": 850,
+          "power_kw": 634
+        },
+        "power_to_weight_hp_ton": 19.3,
+        "transmission": "Allison CD-850-6",
+        "max_speed_road_kmh": 65,
+        "range_road_km": 450,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "OWS (Overhead Weapon Station)",
+          "caliber_mm": 12.7,
+          "type": "remote_weapon_station",
+          "options": [
+            "M2HB 12.7mm",
+            "Mk19 40mm",
+            "FN MAG 7.62mm"
+          ]
+        }
+      },
+      "protection": {
+        "armor_type": "composite_era",
+        "armor_composition": "T-55 hull, modified with composite + ERA",
+        "protection_front_mm_rha": 600,
+        "protection_side_mm_rha": 300,
+        "mine_protection": "Reinforced belly",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "commander_sight": {
+          "type": "Day/thermal",
+          "thermal": true
+        }
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8
+      },
+      "unit_cost_usd": 1500000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Achzarit",
+        "Army Recognition"
+      ],
+      "notes": "T-55 conversion. Pioneer heavy APC concept. Replaced by Namer. Rear ramp for dismount. Lebanon 2006 combat proven.",
+      "year": 1988
+    },
+    {
+      "id": "tr-pars-iii",
+      "name": "FNSS Pars III 8x8",
+      "type": "apc",
+      "country_of_origin": "TR",
+      "manufacturer": "FNSS Savunma Sistemleri",
+      "service_history": {
+        "introduced": 2015,
+        "retired": null,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "OM",
+            "quantity": 172,
+            "status": "active"
+          },
+          {
+            "country": "MY",
+            "quantity": 257,
+            "variants": [
+              "AV8"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 400,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 9,
+        "weight_kg": 18000,
+        "weight_combat_kg": 28000,
+        "length_m": 7.5,
+        "width_m": 2.85,
+        "height_m": 2.4,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Caterpillar C13",
+          "type": "diesel_turbocharged",
+          "power_hp": 560,
+          "power_kw": 418
+        },
+        "power_to_weight_hp_ton": 31.1,
+        "drivetrain": "8x8",
+        "transmission": "Allison 4500SP automatic",
+        "suspension": "Independent double wishbone",
+        "max_speed_road_kmh": 105,
+        "max_speed_water_kmh": 8,
+        "range_road_km": 700,
+        "gradient_percent": 60,
+        "fording_depth_m": 1.2,
+        "amphibious": true,
+        "propulsion_water": "waterjets",
+        "tyre_pressure_central": true,
+        "run_flat_tires": true
+      },
+      "armament": {
+        "main": {
+          "designation": "Variable (customer choice)",
+          "options": [
+            "12.7mm RWS",
+            "25mm turret",
+            "30mm turret",
+            "105mm turret"
+          ],
+          "caliber_mm": 12.7,
+          "mount": "RWS or turret"
+        }
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 4",
+        "protection_upgrade": "Add-on armor to Level 5",
+        "mine_protection": "STANAG 4569 Level 4a/4b",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Aselsan",
+        "commander_sight": {
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "battle_management_system": "Integrated",
+        "gps": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8
+      },
+      "unit_cost_usd": 3000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia FNSS Pars",
+        "Army Recognition",
+        "FNSS"
+      ],
+      "notes": "Export success. Malaysian AV8. Oman contract. Saudi order. 6x6 and 8x8 variants. Multiple turret options including Cockerill 105mm.",
+      "year": 2015
+    },
+    {
+      "id": "tr-kirpi",
+      "name": "BMC Kirpi",
+      "type": "mrap",
+      "country_of_origin": "TR",
+      "manufacturer": "BMC",
+      "service_history": {
+        "introduced": 2008,
+        "retired": null,
+        "production_count": 2000,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 1500,
+            "status": "active"
+          },
+          {
+            "country": "TN",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "QA",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "BD",
+            "quantity": 50,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 10,
+        "weight_kg": 18000,
+        "length_m": 6.45,
+        "width_m": 2.65,
+        "height_m": 2.85,
+        "ground_clearance_m": 0.42
+      },
+      "mobility": {
+        "engine": {
+          "model": "Cummins ISL",
+          "type": "diesel_turbocharged",
+          "power_hp": 375,
+          "power_kw": 280
+        },
+        "power_to_weight_hp_ton": 20.8,
+        "drivetrain": "4x4",
+        "transmission": "Allison automatic",
+        "max_speed_road_kmh": 105,
+        "range_road_km": 700,
+        "gradient_percent": 60,
+        "fording_depth_m": 0.9,
+        "amphibious": false,
+        "tyre_pressure_central": true,
+        "run_flat_tires": true
+      },
+      "armament": {
+        "main": {
+          "designation": "RWS or turret",
+          "caliber_mm": 12.7,
+          "type": "remote_weapon_station",
+          "options": [
+            "12.7mm RWS",
+            "SARP Dual RWS",
+            "7.62mm manual"
+          ]
+        }
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 3",
+        "mine_protection": "STANAG 4569 Level 4a",
+        "ied_protection": "V-hull, 8kg TNT",
+        "nbc_protection": false,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "commander_sight": {
+          "thermal": true
+        },
+        "battle_management_system": "Optional"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 6
+      },
+      "unit_cost_usd": 700000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia BMC Kirpi",
+        "Army Recognition"
+      ],
+      "notes": "Turkish MRAP. PKK/ISIS combat proven. Kirpi-II improved variant. Export to Tunisia, Qatar, Bangladesh.",
+      "year": 2009
+    },
+    {
+      "id": "ae-rabdan",
+      "name": "NIMR Ajban / Rabdan",
+      "type": "apc",
+      "country_of_origin": "AE",
+      "manufacturer": "NIMR Automotive",
+      "service_history": {
+        "introduced": 2016,
+        "retired": null,
+        "production_count": 1500,
+        "operators": [
+          {
+            "country": "AE",
+            "quantity": 1500,
+            "variants": [
+              "Ajban 440",
+              "Rabdan 8x8"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 600,
+            "variants": [
+              "ST-500"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "JO",
+            "quantity": 200,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 10,
+        "weight_kg": 24000,
+        "length_m": 7.5,
+        "width_m": 2.9,
+        "height_m": 2.5,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Cummins ISB 6.7",
+          "type": "diesel_turbocharged",
+          "power_hp": 450,
+          "power_kw": 336
+        },
+        "power_to_weight_hp_ton": 18.8,
+        "drivetrain": "8x8",
+        "transmission": "Allison automatic",
+        "max_speed_road_kmh": 100,
+        "range_road_km": 700,
+        "gradient_percent": 60,
+        "fording_depth_m": 1.0,
+        "amphibious": false,
+        "tyre_pressure_central": true
+      },
+      "armament": {
+        "main": {
+          "designation": "Variable",
+          "options": [
+            "RWS 12.7mm",
+            "Cockerill 3030",
+            "Cockerill 105mm"
+          ],
+          "caliber_mm": 12.7
+        }
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 4",
+        "mine_protection": "STANAG 4569 Level 4a/4b",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "commander_sight": {
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "battle_management_system": "Integrated"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8
+      },
+      "unit_cost_usd": 2000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia NIMR",
+        "Army Recognition"
+      ],
+      "notes": "UAE domestic. BMP-3 turret option. Yemen deployed. Export to Egypt, Jordan. Part of Emirati defense industry.",
+      "year": 2017
+    }
+  ]
+}

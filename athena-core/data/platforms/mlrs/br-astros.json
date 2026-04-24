@@ -1,0 +1,395 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "br-astros2",
+      "name": "ASTROS II",
+      "nato_designation": "ASTROS II",
+      "type": "mlrs",
+      "country_of_origin": "BR",
+      "manufacturer": "Avibras Ind\u00fastria Aeroespacial",
+      "service_history": {
+        "introduced": 1983,
+        "retired": null,
+        "production_count": 270,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 38,
+            "variants": [
+              "Mk3M",
+              "Mk6"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 60,
+            "variants": [
+              "Mk3"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "quantity": 60,
+            "variants": [
+              "Mk3",
+              "Sajil-60"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "MY",
+            "quantity": 36,
+            "variants": [
+              "Mk3"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "ID",
+            "quantity": 63,
+            "variants": [
+              "Mk6"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "AO",
+            "quantity": 20,
+            "variants": [
+              "Mk3"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "QA",
+            "quantity": 4,
+            "variants": [
+              "Mk3"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "BH",
+            "quantity": 9,
+            "variants": [
+              "Mk3"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 5,
+        "passengers": 0,
+        "weight_kg": 26000,
+        "length_m": 9.2,
+        "width_m": 2.6,
+        "height_m": 3.2,
+        "ground_clearance_m": 0.38
+      },
+      "mobility": {
+        "engine": {
+          "model": "Mercedes-Benz OM422 (Mk3) / Tatra V8 (Mk6)",
+          "type": "diesel",
+          "power_hp": 280,
+          "power_kw": 209
+        },
+        "transmission": "Manual",
+        "suspension": "leaf spring",
+        "drive_configuration": "6x6",
+        "max_speed_road_kmh": 90,
+        "max_speed_offroad_kmh": 40,
+        "range_road_km": 480,
+        "fuel_capacity_liters": 400,
+        "gradient_percent": 60,
+        "side_slope_percent": 30
+      },
+      "armament": {
+        "main": {
+          "designation": "AV-LMU Universal Launcher",
+          "type": "modular_mlrs",
+          "traverse_deg": 180,
+          "elevation_min_deg": 0,
+          "elevation_max_deg": 60,
+          "rocket_options": [
+            {
+              "designation": "SS-30",
+              "caliber_mm": 127,
+              "rockets_per_pod": 32,
+              "range_min_km": 9,
+              "range_max_km": 30,
+              "warhead_kg": 8,
+              "guidance": "unguided"
+            },
+            {
+              "designation": "SS-40",
+              "caliber_mm": 180,
+              "rockets_per_pod": 16,
+              "range_min_km": 15,
+              "range_max_km": 35,
+              "warhead_kg": 31,
+              "guidance": "unguided"
+            },
+            {
+              "designation": "SS-40G",
+              "caliber_mm": 180,
+              "rockets_per_pod": 16,
+              "range_min_km": 15,
+              "range_max_km": 40,
+              "warhead_kg": 31,
+              "guidance": "GPS/INS"
+            },
+            {
+              "designation": "SS-60",
+              "caliber_mm": 300,
+              "rockets_per_pod": 4,
+              "range_min_km": 20,
+              "range_max_km": 60,
+              "warhead_kg": 200,
+              "guidance": "unguided"
+            },
+            {
+              "designation": "SS-80",
+              "caliber_mm": 300,
+              "rockets_per_pod": 4,
+              "range_min_km": 22,
+              "range_max_km": 90,
+              "warhead_kg": 200,
+              "guidance": "unguided"
+            },
+            {
+              "designation": "SS-80G",
+              "caliber_mm": 300,
+              "rockets_per_pod": 4,
+              "range_min_km": 22,
+              "range_max_km": 90,
+              "warhead_kg": 200,
+              "guidance": "GPS/INS"
+            },
+            {
+              "designation": "SS-150",
+              "caliber_mm": 300,
+              "rockets_per_pod": 4,
+              "range_min_km": 30,
+              "range_max_km": 150,
+              "warhead_kg": 150,
+              "guidance": "GPS/INS"
+            }
+          ],
+          "reload_time_minutes": 15
+        }
+      },
+      "protection": {
+        "armor_type": "soft_skin",
+        "armor_composition": "Armored cab (small arms)",
+        "nbc_protection": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "AV-UCF computerized",
+        "radar": "Contraves Fieldguard",
+        "ballistic_computer": true,
+        "meteorological_system": "AV-MET",
+        "gps": true,
+        "inertial_navigation": true
+      },
+      "system_components": [
+        {
+          "designation": "AV-VCC",
+          "role": "Battalion Command Vehicle",
+          "chassis": "4x4"
+        },
+        {
+          "designation": "AV-PCC",
+          "role": "Battery Command Vehicle",
+          "chassis": "4x4"
+        },
+        {
+          "designation": "AV-UCF",
+          "role": "Fire Control/Radar Vehicle",
+          "chassis": "6x6"
+        },
+        {
+          "designation": "AV-LMU",
+          "role": "Universal Launcher",
+          "chassis": "6x6"
+        },
+        {
+          "designation": "AV-RMD",
+          "role": "Ammunition Resupply Vehicle",
+          "chassis": "6x6"
+        },
+        {
+          "designation": "AV-OFVE",
+          "role": "Field Repair Vehicle",
+          "chassis": "6x6"
+        },
+        {
+          "designation": "AV-MET",
+          "role": "Mobile Weather Station",
+          "chassis": "4x4"
+        }
+      ],
+      "battery_composition": {
+        "command_vehicles": 1,
+        "fire_control_vehicles": 1,
+        "launchers": 6,
+        "resupply_vehicles": 3,
+        "repair_vehicles": 1,
+        "weather_stations": 1
+      },
+      "unit_cost_usd": 5000000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia ASTROS II",
+        "Army Technology ASTROS",
+        "Defense Industry Daily",
+        "GlobalSecurity ASTROS",
+        "Military Factory ASTROS II"
+      ],
+      "notes": "First MLRS with modular launcher for multiple rocket calibers. Combat proven in Iran-Iraq War (1980-88), Gulf War (1991), Angolan Civil War. Total sales exceeded $1 billion in 1980s. Iraq built under license as Sajil-60.",
+      "year": 1983
+    },
+    {
+      "id": "br-astros2020",
+      "name": "ASTROS 2020 (Mk6)",
+      "type": "mlrs",
+      "country_of_origin": "BR",
+      "manufacturer": "Avibras Ind\u00fastria Aeroespacial",
+      "service_history": {
+        "introduced": 2020,
+        "retired": null,
+        "production_count": 77,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 18,
+            "variants": [
+              "Mk6"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "ID",
+            "quantity": 63,
+            "variants": [
+              "Mk6"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 28000,
+        "length_m": 9.5,
+        "width_m": 2.55,
+        "height_m": 3.3,
+        "ground_clearance_m": 0.4
+      },
+      "mobility": {
+        "engine": {
+          "model": "Tatra T815-790R39",
+          "type": "diesel",
+          "power_hp": 638,
+          "power_kw": 476
+        },
+        "transmission": "Automatic",
+        "suspension": "independent",
+        "drive_configuration": "6x6",
+        "max_speed_road_kmh": 100,
+        "max_speed_offroad_kmh": 50,
+        "range_road_km": 600,
+        "fuel_capacity_liters": 500,
+        "gradient_percent": 60,
+        "side_slope_percent": 30
+      },
+      "armament": {
+        "main": {
+          "designation": "AV-LMU Mk6 Universal Launcher",
+          "type": "modular_mlrs",
+          "traverse_deg": 180,
+          "elevation_min_deg": 0,
+          "elevation_max_deg": 60,
+          "rocket_options": [
+            {
+              "designation": "SS-40G",
+              "caliber_mm": 180,
+              "rockets_per_pod": 16,
+              "range_min_km": 15,
+              "range_max_km": 40,
+              "warhead_kg": 31,
+              "guidance": "GPS/INS",
+              "cep_m": 10
+            },
+            {
+              "designation": "SS-80G",
+              "caliber_mm": 300,
+              "rockets_per_pod": 4,
+              "range_min_km": 22,
+              "range_max_km": 90,
+              "warhead_kg": 200,
+              "guidance": "GPS/INS",
+              "cep_m": 10
+            },
+            {
+              "designation": "SS-150",
+              "caliber_mm": 300,
+              "rockets_per_pod": 6,
+              "range_min_km": 30,
+              "range_max_km": 150,
+              "warhead_kg": 150,
+              "guidance": "GPS/INS",
+              "cep_m": 10
+            },
+            {
+              "designation": "AV-TM 300 (MTC-300)",
+              "caliber_mm": 450,
+              "missiles_per_pod": 2,
+              "range_min_km": 50,
+              "range_max_km": 300,
+              "warhead_kg": 200,
+              "guidance": "GPS/INS + Terrain Matching",
+              "cep_m": 10,
+              "type": "cruise_missile",
+              "propulsion": "turbojet",
+              "speed": "subsonic"
+            }
+          ],
+          "reload_time_minutes": 10
+        }
+      },
+      "protection": {
+        "armor_type": "soft_skin",
+        "armor_composition": "Improved armored cab (7.62mm)",
+        "nbc_protection": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Autonomous digital FCS",
+        "radar": "Rheinmetall Fieldguard 3",
+        "ballistic_computer": true,
+        "meteorological_system": "Integrated",
+        "battle_management_system": "Yes",
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true,
+        "communications": "Digital encrypted"
+      },
+      "unit_cost_usd": 8000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia ASTROS II",
+        "Defense Express ASTROS 2020",
+        "ITSS Verona AV-TM 300",
+        "Defense Industry Daily ASTROS 2020"
+      ],
+      "notes": "Major upgrade with Tatra chassis, digital C4I, GPS-guided munitions. AV-TM 300 cruise missile (300km range) first in South America. Can operate autonomously like HIMARS. AFC variant increases launcher tubes (6x SS-150 or 4x AV-TM 300). Investment R$1.2 billion.",
+      "year": 2012
+    }
+  ]
+}

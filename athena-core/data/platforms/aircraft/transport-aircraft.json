@@ -1,0 +1,658 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-23",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "Lockheed Martin",
+      "Boeing",
+      "Airbus"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-c130j",
+      "name": "C-130J Super Hercules",
+      "nato_name": null,
+      "type": "tactical_transport",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "service_history": {
+        "introduced": 1999,
+        "first_flight": 1996,
+        "retired": null,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 300,
+            "status": "active"
+          },
+          {
+            "country": "UK",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "quantity": 22,
+            "status": "active"
+          },
+          {
+            "country": "FR",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "CA",
+            "quantity": 17,
+            "status": "active"
+          },
+          {
+            "country": "NO",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "DK",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "QA",
+            "quantity": 8,
+            "status": "active"
+          },
+          {
+            "country": "KW",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "IL",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "JP",
+            "quantity": 6,
+            "status": "active"
+          }
+        ],
+        "notes": "World's most successful military transport"
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 92,
+        "paratroopers": 64,
+        "length_m": 29.79,
+        "wingspan_m": 40.41,
+        "height_m": 11.84,
+        "empty_weight_kg": 34274,
+        "max_takeoff_weight_kg": 79378,
+        "cargo_hold_m3": 127.4
+      },
+      "performance": {
+        "max_speed_kmh": 671,
+        "cruise_speed_kmh": 643,
+        "range_km": 3334,
+        "max_range_km": 6852,
+        "service_ceiling_m": 8615,
+        "rate_of_climb_mps": 9.4,
+        "takeoff_distance_m": 1012,
+        "landing_distance_m": 427
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "Rolls-Royce AE 2100D3",
+        "power_shp": 4637,
+        "propeller": "Dowty R391 6-blade"
+      },
+      "capacity": {
+        "cargo_max_kg": 21772,
+        "pallets_463l": 6,
+        "vehicles": "3x HMMWVs or 1x M113",
+        "stretchers": 74
+      },
+      "variants": [
+        {
+          "designation": "C-130J",
+          "notes": "Standard"
+        },
+        {
+          "designation": "C-130J-30",
+          "notes": "Stretched (+4.6m)"
+        },
+        {
+          "designation": "KC-130J",
+          "notes": "Tanker"
+        },
+        {
+          "designation": "MC-130J",
+          "notes": "Special ops"
+        },
+        {
+          "designation": "AC-130J Ghostrider",
+          "notes": "Gunship"
+        },
+        {
+          "designation": "HC-130J",
+          "notes": "CSAR"
+        },
+        {
+          "designation": "EC-130J",
+          "notes": "Electronic warfare"
+        }
+      ],
+      "unit_cost_usd": 75000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Lockheed Martin",
+        "USAF"
+      ],
+      "notes": "70+ years of Hercules. Over 2,500 C-130s built total. J-model is completely redesigned. Can land on unprepared strips. Tactical airlift workhorse.",
+      "year": 1999
+    },
+    {
+      "id": "us-c17",
+      "name": "C-17A Globemaster III",
+      "nato_name": null,
+      "type": "strategic_transport",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing (McDonnell Douglas)",
+      "service_history": {
+        "introduced": 1995,
+        "first_flight": 1991,
+        "retired": null,
+        "production_count": 279,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 222,
+            "status": "active"
+          },
+          {
+            "country": "UK",
+            "quantity": 8,
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 8,
+            "status": "active"
+          },
+          {
+            "country": "CA",
+            "quantity": 5,
+            "status": "active"
+          },
+          {
+            "country": "QA",
+            "quantity": 8,
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 8,
+            "status": "active"
+          },
+          {
+            "country": "KW",
+            "quantity": 2,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 11,
+            "status": "active"
+          },
+          {
+            "country": "NATO",
+            "quantity": 3,
+            "status": "active",
+            "notes": "SAC"
+          }
+        ],
+        "notes": "Primary Western strategic airlifter"
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 134,
+        "paratroopers": 102,
+        "length_m": 53.04,
+        "wingspan_m": 51.75,
+        "height_m": 16.79,
+        "empty_weight_kg": 128100,
+        "max_takeoff_weight_kg": 265350,
+        "cargo_hold_m3": 592
+      },
+      "performance": {
+        "max_speed_kmh": 833,
+        "cruise_speed_kmh": 829,
+        "range_km": 4482,
+        "max_range_km": 10390,
+        "service_ceiling_m": 13716,
+        "takeoff_distance_m": 2316,
+        "landing_distance_m": 915
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "Pratt & Whitney F117-PW-100",
+        "thrust_kn": 180
+      },
+      "capacity": {
+        "cargo_max_kg": 77500,
+        "pallets_463l": 18,
+        "vehicles": "1x M1 Abrams or 3x Strykers",
+        "notes": "Can carry any US Army vehicle"
+      },
+      "operational_history": {
+        "notable": [
+          "Afghanistan (daily ops)",
+          "Kabul evacuation 2021 (record 823 passengers)"
+        ]
+      },
+      "unit_cost_usd": 340000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "USAF"
+      ],
+      "notes": "Production ended 2015. 279 built. Can carry M1 Abrams. Short-field capability. Kabul 2021: one aircraft carried 823 evacuees (record).",
+      "year": 1995
+    },
+    {
+      "id": "eu-a400m",
+      "name": "Airbus A400M Atlas",
+      "nato_name": null,
+      "type": "tactical_transport",
+      "country_of_origin": "EU",
+      "manufacturer": "Airbus Defence and Space",
+      "service_history": {
+        "introduced": 2013,
+        "first_flight": 2009,
+        "retired": null,
+        "production_count": 120,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 21,
+            "status": "active"
+          },
+          {
+            "country": "DE",
+            "quantity": 43,
+            "status": "active"
+          },
+          {
+            "country": "UK",
+            "quantity": 22,
+            "status": "active"
+          },
+          {
+            "country": "ES",
+            "quantity": 14,
+            "status": "active"
+          },
+          {
+            "country": "TR",
+            "quantity": 10,
+            "status": "active"
+          },
+          {
+            "country": "BE",
+            "quantity": 7,
+            "status": "active"
+          },
+          {
+            "country": "LU",
+            "quantity": 1,
+            "status": "active"
+          },
+          {
+            "country": "MY",
+            "quantity": 4,
+            "status": "active"
+          }
+        ],
+        "notes": "European strategic/tactical airlifter"
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 116,
+        "paratroopers": 116,
+        "length_m": 45.1,
+        "wingspan_m": 42.4,
+        "height_m": 14.7,
+        "empty_weight_kg": 76500,
+        "max_takeoff_weight_kg": 141000,
+        "cargo_hold_m3": 340
+      },
+      "performance": {
+        "max_speed_kmh": 780,
+        "cruise_speed_kmh": 737,
+        "range_km": 4540,
+        "max_range_km": 8700,
+        "service_ceiling_m": 12200,
+        "takeoff_distance_m": 980
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "Europrop TP400-D6",
+        "power_shp": 11000,
+        "propeller": "Ratier-Figeac FH386 8-blade",
+        "notes": "Most powerful Western turboprops"
+      },
+      "capacity": {
+        "cargo_max_kg": 37000,
+        "pallets_463l": 9,
+        "vehicles": "2x NH90 or 1x CH-47 (partial)"
+      },
+      "unit_cost_usd": 150000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Airbus",
+        "Jane's"
+      ],
+      "notes": "Troubled development (years late). Fills gap between C-130 and C-17. 8-blade props. Can refuel helicopters. Short-field capability.",
+      "year": 2013
+    },
+    {
+      "id": "ru-il76md90a",
+      "name": "Ilyushin Il-76MD-90A",
+      "nato_name": "Candid",
+      "type": "strategic_transport",
+      "country_of_origin": "RU",
+      "manufacturer": "Ilyushin/Aviastar-SP",
+      "service_history": {
+        "introduced": 2014,
+        "first_flight": 2012,
+        "retired": null,
+        "production_count": 20,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 20,
+            "status": "active",
+            "notes": "Replacing Il-76MD"
+          }
+        ],
+        "notes": "Modernized Il-76"
+      },
+      "specifications": {
+        "crew": 5,
+        "passengers": 145,
+        "paratroopers": 126,
+        "length_m": 46.59,
+        "wingspan_m": 50.5,
+        "height_m": 14.76,
+        "empty_weight_kg": 88500,
+        "max_takeoff_weight_kg": 210000,
+        "cargo_hold_m3": 321
+      },
+      "performance": {
+        "max_speed_kmh": 850,
+        "cruise_speed_kmh": 780,
+        "range_km": 5000,
+        "max_range_km": 9700,
+        "service_ceiling_m": 12000
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "Aviadvigatel PS-90A-76",
+        "thrust_kn": 157,
+        "notes": "New fuel-efficient engines"
+      },
+      "capacity": {
+        "cargo_max_kg": 60000,
+        "vehicles": "3x BTR or 1x T-72"
+      },
+      "variants": [
+        {
+          "designation": "Il-76MD",
+          "notes": "Current standard (700+)"
+        },
+        {
+          "designation": "Il-76MD-90A",
+          "notes": "New production"
+        },
+        {
+          "designation": "A-50U",
+          "notes": "AWACS variant"
+        },
+        {
+          "designation": "Il-78M-90A",
+          "notes": "Tanker variant"
+        }
+      ],
+      "unit_cost_usd": 80000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Ilyushin",
+        "Russian MoD"
+      ],
+      "notes": "New-build Il-76 with modern engines. Russia has 100+ older Il-76MD. Slow production rate. Also tanker (Il-78) and AWACS (A-50) platforms.",
+      "year": 2012
+    },
+    {
+      "id": "cn-y20",
+      "name": "Xian Y-20 Kunpeng",
+      "nato_name": null,
+      "type": "strategic_transport",
+      "country_of_origin": "CN",
+      "manufacturer": "Xi'an Aircraft Corporation",
+      "service_history": {
+        "introduced": 2016,
+        "first_flight": 2013,
+        "retired": null,
+        "production_count": 80,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 80,
+            "status": "active",
+            "notes": "Production accelerating"
+          }
+        ],
+        "notes": "China's first strategic airlifter"
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 200,
+        "paratroopers": 180,
+        "length_m": 47.0,
+        "wingspan_m": 45.0,
+        "height_m": 15.0,
+        "empty_weight_kg": 100000,
+        "max_takeoff_weight_kg": 200000
+      },
+      "performance": {
+        "max_speed_kmh": 830,
+        "cruise_speed_kmh": 750,
+        "range_km": 4500,
+        "max_range_km": 7800,
+        "service_ceiling_m": 13000
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "WS-20 (indigenous) or D-30KP-2 (Russian)",
+        "thrust_kn": 140
+      },
+      "capacity": {
+        "cargo_max_kg": 66000,
+        "vehicles": "1x ZTZ-99A MBT or 3x ZBD-04 IFV"
+      },
+      "variants": [
+        {
+          "designation": "Y-20A",
+          "notes": "Transport"
+        },
+        {
+          "designation": "Y-20U (YY-20)",
+          "notes": "Aerial tanker"
+        },
+        {
+          "designation": "Y-20 AEW",
+          "notes": "AWACS platform (KJ-3000)"
+        }
+      ],
+      "unit_cost_usd": 160000000,
+      "cost_year": 2022,
+      "confidence": "medium",
+      "sources": [
+        "PLAAF media",
+        "Jane's",
+        "CSIS"
+      ],
+      "notes": "Chinese C-17 equivalent. Can carry ZTZ-99 MBT. WS-20 engines now in production. Tanker variant for J-20 support. 80+ in service, production accelerating.",
+      "year": 2016
+    },
+    {
+      "id": "us-c5m",
+      "name": "C-5M Super Galaxy",
+      "nato_name": null,
+      "type": "strategic_transport",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "service_history": {
+        "introduced": 2014,
+        "first_flight": 1968,
+        "retired": null,
+        "production_count": 52,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 52,
+            "status": "active",
+            "notes": "All upgraded to M standard"
+          }
+        ],
+        "notes": "US outsize cargo transport"
+      },
+      "specifications": {
+        "crew": 7,
+        "passengers": 73,
+        "length_m": 75.31,
+        "wingspan_m": 67.89,
+        "height_m": 19.84,
+        "empty_weight_kg": 172370,
+        "max_takeoff_weight_kg": 381000,
+        "cargo_hold_m3": 876
+      },
+      "performance": {
+        "max_speed_kmh": 919,
+        "cruise_speed_kmh": 833,
+        "range_km": 4440,
+        "max_range_km": 14100,
+        "service_ceiling_m": 10600
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "General Electric CF6-80C2",
+        "thrust_kn": 230
+      },
+      "capacity": {
+        "cargo_max_kg": 129274,
+        "notes": "Largest US cargo aircraft. Can carry 2x M1 Abrams simultaneously."
+      },
+      "unit_cost_usd": 220000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Lockheed Martin",
+        "USAF"
+      ],
+      "notes": "Largest US military aircraft. 129-ton payload. Front and rear loading. 52 upgraded to M with new engines, avionics. Can carry 2x M1 Abrams.",
+      "year": 2013
+    },
+    {
+      "id": "ru-an124",
+      "name": "Antonov An-124 Ruslan",
+      "nato_name": "Condor",
+      "type": "strategic_transport",
+      "country_of_origin": "SU",
+      "manufacturer": "Antonov",
+      "service_history": {
+        "introduced": 1986,
+        "first_flight": 1982,
+        "retired": null,
+        "production_count": 55,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 15,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 7,
+            "status": "inactive",
+            "notes": "War losses"
+          }
+        ],
+        "notes": "World's largest military transport (production)"
+      },
+      "specifications": {
+        "crew": 6,
+        "passengers": 88,
+        "length_m": 69.1,
+        "wingspan_m": 73.3,
+        "height_m": 21.1,
+        "empty_weight_kg": 175000,
+        "max_takeoff_weight_kg": 405000,
+        "cargo_hold_m3": 1014
+      },
+      "performance": {
+        "max_speed_kmh": 865,
+        "cruise_speed_kmh": 800,
+        "range_km": 5400,
+        "max_range_km": 16500,
+        "service_ceiling_m": 12000
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "ZMKB Progress D-18T",
+        "thrust_kn": 230
+      },
+      "capacity": {
+        "cargo_max_kg": 150000,
+        "notes": "World's 2nd largest cargo aircraft (after An-225)"
+      },
+      "unit_cost_usd": 180000000,
+      "cost_year": 2010,
+      "confidence": "medium",
+      "sources": [
+        "Antonov",
+        "Jane's"
+      ],
+      "notes": "World's largest production cargo aircraft. 150-ton payload. Russian VTA has 15 operational. An-225 (single example) destroyed in Ukraine 2022.",
+      "year": 1986
+    }
+  ]
+}

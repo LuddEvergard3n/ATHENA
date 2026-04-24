@@ -1,0 +1,436 @@
+{
+  "platforms": [
+    {
+      "id": "us-m18-claymore",
+      "name": "M18A1 Claymore",
+      "type": "directional_mine",
+      "country_of_origin": "US",
+      "manufacturer": "Various",
+      "service_entry": 1960,
+      "specifications": {
+        "weight_kg": 1.58,
+        "length_mm": 216,
+        "height_mm": 83,
+        "explosive": "C-4 (680g)",
+        "fragments": 700,
+        "fragment_type": "Steel balls",
+        "effective_range_m": 50,
+        "kill_zone_deg": 60,
+        "backblast_m": 16
+      },
+      "deployment": {
+        "command_detonated": true,
+        "tripwire": "Optional (prohibited by some ROE)",
+        "electric_firing": "M57 clacker"
+      },
+      "service_history": {
+        "introduced": 1960,
+        "status": "active",
+        "production_count": "Millions",
+        "operators_count": 50
+      },
+      "combat_use": ["Vietnam", "Iraq", "Afghanistan", "Ukraine"],
+      "unit_cost_usd": 119,
+      "notes": "Iconic directional AP mine. 'FRONT TOWARD ENEMY'. Still in wide use globally."
+    },
+    {
+      "id": "ru-mon-50",
+      "name": "MON-50",
+      "type": "directional_mine",
+      "country_of_origin": "RU",
+      "manufacturer": "Various Soviet/Russian",
+      "service_entry": 1960,
+      "specifications": {
+        "weight_kg": 2.0,
+        "explosive": "PVV-5A (700g)",
+        "fragments": 540,
+        "effective_range_m": 50,
+        "kill_zone_deg": 54
+      },
+      "variants": [
+        {"name": "MON-50", "range_m": 50},
+        {"name": "MON-90", "range_m": 90},
+        {"name": "MON-100", "range_m": 100},
+        {"name": "MON-200", "range_m": 200}
+      ],
+      "service_history": {
+        "introduced": 1960,
+        "status": "active",
+        "operators": ["RU", "Former Soviet states", "Export"]
+      },
+      "combat_use": ["Afghanistan", "Chechnya", "Ukraine"],
+      "notes": "Russian Claymore equivalent. MON-200 is largest at 12kg with 200m range."
+    },
+    {
+      "id": "ru-tm-62m-at-mine",
+      "name": "TM-62M Anti-Tank Mine",
+      "type": "at_mine",
+      "country_of_origin": "RU",
+      "manufacturer": "Soviet/Russian state factories",
+      "service_entry": 1962,
+      "specifications": {
+        "weight_kg": 9.5,
+        "diameter_mm": 320,
+        "height_mm": 128,
+        "explosive": "TNT/RDX (7.5kg)",
+        "operating_pressure_kg": 150,
+        "fuze": "MVM/MVCh pressure/tilt"
+      },
+      "features": {
+        "plastic_body": true,
+        "minimal_metal": true,
+        "water_resistant": true
+      },
+      "service_history": {
+        "introduced": 1962,
+        "status": "active",
+        "production_count": "Millions"
+      },
+      "combat_use": ["Afghanistan", "Ukraine"],
+      "notes": "Standard Soviet/Russian AT mine. Massive use in Ukraine. Low metal content complicates detection."
+    },
+    {
+      "id": "ru-ptm-1-scatterable",
+      "name": "PTM-1 Scatterable Mine",
+      "type": "scatterable_at_mine",
+      "country_of_origin": "RU",
+      "manufacturer": "Soviet state factories",
+      "service_entry": 1970,
+      "specifications": {
+        "weight_kg": 1.6,
+        "length_mm": 330,
+        "explosive": "530g",
+        "pressure_kg": 300,
+        "self_destruct_hours": "1-40"
+      },
+      "delivery": ["Helicopter", "Artillery (9M27K3)", "Truck dispenser"],
+      "features": {
+        "air_delivered": true,
+        "self_destruct": true,
+        "area_denial": true
+      },
+      "service_history": {
+        "introduced": 1970,
+        "status": "active"
+      },
+      "combat_use": ["Ukraine"],
+      "notes": "Russian scatterable AT mine. Deployed by artillery and helicopters. Used extensively in Ukraine."
+    },
+    {
+      "id": "ru-pom-2-ap-mine",
+      "name": "POM-2 Bounding AP Mine",
+      "type": "scatterable_ap_mine",
+      "country_of_origin": "RU",
+      "manufacturer": "Soviet/Russian state factories",
+      "service_entry": 1980,
+      "specifications": {
+        "weight_kg": 1.5,
+        "height_mm": 170,
+        "diameter_mm": 63,
+        "explosive": "140g",
+        "tripwire_radius_m": 9,
+        "lethal_radius_m": 16,
+        "self_destruct_hours": "4-100"
+      },
+      "features": {
+        "bounding": true,
+        "tripwire_deployed": true,
+        "self_destruct": true
+      },
+      "delivery": ["Artillery", "Helicopter", "Truck"],
+      "service_history": {
+        "introduced": 1980,
+        "status": "active"
+      },
+      "combat_use": ["Ukraine"],
+      "notes": "Russian scatterable bounding AP mine. Deploys tripwires automatically. War crime if used in civilian areas."
+    },
+    {
+      "id": "ru-pfm-1-butterfly",
+      "name": "PFM-1 Butterfly Mine",
+      "type": "ap_mine",
+      "country_of_origin": "RU",
+      "manufacturer": "Soviet state factories",
+      "service_entry": 1970,
+      "specifications": {
+        "weight_g": 80,
+        "length_mm": 120,
+        "explosive": "37g VS-6D",
+        "activation": "Pressure (cumulative)"
+      },
+      "features": {
+        "air_scattered": true,
+        "plastic_body": true,
+        "toy_like_appearance": true
+      },
+      "delivery": "KSF cassette from helicopters/aircraft",
+      "service_history": {
+        "introduced": 1970,
+        "status": "active but controversial"
+      },
+      "combat_use": ["Afghanistan", "Ukraine"],
+      "notes": "Notorious 'butterfly' or 'green parrot' mine. Looks like toy. Responsible for many child casualties in Afghanistan."
+    },
+    {
+      "id": "us-m15-at-mine",
+      "name": "M15 Anti-Tank Mine",
+      "type": "at_mine",
+      "country_of_origin": "US",
+      "manufacturer": "Various US",
+      "service_entry": 1953,
+      "specifications": {
+        "weight_kg": 13.6,
+        "diameter_mm": 337,
+        "height_mm": 125,
+        "explosive": "Comp B (10kg)",
+        "pressure_kg": 160
+      },
+      "service_history": {
+        "introduced": 1953,
+        "status": "active (legacy)"
+      },
+      "notes": "Older US AT mine. Still in inventory. M19 is plastic-body replacement."
+    },
+    {
+      "id": "us-m21-at-mine",
+      "name": "M21 Anti-Tank Mine",
+      "type": "at_mine",
+      "country_of_origin": "US",
+      "manufacturer": "Various US",
+      "service_entry": 1960,
+      "specifications": {
+        "weight_kg": 8.0,
+        "diameter_mm": 229,
+        "height_mm": 115,
+        "explosive": "Comp B (5kg)",
+        "fuze": "Tilt rod (M607)"
+      },
+      "features": {
+        "belly_attack": true,
+        "tilt_rod_fuze": true
+      },
+      "service_history": {
+        "introduced": 1960,
+        "status": "active"
+      },
+      "notes": "US tilt-rod AT mine. Attacks vehicle belly. Effective vs light armor."
+    },
+    {
+      "id": "us-volcano-mine-system",
+      "name": "M139 Volcano",
+      "type": "mine_dispenser",
+      "country_of_origin": "US",
+      "manufacturer": "Alliant Techsystems",
+      "service_entry": 1987,
+      "specifications": {
+        "mines_per_helicopter": 960,
+        "mines_per_ground": 1280,
+        "coverage_area_km2": 1.1
+      },
+      "mine_types": [
+        {"name": "M87A1 AT", "quantity": "Per canister"},
+        {"name": "M87A1 AP", "quantity": "Per canister"}
+      ],
+      "features": {
+        "rapid_employment": true,
+        "helicopter_deployed": true,
+        "ground_vehicle": true,
+        "self_destruct": "4h-15 days"
+      },
+      "service_history": {
+        "introduced": 1987,
+        "status": "active"
+      },
+      "notes": "US rapid mine laying system. Air or ground deployment. Self-destruct feature."
+    },
+    {
+      "id": "us-cbu-89-gator",
+      "name": "CBU-89/B Gator",
+      "type": "cluster_mine",
+      "country_of_origin": "US",
+      "manufacturer": "Aerojet",
+      "service_entry": 1985,
+      "specifications": {
+        "weight_kg": 305,
+        "length_m": 2.34,
+        "submunitions": {
+          "bu_94_ap": 22,
+          "bu_93_at": 72
+        },
+        "coverage_area_m2": 60000
+      },
+      "features": {
+        "air_delivered": true,
+        "mixed_ap_at": true,
+        "self_destruct": true
+      },
+      "service_history": {
+        "introduced": 1985,
+        "status": "Limited use (cluster munition treaty)"
+      },
+      "notes": "US air-delivered scatterable mines. Self-destructing. Not used by treaty signatories."
+    },
+    {
+      "id": "us-mk60-captor",
+      "name": "Mk 60 CAPTOR",
+      "type": "naval_mine",
+      "country_of_origin": "US",
+      "manufacturer": "Goodyear Aerospace",
+      "service_entry": 1979,
+      "specifications": {
+        "weight_kg": 1060,
+        "length_m": 3.68,
+        "diameter_mm": 533,
+        "depth_max_m": 1000,
+        "detection_range_m": 1000,
+        "torpedo": "Mk 46 (encapsulated)"
+      },
+      "features": {
+        "smart_mine": true,
+        "acoustic_detection": true,
+        "target_classification": true,
+        "launches_torpedo": true
+      },
+      "service_history": {
+        "introduced": 1979,
+        "status": "retired",
+        "note": "Replaced by newer systems"
+      },
+      "notes": "Encapsulated Torpedo mine. Detects and classifies targets, then launches Mk 46 torpedo."
+    },
+    {
+      "id": "us-mk67-slmm",
+      "name": "Mk 67 SLMM",
+      "type": "naval_mine",
+      "country_of_origin": "US",
+      "manufacturer": "Various",
+      "full_name": "Submarine-Launched Mobile Mine",
+      "service_entry": 1983,
+      "specifications": {
+        "weight_kg": 754,
+        "length_m": 4.09,
+        "diameter_mm": 533,
+        "range_nm": 10,
+        "warhead_kg": 230
+      },
+      "features": {
+        "propelled_to_position": true,
+        "submarine_deployed": true,
+        "covert_mining": true
+      },
+      "delivery": "Submarine torpedo tube",
+      "service_history": {
+        "introduced": 1983,
+        "status": "active"
+      },
+      "notes": "Converted Mk 37 torpedo. Swims to position then becomes bottom mine. Covert mining."
+    },
+    {
+      "id": "us-quickstrike-er",
+      "name": "Quickstrike-ER",
+      "type": "air_delivered_naval_mine",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_entry": 2020,
+      "specifications": {
+        "base": "Mk 62/63/64/65 Quickstrike",
+        "jdam_kit": "JDAM-ER wings",
+        "range_km": 74,
+        "depth_m": "Variable"
+      },
+      "features": {
+        "standoff_delivery": true,
+        "gps_guided": true,
+        "glide_wings": true
+      },
+      "service_history": {
+        "introduced": 2020,
+        "status": "active"
+      },
+      "notes": "Quickstrike mine with JDAM-ER kit. Standoff delivery from 40nm. Precision placement."
+    },
+    {
+      "id": "ru-mdm-1-sea-mine",
+      "name": "MDM-1 Mina",
+      "type": "naval_mine",
+      "country_of_origin": "RU",
+      "manufacturer": "Gidropribor",
+      "service_entry": 1990,
+      "specifications": {
+        "weight_kg": 960,
+        "explosive_kg": 300,
+        "depth_m": "10-120",
+        "fuzing": "Acoustic/Magnetic/Pressure"
+      },
+      "features": {
+        "multi_influence": true,
+        "ship_counter": true,
+        "self_sterilization": true
+      },
+      "service_history": {
+        "introduced": 1990,
+        "status": "active"
+      },
+      "notes": "Modern Russian bottom mine. Multi-influence fuzing. Ship counter for selective targeting."
+    },
+    {
+      "id": "ru-pmd-1-sea-mine",
+      "name": "PMD-1/PMK-2 Sea Mine",
+      "type": "naval_mine",
+      "country_of_origin": "RU",
+      "manufacturer": "Various",
+      "service_entry": 2000,
+      "specifications": {
+        "types": ["Bottom", "Moored", "Rising"],
+        "explosive_kg": "200-400",
+        "fuzing": "Multi-influence"
+      },
+      "service_history": {
+        "introduced": 2000,
+        "status": "active"
+      },
+      "notes": "Family of modern Russian naval mines. Multiple deployment options."
+    },
+    {
+      "id": "cn-type-500-sea-mine",
+      "name": "Type 500 Sea Mine",
+      "type": "naval_mine",
+      "country_of_origin": "CN",
+      "manufacturer": "Chinese state factories",
+      "service_entry": 1990,
+      "specifications": {
+        "weight_kg": 550,
+        "explosive_kg": 180,
+        "depth_m": 200
+      },
+      "variants": ["EM-52 rocket rising", "EM-55 mobile"],
+      "service_history": {
+        "introduced": 1990,
+        "status": "active"
+      },
+      "notes": "Chinese sea mine family. Includes rocket-rising variant. Potential Taiwan Strait mining."
+    },
+    {
+      "id": "se-rockan-mine",
+      "name": "Rockan Anti-Invasion Mine",
+      "type": "naval_mine",
+      "country_of_origin": "SE",
+      "manufacturer": "Bofors",
+      "service_entry": 1980,
+      "specifications": {
+        "weight_kg": 260,
+        "explosive_kg": 100,
+        "depth_m": "Shallow water"
+      },
+      "features": {
+        "anti_landing_craft": true,
+        "shallow_water": true
+      },
+      "service_history": {
+        "introduced": 1980,
+        "status": "active"
+      },
+      "notes": "Swedish anti-invasion mine. Designed for Baltic defense against amphibious assault."
+    }
+  ]
+}

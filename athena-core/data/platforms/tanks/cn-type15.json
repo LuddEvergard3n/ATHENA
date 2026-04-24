@@ -1,0 +1,268 @@
+{
+  "platforms": [
+    {
+      "id": "type-15",
+      "name": "Type 15 (ZTQ-15)",
+      "country": "CN",
+      "manufacturer": "NORINCO",
+      "type": "light_tank",
+      "role": "mountain warfare, rapid deployment",
+      "introduced": 2018,
+      "status": "active",
+      "crew": 3,
+      "specifications": {
+        "weight": {"value": 33.0, "unit": "tons", "note": "combat weight"},
+        "length": {"value": 9.20, "unit": "m", "note": "with gun forward"},
+        "width": {"value": 3.30, "unit": "m"},
+        "height": {"value": 2.50, "unit": "m"},
+        "ground_clearance": {"value": 0.45, "unit": "m"},
+        "track_width": {"value": 450, "unit": "mm"}
+      },
+      "mobility": {
+        "engine": "diesel, electronically controlled",
+        "power": {"value": 1000, "unit": "hp"},
+        "power_to_weight": {"value": 30.3, "unit": "hp/ton"},
+        "transmission": "automatic, hydromechanical",
+        "max_speed_road": {"value": 70, "unit": "km/h"},
+        "max_speed_offroad": {"value": 45, "unit": "km/h"},
+        "range_road": {"value": 500, "unit": "km"},
+        "range_offroad": {"value": 350, "unit": "km"},
+        "fuel_capacity": {"value": 650, "unit": "liters", "note": "estimated"},
+        "gradient": {"value": 60, "unit": "%"},
+        "side_slope": {"value": 30, "unit": "%"},
+        "vertical_obstacle": {"value": 0.8, "unit": "m"},
+        "trench": {"value": 2.5, "unit": "m"},
+        "fording": {"value": 1.1, "unit": "m"},
+        "fording_prepared": {"value": 3.5, "unit": "m", "note": "with preparation"}
+      },
+      "armament": {
+        "main_gun": {
+          "designation": "105mm rifled gun",
+          "caliber": {"value": 105, "unit": "mm"},
+          "length": "L/50",
+          "elevation": {"min": -6, "max": 18, "unit": "degrees"},
+          "traverse": {"value": 360, "unit": "degrees"},
+          "rotation_speed": {"value": 30, "unit": "deg/s"},
+          "rate_of_fire": {"value": 8, "unit": "rounds/min"},
+          "ammunition_stowage": 38,
+          "ammunition_types": ["APFSDS", "HEAT", "HE", "ATGM"],
+          "special_capability": "Can fire gun-launched ATGMs"
+        },
+        "secondary": [
+          {
+            "designation": "QJT-88",
+            "caliber": {"value": 5.8, "unit": "mm"},
+            "mount": "coaxial",
+            "ammunition": 3000
+          },
+          {
+            "designation": "QJC-88",
+            "caliber": {"value": 12.7, "unit": "mm"},
+            "mount": "commander's RWS",
+            "ammunition": 500
+          }
+        ],
+        "missile_system": {
+          "type": "105mm gun-launched ATGM",
+          "range": {"value": 5000, "unit": "m"},
+          "penetration": {"value": "600-700", "unit": "mm RHAe"}
+        },
+        "smoke_grenade_launchers": {
+          "type": "multi-spectral",
+          "quantity": 8
+        }
+      },
+      "protection": {
+        "armor_type": "modular composite armor",
+        "frontal_arc": {"value": "400-500", "unit": "mm RHAe", "note": "estimated vs APFSDS"},
+        "turret_front": {"value": "500-550", "unit": "mm RHAe", "note": "with applique"},
+        "hull_front": {"value": "400-450", "unit": "mm RHAe", "note": "estimated"},
+        "turret_sides": {"value": "150-200", "unit": "mm RHAe"},
+        "hull_sides": {"value": "80-100", "unit": "mm RHAe"},
+        "active_protection": "GL-5 APS (optional)",
+        "reactive_armor": "FY-4 ERA (optional)",
+        "nbc_protection": true,
+        "laser_warning": true,
+        "special_features": [
+          "Hydropneumatic suspension for hull-down positions",
+          "Optimized for high-altitude operations (up to 5000m)"
+        ]
+      },
+      "sensors": {
+        "fire_control": "digital FCS with environmental sensors",
+        "gunner_sight": {
+          "designation": "integrated day/thermal",
+          "magnification": "variable",
+          "stabilized": true
+        },
+        "commander_sight": {
+          "designation": "panoramic hunter-killer",
+          "independent": true,
+          "thermal": true
+        },
+        "thermal_imaging": {
+          "gunner": "2nd gen cooled",
+          "commander": "2nd gen cooled"
+        },
+        "laser_rangefinder": {
+          "type": "eye-safe",
+          "range": {"value": 5000, "unit": "m"}
+        },
+        "ballistic_computer": true,
+        "hunter_killer": true,
+        "battlefield_management": "integrated C4I system"
+      },
+      "operational": {
+        "unit_cost": {"value": 2.5, "unit": "million USD", "year": 2020, "note": "estimated"},
+        "units_produced": 500,
+        "operators": ["China", "Bangladesh (VT-5 export variant)"],
+        "deployment": [
+          "Tibet Military District",
+          "Xinjiang Military District",
+          "Southern Theater Command"
+        ],
+        "combat_history": [],
+        "notes": [
+          "Specifically designed for operations in Tibet and mountainous regions",
+          "Optimized for high-altitude performance",
+          "Air-transportable by Y-20 strategic airlifter",
+          "Part of China's rapid reaction forces",
+          "Export version designated VT-5"
+        ]
+      },
+      "sources": [
+        "Jane's Armour and Artillery 2023",
+        "IISS Military Balance 2024",
+        "Army Recognition",
+        "NORINCO marketing materials"
+      ]
+    },
+    {
+      "id": "vt-5",
+      "name": "VT-5",
+      "country": "CN",
+      "manufacturer": "NORINCO",
+      "type": "light_tank",
+      "role": "export light tank",
+      "introduced": 2016,
+      "status": "active",
+      "crew": 3,
+      "specifications": {
+        "weight": {"value": 36.0, "unit": "tons", "note": "with ERA"},
+        "length": {"value": 9.20, "unit": "m", "note": "with gun forward"},
+        "width": {"value": 3.30, "unit": "m"},
+        "height": {"value": 2.50, "unit": "m"},
+        "ground_clearance": {"value": 0.45, "unit": "m"},
+        "track_width": {"value": 450, "unit": "mm"}
+      },
+      "mobility": {
+        "engine": "diesel, 8V150",
+        "power": {"value": 1000, "unit": "hp"},
+        "power_to_weight": {"value": 27.8, "unit": "hp/ton"},
+        "transmission": "automatic",
+        "max_speed_road": {"value": 70, "unit": "km/h"},
+        "max_speed_offroad": {"value": 42, "unit": "km/h"},
+        "range_road": {"value": 450, "unit": "km"},
+        "range_offroad": {"value": 300, "unit": "km"},
+        "fuel_capacity": {"value": 650, "unit": "liters"},
+        "gradient": {"value": 60, "unit": "%"},
+        "side_slope": {"value": 30, "unit": "%"},
+        "vertical_obstacle": {"value": 0.8, "unit": "m"},
+        "trench": {"value": 2.5, "unit": "m"},
+        "fording": {"value": 1.1, "unit": "m"},
+        "fording_prepared": {"value": 3.5, "unit": "m"}
+      },
+      "armament": {
+        "main_gun": {
+          "designation": "105mm rifled gun",
+          "caliber": {"value": 105, "unit": "mm"},
+          "length": "L/50",
+          "elevation": {"min": -6, "max": 18, "unit": "degrees"},
+          "traverse": {"value": 360, "unit": "degrees"},
+          "rotation_speed": {"value": 30, "unit": "deg/s"},
+          "rate_of_fire": {"value": 8, "unit": "rounds/min"},
+          "ammunition_stowage": 38,
+          "ammunition_types": ["APFSDS", "HEAT", "HE", "ATGM"],
+          "autoloader": true
+        },
+        "secondary": [
+          {
+            "designation": "Type 86",
+            "caliber": {"value": 7.62, "unit": "mm"},
+            "mount": "coaxial",
+            "ammunition": 2000
+          },
+          {
+            "designation": "QJC-88",
+            "caliber": {"value": 12.7, "unit": "mm"},
+            "mount": "commander's RWS",
+            "ammunition": 500
+          }
+        ],
+        "missile_system": {
+          "type": "GP105 gun-launched ATGM",
+          "range": {"value": 5000, "unit": "m"},
+          "penetration": {"value": "650", "unit": "mm RHAe after ERA"}
+        },
+        "smoke_grenade_launchers": {
+          "type": "smoke/decoy",
+          "quantity": 12
+        }
+      },
+      "protection": {
+        "armor_type": "welded steel + composite modules",
+        "frontal_arc": {"value": "500-550", "unit": "mm RHAe", "note": "with FY-4 ERA"},
+        "turret_front": {"value": "550-600", "unit": "mm RHAe", "note": "with ERA"},
+        "hull_front": {"value": "450-500", "unit": "mm RHAe", "note": "with ERA"},
+        "turret_sides": {"value": "200-250", "unit": "mm RHAe", "note": "with ERA"},
+        "hull_sides": {"value": "100-150", "unit": "mm RHAe"},
+        "active_protection": "GL-5 APS (optional)",
+        "reactive_armor": "FY-4 ERA package",
+        "nbc_protection": true,
+        "laser_warning": true
+      },
+      "sensors": {
+        "fire_control": "computerized FCS",
+        "gunner_sight": {
+          "designation": "stabilized day/thermal",
+          "magnification": "3x-10x",
+          "stabilized": true
+        },
+        "commander_sight": {
+          "designation": "panoramic",
+          "independent": true,
+          "thermal": true
+        },
+        "thermal_imaging": {
+          "gunner": "cooled thermal",
+          "commander": "cooled thermal"
+        },
+        "laser_rangefinder": {
+          "type": "laser",
+          "range": {"value": 5000, "unit": "m"}
+        },
+        "ballistic_computer": true,
+        "hunter_killer": true,
+        "battlefield_management": "optional BMS integration"
+      },
+      "operational": {
+        "unit_cost": {"value": 2.0, "unit": "million USD", "year": 2020, "note": "export price"},
+        "units_produced": 300,
+        "operators": ["Bangladesh (176 ordered)", "Myanmar", "Nigeria (evaluating)"],
+        "combat_history": [],
+        "notes": [
+          "Export version of Type 15",
+          "Marketed for countries needing affordable modern light tank",
+          "Suitable for varied terrain including mountains and wetlands",
+          "Competing with Russian Sprut-SDM1 in export market",
+          "Bangladesh largest operator with 176 units on order"
+        ]
+      },
+      "sources": [
+        "SIPRI Arms Transfer Database",
+        "Defense Studies Bangladesh",
+        "NORINCO export catalog 2023"
+      ]
+    }
+  ]
+}

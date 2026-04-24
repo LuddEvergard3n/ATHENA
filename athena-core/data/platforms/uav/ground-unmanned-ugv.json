@@ -1,0 +1,279 @@
+{
+  "platforms": [
+    {
+      "id": "ee-themis-ugv",
+      "name": "THeMIS",
+      "type": "ugv",
+      "country_of_origin": "EE",
+      "manufacturer": "Milrem Robotics",
+      "full_name": "Tracked Hybrid Modular Infantry System",
+      "service_entry": 2016,
+      "specifications": {
+        "length_m": 2.4,
+        "width_m": 2.0,
+        "height_m": 1.1,
+        "weight_kg": 1630,
+        "payload_kg": 750,
+        "max_speed_kmh": 20,
+        "endurance_hours": 15,
+        "range_km": 80
+      },
+      "propulsion": "Hybrid diesel-electric",
+      "configurations": [
+        {"name": "Combat", "armament": "deFNder RWS, Javelin, 30mm cannon"},
+        {"name": "Transport", "payload": "Supplies, ammunition, casualties"},
+        {"name": "ISR", "sensors": "EO/IR, radar, signals"},
+        {"name": "Route Clearance", "equipment": "Mine detection"},
+        {"name": "CBRN", "equipment": "Detection and sampling"}
+      ],
+      "features": {
+        "modular": true,
+        "autonomous_navigation": true,
+        "remote_operation": true,
+        "follow_me_mode": true
+      },
+      "service_history": {
+        "introduced": 2016,
+        "status": "active",
+        "operators": [
+          {"country": "EE", "quantity": 20},
+          {"country": "NL", "quantity": 10},
+          {"country": "UK", "quantity": 6},
+          {"country": "NO", "quantity": 4},
+          {"country": "UA", "quantity": 14}
+        ]
+      },
+      "combat_use": [
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "unit_cost_usd": 500000,
+      "notes": "Most exported Western combat UGV. Modular for different missions. Combat proven in Ukraine."
+    },
+    {
+      "id": "ru-uran-9-ugv",
+      "name": "Uran-9",
+      "type": "ugv",
+      "country_of_origin": "RU",
+      "manufacturer": "766 UPTK / Kalashnikov",
+      "service_entry": 2019,
+      "specifications": {
+        "weight_kg": 12000,
+        "length_m": 5.12,
+        "width_m": 2.53,
+        "height_m": 2.5,
+        "max_speed_kmh": 35,
+        "range_km": 200
+      },
+      "armament": {
+        "autocannon": "2A72 30mm",
+        "atgm": "4x Ataka or 4x Shmel",
+        "coaxial": "7.62mm PKTM",
+        "igla": "6x Igla-S MANPAD"
+      },
+      "features": {
+        "remote_operated": true,
+        "fire_control": "Stabilized",
+        "nbc_protection": true
+      },
+      "combat_record": {
+        "conflict": "Syria",
+        "year": 2018,
+        "result": "Poor - connectivity issues, weapon malfunctions"
+      },
+      "service_history": {
+        "introduced": 2019,
+        "status": "Limited service"
+      },
+      "notes": "Russian combat UGV. Syria deployment revealed problems. Limited autonomous capability."
+    },
+    {
+      "id": "ru-marker-ugv",
+      "name": "Marker UGV",
+      "type": "ugv",
+      "country_of_origin": "RU",
+      "manufacturer": "Android Technics / NPO Kalashnikov",
+      "service_entry": 2024,
+      "specifications": {
+        "weight_kg": 3000,
+        "max_speed_kmh": 40,
+        "range_km": 100,
+        "payload_kg": 1000
+      },
+      "configurations": [
+        {"name": "Combat", "armament": "30mm, ATGM, 12.7mm"},
+        {"name": "Logistics", "payload": "Supplies"},
+        {"name": "Air Defense", "armament": "Kornet or Verba"}
+      ],
+      "features": {
+        "ai_autonomy": "Level 4",
+        "swarm_capable": true,
+        "modular_payload": true
+      },
+      "service_history": {
+        "first_test": 2019,
+        "expected_service": 2024,
+        "status": "Testing"
+      },
+      "notes": "Next-gen Russian UGV. Learned from Uran-9 failures. AI autonomy emphasis."
+    },
+    {
+      "id": "us-packbot-eod",
+      "name": "PackBot 510",
+      "type": "eod_robot",
+      "country_of_origin": "US",
+      "manufacturer": "Endeavor Robotics (Teledyne FLIR)",
+      "service_entry": 2001,
+      "specifications": {
+        "weight_kg": 11,
+        "length_m": 0.68,
+        "width_m": 0.52,
+        "height_m": 0.18,
+        "max_speed_kmh": 9.3,
+        "range_km": 1,
+        "endurance_hours": 4
+      },
+      "features": {
+        "manipulator_arm": true,
+        "stair_climbing": true,
+        "water_fording": true,
+        "radiation_detection": "Optional"
+      },
+      "missions": [
+        "EOD/IED disposal",
+        "CBRN detection",
+        "Building clearance",
+        "Hostage rescue"
+      ],
+      "service_history": {
+        "introduced": 2001,
+        "status": "active",
+        "production_count": 6000,
+        "operators_count": 30
+      },
+      "combat_use": [
+        {"conflict": "Afghanistan", "year": 2002},
+        {"conflict": "Iraq", "year": 2003}
+      ],
+      "unit_cost_usd": 200000,
+      "notes": "World's most deployed military robot. Over 6,000 in service. EOD workhorse."
+    },
+    {
+      "id": "us-talon-robot",
+      "name": "TALON",
+      "type": "eod_robot",
+      "country_of_origin": "US",
+      "manufacturer": "Qinetiq (Foster-Miller)",
+      "service_entry": 2000,
+      "specifications": {
+        "weight_kg": 52,
+        "length_m": 0.86,
+        "width_m": 0.57,
+        "max_speed_kmh": 8.4,
+        "range_km": 1
+      },
+      "variants": [
+        {"name": "TALON", "mission": "EOD"},
+        {"name": "SWORDS", "mission": "Armed variant", "armament": "M249 or M240"},
+        {"name": "MAARS", "mission": "Successor", "armament": "M240B + grenades"}
+      ],
+      "service_history": {
+        "introduced": 2000,
+        "status": "active",
+        "production_count": 4000
+      },
+      "notes": "Combat-proven EOD robot. SWORDS was first armed ground robot deployed to combat (Iraq 2007). MAARS successor."
+    },
+    {
+      "id": "us-spot-robot",
+      "name": "Spot (Military)",
+      "type": "quadruped_robot",
+      "country_of_origin": "US",
+      "manufacturer": "Boston Dynamics / Ghost Robotics",
+      "service_entry": 2020,
+      "specifications": {
+        "weight_kg": 32,
+        "payload_kg": 14,
+        "max_speed_kmh": 5.8,
+        "endurance_min": 90
+      },
+      "features": {
+        "quadruped": true,
+        "autonomous_navigation": true,
+        "stair_climbing": true,
+        "360_perception": true
+      },
+      "military_use": [
+        "ISR and reconnaissance",
+        "Perimeter security",
+        "CBRN detection",
+        "Explosive ordnance inspection"
+      ],
+      "variants": [
+        {"name": "Spot (Boston Dynamics)", "note": "General purpose"},
+        {"name": "Vision 60 Q-UGV (Ghost)", "note": "Military focused"}
+      ],
+      "service_history": {
+        "introduced": 2020,
+        "status": "Evaluation",
+        "operators": ["US Military", "FR Army"]
+      },
+      "notes": "Quadruped robot dog. Military evaluation ongoing. Ghost Robotics Vision 60 competitor is armed capable."
+    },
+    {
+      "id": "cn-sharp-claw-ugv",
+      "name": "Sharp Claw 1/2",
+      "type": "ugv",
+      "country_of_origin": "CN",
+      "manufacturer": "NORINCO",
+      "service_entry": 2019,
+      "specifications": {
+        "weight_kg": 200,
+        "max_speed_kmh": 12,
+        "payload_kg": 50
+      },
+      "armament": {
+        "gun": "5.8mm MG",
+        "options": "7.62mm or grenade launcher"
+      },
+      "features": {
+        "reconnaissance": true,
+        "remote_controlled": true
+      },
+      "service_history": {
+        "introduced": 2019,
+        "status": "Active"
+      },
+      "notes": "Chinese light combat UGV. Exported. Reconnaissance and fire support roles."
+    },
+    {
+      "id": "ua-gnom-ugv",
+      "name": "GNOM UGV",
+      "type": "ugv",
+      "country_of_origin": "UA",
+      "manufacturer": "Temerland",
+      "service_entry": 2023,
+      "specifications": {
+        "weight_kg": 40,
+        "payload_kg": 20,
+        "max_speed_kmh": 18,
+        "range_km": 5
+      },
+      "missions": [
+        "Casualty evacuation",
+        "Supply transport",
+        "IED clearance"
+      ],
+      "features": {
+        "electric": true,
+        "low_profile": true,
+        "remote_control": true
+      },
+      "service_history": {
+        "introduced": 2023,
+        "status": "Active",
+        "combat_proven": true
+      },
+      "notes": "Ukrainian light UGV. Used for casevac in trenches. War-born design."
+    }
+  ]
+}

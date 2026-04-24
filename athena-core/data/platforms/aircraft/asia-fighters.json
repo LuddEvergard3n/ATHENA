@@ -1,0 +1,533 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-22",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "KAI",
+      "Mitsubishi",
+      "HAL"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "jp-f2",
+      "name": "Mitsubishi F-2",
+      "nato_name": null,
+      "type": "multirole_fighter",
+      "generation": "4",
+      "country_of_origin": "JP",
+      "manufacturer": "Mitsubishi Heavy Industries / Lockheed Martin",
+      "service_history": {
+        "introduced": 2000,
+        "first_flight": 1995,
+        "retired": null,
+        "production_count": 94,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 91,
+            "status": "active",
+            "notes": "JASDF"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 15.52,
+        "wingspan_m": 11.13,
+        "empty_weight_kg": 9527,
+        "max_takeoff_weight_kg": 22100,
+        "hardpoints": 13
+      },
+      "performance": {
+        "max_speed_kmh": 2124,
+        "max_speed_mach": 2.0,
+        "combat_radius_km": 834,
+        "service_ceiling_m": 18000,
+        "max_g_load": 9
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "General Electric F110-GE-129",
+        "thrust_afterburner_kn": 131
+      },
+      "avionics": {
+        "radar": "J/APG-1 / J/APG-2 AESA",
+        "radar_range_km": 200,
+        "ew_suite": "J/ALQ-7"
+      },
+      "armament": {
+        "gun": {
+          "type": "JM61A1 Vulcan",
+          "caliber_mm": 20,
+          "rounds": 512
+        },
+        "air_to_air": [
+          "AAM-4B",
+          "AAM-5",
+          "AIM-9L/M"
+        ],
+        "air_to_ground": [
+          "JDAM",
+          "GBU-12"
+        ],
+        "anti_ship": [
+          "ASM-2",
+          "XASM-3 (hypersonic)"
+        ],
+        "max_payload_kg": 8000
+      },
+      "unit_cost_usd": 127000000,
+      "cost_year": 2004,
+      "confidence": "high",
+      "sources": [
+        "Jane's",
+        "JASDF"
+      ],
+      "notes": "Japanese F-16 derivative. Enlarged, composite wing. First operational AESA radar fighter. Anti-ship specialty (XASM-3 hypersonic). Very expensive.",
+      "year": 2000
+    },
+    {
+      "id": "kr-kf21",
+      "name": "KAI KF-21 Boramae",
+      "nato_name": null,
+      "type": "multirole_fighter",
+      "generation": "4.5",
+      "country_of_origin": "KR",
+      "manufacturer": "Korea Aerospace Industries (KAI)",
+      "service_history": {
+        "introduced": 2026,
+        "first_flight": 2022,
+        "retired": null,
+        "production_count": 120,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 120,
+            "status": "development",
+            "notes": "ROKAF, production from 2026"
+          },
+          {
+            "country": "ID",
+            "quantity": 50,
+            "status": "partner",
+            "notes": "20% cost share"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 16.9,
+        "wingspan_m": 11.2,
+        "empty_weight_kg": 11800,
+        "max_takeoff_weight_kg": 25600,
+        "hardpoints": 10
+      },
+      "performance": {
+        "max_speed_kmh": 2200,
+        "max_speed_mach": 1.81,
+        "combat_radius_km": 1200,
+        "service_ceiling_m": 16764,
+        "max_g_load": 9
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "General Electric F414-GE-400K",
+        "thrust_afterburner_kn": 98
+      },
+      "avionics": {
+        "radar": "Hanwha Systems AESA",
+        "radar_range_km": 200,
+        "irst": "EOTS",
+        "sensor_fusion": true
+      },
+      "armament": {
+        "gun": {
+          "type": "M61A2 Vulcan",
+          "caliber_mm": 20,
+          "rounds": 480
+        },
+        "air_to_air": [
+          "AIM-120 AMRAAM",
+          "IRIS-T",
+          "Meteor (planned)"
+        ],
+        "air_to_ground": [
+          "GBU-31 JDAM"
+        ],
+        "max_payload_kg": 7700
+      },
+      "stealth": {
+        "rcs_estimate_m2": 0.5,
+        "notes": "Block I: no internal weapons bays. Block II/III: internal bays planned"
+      },
+      "variants": [
+        {
+          "designation": "KF-21 Block I",
+          "notes": "Initial production, external weapons"
+        },
+        {
+          "designation": "KF-21 Block II",
+          "internal_weapons_bays": true,
+          "notes": "Internal weapons (2028+)"
+        }
+      ],
+      "unit_cost_usd": 65000000,
+      "cost_year": 2023,
+      "confidence": "medium",
+      "sources": [
+        "KAI",
+        "DAPA",
+        "Jane's"
+      ],
+      "notes": "Korea's indigenous fighter. '4.5 gen' initially, evolving to 5th-gen. First flight 2022. Indonesia 20% partner. 120 Block I ordered.",
+      "year": 2024
+    },
+    {
+      "id": "kr-fa50",
+      "name": "KAI FA-50 Fighting Eagle",
+      "nato_name": null,
+      "type": "light_attack_trainer",
+      "generation": "4",
+      "country_of_origin": "KR",
+      "manufacturer": "Korea Aerospace Industries (KAI)",
+      "service_history": {
+        "introduced": 2013,
+        "first_flight": 2011,
+        "retired": null,
+        "production_count": 150,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 60,
+            "status": "active"
+          },
+          {
+            "country": "PH",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "ID",
+            "quantity": 16,
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 48,
+            "status": "ordered"
+          },
+          {
+            "country": "MY",
+            "quantity": 18,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 13.14,
+        "wingspan_m": 9.45,
+        "empty_weight_kg": 6470,
+        "max_takeoff_weight_kg": 12300,
+        "hardpoints": 7
+      },
+      "performance": {
+        "max_speed_kmh": 1837,
+        "max_speed_mach": 1.5,
+        "combat_radius_km": 444,
+        "service_ceiling_m": 14630,
+        "max_g_load": 8
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "General Electric F404-GE-102",
+        "thrust_afterburner_kn": 78.7
+      },
+      "avionics": {
+        "radar": "EL/M-2032 / AN/APG-67 variant",
+        "radar_range_km": 100,
+        "datalink": "Link-16"
+      },
+      "armament": {
+        "gun": {
+          "type": "M61A1 Vulcan",
+          "caliber_mm": 20,
+          "rounds": 205
+        },
+        "air_to_air": [
+          "AIM-9 Sidewinder"
+        ],
+        "air_to_ground": [
+          "AGM-65 Maverick",
+          "GBU-38 JDAM"
+        ],
+        "max_payload_kg": 4500
+      },
+      "variants": [
+        {
+          "designation": "T-50",
+          "role": "Trainer"
+        },
+        {
+          "designation": "TA-50",
+          "role": "Lead-in Fighter Trainer"
+        },
+        {
+          "designation": "FA-50",
+          "role": "Light Combat"
+        },
+        {
+          "designation": "FA-50PL Block 20",
+          "notes": "Polish variant with AESA radar"
+        }
+      ],
+      "unit_cost_usd": 50000000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "KAI",
+        "Jane's"
+      ],
+      "notes": "Korean supersonic trainer/light fighter. T-50 family very successful export. Poland ordered 48.",
+      "year": 2013
+    },
+    {
+      "id": "in-tejas",
+      "name": "HAL Tejas Mk1/1A",
+      "nato_name": null,
+      "type": "light_multirole",
+      "generation": "4",
+      "country_of_origin": "IN",
+      "manufacturer": "Hindustan Aeronautics Limited (HAL)",
+      "service_history": {
+        "introduced": 2015,
+        "first_flight": 2001,
+        "retired": null,
+        "production_count": 40,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 40,
+            "status": "active",
+            "notes": "IAF, 83 Mk1A ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 13.2,
+        "wingspan_m": 8.2,
+        "empty_weight_kg": 6560,
+        "max_takeoff_weight_kg": 13500,
+        "hardpoints": 8
+      },
+      "performance": {
+        "max_speed_kmh": 2205,
+        "max_speed_mach": 1.8,
+        "combat_radius_km": 500,
+        "service_ceiling_m": 15250,
+        "max_g_load": 8,
+        "thrust_to_weight": 1.07
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "General Electric F404-GE-IN20",
+        "thrust_afterburner_kn": 85
+      },
+      "avionics": {
+        "radar": "EL/M-2032 / Uttam AESA (Mk1A)",
+        "radar_range_km": 100,
+        "ew_suite": "Mayavi"
+      },
+      "armament": {
+        "gun": {
+          "type": "GSh-23",
+          "caliber_mm": 23,
+          "rounds": 220
+        },
+        "air_to_air": [
+          "R-73",
+          "Python-5",
+          "Derby",
+          "Astra"
+        ],
+        "air_to_ground": [
+          "Paveway",
+          "KAB-1500"
+        ],
+        "max_payload_kg": 4000
+      },
+      "variants": [
+        {
+          "designation": "Tejas Mk1",
+          "notes": "Initial production"
+        },
+        {
+          "designation": "Tejas Mk1A",
+          "radar": "Uttam AESA",
+          "notes": "83 ordered"
+        },
+        {
+          "designation": "Tejas Mk2",
+          "engines": "GE F414",
+          "notes": "Development"
+        }
+      ],
+      "unit_cost_usd": 45000000,
+      "cost_year": 2023,
+      "confidence": "medium",
+      "sources": [
+        "HAL",
+        "IAF",
+        "Jane's"
+      ],
+      "notes": "India's indigenous LCA. Long development (30+ years). Tailless delta-canard. 40 Mk1 delivered, 83 Mk1A on order.",
+      "year": 2016
+    },
+    {
+      "id": "tw-fckadf",
+      "name": "AIDC F-CK-1 Ching-Kuo (IDF)",
+      "nato_name": null,
+      "type": "light_multirole",
+      "generation": "4",
+      "country_of_origin": "TW",
+      "manufacturer": "AIDC",
+      "service_history": {
+        "introduced": 1994,
+        "first_flight": 1989,
+        "retired": null,
+        "production_count": 131,
+        "operators": [
+          {
+            "country": "TW",
+            "quantity": 127,
+            "status": "active",
+            "notes": "ROCAF"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 14.48,
+        "wingspan_m": 8.53,
+        "empty_weight_kg": 6500,
+        "max_takeoff_weight_kg": 12500,
+        "hardpoints": 9
+      },
+      "performance": {
+        "max_speed_kmh": 1930,
+        "max_speed_mach": 1.8,
+        "combat_radius_km": 600,
+        "service_ceiling_m": 16764,
+        "max_g_load": 9
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "ITEC TFE-1042-70 (F124)",
+        "thrust_afterburner_kn": 42.1
+      },
+      "avionics": {
+        "radar": "GD-53 (APG-67 derivative) / AESA (upgrade)",
+        "radar_range_km": 90
+      },
+      "armament": {
+        "gun": {
+          "type": "M61A1 Vulcan",
+          "caliber_mm": 20,
+          "rounds": 400
+        },
+        "air_to_air": [
+          "TC-2 Sky Sword II",
+          "TC-1 Sky Sword I"
+        ],
+        "air_to_ground": [
+          "AGM-65 Maverick",
+          "Hsiung Feng II"
+        ],
+        "max_payload_kg": 4000
+      },
+      "unit_cost_usd": 24000000,
+      "cost_year": 1994,
+      "confidence": "high",
+      "sources": [
+        "Jane's",
+        "ROCAF"
+      ],
+      "notes": "Taiwan's indigenous fighter. Developed when US blocked F-20/F-16 sales. TC-2 BVR missile capable. 127 active. Supplements F-16V fleet.",
+      "year": 1994
+    },
+    {
+      "id": "ir-kowsar",
+      "name": "HESA Kowsar",
+      "nato_name": null,
+      "type": "light_fighter",
+      "generation": "3",
+      "country_of_origin": "IR",
+      "manufacturer": "HESA",
+      "service_history": {
+        "introduced": 2018,
+        "first_flight": 2017,
+        "retired": null,
+        "production_count": 10,
+        "operators": [
+          {
+            "country": "IR",
+            "quantity": 10,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 14.45,
+        "wingspan_m": 8.13,
+        "empty_weight_kg": 4410,
+        "max_takeoff_weight_kg": 11193,
+        "hardpoints": 7
+      },
+      "performance": {
+        "max_speed_kmh": 1700,
+        "max_speed_mach": 1.63,
+        "combat_radius_km": 890,
+        "service_ceiling_m": 15800
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "General Electric J85-GE-21 (copies)",
+        "thrust_afterburner_kn": 22.2
+      },
+      "avionics": {
+        "radar": "Indigenous multimode",
+        "glass_cockpit": true
+      },
+      "armament": {
+        "gun": {
+          "type": "M39",
+          "caliber_mm": 20
+        },
+        "air_to_air": [
+          "Fatter (AIM-9 copy)",
+          "Fakour-90"
+        ]
+      },
+      "unit_cost_usd": 15000000,
+      "cost_year": 2018,
+      "confidence": "low",
+      "sources": [
+        "Jane's",
+        "Iranian state media"
+      ],
+      "notes": "Iranian indigenous fighter based on F-5F. Glass cockpit upgrade. Limited production. Iran also flies F-14A, F-4, F-5, MiG-29, Su-35 (ordered).",
+      "year": 2018
+    }
+  ]
+}

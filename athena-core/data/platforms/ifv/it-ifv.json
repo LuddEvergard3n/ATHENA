@@ -1,0 +1,267 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition",
+      "Iveco Defence"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "it-freccia",
+      "name": "Freccia",
+      "type": "ifv",
+      "country_of_origin": "IT",
+      "manufacturer": "Consorzio Iveco Fiat - Oto Melara (CIO)",
+      "service_history": {
+        "introduced": 2009,
+        "retired": null,
+        "production_count": 381,
+        "operators": [
+          {
+            "country": "IT",
+            "quantity": 381,
+            "variants": [
+              "VBM",
+              "VBM EVO"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 8,
+        "weight_kg": 26000,
+        "weight_combat_kg": 30000,
+        "length_m": 7.97,
+        "width_m": 2.99,
+        "height_m": 2.99,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Iveco Vector 8V",
+          "type": "diesel_turbocharged",
+          "power_hp": 550,
+          "power_kw": 410
+        },
+        "power_to_weight_hp_ton": 21.2,
+        "drivetrain": "8x8",
+        "transmission": "ZF 7HP902 automatic",
+        "suspension": "independent hydropneumatic",
+        "max_speed_road_kmh": 105,
+        "max_speed_offroad_kmh": 55,
+        "range_road_km": 800,
+        "fuel_capacity_liters": 350,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "fording_depth_m": 1.5,
+        "trench_crossing_m": 1.5,
+        "vertical_obstacle_m": 0.6,
+        "amphibious": true,
+        "propulsion_water": "waterjets",
+        "max_speed_water_kmh": 5,
+        "tyre_pressure_central": true
+      },
+      "armament": {
+        "main": {
+          "designation": "Oerlikon KBA",
+          "caliber_mm": 25,
+          "type": "autocannon",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 60,
+          "traverse_deg": 360,
+          "stabilization": "two-axis electric",
+          "rate_of_fire_rpm": 560,
+          "effective_range_m": 2000,
+          "ammunition_carried": 400,
+          "ammunition_types": [
+            {
+              "type": "APDS-T",
+              "penetration_mm_rha": 40,
+              "penetration_range_m": 1000
+            },
+            {
+              "type": "HEI-T"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "MG 42/59",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 700
+          }
+        ],
+        "atgm": {
+          "designation": "Spike LR",
+          "missiles_carried": 2,
+          "range_m": 4000,
+          "penetration_mm_rha": 700,
+          "fire_and_forget": true
+        }
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 4",
+        "mine_protection": "STANAG 4569 Level 3a/3b",
+        "protection_front_mm_rha": 25,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true,
+        "add_on_armor": "Modular armor kit"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "HITFIST OWS",
+        "commander_sight": {
+          "type": "ATTILA D",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "LOTHAR-SD",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true,
+        "automatic_target_tracker": true,
+        "battle_management_system": "SICCONA"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8,
+        "ir_signature_reduction": true
+      },
+      "unit_cost_usd": 4500000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Freccia",
+        "Army Recognition",
+        "Iveco Defence"
+      ],
+      "notes": "Wheeled 8x8. High road speed (105 km/h). Centauro chassis based. Afghanistan deployed. VBM EVO upgrade 2018.",
+      "year": 2009
+    },
+    {
+      "id": "it-dardo",
+      "name": "Dardo",
+      "type": "ifv",
+      "country_of_origin": "IT",
+      "manufacturer": "Consorzio Iveco Fiat - Oto Melara (CIO)",
+      "service_history": {
+        "introduced": 1998,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "IT",
+            "quantity": 200,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 7,
+        "weight_kg": 23000,
+        "length_m": 6.7,
+        "width_m": 3.0,
+        "height_m": 2.64,
+        "ground_clearance_m": 0.4
+      },
+      "mobility": {
+        "engine": {
+          "model": "Iveco V6 MTCA",
+          "type": "diesel_turbocharged",
+          "power_hp": 520,
+          "power_kw": 388
+        },
+        "power_to_weight_hp_ton": 22.6,
+        "transmission": "ZF LSG-1500 automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 45,
+        "range_road_km": 600,
+        "fuel_capacity_liters": 550,
+        "gradient_percent": 60,
+        "fording_depth_m": 1.5,
+        "trench_crossing_m": 2.4,
+        "vertical_obstacle_m": 0.85,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "Oerlikon KBA",
+          "caliber_mm": 25,
+          "type": "autocannon",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 60,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 600,
+          "effective_range_m": 2000,
+          "ammunition_carried": 400
+        },
+        "secondary": [
+          {
+            "designation": "MG 42/59",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 700
+          }
+        ],
+        "atgm": {
+          "designation": "TOW 2",
+          "missiles_carried": 2,
+          "range_m": 3750,
+          "penetration_mm_rha": 900
+        }
+      },
+      "protection": {
+        "armor_type": "aluminum_steel",
+        "protection_front_mm_rha": 30,
+        "protection_side_mm_rha": 15,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Galileo",
+        "commander_sight": {
+          "type": "Day/night",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true
+        },
+        "gunner_sight": {
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8
+      },
+      "unit_cost_usd": 3000000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Dardo IFV",
+        "Army Recognition",
+        "Jane's"
+      ],
+      "notes": "Tracked IFV. HITFIST turret. Iraq deployed 2003-2006. Being supplemented by Freccia wheeled.",
+      "year": 1998
+    }
+  ]
+}

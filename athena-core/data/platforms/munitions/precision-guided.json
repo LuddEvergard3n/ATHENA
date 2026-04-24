@@ -1,0 +1,319 @@
+{
+  "category": "munitions",
+  "subcategory": "precision-guided",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": ["Jane's Air-Launched Weapons", "USAF fact sheets"]
+  },
+  "platforms": [
+    {
+      "id": "us-jdam",
+      "name": "JDAM (GBU-31/32/38)",
+      "type": "gps-guided-bomb",
+      "country": "US",
+      "year": 1997,
+      "manufacturer": "Boeing",
+      "specifications": {
+        "cep_m": 5,
+        "guidance": "GPS/INS",
+        "variants": ["GBU-31 (2000 lb)", "GBU-32 (1000 lb)", "GBU-38 (500 lb)"],
+        "range_km": 24,
+        "unit_cost_usd": 25000
+      },
+      "service_history": {
+        "operators": [{"country": "US", "quantity": 450000, "status": "active"}]
+      },
+      "notes": "World's most used GPS bomb, 28+ countries"
+    },
+    {
+      "id": "us-jdam-er",
+      "name": "JDAM-ER (GBU-54/56)",
+      "type": "gps-guided-bomb",
+      "country": "US",
+      "year": 2008,
+      "manufacturer": "Boeing",
+      "specifications": {
+        "cep_m": 5,
+        "guidance": "GPS/INS + wing kit",
+        "range_km": 72,
+        "variants": ["GBU-54 (500 lb)", "GBU-56 (2000 lb)"]
+      },
+      "notes": "Extended range JDAM with wings"
+    },
+    {
+      "id": "us-ljdam",
+      "name": "Laser JDAM (GBU-54)",
+      "type": "dual-mode-bomb",
+      "country": "US",
+      "year": 2008,
+      "manufacturer": "Boeing",
+      "specifications": {
+        "cep_m": 3,
+        "guidance": "GPS/INS + semi-active laser",
+        "weight_kg": 227
+      },
+      "notes": "Moving target capable"
+    },
+    {
+      "id": "us-sdb",
+      "name": "GBU-39 Small Diameter Bomb",
+      "type": "gps-guided-bomb",
+      "country": "US",
+      "year": 2006,
+      "manufacturer": "Boeing",
+      "specifications": {
+        "weight_kg": 113,
+        "warhead_kg": 17,
+        "cep_m": 5,
+        "guidance": "GPS/INS",
+        "range_km": 110,
+        "unit_cost_usd": 40000
+      },
+      "service_history": {
+        "operators": [{"country": "US", "quantity": 17000, "status": "active"}]
+      },
+      "notes": "Precision strike with minimal collateral damage"
+    },
+    {
+      "id": "us-sdb2",
+      "name": "GBU-53/B StormBreaker (SDB II)",
+      "type": "tri-mode-seeker-bomb",
+      "country": "US",
+      "year": 2022,
+      "manufacturer": "Raytheon",
+      "specifications": {
+        "weight_kg": 93,
+        "cep_m": 1,
+        "guidance": "GPS/INS + mmW radar + IIR + semi-active laser",
+        "range_km": 72,
+        "all_weather": true,
+        "moving_targets": true
+      },
+      "notes": "Most advanced small bomb, network-enabled"
+    },
+    {
+      "id": "us-paveway2",
+      "name": "Paveway II (GBU-10/12/16)",
+      "type": "laser-guided-bomb",
+      "country": "US",
+      "year": 1976,
+      "manufacturer": "Raytheon",
+      "specifications": {
+        "cep_m": 3,
+        "guidance": "Semi-active laser",
+        "variants": ["GBU-10 (2000 lb)", "GBU-12 (500 lb)", "GBU-16 (1000 lb)"]
+      },
+      "notes": "Classic laser-guided bomb, still in wide use"
+    },
+    {
+      "id": "us-paveway3",
+      "name": "Paveway III (GBU-24)",
+      "type": "laser-guided-bomb",
+      "country": "US",
+      "year": 1986,
+      "manufacturer": "Lockheed Martin",
+      "specifications": {
+        "weight_kg": 1043,
+        "cep_m": 3,
+        "guidance": "Semi-active laser + INS",
+        "bunker_penetration": true
+      },
+      "notes": "Deep penetration LGB"
+    },
+    {
+      "id": "us-paveway4",
+      "name": "Paveway IV",
+      "type": "dual-mode-bomb",
+      "country": "GB",
+      "year": 2008,
+      "manufacturer": "Raytheon UK",
+      "specifications": {
+        "weight_kg": 225,
+        "cep_m": 3,
+        "guidance": "GPS/INS + semi-active laser",
+        "height_of_burst": "Programmable"
+      },
+      "service_history": {
+        "operators": [
+          {"country": "GB", "quantity": 3000, "status": "active"},
+          {"country": "SA", "quantity": 2000, "status": "active"}
+        ]
+      },
+      "notes": "UK precision bomb"
+    },
+    {
+      "id": "us-gbu28",
+      "name": "GBU-28 Bunker Buster",
+      "type": "penetration-bomb",
+      "country": "US",
+      "year": 1991,
+      "manufacturer": "Lockheed Martin",
+      "specifications": {
+        "weight_kg": 2268,
+        "penetration_m": 30,
+        "guidance": "Semi-active laser + INS",
+        "warhead": "BLU-113 penetrator"
+      },
+      "notes": "Deep underground target defeat"
+    },
+    {
+      "id": "us-gbu57",
+      "name": "GBU-57 MOP (Massive Ordnance Penetrator)",
+      "type": "penetration-bomb",
+      "country": "US",
+      "year": 2011,
+      "manufacturer": "Boeing",
+      "specifications": {
+        "weight_kg": 13608,
+        "penetration_m": 60,
+        "guidance": "GPS/INS",
+        "warhead_kg": 2404,
+        "carrier": "B-2 Spirit only"
+      },
+      "service_history": {
+        "operators": [{"country": "US", "quantity": 20, "status": "active"}]
+      },
+      "notes": "Largest non-nuclear bomb, for hardened targets"
+    },
+    {
+      "id": "us-cbu105",
+      "name": "CBU-105 WCMD/SFW",
+      "type": "cluster-bomb",
+      "country": "US",
+      "year": 1998,
+      "manufacturer": "Textron",
+      "specifications": {
+        "submunitions": "10 BLU-108 with 4 Skeet each",
+        "guidance": "GPS/INS",
+        "effective_radius_m": 500,
+        "anti_armor": true
+      },
+      "notes": "Wind-corrected anti-armor cluster bomb"
+    },
+    {
+      "id": "fr-aasm",
+      "name": "AASM Hammer (ARMEMENT AIR-SOL MODULAIRE)",
+      "type": "gps-guided-bomb",
+      "country": "FR",
+      "year": 2007,
+      "manufacturer": "Safran",
+      "specifications": {
+        "range_km": 70,
+        "cep_m": 10,
+        "guidance": "GPS/INS + IIR/laser optional",
+        "variants": ["250 kg", "125 kg", "1000 kg"]
+      },
+      "service_history": {
+        "operators": [
+          {"country": "FR", "quantity": 3500, "status": "active"},
+          {"country": "EG", "quantity": 200, "status": "active"},
+          {"country": "UA", "quantity": 100, "status": "active"}
+        ]
+      },
+      "notes": "French precision bomb with powered version"
+    },
+    {
+      "id": "ru-kab500",
+      "name": "KAB-500 Series",
+      "type": "guided-bomb",
+      "country": "RU",
+      "year": 1985,
+      "manufacturer": "GNPP Region",
+      "specifications": {
+        "weight_kg": 560,
+        "guidance": ["Laser (KAB-500L)", "TV (KAB-500Kr)", "GPS/GLONASS (KAB-500S)"],
+        "cep_m": "7-12"
+      },
+      "notes": "Russian guided bomb family"
+    },
+    {
+      "id": "ru-kab1500",
+      "name": "KAB-1500 Series",
+      "type": "guided-bomb",
+      "country": "RU",
+      "year": 1990,
+      "manufacturer": "GNPP Region",
+      "specifications": {
+        "weight_kg": 1525,
+        "guidance": ["Laser (KAB-1500L)", "TV (KAB-1500Kr)"],
+        "penetration_m": 3
+      },
+      "notes": "Heavy Russian PGM"
+    },
+    {
+      "id": "ru-fab500m62",
+      "name": "FAB-500M-62 (with UMPK)",
+      "type": "glide-bomb",
+      "country": "RU",
+      "year": 2023,
+      "manufacturer": "Various",
+      "specifications": {
+        "weight_kg": 500,
+        "guidance": "GPS/GLONASS + glide kit",
+        "range_km": 70,
+        "cep_m": 10
+      },
+      "notes": "Unguided bomb with glide kit, heavily used in Ukraine"
+    },
+    {
+      "id": "cn-ls6",
+      "name": "LS-6 (Lei Shi)",
+      "type": "gps-guided-bomb",
+      "country": "CN",
+      "year": 2008,
+      "manufacturer": "CASC",
+      "specifications": {
+        "range_km": 60,
+        "guidance": "GPS/BDS/INS",
+        "variants": ["50 kg", "100 kg", "250 kg", "500 kg"]
+      },
+      "notes": "Chinese JDAM equivalent"
+    },
+    {
+      "id": "il-spice250",
+      "name": "SPICE 250",
+      "type": "precision-bomb",
+      "country": "IL",
+      "year": 2016,
+      "manufacturer": "Rafael",
+      "specifications": {
+        "weight_kg": 113,
+        "range_km": 100,
+        "cep_m": 3,
+        "guidance": "GPS/INS + scene-matching EO"
+      },
+      "notes": "Stand-off precision weapon"
+    },
+    {
+      "id": "il-spice1000",
+      "name": "SPICE 1000",
+      "type": "precision-bomb",
+      "country": "IL",
+      "year": 2006,
+      "manufacturer": "Rafael",
+      "specifications": {
+        "weight_kg": 450,
+        "range_km": 100,
+        "cep_m": 3,
+        "guidance": "GPS/INS + scene-matching EO"
+      },
+      "notes": "Multi-target engagement capable"
+    },
+    {
+      "id": "il-spice2000",
+      "name": "SPICE 2000",
+      "type": "precision-bomb",
+      "country": "IL",
+      "year": 2005,
+      "manufacturer": "Rafael",
+      "specifications": {
+        "weight_kg": 907,
+        "range_km": 60,
+        "cep_m": 3,
+        "guidance": "GPS/INS + scene-matching EO"
+      },
+      "notes": "Heavy bunker buster"
+    }
+  ]
+}

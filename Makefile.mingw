@@ -1,0 +1,180 @@
+# ATHENA - Windows MinGW Makefile v0.9.3
+# 
+# Targets:
+#   cli   - CLI-only (no dependencies)
+#   gui   - Full GUI application (requires GLFW3)
+#   all   - Build both
+#   clean - Remove build artifacts
+#
+# Usage:
+#   mingw32-make -f Makefile.mingw cli
+#   mingw32-make -f Makefile.mingw gui
+#   mingw32-make -f Makefile.mingw gui GLFW_DIR=C:\glfw-3.4.bin.WIN64
+#
+# GUI Prerequisites:
+#   Option A (MSYS2): pacman -S mingw-w64-x86_64-glfw
+#   Option B (standalone MinGW): Download GLFW pre-built from https://www.glfw.org/download
+#     Extract to e.g. C:\glfw-3.4.bin.WIN64
+#     Build with: mingw32-make -f Makefile.mingw gui GLFW_DIR=C:\glfw-3.4.bin.WIN64
+
+CXX = g++
+CXXFLAGS = -std=c++17 -Wall -Wextra -O2 -g
+INCLUDES = -I./athena-core/include -I./athena-core/external/imgui -I./athena-core/external/imgui/backends
+
+# Directories
+SRC_DIR = athena-core/src
+EXT_DIR = athena-core/external
+BUILD_DIR = build
+OBJ_DIR = $(BUILD_DIR)/obj
+BIN_DIR = $(BUILD_DIR)/bin
+
+# ============================================================================
+# GLFW Configuration
+# ============================================================================
+# If GLFW_DIR is set, use local GLFW installation.
+# Otherwise assume system-installed (MSYS2 pacman).
+#
+# GLFW pre-built packages from glfw.org have this structure:
+#   GLFW_DIR/include/GLFW/glfw3.h
+#   GLFW_DIR/lib-mingw-w64/libglfw3.a
+# ============================================================================
+
+ifdef GLFW_DIR
+    GLFW_INCLUDES = -I$(GLFW_DIR)/include
+    GLFW_LDFLAGS = -L$(GLFW_DIR)/lib-mingw-w64 -lglfw3 -lopengl32 -lgdi32 -limm32
+else
+    GLFW_INCLUDES =
+    GLFW_LDFLAGS = -lglfw3 -lopengl32 -lgdi32 -limm32
+endif
+
+# Link flags
+LDFLAGS_CLI = -static-libgcc -static-libstdc++ -lpthread
+LDFLAGS_GUI = -static-libgcc -static-libstdc++ $(GLFW_LDFLAGS) -lpthread
+
+# ============================================================================
+# Source files - Core (shared between CLI and GUI)
+# ============================================================================
+
+CORE_SOURCES = \
+    $(SRC_DIR)/types.cpp \
+    $(SRC_DIR)/json.cpp \
+    $(SRC_DIR)/rng.cpp \
+    $(SRC_DIR)/context.cpp \
+    $(SRC_DIR)/manifest.cpp \
+    $(SRC_DIR)/scenario.cpp \
+    $(SRC_DIR)/scheduler.cpp \
+    $(SRC_DIR)/serialization.cpp \
+    $(SRC_DIR)/terrain.cpp \
+    $(SRC_DIR)/terrain_semantics.cpp \
+    $(SRC_DIR)/pathfinding.cpp \
+    $(SRC_DIR)/platform_loader.cpp \
+    $(SRC_DIR)/environment.cpp \
+    $(SRC_DIR)/systems/movement.cpp \
+    $(SRC_DIR)/systems/combat.cpp \
+    $(SRC_DIR)/systems/logistics.cpp \
+    $(SRC_DIR)/systems/detection.cpp \
+    $(SRC_DIR)/systems/c2.cpp \
+    $(SRC_DIR)/analysis/montecarlo.cpp \
+    $(SRC_DIR)/analysis/sobol.cpp \
+    $(SRC_DIR)/analysis/binary_output.cpp \
+    $(SRC_DIR)/ai/doctrine.cpp \
+    $(SRC_DIR)/report/pdf_report.cpp \
+    $(SRC_DIR)/integrated.cpp
+
+# ============================================================================
+# Source files - GUI only
+# ============================================================================
+
+GUI_SOURCES = $(SRC_DIR)/gui/integrated_gui.cpp
+
+TUI_SOURCES = \
+    $(SRC_DIR)/tui/terminal.cpp \
+    $(SRC_DIR)/tui/widgets.cpp \
+    $(SRC_DIR)/tui/browser.cpp
+
+IMGUI_SOURCES = \
+    $(EXT_DIR)/imgui/imgui.cpp \
+    $(EXT_DIR)/imgui/imgui_demo.cpp \
+    $(EXT_DIR)/imgui/imgui_draw.cpp \
+    $(EXT_DIR)/imgui/imgui_tables.cpp \
+    $(EXT_DIR)/imgui/imgui_widgets.cpp \
+    $(EXT_DIR)/imgui/backends/imgui_impl_glfw.cpp \
+    $(EXT_DIR)/imgui/backends/imgui_impl_opengl3.cpp
+
+# ============================================================================
+# Object files
+# ============================================================================
+
+CORE_OBJECTS = $(patsubst $(SRC_DIR)/%.cpp,$(OBJ_DIR)/%.o,$(CORE_SOURCES))
+GUI_OBJECTS = $(patsubst $(SRC_DIR)/%.cpp,$(OBJ_DIR)/%.o,$(GUI_SOURCES))
+TUI_OBJECTS = $(patsubst $(SRC_DIR)/%.cpp,$(OBJ_DIR)/%.o,$(TUI_SOURCES))
+IMGUI_OBJECTS = $(patsubst $(EXT_DIR)/%.cpp,$(OBJ_DIR)/ext/%.o,$(IMGUI_SOURCES))
+
+# ============================================================================
+# Targets
+# ============================================================================
+
+.PHONY: all cli gui clean dirs dirs-gui
+
+all: cli gui
+
+cli: dirs $(BIN_DIR)/athena-cli.exe
+	@echo === CLI build complete ===
+
+gui: dirs dirs-gui $(BIN_DIR)/athena.exe
+	@echo === GUI build complete ===
+
+# Create directories (cmd.exe syntax)
+dirs:
+	@if not exist "$(BUILD_DIR)" mkdir "$(BUILD_DIR)"
+	@if not exist "$(OBJ_DIR)" mkdir "$(OBJ_DIR)"
+	@if not exist "$(OBJ_DIR)\systems" mkdir "$(OBJ_DIR)\systems"
+	@if not exist "$(OBJ_DIR)\analysis" mkdir "$(OBJ_DIR)\analysis"
+	@if not exist "$(OBJ_DIR)\ai" mkdir "$(OBJ_DIR)\ai"
+	@if not exist "$(OBJ_DIR)\report" mkdir "$(OBJ_DIR)\report"
+	@if not exist "$(BIN_DIR)" mkdir "$(BIN_DIR)"
+
+dirs-gui:
+	@if not exist "$(OBJ_DIR)\gui" mkdir "$(OBJ_DIR)\gui"
+	@if not exist "$(OBJ_DIR)\tui" mkdir "$(OBJ_DIR)\tui"
+	@if not exist "$(OBJ_DIR)\ext\imgui\backends" mkdir "$(OBJ_DIR)\ext\imgui\backends"
+
+# ============================================================================
+# CLI executable
+# ============================================================================
+
+$(BIN_DIR)/athena-cli.exe: $(CORE_OBJECTS) $(OBJ_DIR)/cli_main.o
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS_CLI)
+
+$(OBJ_DIR)/cli_main.o: $(SRC_DIR)/cli_main.cpp
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c -o $@ $<
+
+# ============================================================================
+# GUI executable
+# ============================================================================
+
+$(BIN_DIR)/athena.exe: $(CORE_OBJECTS) $(GUI_OBJECTS) $(TUI_OBJECTS) $(IMGUI_OBJECTS) $(OBJ_DIR)/unified_main.o
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS_GUI)
+
+$(OBJ_DIR)/unified_main.o: $(SRC_DIR)/unified_main.cpp
+	$(CXX) $(CXXFLAGS) $(INCLUDES) $(GLFW_INCLUDES) -c -o $@ $<
+
+# ============================================================================
+# Compile rules
+# ============================================================================
+
+# Core/GUI/TUI sources
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
+	$(CXX) $(CXXFLAGS) $(INCLUDES) $(GLFW_INCLUDES) -c -o $@ $<
+
+# ImGui sources
+$(OBJ_DIR)/ext/%.o: $(EXT_DIR)/%.cpp
+	$(CXX) $(CXXFLAGS) $(INCLUDES) $(GLFW_INCLUDES) -c -o $@ $<
+
+# ============================================================================
+# Clean
+# ============================================================================
+
+clean:
+	@if exist "$(BUILD_DIR)" rmdir /s /q "$(BUILD_DIR)"
+	@echo Limpo.

@@ -1,0 +1,360 @@
+{
+  "platforms": [
+    {
+      "id": "eu-eurofighter-typhoon",
+      "name": "Eurofighter Typhoon",
+      "type": "multirole_fighter",
+      "country_of_origin": "EU",
+      "manufacturer": "Eurofighter GmbH (Airbus/BAE/Leonardo)",
+      "service_entry": 2003,
+      "specifications": {
+        "crew": 1,
+        "length_m": 15.96,
+        "wingspan_m": 10.95,
+        "height_m": 5.28,
+        "wing_area_m2": 50.0,
+        "empty_weight_kg": 11000,
+        "max_takeoff_weight_kg": 23500,
+        "internal_fuel_kg": 4996,
+        "max_speed_kmh": 2495,
+        "max_speed_mach": 2.0,
+        "supercruise_mach": 1.5,
+        "combat_radius_km": 1389,
+        "ferry_range_km": 3790,
+        "service_ceiling_m": 19812,
+        "rate_of_climb_m_s": 315,
+        "g_limit": 9,
+        "thrust_to_weight": 1.15
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "Eurojet EJ200",
+        "type": "turbofan",
+        "thrust_dry_kn": 60,
+        "thrust_afterburner_kn": 90
+      },
+      "armament": {
+        "hardpoints": 13,
+        "max_payload_kg": 7500,
+        "gun": {
+          "type": "Mauser BK-27",
+          "caliber_mm": 27,
+          "rounds": 150,
+          "rate_of_fire_rpm": 1700
+        },
+        "missiles": [
+          "AIM-120 AMRAAM",
+          "MBDA Meteor (150km)",
+          "AIM-9 Sidewinder / IRIS-T / ASRAAM",
+          "Storm Shadow / SCALP-EG",
+          "Brimstone",
+          "Taurus KEPD 350",
+          "Paveway series",
+          "JDAM"
+        ]
+      },
+      "avionics": {
+        "radar": "Captor-E AESA (Tranche 3+)",
+        "legacy_radar": "Captor-M mechanically scanned",
+        "radar_range_km": 200,
+        "irst": "PIRATE IRST",
+        "ew_suite": "Praetorian DASS",
+        "helmet": "Striker II HMD"
+      },
+      "service_history": {
+        "introduced": 2003,
+        "status": "active",
+        "production_count": 680,
+        "operators": [
+          {"country": "DE", "quantity": 143, "status": "active"},
+          {"country": "GB", "quantity": 160, "status": "active"},
+          {"country": "IT", "quantity": 96, "status": "active"},
+          {"country": "ES", "quantity": 73, "status": "active"},
+          {"country": "SA", "quantity": 72, "status": "active"},
+          {"country": "AT", "quantity": 15, "status": "active"},
+          {"country": "OM", "quantity": 12, "status": "active"},
+          {"country": "KW", "quantity": 28, "status": "ordered"},
+          {"country": "QA", "quantity": 24, "status": "ordered"}
+        ]
+      },
+      "unit_cost_usd": 105000000,
+      "notes": "European collaborative program. Tranche 4/5 under development with AESA radar. Long Range Strike enhancement ongoing. FCAS partner."
+    },
+    {
+      "id": "fr-rafale-f4",
+      "name": "Dassault Rafale",
+      "type": "multirole_fighter",
+      "country_of_origin": "FR",
+      "manufacturer": "Dassault Aviation",
+      "service_entry": 2001,
+      "specifications": {
+        "crew": 1,
+        "crew_two_seat": 2,
+        "length_m": 15.27,
+        "wingspan_m": 10.80,
+        "height_m": 5.34,
+        "wing_area_m2": 45.7,
+        "empty_weight_kg": 10300,
+        "max_takeoff_weight_kg": 24500,
+        "internal_fuel_kg": 4700,
+        "max_speed_kmh": 1912,
+        "max_speed_mach": 1.8,
+        "combat_radius_km": 1850,
+        "ferry_range_km": 3700,
+        "service_ceiling_m": 15235,
+        "g_limit": 11,
+        "thrust_to_weight": 1.10
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "Snecma M88-2",
+        "type": "turbofan",
+        "thrust_dry_kn": 50,
+        "thrust_afterburner_kn": 75
+      },
+      "armament": {
+        "hardpoints": 14,
+        "max_payload_kg": 9500,
+        "gun": {
+          "type": "GIAT 30/M791",
+          "caliber_mm": 30,
+          "rounds": 125,
+          "rate_of_fire_rpm": 2500
+        },
+        "missiles": [
+          "MICA IR/EM",
+          "MBDA Meteor",
+          "Magic II",
+          "SCALP-EG cruise missile",
+          "AM39 Exocet anti-ship",
+          "AASM Hammer",
+          "GBU-12/24"
+        ],
+        "nuclear": "ASMP-A (France only)"
+      },
+      "avionics": {
+        "radar": "RBE2-AA AESA",
+        "radar_range_km": 200,
+        "irst": "OSF (Optronique Secteur Frontal)",
+        "ew_suite": "SPECTRA EW",
+        "helmet": "TopSight-I HMD",
+        "data_link": "Link 16, SATURN"
+      },
+      "variants": [
+        "Rafale C - Single seat land-based",
+        "Rafale B - Two seat land-based",
+        "Rafale M - Single seat naval"
+      ],
+      "service_history": {
+        "introduced": 2001,
+        "status": "active",
+        "production_count": 250,
+        "operators": [
+          {"country": "FR", "quantity": 152, "variants": ["B", "C", "M"]},
+          {"country": "EG", "quantity": 54, "status": "delivered"},
+          {"country": "QA", "quantity": 36, "status": "delivered"},
+          {"country": "IN", "quantity": 36, "status": "delivered"},
+          {"country": "GR", "quantity": 24, "status": "ordered"},
+          {"country": "HR", "quantity": 12, "status": "ordered"},
+          {"country": "AE", "quantity": 80, "status": "ordered"},
+          {"country": "ID", "quantity": 42, "status": "ordered"},
+          {"country": "RS", "quantity": 12, "status": "ordered"}
+        ]
+      },
+      "combat_use": [
+        {"conflict": "Afghanistan", "year": 2007},
+        {"conflict": "Libya", "year": 2011},
+        {"conflict": "Mali", "year": 2013},
+        {"conflict": "Iraq/Syria", "year": 2014}
+      ],
+      "unit_cost_usd": 100000000,
+      "notes": "Omnirole fighter. F4 standard with connectivity focus. Carrier-capable M variant. SPECTRA provides 360° EW coverage. Combat proven."
+    },
+    {
+      "id": "se-jas-39e-gripen",
+      "name": "JAS 39E Gripen",
+      "type": "multirole_fighter",
+      "country_of_origin": "SE",
+      "manufacturer": "Saab AB",
+      "service_entry": 2023,
+      "specifications": {
+        "crew": 1,
+        "length_m": 15.2,
+        "wingspan_m": 8.6,
+        "height_m": 4.5,
+        "wing_area_m2": 30.0,
+        "empty_weight_kg": 8000,
+        "max_takeoff_weight_kg": 16500,
+        "internal_fuel_kg": 3400,
+        "max_speed_kmh": 2205,
+        "max_speed_mach": 2.0,
+        "supercruise_mach": 1.2,
+        "combat_radius_km": 1300,
+        "ferry_range_km": 4000,
+        "service_ceiling_m": 15240,
+        "g_limit": 9,
+        "thrust_to_weight": 1.05
+      },
+      "powerplant": {
+        "engines": 1,
+        "model": "GE F414G",
+        "type": "turbofan",
+        "thrust_dry_kn": 62,
+        "thrust_afterburner_kn": 98
+      },
+      "armament": {
+        "hardpoints": 10,
+        "max_payload_kg": 5300,
+        "gun": {
+          "type": "Mauser BK-27",
+          "caliber_mm": 27,
+          "rounds": 120
+        },
+        "missiles": [
+          "MBDA Meteor",
+          "AIM-120 AMRAAM",
+          "IRIS-T / AIM-9X",
+          "RBS-15F anti-ship",
+          "Taurus KEPD 350",
+          "GBU-39 SDB",
+          "Paveway series"
+        ]
+      },
+      "avionics": {
+        "radar": "Leonardo ES-05 Raven AESA",
+        "radar_range_km": 200,
+        "radar_repositioner": "Wide-angle coverage",
+        "irst": "Skyward-G IRST",
+        "ew_suite": "Arexis EW",
+        "data_link": "Link 16, GlobalEye integration"
+      },
+      "features": {
+        "short_takeoff_m": 400,
+        "short_landing_m": 500,
+        "road_base_capable": true,
+        "turnaround_time_min": 10,
+        "maintenance_hours_per_flight_hour": 10
+      },
+      "service_history": {
+        "introduced": 2023,
+        "status": "active",
+        "operators": [
+          {"country": "SE", "quantity": 60, "status": "ordered"},
+          {"country": "BR", "quantity": 36, "status": "delivered"},
+          {"country": "HU", "quantity": 14, "status": "leased C/D"}
+        ]
+      },
+      "unit_cost_usd": 85000000,
+      "notes": "Designed for expeditionary operations. Road-based dispersal capability. Low operating costs. 98% new design vs C/D. Swing-role capable."
+    },
+    {
+      "id": "se-jas-39c-gripen",
+      "name": "JAS 39C/D Gripen",
+      "type": "multirole_fighter",
+      "country_of_origin": "SE",
+      "manufacturer": "Saab AB",
+      "service_entry": 2003,
+      "specifications": {
+        "crew": 1,
+        "length_m": 14.1,
+        "wingspan_m": 8.4,
+        "height_m": 4.5,
+        "empty_weight_kg": 6800,
+        "max_takeoff_weight_kg": 14000,
+        "internal_fuel_kg": 2400,
+        "max_speed_mach": 2.0,
+        "combat_radius_km": 800,
+        "service_ceiling_m": 15240
+      },
+      "powerplant": {
+        "engines": 1,
+        "model": "Volvo RM12 (GE F404)",
+        "thrust_afterburner_kn": 80
+      },
+      "armament": {
+        "hardpoints": 8,
+        "max_payload_kg": 4000
+      },
+      "avionics": {
+        "radar": "PS-05/A Mk4",
+        "type": "pulse-doppler"
+      },
+      "service_history": {
+        "introduced": 2003,
+        "status": "active",
+        "production_count": 204,
+        "operators": [
+          {"country": "SE", "quantity": 96},
+          {"country": "CZ", "quantity": 14, "status": "leased"},
+          {"country": "HU", "quantity": 14, "status": "leased"},
+          {"country": "ZA", "quantity": 26},
+          {"country": "TH", "quantity": 12}
+        ]
+      },
+      "unit_cost_usd": 60000000,
+      "notes": "Original production variant. NATO compatible. Proven in South African and Thai service."
+    },
+    {
+      "id": "kr-kf-21-boramae",
+      "name": "KF-21 Boramae",
+      "type": "multirole_fighter",
+      "country_of_origin": "KR",
+      "manufacturer": "Korea Aerospace Industries",
+      "designation_alt": "KFX, Fighting Hawk",
+      "service_entry": 2026,
+      "specifications": {
+        "crew": 1,
+        "length_m": 16.9,
+        "wingspan_m": 11.2,
+        "height_m": 4.7,
+        "empty_weight_kg": 11800,
+        "max_takeoff_weight_kg": 25600,
+        "internal_fuel_kg": 7600,
+        "max_speed_mach": 1.8,
+        "combat_radius_km": 1250,
+        "service_ceiling_m": 16800
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "GE F414-GE-400K",
+        "thrust_afterburner_kn": 97
+      },
+      "armament": {
+        "external_hardpoints": 10,
+        "internal_bays": "Block 2",
+        "max_payload_kg": 7700,
+        "gun": {
+          "type": "M61A2 Vulcan",
+          "caliber_mm": 20
+        },
+        "missiles": [
+          "AIM-120 AMRAAM",
+          "AIM-9X Sidewinder",
+          "IRIS-T",
+          "Taurus KEPD 350K"
+        ]
+      },
+      "avionics": {
+        "radar": "Hanwha AESA",
+        "radar_range_km": 180,
+        "irst": "Korean IRST",
+        "ew_suite": "LIG Nex1"
+      },
+      "stealth": {
+        "rcs_category": "reduced",
+        "note": "4.5 gen with semi-stealth features"
+      },
+      "service_history": {
+        "first_flight": 2022,
+        "expected_service": 2026,
+        "planned_production": 120,
+        "operators": [
+          {"country": "KR", "quantity": 120, "status": "planned"},
+          {"country": "ID", "quantity": 50, "status": "planned"}
+        ]
+      },
+      "unit_cost_usd": 65000000,
+      "notes": "4.5 gen fighter. Block 1 external weapons. Block 2 internal weapons bay. Joint Korea-Indonesia program."
+    }
+  ]
+}

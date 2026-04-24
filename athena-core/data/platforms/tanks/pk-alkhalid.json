@@ -1,0 +1,372 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "pk-alkhalid",
+      "name": "Al-Khalid (MBT-2000)",
+      "nato_designation": null,
+      "type": "mbt",
+      "country_of_origin": "PK",
+      "manufacturer": "Heavy Industries Taxila (HIT)",
+      "service_history": {
+        "introduced": 2001,
+        "retired": null,
+        "production_count": 600,
+        "operators": [
+          {
+            "country": "PK",
+            "quantity": 600,
+            "variants": [
+              "Al-Khalid",
+              "Al-Khalid I"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "BD",
+            "quantity": 44,
+            "variants": [
+              "MBT-2000"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "MA",
+            "quantity": 150,
+            "variants": [
+              "MBT-2000"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 48000,
+        "length_m": 6.9,
+        "length_gun_forward_m": 10.07,
+        "width_m": 3.5,
+        "height_m": 2.3,
+        "ground_clearance_m": 0.48
+      },
+      "mobility": {
+        "engine": {
+          "model": "KMDB 6TD-2",
+          "type": "diesel_two-stroke",
+          "power_hp": 1200,
+          "power_kw": 895
+        },
+        "power_to_weight_hp_ton": 25.0,
+        "transmission": "SESM ESM500 automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 72,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 30,
+        "range_road_km": 450,
+        "fuel_capacity_liters": 1050,
+        "fording_depth_m": 1.4,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.7,
+        "vertical_obstacle_m": 0.85,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "125mm smoothbore gun (ZPT-98 derived)",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "autoloader_type": "carousel",
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1700,
+          "effective_range_m": 5000,
+          "ammunition_carried": 39,
+          "ammunition_ready": 22,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "NAIZA 125mm",
+              "penetration_mm_rha": 550,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "125mm HEAT",
+              "penetration_mm_rha": 600,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE-FRAG",
+              "designation": "125mm HE-FRAG",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 4000
+            },
+            {
+              "type": "ATGM",
+              "designation": "KOMBAT gun-launched",
+              "penetration_mm_rha": 750,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "Type 85 HMG",
+            "caliber_mm": 12.7,
+            "mount": "commander_cupola",
+            "ammunition_carried": 500
+          },
+          {
+            "designation": "Type 59T MG",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 3000
+          }
+        ],
+        "atgm": {
+          "designation": "KOMBAT / Refleks",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "Composite armor with modular ERA",
+        "protection_front_turret_mm_rha": 680,
+        "protection_front_hull_mm_rha": 560,
+        "protection_side_mm_rha": 120,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 40,
+        "era_coverage": "Full frontal and partial side",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "hull_floor",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "ISFCS-212 (French/Chinese derived)",
+        "commander_sight": {
+          "type": "COFT",
+          "day_magnification": "3x/8x",
+          "thermal": false,
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "ISFCS Primary",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 8000,
+        "ballistic_computer": true,
+        "gps": true,
+        "inertial_navigation": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "Smoke/IR"
+      },
+      "unit_cost_usd": 3500000,
+      "cost_year": 2010,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Al-Khalid tank",
+        "Army Recognition Al-Khalid",
+        "Military-Today Al-Khalid",
+        "HIT official"
+      ],
+      "notes": "Joint Sino-Pakistani development based on Type 90-IIM (MBT-2000). Ukrainian 6TD-2 engine. French-derived FCS. Exported as MBT-2000. Low silhouette. Combat tested.",
+      "year": 2001
+    },
+    {
+      "id": "pk-alkhalid2",
+      "name": "Al-Khalid II",
+      "nato_designation": null,
+      "type": "mbt",
+      "country_of_origin": "PK",
+      "manufacturer": "Heavy Industries Taxila (HIT)",
+      "service_history": {
+        "introduced": null,
+        "retired": null,
+        "production_count": 0,
+        "operators": [
+          {
+            "country": "PK",
+            "quantity": 0,
+            "variants": [
+              "Al-Khalid II"
+            ],
+            "status": "development"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 52000,
+        "length_m": 7.0,
+        "length_gun_forward_m": 10.5,
+        "width_m": 3.5,
+        "height_m": 2.4,
+        "ground_clearance_m": 0.48
+      },
+      "mobility": {
+        "engine": {
+          "model": "KMDB 6TD-3",
+          "type": "diesel_two-stroke",
+          "power_hp": 1500,
+          "power_kw": 1119
+        },
+        "power_to_weight_hp_ton": 28.8,
+        "transmission": "SESM automatic",
+        "suspension": "hydropneumatic",
+        "max_speed_road_kmh": 75,
+        "max_speed_offroad_kmh": 55,
+        "max_speed_reverse_kmh": 35,
+        "range_road_km": 500,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.4,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.7,
+        "vertical_obstacle_m": 1.0,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "125mm smoothbore gun",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 52,
+          "type": "smoothbore",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 16,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "autoloader_type": "bustle",
+          "rate_of_fire_rpm": 10,
+          "muzzle_velocity_ms": 1750,
+          "effective_range_m": 5000,
+          "ammunition_carried": 42,
+          "ammunition_ready": 24,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "NAIZA-II",
+              "penetration_mm_rha": 650,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "125mm HEAT-MP",
+              "penetration_mm_rha": 650,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE-FRAG",
+              "designation": "125mm HE-FRAG",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 4000
+            },
+            {
+              "type": "ATGM",
+              "designation": "Refleks-M",
+              "penetration_mm_rha": 900,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "RCWS 12.7mm",
+            "caliber_mm": 12.7,
+            "mount": "remote",
+            "ammunition_carried": 500
+          },
+          {
+            "designation": "MAG MG",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 3000
+          }
+        ],
+        "atgm": {
+          "designation": "Refleks-M",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive_aps",
+        "armor_composition": "Advanced composite with ERA",
+        "protection_front_turret_mm_rha": 850,
+        "protection_front_hull_mm_rha": 750,
+        "protection_side_mm_rha": 250,
+        "protection_rear_mm_rha": 70,
+        "protection_top_mm_rha": 50,
+        "era_coverage": "Full coverage",
+        "aps": {
+          "system": "GL-5 derivative",
+          "type": "hard-kill",
+          "coverage_deg": 270
+        },
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "bustle",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Integrated FCS with hunter-killer",
+        "commander_sight": {
+          "type": "Panoramic",
+          "day_magnification": "3x/12x",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "Primary",
+          "day_magnification": "3x/12x",
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "laser_warning_system": true,
+        "ballistic_computer": true,
+        "battle_management_system": true,
+        "data_link": true,
+        "gps": true,
+        "glonass": true,
+        "inertial_navigation": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "Smoke/IR/Chaff",
+        "ir_signature_reduction": true
+      },
+      "unit_cost_usd": 6000000,
+      "cost_year": 2023,
+      "confidence": "low",
+      "sources": [
+        "Defence Pakistan",
+        "Army Recognition",
+        "Speculation based on VT-4 features"
+      ],
+      "notes": "Development variant. Expected features include bustle autoloader, improved armor, APS. Details uncertain. May incorporate VT-4/Type 99A technologies.",
+      "year": 2025
+    }
+  ]
+}

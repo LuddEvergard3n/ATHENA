@@ -1,0 +1,385 @@
+{
+  "platforms": [
+    {
+      "id": "concept-cyber-weapons",
+      "name": "Cyber Weapons (Category)",
+      "type": "cyber_warfare",
+      "country_of_origin": "Various",
+      "service_entry": 2010,
+      "category_overview": {
+        "description": "Software-based weapons targeting computer systems, networks, and infrastructure",
+        "effects": ["Data destruction", "System disruption", "Infrastructure sabotage", "Intelligence collection"]
+      },
+      "notable_examples": [
+        {
+          "name": "Stuxnet",
+          "year": 2010,
+          "target": "Iranian nuclear centrifuges",
+          "effect": "Destroyed 1,000+ centrifuges",
+          "attribution": "US/Israel (alleged)"
+        },
+        {
+          "name": "NotPetya",
+          "year": 2017,
+          "target": "Ukrainian infrastructure, global spread",
+          "effect": "$10B+ damage globally",
+          "attribution": "Russia (GRU)"
+        },
+        {
+          "name": "WannaCry",
+          "year": 2017,
+          "target": "Global ransomware",
+          "effect": "200,000+ computers in 150 countries",
+          "attribution": "North Korea (alleged)"
+        },
+        {
+          "name": "Industroyer/CrashOverride",
+          "year": 2016,
+          "target": "Ukrainian power grid",
+          "effect": "Blackout in Kyiv",
+          "attribution": "Russia"
+        },
+        {
+          "name": "Triton/Trisis",
+          "year": 2017,
+          "target": "Industrial safety systems",
+          "effect": "Attempted to disable safety controllers",
+          "attribution": "Russia"
+        }
+      ],
+      "capabilities": [
+        "SCADA/ICS attacks",
+        "Critical infrastructure disruption",
+        "Military network penetration",
+        "GPS spoofing",
+        "Communications interception"
+      ],
+      "major_actors": ["US Cyber Command", "Russia GRU/FSB", "China PLA Unit 61398", "North Korea Bureau 121", "Israel Unit 8200", "Iran"],
+      "notes": "Fifth domain of warfare. Effects range from espionage to physical destruction. Attribution is difficult."
+    },
+    {
+      "id": "kr-sgr-a1-sentry",
+      "name": "SGR-A1",
+      "type": "autonomous_sentry_gun",
+      "country_of_origin": "KR",
+      "manufacturer": "Samsung Techwin (Hanwha)",
+      "service_entry": 2010,
+      "specifications": {
+        "detection_range_km": 3.2,
+        "tracking_range_km": 2.2,
+        "weapon": "K3 5.56mm MG or 40mm AGL"
+      },
+      "sensors": {
+        "daylight_camera": true,
+        "thermal_imager": true,
+        "laser_rangefinder": true,
+        "motion_detection": true
+      },
+      "features": {
+        "automatic_detection": true,
+        "automatic_tracking": true,
+        "voice_challenge": true,
+        "human_in_loop": "Required for fire authorization (current)",
+        "fully_autonomous": "Technically capable"
+      },
+      "deployment": {
+        "location": "Korean DMZ",
+        "quantity": "Unknown (classified)"
+      },
+      "service_history": {
+        "introduced": 2010,
+        "status": "active"
+      },
+      "notes": "World's first deployed autonomous sentry. Currently requires human authorization to fire. Could operate fully autonomously."
+    },
+    {
+      "id": "il-super-aegis-2",
+      "name": "Super aEgis II",
+      "type": "autonomous_sentry_gun",
+      "country_of_origin": "KR",
+      "manufacturer": "DoDAAM",
+      "service_entry": 2010,
+      "specifications": {
+        "detection_range_km": 3,
+        "weapon_options": ["12.7mm", "40mm AGL", "Missiles"],
+        "traverse_deg": 360
+      },
+      "sensors": {
+        "thermal": true,
+        "laser_rangefinder": true,
+        "target_tracking": true
+      },
+      "features": {
+        "auto_target_acquisition": true,
+        "auto_tracking": true,
+        "voice_warning": true,
+        "autonomous_capable": true
+      },
+      "service_history": {
+        "introduced": 2010,
+        "status": "active",
+        "operators": ["KR", "AE", "QA"]
+      },
+      "notes": "Korean autonomous weapon station. Exported to Middle East. Autonomous capability exists but typically human-in-loop."
+    },
+    {
+      "id": "us-gpi-interceptor",
+      "name": "Glide Phase Interceptor (GPI)",
+      "type": "hypersonic_interceptor",
+      "country_of_origin": "US",
+      "manufacturer": "Northrop Grumman (selected 2023)",
+      "service_entry": 2030,
+      "specifications": {
+        "target": "Hypersonic glide vehicles",
+        "phase": "Glide phase intercept",
+        "platform": "Aegis ships, Aegis Ashore"
+      },
+      "features": {
+        "mid_course_intercept": true,
+        "hypersonic_target": true,
+        "aegis_compatible": true
+      },
+      "development": {
+        "mda_program": true,
+        "contractor": "Northrop Grumman",
+        "award_year": 2023,
+        "expected_ioc": 2030
+      },
+      "service_history": {
+        "status": "Development"
+      },
+      "notes": "First dedicated counter-hypersonic interceptor. Targets glide phase when HGVs are most vulnerable. Critical gap-filler."
+    },
+    {
+      "id": "ru-cosmos-coorbital-asat",
+      "name": "Cosmos Co-Orbital ASAT",
+      "type": "co_orbital_asat",
+      "country_of_origin": "RU",
+      "manufacturer": "NPO Lavochkin (suspected)",
+      "service_entry": 2019,
+      "specifications": {
+        "orbit": "LEO inspection/attack",
+        "approach": "Rendezvous and proximity operations",
+        "mechanism": "Kinetic or directed energy (suspected)"
+      },
+      "known_activities": [
+        {"year": 2019, "event": "Cosmos 2542 released sub-satellite near USA 245"},
+        {"year": 2020, "event": "Cosmos 2543 'inspected' another satellite"},
+        {"year": 2020, "event": "Projectile test in orbit"}
+      ],
+      "features": {
+        "satellite_inspection": true,
+        "rendezvous_capable": true,
+        "sub_satellite_release": true,
+        "deniable": true
+      },
+      "service_history": {
+        "introduced": 2019,
+        "status": "Operational (testing)"
+      },
+      "notes": "Russian co-orbital ASAT. Can approach and inspect/attack other satellites. More deniable than direct-ascent ASAT."
+    },
+    {
+      "id": "cn-shijian-coorbital",
+      "name": "Shijian-17/21 Inspection Satellites",
+      "type": "co_orbital_asat",
+      "country_of_origin": "CN",
+      "manufacturer": "CAST",
+      "service_entry": 2016,
+      "specifications": {
+        "orbit": "GEO (SJ-17), various (SJ-21)",
+        "capability": "Rendezvous, docking, debris removal"
+      },
+      "known_activities": [
+        {"year": 2021, "event": "SJ-21 removed defunct satellite from GEO"},
+        {"year": 2022, "event": "SJ-21 close approach to other GEO satellites"}
+      ],
+      "dual_use": {
+        "stated_mission": "Debris removal, servicing",
+        "potential_mission": "Satellite capture/destruction"
+      },
+      "service_history": {
+        "status": "active"
+      },
+      "notes": "Chinese dual-use co-orbital capability. Officially for debris removal. Demonstrated ability to capture/move satellites."
+    },
+    {
+      "id": "concept-laws-overview",
+      "name": "Lethal Autonomous Weapon Systems (LAWS)",
+      "type": "autonomous_weapons_category",
+      "country_of_origin": "Various",
+      "category_overview": {
+        "definition": "Weapons that can select and engage targets without human intervention",
+        "spectrum": ["Human-in-the-loop", "Human-on-the-loop", "Human-out-of-the-loop"]
+      },
+      "existing_systems": [
+        {"name": "Phalanx CIWS", "autonomy": "Fire control autonomous", "target": "Incoming missiles"},
+        {"name": "Iron Dome", "autonomy": "Intercept decision automated", "target": "Rockets"},
+        {"name": "SGR-A1", "autonomy": "Detection/tracking auto, fire human-authorized"},
+        {"name": "Harpy/Harop", "autonomy": "Loitering munition with autonomous search"},
+        {"name": "Kargu-2", "autonomy": "Claimed autonomous engagement in Libya"}
+      ],
+      "international_status": {
+        "ccw_discussions": "Ongoing since 2014",
+        "ban_status": "No international ban yet",
+        "positions": {
+          "ban_advocates": ["Austria", "Pakistan", "Human rights groups"],
+          "opposed_ban": ["US", "Russia", "Israel", "Australia"]
+        }
+      },
+      "ethical_concerns": [
+        "Accountability gap",
+        "Inability to apply human judgment",
+        "Lowered threshold for conflict",
+        "Proliferation risks"
+      ],
+      "notes": "Controversial emerging category. No clear international regulations. Multiple systems already have autonomous modes."
+    },
+    {
+      "id": "il-harpy-ng",
+      "name": "Harpy NG",
+      "type": "autonomous_loitering_munition",
+      "country_of_origin": "IL",
+      "manufacturer": "IAI",
+      "service_entry": 2020,
+      "specifications": {
+        "wingspan_m": 2.1,
+        "weight_kg": 135,
+        "endurance_hours": 9,
+        "warhead_kg": 23,
+        "range_km": 1000
+      },
+      "guidance": {
+        "anti_radiation": true,
+        "electro_optical": true,
+        "autonomous_search": true,
+        "man_in_loop_option": true
+      },
+      "features": {
+        "dual_seeker": "RF + EO",
+        "loiter_and_strike": true,
+        "salvo_launch": true
+      },
+      "service_history": {
+        "introduced": 2020,
+        "status": "active"
+      },
+      "notes": "Next-gen Harpy. Dual seeker for SEAD and general strike. Can search autonomously for radar emissions."
+    },
+    {
+      "id": "us-skyborg-loyal-wingman",
+      "name": "Skyborg / CCA",
+      "type": "autonomous_combat_aircraft",
+      "country_of_origin": "US",
+      "manufacturer": "Various (Kratos XQ-58, GA Avenger, Boeing)",
+      "full_name": "Collaborative Combat Aircraft",
+      "service_entry": 2028,
+      "specifications": {
+        "role": "Autonomous wingman for manned fighters",
+        "ai_core": "Skyborg Autonomy Core System (ACS)",
+        "cost": "$3-7M per unit (attritable)"
+      },
+      "candidates": [
+        {"name": "XQ-58A Valkyrie", "manufacturer": "Kratos"},
+        {"name": "MQ-28 Ghost Bat", "manufacturer": "Boeing Australia"},
+        {"name": "GA-ASI Gambit", "manufacturer": "General Atomics"}
+      ],
+      "features": {
+        "autonomous_flight": true,
+        "manned_unmanned_teaming": true,
+        "attritable": true,
+        "weapons_capable": true,
+        "sensor_extension": true
+      },
+      "program": {
+        "air_force_program": "CCA (Collaborative Combat Aircraft)",
+        "quantity_planned": 1000,
+        "budget": "$5.8B through 2028"
+      },
+      "service_history": {
+        "status": "Development",
+        "first_flight_cca": 2024
+      },
+      "notes": "AI-controlled combat drones to fly with F-35/NGAD. Force multiplier. Increment 1 for ISR/EW, later weapons."
+    },
+    {
+      "id": "au-ghost-shark-uuv",
+      "name": "Ghost Shark XL-AUV",
+      "type": "autonomous_submarine",
+      "country_of_origin": "AU",
+      "manufacturer": "Anduril Australia",
+      "service_entry": 2025,
+      "specifications": {
+        "length_m": 10,
+        "endurance_days": 30,
+        "depth_m": 6000,
+        "payload": "Modular"
+      },
+      "missions": [
+        "ISR",
+        "Mine warfare",
+        "Anti-submarine warfare",
+        "Strike (future)"
+      ],
+      "features": {
+        "fully_autonomous": true,
+        "ai_navigation": true,
+        "modular_payload": true,
+        "long_endurance": true
+      },
+      "program": {
+        "funding_aud": 140000000,
+        "partnership": "Royal Australian Navy + Anduril"
+      },
+      "service_history": {
+        "contract": 2022,
+        "expected_service": 2025,
+        "status": "Development"
+      },
+      "notes": "Australian autonomous submarine. Anduril partnership. Part of AUKUS technology sharing."
+    },
+    {
+      "id": "concept-acoustic-weapons",
+      "name": "Acoustic Weapons (LRAD/Infrasound)",
+      "type": "non_lethal_weapon",
+      "country_of_origin": "Various",
+      "category_overview": {
+        "types": ["LRAD (directed sound)", "Infrasound weapons", "Acoustic hailing devices"]
+      },
+      "systems": [
+        {
+          "name": "LRAD 1000Xi",
+          "manufacturer": "Genasys",
+          "country": "US",
+          "range_m": 3000,
+          "use": "Warning/deterrence, pain compliance",
+          "frequency": "Audible"
+        },
+        {
+          "name": "Mosquito",
+          "manufacturer": "Compound Security",
+          "country": "GB",
+          "use": "Youth deterrent",
+          "frequency": "17.4 kHz (inaudible to adults)"
+        }
+      ],
+      "effects": [
+        "Discomfort/pain",
+        "Disorientation",
+        "Nausea (infrasound)",
+        "Hearing damage (high intensity)"
+      ],
+      "deployment": [
+        {"use": "Crowd control", "example": "G20 Pittsburgh 2009"},
+        {"use": "Ship defense", "example": "Anti-piracy"},
+        {"use": "Border security", "example": "US-Mexico border"}
+      ],
+      "havana_syndrome": {
+        "suspected_weapon": "Directed microwave or acoustic",
+        "incidents": "US diplomats Cuba, China, Vienna",
+        "status": "Under investigation"
+      },
+      "notes": "Non-lethal acoustic weapons for crowd control and deterrence. LRAD widely used. Havana Syndrome possibly related."
+    }
+  ]
+}

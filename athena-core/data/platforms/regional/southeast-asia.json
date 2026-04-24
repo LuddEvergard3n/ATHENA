@@ -1,0 +1,151 @@
+{
+  "category": "regional",
+  "subcategory": "southeast-asia",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": ["IISS Military Balance 2024", "Jane's Defence"]
+  },
+  "platforms": [
+    {
+      "id": "sg-hunter-afv",
+      "name": "Hunter AFV",
+      "type": "ifv",
+      "country": "SG",
+      "year": 2019,
+      "manufacturer": "ST Engineering",
+      "specifications": {"combat_weight_kg": 30000, "crew": 3, "passengers": 8},
+      "armament": {"turret": "Samson 30mm RWS", "main_gun": "30mm Bushmaster II", "atgm": "Spike LR"},
+      "notes": "Indigenous Singapore IFV"
+    },
+    {
+      "id": "sg-terrex-3",
+      "name": "Terrex 3 ICV",
+      "type": "apc",
+      "country": "SG",
+      "year": 2021,
+      "manufacturer": "ST Engineering",
+      "specifications": {"combat_weight_kg": 28000, "crew": 2, "passengers": 12},
+      "notes": "8x8 wheeled APC"
+    },
+    {
+      "id": "id-kaplan-mt",
+      "name": "Kaplan MT (Harimau)",
+      "type": "medium-tank",
+      "country": "ID",
+      "year": 2022,
+      "manufacturer": "FNSS/Pindad",
+      "specifications": {"combat_weight_kg": 35000, "max_speed_kmh": 70},
+      "armament": {"main_gun": "105mm CMI Cockerill"},
+      "service_history": {
+        "operators": [
+          {"country": "ID", "quantity": 18, "status": "active"},
+          {"country": "PH", "quantity": 10, "status": "ordered"}
+        ]
+      },
+      "notes": "Turkish-Indonesian medium tank"
+    },
+    {
+      "id": "id-anoa-2",
+      "name": "Anoa 2 6x6",
+      "type": "apc",
+      "country": "ID",
+      "year": 2012,
+      "manufacturer": "Pindad",
+      "specifications": {"combat_weight_kg": 18500, "crew": 2, "passengers": 12},
+      "notes": "Indonesian indigenous APC"
+    },
+    {
+      "id": "th-vt4",
+      "name": "VT-4 (MBT-3000)",
+      "type": "mbt",
+      "country": "TH",
+      "year": 2017,
+      "manufacturer": "NORINCO",
+      "specifications": {"combat_weight_kg": 52000},
+      "armament": {"main_gun": "125mm smoothbore"},
+      "service_history": {
+        "operators": [
+          {"country": "TH", "quantity": 49, "status": "active"},
+          {"country": "PK", "quantity": 300, "status": "ordered"},
+          {"country": "NG", "quantity": 100, "status": "active"}
+        ]
+      },
+      "notes": "Chinese export tank"
+    },
+    {
+      "id": "th-stingray",
+      "name": "Stingray Light Tank",
+      "type": "light-tank",
+      "country": "TH",
+      "year": 1988,
+      "manufacturer": "Cadillac Gage",
+      "specifications": {"combat_weight_kg": 21205},
+      "armament": {"main_gun": "105mm LRF"},
+      "service_history": {"operators": [{"country": "TH", "quantity": 106, "status": "active"}]}
+    },
+    {
+      "id": "my-av8-gempita",
+      "name": "AV8 Gempita",
+      "type": "ifv",
+      "country": "MY",
+      "year": 2015,
+      "manufacturer": "FNSS/DRB-HICOM",
+      "specifications": {"combat_weight_kg": 25000, "crew": 3, "passengers": 8},
+      "armament": {"turret": "25mm ATK LCT25"},
+      "service_history": {"operators": [{"country": "MY", "quantity": 257, "status": "active"}]},
+      "notes": "Malaysian 8x8 IFV based on FNSS Pars"
+    },
+    {
+      "id": "vn-su30mk2v",
+      "name": "Su-30MK2V Flanker-G",
+      "type": "multirole-fighter",
+      "country": "VN",
+      "year": 2009,
+      "manufacturer": "Sukhoi",
+      "service_history": {"operators": [{"country": "VN", "quantity": 35, "status": "active"}]},
+      "notes": "Vietnamese maritime strike Flanker"
+    },
+    {
+      "id": "vn-gepard",
+      "name": "Gepard 3.9-class frigate",
+      "type": "frigate",
+      "country": "VN",
+      "year": 2011,
+      "manufacturer": "Zelenodolsk",
+      "specifications": {"displacement_tons": 2100},
+      "armament": {"ssm": "Kh-35 Uran", "sam": "Osa-MA-2"},
+      "service_history": {"operators": [{"country": "VN", "quantity": 4, "status": "active"}]}
+    },
+    {
+      "id": "ph-fa50ph",
+      "name": "FA-50PH",
+      "type": "light-combat-aircraft",
+      "country": "PH",
+      "year": 2015,
+      "manufacturer": "KAI",
+      "service_history": {"operators": [{"country": "PH", "quantity": 12, "status": "active"}]},
+      "notes": "Philippine Air Force FA-50"
+    },
+    {
+      "id": "ph-jose-rizal",
+      "name": "Jose Rizal-class frigate",
+      "type": "frigate",
+      "country": "PH",
+      "year": 2020,
+      "manufacturer": "Hyundai Heavy Industries",
+      "specifications": {"displacement_tons": 2600},
+      "armament": {"ssm": "SSM-700K Haeseong", "sam": "Mistral SIMBAD-RC"},
+      "service_history": {"operators": [{"country": "PH", "quantity": 2, "status": "active"}]}
+    },
+    {
+      "id": "mm-jf17-mm",
+      "name": "JF-17 Thunder (Myanmar)",
+      "type": "multirole-fighter",
+      "country": "MM",
+      "year": 2018,
+      "manufacturer": "PAC/CAC",
+      "service_history": {"operators": [{"country": "MM", "quantity": 16, "status": "active"}]}
+    }
+  ]
+}

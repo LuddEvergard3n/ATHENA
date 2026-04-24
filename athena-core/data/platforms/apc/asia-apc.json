@@ -1,0 +1,576 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition",
+      "Sinodefense"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "cn-zsl92",
+      "name": "ZSL-92 (Type 92)",
+      "type": "apc",
+      "country_of_origin": "CN",
+      "manufacturer": "Norinco",
+      "service_history": {
+        "introduced": 1994,
+        "retired": null,
+        "production_count": 2500,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 2000,
+            "status": "active"
+          },
+          {
+            "country": "DJ",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "SD",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "BD",
+            "quantity": 80,
+            "status": "active"
+          },
+          {
+            "country": "MM",
+            "quantity": 100,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 11,
+        "weight_kg": 15500,
+        "length_m": 6.63,
+        "width_m": 2.8,
+        "height_m": 2.48,
+        "ground_clearance_m": 0.4
+      },
+      "mobility": {
+        "engine": {
+          "model": "Deutz BF8L413F",
+          "type": "diesel",
+          "power_hp": 320,
+          "power_kw": 239
+        },
+        "power_to_weight_hp_ton": 20.6,
+        "drivetrain": "6x6",
+        "transmission": "Manual 5F/1R",
+        "max_speed_road_kmh": 85,
+        "max_speed_water_kmh": 8,
+        "range_road_km": 800,
+        "gradient_percent": 60,
+        "fording_depth_m": 0,
+        "amphibious": true,
+        "propulsion_water": "waterjets",
+        "tyre_pressure_central": true
+      },
+      "armament": {
+        "main": {
+          "designation": "Type 85/QJC-88",
+          "caliber_mm": 12.7,
+          "type": "heavy_machine_gun",
+          "mount": "turret",
+          "elevation_max_deg": 75,
+          "ammunition_carried": 500,
+          "effective_range_m": 1500
+        }
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 10,
+        "protection_side_mm_rha": 8,
+        "stanag_level": "4569 Level 2",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "commander_sight": {
+          "type": "Day/night",
+          "thermal": false
+        },
+        "night_vision": "Active IR"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8
+      },
+      "unit_cost_usd": 500000,
+      "cost_year": 2000,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia ZSL-92",
+        "Sinodefense",
+        "Army Recognition"
+      ],
+      "notes": "Main PLA wheeled APC. WZ551 export version. Replaced Type 63. Multiple turret options available.",
+      "year": 1992
+    },
+    {
+      "id": "cn-zbl09",
+      "name": "ZBL-09 (Type 09)",
+      "type": "apc",
+      "country_of_origin": "CN",
+      "manufacturer": "Norinco",
+      "service_history": {
+        "introduced": 2009,
+        "retired": null,
+        "production_count": 2000,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 1800,
+            "status": "active"
+          },
+          {
+            "country": "TH",
+            "quantity": 34,
+            "status": "active"
+          },
+          {
+            "country": "CM",
+            "quantity": 24,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 9,
+        "weight_kg": 16500,
+        "length_m": 7.4,
+        "width_m": 3.0,
+        "height_m": 2.1,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Deutz BF6M1015CP",
+          "type": "diesel_turbocharged",
+          "power_hp": 440,
+          "power_kw": 328
+        },
+        "power_to_weight_hp_ton": 26.7,
+        "drivetrain": "8x8",
+        "transmission": "Automatic",
+        "max_speed_road_kmh": 100,
+        "max_speed_water_kmh": 8,
+        "range_road_km": 800,
+        "gradient_percent": 60,
+        "amphibious": true,
+        "propulsion_water": "waterjets",
+        "tyre_pressure_central": true,
+        "run_flat_tires": true
+      },
+      "armament": {
+        "main": {
+          "designation": "QJC-88",
+          "caliber_mm": 12.7,
+          "type": "heavy_machine_gun",
+          "mount": "RWS",
+          "ammunition_carried": 500
+        }
+      },
+      "protection": {
+        "armor_type": "steel",
+        "stanag_level": "4569 Level 3",
+        "mine_protection": "V-hull",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "commander_sight": {
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "battle_management_system": "Integrated"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8
+      },
+      "unit_cost_usd": 1500000,
+      "cost_year": 2015,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia ZBL-09",
+        "Sinodefense",
+        "Army Recognition"
+      ],
+      "notes": "Modern 8x8. ZBD-09 IFV basis. Export as VN1. High road speed. Multiple variants including 105mm assault gun (ZTL-09).",
+      "year": 2009
+    },
+    {
+      "id": "cn-type63",
+      "name": "Type 63 (YW531)",
+      "type": "apc",
+      "country_of_origin": "CN",
+      "manufacturer": "Norinco",
+      "service_history": {
+        "introduced": 1963,
+        "retired": null,
+        "production_count": 8000,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 1000,
+            "status": "reserve"
+          },
+          {
+            "country": "VN",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 700,
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "quantity": 300,
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "quantity": 400,
+            "status": "active"
+          },
+          {
+            "country": "KP",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "SD",
+            "quantity": 150,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 13,
+        "weight_kg": 12600,
+        "length_m": 5.48,
+        "width_m": 2.98,
+        "height_m": 2.58,
+        "ground_clearance_m": 0.4
+      },
+      "mobility": {
+        "engine": {
+          "model": "Type 6150L",
+          "type": "diesel",
+          "power_hp": 260,
+          "power_kw": 194
+        },
+        "power_to_weight_hp_ton": 20.6,
+        "transmission": "Manual",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 60,
+        "max_speed_water_kmh": 6,
+        "range_road_km": 500,
+        "amphibious": true,
+        "propulsion_water": "tracks"
+      },
+      "armament": {
+        "main": {
+          "designation": "Type 54",
+          "caliber_mm": 12.7,
+          "type": "heavy_machine_gun",
+          "mount": "cupola",
+          "ammunition_carried": 500
+        }
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 14,
+        "protection_side_mm_rha": 10,
+        "nbc_protection": false,
+        "fire_suppression": false
+      },
+      "sensors_and_fcs": {
+        "commander_sight": {
+          "type": "Periscope",
+          "thermal": false
+        }
+      },
+      "signature": {
+        "smoke_grenade_launchers": 0
+      },
+      "unit_cost_usd": 150000,
+      "cost_year": 1990,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Type 63 APC",
+        "Military Factory"
+      ],
+      "notes": "Chinese M113 equivalent. Vietnam War era. 8000+ produced. Type 531 variants. Still in use 20+ countries.",
+      "year": 1963
+    },
+    {
+      "id": "kr-k806",
+      "name": "K806 Barracuda",
+      "type": "apc",
+      "country_of_origin": "KR",
+      "manufacturer": "Hyundai Rotem / KIA",
+      "service_history": {
+        "introduced": 2018,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 200,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 9,
+        "weight_kg": 17000,
+        "length_m": 6.8,
+        "width_m": 2.7,
+        "height_m": 2.4,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Doosan DV11K",
+          "type": "diesel_turbocharged",
+          "power_hp": 420,
+          "power_kw": 313
+        },
+        "power_to_weight_hp_ton": 24.7,
+        "drivetrain": "6x6",
+        "transmission": "Allison automatic",
+        "max_speed_road_kmh": 100,
+        "max_speed_water_kmh": 8,
+        "range_road_km": 600,
+        "gradient_percent": 60,
+        "amphibious": true,
+        "propulsion_water": "waterjets",
+        "tyre_pressure_central": true
+      },
+      "armament": {
+        "main": {
+          "designation": "K6 or RWS",
+          "caliber_mm": 12.7,
+          "type": "heavy_machine_gun",
+          "mount": "RWS",
+          "ammunition_carried": 400
+        }
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 4",
+        "mine_protection": "STANAG 4569 Level 3a/3b",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "commander_sight": {
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "battle_management_system": "KBMS"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8
+      },
+      "unit_cost_usd": 2500000,
+      "cost_year": 2018,
+      "confidence": "medium",
+      "sources": [
+        "Army Recognition",
+        "Jane's"
+      ],
+      "notes": "New Korean 6x6. K808 8x8 variant also available. Amphibious. Modular armor. Indigenous development.",
+      "year": 2012
+    },
+    {
+      "id": "kr-k808",
+      "name": "K808",
+      "type": "apc",
+      "country_of_origin": "KR",
+      "manufacturer": "Hyundai Rotem",
+      "service_history": {
+        "introduced": 2020,
+        "retired": null,
+        "production_count": 600,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 600,
+            "status": "entering service"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 11,
+        "weight_kg": 20000,
+        "weight_combat_kg": 25000,
+        "length_m": 7.6,
+        "width_m": 3.1,
+        "height_m": 2.5,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Doosan DV11K",
+          "type": "diesel_turbocharged",
+          "power_hp": 520,
+          "power_kw": 388
+        },
+        "power_to_weight_hp_ton": 26.0,
+        "drivetrain": "8x8",
+        "transmission": "Allison automatic",
+        "max_speed_road_kmh": 105,
+        "max_speed_water_kmh": 8,
+        "range_road_km": 700,
+        "gradient_percent": 60,
+        "amphibious": true,
+        "propulsion_water": "waterjets",
+        "tyre_pressure_central": true,
+        "run_flat_tires": true
+      },
+      "armament": {
+        "main": {
+          "designation": "RWS 12.7mm or 40mm turret",
+          "caliber_mm": 12.7,
+          "type": "remote_weapon_station",
+          "options": [
+            "K6 12.7mm",
+            "Mk19 40mm AGL",
+            "K40 40mm turret"
+          ]
+        }
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 4",
+        "mine_protection": "STANAG 4569 Level 4a/4b",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Integrated digital",
+        "commander_sight": {
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "battle_management_system": "KBMS",
+        "gps": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12
+      },
+      "unit_cost_usd": 3500000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Army Recognition",
+        "Jane's"
+      ],
+      "notes": "New Korean 8x8. K21 IFV turret option (K808-IFV). K200 replacement. Part of Korean future wheeled vehicle family.",
+      "year": 2014
+    },
+    {
+      "id": "jp-type96",
+      "name": "Type 96 WAPC",
+      "type": "apc",
+      "country_of_origin": "JP",
+      "manufacturer": "Komatsu",
+      "service_history": {
+        "introduced": 1996,
+        "retired": null,
+        "production_count": 400,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 381,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 8,
+        "weight_kg": 14500,
+        "length_m": 6.84,
+        "width_m": 2.48,
+        "height_m": 1.85,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Isuzu 6HH1",
+          "type": "diesel_turbocharged",
+          "power_hp": 360,
+          "power_kw": 269
+        },
+        "power_to_weight_hp_ton": 24.8,
+        "drivetrain": "8x8",
+        "transmission": "Automatic",
+        "max_speed_road_kmh": 100,
+        "max_speed_water_kmh": 10,
+        "range_road_km": 500,
+        "gradient_percent": 60,
+        "amphibious": true,
+        "propulsion_water": "waterjets",
+        "tyre_pressure_central": true
+      },
+      "armament": {
+        "main": {
+          "designation": "Type 96 40mm AGL or M2HB",
+          "caliber_mm": 40,
+          "type": "grenade_launcher",
+          "options": [
+            "96 40mm AGL",
+            "M2HB 12.7mm"
+          ],
+          "mount": "cupola"
+        }
+      },
+      "protection": {
+        "armor_type": "steel",
+        "stanag_level": "4569 Level 3",
+        "protection_front_mm_rha": 12,
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "commander_sight": {
+          "type": "Day/night",
+          "thermal": false
+        }
+      },
+      "signature": {
+        "smoke_grenade_launchers": 6
+      },
+      "unit_cost_usd": 4000000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Type 96 WAPC",
+        "Army Recognition"
+      ],
+      "notes": "Japan's main wheeled APC. Low profile. Amphibious. C-130 transportable. Very expensive due to domestic production.",
+      "year": 1996
+    }
+  ]
+}

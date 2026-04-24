@@ -1,0 +1,565 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition",
+      "Sinodefense"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "cn-plz05",
+      "name": "PLZ-05 (Type 05)",
+      "type": "sph",
+      "country_of_origin": "CN",
+      "manufacturer": "Norinco",
+      "service_history": {
+        "introduced": 2008,
+        "retired": null,
+        "production_count": 600,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 600,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 35000,
+        "length_m": 6.1,
+        "length_gun_forward_m": 10.5,
+        "width_m": 3.37,
+        "height_m": 2.6,
+        "ground_clearance_m": 0.48
+      },
+      "mobility": {
+        "engine": {
+          "model": "8V150 HB",
+          "type": "diesel_turbocharged",
+          "power_hp": 800,
+          "power_kw": 597
+        },
+        "power_to_weight_hp_ton": 22.9,
+        "transmission": "Automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 55,
+        "max_speed_offroad_kmh": 35,
+        "range_road_km": 450,
+        "fording_depth_m": 1.4,
+        "gradient_percent": 58,
+        "trench_crossing_m": 2.7
+      },
+      "armament": {
+        "main": {
+          "designation": "PLL-05",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 52,
+          "type": "howitzer",
+          "elevation_min_deg": -3,
+          "elevation_max_deg": 72,
+          "traverse_deg": 360,
+          "loading": "automatic",
+          "autoloader_capacity": 30,
+          "rate_of_fire_burst_rpm": 8,
+          "rate_of_fire_sustained_rpm": 4,
+          "range_standard_km": 39,
+          "range_extended_km": 53,
+          "ammunition_carried": 30,
+          "ammunition_types": [
+            {
+              "type": "HE-BB",
+              "range_km": 39
+            },
+            {
+              "type": "Extended range",
+              "range_km": 53
+            },
+            {
+              "type": "Laser-guided",
+              "designation": "GP155A",
+              "range_km": 25,
+              "cep_m": 5
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "QJC-88",
+            "caliber_mm": 12.7,
+            "mount": "commander cupola",
+            "ammunition_carried": 500
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 15,
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Digital automated",
+        "navigation": "BeiDou/INS",
+        "muzzle_velocity_radar": true,
+        "automatic_gun_laying": true,
+        "mrsi_capability": {
+          "rounds": 4
+        }
+      },
+      "unit_cost_usd": 3000000,
+      "cost_year": 2015,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia PLZ-05",
+        "Army Recognition",
+        "Sinodefense"
+      ],
+      "notes": "Main PLA 155mm SPH. Replaced PLZ-45 (export) and older 152mm systems. 52-caliber gun competitive with Western systems. Autoloader reduces crew to 4.",
+      "year": 2005
+    },
+    {
+      "id": "cn-plz05a",
+      "name": "PLZ-05A",
+      "type": "sph",
+      "country_of_origin": "CN",
+      "manufacturer": "Norinco",
+      "service_history": {
+        "introduced": 2019,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 200,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 36000,
+        "length_gun_forward_m": 11.0,
+        "width_m": 3.37,
+        "height_m": 2.6
+      },
+      "mobility": {
+        "engine": {
+          "model": "8V150 HB",
+          "type": "diesel_turbocharged",
+          "power_hp": 800,
+          "power_kw": 597
+        },
+        "power_to_weight_hp_ton": 22.2,
+        "max_speed_road_kmh": 55,
+        "range_road_km": 450
+      },
+      "armament": {
+        "main": {
+          "designation": "PLL-05A L58",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 58,
+          "type": "howitzer",
+          "loading": "automatic",
+          "rate_of_fire_burst_rpm": 8,
+          "range_standard_km": 42,
+          "range_extended_km": 70,
+          "ammunition_carried": 30,
+          "notes": "Extended 58-caliber barrel"
+        },
+        "secondary": [
+          {
+            "designation": "QJC-88",
+            "caliber_mm": 12.7,
+            "mount": "commander cupola"
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Enhanced digital",
+        "navigation": "BeiDou/INS",
+        "muzzle_velocity_radar": true,
+        "automatic_gun_laying": true,
+        "mrsi_capability": {
+          "rounds": 5
+        }
+      },
+      "unit_cost_usd": 4000000,
+      "cost_year": 2020,
+      "confidence": "low",
+      "sources": [
+        "Army Recognition",
+        "Chinese military forums"
+      ],
+      "notes": "Extended barrel version. 58-caliber (vs 52). Up to 70km range with extended-range ammunition. Limited information available.",
+      "year": 2008
+    },
+    {
+      "id": "cn-plz52",
+      "name": "PLZ-52 (Export)",
+      "type": "sph",
+      "country_of_origin": "CN",
+      "manufacturer": "Norinco",
+      "service_history": {
+        "introduced": 2012,
+        "retired": null,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "KW",
+            "quantity": 27,
+            "status": "active"
+          },
+          {
+            "country": "DZ",
+            "quantity": 24,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 43000,
+        "length_gun_forward_m": 11.0,
+        "width_m": 3.37,
+        "height_m": 2.9
+      },
+      "mobility": {
+        "engine": {
+          "model": "Diesel turbocharged",
+          "type": "diesel_turbocharged",
+          "power_hp": 1000,
+          "power_kw": 746
+        },
+        "power_to_weight_hp_ton": 23.3,
+        "max_speed_road_kmh": 65,
+        "range_road_km": 450
+      },
+      "armament": {
+        "main": {
+          "designation": "155mm L52",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 52,
+          "type": "howitzer",
+          "loading": "automatic",
+          "autoloader_capacity": 40,
+          "rate_of_fire_burst_rpm": 8,
+          "rate_of_fire_sustained_rpm": 4,
+          "range_standard_km": 39,
+          "range_extended_km": 53,
+          "ammunition_carried": 40
+        },
+        "secondary": [
+          {
+            "designation": "12.7mm HMG",
+            "caliber_mm": 12.7,
+            "mount": "cupola"
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 2",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Export digital FCS",
+        "navigation": "GPS/INS",
+        "muzzle_velocity_radar": true,
+        "automatic_gun_laying": true
+      },
+      "unit_cost_usd": 4500000,
+      "cost_year": 2015,
+      "confidence": "medium",
+      "sources": [
+        "Army Recognition",
+        "Military Today"
+      ],
+      "notes": "Export version of PLZ-05. Enhanced crew protection. Kuwait contract 2014. Competitive with K9 on export market.",
+      "year": 2012
+    },
+    {
+      "id": "jp-type99",
+      "name": "Type 99 155mm SPH",
+      "type": "sph",
+      "country_of_origin": "JP",
+      "manufacturer": "Japan Steel Works / Mitsubishi Heavy Industries",
+      "service_history": {
+        "introduced": 1999,
+        "retired": null,
+        "production_count": 140,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 140,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 40000,
+        "length_m": 6.6,
+        "length_gun_forward_m": 11.3,
+        "width_m": 3.2,
+        "height_m": 2.45,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Mitsubishi 6SY31WA",
+          "type": "diesel_turbocharged",
+          "power_hp": 600,
+          "power_kw": 447
+        },
+        "power_to_weight_hp_ton": 15.0,
+        "transmission": "Mitsubishi MT75A automatic",
+        "suspension": "hydropneumatic",
+        "max_speed_road_kmh": 50,
+        "max_speed_offroad_kmh": 30,
+        "range_road_km": 300,
+        "fording_depth_m": 1.0,
+        "gradient_percent": 60,
+        "trench_crossing_m": 2.5
+      },
+      "armament": {
+        "main": {
+          "designation": "Type 99 155mm",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 52,
+          "type": "howitzer",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 75,
+          "traverse_deg": 360,
+          "loading": "automatic",
+          "autoloader_capacity": 18,
+          "rate_of_fire_burst_rpm": 6,
+          "rate_of_fire_sustained_rpm": 2,
+          "range_standard_km": 30,
+          "range_extended_km": 40,
+          "ammunition_carried": 18,
+          "ammunition_types": [
+            {
+              "type": "HE",
+              "range_km": 30
+            },
+            {
+              "type": "Base-bleed",
+              "range_km": 40
+            },
+            {
+              "type": "Smoke"
+            },
+            {
+              "type": "Illumination"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "M2HB",
+            "caliber_mm": 12.7,
+            "mount": "commander cupola",
+            "ammunition_carried": 400
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 15,
+        "stanag_level": "4569 Level 2",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Mitsubishi FCS",
+        "navigation": "GPS/INS",
+        "muzzle_velocity_radar": true,
+        "automatic_gun_laying": true,
+        "digital_fire_control": true,
+        "mrsi_capability": {
+          "rounds": 3
+        }
+      },
+      "unit_cost_usd": 10000000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Type 99 155mm",
+        "Army Recognition"
+      ],
+      "notes": "Japanese SPH. Very expensive due to domestic production. Limited 18-round magazine. Being supplemented by Type 19 wheeled system.",
+      "year": 1999
+    },
+    {
+      "id": "jp-type19",
+      "name": "Type 19 155mm Wheeled SPH",
+      "type": "sph",
+      "country_of_origin": "JP",
+      "manufacturer": "Japan Steel Works / Mitsubishi Heavy Industries",
+      "service_history": {
+        "introduced": 2019,
+        "retired": null,
+        "production_count": 50,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 50,
+            "status": "entering service"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 5,
+        "weight_kg": 25000,
+        "length_gun_forward_m": 11.3,
+        "width_m": 2.5,
+        "height_m": 3.4
+      },
+      "mobility": {
+        "engine": {
+          "model": "MAN D2876",
+          "type": "diesel_turbocharged",
+          "power_hp": 540,
+          "power_kw": 403
+        },
+        "power_to_weight_hp_ton": 21.6,
+        "drivetrain": "8x8",
+        "transmission": "Automatic",
+        "max_speed_road_kmh": 90,
+        "range_road_km": 600,
+        "tyre_pressure_central": true
+      },
+      "armament": {
+        "main": {
+          "designation": "Type 19 155mm",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 52,
+          "type": "howitzer",
+          "elevation_min_deg": 0,
+          "elevation_max_deg": 75,
+          "traverse_deg": 45,
+          "loading": "semi-automatic",
+          "rate_of_fire_burst_rpm": 5,
+          "rate_of_fire_sustained_rpm": 2,
+          "range_standard_km": 30,
+          "range_extended_km": 40,
+          "ammunition_carried": 24
+        }
+      },
+      "protection": {
+        "armor_type": "cabin_armored",
+        "stanag_level": "4569 Level 1",
+        "nbc_protection": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Digital FCS",
+        "navigation": "GPS/INS",
+        "automatic_gun_laying": true
+      },
+      "unit_cost_usd": 7000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Type 19 SPH",
+        "Army Recognition"
+      ],
+      "notes": "Wheeled SPH for rapid deployment. CAESAR-like concept. MAN truck chassis. Island defense focus. C-2 transportable.",
+      "year": 2019
+    },
+    {
+      "id": "in-k9vajra",
+      "name": "K9 Vajra-T",
+      "type": "sph",
+      "country_of_origin": "IN",
+      "manufacturer": "L&T / Hanwha (license)",
+      "service_history": {
+        "introduced": 2018,
+        "retired": null,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 100,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 5,
+        "weight_kg": 47000,
+        "length_gun_forward_m": 12.0,
+        "width_m": 3.4,
+        "height_m": 2.73,
+        "notes": "Modified for desert/high altitude"
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU MT 881 Ka-500",
+          "type": "diesel_turbocharged",
+          "power_hp": 1000,
+          "power_kw": 746
+        },
+        "power_to_weight_hp_ton": 21.3,
+        "max_speed_road_kmh": 67,
+        "range_road_km": 480,
+        "notes": "Desert-modified cooling"
+      },
+      "armament": {
+        "main": {
+          "designation": "CN98 L52",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 52,
+          "type": "howitzer",
+          "loading": "automatic",
+          "autoloader_capacity": 48,
+          "rate_of_fire_burst_rpm": 8,
+          "rate_of_fire_sustained_rpm": 3,
+          "range_standard_km": 30,
+          "range_extended_km": 50,
+          "ammunition_carried": 48
+        },
+        "secondary": [
+          {
+            "designation": "NVMT",
+            "caliber_mm": 12.7,
+            "mount": "commander cupola"
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "stanag_level": "4569 Level 2",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Indian/Korean FCS",
+        "navigation": "GPS/GLONASS/NavIC",
+        "muzzle_velocity_radar": true,
+        "automatic_gun_laying": true
+      },
+      "unit_cost_usd": 6000000,
+      "cost_year": 2018,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia K9 Vajra",
+        "Army Recognition",
+        "Indian Defence News"
+      ],
+      "notes": "Indian K9 variant. 50% indigenous content. Modified for Rajasthan desert (high temps) and Ladakh (high altitude). LAC deployment vs China.",
+      "year": 2019
+    }
+  ]
+}

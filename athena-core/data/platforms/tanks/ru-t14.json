@@ -1,0 +1,226 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "ru-t14",
+      "name": "T-14 Armata",
+      "nato_designation": "T-14",
+      "type": "mbt",
+      "country_of_origin": "RU",
+      "manufacturer": "Uralvagonzavod",
+      "service_history": {
+        "introduced": 2021,
+        "retired": null,
+        "production_count": 50,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 50,
+            "variants": [
+              "T-14"
+            ],
+            "status": "testing/limited"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 48000,
+        "length_m": 8.7,
+        "length_gun_forward_m": 10.8,
+        "width_m": 3.5,
+        "height_m": 3.3,
+        "ground_clearance_m": 0.5
+      },
+      "mobility": {
+        "engine": {
+          "model": "ChTZ 12N360 (A-85-3A)",
+          "type": "diesel_turbocharged",
+          "power_hp": 1500,
+          "power_kw": 1119,
+          "power_max_hp": 2000
+        },
+        "power_to_weight_hp_ton": 31.3,
+        "transmission": "Automatic, 12 forward",
+        "suspension": "active hydropneumatic",
+        "max_speed_road_kmh": 90,
+        "max_speed_offroad_kmh": 60,
+        "max_speed_reverse_kmh": 25,
+        "range_road_km": 500,
+        "fuel_capacity_liters": 1500,
+        "fording_depth_m": 1.4,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.8,
+        "vertical_obstacle_m": 1.0,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "2A82-1M",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 55,
+          "type": "smoothbore",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 15,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "autoloader_type": "bustle",
+          "rate_of_fire_rpm": 12,
+          "muzzle_velocity_ms": 2000,
+          "effective_range_m": 8000,
+          "ammunition_carried": 45,
+          "ammunition_ready": 32,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "Vacuum-1",
+              "penetration_mm_rha": 1000,
+              "penetration_range_m": 2000,
+              "notes": "900mm penetrator rod"
+            },
+            {
+              "type": "APFSDS",
+              "designation": "3BM59 Svinets-1",
+              "penetration_mm_rha": 650,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "3BK31",
+              "penetration_mm_rha": 650,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE-FRAG",
+              "designation": "Telnik",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 5000,
+              "notes": "Controlled detonation/airburst"
+            },
+            {
+              "type": "ATGM",
+              "designation": "9M119M1 Invar-M",
+              "penetration_mm_rha": 900,
+              "penetration_range_m": 5000
+            },
+            {
+              "type": "ATGM",
+              "designation": "3UBK21 Sprinter",
+              "penetration_mm_rha": 900,
+              "penetration_range_m": 12000,
+              "notes": "Anti-helicopter capability"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "Kord 6P49",
+            "caliber_mm": 12.7,
+            "mount": "remote",
+            "ammunition_carried": 300
+          },
+          {
+            "designation": "PKTM 6P7K",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 1000
+          }
+        ],
+        "atgm": {
+          "designation": "9M119M1 Invar-M / 3UBK21 Sprinter",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive_aps",
+        "armor_composition": "Modular steel/ceramic/composite with Malachit ERA",
+        "protection_front_turret_mm_rha": 900,
+        "protection_front_hull_mm_rha": 1000,
+        "protection_side_mm_rha": 350,
+        "protection_rear_mm_rha": 80,
+        "protection_top_mm_rha": 80,
+        "era_coverage": "Malachit ERA full coverage",
+        "aps": {
+          "system": "Afghanit",
+          "type": "hard-kill",
+          "coverage_deg": 360,
+          "notes": "AESA radar (26.5-40 GHz), intercepts ATGMs/rockets/APFSDS"
+        },
+        "crew_compartment": "Armored capsule isolated from turret/ammo",
+        "unmanned_turret": true,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "bustle",
+        "blowout_panels": true,
+        "stanag_level": "4569 Level 5 (estimated)"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Kalina-based integrated",
+        "commander_sight": {
+          "type": "Multispectral panoramic",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true,
+          "field_of_view_deg": 360
+        },
+        "gunner_sight": {
+          "type": "Multispectral",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 7500,
+        "ballistic_computer": true,
+        "muzzle_reference_system": true,
+        "wind_sensor": true,
+        "radar": {
+          "type": "AESA Ka-band",
+          "frequency_ghz": "26.5-40",
+          "function": "APS targeting"
+        },
+        "battle_management_system": "Network-centric integrated",
+        "data_link": true,
+        "gps": true,
+        "glonass": true,
+        "inertial_navigation": true,
+        "driver_vision": {
+          "thermal": true
+        }
+      },
+      "signature": {
+        "smoke_grenade_launchers": 24,
+        "smoke_grenade_type": "3D17",
+        "ir_signature_reduction": true,
+        "radar_signature_reduction": true
+      },
+      "special_features": [
+        "Unmanned turret (first MBT)",
+        "Armored crew capsule isolated from ammunition",
+        "AESA radar for APS and threat detection",
+        "Network-centric warfare capability",
+        "Drone integration planned",
+        "Future 152mm 2A83 gun option"
+      ],
+      "unit_cost_usd": 4800000,
+      "cost_year": 2020,
+      "confidence": "low",
+      "sources": [
+        "Wikipedia T-14 Armata",
+        "Army Technology T-14",
+        "Army Recognition T-14",
+        "Tank Encyclopedia T-14",
+        "GlobalSecurity T-14"
+      ],
+      "notes": "4th generation MBT. Revolutionary unmanned turret design. Crew in isolated armored capsule. Afghanit hard-kill APS with AESA radar. Very limited production due to cost/complexity. Field tested in Syria. Original plan for 2,300 units by 2020 scaled back drastically. As of 2025, ~50 units exist, mostly for testing. 2A82-1M gun same as used in T-90M upgrade.",
+      "year": 2015
+    }
+  ]
+}

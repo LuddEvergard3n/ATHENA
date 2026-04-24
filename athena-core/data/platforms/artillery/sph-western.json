@@ -1,0 +1,857 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "kr-k9",
+      "name": "K9 Thunder",
+      "type": "sph",
+      "country_of_origin": "KR",
+      "manufacturer": "Hanwha Defense",
+      "service_history": {
+        "introduced": 1999,
+        "retired": null,
+        "production_count": 1700,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 1100,
+            "variants": [
+              "K9",
+              "K9A1"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "TR",
+            "quantity": 350,
+            "variants": [
+              "T-155 Firtina"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 212,
+            "variants": [
+              "K9PL Krab"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 100,
+            "variants": [
+              "K9 Vajra"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "FI",
+            "quantity": 48,
+            "status": "active"
+          },
+          {
+            "country": "NO",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "EE",
+            "quantity": 18,
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 30,
+            "variants": [
+              "AS9"
+            ],
+            "status": "ordered"
+          },
+          {
+            "country": "EG",
+            "quantity": 200,
+            "status": "ordered"
+          },
+          {
+            "country": "RO",
+            "quantity": 54,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 5,
+        "weight_kg": 47000,
+        "length_m": 7.46,
+        "length_gun_forward_m": 12.0,
+        "width_m": 3.4,
+        "height_m": 2.73,
+        "ground_clearance_m": 0.41
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU MT 881 Ka-500",
+          "type": "diesel_turbocharged",
+          "power_hp": 1000,
+          "power_kw": 746
+        },
+        "power_to_weight_hp_ton": 21.3,
+        "transmission": "Renk HSWL 295TM automatic",
+        "suspension": "hydropneumatic in-arm",
+        "max_speed_road_kmh": 67,
+        "max_speed_offroad_kmh": 50,
+        "range_road_km": 480,
+        "fuel_capacity_liters": 850,
+        "fording_depth_m": 1.5,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 2.8,
+        "vertical_obstacle_m": 1.0
+      },
+      "armament": {
+        "main": {
+          "designation": "CN98 L52",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 52,
+          "type": "howitzer",
+          "elevation_min_deg": -2.5,
+          "elevation_max_deg": 70,
+          "traverse_deg": 360,
+          "loading": "automatic",
+          "autoloader_capacity": 48,
+          "rate_of_fire_burst_rpm": 8,
+          "rate_of_fire_sustained_rpm": 3,
+          "range_standard_km": 30,
+          "range_basebleed_km": 40,
+          "range_extended_km": 54,
+          "ammunition_carried": 48,
+          "ammunition_types": [
+            {
+              "type": "HE",
+              "designation": "K307",
+              "range_km": 30
+            },
+            {
+              "type": "HE-BB",
+              "designation": "K307 BB",
+              "range_km": 40
+            },
+            {
+              "type": "K310",
+              "designation": "Extended range",
+              "range_km": 54
+            },
+            {
+              "type": "Smoke"
+            },
+            {
+              "type": "Illumination"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "K6",
+            "caliber_mm": 12.7,
+            "mount": "commander cupola",
+            "ammunition_carried": 500
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 19,
+        "stanag_level": "4569 Level 2",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Samsung/Hanwha FCS",
+        "navigation": "GPS/INS",
+        "muzzle_velocity_radar": true,
+        "automatic_gun_laying": true,
+        "digital_fire_control": true,
+        "mrsi_capability": {
+          "rounds": 3
+        },
+        "shoot_and_scoot": true,
+        "deploy_fire_time_sec": 60
+      },
+      "unit_cost_usd": 4500000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia K9 Thunder",
+        "Army Recognition",
+        "Hanwha Defense"
+      ],
+      "notes": "World's most exported modern SPH. K9A2 upgrade: automatic loader, 3-man crew. Polish Krab has Western FCS. Turkish Firtina has local modifications. Combat proven in Korea (counter-battery vs DPRK 2010).",
+      "year": 1999
+    },
+    {
+      "id": "kr-k9a2",
+      "name": "K9A2 Thunder",
+      "type": "sph",
+      "country_of_origin": "KR",
+      "manufacturer": "Hanwha Defense",
+      "service_history": {
+        "introduced": 2024,
+        "retired": null,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 100,
+            "status": "entering service"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 48000,
+        "length_m": 7.46,
+        "length_gun_forward_m": 12.0,
+        "width_m": 3.4,
+        "height_m": 2.73
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU MT 881 Ka-500",
+          "type": "diesel_turbocharged",
+          "power_hp": 1000,
+          "power_kw": 746
+        },
+        "power_to_weight_hp_ton": 20.8,
+        "max_speed_road_kmh": 67,
+        "range_road_km": 480
+      },
+      "armament": {
+        "main": {
+          "designation": "CN98 L52",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 52,
+          "type": "howitzer",
+          "loading": "fully automatic",
+          "autoloader_capacity": 48,
+          "rate_of_fire_burst_rpm": 9,
+          "rate_of_fire_sustained_rpm": 6,
+          "range_standard_km": 30,
+          "range_extended_km": 54,
+          "ammunition_carried": 48
+        },
+        "secondary": [
+          {
+            "designation": "RWS K6",
+            "caliber_mm": 12.7,
+            "mount": "remote",
+            "ammunition_carried": 500
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 3",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Advanced digital FCS",
+        "navigation": "GPS/INS",
+        "muzzle_velocity_radar": true,
+        "automatic_gun_laying": true,
+        "mrsi_capability": {
+          "rounds": 6
+        },
+        "shoot_and_scoot": true,
+        "deploy_fire_time_sec": 30
+      },
+      "unit_cost_usd": 6000000,
+      "cost_year": 2024,
+      "confidence": "medium",
+      "sources": [
+        "Army Recognition",
+        "Hanwha Defense"
+      ],
+      "notes": "Fully automatic variant. 3-man crew (reduced from 5). Higher ROF. Enhanced survivability. UK interest for Mobile Fires Platform.",
+      "year": 2020
+    },
+    {
+      "id": "fr-caesar",
+      "name": "CAESAR 6x6",
+      "type": "sph",
+      "country_of_origin": "FR",
+      "manufacturer": "Nexter Systems",
+      "service_history": {
+        "introduced": 2008,
+        "retired": null,
+        "production_count": 400,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 77,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 49,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 132,
+            "status": "active"
+          },
+          {
+            "country": "ID",
+            "quantity": 55,
+            "status": "active"
+          },
+          {
+            "country": "TH",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "DK",
+            "quantity": 19,
+            "status": "active"
+          },
+          {
+            "country": "LT",
+            "quantity": 18,
+            "status": "ordered"
+          },
+          {
+            "country": "CZ",
+            "quantity": 52,
+            "status": "ordered"
+          },
+          {
+            "country": "BE",
+            "quantity": 19,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 5,
+        "weight_kg": 17700,
+        "length_m": 10.0,
+        "width_m": 2.55,
+        "height_m": 3.7,
+        "ground_clearance_m": 0.4
+      },
+      "mobility": {
+        "engine": {
+          "model": "Renault DXi7",
+          "type": "diesel",
+          "power_hp": 320,
+          "power_kw": 239
+        },
+        "power_to_weight_hp_ton": 18.1,
+        "drivetrain": "6x6",
+        "transmission": "Automatic",
+        "max_speed_road_kmh": 100,
+        "max_speed_offroad_kmh": 50,
+        "range_road_km": 600,
+        "gradient_percent": 50,
+        "fording_depth_m": 1.0,
+        "tyre_pressure_central": true
+      },
+      "armament": {
+        "main": {
+          "designation": "Nexter 155/52mm",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 52,
+          "type": "howitzer",
+          "elevation_min_deg": 0,
+          "elevation_max_deg": 66,
+          "traverse_deg": 60,
+          "loading": "semi-automatic",
+          "rate_of_fire_burst_rpm": 6,
+          "rate_of_fire_sustained_rpm": 3,
+          "range_standard_km": 40,
+          "range_extended_km": 50,
+          "ammunition_carried": 18,
+          "ammunition_types": [
+            {
+              "type": "HE-ER",
+              "range_km": 40
+            },
+            {
+              "type": "BONUS",
+              "notes": "Top-attack submunition"
+            },
+            {
+              "type": "KATANA",
+              "designation": "GPS-guided",
+              "range_km": 50,
+              "cep_m": 10
+            },
+            {
+              "type": "Smoke"
+            },
+            {
+              "type": "Illumination"
+            }
+          ]
+        }
+      },
+      "protection": {
+        "armor_type": "cabin_armored",
+        "stanag_level": "4569 Level 2",
+        "protection_cabin": "Protected crew cabin",
+        "nbc_protection": false,
+        "notes": "Light truck-mounted - mobility over protection"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Nexter FINDART",
+        "navigation": "GPS/INS",
+        "automatic_gun_laying": true,
+        "digital_fire_control": true,
+        "shoot_and_scoot": true,
+        "deploy_fire_time_sec": 60,
+        "leave_time_sec": 40
+      },
+      "unit_cost_usd": 4000000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia CAESAR",
+        "Army Recognition",
+        "Nexter Systems"
+      ],
+      "notes": "Truck-mounted. C-130 transportable. Combat proven Mali, Afghanistan, Ukraine. High mobility (100 km/h). CAESAR NG (8x8) with automatic loader coming. Ukraine: highly effective in shoot-and-scoot.",
+      "year": 2008
+    },
+    {
+      "id": "fr-caesar-8x8",
+      "name": "CAESAR 8x8 NG",
+      "type": "sph",
+      "country_of_origin": "FR",
+      "manufacturer": "Nexter/KNDS",
+      "service_history": {
+        "introduced": 2024,
+        "retired": null,
+        "production_count": 150,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 109,
+            "status": "ordered"
+          },
+          {
+            "country": "BE",
+            "quantity": 9,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 32000,
+        "length_m": 12.0,
+        "width_m": 3.0,
+        "height_m": 3.5
+      },
+      "mobility": {
+        "engine": {
+          "model": "Tatra V8",
+          "type": "diesel_turbocharged",
+          "power_hp": 460,
+          "power_kw": 343
+        },
+        "power_to_weight_hp_ton": 14.4,
+        "drivetrain": "8x8",
+        "max_speed_road_kmh": 90,
+        "range_road_km": 600,
+        "tyre_pressure_central": true
+      },
+      "armament": {
+        "main": {
+          "designation": "Nexter 155/52mm",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 52,
+          "type": "howitzer",
+          "loading": "automatic",
+          "autoloader_capacity": 36,
+          "rate_of_fire_burst_rpm": 8,
+          "rate_of_fire_sustained_rpm": 6,
+          "range_standard_km": 40,
+          "range_extended_km": 60,
+          "ammunition_carried": 36
+        },
+        "secondary": [
+          {
+            "designation": "RWS 12.7mm",
+            "caliber_mm": 12.7,
+            "mount": "remote"
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "armored_cabin",
+        "stanag_level": "4569 Level 3",
+        "mine_protection": "STANAG 4569 Level 2a",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "KNDS digital",
+        "navigation": "GPS/INS",
+        "muzzle_velocity_radar": true,
+        "automatic_gun_laying": true,
+        "mrsi_capability": {
+          "rounds": 6
+        },
+        "shoot_and_scoot": true,
+        "deploy_fire_time_sec": 45
+      },
+      "unit_cost_usd": 7000000,
+      "cost_year": 2024,
+      "confidence": "medium",
+      "sources": [
+        "Army Recognition",
+        "KNDS"
+      ],
+      "notes": "Next-generation CAESAR. Automatic loader. 3-man crew. Enhanced protection. 6-round MRSI. Franco-Belgian CaMo program.",
+      "year": 2019
+    },
+    {
+      "id": "uk-as90",
+      "name": "AS90 Braveheart",
+      "type": "sph",
+      "country_of_origin": "GB",
+      "manufacturer": "Vickers Shipbuilding / BAE Systems",
+      "service_history": {
+        "introduced": 1993,
+        "retired": null,
+        "production_count": 179,
+        "operators": [
+          {
+            "country": "UK",
+            "quantity": 89,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 32,
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 72,
+            "status": "reserve"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 5,
+        "weight_kg": 45000,
+        "length_m": 7.2,
+        "length_gun_forward_m": 9.07,
+        "width_m": 3.4,
+        "height_m": 3.0,
+        "ground_clearance_m": 0.41
+      },
+      "mobility": {
+        "engine": {
+          "model": "Cummins VTA-903T",
+          "type": "diesel_turbocharged",
+          "power_hp": 660,
+          "power_kw": 492
+        },
+        "power_to_weight_hp_ton": 14.7,
+        "transmission": "David Brown TN37 automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 55,
+        "max_speed_offroad_kmh": 30,
+        "range_road_km": 420,
+        "fording_depth_m": 1.5,
+        "gradient_percent": 60,
+        "trench_crossing_m": 2.8,
+        "vertical_obstacle_m": 0.75
+      },
+      "armament": {
+        "main": {
+          "designation": "L31",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 39,
+          "type": "howitzer",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 70,
+          "traverse_deg": 360,
+          "loading": "automatic (turret bustle)",
+          "autoloader_capacity": 48,
+          "rate_of_fire_burst_rpm": 6,
+          "rate_of_fire_sustained_rpm": 2,
+          "range_standard_km": 24.7,
+          "range_extended_km": 30,
+          "ammunition_carried": 48,
+          "ammunition_types": [
+            {
+              "type": "HE",
+              "designation": "L15A4",
+              "range_km": 24.7
+            },
+            {
+              "type": "HE-BB",
+              "range_km": 30
+            },
+            {
+              "type": "Smoke",
+              "designation": "L16"
+            },
+            {
+              "type": "Illumination",
+              "designation": "L17"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "L7A2 GPMG",
+            "caliber_mm": 7.62,
+            "mount": "commander hatch",
+            "ammunition_carried": 1000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 17,
+        "stanag_level": "4569 Level 2",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "BGTI DCA",
+        "navigation": "GPS/INS",
+        "automatic_gun_laying": true,
+        "digital_fire_control": true,
+        "mrsi_capability": {
+          "rounds": 3
+        }
+      },
+      "unit_cost_usd": 4000000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia AS90",
+        "Army Recognition",
+        "UK MoD"
+      ],
+      "notes": "British workhorse SPH. L31 39-cal gun (L52 52-cal upgrade cancelled). Gulf War, Iraq, Afghanistan combat. 32 donated to Ukraine 2023. Being replaced by Mobile Fires Platform.",
+      "year": 1993
+    },
+    {
+      "id": "se-archer",
+      "name": "Archer FH77BW L52",
+      "type": "sph",
+      "country_of_origin": "SE",
+      "manufacturer": "BAE Systems Bofors",
+      "service_history": {
+        "introduced": 2013,
+        "retired": null,
+        "production_count": 72,
+        "operators": [
+          {
+            "country": "SE",
+            "quantity": 48,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 8,
+            "status": "active"
+          },
+          {
+            "country": "UK",
+            "quantity": 14,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 30000,
+        "length_m": 13.8,
+        "width_m": 3.0,
+        "height_m": 3.3
+      },
+      "mobility": {
+        "engine": {
+          "model": "Volvo D16",
+          "type": "diesel_turbocharged",
+          "power_hp": 600,
+          "power_kw": 447
+        },
+        "power_to_weight_hp_ton": 20.0,
+        "drivetrain": "6x6",
+        "transmission": "Automatic",
+        "max_speed_road_kmh": 70,
+        "range_road_km": 500,
+        "tyre_pressure_central": true
+      },
+      "armament": {
+        "main": {
+          "designation": "FH77BW L52",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 52,
+          "type": "howitzer",
+          "elevation_min_deg": -3,
+          "elevation_max_deg": 70,
+          "traverse_deg": 75,
+          "loading": "fully automatic",
+          "autoloader_capacity": 21,
+          "rate_of_fire_burst_rpm": 8,
+          "rate_of_fire_sustained_rpm": 6,
+          "range_standard_km": 40,
+          "range_extended_km": 60,
+          "ammunition_carried": 21,
+          "ammunition_types": [
+            {
+              "type": "HE-ER",
+              "range_km": 40
+            },
+            {
+              "type": "BONUS",
+              "notes": "Top-attack"
+            },
+            {
+              "type": "Excalibur",
+              "range_km": 50,
+              "cep_m": 2
+            }
+          ]
+        }
+      },
+      "protection": {
+        "armor_type": "armored_cabin",
+        "stanag_level": "4569 Level 2",
+        "mine_protection": "STANAG 4569 Level 1",
+        "nbc_protection": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Bofors FCS",
+        "navigation": "GPS/INS",
+        "muzzle_velocity_radar": true,
+        "automatic_gun_laying": true,
+        "mrsi_capability": {
+          "rounds": 4
+        },
+        "shoot_and_scoot": true,
+        "deploy_fire_time_sec": 30,
+        "leave_time_sec": 30,
+        "fully_automated": true
+      },
+      "unit_cost_usd": 6000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Archer Artillery System",
+        "Army Recognition",
+        "BAE Systems"
+      ],
+      "notes": "Fully automated. Crew operates from protected cabin. Shoot-and-scoot in 30 sec. 21 ready rounds. Nordic conditions optimized. Ukraine: highly praised. UK order for interim Mobile Fires Platform.",
+      "year": 2013
+    },
+    {
+      "id": "it-pzh2000-it",
+      "name": "PzH 2000 (Italian)",
+      "type": "sph",
+      "country_of_origin": "DE",
+      "manufacturer": "OTO Melara (license)",
+      "service_history": {
+        "introduced": 2002,
+        "retired": null,
+        "production_count": 70,
+        "operators": [
+          {
+            "country": "IT",
+            "quantity": 70,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 5,
+        "weight_kg": 55300,
+        "length_gun_forward_m": 11.67,
+        "width_m": 3.58,
+        "height_m": 3.46
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU MT 881 Ka-500",
+          "type": "diesel",
+          "power_hp": 986,
+          "power_kw": 736
+        },
+        "power_to_weight_hp_ton": 17.8,
+        "max_speed_road_kmh": 60,
+        "range_road_km": 420
+      },
+      "armament": {
+        "main": {
+          "designation": "OTO Melara 155/52",
+          "caliber_mm": 155,
+          "barrel_length_calibers": 52,
+          "type": "howitzer",
+          "loading": "automatic",
+          "autoloader_capacity": 60,
+          "rate_of_fire_burst_rpm": 10,
+          "range_standard_km": 30,
+          "range_extended_km": 56,
+          "ammunition_carried": 60,
+          "ammunition_types": [
+            {
+              "type": "HE-ER",
+              "range_km": 30
+            },
+            {
+              "type": "Vulcano GLR",
+              "range_km": 70,
+              "guidance": "GPS/SAL"
+            }
+          ]
+        }
+      },
+      "protection": {
+        "armor_type": "steel",
+        "stanag_level": "4569 Level 2",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Leonardo FCS",
+        "navigation": "GPS/INS",
+        "automatic_gun_laying": true,
+        "mrsi_capability": {
+          "rounds": 5
+        }
+      },
+      "unit_cost_usd": 8000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Army Recognition",
+        "Leonardo"
+      ],
+      "notes": "Italian-produced PzH 2000. Vulcano ammunition integration. 3 donated to Ukraine.",
+      "year": 2002
+    }
+  ]
+}

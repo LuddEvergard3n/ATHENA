@@ -1,0 +1,695 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-19",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Infantry Weapons",
+      "Army Recognition"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-stinger",
+      "name": "FIM-92 Stinger",
+      "type": "manpads",
+      "country_of_origin": "US",
+      "manufacturer": "Raytheon",
+      "service_history": {
+        "introduced": 1981,
+        "retired": null,
+        "production_count": 70000,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 13000,
+            "status": "active"
+          },
+          {
+            "country": "DE",
+            "quantity": 3000,
+            "status": "active"
+          },
+          {
+            "country": "UK",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "quantity": 1000,
+            "status": "active"
+          },
+          {
+            "country": "NL",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "NO",
+            "quantity": 400,
+            "status": "active"
+          },
+          {
+            "country": "DK",
+            "quantity": 300,
+            "status": "active"
+          },
+          {
+            "country": "GR",
+            "quantity": 600,
+            "status": "active"
+          },
+          {
+            "country": "TR",
+            "quantity": 2500,
+            "status": "active"
+          },
+          {
+            "country": "IL",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 1600,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 2000,
+            "status": "active"
+          },
+          {
+            "country": "KW",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 300,
+            "status": "active"
+          },
+          {
+            "country": "JP",
+            "quantity": 2500,
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "quantity": 1000,
+            "status": "active"
+          },
+          {
+            "country": "TW",
+            "quantity": 2000,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 1000,
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 400,
+            "status": "active"
+          },
+          {
+            "country": "LT",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "LV",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "EE",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 2000,
+            "status": "active",
+            "notes": "US/NATO aid"
+          }
+        ],
+        "notes": "30+ operators worldwide"
+      },
+      "specifications": {
+        "crew": 1,
+        "weight_missile_kg": 10.1,
+        "weight_launcher_kg": 5.6,
+        "weight_total_kg": 15.7,
+        "length_mm": 1520,
+        "diameter_mm": 70
+      },
+      "performance": {
+        "range_min_m": 200,
+        "range_max_m": 4800,
+        "altitude_max_m": 3800,
+        "altitude_min_m": 50,
+        "speed_mps": 750,
+        "speed_mach": 2.2,
+        "guidance": "passive_infrared_uv",
+        "all_aspect": true,
+        "acquisition_time_sec": 3,
+        "targets": [
+          "fixed_wing",
+          "helicopter",
+          "uav",
+          "cruise_missile"
+        ]
+      },
+      "warhead": {
+        "type": "he_fragmentation",
+        "weight_kg": 3,
+        "fuze": "impact_proximity"
+      },
+      "variants": [
+        {
+          "designation": "FIM-92A Stinger Basic",
+          "guidance": "IR only",
+          "notes": "Original 1981"
+        },
+        {
+          "designation": "FIM-92B Stinger POST",
+          "guidance": "IR + UV",
+          "notes": "Passive Optical Seeker Technique - defeats flares"
+        },
+        {
+          "designation": "FIM-92C Stinger RMP",
+          "guidance": "IR + UV programmable",
+          "notes": "Reprogrammable Microprocessor"
+        },
+        {
+          "designation": "FIM-92D",
+          "notes": "Software upgrade for RMP"
+        },
+        {
+          "designation": "FIM-92E Block I",
+          "range_m": 8000,
+          "notes": "Enhanced range, modern seeker"
+        },
+        {
+          "designation": "FIM-92J Block II",
+          "notes": "Proximity fuze, improved ECCM"
+        }
+      ],
+      "platforms": [
+        "man_portable",
+        "Avenger",
+        "M-SHORAD",
+        "AH-64",
+        "UH-60"
+      ],
+      "unit_cost_usd": 120000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia FIM-92 Stinger",
+        "Army Recognition",
+        "Raytheon"
+      ],
+      "notes": "Most produced Western MANPADS. 70,000+ built. Afghanistan 1980s: game-changer vs Soviet helicopters (Operation Cyclone). Ukraine: effective vs Russian aviation. All-aspect engagement. IR/UV dual-band seeker defeats flares.",
+      "year": 1981
+    },
+    {
+      "id": "fr-mistral",
+      "name": "Mistral",
+      "type": "manpads",
+      "country_of_origin": "FR",
+      "manufacturer": "MBDA",
+      "service_history": {
+        "introduced": 1988,
+        "retired": null,
+        "production_count": 16000,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 3000,
+            "status": "active"
+          },
+          {
+            "country": "BE",
+            "quantity": 300,
+            "status": "active"
+          },
+          {
+            "country": "FI",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "NO",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "CY",
+            "quantity": 48,
+            "status": "active"
+          },
+          {
+            "country": "EE",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "HU",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "ID",
+            "quantity": 300,
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "quantity": 1000,
+            "status": "active"
+          },
+          {
+            "country": "SG",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "QA",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "CO",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "BR",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 500,
+            "status": "active"
+          }
+        ],
+        "notes": "25+ operators"
+      },
+      "specifications": {
+        "crew": 1,
+        "weight_missile_kg": 18.7,
+        "weight_launcher_kg": 6,
+        "weight_total_kg": 24.7,
+        "length_mm": 1860,
+        "diameter_mm": 90
+      },
+      "performance": {
+        "range_min_m": 300,
+        "range_max_m": 6000,
+        "altitude_max_m": 3000,
+        "altitude_min_m": 5,
+        "speed_mps": 800,
+        "speed_mach": 2.5,
+        "guidance": "passive_infrared",
+        "all_aspect": true,
+        "acquisition_time_sec": 5,
+        "targets": [
+          "fixed_wing",
+          "helicopter",
+          "uav",
+          "cruise_missile"
+        ]
+      },
+      "warhead": {
+        "type": "he_fragmentation",
+        "weight_kg": 3,
+        "fuze": "impact_laser_proximity"
+      },
+      "variants": [
+        {
+          "designation": "Mistral 1",
+          "range_m": 6000,
+          "notes": "Original"
+        },
+        {
+          "designation": "Mistral 2",
+          "range_m": 6000,
+          "notes": "Improved seeker ECCM"
+        },
+        {
+          "designation": "Mistral 3",
+          "range_m": 7000,
+          "notes": "Enhanced seeker, programmable"
+        },
+        {
+          "designation": "ATLAS",
+          "platforms": [
+            "tripod_twin"
+          ],
+          "notes": "Twin-launcher ground mount"
+        },
+        {
+          "designation": "SATCP",
+          "platforms": [
+            "naval"
+          ],
+          "notes": "Naval Simbad launcher"
+        }
+      ],
+      "platforms": [
+        "man_portable",
+        "VBL",
+        "VAB",
+        "ATLAS tripod",
+        "Tigre helicopter",
+        "Naval Simbad"
+      ],
+      "unit_cost_usd": 200000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Mistral missile",
+        "Army Recognition",
+        "MBDA"
+      ],
+      "notes": "French MANPADS. Laser proximity fuze (unique). 6km range exceeds Stinger. Vehicle and helicopter mountable. Popular export. Ukraine deployment 2022.",
+      "year": 1988
+    },
+    {
+      "id": "se-rbs70",
+      "name": "RBS 70 / BOLIDE",
+      "type": "manpads",
+      "country_of_origin": "SE",
+      "manufacturer": "Saab Bofors Dynamics",
+      "service_history": {
+        "introduced": 1977,
+        "retired": null,
+        "production_count": 10000,
+        "operators": [
+          {
+            "country": "SE",
+            "quantity": 1000,
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 120,
+            "status": "active"
+          },
+          {
+            "country": "FI",
+            "quantity": 100,
+            "status": "retired"
+          },
+          {
+            "country": "NO",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "SG",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 300,
+            "status": "active"
+          },
+          {
+            "country": "TH",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "ID",
+            "quantity": 150,
+            "status": "active"
+          },
+          {
+            "country": "VE",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "AR",
+            "quantity": 75,
+            "status": "active"
+          }
+        ],
+        "notes": "20+ operators"
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_missile_kg": 15,
+        "weight_launcher_kg": 30,
+        "weight_total_kg": 87,
+        "length_mm": 1320,
+        "diameter_mm": 105,
+        "notes": "Tripod-mounted system"
+      },
+      "performance": {
+        "range_min_m": 200,
+        "range_max_m": 8000,
+        "altitude_max_m": 5000,
+        "altitude_min_m": 0,
+        "speed_mps": 680,
+        "speed_mach": 2.0,
+        "guidance": "laser_beam_riding",
+        "all_aspect": true,
+        "targets": [
+          "fixed_wing",
+          "helicopter",
+          "uav",
+          "cruise_missile"
+        ]
+      },
+      "warhead": {
+        "type": "he_fragmentation",
+        "weight_kg": 1.1,
+        "fuze": "proximity_contact"
+      },
+      "variants": [
+        {
+          "designation": "RBS 70",
+          "range_m": 5000,
+          "notes": "Original"
+        },
+        {
+          "designation": "RBS 70 Mk 2",
+          "range_m": 7000,
+          "notes": "Improved missile"
+        },
+        {
+          "designation": "BOLIDE",
+          "range_m": 8000,
+          "altitude_max_m": 5000,
+          "notes": "New generation missile"
+        },
+        {
+          "designation": "RBS 70 NG",
+          "notes": "New Generation sight unit, thermal"
+        }
+      ],
+      "unit_cost_usd": 150000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia RBS 70",
+        "Army Recognition",
+        "Saab"
+      ],
+      "notes": "Unique laser beam riding guidance (jam-immune). Tripod-mounted (not truly man-portable). 8km range with BOLIDE. Effective against fast jets. Iran-Iraq War combat.",
+      "year": 1977
+    },
+    {
+      "id": "uk-starstreak-mp",
+      "name": "Starstreak LML",
+      "type": "manpads",
+      "country_of_origin": "GB",
+      "manufacturer": "Thales Air Defence",
+      "service_history": {
+        "introduced": 1997,
+        "retired": null,
+        "production_count": 5000,
+        "operators": [
+          {
+            "country": "UK",
+            "quantity": 2000,
+            "status": "active"
+          },
+          {
+            "country": "TH",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "MY",
+            "quantity": 300,
+            "status": "active"
+          },
+          {
+            "country": "ID",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 500,
+            "status": "active"
+          }
+        ],
+        "notes": "LML = Lightweight Multiple Launcher (tripod)"
+      },
+      "specifications": {
+        "crew": 1,
+        "weight_missile_kg": 14,
+        "weight_launcher_kg": 16,
+        "weight_total_kg": 30,
+        "length_mm": 1397,
+        "diameter_mm": 127,
+        "notes": "Tripod-mounted 3-round launcher"
+      },
+      "performance": {
+        "range_min_m": 300,
+        "range_max_m": 7000,
+        "altitude_max_m": 5000,
+        "altitude_min_m": 0,
+        "speed_mps": 1200,
+        "speed_mach": 4.0,
+        "guidance": "laser_beam_riding",
+        "all_aspect": true,
+        "targets": [
+          "fixed_wing",
+          "helicopter",
+          "uav"
+        ]
+      },
+      "warhead": {
+        "type": "kinetic_darts",
+        "projectiles": 3,
+        "projectile_weight_g": 900,
+        "notes": "Three tungsten darts with explosive tips"
+      },
+      "variants": [
+        {
+          "designation": "Starstreak LML",
+          "notes": "Lightweight tripod, 3 missiles"
+        },
+        {
+          "designation": "Starstreak II",
+          "range_m": 7000,
+          "notes": "Improved range"
+        },
+        {
+          "designation": "Starstreak SP HVM",
+          "platforms": [
+            "Stormer APC"
+          ],
+          "notes": "Self-propelled, 8 missiles"
+        }
+      ],
+      "unit_cost_usd": 100000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Starstreak",
+        "Army Recognition",
+        "Thales"
+      ],
+      "notes": "World's fastest short-range SAM (Mach 4). Three tungsten darts (kinetic kill). Laser beam riding (jam-immune). Ukraine: first combat use 2022, killed Mi-28 helicopter.",
+      "year": 1997
+    },
+    {
+      "id": "de-fliegerfaust-2",
+      "name": "Fliegerfaust 2 Stinger",
+      "type": "manpads",
+      "country_of_origin": "DE",
+      "manufacturer": "EADS / Raytheon",
+      "service_history": {
+        "introduced": 1993,
+        "retired": null,
+        "production_count": 3000,
+        "operators": [
+          {
+            "country": "DE",
+            "quantity": 3000,
+            "status": "active"
+          },
+          {
+            "country": "AT",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "NL",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 500,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_total_kg": 18,
+        "notes": "German-integrated Stinger system"
+      },
+      "performance": {
+        "range_max_m": 4800,
+        "altitude_max_m": 3500,
+        "speed_mach": 2.2,
+        "guidance": "passive_infrared_uv",
+        "all_aspect": true
+      },
+      "warhead": {
+        "type": "he_fragmentation",
+        "weight_kg": 3
+      },
+      "unit_cost_usd": 130000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Fliegerfaust",
+        "Army Recognition"
+      ],
+      "notes": "German Stinger variant with improved IFF and sighting system. Same missile as FIM-92. Bundeswehr standard MANPADS.",
+      "year": 1993
+    }
+  ]
+}

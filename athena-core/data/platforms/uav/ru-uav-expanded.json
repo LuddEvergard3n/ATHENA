@@ -1,0 +1,293 @@
+{
+  "category": "uav",
+  "subcategory": "russia",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Defence",
+      "Russian Ministry of Defence"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "ru-altius",
+      "name": "Altius-RU (Altair)",
+      "type": "hale",
+      "country": "RU",
+      "year": 2024,
+      "manufacturer": "Kronshtadt Group",
+      "service_history": {
+        "introduced": 2024,
+        "first_flight": 2019,
+        "production_count": 15,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 15,
+            "status": "active",
+            "notes": "VKS operational"
+          }
+        ],
+        "notes": "Heavy HALE reconnaissance UAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 11.6,
+        "wingspan_m": 28.5,
+        "height_m": 5.5,
+        "empty_weight_kg": 5000,
+        "max_weight_kg": 7500,
+        "max_speed_kmh": 250,
+        "cruise_speed_kmh": 150,
+        "range_km": 10000,
+        "endurance_hours": 48,
+        "service_ceiling_m": 12000,
+        "powerplant": {
+          "type": "turboprop",
+          "quantity": 2
+        }
+      },
+      "armament": {
+        "payload_kg": 2000,
+        "weapons": [
+          "Kh-38 missiles (planned)",
+          "KAB guided bombs"
+        ]
+      },
+      "sensors": {
+        "radar": "SAR/GMTI",
+        "eo_ir": "EO/IR turret",
+        "sigint": "SIGINT package"
+      },
+      "unit_cost_usd": 20000000
+    },
+    {
+      "id": "ru-forpost-r",
+      "name": "Forpost-R",
+      "type": "male",
+      "country": "RU",
+      "year": 2019,
+      "manufacturer": "UZGA",
+      "service_history": {
+        "introduced": 2019,
+        "first_flight": 2018,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 100,
+            "status": "active",
+            "notes": "Extensive use in Ukraine"
+          }
+        ],
+        "notes": "Licensed IAI Searcher derivative"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 6.0,
+        "wingspan_m": 8.5,
+        "height_m": 1.8,
+        "max_weight_kg": 500,
+        "max_speed_kmh": 200,
+        "cruise_speed_kmh": 130,
+        "range_km": 250,
+        "endurance_hours": 18,
+        "service_ceiling_m": 7000
+      },
+      "armament": {
+        "payload_kg": 100,
+        "weapons": [
+          "KAB-20 guided bombs",
+          "9M133 Kornet (adapted)"
+        ]
+      },
+      "unit_cost_usd": 2000000
+    },
+    {
+      "id": "ru-sirius",
+      "name": "Kronshtadt Sirius",
+      "type": "hale",
+      "country": "RU",
+      "year": 2025,
+      "manufacturer": "Kronshtadt Group",
+      "service_history": {
+        "introduced": 2025,
+        "first_flight": 2022,
+        "production_count": 5,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 5,
+            "status": "testing"
+          }
+        ],
+        "notes": "Twin-engine strike HALE"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 13.0,
+        "wingspan_m": 30.0,
+        "max_weight_kg": 6000,
+        "max_speed_kmh": 300,
+        "endurance_hours": 40,
+        "service_ceiling_m": 14000
+      },
+      "armament": {
+        "payload_kg": 1000,
+        "weapons": [
+          "Kh-38 missiles",
+          "KAB-250"
+        ]
+      }
+    },
+    {
+      "id": "ru-lancet",
+      "name": "ZALA Lancet",
+      "type": "loitering-munition",
+      "country": "RU",
+      "year": 2019,
+      "manufacturer": "ZALA Aero (Kalashnikov)",
+      "service_history": {
+        "introduced": 2019,
+        "first_flight": 2017,
+        "production_count": 5000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 5000,
+            "status": "active",
+            "notes": "Extensive use in Ukraine"
+          }
+        ],
+        "notes": "Most prolific Russian loitering munition"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 1.0,
+        "wingspan_m": 1.2,
+        "max_weight_kg": 12,
+        "max_speed_kmh": 300,
+        "range_km": 70,
+        "endurance_hours": 0.7,
+        "variants": ["Lancet-1 (5kg)", "Lancet-3 (12kg)", "Lancet-53 (25kg)"]
+      },
+      "armament": {
+        "warhead_kg": 3,
+        "warhead_type": "HEAT/HE-Frag"
+      },
+      "unit_cost_usd": 35000
+    },
+    {
+      "id": "ru-kub",
+      "name": "ZALA KYB/KUB",
+      "type": "loitering-munition",
+      "country": "RU",
+      "year": 2019,
+      "manufacturer": "ZALA Aero",
+      "service_history": {
+        "introduced": 2019,
+        "first_flight": 2018,
+        "production_count": 2000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 2000,
+            "status": "active"
+          }
+        ],
+        "notes": "Flying wing loitering munition"
+      },
+      "specifications": {
+        "crew": 0,
+        "wingspan_m": 1.2,
+        "max_weight_kg": 3,
+        "max_speed_kmh": 130,
+        "range_km": 40,
+        "endurance_hours": 0.5
+      },
+      "armament": {
+        "warhead_kg": 1.5,
+        "warhead_type": "HE-Frag"
+      }
+    },
+    {
+      "id": "ru-orlan10",
+      "name": "Orlan-10",
+      "type": "tactical",
+      "country": "RU",
+      "year": 2011,
+      "manufacturer": "STTs",
+      "service_history": {
+        "introduced": 2011,
+        "first_flight": 2010,
+        "production_count": 3000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 3000,
+            "status": "active",
+            "notes": "Most numerous Russian UAV"
+          }
+        ],
+        "notes": "Primary tactical reconnaissance UAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 1.8,
+        "wingspan_m": 3.1,
+        "max_weight_kg": 18,
+        "max_speed_kmh": 170,
+        "cruise_speed_kmh": 90,
+        "range_km": 120,
+        "endurance_hours": 16,
+        "service_ceiling_m": 5000
+      },
+      "sensors": {
+        "eo_ir": "Stabilized camera",
+        "ew": "Leer-3 jammer variant"
+      },
+      "unit_cost_usd": 100000
+    },
+    {
+      "id": "ru-grom",
+      "name": "Grom (Thunder)",
+      "type": "ucav",
+      "country": "RU",
+      "year": 2027,
+      "manufacturer": "Kronshtadt Group",
+      "service_history": {
+        "introduced": 2027,
+        "first_flight": 2024,
+        "production_count": 0,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 50,
+            "status": "development",
+            "notes": "Future strike UCAV"
+          }
+        ],
+        "notes": "Stealthy jet-powered UCAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 14.0,
+        "wingspan_m": 10.0,
+        "max_weight_kg": 7000,
+        "max_speed_kmh": 1000,
+        "range_km": 3000,
+        "service_ceiling_m": 12000,
+        "radar_cross_section": "LO"
+      },
+      "armament": {
+        "internal_payload_kg": 1000,
+        "weapons": [
+          "Kh-38 missiles",
+          "KAB guided bombs"
+        ]
+      }
+    }
+  ]
+}

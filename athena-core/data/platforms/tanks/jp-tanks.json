@@ -1,0 +1,332 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "jp-type90",
+      "name": "Type 90",
+      "nato_designation": null,
+      "type": "mbt",
+      "country_of_origin": "JP",
+      "manufacturer": "Mitsubishi Heavy Industries",
+      "service_history": {
+        "introduced": 1990,
+        "retired": null,
+        "production_count": 341,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 341,
+            "variants": [
+              "Type 90"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 50200,
+        "length_m": 7.5,
+        "length_gun_forward_m": 9.8,
+        "width_m": 3.43,
+        "height_m": 2.34,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Mitsubishi 10ZG32WT",
+          "type": "diesel_turbocharged",
+          "power_hp": 1500,
+          "power_kw": 1119
+        },
+        "power_to_weight_hp_ton": 29.9,
+        "transmission": "Mitsubishi MT1500 automatic, 4 forward, 2 reverse",
+        "suspension": "hydropneumatic",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 42,
+        "range_road_km": 350,
+        "fuel_capacity_liters": 1100,
+        "fording_depth_m": 1.0,
+        "fording_depth_prepared_m": 2.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.7,
+        "vertical_obstacle_m": 1.0,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "Rheinmetall Rh-120 L/44",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 44,
+          "type": "smoothbore",
+          "elevation_min_deg": -7,
+          "elevation_max_deg": 10,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "autoloader_type": "bustle",
+          "rate_of_fire_rpm": 15,
+          "muzzle_velocity_ms": 1650,
+          "effective_range_m": 4000,
+          "ammunition_carried": 35,
+          "ammunition_ready": 18,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "JM33",
+              "penetration_mm_rha": 560,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "JM12A1",
+              "penetration_mm_rha": 480,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE",
+              "designation": "JM13",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 4000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "M2HB",
+            "caliber_mm": 12.7,
+            "mount": "commander_cupola",
+            "ammunition_carried": 660
+          },
+          {
+            "designation": "Type 74 MG",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 4500
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite_modular",
+        "armor_composition": "Steel/ceramic/composite modular",
+        "protection_front_turret_mm_rha": 700,
+        "protection_front_hull_mm_rha": 600,
+        "protection_side_mm_rha": 200,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 40,
+        "modular_armor": true,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "bustle",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Mitsubishi integrated FCS",
+        "commander_sight": {
+          "type": "Panoramic",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "Primary",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 8000,
+        "ballistic_computer": true,
+        "muzzle_reference_system": true,
+        "battle_management_system": true,
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 6,
+        "smoke_grenade_type": "Smoke/IR"
+      },
+      "unit_cost_usd": 8400000,
+      "cost_year": 1990,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Type 90 tank",
+        "Military-Today Type 90",
+        "Army Recognition Type 90",
+        "JGSDF official"
+      ],
+      "notes": "Japan's 3rd generation MBT. Licensed Rh-120 gun with indigenous autoloader (bustle-mounted). High reverse speed. Never exported due to Japanese law. Extremely expensive due to low production numbers.",
+      "year": 1990
+    },
+    {
+      "id": "jp-type10",
+      "name": "Type 10",
+      "nato_designation": null,
+      "type": "mbt",
+      "country_of_origin": "JP",
+      "manufacturer": "Mitsubishi Heavy Industries",
+      "service_history": {
+        "introduced": 2012,
+        "retired": null,
+        "production_count": 117,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 117,
+            "variants": [
+              "Type 10"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 44000,
+        "length_m": 6.85,
+        "length_gun_forward_m": 9.42,
+        "width_m": 3.24,
+        "height_m": 2.3,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Mitsubishi 8VA34WTK",
+          "type": "diesel_turbocharged",
+          "power_hp": 1200,
+          "power_kw": 895
+        },
+        "power_to_weight_hp_ton": 27.3,
+        "transmission": "Mitsubishi MT1500 CVT, continuously variable",
+        "suspension": "hydropneumatic_active",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 70,
+        "range_road_km": 440,
+        "fuel_capacity_liters": 880,
+        "fording_depth_m": 1.0,
+        "fording_depth_prepared_m": 2.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.5,
+        "vertical_obstacle_m": 1.0,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "Japan Steel Works 120mm L/44",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 44,
+          "type": "smoothbore",
+          "elevation_min_deg": -7,
+          "elevation_max_deg": 10,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "autoloader_type": "bustle",
+          "rate_of_fire_rpm": 15,
+          "muzzle_velocity_ms": 1750,
+          "effective_range_m": 4000,
+          "ammunition_carried": 35,
+          "ammunition_ready": 14,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "Type 10 APFSDS",
+              "penetration_mm_rha": 600,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "Type 10 HEAT",
+              "penetration_mm_rha": 500,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE",
+              "designation": "Type 10 HE",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 4000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "M2HB",
+            "caliber_mm": 12.7,
+            "mount": "commander_cupola",
+            "ammunition_carried": 600
+          },
+          {
+            "designation": "Type 74 MG",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 3000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite_modular",
+        "armor_composition": "Nano-crystal steel/ceramic/composite modular",
+        "protection_front_turret_mm_rha": 800,
+        "protection_front_hull_mm_rha": 650,
+        "protection_side_mm_rha": 200,
+        "protection_rear_mm_rha": 60,
+        "protection_top_mm_rha": 50,
+        "modular_armor": true,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "bustle",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Mitsubishi C4I integrated",
+        "commander_sight": {
+          "type": "Panoramic",
+          "day_magnification": "3x/12x",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "Primary",
+          "day_magnification": "3x/12x",
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "ballistic_computer": true,
+        "muzzle_reference_system": true,
+        "battle_management_system": "JGSDF C4I",
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8,
+        "smoke_grenade_type": "Smoke/IR",
+        "ir_signature_reduction": true
+      },
+      "unit_cost_usd": 9400000,
+      "cost_year": 2012,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Type 10 tank",
+        "Military-Today Type 10",
+        "Army Recognition Type 10",
+        "JGSDF official"
+      ],
+      "notes": "4th generation MBT. Lighter than Type 90 for strategic mobility. CVT transmission allows seamless reverse speed equal to forward. Modular armor for mission-specific configuration. Network-centric warfare capability. Nano-crystal steel armor.",
+      "year": 2012
+    }
+  ]
+}

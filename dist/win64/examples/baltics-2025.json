@@ -1,0 +1,80 @@
+{
+  "id": "baltics-2025-001",
+  "name": "Baltic Defense Scenario - Suwalki Gap",
+  "version": "1.0.0",
+  "metadata": {
+    "schema_version": "1.0",
+    "created_at": "2025-01-01T00:00:00Z",
+    "created_by": "ATHENA Example Generator",
+    "description": "Operational-level scenario examining NATO defense of the Suwalki corridor",
+    "tags": ["nato", "baltic", "operational", "defense"]
+  },
+  "scale": "meso",
+  "temporal": {
+    "start_date": "2025-06-15T04:00:00Z",
+    "end_date": "2025-06-22T04:00:00Z",
+    "tick_duration_seconds": 3600,
+    "max_ticks": 168
+  },
+  "spatial_bounds": {
+    "min_lat": 53.5,
+    "max_lat": 55.5,
+    "min_lon": 22.0,
+    "max_lon": 26.0
+  },
+  "actors": [
+    {
+      "id": "nato-efp-poland",
+      "name": "NATO Enhanced Forward Presence - Poland",
+      "type": "formation",
+      "side": "blue",
+      "position": {"lat": 53.8, "lon": 22.5, "alt": 0},
+      "mobility": {"max_speed_kmh": 50, "cruise_speed_kmh": 30, "movement_type": "ground"},
+      "firepower": {"base_firepower": 25.0, "range_km": 15.0, "accuracy": 0.75},
+      "sensors": {"detection_range_km": 30.0, "identification_range_km": 15.0},
+      "logistics": {"fuel_capacity": 100.0, "ammo_capacity": 100.0, "consumption_rate": 0.02},
+      "health": 1.0, "supply": 1.0, "morale": 0.9, "readiness": 0.85
+    },
+    {
+      "id": "nato-efp-lithuania",
+      "name": "NATO Enhanced Forward Presence - Lithuania",
+      "type": "formation",
+      "side": "blue",
+      "position": {"lat": 54.9, "lon": 24.0, "alt": 0},
+      "firepower": {"base_firepower": 20.0, "range_km": 12.0, "accuracy": 0.7},
+      "health": 1.0, "supply": 0.95, "morale": 0.85
+    },
+    {
+      "id": "red-btg-1",
+      "name": "Red Battalion Tactical Group 1",
+      "type": "formation",
+      "side": "red",
+      "position": {"lat": 54.5, "lon": 25.5, "alt": 0},
+      "firepower": {"base_firepower": 30.0, "range_km": 20.0, "accuracy": 0.65},
+      "health": 1.0, "supply": 1.0, "morale": 0.8
+    },
+    {
+      "id": "red-btg-2",
+      "name": "Red Battalion Tactical Group 2",
+      "type": "formation",
+      "side": "red",
+      "position": {"lat": 54.2, "lon": 25.8, "alt": 0},
+      "firepower": {"base_firepower": 28.0, "range_km": 18.0, "accuracy": 0.6},
+      "health": 1.0, "supply": 0.95
+    }
+  ],
+  "parameters": {
+    "attrition_coefficient": {
+      "value": 0.15,
+      "uncertainty": {"type": "uniform", "min": 0.10, "max": 0.20},
+      "sensitivity": true,
+      "source": "Historical analysis",
+      "confidence": 0.7
+    },
+    "terrain_defense_bonus": {
+      "value": 1.5,
+      "uncertainty": {"type": "triangular", "min": 1.2, "max": 2.0, "mode": 1.5},
+      "sensitivity": true
+    }
+  }
+}

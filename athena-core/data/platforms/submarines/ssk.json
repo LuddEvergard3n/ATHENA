@@ -1,0 +1,917 @@
+{
+  "category": "submarines",
+  "subcategory": "ssk",
+  "metadata": {
+    "file_version": "1.1",
+    "last_updated": "2026-01-31",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Fighting Ships"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "cn-ssk-039a",
+      "name": "Type 039A Yuan-class",
+      "nato_name": "Yuan",
+      "type": "ssk",
+      "class": "Type 039",
+      "country_of_origin": "CN",
+      "manufacturer": "Wuchang Shipyard",
+      "service_history": {
+        "introduced": 2006,
+        "retired": null,
+        "production_count": 22,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 22,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 8,
+            "status": "ordered",
+            "notes": "Hangor-class"
+          },
+          {
+            "country": "TH",
+            "quantity": 2,
+            "status": "ordered"
+          }
+        ],
+        "notes": "China's main conventional submarine"
+      },
+      "specifications": {
+        "crew": 38,
+        "displacement_surfaced_tons": 2600,
+        "displacement_submerged_tons": 3600,
+        "length_m": 77.6,
+        "beam_m": 8.4,
+        "draft_m": 5.5
+      },
+      "performance": {
+        "max_speed_submerged_knots": 20,
+        "max_depth_m": 300,
+        "range_surfaced_nm": 8000,
+        "endurance_submerged_days": 21
+      },
+      "powerplant": {
+        "type": "Diesel-electric + AIP",
+        "diesel": "MTU 396 or Chinese equivalent",
+        "aip": "Stirling AIP (Chinese)"
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 6,
+          "caliber_mm": 533
+        },
+        "torpedoes": {
+          "type": "Yu-6",
+          "quantity": 18
+        },
+        "missiles": {
+          "type": "YJ-18",
+          "notes": "Anti-ship cruise missile"
+        }
+      },
+      "variants": [
+        {
+          "designation": "Type 039A",
+          "notes": "First batch"
+        },
+        {
+          "designation": "Type 039B",
+          "notes": "Improved, larger sail"
+        },
+        {
+          "designation": "Type 039C",
+          "notes": "Latest, improved stealth"
+        }
+      ],
+      "unit_cost_usd": 350000000,
+      "cost_year": 2020,
+      "confidence": "low",
+      "sources": [
+        "ONI",
+        "Jane's",
+        "CSIS"
+      ],
+      "notes": "China's first AIP sub. Kilo-influenced design. 22+ in service. Pakistan ordered 8 (largest sub export). Thailand ordered 2.",
+      "year": 2004
+    },
+    {
+      "id": "de-ssk-212a",
+      "name": "Type 212A",
+      "nato_name": null,
+      "type": "ssk",
+      "class": "Type 212",
+      "country_of_origin": "DE",
+      "manufacturer": "ThyssenKrupp Marine Systems / Howaldtswerke",
+      "service_history": {
+        "introduced": 2005,
+        "retired": null,
+        "production_count": 10,
+        "operators": [
+          {
+            "country": "DE",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "quantity": 4,
+            "status": "active",
+            "notes": "Todaro-class"
+          }
+        ],
+        "notes": "First operational AIP submarine"
+      },
+      "specifications": {
+        "crew": 27,
+        "displacement_surfaced_tons": 1450,
+        "displacement_submerged_tons": 1830,
+        "length_m": 56,
+        "beam_m": 7,
+        "draft_m": 6
+      },
+      "performance": {
+        "max_speed_submerged_knots": 20,
+        "max_speed_surfaced_knots": 12,
+        "max_depth_m": 400,
+        "range_surfaced_nm": 8000,
+        "range_submerged_nm": 420,
+        "endurance_submerged_days": 21,
+        "notes": "AIP allows 3 weeks submerged without snorkeling"
+      },
+      "powerplant": {
+        "type": "Diesel-electric + AIP",
+        "diesel": "MTU 16V 396 (2x 1050 kW)",
+        "aip": "Siemens PEM fuel cells (2x 120 kW)",
+        "battery": "Lead-acid",
+        "notes": "First operational fuel cell submarine"
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 6,
+          "caliber_mm": 533
+        },
+        "torpedoes": {
+          "type": "DM2A4 Seahake",
+          "quantity": 12
+        },
+        "missiles": {
+          "type": "IDAS",
+          "notes": "Anti-air/ASW from submerged"
+        }
+      },
+      "sensors": {
+        "sonar": {
+          "bow": "Atlas Elektronik DBQS-40",
+          "flank": "FAS-3",
+          "towed": "TAS-3"
+        }
+      },
+      "stealth": {
+        "features": [
+          "Non-magnetic steel hull",
+          "AIP for silent running",
+          "Advanced degaussing"
+        ],
+        "notes": "Extremely quiet"
+      },
+      "unit_cost_usd": 530000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "German Navy",
+        "TKMS"
+      ],
+      "notes": "World's first operational AIP sub. Fuel cells. Non-magnetic hull. Type 212CD (Common Design) successor for Germany/Norway.",
+      "year": 2005
+    },
+    {
+      "id": "de-ssk-214",
+      "name": "Type 214",
+      "nato_name": null,
+      "type": "ssk",
+      "class": "Type 214",
+      "country_of_origin": "DE",
+      "manufacturer": "ThyssenKrupp Marine Systems",
+      "service_history": {
+        "introduced": 2004,
+        "retired": null,
+        "production_count": 18,
+        "operators": [
+          {
+            "country": "GR",
+            "quantity": 4,
+            "status": "active",
+            "notes": "Papanikolis-class"
+          },
+          {
+            "country": "KR",
+            "quantity": 9,
+            "status": "active",
+            "notes": "Son Won-il-class"
+          },
+          {
+            "country": "PT",
+            "quantity": 2,
+            "status": "active",
+            "notes": "Tridente-class"
+          },
+          {
+            "country": "TR",
+            "quantity": 6,
+            "status": "active",
+            "notes": "Reis-class"
+          }
+        ],
+        "notes": "Export version of Type 212"
+      },
+      "specifications": {
+        "crew": 27,
+        "displacement_surfaced_tons": 1700,
+        "displacement_submerged_tons": 1860,
+        "length_m": 65,
+        "beam_m": 6.3,
+        "draft_m": 6
+      },
+      "performance": {
+        "max_speed_submerged_knots": 20,
+        "max_depth_m": 400,
+        "range_surfaced_nm": 12000,
+        "endurance_submerged_days": 21
+      },
+      "powerplant": {
+        "type": "Diesel-electric + AIP",
+        "diesel": "MTU 16V 396",
+        "aip": "Siemens PEM fuel cells (2x)",
+        "battery": "Lead-acid"
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 8,
+          "caliber_mm": 533
+        },
+        "torpedoes": {
+          "type": "SUT 264",
+          "quantity": 16
+        },
+        "missiles": {
+          "type": "Sub-Harpoon",
+          "notes": "Optional"
+        }
+      },
+      "unit_cost_usd": 450000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "TKMS",
+        "Jane's"
+      ],
+      "notes": "Export success. Korea built 9 locally (KSS-II). Greece had troubled procurement. Turkey building domestically.",
+      "year": 2004
+    },
+    {
+      "id": "fr-ssk-scorpene",
+      "name": "Scorp\u00e8ne-class",
+      "nato_name": null,
+      "type": "ssk",
+      "class": "Scorp\u00e8ne",
+      "country_of_origin": "FR",
+      "manufacturer": "Naval Group / Navantia",
+      "service_history": {
+        "introduced": 2005,
+        "retired": null,
+        "production_count": 18,
+        "operators": [
+          {
+            "country": "CL",
+            "quantity": 2,
+            "status": "active"
+          },
+          {
+            "country": "MY",
+            "quantity": 2,
+            "status": "active"
+          },
+          {
+            "country": "BR",
+            "quantity": 4,
+            "status": "active",
+            "notes": "Riachuelo-class"
+          },
+          {
+            "country": "IN",
+            "quantity": 6,
+            "status": "active",
+            "notes": "Kalvari-class"
+          },
+          {
+            "country": "ID",
+            "quantity": 2,
+            "status": "ordered",
+            "notes": "Nagapasa-class"
+          },
+          {
+            "country": "PH",
+            "quantity": 2,
+            "status": "ordered"
+          }
+        ],
+        "notes": "French export submarine"
+      },
+      "specifications": {
+        "crew": 31,
+        "displacement_surfaced_tons": 1750,
+        "displacement_submerged_tons": 1870,
+        "length_m": 66.4,
+        "beam_m": 6.2,
+        "draft_m": 5.8
+      },
+      "performance": {
+        "max_speed_submerged_knots": 20,
+        "max_speed_surfaced_knots": 12,
+        "max_depth_m": 350,
+        "range_surfaced_nm": 6500,
+        "endurance_submerged_days": 18,
+        "notes": "AIP variant available"
+      },
+      "powerplant": {
+        "type": "Diesel-electric (+ AIP optional)",
+        "diesel": "MTU 16V 396 SE84",
+        "aip": "MESMA (optional)",
+        "battery": "Lead-acid or lithium-ion"
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 6,
+          "caliber_mm": 533
+        },
+        "torpedoes": {
+          "type": "F21/Black Shark",
+          "quantity": 18
+        },
+        "missiles": {
+          "type": "Exocet SM39",
+          "notes": "Via tubes"
+        }
+      },
+      "sensors": {
+        "sonar": {
+          "bow": "Thales S-Cube",
+          "flank": "Flank arrays",
+          "towed": "DSUV-22"
+        }
+      },
+      "unit_cost_usd": 475000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Naval Group",
+        "Jane's"
+      ],
+      "notes": "Franco-Spanish design. Major export success. Brazil building locally (+ 1 SSN). India's Kalvari-class. MESMA AIP optional.",
+      "year": 2005
+    },
+    {
+      "id": "il-ssk-dolphin2",
+      "name": "Dolphin II-class",
+      "nato_name": null,
+      "type": "ssk",
+      "class": "Dolphin",
+      "country_of_origin": "DE",
+      "manufacturer": "ThyssenKrupp Marine Systems",
+      "service_history": {
+        "introduced": 2014,
+        "retired": null,
+        "production_count": 3,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 3,
+            "status": "active",
+            "notes": "Dolphin II"
+          },
+          {
+            "country": "IL",
+            "quantity": 3,
+            "status": "active",
+            "notes": "Dolphin I (older)"
+          }
+        ],
+        "notes": "Israeli submarine with second-strike capability"
+      },
+      "specifications": {
+        "crew": 35,
+        "displacement_surfaced_tons": 1900,
+        "displacement_submerged_tons": 2400,
+        "length_m": 68.6,
+        "beam_m": 6.8,
+        "draft_m": 6.2
+      },
+      "performance": {
+        "max_speed_submerged_knots": 20,
+        "max_depth_m": 350,
+        "range_surfaced_nm": 8000,
+        "endurance_submerged_days": 30
+      },
+      "powerplant": {
+        "type": "Diesel-electric + AIP",
+        "aip": "Siemens fuel cells",
+        "diesel": "MTU 16V 396"
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 6,
+          "caliber_mm": 533
+        },
+        "oversized_tubes": {
+          "count": 4,
+          "caliber_mm": 650
+        },
+        "weapons": [
+          "DM2A4 torpedo",
+          "Sub-Harpoon"
+        ],
+        "special": {
+          "type": "Popeye Turbo SLCM",
+          "notes": "650mm tubes, nuclear-capable"
+        }
+      },
+      "nuclear_role": {
+        "notes": "650mm tubes reportedly for nuclear-armed cruise missiles"
+      },
+      "unit_cost_usd": 700000000,
+      "cost_year": 2014,
+      "confidence": "high",
+      "sources": [
+        "Jane's",
+        "IISS"
+      ],
+      "notes": "Israel's sea-based nuclear deterrent. 650mm tubes for cruise missiles (Popeye Turbo). Germany partially subsidized. 6 total (3 Dolphin I, 3 Dolphin II).",
+      "year": 2014
+    },
+    {
+      "id": "jp-ssk-soryu",
+      "name": "S\u014dry\u016b-class",
+      "nato_name": null,
+      "type": "ssk",
+      "class": "S\u014dry\u016b",
+      "country_of_origin": "JP",
+      "manufacturer": "Mitsubishi/Kawasaki",
+      "service_history": {
+        "introduced": 2009,
+        "retired": null,
+        "production_count": 12,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 12,
+            "status": "active"
+          }
+        ],
+        "notes": "Japan's main SSK"
+      },
+      "specifications": {
+        "crew": 65,
+        "displacement_surfaced_tons": 2900,
+        "displacement_submerged_tons": 4200,
+        "length_m": 84,
+        "beam_m": 9.1,
+        "draft_m": 8.5,
+        "notes": "Largest diesel-electric submarine in Asia"
+      },
+      "performance": {
+        "max_speed_submerged_knots": 20,
+        "max_depth_m": 500,
+        "range_surfaced_nm": 6100,
+        "endurance_submerged_days": 21
+      },
+      "powerplant": {
+        "type": "Diesel-electric + AIP",
+        "diesel": "Kawasaki 12V 25/25S (2x)",
+        "aip": "Kockums Stirling V4-275R (4x)",
+        "battery": "Lithium-ion (SS-511 onwards)"
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 6,
+          "caliber_mm": 533
+        },
+        "torpedoes": {
+          "type": "Type 89",
+          "quantity": 30
+        },
+        "missiles": {
+          "type": "Harpoon",
+          "quantity": 30,
+          "notes": "Total weapons"
+        }
+      },
+      "sensors": {
+        "sonar": {
+          "bow": "Hughes/Oki ZQQ-7B",
+          "flank": "Flank arrays",
+          "towed": "ZQR-1"
+        }
+      },
+      "unit_cost_usd": 540000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "JMSDF",
+        "Jane's"
+      ],
+      "notes": "X-rudder stern. Stirling AIP. Lithium-ion from SS-511. Lost Australian DCSS bid to France (then cancelled). Being replaced by Taigei.",
+      "year": 2009
+    },
+    {
+      "id": "jp-ssk-taigei",
+      "name": "Taigei-class",
+      "nato_name": null,
+      "type": "ssk",
+      "class": "Taigei",
+      "country_of_origin": "JP",
+      "manufacturer": "Mitsubishi/Kawasaki",
+      "service_history": {
+        "introduced": 2022,
+        "retired": null,
+        "production_count": 3,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 3,
+            "status": "active",
+            "notes": "7+ planned"
+          }
+        ],
+        "notes": "Japan's newest SSK"
+      },
+      "specifications": {
+        "crew": 70,
+        "displacement_surfaced_tons": 3000,
+        "displacement_submerged_tons": 4400,
+        "length_m": 84,
+        "beam_m": 9.1
+      },
+      "performance": {
+        "max_speed_submerged_knots": 20,
+        "max_depth_m": 500,
+        "endurance_submerged_days": 30,
+        "notes": "No snorkeling needed for month"
+      },
+      "powerplant": {
+        "type": "Diesel-electric",
+        "diesel": "Kawasaki 12V 25/31",
+        "battery": "Lithium-ion (full)",
+        "notes": "All lithium-ion, no AIP"
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 6,
+          "caliber_mm": 533
+        },
+        "torpedoes": {
+          "type": "Type 18",
+          "quantity": 30
+        }
+      },
+      "unit_cost_usd": 720000000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "JMSDF",
+        "Jane's"
+      ],
+      "notes": "All lithium-ion batteries (no AIP). Longer submerged endurance than Soryu. Snorkel mast improved stealth. 7+ planned.",
+      "year": 2022
+    },
+    {
+      "id": "kr-kss3",
+      "name": "KSS-III Dosan Ahn Changho-class",
+      "nato_name": null,
+      "type": "ssk",
+      "class": "KSS-III",
+      "country_of_origin": "KR",
+      "manufacturer": "DSME / Hyundai Heavy Industries",
+      "service_history": {
+        "introduced": 2021,
+        "retired": null,
+        "production_count": 3,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 3,
+            "status": "active",
+            "notes": "9 planned"
+          }
+        ],
+        "notes": "Korea's largest submarine"
+      },
+      "specifications": {
+        "crew": 50,
+        "displacement_surfaced_tons": 3000,
+        "displacement_submerged_tons": 3705,
+        "length_m": 83.5,
+        "beam_m": 9.6,
+        "draft_m": 7.6
+      },
+      "performance": {
+        "max_speed_submerged_knots": 20,
+        "max_depth_m": 400,
+        "endurance_submerged_days": 20
+      },
+      "powerplant": {
+        "type": "Diesel-electric + AIP",
+        "aip": "Fuel cells (Batch II: lithium-ion)",
+        "diesel": "MTU 12V 4000"
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 8,
+          "caliber_mm": 533
+        },
+        "vls": {
+          "cells": 6,
+          "missiles": "Hyunmoo-3C LACM"
+        },
+        "weapons": [
+          "White Shark torpedo",
+          "Hyunmoo SLCM"
+        ]
+      },
+      "features": {
+        "notes": "First conventional submarine with VLS"
+      },
+      "unit_cost_usd": 670000000,
+      "cost_year": 2021,
+      "confidence": "high",
+      "sources": [
+        "ROKN",
+        "Jane's"
+      ],
+      "notes": "World's first SSK with VLS. Can launch cruise missiles while submerged. North Korea deterrence. 9 planned (3 batches).",
+      "year": 2021
+    },
+    {
+      "id": "ru-ssk-kilo",
+      "name": "Improved Kilo-class (Project 636.3)",
+      "nato_name": "Kilo",
+      "type": "ssk",
+      "class": "Kilo",
+      "country_of_origin": "RU",
+      "manufacturer": "Admiralty Shipyard",
+      "service_history": {
+        "introduced": 2014,
+        "first_flight": 1980,
+        "retired": null,
+        "production_count": 50,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 14,
+            "status": "active",
+            "notes": "636.3"
+          },
+          {
+            "country": "CN",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 8,
+            "status": "active"
+          },
+          {
+            "country": "VN",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "DZ",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "quantity": 3,
+            "status": "active"
+          }
+        ],
+        "notes": "Russia's most exported submarine"
+      },
+      "specifications": {
+        "crew": 52,
+        "displacement_surfaced_tons": 2350,
+        "displacement_submerged_tons": 3076,
+        "length_m": 73.8,
+        "beam_m": 9.9,
+        "draft_m": 6.2
+      },
+      "performance": {
+        "max_speed_submerged_knots": 20,
+        "max_speed_surfaced_knots": 10,
+        "max_depth_m": 350,
+        "range_surfaced_nm": 7500,
+        "range_submerged_nm": 400,
+        "endurance_days": 45
+      },
+      "powerplant": {
+        "type": "Diesel-electric",
+        "diesel": "2x 4DL-42M (2940 kW)",
+        "battery": "Lead-acid (446 cells)"
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 6,
+          "caliber_mm": 533
+        },
+        "torpedoes": {
+          "type": "TEST-71/UGST",
+          "quantity": 18
+        },
+        "missiles": [
+          {
+            "type": "3M14 Kalibr",
+            "quantity": 4,
+            "notes": "Land attack cruise missile"
+          },
+          {
+            "type": "3M54 Klub",
+            "notes": "Anti-ship variant"
+          }
+        ],
+        "mines": {
+          "quantity": 24,
+          "notes": "In lieu of torpedoes"
+        }
+      },
+      "sensors": {
+        "sonar": {
+          "bow": "MGK-400EM Rubikon",
+          "notes": "Effective passive sonar"
+        }
+      },
+      "stealth": {
+        "features": [
+          "Anechoic tiles",
+          "Quiet diesel-electric",
+          "Low magnetic signature"
+        ],
+        "notes": "'Black Hole' - extremely quiet"
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Syria",
+            "year": 2015,
+            "notes": "First Kalibr strikes from Mediterranean"
+          }
+        ]
+      },
+      "unit_cost_usd": 300000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Russian MoD",
+        "Jane's"
+      ],
+      "notes": "'Varshavyanka' (636.3). Called 'Black Hole' for quietness. Kalibr-capable. Major export (China, Vietnam, India, Algeria). Syria combat debut.",
+      "year": 1982
+    },
+    {
+      "id": "ru-ssk-lada",
+      "name": "Lada-class (Project 677)",
+      "nato_name": "Lada",
+      "type": "ssk",
+      "class": "Lada",
+      "country_of_origin": "RU",
+      "manufacturer": "Admiralty Shipyard",
+      "service_history": {
+        "introduced": 2010,
+        "retired": null,
+        "production_count": 2,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 2,
+            "status": "active",
+            "notes": "4+ planned"
+          }
+        ],
+        "notes": "Russian AIP submarine (troubled)"
+      },
+      "specifications": {
+        "crew": 35,
+        "displacement_surfaced_tons": 1765,
+        "displacement_submerged_tons": 2700,
+        "length_m": 66.8,
+        "beam_m": 7.1,
+        "draft_m": 6.5
+      },
+      "performance": {
+        "max_speed_submerged_knots": 21,
+        "max_depth_m": 300,
+        "range_surfaced_nm": 6000
+      },
+      "powerplant": {
+        "type": "Diesel-electric (AIP planned)",
+        "diesel": "D-49 (2x)",
+        "aip": "Planned but not operational",
+        "notes": "AIP development troubled"
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 6,
+          "caliber_mm": 533
+        },
+        "missiles": {
+          "type": "Kalibr",
+          "notes": "Planned integration"
+        }
+      },
+      "unit_cost_usd": 400000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Russian MoD",
+        "Jane's"
+      ],
+      "notes": "Troubled program. AIP never operational. First boat had propulsion issues. Program essentially paused. Russia focusing on Kilo/Yasen.",
+      "year": 2010
+    },
+    {
+      "id": "se-ssk-a26",
+      "name": "A26 Blekinge-class",
+      "nato_name": null,
+      "type": "ssk",
+      "class": "A26",
+      "country_of_origin": "SE",
+      "manufacturer": "Saab Kockums",
+      "service_history": {
+        "introduced": 2027,
+        "retired": null,
+        "production_count": 0,
+        "operators": [
+          {
+            "country": "SE",
+            "quantity": 0,
+            "status": "building",
+            "notes": "2 ordered"
+          },
+          {
+            "country": "PL",
+            "quantity": 3,
+            "status": "ordered",
+            "notes": "Orka program"
+          }
+        ],
+        "notes": "Next-gen Swedish submarine"
+      },
+      "specifications": {
+        "crew": 26,
+        "displacement_surfaced_tons": 1900,
+        "displacement_submerged_tons": 2000,
+        "length_m": 65.5,
+        "beam_m": 6.4
+      },
+      "performance": {
+        "max_speed_submerged_knots": 20,
+        "max_depth_m": 200,
+        "endurance_submerged_days": 18
+      },
+      "powerplant": {
+        "type": "Diesel-electric + AIP",
+        "aip": "Stirling AIP (Kockums)",
+        "battery": "Lithium-ion"
+      },
+      "armament": {
+        "torpedo_tubes": {
+          "count": 4,
+          "caliber_mm": 533
+        },
+        "notes": "Multi-mission lock-out chamber for SOF/UUVs"
+      },
+      "stealth": {
+        "features": [
+          "Ghost signature management",
+          "Stirling AIP",
+          "X-rudder"
+        ]
+      },
+      "unit_cost_usd": 650000000,
+      "cost_year": 2024,
+      "confidence": "medium",
+      "sources": [
+        "Saab",
+        "Swedish Navy"
+      ],
+      "notes": "Gotland successor. Stirling AIP pioneer. X-rudder. SOF lock-out chamber. Poland selected (Orka program). First delivery 2027.",
+      "year": 2027
+    }
+  ]
+}

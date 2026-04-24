@@ -1,0 +1,711 @@
+{
+  "$schema": "../../schema/platform-naval.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-23",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Fighting Ships",
+      "Naval News"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "se-visby",
+      "name": "Visby-class",
+      "nato_name": null,
+      "type": "corvette",
+      "class": "Visby",
+      "country_of_origin": "SE",
+      "manufacturer": "Saab Kockums",
+      "service_history": {
+        "introduced": 2009,
+        "retired": null,
+        "production_count": 5,
+        "operators": [
+          {
+            "country": "SE",
+            "quantity": 5,
+            "status": "active"
+          }
+        ],
+        "notes": "World's first operational stealth ship"
+      },
+      "specifications": {
+        "crew": 43,
+        "displacement_full_tons": 640,
+        "length_m": 72.7,
+        "beam_m": 10.4,
+        "draft_m": 2.4
+      },
+      "performance": {
+        "max_speed_knots": 35,
+        "range_nm": 2300
+      },
+      "powerplant": {
+        "type": "CODAG",
+        "engines": "4x MTU 16V 2000 diesels + 2x Vericor TF50A gas turbines",
+        "propulsion": "Water jets",
+        "notes": "High speed maneuverability"
+      },
+      "armament": {
+        "guns": {
+          "type": "Bofors 57mm Mk3",
+          "quantity": 1
+        },
+        "missiles": {
+          "type": "RBS-15 Mk2",
+          "quantity": 8
+        },
+        "torpedoes": {
+          "type": "Torped 45",
+          "quantity": 4
+        },
+        "mines": {
+          "quantity": "Up to 8 rails"
+        },
+        "asw": {
+          "type": "Saab ASW601 depth charges"
+        }
+      },
+      "sensors": {
+        "radar": "Sea Giraffe AMB",
+        "sonar": "Hydroscience CMAS-36",
+        "ew": "Condor CS-3701"
+      },
+      "stealth": {
+        "rcs_estimate_m2": 1,
+        "features": [
+          "Carbon fiber composite hull",
+          "Angular superstructure",
+          "IR suppression",
+          "Degaussing"
+        ],
+        "notes": "First operational stealth warship"
+      },
+      "unit_cost_usd": 185000000,
+      "cost_year": 2009,
+      "confidence": "high",
+      "sources": [
+        "Swedish Navy",
+        "Saab"
+      ],
+      "notes": "World's first stealth corvette. Carbon fiber hull. Baltic Sea optimized. Water jet propulsion. 5 in service.",
+      "year": 2009
+    },
+    {
+      "id": "ru-karakurt",
+      "name": "Karakurt-class (Project 22800)",
+      "nato_name": null,
+      "type": "corvette",
+      "class": "Karakurt",
+      "country_of_origin": "RU",
+      "manufacturer": "Pella Shipyard / Zelenodolsk",
+      "service_history": {
+        "introduced": 2018,
+        "retired": null,
+        "production_count": 12,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 12,
+            "status": "active",
+            "notes": "18+ planned"
+          }
+        ],
+        "notes": "Russia's missile corvette"
+      },
+      "specifications": {
+        "crew": 39,
+        "displacement_full_tons": 870,
+        "length_m": 67,
+        "beam_m": 11,
+        "draft_m": 4
+      },
+      "performance": {
+        "max_speed_knots": 30,
+        "range_nm": 2500
+      },
+      "powerplant": {
+        "type": "Diesel-electric",
+        "engines": "3x M507D diesels",
+        "notes": "Initially had Chinese engines due to sanctions"
+      },
+      "armament": {
+        "vls": {
+          "type": "3S14 UKSK",
+          "cells": 8
+        },
+        "guns": {
+          "type": "AK-176MA 76mm",
+          "quantity": 1
+        },
+        "missiles": [
+          {
+            "type": "Kalibr",
+            "quantity": 8,
+            "notes": "Land attack or anti-ship"
+          },
+          {
+            "type": "Oniks",
+            "quantity": 8,
+            "notes": "Alternative"
+          }
+        ],
+        "ciws": {
+          "type": "AK-630M or Pantsir-M",
+          "quantity": 1
+        }
+      },
+      "sensors": {
+        "radar": "Mineral-ME / Pozitiv-ME"
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Ukraine",
+            "year": 2022,
+            "notes": "Kalibr strikes"
+          },
+          {
+            "conflict": "Syria",
+            "year": 2018,
+            "notes": "Kalibr strikes"
+          }
+        ]
+      },
+      "unit_cost_usd": 50000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Russian MoD",
+        "Jane's"
+      ],
+      "notes": "Small but powerful (8 Kalibr). Black Sea Fleet primary strike asset. Sanctions affected engine supply. Ukraine: main strike platform.",
+      "year": 2018
+    },
+    {
+      "id": "ru-buyan",
+      "name": "Buyan-M class (Project 21631)",
+      "nato_name": null,
+      "type": "corvette",
+      "class": "Buyan-M",
+      "country_of_origin": "RU",
+      "manufacturer": "Zelenodolsk Shipyard",
+      "service_history": {
+        "introduced": 2014,
+        "retired": null,
+        "production_count": 12,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 12,
+            "status": "active"
+          }
+        ],
+        "notes": "River-sea missile corvette"
+      },
+      "specifications": {
+        "crew": 36,
+        "displacement_full_tons": 949,
+        "length_m": 74.1,
+        "beam_m": 11,
+        "draft_m": 2.6,
+        "notes": "Shallow draft for inland waterways"
+      },
+      "performance": {
+        "max_speed_knots": 25,
+        "range_nm": 2500
+      },
+      "powerplant": {
+        "type": "Diesel",
+        "engines": "4x diesel engines"
+      },
+      "armament": {
+        "vls": {
+          "type": "3S14 UKSK",
+          "cells": 8
+        },
+        "guns": [
+          {
+            "type": "A-190-01 100mm",
+            "quantity": 1
+          },
+          {
+            "type": "AK-630M-2 Duet",
+            "quantity": 1
+          }
+        ],
+        "missiles": [
+          {
+            "type": "Kalibr",
+            "quantity": 8
+          },
+          {
+            "type": "3M54/3M14"
+          }
+        ]
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Syria",
+            "year": 2015,
+            "notes": "First Kalibr combat use from Caspian Sea"
+          }
+        ]
+      },
+      "unit_cost_usd": 45000000,
+      "cost_year": 2018,
+      "confidence": "medium",
+      "sources": [
+        "Russian MoD",
+        "Jane's"
+      ],
+      "notes": "Shallow draft operates in Caspian/rivers. First Kalibr strikes 2015 from Caspian Sea (1500km to Syria). Strategic surprise capability.",
+      "year": 2013
+    },
+    {
+      "id": "il-saar6",
+      "name": "Sa'ar 6-class",
+      "nato_name": null,
+      "type": "corvette",
+      "class": "Sa'ar 6",
+      "country_of_origin": "IL",
+      "manufacturer": "ThyssenKrupp Marine Systems",
+      "service_history": {
+        "introduced": 2020,
+        "retired": null,
+        "production_count": 4,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 4,
+            "status": "active"
+          }
+        ],
+        "notes": "Israel's newest corvette"
+      },
+      "specifications": {
+        "crew": 70,
+        "displacement_full_tons": 1900,
+        "length_m": 90,
+        "beam_m": 13.2,
+        "draft_m": 4.8
+      },
+      "performance": {
+        "max_speed_knots": 26,
+        "range_nm": 2500
+      },
+      "powerplant": {
+        "type": "CODAD",
+        "engines": "4x MTU 1163 diesels"
+      },
+      "armament": {
+        "vls": {
+          "type": "2x Barak 8 VLS",
+          "cells": 64
+        },
+        "guns": {
+          "type": "Oto Melara 76mm",
+          "quantity": 1
+        },
+        "missiles": [
+          {
+            "type": "Barak 8 / Barak MX",
+            "quantity": 64,
+            "notes": "Air/missile defense"
+          },
+          {
+            "type": "Gabriel V",
+            "quantity": 16,
+            "notes": "Anti-ship"
+          }
+        ],
+        "ciws": {
+          "type": "Typhoon",
+          "quantity": 2
+        },
+        "torpedoes": {
+          "quantity": 6
+        }
+      },
+      "sensors": {
+        "radar": "IAI Elta EL/M-2248 MF-STAR AESA",
+        "sonar": "Hull-mounted + towed"
+      },
+      "aviation": {
+        "hangar": true,
+        "uav": "Helicopter pad, mainly for UAVs"
+      },
+      "unit_cost_usd": 430000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Israeli Navy",
+        "TKMS"
+      ],
+      "notes": "Based on MEKO. 64-cell VLS (large for corvette). Iron Dome naval variant. Gas field protection. 4 in service.",
+      "year": 2020
+    },
+    {
+      "id": "de-braunschweig",
+      "name": "Braunschweig-class (K130)",
+      "nato_name": null,
+      "type": "corvette",
+      "class": "K130",
+      "country_of_origin": "DE",
+      "manufacturer": "L\u00fcrssen / ThyssenKrupp",
+      "service_history": {
+        "introduced": 2008,
+        "retired": null,
+        "production_count": 5,
+        "operators": [
+          {
+            "country": "DE",
+            "quantity": 5,
+            "status": "active",
+            "notes": "Batch 1"
+          },
+          {
+            "country": "DE",
+            "quantity": 0,
+            "status": "building",
+            "notes": "Batch 2 (5 more)"
+          }
+        ],
+        "notes": "German littoral combat vessel"
+      },
+      "specifications": {
+        "crew": 65,
+        "displacement_full_tons": 1840,
+        "length_m": 89.12,
+        "beam_m": 13.28,
+        "draft_m": 3.4
+      },
+      "performance": {
+        "max_speed_knots": 26,
+        "range_nm": 2500
+      },
+      "powerplant": {
+        "type": "CODAD",
+        "engines": "2x MTU 20V 1163 diesels",
+        "propulsion": "Water jets"
+      },
+      "armament": {
+        "vls": {
+          "type": "Mk 41 VLS",
+          "cells": 2,
+          "notes": "4 RIM-116 each"
+        },
+        "guns": [
+          {
+            "type": "76mm OTO Melara",
+            "quantity": 1
+          },
+          {
+            "type": "27mm MLG27",
+            "quantity": 2
+          }
+        ],
+        "missiles": [
+          {
+            "type": "RBS-15 Mk3",
+            "quantity": 4
+          },
+          {
+            "type": "RIM-116 RAM",
+            "quantity": 8
+          }
+        ]
+      },
+      "sensors": {
+        "radar": "TRS-3D/16-ES"
+      },
+      "stealth": {
+        "features": [
+          "Reduced radar signature",
+          "IR signature reduction"
+        ]
+      },
+      "unit_cost_usd": 260000000,
+      "cost_year": 2008,
+      "confidence": "high",
+      "sources": [
+        "German Navy",
+        "L\u00fcrssen"
+      ],
+      "notes": "Littoral warfare. Batch 2 (5 more) ordered. Water jet propulsion. Limited air defense.",
+      "year": 2008
+    },
+    {
+      "id": "tr-ada",
+      "name": "Ada-class (MILGEM)",
+      "nato_name": null,
+      "type": "corvette",
+      "class": "Ada",
+      "country_of_origin": "TR",
+      "manufacturer": "Istanbul Naval Shipyard",
+      "service_history": {
+        "introduced": 2011,
+        "retired": null,
+        "production_count": 4,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 4,
+            "status": "building",
+            "notes": "Jinnah-class"
+          },
+          {
+            "country": "UA",
+            "quantity": 2,
+            "status": "ordered",
+            "notes": "Pre-war order"
+          }
+        ],
+        "notes": "Turkish indigenous corvette"
+      },
+      "specifications": {
+        "crew": 106,
+        "displacement_full_tons": 2300,
+        "length_m": 99.5,
+        "beam_m": 14.4,
+        "draft_m": 3.9
+      },
+      "performance": {
+        "max_speed_knots": 29,
+        "range_nm": 3500
+      },
+      "powerplant": {
+        "type": "CODAG",
+        "engines": "1x LM2500 + 2x MTU diesels"
+      },
+      "armament": {
+        "vls": {
+          "type": "Mk 41 VLS",
+          "cells": 8
+        },
+        "guns": {
+          "type": "76mm",
+          "quantity": 1
+        },
+        "missiles": [
+          {
+            "type": "ESSM",
+            "quantity": 32
+          },
+          {
+            "type": "Harpoon/Atmaca",
+            "quantity": 8
+          }
+        ],
+        "ciws": {
+          "type": "Phalanx",
+          "quantity": 1
+        },
+        "torpedoes": {
+          "type": "Mk 32",
+          "tubes": 4
+        }
+      },
+      "sensors": {
+        "radar": "SMART-S Mk2 / Genesis",
+        "sonar": "ATAS towed array"
+      },
+      "aviation": {
+        "hangar": true,
+        "helicopters": 1,
+        "type": "S-70B"
+      },
+      "unit_cost_usd": 260000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Turkish Navy",
+        "Jane's"
+      ],
+      "notes": "MILGEM indigenous design. Export to Pakistan (Jinnah-class). Ukraine ordered 2 pre-war. Basis for Istanbul-class frigate.",
+      "year": 2011
+    },
+    {
+      "id": "cn-type056",
+      "name": "Type 056/056A Jiangdao-class",
+      "nato_name": "Jiangdao",
+      "type": "corvette",
+      "class": "Type 056",
+      "country_of_origin": "CN",
+      "manufacturer": "Multiple Chinese shipyards",
+      "service_history": {
+        "introduced": 2013,
+        "retired": null,
+        "production_count": 72,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 72,
+            "status": "active"
+          },
+          {
+            "country": "BD",
+            "quantity": 2,
+            "status": "active"
+          },
+          {
+            "country": "NG",
+            "quantity": 2,
+            "status": "active"
+          }
+        ],
+        "notes": "Mass-produced patrol corvette"
+      },
+      "specifications": {
+        "crew": 60,
+        "displacement_full_tons": 1440,
+        "length_m": 89,
+        "beam_m": 11.6,
+        "draft_m": 4.4
+      },
+      "performance": {
+        "max_speed_knots": 28,
+        "range_nm": 3500
+      },
+      "powerplant": {
+        "type": "Diesel",
+        "engines": "2x SEMT Pielstick diesels"
+      },
+      "armament": {
+        "guns": {
+          "type": "H/PJ-26 76mm",
+          "quantity": 1
+        },
+        "missiles": [
+          {
+            "type": "FL-3000N (HQ-10)",
+            "quantity": 8
+          },
+          {
+            "type": "YJ-83",
+            "quantity": 4
+          }
+        ],
+        "ciws": {
+          "type": "H/PJ-17 30mm",
+          "quantity": 2
+        },
+        "torpedoes": {
+          "type": "Yu-7 (056A)",
+          "tubes": 4,
+          "notes": "ASW variant"
+        }
+      },
+      "sensors": {
+        "radar": "Type 360",
+        "sonar": "Bow-mounted (056A)"
+      },
+      "variants": [
+        {
+          "designation": "Type 056",
+          "notes": "Original (no sonar)"
+        },
+        {
+          "designation": "Type 056A",
+          "notes": "ASW variant with sonar/torpedoes"
+        }
+      ],
+      "unit_cost_usd": 35000000,
+      "cost_year": 2018,
+      "confidence": "medium",
+      "sources": [
+        "PLAN media",
+        "Jane's"
+      ],
+      "notes": "72 built - massive production. Replaced Type 037. 056A has ASW capability. Export to Bangladesh, Nigeria.",
+      "year": 2013
+    },
+    {
+      "id": "sg-formidable",
+      "name": "Formidable-class",
+      "nato_name": null,
+      "type": "frigate",
+      "class": "Formidable",
+      "country_of_origin": "SG",
+      "manufacturer": "ST Engineering (DCNS design)",
+      "service_history": {
+        "introduced": 2007,
+        "retired": null,
+        "production_count": 6,
+        "operators": [
+          {
+            "country": "SG",
+            "quantity": 6,
+            "status": "active"
+          }
+        ],
+        "notes": "Singapore's most capable surface combatant"
+      },
+      "specifications": {
+        "crew": 71,
+        "displacement_full_tons": 3200,
+        "length_m": 114.8,
+        "beam_m": 16.3,
+        "draft_m": 6
+      },
+      "performance": {
+        "max_speed_knots": 27,
+        "range_nm": 4200
+      },
+      "powerplant": {
+        "type": "CODAD",
+        "engines": "4x MTU 20V 8000 diesels"
+      },
+      "armament": {
+        "vls": {
+          "type": "Sylver A50",
+          "cells": 32
+        },
+        "guns": {
+          "type": "76mm Oto Melara",
+          "quantity": 1
+        },
+        "missiles": [
+          {
+            "type": "Aster 15/30",
+            "quantity": 32
+          },
+          {
+            "type": "Harpoon",
+            "quantity": 8
+          }
+        ],
+        "torpedoes": {
+          "type": "B515",
+          "tubes": 4
+        }
+      },
+      "sensors": {
+        "radar": "Thales Herakles",
+        "sonar": "EDO Model 980 ALOFTS"
+      },
+      "aviation": {
+        "hangar": true,
+        "helicopters": 1,
+        "type": "S-70B"
+      },
+      "unit_cost_usd": 300000000,
+      "cost_year": 2007,
+      "confidence": "high",
+      "sources": [
+        "RSN",
+        "Jane's"
+      ],
+      "notes": "Based on La Fayette. Aster missiles. Large for corvette (frigate-sized). 6 in service. Very capable for regional navy.",
+      "year": 2007
+    }
+  ]
+}

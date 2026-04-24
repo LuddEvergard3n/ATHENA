@@ -1,0 +1,246 @@
+{
+  "category": "counter-uas",
+  "subcategory": "cuas-systems",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": ["Jane's Land-Based Air Defence", "Manufacturer data"]
+  },
+  "platforms": [
+    {
+      "id": "il-drone-dome",
+      "name": "Rafael Drone Dome",
+      "type": "cuas-system",
+      "country": "IL",
+      "year": 2016,
+      "manufacturer": "Rafael",
+      "specifications": {
+        "detection_range_km": 10,
+        "defeat_methods": ["Radar", "EO/IR", "RF jamming", "Laser (option)"],
+        "mobility": "Fixed or vehicle-mounted"
+      },
+      "operators": ["IL", "GB", "Multiple"],
+      "notes": "360° detection and soft/hard kill"
+    },
+    {
+      "id": "us-coyote",
+      "name": "Raytheon Coyote Block 3",
+      "type": "counter-drone",
+      "country": "US",
+      "year": 2021,
+      "manufacturer": "Raytheon",
+      "specifications": {
+        "type": "Loitering interceptor",
+        "range_km": 10,
+        "endurance_min": 60,
+        "defeat": "Kinetic (proximity warhead)"
+      },
+      "operators": ["US"],
+      "notes": "Kinetic C-UAS drone"
+    },
+    {
+      "id": "us-helws",
+      "name": "Raytheon HELWS",
+      "type": "directed-energy",
+      "country": "US",
+      "year": 2020,
+      "manufacturer": "Raytheon",
+      "specifications": {
+        "type": "High-energy laser",
+        "power_kw": 10,
+        "platform": "Polaris MRZR"
+      },
+      "operators": ["US (USAF)"],
+      "notes": "Mobile laser C-UAS"
+    },
+    {
+      "id": "us-de-mshorad",
+      "name": "DE M-SHORAD (Guardian)",
+      "type": "directed-energy",
+      "country": "US",
+      "year": 2024,
+      "manufacturer": "Kord Technologies",
+      "specifications": {
+        "type": "50kW laser",
+        "platform": "Stryker",
+        "targets": "UAVs, rockets, mortars"
+      },
+      "operators": ["US"],
+      "notes": "Army's first combat laser system"
+    },
+    {
+      "id": "us-auds",
+      "name": "AUDS (Anti-UAV Defence System)",
+      "type": "cuas-system",
+      "country": "GB",
+      "year": 2016,
+      "manufacturer": "Blighter/Chess/ECS",
+      "specifications": {
+        "detection_range_km": 10,
+        "defeat": "RF jamming",
+        "sensor": "Blighter radar + EO/IR"
+      },
+      "operators": ["US", "GB", "Many"],
+      "notes": "Widely deployed C-UAS system"
+    },
+    {
+      "id": "de-hp47",
+      "name": "Hensoldt HP 47",
+      "type": "cuas-system",
+      "country": "DE",
+      "year": 2019,
+      "manufacturer": "Hensoldt",
+      "specifications": {
+        "detection": "Radar, RF analyzer",
+        "defeat": "Jammer",
+        "integration": "Skymaster ecosystem"
+      },
+      "operators": ["DE"],
+      "notes": "German C-UAS solution"
+    },
+    {
+      "id": "fr-mistral-atlas",
+      "name": "ATLAS (MISTRAL MANPADS)",
+      "type": "cuas-missile",
+      "country": "FR",
+      "year": 2020,
+      "manufacturer": "MBDA",
+      "specifications": {
+        "missile": "Mistral 3",
+        "sensor": "Dedicated C-UAS mode"
+      },
+      "operators": ["FR"],
+      "notes": "Adapted MANPADS for drone threats"
+    },
+    {
+      "id": "ru-stupor",
+      "name": "Stupor",
+      "type": "cuas-effector",
+      "country": "RU",
+      "year": 2017,
+      "manufacturer": "Rostec",
+      "specifications": {
+        "type": "Shoulder-fired jammer",
+        "range_km": 2,
+        "defeat": "RF jamming, GNSS denial"
+      },
+      "operators": ["RU"],
+      "notes": "Man-portable drone jammer"
+    },
+    {
+      "id": "ru-repellent",
+      "name": "Repellent-1",
+      "type": "cuas-system",
+      "country": "RU",
+      "year": 2019,
+      "manufacturer": "KRET",
+      "specifications": {
+        "range_km": 30,
+        "defeat": "Electronic suppression"
+      },
+      "operators": ["RU"],
+      "notes": "Area C-UAS system"
+    },
+    {
+      "id": "ru-silok",
+      "name": "Silok-01",
+      "type": "cuas-system",
+      "country": "RU",
+      "year": 2020,
+      "manufacturer": "KRET",
+      "specifications": {
+        "range_km": 5,
+        "defeat": "GPS/GLONASS spoofing, jammer"
+      },
+      "operators": ["RU"],
+      "notes": "Tactical C-UAS system"
+    },
+    {
+      "id": "tr-ihtar",
+      "name": "ASELSAN IHTAR",
+      "type": "cuas-system",
+      "country": "TR",
+      "year": 2017,
+      "manufacturer": "ASELSAN",
+      "specifications": {
+        "detection_range_km": 7,
+        "defeat": "RF jamming"
+      },
+      "operators": ["TR"],
+      "notes": "Turkish C-UAS system"
+    },
+    {
+      "id": "kr-dronekiller",
+      "name": "Hanwha DroneGuard",
+      "type": "cuas-system",
+      "country": "KR",
+      "year": 2020,
+      "manufacturer": "Hanwha",
+      "specifications": {
+        "detection": "Radar + EO/IR",
+        "defeat": "Jammer + laser"
+      },
+      "operators": ["KR"],
+      "notes": "Korean integrated C-UAS"
+    },
+    {
+      "id": "us-smash",
+      "name": "Smart Shooter SMASH",
+      "type": "smart-sight",
+      "country": "IL",
+      "year": 2018,
+      "manufacturer": "Smart Shooter",
+      "specifications": {
+        "type": "Fire control sight",
+        "platform": "Rifle/MG",
+        "capability": "Drone-tracking, auto-fire"
+      },
+      "operators": ["US", "IL", "AU", "Many"],
+      "notes": "Rifle-mounted drone-defeat sight"
+    },
+    {
+      "id": "uk-dragonfire",
+      "name": "MBDA Dragonfire",
+      "type": "directed-energy",
+      "country": "GB",
+      "year": 2024,
+      "manufacturer": "MBDA",
+      "specifications": {
+        "type": "High-energy laser",
+        "power_kw": 50,
+        "cost_per_shot_usd": 13
+      },
+      "operators": ["GB"],
+      "notes": "UK laser demonstrator for C-UAS/C-RAM"
+    },
+    {
+      "id": "de-mantis",
+      "name": "Rheinmetall MANTIS",
+      "type": "c-ram",
+      "country": "DE",
+      "year": 2011,
+      "manufacturer": "Rheinmetall",
+      "specifications": {
+        "guns": "6x 35mm Oerlikon",
+        "rate_of_fire_rpm": 1000,
+        "ammo": "AHEAD programmable"
+      },
+      "operators": ["DE"],
+      "notes": "Point defense, now C-UAS capable"
+    },
+    {
+      "id": "us-titan",
+      "name": "SRC TITAN",
+      "type": "cuas-system",
+      "country": "US",
+      "year": 2019,
+      "manufacturer": "SRC Inc",
+      "specifications": {
+        "detection": "AESA radar",
+        "defeat": "Electronic attack, kinetic options"
+      },
+      "operators": ["US"],
+      "notes": "Integrated C-UAS system"
+    }
+  ]
+}

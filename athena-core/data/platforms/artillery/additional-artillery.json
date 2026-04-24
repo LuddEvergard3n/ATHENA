@@ -1,0 +1,118 @@
+{
+  "category": "artillery",
+  "subcategory": "additional",
+  "metadata": {"file_version": "1.0", "last_updated": "2026-01-31"},
+  "platforms": [
+    {
+      "id": "tr-t155-firtina",
+      "name": "T-155 Fırtına",
+      "type": "sph",
+      "country": "TR",
+      "year": 2002,
+      "manufacturer": "MKEK/Samsung Techwin",
+      "service_history": {
+        "introduced": 2002,
+        "production_count": 350,
+        "operators": [
+          {"country": "TR", "quantity": 300, "status": "active"},
+          {"country": "AZ", "quantity": 36, "status": "active"}
+        ]
+      },
+      "specifications": {"caliber_mm": 155, "barrel_length": "L/52", "range_km": 40, "crew": 5},
+      "notes": "Based on K9 Thunder"
+    },
+    {
+      "id": "tr-t155-firtina2",
+      "name": "T-155 Fırtına II",
+      "type": "sph",
+      "country": "TR",
+      "year": 2022,
+      "manufacturer": "MKEK",
+      "service_history": {
+        "introduced": 2022,
+        "production_count": 100,
+        "operators": [{"country": "TR", "quantity": 100, "status": "production"}]
+      },
+      "specifications": {"caliber_mm": 155, "barrel_length": "L/52", "range_km": 56},
+      "notes": "Indigenous upgrade with longer range"
+    },
+    {
+      "id": "pl-ahs-krab",
+      "name": "AHS Krab",
+      "type": "sph",
+      "country": "PL",
+      "year": 2012,
+      "manufacturer": "HSW",
+      "service_history": {
+        "introduced": 2012,
+        "production_count": 120,
+        "operators": [
+          {"country": "PL", "quantity": 96, "status": "active"},
+          {"country": "UA", "quantity": 24, "status": "active"}
+        ]
+      },
+      "specifications": {"caliber_mm": 155, "barrel_length": "L/52", "range_km": 40, "crew": 5},
+      "notes": "AS90 turret on Korean K9 chassis"
+    },
+    {
+      "id": "cn-pcl181",
+      "name": "PCL-181 (SH-15)",
+      "type": "wheeled-sph",
+      "country": "CN",
+      "year": 2019,
+      "manufacturer": "NORINCO",
+      "service_history": {
+        "introduced": 2019,
+        "production_count": 300,
+        "operators": [{"country": "CN", "quantity": 300, "status": "active"}]
+      },
+      "specifications": {"caliber_mm": 155, "barrel_length": "L/52", "range_km": 53, "crew": 5},
+      "notes": "Truck-mounted 155mm howitzer"
+    },
+    {
+      "id": "in-atags",
+      "name": "ATAGS (Advanced Towed Artillery Gun System)",
+      "type": "towed",
+      "country": "IN",
+      "year": 2024,
+      "manufacturer": "DRDO/Tata/Bharat Forge",
+      "service_history": {
+        "introduced": 2024,
+        "production_count": 50,
+        "operators": [{"country": "IN", "quantity": 50, "status": "production"}]
+      },
+      "specifications": {"caliber_mm": 155, "barrel_length": "L/52", "range_km": 48},
+      "notes": "World's longest towed 155mm gun"
+    },
+    {
+      "id": "in-dhanush",
+      "name": "Dhanush",
+      "type": "towed",
+      "country": "IN",
+      "year": 2019,
+      "manufacturer": "OFB",
+      "service_history": {
+        "introduced": 2019,
+        "production_count": 114,
+        "operators": [{"country": "IN", "quantity": 114, "status": "active"}]
+      },
+      "specifications": {"caliber_mm": 155, "barrel_length": "L/45", "range_km": 38},
+      "notes": "Indigenous Bofors FH77 derivative"
+    },
+    {
+      "id": "us-m1299-erca",
+      "name": "M1299 ERCA",
+      "type": "sph",
+      "country": "US",
+      "year": 2023,
+      "manufacturer": "BAE Systems",
+      "service_history": {
+        "introduced": 2023,
+        "production_count": 18,
+        "operators": [{"country": "US", "quantity": 18, "status": "testing"}]
+      },
+      "specifications": {"caliber_mm": 155, "barrel_length": "L/58", "range_km": 70},
+      "notes": "Extended Range Cannon Artillery"
+    }
+  ]
+}

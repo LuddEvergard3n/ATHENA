@@ -1,0 +1,579 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "tr-tulpar",
+      "name": "FNSS Tulpar",
+      "type": "ifv",
+      "country_of_origin": "TR",
+      "manufacturer": "FNSS Savunma Sistemleri",
+      "service_history": {
+        "introduced": 2019,
+        "retired": null,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 100,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 9,
+        "weight_kg": 32000,
+        "weight_combat_kg": 42000,
+        "length_m": 7.5,
+        "width_m": 3.4,
+        "height_m": 2.8,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Scania DI 13",
+          "type": "diesel_turbocharged",
+          "power_hp": 810,
+          "power_kw": 604
+        },
+        "power_to_weight_hp_ton": 25.3,
+        "transmission": "Allison X-300 automatic",
+        "suspension": "hydropneumatic",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 45,
+        "range_road_km": 600,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "fording_depth_m": 1.2,
+        "trench_crossing_m": 2.4,
+        "vertical_obstacle_m": 0.9,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "M242 Bushmaster / MK44",
+          "caliber_mm": 30,
+          "type": "autocannon",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 60,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 200,
+          "effective_range_m": 3000,
+          "ammunition_carried": 400
+        },
+        "secondary": [
+          {
+            "designation": "FN MAG",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2400
+          }
+        ],
+        "atgm": {
+          "designation": "Kornet-E / L-UMTAS",
+          "missiles_carried": 4,
+          "range_m": 5500,
+          "penetration_mm_rha": 1200
+        }
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 5",
+        "mine_protection": "STANAG 4569 Level 4a/4b",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Aselsan Saber",
+        "commander_sight": {
+          "type": "Aselsan",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_warning_receiver": true,
+        "ballistic_computer": true,
+        "automatic_target_tracker": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "ir_signature_reduction": true
+      },
+      "unit_cost_usd": 6000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia FNSS Tulpar",
+        "Army Recognition",
+        "Defence Turkey"
+      ],
+      "notes": "Modern Turkish IFV. Multiple turret options. Kornet or indigenous L-UMTAS ATGM. Also used as SP artillery platform (T-155 Firtina-II).",
+      "year": 2016
+    },
+    {
+      "id": "tr-aifv",
+      "name": "ACV-15 AIFV",
+      "type": "ifv",
+      "country_of_origin": "TR",
+      "manufacturer": "FNSS Savunma Sistemleri",
+      "service_history": {
+        "introduced": 1992,
+        "retired": null,
+        "production_count": 1698,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 1698,
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 136,
+            "status": "active"
+          },
+          {
+            "country": "MY",
+            "quantity": 211,
+            "status": "active"
+          },
+          {
+            "country": "PH",
+            "quantity": 114,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 7,
+        "weight_kg": 14500,
+        "length_m": 5.26,
+        "width_m": 2.82,
+        "height_m": 2.79,
+        "ground_clearance_m": 0.41
+      },
+      "mobility": {
+        "engine": {
+          "model": "Detroit Diesel 6V-53T",
+          "type": "diesel_turbocharged",
+          "power_hp": 280,
+          "power_kw": 209
+        },
+        "power_to_weight_hp_ton": 19.3,
+        "transmission": "Allison TX-100-1 automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 61,
+        "max_speed_offroad_kmh": 40,
+        "max_speed_water_kmh": 6,
+        "range_road_km": 490,
+        "amphibious": true,
+        "propulsion_water": "tracks"
+      },
+      "armament": {
+        "main": {
+          "designation": "Oerlikon KBA B02",
+          "caliber_mm": 25,
+          "type": "autocannon",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 50,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 570,
+          "effective_range_m": 2000,
+          "ammunition_carried": 324
+        },
+        "secondary": [
+          {
+            "designation": "MG3",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "aluminum",
+        "protection_front_mm_rha": 30,
+        "protection_side_mm_rha": 15,
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Sharpshooter",
+        "gunner_sight": {
+          "thermal": true,
+          "thermal_generation": "1st"
+        },
+        "laser_rangefinder": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 4
+      },
+      "unit_cost_usd": 1000000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia AIFV",
+        "Army Recognition",
+        "FNSS"
+      ],
+      "notes": "M113 derivative. Licensed AIFV production. Multiple turret upgrades available. ACV-S variant 35mm gun. Amphbious. 2,300+ exported.",
+      "year": 1992
+    },
+    {
+      "id": "pl-borsuk",
+      "name": "Borsuk",
+      "type": "ifv",
+      "country_of_origin": "PL",
+      "manufacturer": "Huta Stalowa Wola",
+      "service_history": {
+        "introduced": 2024,
+        "retired": null,
+        "production_count": 1000,
+        "operators": [
+          {
+            "country": "PL",
+            "quantity": 1000,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 6,
+        "weight_kg": 28000,
+        "weight_combat_kg": 35000,
+        "length_m": 7.5,
+        "width_m": 3.5,
+        "height_m": 3.0,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU 8V199 TE20",
+          "type": "diesel_turbocharged",
+          "power_hp": 720,
+          "power_kw": 537
+        },
+        "power_to_weight_hp_ton": 25.7,
+        "transmission": "Renk HSWL automatic",
+        "suspension": "hydropneumatic",
+        "max_speed_road_kmh": 65,
+        "max_speed_offroad_kmh": 45,
+        "max_speed_water_kmh": 8,
+        "range_road_km": 800,
+        "gradient_percent": 60,
+        "amphibious": true,
+        "propulsion_water": "waterjets"
+      },
+      "armament": {
+        "main": {
+          "designation": "ATK MK44 Bushmaster II",
+          "caliber_mm": 30,
+          "type": "autocannon",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 60,
+          "traverse_deg": 360,
+          "stabilization": "two-axis electric",
+          "rate_of_fire_rpm": 200,
+          "effective_range_m": 3000,
+          "ammunition_carried": 400,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "penetration_mm_rha": 90,
+              "penetration_range_m": 1000
+            },
+            {
+              "type": "ABM",
+              "notes": "Airburst programmable"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "UKM-2000C",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "Spike LR2",
+          "missiles_carried": 2,
+          "range_m": 5500,
+          "penetration_mm_rha": 800,
+          "fire_and_forget": true
+        }
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 5",
+        "mine_protection": "STANAG 4569 Level 4a/4b",
+        "aps": {
+          "system": "IMI Iron Fist Light",
+          "type": "hard-kill"
+        },
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Rafael Samson 30",
+        "commander_sight": {
+          "type": "Panoramic",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_warning_receiver": true,
+        "ballistic_computer": true,
+        "automatic_target_tracker": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "ir_signature_reduction": true
+      },
+      "unit_cost_usd": 7000000,
+      "cost_year": 2023,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Borsuk IFV",
+        "Army Recognition",
+        "Jane's"
+      ],
+      "notes": "BWP-1 replacement. ZSSW-30 turret with Spike ATGM. Iron Fist APS. 1000 ordered 2022. Amphibious (8 km/h). Polish-Israeli cooperation.",
+      "year": 2022
+    },
+    {
+      "id": "es-pizarro",
+      "name": "Pizarro VCI",
+      "type": "ifv",
+      "country_of_origin": "ES",
+      "manufacturer": "Santa B\u00e1rbara Sistemas / GDELS",
+      "service_history": {
+        "introduced": 2002,
+        "retired": null,
+        "production_count": 212,
+        "operators": [
+          {
+            "country": "ES",
+            "quantity": 212,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 8,
+        "weight_kg": 28300,
+        "length_m": 6.61,
+        "width_m": 3.15,
+        "height_m": 2.67,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU 8V-183-TE22",
+          "type": "diesel_turbocharged",
+          "power_hp": 600,
+          "power_kw": 447
+        },
+        "power_to_weight_hp_ton": 21.2,
+        "transmission": "Renk HSWL 106C automatic",
+        "suspension": "torsion bar with hydraulic dampers",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 45,
+        "range_road_km": 500,
+        "gradient_percent": 60,
+        "fording_depth_m": 1.2,
+        "trench_crossing_m": 2.3,
+        "vertical_obstacle_m": 0.95,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "Mauser MK30-2",
+          "caliber_mm": 30,
+          "type": "autocannon",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 50,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 700,
+          "effective_range_m": 2500,
+          "ammunition_carried": 405
+        },
+        "secondary": [
+          {
+            "designation": "MG3",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2200
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 4",
+        "protection_front_mm_rha": 30,
+        "protection_upgrade": "Add-on MEXAS package",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "INDRA",
+        "commander_sight": {
+          "type": "Panoramic",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true,
+        "automatic_target_tracker": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8
+      },
+      "unit_cost_usd": 4000000,
+      "cost_year": 2005,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Pizarro",
+        "Army Recognition",
+        "Jane's"
+      ],
+      "notes": "ASCOD derivative (same as Austrian Ulan). Spanish variant. Afghanistan deployed. Phase 2 upgrade adds Spike ATGM.",
+      "year": 2000
+    },
+    {
+      "id": "at-ulan",
+      "name": "Ulan",
+      "type": "ifv",
+      "country_of_origin": "AT",
+      "manufacturer": "Steyr-Daimler-Puch",
+      "service_history": {
+        "introduced": 2001,
+        "retired": null,
+        "production_count": 112,
+        "operators": [
+          {
+            "country": "AT",
+            "quantity": 112,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 8,
+        "weight_kg": 28000,
+        "length_m": 6.56,
+        "width_m": 3.15,
+        "height_m": 2.85,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU 8V-183-TE22",
+          "type": "diesel_turbocharged",
+          "power_hp": 600,
+          "power_kw": 447
+        },
+        "power_to_weight_hp_ton": 21.4,
+        "transmission": "Renk HSWL 106C automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 70,
+        "range_road_km": 500,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "Mauser MK30-2",
+          "caliber_mm": 30,
+          "type": "autocannon",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 50,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 700,
+          "effective_range_m": 2500,
+          "ammunition_carried": 400
+        },
+        "secondary": [
+          {
+            "designation": "MG74",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2500
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 4",
+        "protection_front_mm_rha": 30,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "BGTI FCS",
+        "commander_sight": {
+          "type": "Pilkington Optronics",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true
+        },
+        "gunner_sight": {
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8
+      },
+      "unit_cost_usd": 4000000,
+      "cost_year": 2002,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia ASCOD",
+        "Army Recognition"
+      ],
+      "notes": "ASCOD (Austrian-Spanish Cooperation Development). Base platform for Spanish Pizarro and UK Ajax. Neutral Austria - no combat deployment.",
+      "year": 2002
+    }
+  ]
+}

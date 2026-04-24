@@ -1,0 +1,634 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition",
+      "Lockheed Martin"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-m270",
+      "name": "M270 MLRS",
+      "type": "mlrs",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "service_history": {
+        "introduced": 1983,
+        "retired": null,
+        "production_count": 1300,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 390,
+            "variants": [
+              "M270A1",
+              "M270A2"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "UK",
+            "quantity": 44,
+            "variants": [
+              "M270B1"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "DE",
+            "quantity": 38,
+            "variants": [
+              "MARS II"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "FR",
+            "quantity": 13,
+            "variants": [
+              "LRU"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "quantity": 22,
+            "status": "active"
+          },
+          {
+            "country": "GR",
+            "quantity": 36,
+            "status": "active"
+          },
+          {
+            "country": "TR",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "NL",
+            "quantity": 22,
+            "status": "active"
+          },
+          {
+            "country": "NO",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "FI",
+            "quantity": 29,
+            "status": "active"
+          },
+          {
+            "country": "JP",
+            "quantity": 99,
+            "variants": [
+              "MLRS"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "quantity": 58,
+            "status": "active"
+          },
+          {
+            "country": "IL",
+            "quantity": 48,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 48,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 30,
+            "status": "active"
+          },
+          {
+            "country": "BH",
+            "quantity": 9,
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 4,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 24756,
+        "weight_combat_kg": 44225,
+        "length_m": 6.85,
+        "width_m": 2.97,
+        "height_m": 2.59,
+        "ground_clearance_m": 0.43
+      },
+      "mobility": {
+        "engine": {
+          "model": "Cummins VTA-903T",
+          "type": "diesel_turbocharged",
+          "power_hp": 500,
+          "power_kw": 373
+        },
+        "power_to_weight_hp_ton": 20.2,
+        "transmission": "Allison XTG-411-4A automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 64,
+        "max_speed_offroad_kmh": 40,
+        "range_road_km": 480,
+        "fuel_capacity_liters": 618,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.3,
+        "vertical_obstacle_m": 1.0,
+        "fording_depth_m": 1.1,
+        "notes": "Bradley chassis derivative"
+      },
+      "armament": {
+        "main": {
+          "designation": "M269 Launcher Loader Module",
+          "type": "mlrs",
+          "traverse_deg": 180,
+          "elevation_min_deg": 0,
+          "elevation_max_deg": 60,
+          "rocket_options": [
+            {
+              "designation": "M26 DPICM",
+              "caliber_mm": 227,
+              "rockets_per_pod": 12,
+              "pods": 2,
+              "total_rockets": 24,
+              "range_min_km": 10,
+              "range_max_km": 32,
+              "warhead_type": "DPICM (644 submunitions)",
+              "guidance": "unguided",
+              "status": "phased out"
+            },
+            {
+              "designation": "M30/M31 GMLRS",
+              "caliber_mm": 227,
+              "rockets_per_pod": 6,
+              "pods": 2,
+              "total_rockets": 12,
+              "range_min_km": 15,
+              "range_max_km": 84,
+              "warhead_kg": 90,
+              "warhead_type": "Unitary HE (M31) or DPICM (M30)",
+              "guidance": "GPS/INS",
+              "cep_m": 5
+            },
+            {
+              "designation": "ER GMLRS",
+              "caliber_mm": 227,
+              "rockets_per_pod": 6,
+              "pods": 2,
+              "total_rockets": 12,
+              "range_min_km": 15,
+              "range_max_km": 150,
+              "warhead_kg": 90,
+              "guidance": "GPS/INS",
+              "cep_m": 5,
+              "status": "entering service 2025"
+            },
+            {
+              "designation": "MGM-140 ATACMS",
+              "caliber_mm": 610,
+              "missiles_per_pod": 1,
+              "pods": 2,
+              "total_missiles": 2,
+              "range_min_km": 25,
+              "range_max_km": 300,
+              "warhead_kg": 227,
+              "warhead_type": "Unitary HE (M57) or DPICM (M39)",
+              "guidance": "GPS/INS",
+              "cep_m": 10
+            },
+            {
+              "designation": "PrSM",
+              "caliber_mm": 430,
+              "missiles_per_pod": 2,
+              "pods": 2,
+              "total_missiles": 4,
+              "range_min_km": 60,
+              "range_max_km": 500,
+              "warhead_kg": 90,
+              "guidance": "GPS/INS + terminal seeker",
+              "cep_m": 3,
+              "status": "entering service 2024"
+            }
+          ],
+          "reload_time_minutes": 5
+        }
+      },
+      "protection": {
+        "armor_type": "aluminum",
+        "protection_front_mm_rha": 12,
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "UFCS (Universal Fire Control System)",
+        "navigation": "GPS/INS",
+        "ballistic_computer": true,
+        "data_link": "AFATDS compatible",
+        "automatic_gun_laying": true
+      },
+      "unit_cost_usd": 3500000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia M270 MLRS",
+        "Army Recognition",
+        "Lockheed Martin"
+      ],
+      "notes": "Gulf War star - 17,000+ rockets fired in 1991. Ukraine: highly effective vs Russian logistics. M270A2 upgrade: improved FCS, GPS, reduced crew from 3 to 2. ATACMS 300km range. PrSM 500km range replacing ATACMS.",
+      "year": 1983
+    },
+    {
+      "id": "us-m270a2",
+      "name": "M270A2 MLRS",
+      "type": "mlrs",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "service_history": {
+        "introduced": 2024,
+        "retired": null,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 100,
+            "status": "entering service"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_kg": 25000,
+        "weight_combat_kg": 45000,
+        "length_m": 6.85,
+        "width_m": 2.97,
+        "height_m": 2.59
+      },
+      "mobility": {
+        "engine": {
+          "model": "Cummins VTA-903T",
+          "type": "diesel_turbocharged",
+          "power_hp": 600,
+          "power_kw": 447
+        },
+        "power_to_weight_hp_ton": 24.0,
+        "max_speed_road_kmh": 64,
+        "range_road_km": 480
+      },
+      "armament": {
+        "main": {
+          "designation": "M270A2 Launcher",
+          "type": "mlrs",
+          "rocket_options": [
+            {
+              "designation": "M31A1/A2 GMLRS",
+              "caliber_mm": 227,
+              "total_rockets": 12,
+              "range_max_km": 84,
+              "guidance": "GPS/INS",
+              "cep_m": 5
+            },
+            {
+              "designation": "ER GMLRS",
+              "caliber_mm": 227,
+              "total_rockets": 12,
+              "range_max_km": 150,
+              "guidance": "GPS/INS",
+              "cep_m": 5
+            },
+            {
+              "designation": "PrSM",
+              "caliber_mm": 430,
+              "total_missiles": 4,
+              "range_max_km": 500,
+              "guidance": "GPS/INS + seeker",
+              "cep_m": 3
+            }
+          ],
+          "reload_time_minutes": 4
+        }
+      },
+      "protection": {
+        "armor_type": "aluminum_enhanced",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "UFCS Block II",
+        "navigation": "GPS/INS SAASM",
+        "automatic_gun_laying": true,
+        "data_link": "Link 16 compatible"
+      },
+      "unit_cost_usd": 5000000,
+      "cost_year": 2024,
+      "confidence": "medium",
+      "sources": [
+        "Army Recognition",
+        "Lockheed Martin"
+      ],
+      "notes": "Latest upgrade. 2-man crew (reduced from 3). Enhanced FCS. Faster reload. PrSM compatible. IBCS integration.",
+      "year": 2020
+    },
+    {
+      "id": "us-m142",
+      "name": "M142 HIMARS",
+      "type": "mlrs",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "service_history": {
+        "introduced": 2005,
+        "retired": null,
+        "production_count": 600,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 414,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 38,
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 486,
+            "status": "ordered"
+          },
+          {
+            "country": "RO",
+            "quantity": 54,
+            "status": "active"
+          },
+          {
+            "country": "SG",
+            "quantity": 18,
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 9,
+            "status": "active"
+          },
+          {
+            "country": "JO",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 20,
+            "status": "ordered"
+          },
+          {
+            "country": "TW",
+            "quantity": 29,
+            "status": "ordered"
+          },
+          {
+            "country": "EE",
+            "quantity": 6,
+            "status": "ordered"
+          },
+          {
+            "country": "LT",
+            "quantity": 8,
+            "status": "ordered"
+          },
+          {
+            "country": "LV",
+            "quantity": 6,
+            "status": "ordered"
+          },
+          {
+            "country": "NL",
+            "quantity": 8,
+            "status": "ordered"
+          },
+          {
+            "country": "DE",
+            "quantity": 20,
+            "status": "ordered"
+          },
+          {
+            "country": "UK",
+            "quantity": 8,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 10886,
+        "weight_combat_kg": 16257,
+        "length_m": 7.0,
+        "width_m": 2.4,
+        "height_m": 3.2,
+        "ground_clearance_m": 0.38
+      },
+      "mobility": {
+        "engine": {
+          "model": "Caterpillar 3116",
+          "type": "diesel_turbocharged",
+          "power_hp": 290,
+          "power_kw": 216
+        },
+        "power_to_weight_hp_ton": 26.7,
+        "drivetrain": "6x6",
+        "transmission": "Allison MD3070PT automatic",
+        "max_speed_road_kmh": 85,
+        "max_speed_offroad_kmh": 50,
+        "range_road_km": 480,
+        "fuel_capacity_liters": 473,
+        "gradient_percent": 60,
+        "fording_depth_m": 0.91,
+        "notes": "FMTV truck chassis - C-130 transportable"
+      },
+      "armament": {
+        "main": {
+          "designation": "M142 Launcher",
+          "type": "mlrs",
+          "traverse_deg": 180,
+          "elevation_min_deg": 0,
+          "elevation_max_deg": 60,
+          "rocket_options": [
+            {
+              "designation": "M30/M31 GMLRS",
+              "caliber_mm": 227,
+              "rockets_per_pod": 6,
+              "pods": 1,
+              "total_rockets": 6,
+              "range_min_km": 15,
+              "range_max_km": 84,
+              "warhead_kg": 90,
+              "guidance": "GPS/INS",
+              "cep_m": 5
+            },
+            {
+              "designation": "ER GMLRS",
+              "caliber_mm": 227,
+              "total_rockets": 6,
+              "range_max_km": 150,
+              "guidance": "GPS/INS",
+              "cep_m": 5
+            },
+            {
+              "designation": "MGM-140 ATACMS",
+              "caliber_mm": 610,
+              "missiles_per_pod": 1,
+              "pods": 1,
+              "total_missiles": 1,
+              "range_max_km": 300,
+              "warhead_kg": 227,
+              "guidance": "GPS/INS",
+              "cep_m": 10
+            },
+            {
+              "designation": "PrSM",
+              "caliber_mm": 430,
+              "missiles_per_pod": 2,
+              "pods": 1,
+              "total_missiles": 2,
+              "range_max_km": 500,
+              "guidance": "GPS/INS + seeker",
+              "cep_m": 3
+            },
+            {
+              "designation": "GLSDB",
+              "caliber_mm": 227,
+              "total_rockets": 6,
+              "range_max_km": 150,
+              "warhead_kg": 110,
+              "guidance": "GPS/INS + terminal",
+              "notes": "Ground-Launched Small Diameter Bomb"
+            }
+          ],
+          "reload_time_minutes": 5
+        }
+      },
+      "protection": {
+        "armor_type": "soft_skin",
+        "armor_composition": "Armored cab",
+        "stanag_level": "4569 Level 1",
+        "nbc_protection": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "UFCS",
+        "navigation": "GPS/INS",
+        "ballistic_computer": true,
+        "data_link": "AFATDS",
+        "automatic_gun_laying": true
+      },
+      "unit_cost_usd": 5500000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia M142 HIMARS",
+        "Army Recognition",
+        "Lockheed Martin"
+      ],
+      "notes": "Ukraine war star. C-130 transportable. Half the firepower of M270 but twice the mobility. Shoot-and-scoot doctrine. GMLRS 84km precision strike. Poland order 486 - largest export. ER GMLRS 150km, PrSM 500km.",
+      "year": 2005
+    },
+    {
+      "id": "us-m142a1",
+      "name": "M142A1 HIMARS",
+      "type": "mlrs",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "service_history": {
+        "introduced": 2025,
+        "retired": null,
+        "production_count": 50,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 50,
+            "status": "entering service"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_kg": 11000,
+        "weight_combat_kg": 17000,
+        "length_m": 7.0,
+        "width_m": 2.4,
+        "height_m": 3.2
+      },
+      "mobility": {
+        "engine": {
+          "model": "Caterpillar upgraded",
+          "type": "diesel_turbocharged",
+          "power_hp": 350,
+          "power_kw": 261
+        },
+        "power_to_weight_hp_ton": 31.8,
+        "drivetrain": "6x6",
+        "max_speed_road_kmh": 85,
+        "range_road_km": 500
+      },
+      "armament": {
+        "main": {
+          "designation": "M142A1 Launcher",
+          "type": "mlrs",
+          "rocket_options": [
+            {
+              "designation": "ER GMLRS",
+              "total_rockets": 6,
+              "range_max_km": 150
+            },
+            {
+              "designation": "PrSM",
+              "total_missiles": 2,
+              "range_max_km": 500
+            },
+            {
+              "designation": "PrSM Increment 2",
+              "total_missiles": 2,
+              "range_max_km": 1000,
+              "guidance": "GPS/INS + seeker",
+              "notes": "Anti-ship capable"
+            }
+          ],
+          "reload_time_minutes": 4
+        }
+      },
+      "protection": {
+        "armor_type": "enhanced_cab",
+        "stanag_level": "4569 Level 2"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "UFCS Block III",
+        "navigation": "GPS/INS M-Code",
+        "data_link": "Link 16, IBCS"
+      },
+      "unit_cost_usd": 7000000,
+      "cost_year": 2025,
+      "confidence": "low",
+      "sources": [
+        "Army Recognition",
+        "Lockheed Martin"
+      ],
+      "notes": "Latest variant. 2-man crew. Enhanced cab protection. PrSM Inc 2 capable (1000km). IBCS integration. M-Code GPS for jamming resistance.",
+      "year": 2022
+    }
+  ]
+}

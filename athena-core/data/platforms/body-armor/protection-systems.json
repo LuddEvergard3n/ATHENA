@@ -1,0 +1,269 @@
+{
+  "category": "body-armor",
+  "subcategory": "protection-systems",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": [
+      "Jane's Infantry Weapons",
+      "NIJ Standards"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-iotv",
+      "name": "IOTV Gen IV",
+      "type": "plate-carrier",
+      "country": "US",
+      "year": 2019,
+      "manufacturer": "KDH/Point Blank",
+      "specifications": {
+        "protection_level": "NIJ Level IV",
+        "weight_kg": 14.5,
+        "coverage": "Front, back, sides, shoulders",
+        "plates": "ESAPI/XSAPI"
+      },
+      "operators": [
+        "US Army"
+      ],
+      "notes": "Standard US Army body armor"
+    },
+    {
+      "id": "us-sps",
+      "name": "Soldier Protection System (SPS)",
+      "type": "modular-armor",
+      "country": "US",
+      "year": 2019,
+      "manufacturer": "Various",
+      "specifications": {
+        "protection_level": "Scalable",
+        "components": [
+          "Torso vest",
+          "Ballistic combat shirt",
+          "Extremity protection"
+        ],
+        "weight_kg": "11-16 (scalable)"
+      },
+      "operators": [
+        "US Army"
+      ],
+      "notes": "Next-gen modular protection"
+    },
+    {
+      "id": "us-mtv",
+      "name": "Modular Tactical Vest (MTV)",
+      "type": "plate-carrier",
+      "country": "US",
+      "year": 2006,
+      "manufacturer": "Point Blank",
+      "specifications": {
+        "protection_level": "NIJ Level IV",
+        "weight_kg": 13.5
+      },
+      "operators": [
+        "US Marines"
+      ],
+      "notes": "USMC standard body armor"
+    },
+    {
+      "id": "us-ach",
+      "name": "ACH (Advanced Combat Helmet)",
+      "type": "helmet",
+      "country": "US",
+      "year": 2003,
+      "manufacturer": "Various",
+      "specifications": {
+        "protection_level": "NIJ IIIA",
+        "weight_kg": 1.36,
+        "material": "Kevlar aramid"
+      },
+      "operators": [
+        "US"
+      ],
+      "notes": "Standard US combat helmet"
+    },
+    {
+      "id": "us-ihps",
+      "name": "IHPS (Integrated Head Protection System)",
+      "type": "helmet",
+      "country": "US",
+      "year": 2019,
+      "manufacturer": "3M/Ceradyne",
+      "specifications": {
+        "protection_level": "NIJ IIIA+",
+        "weight_kg": 1.4,
+        "material": "UHMWPE",
+        "features": "Mandible guard, visor options"
+      },
+      "operators": [
+        "US Army"
+      ],
+      "notes": "New Army helmet, ACH replacement"
+    },
+    {
+      "id": "ru-6b45",
+      "name": "6B45 (Ratnik)",
+      "type": "plate-carrier",
+      "country": "RU",
+      "year": 2015,
+      "manufacturer": "NPP KlASS",
+      "specifications": {
+        "protection_level": "GOST 5/5a",
+        "weight_kg": 8.2,
+        "plates": "Granit-4 ceramic"
+      },
+      "operators": [
+        "RU"
+      ],
+      "notes": "Russian Ratnik body armor"
+    },
+    {
+      "id": "ru-6b47",
+      "name": "6B47 Helmet",
+      "type": "helmet",
+      "country": "RU",
+      "year": 2015,
+      "manufacturer": "NPP KlASS",
+      "specifications": {
+        "protection_level": "GOST 2",
+        "weight_kg": 1.0,
+        "material": "Aramid/UHMWPE"
+      },
+      "operators": [
+        "RU"
+      ],
+      "notes": "Russian Ratnik helmet"
+    },
+    {
+      "id": "ru-altyn",
+      "name": "Altyn Helmet",
+      "type": "assault-helmet",
+      "country": "RU",
+      "year": 1984,
+      "manufacturer": "Various",
+      "specifications": {
+        "protection_level": "GOST 1",
+        "features": "Integrated visor",
+        "weight_kg": 3.5
+      },
+      "operators": [
+        "RU (FSB, MVD)"
+      ],
+      "notes": "Iconic Russian special forces helmet"
+    },
+    {
+      "id": "uk-virtus",
+      "name": "Virtus Body Armour",
+      "type": "plate-carrier",
+      "country": "GB",
+      "year": 2016,
+      "manufacturer": "Source Vagabond",
+      "specifications": {
+        "protection_level": "NIJ Level IV equivalent",
+        "weight_kg": 11,
+        "scalable": true
+      },
+      "operators": [
+        "GB"
+      ],
+      "notes": "British Army modular armor"
+    },
+    {
+      "id": "uk-mk7",
+      "name": "Mk 7 Helmet",
+      "type": "helmet",
+      "country": "GB",
+      "year": 2009,
+      "manufacturer": "NP Aerospace",
+      "specifications": {
+        "protection_level": "NIJ IIIA",
+        "weight_kg": 1.4
+      },
+      "operators": [
+        "GB"
+      ],
+      "notes": "British Army combat helmet"
+    },
+    {
+      "id": "de-idz-es",
+      "name": "IdZ-ES Body Armor",
+      "type": "plate-carrier",
+      "country": "DE",
+      "year": 2012,
+      "manufacturer": "Rheinmetall",
+      "specifications": {
+        "system": "Infanterist der Zukunft",
+        "protection_level": "SK4 (German)",
+        "modular": true
+      },
+      "operators": [
+        "DE"
+      ],
+      "notes": "Bundeswehr future soldier system"
+    },
+    {
+      "id": "fr-felin",
+      "name": "FELIN Body Armor",
+      "type": "integrated-system",
+      "country": "FR",
+      "year": 2011,
+      "manufacturer": "Safran/Thales",
+      "specifications": {
+        "system": "FELIN integrated soldier",
+        "protection_level": "NIJ IV equivalent",
+        "features": "Integrated electronics, comms"
+      },
+      "operators": [
+        "FR"
+      ],
+      "notes": "French integrated soldier system"
+    },
+    {
+      "id": "il-hashmonai",
+      "name": "HASHMONAI Mk 4",
+      "type": "plate-carrier",
+      "country": "IL",
+      "year": 2018,
+      "manufacturer": "Source Tactical",
+      "specifications": {
+        "protection_level": "NIJ Level IV",
+        "weight_kg": 9.5
+      },
+      "operators": [
+        "IL (IDF)"
+      ],
+      "notes": "IDF current body armor"
+    },
+    {
+      "id": "cn-qgf03",
+      "name": "QGF-03 Helmet",
+      "type": "helmet",
+      "country": "CN",
+      "year": 2003,
+      "manufacturer": "Norinco",
+      "specifications": {
+        "protection_level": "NIJ IIIA equivalent",
+        "weight_kg": 1.5
+      },
+      "operators": [
+        "CN"
+      ],
+      "notes": "PLA standard helmet"
+    },
+    {
+      "id": "tr-bora-armor",
+      "name": "Bora-12 Body Armor",
+      "type": "plate-carrier",
+      "country": "TR",
+      "year": 2019,
+      "manufacturer": "Nurol Makina",
+      "specifications": {
+        "protection_level": "NIJ Level IV"
+      },
+      "operators": [
+        "TR"
+      ],
+      "notes": "Turkish indigenous body armor"
+    }
+  ]
+}

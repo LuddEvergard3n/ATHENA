@@ -1,0 +1,306 @@
+{
+  "category": "munitions",
+  "subcategory": "loitering",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": ["Jane's Unmanned Aerial Vehicles", "IISS"]
+  },
+  "platforms": [
+    {
+      "id": "us-switchblade300",
+      "name": "AeroVironment Switchblade 300",
+      "type": "loitering-munition",
+      "country": "US",
+      "year": 2011,
+      "manufacturer": "AeroVironment",
+      "specifications": {
+        "endurance_min": 15,
+        "range_km": 10,
+        "speed_kmh": 160,
+        "warhead": "Anti-personnel",
+        "guidance": "EO/IR + GPS",
+        "weight_kg": 2.7,
+        "wingspan_mm": 660
+      },
+      "service_history": {
+        "operators": [
+          {"country": "US", "quantity": 10000, "status": "active"},
+          {"country": "UA", "quantity": 1000, "status": "active"}
+        ]
+      },
+      "notes": "Man-portable kamikaze drone"
+    },
+    {
+      "id": "us-switchblade600",
+      "name": "AeroVironment Switchblade 600",
+      "type": "loitering-munition",
+      "country": "US",
+      "year": 2021,
+      "manufacturer": "AeroVironment",
+      "specifications": {
+        "endurance_min": 40,
+        "range_km": 40,
+        "speed_kmh": 180,
+        "warhead": "Javelin HEAT (anti-armor)",
+        "guidance": "EO/IR + GPS + AI",
+        "weight_kg": 23,
+        "wingspan_mm": 1300
+      },
+      "service_history": {
+        "operators": [
+          {"country": "US", "quantity": 700, "status": "active"},
+          {"country": "UA", "quantity": 200, "status": "active"}
+        ]
+      },
+      "notes": "Anti-armor loitering munition"
+    },
+    {
+      "id": "il-harop-lm",
+      "name": "IAI Harop",
+      "type": "loitering-munition",
+      "country": "IL",
+      "year": 2009,
+      "manufacturer": "IAI",
+      "specifications": {
+        "endurance_hours": 6,
+        "range_km": 1000,
+        "speed_kmh": 400,
+        "warhead_kg": 23,
+        "guidance": "EO + anti-radiation seeker",
+        "weight_kg": 135,
+        "wingspan_m": 3.0
+      },
+      "service_history": {
+        "operators": [
+          {"country": "IL", "quantity": 100, "status": "active"},
+          {"country": "IN", "quantity": 100, "status": "active"},
+          {"country": "AZ", "quantity": 50, "status": "active"},
+          {"country": "DE", "quantity": 140, "status": "ordered"}
+        ]
+      },
+      "notes": "SEAD-capable, used extensively in Nagorno-Karabakh"
+    },
+    {
+      "id": "il-harpy",
+      "name": "IAI Harpy",
+      "type": "loitering-munition",
+      "country": "IL",
+      "year": 1989,
+      "manufacturer": "IAI",
+      "specifications": {
+        "endurance_hours": 2.5,
+        "range_km": 500,
+        "speed_kmh": 185,
+        "warhead_kg": 32,
+        "guidance": "Anti-radiation seeker",
+        "weight_kg": 135
+      },
+      "service_history": {
+        "operators": [
+          {"country": "IL", "quantity": 100, "status": "active"},
+          {"country": "KR", "quantity": 100, "status": "active"},
+          {"country": "TR", "quantity": 100, "status": "active"}
+        ]
+      },
+      "notes": "Original SEAD loitering munition"
+    },
+    {
+      "id": "il-hero30",
+      "name": "UVision Hero-30",
+      "type": "loitering-munition",
+      "country": "IL",
+      "year": 2016,
+      "manufacturer": "UVision",
+      "specifications": {
+        "endurance_min": 30,
+        "range_km": 40,
+        "warhead_kg": 0.5,
+        "weight_kg": 3.0,
+        "guidance": "EO/IR + GPS"
+      },
+      "notes": "Man-portable precision strike"
+    },
+    {
+      "id": "il-hero120",
+      "name": "UVision Hero-120",
+      "type": "loitering-munition",
+      "country": "IL",
+      "year": 2018,
+      "manufacturer": "UVision",
+      "specifications": {
+        "endurance_min": 60,
+        "range_km": 60,
+        "warhead_kg": 4.5,
+        "weight_kg": 12.5,
+        "guidance": "EO/IR + GPS + AI"
+      },
+      "service_history": {
+        "operators": [{"country": "US", "quantity": 500, "status": "ordered", "notes": "Phoenix Ghost based on Hero-120"}]
+      },
+      "notes": "Anti-armor capable"
+    },
+    {
+      "id": "il-hero400",
+      "name": "UVision Hero-400",
+      "type": "loitering-munition",
+      "country": "IL",
+      "year": 2020,
+      "manufacturer": "UVision",
+      "specifications": {
+        "endurance_hours": 2,
+        "range_km": 150,
+        "warhead_kg": 40,
+        "weight_kg": 40,
+        "guidance": "EO/IR + GPS + AI"
+      },
+      "notes": "Heavy loitering munition for hardened targets"
+    },
+    {
+      "id": "ru-lancet-lm",
+      "name": "ZALA Lancet",
+      "type": "loitering-munition",
+      "country": "RU",
+      "year": 2021,
+      "manufacturer": "ZALA Aero",
+      "specifications": {
+        "endurance_min": 40,
+        "range_km": 40,
+        "speed_kmh": 300,
+        "warhead_kg": 3,
+        "guidance": "EO/IR + AI",
+        "weight_kg": 12
+      },
+      "variants": ["Lancet-1 (5kg)", "Lancet-3 (12kg)"],
+      "service_history": {
+        "operators": [{"country": "RU", "quantity": 5000, "status": "active"}]
+      },
+      "notes": "Most used Russian loitering munition in Ukraine"
+    },
+    {
+      "id": "ru-kub-lm",
+      "name": "ZALA KUB-BLA",
+      "type": "loitering-munition",
+      "country": "RU",
+      "year": 2021,
+      "manufacturer": "ZALA Aero",
+      "specifications": {
+        "endurance_min": 30,
+        "range_km": 40,
+        "speed_kmh": 130,
+        "warhead_kg": 3,
+        "weight_kg": 7
+      },
+      "notes": "Flying wing design"
+    },
+    {
+      "id": "ir-shahed136-lm",
+      "name": "Shahed-136 (Geran-2)",
+      "type": "loitering-munition",
+      "country": "IR",
+      "year": 2021,
+      "manufacturer": "IRGC",
+      "specifications": {
+        "range_km": 2500,
+        "speed_kmh": 185,
+        "warhead_kg": 40,
+        "guidance": "GPS + INS",
+        "weight_kg": 200,
+        "wingspan_m": 2.5,
+        "endurance_hours": 10
+      },
+      "service_history": {
+        "operators": [
+          {"country": "IR", "quantity": 5000, "status": "active"},
+          {"country": "RU", "quantity": 3000, "status": "active", "notes": "As Geran-2"}
+        ]
+      },
+      "notes": "Low-cost cruise missile/drone, heavily used in Ukraine"
+    },
+    {
+      "id": "ir-shahed131",
+      "name": "Shahed-131",
+      "type": "loitering-munition",
+      "country": "IR",
+      "year": 2022,
+      "manufacturer": "IRGC",
+      "specifications": {
+        "range_km": 900,
+        "speed_kmh": 185,
+        "warhead_kg": 15,
+        "weight_kg": 135
+      },
+      "notes": "Smaller Shahed variant"
+    },
+    {
+      "id": "tr-kargu2",
+      "name": "STM Kargu-2",
+      "type": "loitering-munition",
+      "country": "TR",
+      "year": 2020,
+      "manufacturer": "STM",
+      "specifications": {
+        "endurance_min": 30,
+        "range_km": 10,
+        "speed_kmh": 145,
+        "warhead": "Fragmentation",
+        "weight_kg": 7,
+        "guidance": "AI + EO/IR"
+      },
+      "notes": "Quadcopter-based, AI autonomous attack capability"
+    },
+    {
+      "id": "cn-ws43",
+      "name": "WS-43",
+      "type": "loitering-munition",
+      "country": "CN",
+      "year": 2018,
+      "manufacturer": "CASIC",
+      "specifications": {
+        "range_km": 60,
+        "endurance_hours": 4,
+        "warhead_kg": 20,
+        "guidance": "GPS/BDS + EO/IR"
+      },
+      "notes": "Chinese loitering munition"
+    },
+    {
+      "id": "pl-warmate",
+      "name": "WB Electronics Warmate",
+      "type": "loitering-munition",
+      "country": "PL",
+      "year": 2016,
+      "manufacturer": "WB Electronics",
+      "specifications": {
+        "endurance_min": 30,
+        "range_km": 12,
+        "warhead_kg": 1.4,
+        "weight_kg": 4,
+        "guidance": "EO/IR + GPS"
+      },
+      "service_history": {
+        "operators": [
+          {"country": "PL", "quantity": 500, "status": "active"},
+          {"country": "UA", "quantity": 100, "status": "active"}
+        ]
+      },
+      "notes": "Polish man-portable loitering munition"
+    },
+    {
+      "id": "au-ghost-bat",
+      "name": "Boeing Ghost Bat MQ-28",
+      "type": "loyal-wingman",
+      "country": "AU",
+      "year": 2024,
+      "manufacturer": "Boeing Australia",
+      "specifications": {
+        "range_km": 3700,
+        "speed_kmh": 950,
+        "payload_kg": 250,
+        "length_m": 11.7,
+        "wingspan_m": 7.3
+      },
+      "notes": "Loyal wingman UAV, can be expendable"
+    }
+  ]
+}

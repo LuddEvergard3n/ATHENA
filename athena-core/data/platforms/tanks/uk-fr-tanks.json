@@ -1,0 +1,596 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "uk-challenger2",
+      "name": "Challenger 2",
+      "type": "mbt",
+      "country_of_origin": "GB",
+      "manufacturer": "BAE Systems Land (RBSL)",
+      "service_history": {
+        "introduced": 1998,
+        "retired": null,
+        "production_count": 446,
+        "operators": [
+          {
+            "country": "GB",
+            "quantity": 227,
+            "variants": [
+              "Challenger 2",
+              "Challenger 2 TES"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 14,
+            "variants": [
+              "Challenger 2"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "OM",
+            "quantity": 38,
+            "variants": [
+              "Challenger 2E"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 62500,
+        "weight_combat_kg": 75000,
+        "length_m": 8.33,
+        "length_gun_forward_m": 13.5,
+        "width_m": 3.52,
+        "width_with_armor_m": 4.2,
+        "height_m": 2.49,
+        "ground_clearance_m": 0.5
+      },
+      "mobility": {
+        "engine": {
+          "model": "Perkins CV12-6A",
+          "type": "diesel",
+          "power_hp": 1200,
+          "power_kw": 895,
+          "displacement_liters": 26.1
+        },
+        "power_to_weight_hp_ton": 19.2,
+        "power_to_weight_combat_hp_ton": 16.0,
+        "transmission": "David Brown TN54",
+        "suspension": "hydropneumatic",
+        "max_speed_road_kmh": 59,
+        "max_speed_offroad_kmh": 40,
+        "range_road_km": 550,
+        "fuel_capacity_liters": 1592,
+        "fording_depth_m": 1.07,
+        "gradient_percent": 58,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 2.34,
+        "vertical_obstacle_m": 0.9
+      },
+      "armament": {
+        "main": {
+          "designation": "L30A1",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 55,
+          "type": "rifled",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "traverse_time_360_sec": 9,
+          "stabilization": "two-axis electric",
+          "loading": "manual",
+          "rate_of_fire_rpm": 6,
+          "effective_range_m": 5000,
+          "max_range_hesh_m": 8000,
+          "ammunition_carried": 50,
+          "ammunition_ready": 25,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "L27A1 CHARM 3",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 2000,
+              "notes": "Depleted Uranium"
+            },
+            {
+              "type": "HESH",
+              "designation": "L31A7",
+              "notes": "High range, multipurpose"
+            },
+            {
+              "type": "Smoke",
+              "designation": "L34 WP"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "L94A1 EX-34",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "type": "chain gun",
+            "ammunition_carried": 4200
+          },
+          {
+            "designation": "L37A2 GPMG",
+            "caliber_mm": 7.62,
+            "mount": "commander cupola",
+            "ammunition_carried": 2000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "chobham_dorchester",
+        "armor_composition": "Dorchester Level 2 (2nd gen Chobham)",
+        "protection_front_turret_ke_mm_rha": 750,
+        "protection_front_turret_heat_mm_rha": 1200,
+        "protection_front_hull_ke_mm_rha": 1020,
+        "protection_front_hull_heat_mm_rha": 1420,
+        "protection_upgrade": "ERA, BAR armor, TES kit",
+        "era_coverage": "Optional",
+        "bar_armor": "Turret and hull rear",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true,
+        "ammunition_isolation": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "SFCS 600",
+        "commander_sight": {
+          "type": "VS580-10 panoramic",
+          "day_magnification": "2.5x/10x",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "TOGS II",
+          "day_magnification": "4x/11.5x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "laser_warning_receiver": true,
+        "ballistic_computer": true,
+        "cant_sensor": true,
+        "muzzle_reference_system": true,
+        "battle_management_system": "BGTI"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 10,
+        "smoke_grenade_type": "L8",
+        "engine_smoke_generator": true,
+        "radar_signature_reduction": true
+      },
+      "unit_cost_usd": 8800000,
+      "cost_year": 2008,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Challenger 2",
+        "British Army",
+        "Army Recognition",
+        "Defense Express"
+      ],
+      "notes": "Only NATO MBT with rifled gun. HESH capability. Best protected Western tank. Never lost to enemy fire until 2024 Ukraine. L30A1 barrel life: ~500 rounds vs 1500 smoothbore. Challenger 3 upgrade: Rheinmetall L55A1 smoothbore.",
+      "year": 1998
+    },
+    {
+      "id": "uk-challenger3",
+      "name": "Challenger 3",
+      "type": "mbt",
+      "country_of_origin": "GB",
+      "manufacturer": "Rheinmetall BAE Systems Land (RBSL)",
+      "service_history": {
+        "introduced": 2027,
+        "retired": null,
+        "production_count": 148,
+        "operators": [
+          {
+            "country": "GB",
+            "quantity": 148,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 66000,
+        "length_gun_forward_m": 13.5,
+        "width_m": 3.52,
+        "height_m": 2.49
+      },
+      "mobility": {
+        "engine": {
+          "model": "Perkins CV12-6A (upgraded)",
+          "type": "diesel",
+          "power_hp": 1200,
+          "power_kw": 895
+        },
+        "power_to_weight_hp_ton": 18.2,
+        "transmission": "David Brown TN54 (upgraded)",
+        "suspension": "hydropneumatic",
+        "max_speed_road_kmh": 60,
+        "range_road_km": 550
+      },
+      "armament": {
+        "main": {
+          "designation": "Rheinmetall L55A1",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 55,
+          "type": "smoothbore",
+          "stabilization": "two-axis electric",
+          "loading": "manual",
+          "rate_of_fire_rpm": 6,
+          "effective_range_m": 5000,
+          "ammunition_carried": 34,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "DM63/DM73",
+              "penetration_mm_rha": 850,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT-MP",
+              "designation": "DM12"
+            },
+            {
+              "type": "HE-ABM",
+              "designation": "DM11",
+              "notes": "Airburst programmable"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "Coaxial MG",
+            "caliber_mm": 7.62,
+            "mount": "coaxial"
+          },
+          {
+            "designation": "RWS",
+            "caliber_mm": 7.62,
+            "mount": "roof",
+            "remote": true
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "chobham_evolved",
+        "armor_composition": "Evolved Dorchester with improved modules",
+        "aps": {
+          "system": "Trophy (planned)",
+          "type": "hard-kill"
+        },
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "PASEO digital",
+        "commander_sight": {
+          "type": "PASEO",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "EMES 15",
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true,
+        "battle_management_system": "Morpheus",
+        "data_link": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12
+      },
+      "unit_cost_usd": 12500000,
+      "cost_year": 2021,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Challenger 3",
+        "RBSL",
+        "British Army"
+      ],
+      "notes": "Major upgrade from Challenger 2. NATO-standard L55A1 smoothbore. New turret with Leopard 2A7 technology. Trophy APS planned. 148 vehicles to be converted. IOC 2027.",
+      "year": 2027
+    },
+    {
+      "id": "fr-leclerc",
+      "name": "Leclerc",
+      "type": "mbt",
+      "country_of_origin": "FR",
+      "manufacturer": "Nexter Systems (KNDS)",
+      "service_history": {
+        "introduced": 1992,
+        "retired": null,
+        "production_count": 862,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 406,
+            "variants": [
+              "Leclerc S1",
+              "Leclerc S2",
+              "Leclerc SXXI"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 388,
+            "variants": [
+              "Leclerc Tropicalis\u00e9"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "JO",
+            "quantity": 80,
+            "variants": [
+              "Leclerc"
+            ],
+            "status": "active",
+            "notes": "Donated by UAE 2020"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 54500,
+        "weight_combat_kg": 57300,
+        "length_m": 6.88,
+        "length_gun_forward_m": 9.87,
+        "width_m": 3.71,
+        "height_m": 2.53,
+        "ground_clearance_m": 0.5,
+        "ground_pressure_kg_cm2": 0.9
+      },
+      "mobility": {
+        "engine": {
+          "model": "SACM V8X-1500 Hyperbar",
+          "type": "diesel_hyperbar",
+          "power_hp": 1500,
+          "power_kw": 1100
+        },
+        "power_to_weight_hp_ton": 27.5,
+        "transmission": "SESM ESM500 automatic",
+        "suspension": "hydropneumatic",
+        "max_speed_road_kmh": 71,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 38,
+        "range_road_km": 550,
+        "range_external_tanks_km": 650,
+        "fuel_capacity_liters": 1300,
+        "fording_depth_m": 1.0,
+        "fording_prepared_m": 4.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 3.0,
+        "vertical_obstacle_m": 1.25
+      },
+      "armament": {
+        "main": {
+          "designation": "GIAT CN120-26/52",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 52,
+          "type": "smoothbore",
+          "elevation_min_deg": -8,
+          "elevation_max_deg": 15,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "loading": "autoloader",
+          "autoloader_capacity": 22,
+          "rate_of_fire_rpm": 12,
+          "effective_range_m": 4000,
+          "ammunition_carried": 40,
+          "ammunition_ready": 22,
+          "ammunition_stowed": 18,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "OFL 120 F2",
+              "penetration_mm_rha": 640,
+              "penetration_range_m": 2000,
+              "notes": "Tungsten"
+            },
+            {
+              "type": "HEAT-MP",
+              "designation": "OECC 120 F1"
+            },
+            {
+              "type": "HE",
+              "designation": "OE 120 F1"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "M693 (F2)",
+            "caliber_mm": 12.7,
+            "mount": "coaxial",
+            "ammunition_carried": 1100,
+            "notes": "Unusually heavy coax"
+          },
+          {
+            "designation": "AA-52 NF1",
+            "caliber_mm": 7.62,
+            "mount": "commander RWS",
+            "ammunition_carried": 3000,
+            "remote": true
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "modular_composite",
+        "armor_composition": "Steel/ceramic/tungsten/titanium modular array",
+        "protection_front_turret_ke_mm_rha": 890,
+        "protection_front_turret_heat_mm_rha": 1010,
+        "protection_front_hull_ke_mm_rha": 660,
+        "protection_front_hull_heat_mm_rha": 700,
+        "protection_side_mm_rha": 80,
+        "protection_upgrade": "SXXI package with ERA and titanium inserts",
+        "era_coverage": "Turret sides (SXXI)",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true,
+        "ammunition_isolation": true,
+        "defensive_aids": "GALIX"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "FINDERS",
+        "commander_sight": {
+          "type": "HL-70 panoramic",
+          "day_magnification": "2.5x/10x",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "HL-60",
+          "day_magnification": "3.3x/10x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "ballistic_computer": true,
+        "automatic_target_tracker": true,
+        "battle_management_system": "ICONE TIS",
+        "data_link": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 27,
+        "smoke_grenade_type": "GALIX",
+        "galix_antipersonnel": true
+      },
+      "unit_cost_usd": 12400000,
+      "cost_year": 2011,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Leclerc",
+        "Nexter Systems",
+        "Military Factory",
+        "Army Recognition"
+      ],
+      "notes": "3-man crew with autoloader. Highest power-to-weight ratio of any MBT. 12.7mm coaxial (unusual). GALIX system fires smoke, IR, and antipersonnel grenades. UAE version: MTU 883 engine, desert modifications. Most expensive tank at introduction.",
+      "year": 1992
+    },
+    {
+      "id": "fr-leclerc-xlr",
+      "name": "Leclerc XLR (Scorpion)",
+      "type": "mbt",
+      "country_of_origin": "FR",
+      "manufacturer": "Nexter Systems (KNDS)",
+      "service_history": {
+        "introduced": 2021,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 200,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 57000,
+        "length_m": 6.88,
+        "width_m": 3.71,
+        "height_m": 2.53
+      },
+      "mobility": {
+        "engine": {
+          "model": "SACM V8X-1500 Hyperbar",
+          "type": "diesel_hyperbar",
+          "power_hp": 1500,
+          "power_kw": 1100
+        },
+        "power_to_weight_hp_ton": 26.3,
+        "max_speed_road_kmh": 71,
+        "range_road_km": 550
+      },
+      "armament": {
+        "main": {
+          "designation": "GIAT CN120-26/52",
+          "caliber_mm": 120,
+          "type": "smoothbore",
+          "loading": "autoloader",
+          "rate_of_fire_rpm": 12,
+          "ammunition_carried": 40
+        },
+        "secondary": [
+          {
+            "designation": "M693",
+            "caliber_mm": 12.7,
+            "mount": "coaxial"
+          },
+          {
+            "designation": "MAG 58",
+            "caliber_mm": 7.62,
+            "mount": "commander RWS",
+            "remote": true
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "modular_composite_upgraded",
+        "armor_composition": "Enhanced modular with improved mine protection",
+        "aps": {
+          "system": "Under consideration",
+          "type": "TBD"
+        },
+        "mine_protection": "Enhanced belly armor",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "laser_warning_receiver": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "SCORPION-integrated",
+        "commander_sight": {
+          "type": "PASEO",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true,
+        "battle_management_system": "SICS (SCORPION)",
+        "data_link": true,
+        "vetronics": "SCORPION standard"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 27
+      },
+      "unit_cost_usd": 13500000,
+      "cost_year": 2021,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Leclerc",
+        "Army Recognition Leclerc XLR",
+        "Nexter Systems"
+      ],
+      "notes": "SCORPION program upgrade. SICS battle management. New thermal sights. Urban warfare kit available. Service life extended to 2040+. 34 delivered by Dec 2024. 200 total ordered.",
+      "year": 2025
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "br-ee9-cascavel",
+      "name": "EE-9 Cascavel Mk IV",
+      "type": "armored_car",
+      "country_of_origin": "BR",
+      "manufacturer": "Engesa",
+      "service_history": {
+        "introduced": 1974,
+        "retired": null,
+        "production_count": 2709,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 409,
+            "variants": ["Mk III", "Mk IV", "Mk V"],
+            "status": "active"
+          },
+          {
+            "country": "CO",
+            "quantity": 120,
+            "variants": ["Mk IV"],
+            "status": "active"
+          },
+          {
+            "country": "LY",
+            "quantity": 200,
+            "variants": ["Mk III"],
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "quantity": 200,
+            "variants": ["Mk III"],
+            "status": "retired"
+          },
+          {
+            "country": "NG",
+            "quantity": 80,
+            "variants": ["Mk IV"],
+            "status": "active"
+          },
+          {
+            "country": "CL",
+            "quantity": 30,
+            "variants": ["Mk IV"],
+            "status": "active"
+          },
+          {
+            "country": "TN",
+            "quantity": 30,
+            "variants": ["Mk IV"],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 13400,
+        "length_m": 5.20,
+        "length_gun_forward_m": 6.20,
+        "width_m": 2.64,
+        "height_m": 2.68,
+        "ground_clearance_m": 0.50
+      },
+      "mobility": {
+        "engine": {
+          "model": "Detroit Diesel 6V-53N",
+          "type": "diesel_two_stroke",
+          "power_hp": 212,
+          "power_kw": 158
+        },
+        "power_to_weight_hp_ton": 15.8,
+        "transmission": "Allison MT-643 automatic",
+        "suspension": "independent",
+        "max_speed_road_kmh": 100,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 40,
+        "range_road_km": 880,
+        "fuel_capacity_liters": 390,
+        "fording_depth_m": 1.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "vertical_obstacle_m": 0.60,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "EC-90 (Cockerill Mk.III)",
+          "caliber_mm": 90,
+          "barrel_length_calibers": 39,
+          "type": "low_pressure",
+          "elevation_min_deg": -8,
+          "elevation_max_deg": 15,
+          "traverse_deg": 360,
+          "stabilization": "none",
+          "autoloader": false,
+          "rate_of_fire_rpm": 6,
+          "muzzle_velocity_ms": 890,
+          "effective_range_m": 1600,
+          "ammunition_carried": 44,
+          "ammunition_ready": 8,
+          "ammunition_types": [
+            {
+              "type": "HEAT",
+              "designation": "NR476",
+              "penetration_mm_rha": 250,
+              "penetration_range_m": 1000
+            },
+            {
+              "type": "APFSDS-T",
+              "designation": "NR531",
+              "penetration_mm_rha": 100,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE",
+              "designation": "NR485",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "Canister",
+              "designation": "NR530",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 200
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "FN MAG 58",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2200
+          },
+          {
+            "designation": "M2HB",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 500
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "armor_composition": "Welded dual-hardness bimetal steel (Engesa patent)",
+        "protection_front_turret_mm_rha": 24,
+        "protection_front_hull_mm_rha": 24,
+        "protection_side_mm_rha": 12,
+        "protection_rear_mm_rha": 8,
+        "protection_top_mm_rha": 6,
+        "nbc_protection": false,
+        "fire_suppression": false,
+        "ammunition_compartment": "hull_floor",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Optical direct",
+        "commander_sight": {
+          "type": "Periscopic",
+          "day_magnification": "1x",
+          "thermal": false,
+          "independent": false,
+          "hunter_killer": false
+        },
+        "gunner_sight": {
+          "type": "D-140 telescopic",
+          "day_magnification": "8x",
+          "thermal": false
+        },
+        "laser_rangefinder": false,
+        "ballistic_computer": false,
+        "wind_sensor": false,
+        "muzzle_reference_system": false,
+        "cant_sensor": false,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 6,
+        "smoke_grenade_type": "76mm"
+      },
+      "unit_cost_usd": 250000,
+      "cost_year": 1985,
+      "confidence": "high",
+      "sources": [
+        "Weaponsystems.net EE-9 Cascavel",
+        "Army Guide EE-9 Cascavel",
+        "Tank Encyclopedia EE-9",
+        "Forecast International EE-9 Cascavel",
+        "Wikipedia EE-9 Cascavel"
+      ],
+      "notes": "Engesa's most successful armored vehicle. 6x6 wheeled reconnaissance. Exported to 15+ countries. Combat service: Chad-Libya War, Iran-Iraq War, Colombian FARC operations, 1985 Palace of Justice siege. Brazilian Army upgrading ~200 with IGS-4S thermal sight, GPS, new radio. Dual-hardness bimetal armor: front resists 12.7mm AP, all-around vs 7.62mm.",
+      "year": 1974
+    }
+  ]
+}

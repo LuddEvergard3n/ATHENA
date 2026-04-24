@@ -1,0 +1,427 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "ru-bmp1",
+      "name": "BMP-1",
+      "type": "ifv",
+      "country_of_origin": "SU",
+      "manufacturer": "Kurganmashzavod",
+      "service_history": {
+        "introduced": 1966,
+        "retired": null,
+        "production_count": 20000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 500,
+            "status": "reserve"
+          },
+          {
+            "country": "UA",
+            "quantity": 1000,
+            "status": "active"
+          },
+          {
+            "country": "GR",
+            "quantity": 501,
+            "variants": [
+              "BMP-1A1"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 220,
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "quantity": 2000,
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "quantity": 350,
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 1000,
+            "variants": [
+              "BWP-1"
+            ],
+            "status": "reserve"
+          },
+          {
+            "country": "CZ",
+            "quantity": 200,
+            "variants": [
+              "BVP-1"
+            ],
+            "status": "reserve"
+          },
+          {
+            "country": "IN",
+            "quantity": 350,
+            "variants": [
+              "BMP-1"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 8,
+        "weight_kg": 13200,
+        "length_m": 6.74,
+        "width_m": 2.94,
+        "height_m": 2.15,
+        "ground_clearance_m": 0.39
+      },
+      "mobility": {
+        "engine": {
+          "model": "UTD-20",
+          "type": "diesel",
+          "power_hp": 300,
+          "power_kw": 224
+        },
+        "power_to_weight_hp_ton": 22.7,
+        "transmission": "Manual 5F/1R",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 65,
+        "max_speed_offroad_kmh": 45,
+        "max_speed_water_kmh": 8,
+        "range_road_km": 600,
+        "fuel_capacity_liters": 460,
+        "gradient_percent": 60,
+        "fording_depth_m": 0,
+        "amphibious": true,
+        "propulsion_water": "tracks"
+      },
+      "armament": {
+        "main": {
+          "designation": "2A28 Grom",
+          "caliber_mm": 73,
+          "type": "smoothbore_low_velocity",
+          "elevation_min_deg": -4,
+          "elevation_max_deg": 33,
+          "traverse_deg": 360,
+          "stabilization": "none",
+          "rate_of_fire_rpm": 8,
+          "effective_range_m": 800,
+          "ammunition_carried": 40,
+          "ammunition_types": [
+            {
+              "type": "HEAT",
+              "designation": "PG-15V",
+              "penetration_mm_rha": 300
+            },
+            {
+              "type": "HE-FRAG",
+              "designation": "OG-15V"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "9M14 Malyutka (AT-3)",
+          "missiles_carried": 4,
+          "launch_method": "rail",
+          "range_m": 3000,
+          "penetration_mm_rha": 400,
+          "guidance": "MCLOS"
+        }
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 33,
+        "protection_side_mm_rha": 16,
+        "protection_top_mm_rha": 6,
+        "nbc_protection": true,
+        "fire_suppression": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "1PN22M1",
+        "commander_sight": {
+          "type": "TKN-3",
+          "thermal": false
+        },
+        "gunner_sight": {
+          "type": "1PN22M1",
+          "thermal": false
+        },
+        "laser_rangefinder": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 0
+      },
+      "unit_cost_usd": 200000,
+      "cost_year": 1980,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia BMP-1",
+        "Military Factory",
+        "Army Recognition"
+      ],
+      "notes": "First mass-produced IFV. Revolutionary design 1966. 73mm low-velocity gun. Extremely thin armor. Poor ergonomics. Still in service 50+ countries. 800+ lost in Ukraine.",
+      "year": 1966
+    },
+    {
+      "id": "ru-bmp1am",
+      "name": "BMP-1AM Basurmanin",
+      "type": "ifv",
+      "country_of_origin": "RU",
+      "manufacturer": "Kurganmashzavod",
+      "service_history": {
+        "introduced": 2018,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 200,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 8,
+        "weight_kg": 14000,
+        "length_m": 6.74,
+        "width_m": 2.94,
+        "height_m": 2.4
+      },
+      "mobility": {
+        "engine": {
+          "model": "UTD-20S1",
+          "type": "diesel",
+          "power_hp": 300,
+          "power_kw": 224
+        },
+        "power_to_weight_hp_ton": 21.4,
+        "max_speed_road_kmh": 65,
+        "max_speed_water_kmh": 7,
+        "range_road_km": 600,
+        "amphibious": true
+      },
+      "armament": {
+        "main": {
+          "designation": "2A72",
+          "caliber_mm": 30,
+          "type": "autocannon",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 70,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 330,
+          "effective_range_m": 2000,
+          "ammunition_carried": 300,
+          "notes": "BTR-82A turret"
+        },
+        "secondary": [
+          {
+            "designation": "PKTM",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 33,
+        "protection_side_mm_rha": 16,
+        "protection_upgrade": "Slat armor sides",
+        "nbc_protection": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "TKN-4GA",
+        "commander_sight": {
+          "type": "TKN-4GA",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "gunner_sight": {
+          "type": "Combined",
+          "thermal": true
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 6
+      },
+      "unit_cost_usd": 800000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Army Recognition",
+        "Military Today"
+      ],
+      "notes": "BMP-1 modernization with BTR-82A turret. 30mm autocannon replaces obsolete 73mm. Improved optics. Low-cost upgrade path.",
+      "year": 2018
+    },
+    {
+      "id": "ru-bmpt",
+      "name": "BMPT Terminator",
+      "type": "ifv",
+      "country_of_origin": "RU",
+      "manufacturer": "Uralvagonzavod",
+      "service_history": {
+        "introduced": 2017,
+        "retired": null,
+        "production_count": 40,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 20,
+            "status": "active"
+          },
+          {
+            "country": "KZ",
+            "quantity": 10,
+            "status": "active"
+          },
+          {
+            "country": "DZ",
+            "quantity": 12,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 5,
+        "passengers": 0,
+        "weight_kg": 48000,
+        "length_m": 7.2,
+        "width_m": 3.8,
+        "height_m": 3.44,
+        "ground_clearance_m": 0.43,
+        "notes": "Tank Support Combat Vehicle, no dismounts"
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-92S2F",
+          "type": "diesel_turbocharged",
+          "power_hp": 1000,
+          "power_kw": 746
+        },
+        "power_to_weight_hp_ton": 20.8,
+        "transmission": "Automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 60,
+        "max_speed_offroad_kmh": 40,
+        "range_road_km": 550,
+        "amphibious": false,
+        "notes": "T-90 chassis"
+      },
+      "armament": {
+        "main": {
+          "designation": "2A42",
+          "caliber_mm": 30,
+          "quantity": 2,
+          "type": "autocannon",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 45,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 850,
+          "effective_range_m": 2500,
+          "ammunition_carried": 900,
+          "notes": "Twin 30mm autocannons"
+        },
+        "secondary": [
+          {
+            "designation": "AGS-17",
+            "caliber_mm": 30,
+            "mount": "hull",
+            "quantity": 2,
+            "ammunition_carried": 600,
+            "notes": "Grenade launchers"
+          },
+          {
+            "designation": "PKTM",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "9M120 Ataka-T",
+          "missiles_carried": 4,
+          "range_m": 6000,
+          "penetration_mm_rha": 800,
+          "guidance": "laser beam-riding"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_era",
+        "armor_composition": "T-90A hull with Relikt ERA",
+        "protection_front_mm_rha": 800,
+        "protection_side_mm_rha": 400,
+        "aps": {
+          "system": "Optional",
+          "type": "Soft-kill"
+        },
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "B07K1",
+        "commander_sight": {
+          "type": "PK PAN",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true
+        },
+        "gunner_sight": {
+          "type": "B07K1",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true,
+        "automatic_target_tracker": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "ir_signature_reduction": true
+      },
+      "unit_cost_usd": 4000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia BMPT Terminator",
+        "Army Recognition",
+        "Military Today"
+      ],
+      "notes": "Tank Support Combat Vehicle. Urban warfare specialized. Twin 30mm + quad ATGM + twin AGS-17. T-90 protection. Limited production. Syria deployed 2017. Ukraine 2022.",
+      "year": 2017
+    }
+  ]
+}

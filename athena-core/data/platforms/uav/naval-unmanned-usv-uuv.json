@@ -1,0 +1,248 @@
+{
+  "platforms": [
+    {
+      "id": "us-sea-hunter-usv",
+      "name": "Sea Hunter MDUSV",
+      "type": "usv",
+      "country_of_origin": "US",
+      "manufacturer": "Leidos",
+      "full_name": "Medium Displacement Unmanned Surface Vessel",
+      "service_entry": 2018,
+      "specifications": {
+        "length_m": 40,
+        "displacement_tons": 145,
+        "max_speed_knots": 27,
+        "range_nm": 10000,
+        "endurance_days": 90
+      },
+      "sensors": {
+        "sonar": "Towed array",
+        "radar": "Surface search"
+      },
+      "mission": {
+        "primary": "ASW - submarine tracking",
+        "secondary": ["ISR", "Mine countermeasures", "Logistics"]
+      },
+      "features": {
+        "fully_autonomous": true,
+        "colregs_compliant": true,
+        "minimal_crew": "Zero when deployed"
+      },
+      "service_history": {
+        "introduced": 2018,
+        "status": "Active testing",
+        "vessels": ["Sea Hunter", "Sea Hawk"]
+      },
+      "unit_cost_usd": 20000000,
+      "notes": "DARPA ACTUV program. Autonomous ASW hunter. Can track diesel subs for months. $20k/day vs $700k for manned ship."
+    },
+    {
+      "id": "us-orca-xluuv",
+      "name": "Boeing Orca XLUUV",
+      "type": "xluuv",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "full_name": "Extra-Large Unmanned Underwater Vehicle",
+      "service_entry": 2025,
+      "specifications": {
+        "length_m": 26,
+        "diameter_m": 2.6,
+        "displacement_tons": 80,
+        "range_nm": 6500,
+        "depth_m": 3350,
+        "endurance_months": 6
+      },
+      "payload": {
+        "internal_bay": true,
+        "capacity": "8+ torpedoes or mines"
+      },
+      "missions": [
+        "ISR",
+        "Mine laying",
+        "Anti-submarine warfare",
+        "Anti-surface warfare",
+        "Electronic warfare"
+      ],
+      "service_history": {
+        "ordered": 5,
+        "expected_service": 2025,
+        "status": "Production"
+      },
+      "unit_cost_usd": 50000000,
+      "notes": "Based on Echo Voyager. Payload bay for modular missions. Can deploy mines or torpedoes autonomously."
+    },
+    {
+      "id": "us-remus-600-uuv",
+      "name": "REMUS 600",
+      "type": "uuv",
+      "country_of_origin": "US",
+      "manufacturer": "Hydroid (Huntington Ingalls)",
+      "service_entry": 2010,
+      "specifications": {
+        "length_m": 3.25,
+        "diameter_mm": 324,
+        "weight_kg": 240,
+        "depth_m": 600,
+        "endurance_hours": 70,
+        "speed_knots": 5
+      },
+      "sensors": {
+        "side_scan_sonar": true,
+        "bathymetry": true,
+        "mine_detection": true
+      },
+      "service_history": {
+        "introduced": 2010,
+        "status": "active",
+        "operators": ["US Navy", "NATO allies"]
+      },
+      "variants": [
+        {"name": "REMUS 100", "depth_m": 100, "note": "Shallow water"},
+        {"name": "REMUS 600", "depth_m": 600, "note": "Medium depth"},
+        {"name": "REMUS 6000", "depth_m": 6000, "note": "Deep ocean"}
+      ],
+      "notes": "Standard Navy MCM UUV. Mine hunting. Over 400 delivered. Used to find Titan submersible debris."
+    },
+    {
+      "id": "ua-magura-v5-usv",
+      "name": "Magura V5",
+      "type": "usv",
+      "country_of_origin": "UA",
+      "manufacturer": "SBU / Ukrainian defense industry",
+      "alternative_name": "Sea Baby",
+      "service_entry": 2023,
+      "specifications": {
+        "length_m": 5.5,
+        "weight_kg": 1000,
+        "payload_kg": 320,
+        "max_speed_knots": 45,
+        "range_km": 800
+      },
+      "armament": {
+        "explosive_kg": 320,
+        "warhead": "Shaped charge",
+        "guidance": "GPS + Video link"
+      },
+      "features": {
+        "jet_ski_size": true,
+        "low_radar_signature": true,
+        "remote_piloted": true,
+        "starlink_comms": true
+      },
+      "combat_record": [
+        {"target": "Moskva (claimed assist)", "year": 2022},
+        {"target": "Ivan Khurs intelligence ship", "year": 2023},
+        {"target": "Olenegorsky Gornyak landing ship", "year": 2023},
+        {"target": "Sergei Kotov patrol ship (sunk)", "year": 2024},
+        {"target": "Kerch Bridge attacks", "year": 2023}
+      ],
+      "service_history": {
+        "introduced": 2023,
+        "status": "active",
+        "production": "Mass production"
+      },
+      "unit_cost_usd": 250000,
+      "notes": "Ukrainian attack USV. Revolutionized naval warfare. Damaged/sunk multiple Russian ships. Denied Black Sea to Russian Navy."
+    },
+    {
+      "id": "tr-ulaq-ausv",
+      "name": "ULAQ AUSV",
+      "type": "usv",
+      "country_of_origin": "TR",
+      "manufacturer": "ARES Shipyard / Meteksan",
+      "service_entry": 2021,
+      "specifications": {
+        "length_m": 11,
+        "displacement_tons": 3.5,
+        "max_speed_knots": 35,
+        "range_nm": 400,
+        "endurance_hours": 72
+      },
+      "armament": {
+        "missiles": "4x Cirit or 2x L-UMTAS",
+        "gun": "STAMP 12.7mm RWS"
+      },
+      "sensors": {
+        "eo_ir": "CATS turret",
+        "radar": "Navigation radar"
+      },
+      "service_history": {
+        "introduced": 2021,
+        "status": "active"
+      },
+      "notes": "Turkish armed USV. First tests 2021. Anti-surface warfare role."
+    },
+    {
+      "id": "il-bluebottle-usv",
+      "name": "Bluebottle USV",
+      "type": "usv",
+      "country_of_origin": "AU",
+      "manufacturer": "Ocius Technology",
+      "service_entry": 2022,
+      "specifications": {
+        "length_m": 6.8,
+        "weight_kg": 750,
+        "endurance_months": 12,
+        "speed_knots": 5
+      },
+      "power": {
+        "solar": true,
+        "wind": "Flipper sail",
+        "wave": "Hull energy harvesting"
+      },
+      "mission": "Persistent ISR, ASW towed array",
+      "service_history": {
+        "introduced": 2022,
+        "status": "Testing with Royal Australian Navy"
+      },
+      "notes": "Renewable energy USV. Year-long endurance. Solar/wind/wave powered."
+    },
+    {
+      "id": "cn-hsu001-uuv",
+      "name": "HSU001 XLUUV",
+      "type": "xluuv",
+      "country_of_origin": "CN",
+      "manufacturer": "Unknown (PLAN)",
+      "service_entry": 2019,
+      "specifications": {
+        "length_m": 17,
+        "diameter_m": 2.0
+      },
+      "mission": "ISR, potentially mine warfare",
+      "service_history": {
+        "first_seen": 2019,
+        "status": "Operational"
+      },
+      "notes": "Chinese large UUV. Limited public information. Displayed at 2019 parade."
+    },
+    {
+      "id": "ru-poseidon-nuclear-torpedo",
+      "name": "Poseidon (Status-6)",
+      "type": "nuclear_torpedo",
+      "country_of_origin": "RU",
+      "manufacturer": "Rubin Design Bureau",
+      "nato_name": "Kanyon",
+      "service_entry": 2027,
+      "specifications": {
+        "length_m": 24,
+        "diameter_m": 2,
+        "depth_m": 1000,
+        "speed_knots": 100,
+        "range_km": 10000
+      },
+      "propulsion": "Nuclear reactor",
+      "warhead": {
+        "type": "Nuclear",
+        "yield_mt": "2-100 (claimed)",
+        "cobalt_salted": "Possibly"
+      },
+      "carrier": "Belgorod, Khabarovsk submarines",
+      "service_history": {
+        "announced": 2015,
+        "expected_service": 2027,
+        "status": "Testing"
+      },
+      "notes": "Nuclear-powered intercontinental torpedo. Apocalyptic weapon. Creates radioactive tsunami. Strategic deterrent."
+    }
+  ]
+}

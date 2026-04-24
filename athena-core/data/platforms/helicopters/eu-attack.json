@@ -1,0 +1,544 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-22",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "Airbus Helicopters",
+      "Leonardo"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "eu-tiger",
+      "name": "Eurocopter Tiger",
+      "nato_name": null,
+      "type": "attack_helicopter",
+      "country_of_origin": "EU",
+      "manufacturer": "Airbus Helicopters",
+      "service_history": {
+        "introduced": 2003,
+        "first_flight": 1991,
+        "retired": null,
+        "production_count": 185,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 67,
+            "variants": [
+              "HAP",
+              "HAD"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "DE",
+            "quantity": 51,
+            "variants": [
+              "UHT"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "ES",
+            "quantity": 24,
+            "variants": [
+              "HAD-E"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 22,
+            "variants": [
+              "ARH"
+            ],
+            "status": "retiring",
+            "notes": "Replacing with AH-64E"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "seating_configuration": "tandem",
+        "length_m": 15.8,
+        "rotor_diameter_m": 13.0,
+        "height_m": 3.83,
+        "empty_weight_kg": 3060,
+        "max_takeoff_weight_kg": 6100,
+        "internal_fuel_kg": 1080
+      },
+      "performance": {
+        "max_speed_kmh": 290,
+        "cruise_speed_kmh": 230,
+        "combat_radius_km": 800,
+        "ferry_range_km": 1300,
+        "service_ceiling_m": 4000,
+        "rate_of_climb_mps": 10.7,
+        "hover_ceiling_oge_m": 2560
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "MTU/Turbomeca/Rolls-Royce MTR390",
+        "power_shp": 1303
+      },
+      "avionics": {
+        "targeting": "Strix roof-mounted sight (TADS equivalent)",
+        "flir": "3rd gen thermal",
+        "ew_suite": "Integrated defensive suite",
+        "helmet_mounted_display": "TopOwl",
+        "datalink": "Link 16"
+      },
+      "armament": {
+        "gun": {
+          "type": "Nexter 30M781",
+          "caliber_mm": 30,
+          "rounds": 450,
+          "notes": "HAP/HAD only, UHT has no gun turret"
+        },
+        "missiles": {
+          "atgm": [
+            "HOT 3 (8)",
+            "AGM-114 Hellfire (HAD)",
+            "Spike-ER"
+          ],
+          "aam": [
+            "Mistral (4)",
+            "Stinger"
+          ]
+        },
+        "rockets": {
+          "type": "SNEB 68mm",
+          "total_rockets": 68
+        },
+        "hardpoints": 4
+      },
+      "survivability": {
+        "armor": "Composite, lightweight",
+        "design_philosophy": "Agility over armor",
+        "ir_suppression": true
+      },
+      "variants": [
+        {
+          "designation": "HAP (Appui-Protection)",
+          "country": "FR",
+          "notes": "Escort/fire support"
+        },
+        {
+          "designation": "HAD (Appui-Destruction)",
+          "country": "FR",
+          "notes": "Full attack capability"
+        },
+        {
+          "designation": "UHT (Unterst\u00fctzungshubschrauber)",
+          "country": "DE",
+          "notes": "Anti-tank, no gun turret"
+        },
+        {
+          "designation": "ARH (Armed Recon)",
+          "country": "AU",
+          "notes": "Being retired"
+        }
+      ],
+      "unit_cost_usd": 48000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Airbus Helicopters",
+        "Jane's"
+      ],
+      "notes": "European attack helicopter. Franco-German development. Mali, Afghanistan, Libya combat. Light and agile design. Australia retiring due to reliability issues, replacing with Apache.",
+      "year": 2003
+    },
+    {
+      "id": "it-mangusta",
+      "name": "AW129 Mangusta",
+      "nato_name": null,
+      "type": "attack_helicopter",
+      "country_of_origin": "IT",
+      "manufacturer": "Leonardo (Agusta)",
+      "service_history": {
+        "introduced": 1990,
+        "first_flight": 1983,
+        "retired": null,
+        "production_count": 60,
+        "operators": [
+          {
+            "country": "IT",
+            "quantity": 48,
+            "status": "active",
+            "notes": "Esercito Italiano"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "seating_configuration": "tandem",
+        "length_m": 14.29,
+        "rotor_diameter_m": 11.9,
+        "height_m": 3.35,
+        "empty_weight_kg": 2530,
+        "max_takeoff_weight_kg": 4600
+      },
+      "performance": {
+        "max_speed_kmh": 294,
+        "cruise_speed_kmh": 250,
+        "combat_radius_km": 200,
+        "ferry_range_km": 510,
+        "service_ceiling_m": 4725
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Piaggio/Rolls-Royce Gem 2-1004D",
+        "power_shp": 890
+      },
+      "avionics": {
+        "targeting": "Toplite III roof-mounted sight",
+        "flir": true,
+        "laser_designator": true
+      },
+      "armament": {
+        "gun": {
+          "type": "M197 three-barrel Gatling",
+          "caliber_mm": 20,
+          "rounds": 500
+        },
+        "missiles": {
+          "atgm": [
+            "BGM-71 TOW (8)",
+            "AGM-114 Hellfire"
+          ],
+          "aam": [
+            "AIM-92 Stinger (4)"
+          ]
+        },
+        "rockets": {
+          "type": "Hydra 70mm / SNEB 81mm",
+          "total_rockets": 52
+        }
+      },
+      "variants": [
+        {
+          "designation": "A129 International",
+          "notes": "Original export variant"
+        },
+        {
+          "designation": "A129 CBT",
+          "notes": "Combat upgrade, Italian Army"
+        },
+        {
+          "designation": "AW129D",
+          "notes": "Latest, Hellfire capable"
+        }
+      ],
+      "unit_cost_usd": 25000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Leonardo",
+        "Italian Army",
+        "Jane's"
+      ],
+      "notes": "First attack helicopter designed in Western Europe. Compact design. Iraq, Afghanistan, Somalia, Libya combat. Basis for Turkish T129. Italy operates 48.",
+      "year": 1990
+    },
+    {
+      "id": "tr-t129",
+      "name": "TAI T129 ATAK",
+      "nato_name": null,
+      "type": "attack_helicopter",
+      "country_of_origin": "TR",
+      "manufacturer": "Turkish Aerospace Industries (TAI)",
+      "service_history": {
+        "introduced": 2014,
+        "first_flight": 2009,
+        "retired": null,
+        "production_count": 91,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 59,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 30,
+            "status": "active"
+          },
+          {
+            "country": "PH",
+            "quantity": 6,
+            "status": "ordered"
+          },
+          {
+            "country": "NG",
+            "quantity": 12,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "seating_configuration": "tandem",
+        "length_m": 14.6,
+        "rotor_diameter_m": 11.9,
+        "height_m": 3.4,
+        "empty_weight_kg": 2785,
+        "max_takeoff_weight_kg": 5000
+      },
+      "performance": {
+        "max_speed_kmh": 278,
+        "cruise_speed_kmh": 269,
+        "combat_radius_km": 561,
+        "ferry_range_km": 1000,
+        "service_ceiling_m": 6096,
+        "rate_of_climb_mps": 14
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "LHTEC CTS800-4A",
+        "power_shp": 1360,
+        "notes": "US engine, export restrictions"
+      },
+      "avionics": {
+        "targeting": "Aselsan ASELFLIR-300T",
+        "flir": "3rd gen thermal",
+        "ew_suite": "Aselsan ASELAW",
+        "helmet_mounted_display": "Aselsan AVCI",
+        "datalink": "Turkish tactical"
+      },
+      "armament": {
+        "gun": {
+          "type": "Nexter M621",
+          "caliber_mm": 20,
+          "rounds": 500
+        },
+        "missiles": {
+          "atgm": [
+            "UMTAS (8)",
+            "L-UMTAS (laser-guided)"
+          ],
+          "guided_rockets": [
+            "Cirit (70mm)"
+          ]
+        },
+        "rockets": {
+          "type": "Hydra 70mm",
+          "total_rockets": 76
+        },
+        "hardpoints": 4
+      },
+      "variants": [
+        {
+          "designation": "T129A",
+          "notes": "Initial production"
+        },
+        {
+          "designation": "T129B ATAK",
+          "notes": "Full capability"
+        },
+        {
+          "designation": "T129 ATAK-2",
+          "notes": "Future, indigenous engine"
+        }
+      ],
+      "unit_cost_usd": 35000000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "TAI",
+        "Turkish Army",
+        "Jane's"
+      ],
+      "notes": "Turkish attack helicopter based on AW129. Indigenous weapons: UMTAS ATGM, Cirit guided rocket. Syria, Libya combat. Pakistan export (30). Engine restrictions limit exports.",
+      "year": 2014
+    },
+    {
+      "id": "za-rooivalk",
+      "name": "Denel Rooivalk",
+      "nato_name": null,
+      "type": "attack_helicopter",
+      "country_of_origin": "ZA",
+      "manufacturer": "Denel Aviation",
+      "service_history": {
+        "introduced": 1999,
+        "first_flight": 1990,
+        "retired": null,
+        "production_count": 12,
+        "operators": [
+          {
+            "country": "ZA",
+            "quantity": 12,
+            "status": "active",
+            "notes": "16 Squadron SAAF"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "seating_configuration": "tandem",
+        "length_m": 18.73,
+        "rotor_diameter_m": 15.58,
+        "height_m": 5.19,
+        "empty_weight_kg": 5730,
+        "max_takeoff_weight_kg": 8750
+      },
+      "performance": {
+        "max_speed_kmh": 309,
+        "cruise_speed_kmh": 278,
+        "combat_radius_km": 740,
+        "ferry_range_km": 1335,
+        "service_ceiling_m": 6100,
+        "rate_of_climb_mps": 13.3
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Turbomeca Makila 1K2",
+        "power_shp": 2068
+      },
+      "avionics": {
+        "targeting": "Kentron TDATS",
+        "flir": "3rd gen thermal",
+        "ew_suite": "Saab Avitronics suite",
+        "helmet_mounted_display": "TopOwl"
+      },
+      "armament": {
+        "gun": {
+          "type": "Denel GI-2 (F2 derivative)",
+          "caliber_mm": 20,
+          "rounds": 700
+        },
+        "missiles": {
+          "atgm": [
+            "Mokopa (8)",
+            "ZT-6 Ingwe",
+            "AGM-114 Hellfire"
+          ],
+          "aam": [
+            "A-Darter",
+            "Mistral"
+          ]
+        },
+        "rockets": {
+          "type": "68mm / 70mm",
+          "total_rockets": 72
+        },
+        "hardpoints": 6
+      },
+      "unit_cost_usd": 40000000,
+      "cost_year": 2010,
+      "confidence": "medium",
+      "sources": [
+        "Denel",
+        "SAAF",
+        "Jane's"
+      ],
+      "notes": "South African indigenous attack helicopter. Developed during apartheid sanctions. Based on Puma airframe. Mokopa ATGM (10km range). DRC peacekeeping combat. Only 12 built, no exports.",
+      "year": 1999
+    },
+    {
+      "id": "uk-wildcat",
+      "name": "AW159 Wildcat",
+      "nato_name": null,
+      "type": "armed_reconnaissance",
+      "country_of_origin": "GB",
+      "manufacturer": "Leonardo (AgustaWestland)",
+      "service_history": {
+        "introduced": 2014,
+        "first_flight": 2009,
+        "retired": null,
+        "production_count": 62,
+        "operators": [
+          {
+            "country": "UK",
+            "quantity": 62,
+            "variants": [
+              "AH1",
+              "HMA2"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "quantity": 8,
+            "status": "active"
+          },
+          {
+            "country": "PH",
+            "quantity": 2,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 6,
+        "length_m": 15.24,
+        "rotor_diameter_m": 12.8,
+        "height_m": 3.73,
+        "empty_weight_kg": 3300,
+        "max_takeoff_weight_kg": 6000
+      },
+      "performance": {
+        "max_speed_kmh": 291,
+        "cruise_speed_kmh": 260,
+        "combat_radius_km": 400,
+        "ferry_range_km": 750,
+        "service_ceiling_m": 4575
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Rolls-Royce CTS800-4N",
+        "power_shp": 1361
+      },
+      "avionics": {
+        "radar": "Selex Seaspray 7000E (naval)",
+        "flir": "Wescam MX-15Di",
+        "ew_suite": "Thales DAS"
+      },
+      "armament": {
+        "gun": {
+          "type": "M3M .50 cal",
+          "caliber_mm": 12.7
+        },
+        "missiles": {
+          "atgm": [
+            "Thales Martlet (20)",
+            "Sea Venom"
+          ],
+          "aam": [
+            "Martlet"
+          ]
+        },
+        "torpedoes": [
+          "Sting Ray (2)"
+        ],
+        "hardpoints": 4
+      },
+      "variants": [
+        {
+          "designation": "AH1",
+          "role": "Army",
+          "notes": "Battlefield reconnaissance"
+        },
+        {
+          "designation": "HMA2",
+          "role": "Navy",
+          "notes": "Anti-submarine, anti-surface"
+        }
+      ],
+      "unit_cost_usd": 38000000,
+      "cost_year": 2018,
+      "confidence": "high",
+      "sources": [
+        "Leonardo",
+        "UK MoD",
+        "Jane's"
+      ],
+      "notes": "British armed reconnaissance. Replaced Lynx. Naval variant has radar and torpedoes. Martlet lightweight missile. Army and Navy operate.",
+      "year": 2015
+    }
+  ]
+}

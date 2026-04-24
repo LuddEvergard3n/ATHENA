@@ -1,0 +1,592 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-19",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Infantry Weapons",
+      "Army Recognition",
+      "Sinodefense"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "cn-hj12",
+      "name": "HJ-12 (AFT-12)",
+      "type": "atgm",
+      "country_of_origin": "CN",
+      "manufacturer": "Norinco",
+      "service_history": {
+        "introduced": 2014,
+        "retired": null,
+        "production_count": 10000,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 8000,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "status": "active"
+          },
+          {
+            "country": "BD",
+            "status": "active"
+          },
+          {
+            "country": "SD",
+            "status": "active"
+          }
+        ],
+        "notes": "Javelin equivalent"
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_missile_kg": 17,
+        "weight_clu_kg": 5,
+        "weight_total_kg": 22,
+        "length_missile_mm": 980,
+        "diameter_mm": 135
+      },
+      "performance": {
+        "range_min_m": 100,
+        "range_max_m": 4000,
+        "flight_time_max_sec": 20,
+        "speed_mps": 200,
+        "guidance": "infrared_imaging",
+        "attack_modes": [
+          "top_attack",
+          "direct_attack"
+        ],
+        "fire_and_forget": true,
+        "soft_launch": true
+      },
+      "warhead": {
+        "type": "tandem_heat",
+        "diameter_mm": 135,
+        "penetration_mm_rha": 1100,
+        "penetration_era_mm_rha": 900
+      },
+      "unit_cost_usd": 120000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia HJ-12",
+        "Army Recognition",
+        "Sinodefense"
+      ],
+      "notes": "Chinese Javelin equivalent. Fire-and-forget IR seeker. Top-attack mode. Soft launch for indoor firing. 4km range. Export success to Pakistan, Bangladesh.",
+      "year": 2014
+    },
+    {
+      "id": "cn-hj8",
+      "name": "HJ-8 (Red Arrow 8)",
+      "type": "atgm",
+      "country_of_origin": "CN",
+      "manufacturer": "Norinco",
+      "service_history": {
+        "introduced": 1984,
+        "retired": null,
+        "production_count": 200000,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 50000,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 20000,
+            "variants": [
+              "Baktar Shikan"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "BD",
+            "status": "active"
+          },
+          {
+            "country": "TH",
+            "status": "active"
+          },
+          {
+            "country": "MM",
+            "status": "active"
+          },
+          {
+            "country": "LK",
+            "status": "active"
+          },
+          {
+            "country": "SD",
+            "status": "active"
+          },
+          {
+            "country": "TZ",
+            "status": "active"
+          },
+          {
+            "country": "ZW",
+            "status": "active"
+          },
+          {
+            "country": "ET",
+            "status": "active"
+          }
+        ],
+        "notes": "20+ operators, Chinese TOW equivalent"
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_missile_kg": 11.2,
+        "weight_launcher_kg": 24.5,
+        "length_missile_mm": 875,
+        "diameter_mm": 120
+      },
+      "performance": {
+        "range_min_m": 100,
+        "range_max_m": 3000,
+        "flight_time_max_sec": 20,
+        "speed_mps": 220,
+        "guidance": "wire_guided_saclos",
+        "attack_modes": [
+          "direct_attack"
+        ],
+        "fire_and_forget": false
+      },
+      "warhead": {
+        "type": "heat",
+        "diameter_mm": 120,
+        "penetration_mm_rha": 800
+      },
+      "variants": [
+        {
+          "designation": "HJ-8A",
+          "range_m": 3000,
+          "penetration_mm_rha": 800,
+          "notes": "Basic"
+        },
+        {
+          "designation": "HJ-8C",
+          "range_m": 3000,
+          "penetration_mm_rha": 850,
+          "notes": "Improved"
+        },
+        {
+          "designation": "HJ-8E",
+          "range_m": 4000,
+          "penetration_mm_rha": 1000,
+          "notes": "Tandem warhead, extended range"
+        },
+        {
+          "designation": "HJ-8F/L",
+          "range_m": 4000,
+          "penetration_mm_rha": 1200,
+          "guidance": "laser",
+          "notes": "Laser-guided variant"
+        },
+        {
+          "designation": "Baktar Shikan (PK)",
+          "range_m": 3000,
+          "notes": "Pakistani licensed production"
+        }
+      ],
+      "platforms": [
+        "ground_tripod",
+        "WZ-551",
+        "Type 89"
+      ],
+      "unit_cost_usd": 20000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia HJ-8",
+        "Army Recognition",
+        "Sinodefense"
+      ],
+      "notes": "China's most widely produced ATGM. Wire-guided SACLOS (like TOW). Extensively exported to developing nations. Pakistan produces as 'Baktar Shikan'. Combat in Yemen, Syria.",
+      "year": 1987
+    },
+    {
+      "id": "cn-hj10",
+      "name": "HJ-10 (AFT-10)",
+      "type": "atgm",
+      "country_of_origin": "CN",
+      "manufacturer": "Norinco",
+      "service_history": {
+        "introduced": 2010,
+        "retired": null,
+        "production_count": 5000,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 4000,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "weight_missile_kg": 43,
+        "length_missile_mm": 1850,
+        "diameter_mm": 155
+      },
+      "performance": {
+        "range_min_m": 500,
+        "range_max_m": 10000,
+        "speed_mps": 230,
+        "guidance": "fiber_optic_ir",
+        "attack_modes": [
+          "direct_attack",
+          "top_attack",
+          "nlos"
+        ],
+        "fire_and_forget": true,
+        "fire_and_observe": true
+      },
+      "warhead": {
+        "type": "tandem_heat",
+        "diameter_mm": 155,
+        "penetration_mm_rha": 1400
+      },
+      "variants": [
+        {
+          "designation": "HJ-10A",
+          "notes": "Ground vehicle mounted"
+        },
+        {
+          "designation": "AKD-10",
+          "platforms": [
+            "Z-10",
+            "Z-19"
+          ],
+          "notes": "Helicopter version"
+        }
+      ],
+      "platforms": [
+        "AFT-10 vehicle (8x8)",
+        "Z-10",
+        "Z-19"
+      ],
+      "unit_cost_usd": 100000,
+      "cost_year": 2015,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia HJ-10",
+        "Army Recognition",
+        "Sinodefense"
+      ],
+      "notes": "Chinese Hellfire equivalent. 10km range. Vehicle and helicopter mounted. Fiber-optic datalink. NLOS capability. Standard on Z-10 attack helicopter.",
+      "year": 2012
+    },
+    {
+      "id": "jp-type01-lmat",
+      "name": "Type 01 LMAT",
+      "type": "atgm",
+      "country_of_origin": "JP",
+      "manufacturer": "Kawasaki Heavy Industries",
+      "service_history": {
+        "introduced": 2001,
+        "retired": null,
+        "production_count": 2000,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 2000,
+            "status": "active"
+          }
+        ],
+        "notes": "JGSDF only"
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_missile_kg": 11.4,
+        "weight_total_kg": 17.5,
+        "length_missile_mm": 970,
+        "diameter_mm": 120
+      },
+      "performance": {
+        "range_min_m": 60,
+        "range_max_m": 2000,
+        "speed_mps": 200,
+        "guidance": "infrared_imaging",
+        "attack_modes": [
+          "top_attack",
+          "direct_attack"
+        ],
+        "fire_and_forget": true
+      },
+      "warhead": {
+        "type": "tandem_heat",
+        "penetration_mm_rha": 700
+      },
+      "unit_cost_usd": 150000,
+      "cost_year": 2005,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Type 01 LMAT",
+        "Japan MoD"
+      ],
+      "notes": "Japanese domestic ATGM. Javelin-like fire-and-forget. Top-attack capability. Expensive domestic production (no export). JGSDF only.",
+      "year": 2001
+    },
+    {
+      "id": "kr-raybolt",
+      "name": "Hyungung (Raybolt)",
+      "type": "atgm",
+      "country_of_origin": "KR",
+      "manufacturer": "LIG Nex1",
+      "service_history": {
+        "introduced": 2017,
+        "retired": null,
+        "production_count": 3000,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 3000,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_missile_kg": 15,
+        "weight_total_kg": 24,
+        "length_missile_mm": 1200,
+        "diameter_mm": 140
+      },
+      "performance": {
+        "range_min_m": 100,
+        "range_max_m": 2500,
+        "speed_mps": 200,
+        "guidance": "infrared_imaging",
+        "attack_modes": [
+          "top_attack",
+          "direct_attack"
+        ],
+        "fire_and_forget": true,
+        "soft_launch": true
+      },
+      "warhead": {
+        "type": "tandem_heat",
+        "penetration_mm_rha": 900
+      },
+      "unit_cost_usd": 200000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Hyungung",
+        "Army Recognition"
+      ],
+      "notes": "Korean Javelin equivalent. Fire-and-forget IR seeker. Top-attack mode. Soft launch. Counters North Korean armor threat.",
+      "year": 2017
+    },
+    {
+      "id": "in-nag",
+      "name": "MPATGM Nag",
+      "type": "atgm",
+      "country_of_origin": "IN",
+      "manufacturer": "DRDO / BDL",
+      "service_history": {
+        "introduced": 2022,
+        "retired": null,
+        "production_count": 1000,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 1000,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "weight_missile_kg": 42,
+        "length_missile_mm": 1850,
+        "diameter_mm": 190
+      },
+      "performance": {
+        "range_min_m": 500,
+        "range_max_m": 4000,
+        "speed_mps": 230,
+        "guidance": "imaging_infrared",
+        "attack_modes": [
+          "direct_attack",
+          "top_attack"
+        ],
+        "fire_and_forget": true
+      },
+      "warhead": {
+        "type": "tandem_heat",
+        "penetration_mm_rha": 800
+      },
+      "variants": [
+        {
+          "designation": "Nag (vehicle)",
+          "platforms": [
+            "NAMICA (BMP-2 chassis)"
+          ],
+          "range_m": 4000
+        },
+        {
+          "designation": "HELINA/Dhruvastra",
+          "platforms": [
+            "HAL Dhruv",
+            "HAL LCH"
+          ],
+          "range_m": 7000,
+          "notes": "Helicopter version"
+        },
+        {
+          "designation": "MPATGM (Man-Portable)",
+          "weight_kg": 14.5,
+          "range_m": 2500,
+          "notes": "Lighter version"
+        }
+      ],
+      "platforms": [
+        "NAMICA",
+        "HAL Dhruv",
+        "HAL LCH"
+      ],
+      "unit_cost_usd": 200000,
+      "cost_year": 2022,
+      "confidence": "low",
+      "sources": [
+        "Wikipedia Nag missile",
+        "DRDO",
+        "Army Recognition"
+      ],
+      "notes": "Indigenous Indian fire-and-forget ATGM. Long development history. Imaging IR seeker. Vehicle and helicopter variants. MPATGM is man-portable version.",
+      "year": 2019
+    },
+    {
+      "id": "tr-umtas",
+      "name": "UMTAS/L-UMTAS",
+      "type": "atgm",
+      "country_of_origin": "TR",
+      "manufacturer": "Roketsan",
+      "service_history": {
+        "introduced": 2014,
+        "retired": null,
+        "production_count": 2000,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 1500,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 500,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "weight_missile_kg": 37,
+        "length_missile_mm": 1750,
+        "diameter_mm": 160
+      },
+      "performance": {
+        "range_min_m": 500,
+        "range_max_m": 8000,
+        "speed_mps": 250,
+        "guidance": "imaging_infrared_laser",
+        "attack_modes": [
+          "direct_attack",
+          "top_attack"
+        ],
+        "fire_and_forget": true
+      },
+      "warhead": {
+        "type": "tandem_heat",
+        "penetration_mm_rha": 1000
+      },
+      "variants": [
+        {
+          "designation": "UMTAS",
+          "guidance": "imaging IR + laser",
+          "range_m": 8000,
+          "notes": "Helicopter version"
+        },
+        {
+          "designation": "L-UMTAS",
+          "guidance": "laser",
+          "range_m": 8000,
+          "notes": "Laser-guided variant"
+        },
+        {
+          "designation": "OMTAS",
+          "range_m": 4000,
+          "notes": "Vehicle-mounted medium range"
+        }
+      ],
+      "platforms": [
+        "T129 ATAK",
+        "T625 G\u00f6kbey",
+        "Ground vehicles"
+      ],
+      "unit_cost_usd": 150000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia UMTAS",
+        "Army Recognition",
+        "Roketsan"
+      ],
+      "notes": "Turkish domestic ATGM. Fire-and-forget IR seeker. Primary armament for T129 ATAK helicopter. Combat use in Syria and Libya.",
+      "year": 2015
+    },
+    {
+      "id": "br-msc",
+      "name": "MSS-1.2 AC",
+      "type": "atgm",
+      "country_of_origin": "BR",
+      "manufacturer": "Mectron / Avibras",
+      "service_history": {
+        "introduced": 2010,
+        "retired": null,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 500,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_missile_kg": 13,
+        "weight_launcher_kg": 8,
+        "length_missile_mm": 1100,
+        "diameter_mm": 114
+      },
+      "performance": {
+        "range_min_m": 300,
+        "range_max_m": 3000,
+        "speed_mps": 220,
+        "guidance": "laser_beam_riding",
+        "attack_modes": [
+          "direct_attack"
+        ],
+        "fire_and_forget": false
+      },
+      "warhead": {
+        "type": "tandem_heat",
+        "penetration_mm_rha": 550
+      },
+      "unit_cost_usd": 50000,
+      "cost_year": 2015,
+      "confidence": "low",
+      "sources": [
+        "Army Recognition",
+        "Mectron"
+      ],
+      "notes": "Brazilian domestic ATGM. Laser beam riding. Limited production. Exports uncertain.",
+      "year": 2010
+    }
+  ]
+}

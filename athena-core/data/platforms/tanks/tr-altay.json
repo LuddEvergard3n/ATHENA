@@ -1,0 +1,180 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "tr-altay",
+      "name": "Altay",
+      "nato_designation": null,
+      "type": "mbt",
+      "country_of_origin": "TR",
+      "manufacturer": "BMC",
+      "service_history": {
+        "introduced": 2023,
+        "retired": null,
+        "production_count": 18,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 18,
+            "variants": [
+              "Altay T1"
+            ],
+            "status": "initial_production"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "passengers": 0,
+        "weight_kg": 65000,
+        "length_m": 7.6,
+        "length_gun_forward_m": 10.3,
+        "width_m": 3.7,
+        "height_m": 2.64,
+        "ground_clearance_m": 0.5
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU EuroPowerPack 883 Ka-501",
+          "type": "diesel_turbocharged",
+          "power_hp": 1500,
+          "power_kw": 1119
+        },
+        "power_to_weight_hp_ton": 23.1,
+        "transmission": "RENK HSWL 295TM automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 45,
+        "max_speed_reverse_kmh": 35,
+        "range_road_km": 450,
+        "fuel_capacity_liters": 1500,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 4.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 2.8,
+        "vertical_obstacle_m": 1.1,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "MKEK 120mm L/55",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 55,
+          "type": "smoothbore",
+          "elevation_min_deg": -9,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 10,
+          "muzzle_velocity_ms": 1750,
+          "effective_range_m": 4000,
+          "ammunition_carried": 42,
+          "ammunition_ready": 17,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "DM53A1",
+              "penetration_mm_rha": 680,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "APFSDS",
+              "designation": "MKEK APFSDS",
+              "penetration_mm_rha": 650,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "DM12A1",
+              "penetration_mm_rha": 480,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE",
+              "designation": "DM11",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "SARP RCWS",
+            "caliber_mm": 12.7,
+            "mount": "remote",
+            "ammunition_carried": 500
+          },
+          {
+            "designation": "MG3A1",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 3000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite_modular",
+        "armor_composition": "Modular composite armor based on K2 technology",
+        "protection_front_turret_mm_rha": 850,
+        "protection_front_hull_mm_rha": 700,
+        "protection_side_mm_rha": 300,
+        "protection_rear_mm_rha": 80,
+        "protection_top_mm_rha": 60,
+        "era_coverage": "Optional ERA package",
+        "aps": {
+          "system": "Akkor Pulat",
+          "type": "soft-kill",
+          "coverage_deg": 360
+        },
+        "modular_armor": true,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "hull_rear",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Aselsan integrated FCS",
+        "commander_sight": {
+          "type": "COAPS",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "ASELSAN SARP",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 8000,
+        "laser_warning_system": true,
+        "ballistic_computer": true,
+        "muzzle_reference_system": true,
+        "battle_management_system": "Aselsan BMS",
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "Smoke/IR/Chaff"
+      },
+      "unit_cost_usd": 13500000,
+      "cost_year": 2023,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Altay tank",
+        "Army Recognition Altay",
+        "Defence Turk",
+        "BMC official"
+      ],
+      "notes": "Indigenous Turkish MBT based on K2 Black Panther technology transfer. Long development history due to engine supply issues (German embargo). Initial T1 batch uses MTU engine; T2 will use indigenous BATU engine. Akkor Pulat soft-kill APS.",
+      "year": 2023
+    }
+  ]
+}

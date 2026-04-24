@@ -1,0 +1,133 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-02-14",
+    "sources": [
+      "Embraer Official",
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "FAB Official"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "br-kc390",
+      "name": "KC-390 Millennium",
+      "nato_name": null,
+      "type": "military_transport",
+      "generation": null,
+      "country_of_origin": "BR",
+      "manufacturer": "Embraer",
+      "service_history": {
+        "introduced": 2019,
+        "first_flight": 2015,
+        "retired": null,
+        "production_count": 34,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 15,
+            "variants": ["KC-390"],
+            "status": "active",
+            "notes": "1st/1st GT (Anapolis) + 1st/2nd GT. 22 ordered total."
+          },
+          {
+            "country": "PT",
+            "quantity": 5,
+            "status": "active",
+            "notes": "Delivered 2023-2024"
+          },
+          {
+            "country": "HU",
+            "quantity": 2,
+            "status": "active",
+            "notes": "Delivered 2024"
+          },
+          {
+            "country": "NL",
+            "quantity": 5,
+            "status": "ordered"
+          },
+          {
+            "country": "AT",
+            "quantity": 4,
+            "status": "ordered"
+          },
+          {
+            "country": "CZ",
+            "quantity": 2,
+            "status": "ordered"
+          },
+          {
+            "country": "KR",
+            "quantity": 2,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "length_m": 33.47,
+        "wingspan_m": 35.05,
+        "height_m": 11.84,
+        "empty_weight_kg": 33800,
+        "max_takeoff_weight_kg": 81000,
+        "internal_fuel_kg": 23000,
+        "hardpoints": 0
+      },
+      "performance": {
+        "max_speed_kmh": 870,
+        "max_speed_mach": 0.80,
+        "cruise_speed_kmh": 850,
+        "combat_radius_km": null,
+        "ferry_range_km": 6240,
+        "range_max_payload_km": 2556,
+        "service_ceiling_m": 10973,
+        "rate_of_climb_ms": null,
+        "g_limit": null
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "IAE V2500-E5",
+        "thrust_kn": 139.4,
+        "afterburner": false,
+        "notes": "Same engine family as A320. High bypass turbofan."
+      },
+      "armament": {
+        "gun": null,
+        "hardpoints_detail": null
+      },
+      "cargo": {
+        "max_payload_kg": 26000,
+        "cargo_hold_length_m": 17.75,
+        "cargo_hold_width_m": 3.45,
+        "cargo_hold_height_m": 3.2,
+        "cargo_volume_m3": 170,
+        "paratroopers": 66,
+        "troops": 80,
+        "litters_medevac": 74,
+        "pallets_463L": 8,
+        "aerial_refueling": true,
+        "refueling_pods": "2x Cobham 912E wing pods",
+        "unpaved_runway": true,
+        "unpaved_cbr": 4
+      },
+      "sensors": {
+        "radar": "Weather/navigation radar",
+        "ew": "MAWS + RWR",
+        "countermeasures": "Chaff/flare dispensers"
+      },
+      "unit_cost_usd": 85000000,
+      "cost_year": 2024,
+      "confidence": "high",
+      "sources": [
+        "Embraer Official KC-390 specs",
+        "Wikipedia Embraer C-390 Millennium",
+        "War Wings Daily KC-390",
+        "Encyclopedia MDPI Embraer KC-390"
+      ],
+      "notes": "Fastest and most capable medium transport in its class. Outperforms C-130J in speed and payload-range. Can operate from unpaved/semi-prepared runways. Tanker configuration with 2x Cobham 912E wing pods. Ferry range 8,460 km with 3 aux tanks. Brazil's most successful military aircraft program since Super Tucano. Strong export growth — 10+ countries ordered/interested."
+    }
+  ]
+}

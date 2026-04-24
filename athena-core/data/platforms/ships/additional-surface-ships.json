@@ -1,0 +1,334 @@
+{
+  "platforms": [
+    {
+      "id": "us-ffg-62-constellation",
+      "name": "Constellation-class FFG",
+      "type": "frigate",
+      "country_of_origin": "US",
+      "manufacturer": "Fincantieri Marinette Marine",
+      "base_design": "FREMM",
+      "service_entry": 2029,
+      "specifications": {
+        "displacement_tons": 7400,
+        "length_m": 151.2,
+        "beam_m": 19.8,
+        "draft_m": 5.4,
+        "crew": 200,
+        "max_speed_knots": 26,
+        "range_nm": 6000
+      },
+      "propulsion": {
+        "type": "CODLAG",
+        "gas_turbine": "1x GE LM2500+G4",
+        "diesels": "4x Colt-Pielstick diesels",
+        "motors": "2x electric"
+      },
+      "armament": {
+        "vls": {
+          "type": "Mk 41 VLS",
+          "cells": 32,
+          "missiles": ["SM-2", "ESSM", "Tomahawk", "VL-ASROC"]
+        },
+        "gun": "Mk 110 57mm",
+        "ciws": "SeaRAM",
+        "ssm": "16x NSM",
+        "torpedoes": "Mk 32 triple tubes",
+        "helicopters": 1
+      },
+      "sensors": {
+        "radar": "AN/SPY-6(V)3 EASR AESA",
+        "sonar": "AN/SQS-62 CAPTAS-4"
+      },
+      "service_history": {
+        "expected_service": 2029,
+        "planned": 20,
+        "lead_ship": "USS Constellation (FFG-62)"
+      },
+      "unit_cost_usd": 1200000000,
+      "notes": "First US frigates since FFG-7. Based on FREMM. 32-cell VLS. Cost overruns and delays."
+    },
+    {
+      "id": "us-lcs-1-freedom",
+      "name": "Freedom-class LCS",
+      "type": "littoral_combat_ship",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin/Fincantieri",
+      "service_entry": 2008,
+      "specifications": {
+        "displacement_tons": 3500,
+        "length_m": 115,
+        "beam_m": 17.5,
+        "draft_m": 3.9,
+        "crew": 50,
+        "max_speed_knots": 47,
+        "range_nm": 3500
+      },
+      "propulsion": {
+        "type": "CODAG",
+        "gas_turbines": "2x Rolls-Royce MT30",
+        "diesels": "2x Colt-Pielstick",
+        "power_hp": 96000,
+        "waterjets": 4
+      },
+      "armament": {
+        "gun": "Mk 110 57mm",
+        "ssm": "NSM (added)",
+        "ram": "1x RIM-116 RAM",
+        "guns_secondary": "4x .50 cal",
+        "mission_module": "ASW, MCM, or SUW"
+      },
+      "helicopters": "MH-60R + Fire Scout MQ-8B",
+      "service_history": {
+        "introduced": 2008,
+        "status": "active",
+        "built": 11,
+        "early_decommissioning": "Multiple ships retired early"
+      },
+      "unit_cost_usd": 500000000,
+      "notes": "Controversial program. Many early retirements. Combining gear problems. NSM missiles added to increase lethality."
+    },
+    {
+      "id": "us-lcs-2-independence",
+      "name": "Independence-class LCS",
+      "type": "littoral_combat_ship",
+      "country_of_origin": "US",
+      "manufacturer": "Austal USA",
+      "service_entry": 2010,
+      "specifications": {
+        "displacement_tons": 3100,
+        "length_m": 127.4,
+        "beam_m": 31.6,
+        "draft_m": 4.3,
+        "crew": 40,
+        "max_speed_knots": 44,
+        "range_nm": 4300
+      },
+      "propulsion": {
+        "type": "CODAG",
+        "configuration": "Trimaran",
+        "gas_turbines": "2x GE LM2500",
+        "diesels": "2x MTU 20V 8000",
+        "waterjets": 4
+      },
+      "armament": {
+        "gun": "Mk 110 57mm",
+        "ssm": "NSM",
+        "ram": "1x SeaRAM"
+      },
+      "service_history": {
+        "introduced": 2010,
+        "status": "active",
+        "built": 13
+      },
+      "notes": "Trimaran hull. Large flight deck. NSM missiles add anti-ship capability."
+    },
+    {
+      "id": "cn-type-056a-corvette",
+      "name": "Type 056A Jiangdao-class",
+      "type": "corvette",
+      "country_of_origin": "CN",
+      "manufacturer": "Multiple shipyards",
+      "service_entry": 2014,
+      "specifications": {
+        "displacement_tons": 1500,
+        "length_m": 89,
+        "beam_m": 11.6,
+        "max_speed_knots": 28,
+        "crew": 78
+      },
+      "armament": {
+        "gun": "PJ-26 76mm",
+        "ssm": "4x YJ-83",
+        "sam": "HQ-10 (8 cells)",
+        "torpedo_tubes": "2x triple 324mm"
+      },
+      "sensors": {
+        "towed_array": "TASS (Type 056A)"
+      },
+      "service_history": {
+        "introduced": 2014,
+        "status": "active",
+        "built": 72,
+        "note": "Most numerous PLAN surface combatant"
+      },
+      "notes": "Type 056A is ASW variant with towed array. 72 built - one of largest post-WWII warship classes."
+    },
+    {
+      "id": "sg-formidable-frigate",
+      "name": "Formidable-class frigate",
+      "type": "frigate",
+      "country_of_origin": "SG",
+      "manufacturer": "ST Marine (Singapore)",
+      "base_design": "La Fayette",
+      "service_entry": 2007,
+      "specifications": {
+        "displacement_tons": 3200,
+        "length_m": 114.8,
+        "beam_m": 16.3,
+        "max_speed_knots": 27,
+        "crew": 71
+      },
+      "armament": {
+        "vls": "32 cells (Sylver A50)",
+        "sam": "Aster 15/30",
+        "ssm": "8x Harpoon",
+        "gun": "76mm OTO",
+        "helicopters": "1x S-70B"
+      },
+      "stealth": {
+        "low_rcs": true,
+        "signature_reduction": true
+      },
+      "service_history": {
+        "introduced": 2007,
+        "status": "active",
+        "built": 6
+      },
+      "notes": "Based on La Fayette but with AESA radar. Very capable for size. RSN flagship class."
+    },
+    {
+      "id": "in-shivalik-frigate",
+      "name": "Shivalik-class frigate",
+      "type": "frigate",
+      "country_of_origin": "IN",
+      "manufacturer": "Mazagon Dock",
+      "service_entry": 2010,
+      "specifications": {
+        "displacement_tons": 6200,
+        "length_m": 142.5,
+        "beam_m": 16.9,
+        "max_speed_knots": 32,
+        "crew": 257
+      },
+      "armament": {
+        "ssm": "8x BrahMos",
+        "sam": "Barak 1",
+        "gun": "76mm OTO Melara",
+        "torpedoes": "Triple tubes",
+        "helicopters": 2
+      },
+      "stealth": {
+        "low_rcs": true,
+        "ir_suppression": true
+      },
+      "service_history": {
+        "introduced": 2010,
+        "status": "active",
+        "built": 3
+      },
+      "notes": "Indian stealth frigate. BrahMos supersonic missiles. Indigenous design."
+    },
+    {
+      "id": "in-nilgiri-frigate",
+      "name": "Nilgiri-class (Project 17A)",
+      "type": "frigate",
+      "country_of_origin": "IN",
+      "manufacturer": "MDL/GRSE",
+      "service_entry": 2024,
+      "specifications": {
+        "displacement_tons": 6670,
+        "length_m": 149,
+        "beam_m": 17.8,
+        "max_speed_knots": 28,
+        "crew": 226
+      },
+      "armament": {
+        "ssm": "8x BrahMos",
+        "sam": "Barak 8 VLS",
+        "gun": "127mm",
+        "torpedoes": "Triple tubes",
+        "helicopters": 2
+      },
+      "stealth": {
+        "enhanced": true,
+        "signature_management": true
+      },
+      "service_history": {
+        "introduced": 2024,
+        "status": "active",
+        "planned": 7
+      },
+      "notes": "Improved Shivalik design. Enhanced stealth. Barak 8 area defense."
+    },
+    {
+      "id": "pk-babur-frigate",
+      "name": "Babur-class (Type 054A/P)",
+      "type": "frigate",
+      "country_of_origin": "PK",
+      "manufacturer": "Hudong-Zhonghua (China)",
+      "base_design": "Type 054A",
+      "service_entry": 2022,
+      "specifications": {
+        "displacement_tons": 4200,
+        "length_m": 134,
+        "max_speed_knots": 27
+      },
+      "armament": {
+        "vls": "32 cells",
+        "sam": "HQ-16",
+        "ssm": "CM-302",
+        "gun": "76mm"
+      },
+      "service_history": {
+        "introduced": 2022,
+        "status": "active",
+        "built": 4
+      },
+      "notes": "Chinese-built for Pakistan Navy. Type 054A/P variant."
+    },
+    {
+      "id": "au-hunter-frigate",
+      "name": "Hunter-class frigate",
+      "type": "frigate",
+      "country_of_origin": "AU",
+      "manufacturer": "ASC (BAE design)",
+      "base_design": "Type 26",
+      "service_entry": 2031,
+      "specifications": {
+        "displacement_tons": 10000,
+        "length_m": 149.9,
+        "crew": 180
+      },
+      "armament": {
+        "vls": "32x Mk 41",
+        "sam": "ESSM / SM-2",
+        "ssm": "Tomahawk capable",
+        "gun": "Mk 45 127mm"
+      },
+      "sensors": {
+        "radar": "CEAFAR2 AESA"
+      },
+      "service_history": {
+        "expected_service": 2031,
+        "planned": 9
+      },
+      "notes": "Australian Type 26 variant. Australian CEAFAR radar. ASW focused."
+    },
+    {
+      "id": "ca-csc-frigate",
+      "name": "Canadian Surface Combatant",
+      "type": "frigate",
+      "country_of_origin": "CA",
+      "manufacturer": "Irving Shipbuilding",
+      "base_design": "Type 26",
+      "service_entry": 2030,
+      "specifications": {
+        "displacement_tons": 7800,
+        "length_m": 151.4
+      },
+      "armament": {
+        "vls": "24x Mk 41",
+        "sam": "ESSM",
+        "gun": "Mk 45 127mm"
+      },
+      "sensors": {
+        "radar": "Lockheed Martin CMS 330"
+      },
+      "service_history": {
+        "expected_service": 2030,
+        "planned": 15
+      },
+      "notes": "River-class replacement. Type 26 design. 15 planned - largest Canadian shipbuilding program."
+    }
+  ]
+}

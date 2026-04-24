@@ -1,0 +1,356 @@
+{
+  "platforms": [
+    {
+      "id": "us-rq-11-raven",
+      "name": "RQ-11B Raven",
+      "type": "small_uav",
+      "country_of_origin": "US",
+      "manufacturer": "AeroVironment",
+      "service_entry": 2003,
+      "specifications": {
+        "length_m": 0.91,
+        "wingspan_m": 1.37,
+        "weight_kg": 1.9,
+        "max_speed_kmh": 97,
+        "endurance_min": 90,
+        "range_km": 10,
+        "ceiling_m": 4500
+      },
+      "sensors": {
+        "eo_camera": "Stabilized gimbaled",
+        "ir_camera": "Optional NV"
+      },
+      "features": {
+        "hand_launched": true,
+        "backpackable": true,
+        "deep_stall_landing": true
+      },
+      "service_history": {
+        "introduced": 2003,
+        "status": "active",
+        "production_count": 19000,
+        "operators_count": 30
+      },
+      "combat_use": [
+        {"conflict": "Iraq", "year": 2003},
+        {"conflict": "Afghanistan", "year": 2003},
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "unit_cost_usd": 35000,
+      "notes": "Most widely used military small UAS. Hand-launched ISR. Over 19,000 produced. Platoon-level asset."
+    },
+    {
+      "id": "us-rq-20-puma",
+      "name": "RQ-20B Puma AE",
+      "type": "small_uav",
+      "country_of_origin": "US",
+      "manufacturer": "AeroVironment",
+      "service_entry": 2012,
+      "specifications": {
+        "length_m": 1.4,
+        "wingspan_m": 2.8,
+        "weight_kg": 6.3,
+        "max_speed_kmh": 83,
+        "endurance_hours": 3.5,
+        "range_km": 20,
+        "ceiling_m": 3000
+      },
+      "sensors": {
+        "payload": "Mantis i45 EO/IR gimbaled"
+      },
+      "features": {
+        "hand_launched": true,
+        "all_weather": true,
+        "water_landing": true,
+        "modular_payload": true
+      },
+      "service_history": {
+        "introduced": 2012,
+        "status": "active",
+        "operators": ["US Army", "USMC", "USSOCOM", "UK", "AU"]
+      },
+      "unit_cost_usd": 250000,
+      "notes": "All-environment small UAS. Can land on water. Longer endurance than Raven. Company-level asset."
+    },
+    {
+      "id": "us-rq-7-shadow",
+      "name": "RQ-7B Shadow",
+      "type": "tactical_uav",
+      "country_of_origin": "US",
+      "manufacturer": "Textron (AAI)",
+      "service_entry": 2002,
+      "specifications": {
+        "length_m": 3.4,
+        "wingspan_m": 4.3,
+        "weight_kg": 170,
+        "max_speed_kmh": 204,
+        "endurance_hours": 9,
+        "range_km": 125,
+        "ceiling_m": 4600
+      },
+      "sensors": {
+        "eo_ir": "POP-300 payload",
+        "laser": "Laser designator"
+      },
+      "launch": "Rail launcher (HMMWV)",
+      "recovery": "Arresting wire",
+      "service_history": {
+        "introduced": 2002,
+        "status": "active",
+        "production_count": 500,
+        "operators": ["US Army", "AU", "IT", "SE", "RO"]
+      },
+      "unit_cost_usd": 750000,
+      "notes": "US Army Brigade Combat Team organic ISR. Can designate for artillery. Over 1M flight hours."
+    },
+    {
+      "id": "us-scaneagle",
+      "name": "ScanEagle",
+      "type": "small_uav",
+      "country_of_origin": "US",
+      "manufacturer": "Insitu (Boeing)",
+      "service_entry": 2005,
+      "specifications": {
+        "length_m": 1.55,
+        "wingspan_m": 3.11,
+        "weight_kg": 22,
+        "max_speed_kmh": 148,
+        "endurance_hours": 24,
+        "range_km": 100,
+        "ceiling_m": 5900
+      },
+      "sensors": {
+        "eo_ir": "Dual EO/IR turret",
+        "options": ["SIGINT", "COMINT"]
+      },
+      "launch": "SuperWedge pneumatic launcher",
+      "recovery": "SkyHook wire capture",
+      "service_history": {
+        "introduced": 2005,
+        "status": "active",
+        "operators_count": 25
+      },
+      "combat_use": [
+        {"conflict": "Iraq", "year": 2005},
+        {"conflict": "Afghanistan", "year": 2006},
+        {"conflict": "Libya", "year": 2011}
+      ],
+      "unit_cost_usd": 100000,
+      "notes": "Long-endurance small UAS. 24 hours endurance. SkyHook recovery system. Naval ISR use."
+    },
+    {
+      "id": "no-black-hornet",
+      "name": "Black Hornet 3 PRS",
+      "type": "nano_uav",
+      "country_of_origin": "NO",
+      "manufacturer": "FLIR (Teledyne)",
+      "service_entry": 2012,
+      "specifications": {
+        "length_mm": 168,
+        "rotor_diameter_mm": 120,
+        "weight_g": 33,
+        "max_speed_kmh": 21,
+        "endurance_min": 25,
+        "range_m": 2000
+      },
+      "sensors": {
+        "cameras": "3 (EO day, EO low-light, thermal)",
+        "video": "Live streaming"
+      },
+      "features": {
+        "gps_denied": true,
+        "near_silent": true,
+        "fits_in_pocket": true
+      },
+      "service_history": {
+        "introduced": 2012,
+        "status": "active",
+        "operators": ["US", "GB", "AU", "FR", "DE", "NO", "IN"]
+      },
+      "combat_use": [
+        {"conflict": "Afghanistan", "year": 2013}
+      ],
+      "unit_cost_usd": 195000,
+      "notes": "World's smallest military drone. 33 grams. Soldier-portable ISR. GPS-denied navigation."
+    },
+    {
+      "id": "us-skydio-x2d",
+      "name": "Skydio X2D",
+      "type": "small_uav",
+      "country_of_origin": "US",
+      "manufacturer": "Skydio",
+      "service_entry": 2020,
+      "specifications": {
+        "weight_kg": 1.0,
+        "max_speed_kmh": 58,
+        "endurance_min": 35,
+        "range_km": 6
+      },
+      "sensors": {
+        "cameras": "6x 4K navigation + main EO/IR",
+        "ai": "Autonomous obstacle avoidance"
+      },
+      "features": {
+        "ai_autonomy": true,
+        "obstacle_avoidance": "360-degree",
+        "gps_denied": true,
+        "encrypted": true
+      },
+      "service_history": {
+        "introduced": 2020,
+        "status": "active",
+        "operators": ["US Army", "US DoD"]
+      },
+      "unit_cost_usd": 11000,
+      "notes": "US-made alternative to DJI. AI autonomous flight. Approved for DoD use. Blue sUAS program."
+    },
+    {
+      "id": "ru-eleron-3sv",
+      "name": "Eleron-3SV",
+      "type": "small_uav",
+      "country_of_origin": "RU",
+      "manufacturer": "Enics",
+      "service_entry": 2014,
+      "specifications": {
+        "wingspan_m": 1.47,
+        "weight_kg": 4.3,
+        "endurance_hours": 2,
+        "range_km": 25,
+        "ceiling_m": 5000
+      },
+      "sensors": {
+        "eo_ir": "Stabilized camera"
+      },
+      "launch": "Hand or bungee",
+      "service_history": {
+        "introduced": 2014,
+        "status": "active"
+      },
+      "combat_use": [
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "notes": "Russian small tactical drone. Widely used in Ukraine for artillery spotting."
+    },
+    {
+      "id": "ru-supercam-s350",
+      "name": "SuperCam S350",
+      "type": "small_uav",
+      "country_of_origin": "RU",
+      "manufacturer": "Unmanned Systems",
+      "service_entry": 2016,
+      "specifications": {
+        "wingspan_m": 3.2,
+        "weight_kg": 9.5,
+        "endurance_hours": 4,
+        "range_km": 100,
+        "ceiling_m": 4000
+      },
+      "sensors": {
+        "eo_ir": "Gyro-stabilized",
+        "zoom": "30x optical"
+      },
+      "service_history": {
+        "introduced": 2016,
+        "status": "active"
+      },
+      "combat_use": [
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "notes": "Russian VTOL-capable tactical drone. Hand-launched. Used extensively in Ukraine."
+    },
+    {
+      "id": "il-orbiter-3",
+      "name": "Orbiter 3",
+      "type": "small_uav",
+      "country_of_origin": "IL",
+      "manufacturer": "Aeronautics Ltd",
+      "service_entry": 2016,
+      "specifications": {
+        "length_m": 1.1,
+        "wingspan_m": 3.0,
+        "weight_kg": 7.5,
+        "endurance_hours": 7,
+        "range_km": 100,
+        "ceiling_m": 5500
+      },
+      "sensors": {
+        "eo_ir": "Dual payload",
+        "comm_relay": "Optional"
+      },
+      "service_history": {
+        "introduced": 2016,
+        "status": "active",
+        "operators": ["IL", "AZ", "UA"]
+      },
+      "combat_use": [
+        {"conflict": "Nagorno-Karabakh", "year": 2020}
+      ],
+      "unit_cost_usd": 500000,
+      "notes": "Israeli tactical UAV. Used by Azerbaijan in Karabakh war."
+    },
+    {
+      "id": "us-coyote-block3",
+      "name": "Coyote Block 3",
+      "type": "counter_uas_interceptor",
+      "country_of_origin": "US",
+      "manufacturer": "Raytheon",
+      "service_entry": 2021,
+      "specifications": {
+        "length_m": 0.91,
+        "wingspan_m": 1.47,
+        "weight_kg": 5.9,
+        "max_speed_kmh": 130,
+        "endurance_min": 60
+      },
+      "warhead": {
+        "type": "Proximity fused",
+        "target": "UAS intercept"
+      },
+      "features": {
+        "tube_launched": true,
+        "reusable": false,
+        "swarm_capable": true
+      },
+      "service_history": {
+        "introduced": 2021,
+        "status": "active",
+        "operators": ["US Army"]
+      },
+      "unit_cost_usd": 12000,
+      "notes": "Expendable drone interceptor. Low cost C-UAS kinetic solution. Part of LIDS system."
+    },
+    {
+      "id": "generic-fpv-kamikaze",
+      "name": "FPV Kamikaze Drone (Generic)",
+      "type": "fpv_attack_drone",
+      "country_of_origin": "Various",
+      "manufacturer": "Various / DIY",
+      "service_entry": 2022,
+      "specifications": {
+        "weight_kg": "0.5-3.0",
+        "speed_kmh": "100-150",
+        "range_km": "5-15",
+        "payload_kg": "0.5-2.0 (RPG/grenade)"
+      },
+      "warhead_options": [
+        "RPG-7 warhead",
+        "RKG-3 grenade",
+        "VOG-17 grenade",
+        "Shaped charge"
+      ],
+      "features": {
+        "first_person_view": true,
+        "low_cost": true,
+        "mass_producible": true,
+        "precision_strike": true
+      },
+      "service_history": {
+        "emerged": 2022,
+        "status": "Widespread",
+        "operators": ["UA", "RU", "Various"]
+      },
+      "unit_cost_usd": 400,
+      "notes": "Revolution in warfare. Commercial drone + explosive. $400 drone destroys $2M tank. Ukraine produces 100,000+/month."
+    }
+  ]
+}

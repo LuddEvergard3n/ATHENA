@@ -1,0 +1,755 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition",
+      "Missile Defense Advocacy Alliance"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-patriot-pac3",
+      "name": "MIM-104 Patriot PAC-3",
+      "type": "sam",
+      "country_of_origin": "US",
+      "manufacturer": "Raytheon / Lockheed Martin",
+      "service_history": {
+        "introduced": 2001,
+        "retired": null,
+        "production_count": 240,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 60,
+            "variants": [
+              "PAC-3",
+              "PAC-3 MSE"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "DE",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "NL",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "JP",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "quantity": 8,
+            "status": "active"
+          },
+          {
+            "country": "IL",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 16,
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 9,
+            "status": "active"
+          },
+          {
+            "country": "KW",
+            "quantity": 5,
+            "status": "active"
+          },
+          {
+            "country": "QA",
+            "quantity": 11,
+            "status": "active"
+          },
+          {
+            "country": "TW",
+            "quantity": 7,
+            "status": "active"
+          },
+          {
+            "country": "GR",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "ES",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 8,
+            "status": "ordered"
+          },
+          {
+            "country": "RO",
+            "quantity": 7,
+            "status": "ordered"
+          },
+          {
+            "country": "UA",
+            "quantity": 4,
+            "status": "active"
+          }
+        ],
+        "notes": "Fire units (batteries)"
+      },
+      "system_components": {
+        "radar": {
+          "designation": "AN/MPQ-65A",
+          "type": "phased_array",
+          "range_km": 180,
+          "targets_tracked": 100,
+          "targets_engaged": 9,
+          "frequency": "C-band"
+        },
+        "command": {
+          "designation": "AN/MSQ-132 ECS",
+          "type": "Engagement Control Station"
+        },
+        "launcher": {
+          "designation": "M903",
+          "missiles_per_launcher": 16,
+          "launchers_per_battery": 8
+        },
+        "power": {
+          "designation": "EPP-III",
+          "type": "Electric Power Plant"
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "MIM-104F PAC-3",
+            "type": "hit-to-kill",
+            "range_max_km": 35,
+            "altitude_max_km": 24,
+            "speed_mach": 5,
+            "warhead": "kinetic hit-to-kill",
+            "guidance": "active radar + TVM",
+            "targets": [
+              "TBM",
+              "cruise_missile",
+              "aircraft"
+            ],
+            "missiles_per_canister": 4
+          },
+          {
+            "designation": "PAC-3 MSE",
+            "type": "hit-to-kill",
+            "range_max_km": 60,
+            "altitude_max_km": 35,
+            "speed_mach": 5.5,
+            "warhead": "kinetic hit-to-kill",
+            "guidance": "active radar + TVM",
+            "targets": [
+              "TBM",
+              "cruise_missile",
+              "aircraft",
+              "hypersonic"
+            ],
+            "missiles_per_canister": 4,
+            "notes": "Missile Segment Enhancement - larger motor"
+          },
+          {
+            "designation": "MIM-104E GEM-T",
+            "type": "blast-fragmentation",
+            "range_max_km": 160,
+            "altitude_max_km": 24,
+            "speed_mach": 5,
+            "warhead_kg": 90,
+            "guidance": "semi-active radar + TVM",
+            "targets": [
+              "aircraft",
+              "cruise_missile"
+            ],
+            "missiles_per_canister": 1
+          }
+        ]
+      },
+      "mobility": {
+        "deployment_time_min": 30,
+        "teardown_time_min": 30,
+        "vehicles": "M983 HEMTT, M860 trailers"
+      },
+      "unit_cost_usd": 1100000000,
+      "cost_year": 2023,
+      "cost_notes": "Per battery with missiles",
+      "missile_cost_usd": {
+        "pac3": 4100000,
+        "pac3_mse": 5400000,
+        "gem_t": 3000000
+      },
+      "confidence": "high",
+      "sources": [
+        "Wikipedia MIM-104 Patriot",
+        "Army Recognition",
+        "Raytheon",
+        "Missile Defense Agency"
+      ],
+      "notes": "Primary NATO/allied BMD. Gulf War: mixed results. Ukraine: highly effective vs Russian missiles/aircraft. PAC-3 MSE counters Iskander. IBCS integration ongoing. GEM-T for aircraft, PAC-3 for missiles.",
+      "year": 2001
+    },
+    {
+      "id": "us-thaad",
+      "name": "THAAD",
+      "type": "sam",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "service_history": {
+        "introduced": 2008,
+        "retired": null,
+        "production_count": 7,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 7,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 7,
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 2,
+            "status": "active"
+          },
+          {
+            "country": "IL",
+            "quantity": 1,
+            "status": "deployed",
+            "notes": "US-operated"
+          },
+          {
+            "country": "KR",
+            "quantity": 1,
+            "status": "deployed",
+            "notes": "US-operated"
+          }
+        ],
+        "notes": "Batteries"
+      },
+      "system_components": {
+        "radar": {
+          "designation": "AN/TPY-2",
+          "type": "X-band phased array",
+          "range_km": 1000,
+          "targets_tracked": 100,
+          "notes": "Can operate in forward-based mode"
+        },
+        "launcher": {
+          "designation": "M1075 PLS",
+          "missiles_per_launcher": 8,
+          "launchers_per_battery": 6
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "THAAD Interceptor",
+            "type": "hit-to-kill",
+            "range_max_km": 200,
+            "altitude_max_km": 150,
+            "altitude_min_km": 40,
+            "speed_mach": 8,
+            "warhead": "kinetic hit-to-kill",
+            "guidance": "infrared seeker",
+            "targets": [
+              "MRBM",
+              "IRBM",
+              "TBM"
+            ],
+            "notes": "Exo-atmospheric/endo-atmospheric"
+          }
+        ]
+      },
+      "mobility": {
+        "deployment_time_min": 60,
+        "vehicles": "M1120 HEMTT, M983 tractor"
+      },
+      "unit_cost_usd": 2500000000,
+      "cost_year": 2023,
+      "cost_notes": "Per battery",
+      "missile_cost_usd": 12700000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia THAAD",
+        "Missile Defense Agency",
+        "Lockheed Martin"
+      ],
+      "notes": "Terminal High Altitude Area Defense. Upper-tier BMD. Intercepts in space or upper atmosphere. 100% intercept rate in tests. Israel deployment 2024 during Iran crisis. Complements Patriot (lower tier).",
+      "year": 2008
+    },
+    {
+      "id": "no-nasams",
+      "name": "NASAMS 2/3",
+      "type": "sam",
+      "country_of_origin": "NO",
+      "manufacturer": "Kongsberg / Raytheon",
+      "service_history": {
+        "introduced": 1998,
+        "retired": null,
+        "production_count": 150,
+        "operators": [
+          {
+            "country": "NO",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "US",
+            "quantity": 11,
+            "variants": [
+              "NASAMS 2"
+            ],
+            "status": "active",
+            "notes": "Washington DC defense"
+          },
+          {
+            "country": "NL",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "ES",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "FI",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "CL",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 4,
+            "status": "ordered"
+          },
+          {
+            "country": "LT",
+            "quantity": 2,
+            "status": "active"
+          },
+          {
+            "country": "ID",
+            "quantity": 2,
+            "status": "active"
+          },
+          {
+            "country": "QA",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "HU",
+            "quantity": 4,
+            "status": "ordered"
+          },
+          {
+            "country": "UA",
+            "quantity": 8,
+            "status": "active"
+          }
+        ],
+        "notes": "Fire units"
+      },
+      "system_components": {
+        "radar": {
+          "designation": "AN/MPQ-64F1 Sentinel",
+          "type": "3D phased array",
+          "range_km": 120,
+          "targets_tracked": 60
+        },
+        "command": {
+          "designation": "FDC",
+          "type": "Fire Distribution Center"
+        },
+        "launcher": {
+          "designation": "LCHR",
+          "missiles_per_launcher": 6,
+          "launchers_per_battery": 3,
+          "notes": "Canister launcher"
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "AIM-120 AMRAAM",
+            "type": "active_radar",
+            "range_max_km": 40,
+            "altitude_max_km": 21,
+            "speed_mach": 4,
+            "warhead_kg": 23,
+            "guidance": "active radar",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "UAV"
+            ]
+          },
+          {
+            "designation": "AIM-120C-7 AMRAAM-ER",
+            "type": "active_radar",
+            "range_max_km": 50,
+            "altitude_max_km": 21,
+            "speed_mach": 4,
+            "guidance": "active radar",
+            "notes": "Extended range motor"
+          },
+          {
+            "designation": "AIM-9X Sidewinder",
+            "type": "infrared",
+            "range_max_km": 10,
+            "guidance": "infrared",
+            "targets": [
+              "aircraft",
+              "UAV",
+              "helicopter"
+            ]
+          },
+          {
+            "designation": "AMRAAM-ER (NASAMS 3)",
+            "type": "active_radar",
+            "range_max_km": 70,
+            "altitude_max_km": 25,
+            "guidance": "active radar",
+            "notes": "ESSM booster + AMRAAM seeker"
+          }
+        ]
+      },
+      "mobility": {
+        "deployment_time_min": 15,
+        "teardown_time_min": 15,
+        "vehicles": "Various trucks, highly mobile"
+      },
+      "unit_cost_usd": 100000000,
+      "cost_year": 2022,
+      "cost_notes": "Per battery",
+      "missile_cost_usd": {
+        "amraam": 1100000,
+        "aim9x": 400000
+      },
+      "confidence": "high",
+      "sources": [
+        "Wikipedia NASAMS",
+        "Army Recognition",
+        "Kongsberg"
+      ],
+      "notes": "Norwegian Advanced Surface-to-Air Missile System. Uses air-to-air missiles (AMRAAM). Highly mobile, rapid deployment. Ukraine: very effective vs cruise missiles. Protects White House. NASAMS 3 with AMRAAM-ER 70km range.",
+      "year": 1998
+    },
+    {
+      "id": "de-iris-t-slm",
+      "name": "IRIS-T SLM",
+      "type": "sam",
+      "country_of_origin": "DE",
+      "manufacturer": "Diehl Defence",
+      "service_history": {
+        "introduced": 2022,
+        "retired": null,
+        "production_count": 20,
+        "operators": [
+          {
+            "country": "DE",
+            "quantity": 6,
+            "status": "ordered"
+          },
+          {
+            "country": "UA",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 4,
+            "status": "ordered"
+          },
+          {
+            "country": "SE",
+            "quantity": 4,
+            "status": "ordered"
+          },
+          {
+            "country": "SI",
+            "quantity": 2,
+            "status": "ordered"
+          }
+        ],
+        "notes": "Fire units"
+      },
+      "system_components": {
+        "radar": {
+          "designation": "TRML-4D",
+          "type": "AESA",
+          "range_km": 250,
+          "targets_tracked": 1500,
+          "manufacturer": "Hensoldt"
+        },
+        "command": {
+          "designation": "IBCS compatible",
+          "type": "Command Post"
+        },
+        "launcher": {
+          "designation": "Mobile Launcher",
+          "missiles_per_launcher": 8,
+          "launchers_per_battery": 3
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "IRIS-T SL",
+            "type": "infrared",
+            "range_max_km": 40,
+            "altitude_max_km": 20,
+            "speed_mach": 3,
+            "warhead_kg": 11.4,
+            "guidance": "infrared imaging + datalink",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "UAV",
+              "helicopter"
+            ],
+            "notes": "Based on IRIS-T air-to-air missile"
+          }
+        ]
+      },
+      "mobility": {
+        "deployment_time_min": 10,
+        "teardown_time_min": 10,
+        "vehicles": "MAN trucks"
+      },
+      "unit_cost_usd": 150000000,
+      "cost_year": 2023,
+      "cost_notes": "Per battery",
+      "missile_cost_usd": 430000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia IRIS-T SL",
+        "Army Recognition",
+        "Diehl Defence"
+      ],
+      "notes": "German medium-range SAM. Ukraine: 100% intercept rate claimed against cruise missiles/drones. TRML-4D radar excellent. SLM = Surface Launched Medium range. SLS short-range variant exists. IRIS-T SLX 80km in development.",
+      "year": 2022
+    },
+    {
+      "id": "fr-samp-t",
+      "name": "SAMP/T (Aster 30)",
+      "type": "sam",
+      "country_of_origin": "FR",
+      "manufacturer": "Eurosam (MBDA/Thales)",
+      "service_history": {
+        "introduced": 2008,
+        "retired": null,
+        "production_count": 15,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 8,
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "quantity": 5,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 2,
+            "status": "active"
+          }
+        ],
+        "notes": "Batteries"
+      },
+      "system_components": {
+        "radar": {
+          "designation": "Arabel",
+          "type": "X-band phased array",
+          "range_km": 100,
+          "targets_tracked": 50,
+          "targets_engaged": 10
+        },
+        "command": {
+          "designation": "Mara FC",
+          "type": "Fire Control"
+        },
+        "launcher": {
+          "designation": "Vertical Launch System",
+          "missiles_per_launcher": 8,
+          "launchers_per_battery": 4
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "Aster 30",
+            "type": "active_radar",
+            "range_max_km": 120,
+            "altitude_max_km": 25,
+            "speed_mach": 4.5,
+            "warhead_kg": 15,
+            "guidance": "inertial + active radar terminal",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "TBM"
+            ],
+            "notes": "PIF-PAF maneuvering"
+          },
+          {
+            "designation": "Aster 30 Block 1 NT",
+            "type": "active_radar",
+            "range_max_km": 150,
+            "altitude_max_km": 30,
+            "guidance": "inertial + active radar + IR",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "TBM",
+              "hypersonic"
+            ],
+            "notes": "New Technology - enhanced BMD"
+          }
+        ]
+      },
+      "mobility": {
+        "deployment_time_min": 15,
+        "vehicles": "Renault/Iveco trucks"
+      },
+      "unit_cost_usd": 600000000,
+      "cost_year": 2023,
+      "cost_notes": "Per battery",
+      "missile_cost_usd": 2000000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Aster missile",
+        "Army Recognition",
+        "MBDA"
+      ],
+      "notes": "Franco-Italian system. Aster 30 Block 1 NT has BMD capability. PIF-PAF lateral thrusters for extreme maneuverability. Also on naval vessels (PAAMS). Ukraine deployment 2024.",
+      "year": 2011
+    },
+    {
+      "id": "uk-sky-sabre",
+      "name": "Sky Sabre (CAMM)",
+      "type": "sam",
+      "country_of_origin": "GB",
+      "manufacturer": "MBDA",
+      "service_history": {
+        "introduced": 2021,
+        "retired": null,
+        "production_count": 10,
+        "operators": [
+          {
+            "country": "UK",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 23,
+            "variants": [
+              "CAMM-ER"
+            ],
+            "status": "ordered"
+          },
+          {
+            "country": "SE",
+            "quantity": 4,
+            "status": "ordered"
+          }
+        ],
+        "notes": "Fire units"
+      },
+      "system_components": {
+        "radar": {
+          "designation": "Giraffe AMB",
+          "type": "AESA",
+          "range_km": 120,
+          "manufacturer": "Saab"
+        },
+        "command": {
+          "designation": "Rafael Command Post",
+          "type": "Battle Management"
+        },
+        "launcher": {
+          "designation": "Land Ceptor",
+          "missiles_per_launcher": 8,
+          "launchers_per_battery": 3,
+          "notes": "Soft vertical launch"
+        }
+      },
+      "armament": {
+        "missiles": [
+          {
+            "designation": "CAMM",
+            "type": "active_radar",
+            "range_max_km": 25,
+            "altitude_max_km": 10,
+            "speed_mach": 3,
+            "guidance": "active radar + datalink",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "UAV"
+            ],
+            "notes": "Common Anti-Air Modular Missile"
+          },
+          {
+            "designation": "CAMM-ER",
+            "type": "active_radar",
+            "range_max_km": 45,
+            "altitude_max_km": 15,
+            "guidance": "active radar + datalink",
+            "targets": [
+              "aircraft",
+              "cruise_missile",
+              "UAV",
+              "helicopter"
+            ],
+            "notes": "Extended Range variant"
+          }
+        ]
+      },
+      "mobility": {
+        "deployment_time_min": 20,
+        "vehicles": "MAN trucks"
+      },
+      "unit_cost_usd": 80000000,
+      "cost_year": 2022,
+      "cost_notes": "Per battery",
+      "missile_cost_usd": 1000000,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Common Anti-Air Modular Missile",
+        "Army Recognition",
+        "MBDA"
+      ],
+      "notes": "Replaced Rapier. CAMM is 'fire and forget'. Soft vertical launch (cold launch). Poland Narew/Pilica+ program uses CAMM-ER. Also on Royal Navy (Sea Ceptor).",
+      "year": 2021
+    }
+  ]
+}

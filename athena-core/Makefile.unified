@@ -1,0 +1,150 @@
+# ATHENA Core - Unified Build System v0.9.3
+# 
+# Targets:
+#   athena       - Full GUI application
+#   athena-cli   - CLI-only (no GUI dependencies)
+#   test         - Run all tests
+#   clean        - Remove build artifacts
+#
+# Usage:
+#   make -f Makefile.unified athena
+#   make -f Makefile.unified athena-cli
+#   make -f Makefile.unified test
+
+CXX := g++
+CXXFLAGS := -std=c++17 -Wall -Wextra -O2 -g -fno-fast-math -ffp-contract=off
+CXXFLAGS += -I./include -I./external/imgui -I./external/imgui/backends
+
+# Platform detection
+UNAME := $(shell uname -s 2>/dev/null || echo Windows)
+
+ifeq ($(UNAME), Darwin)
+    # macOS
+    LDFLAGS_GUI := -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo
+    LDFLAGS_GUI += $(shell pkg-config --libs glfw3 2>/dev/null || echo "-lglfw")
+    CXXFLAGS += $(shell pkg-config --cflags glfw3 2>/dev/null)
+    LDFLAGS := -lpthread
+    EXE_EXT :=
+else ifneq (,$(findstring MINGW,$(UNAME)))
+    # Windows MinGW (MSYS2)
+    LDFLAGS_GUI := $(shell pkg-config --libs glfw3 2>/dev/null || echo "-lglfw3 -lopengl32 -lgdi32 -limm32")
+    CXXFLAGS += $(shell pkg-config --cflags glfw3 2>/dev/null)
+    LDFLAGS := -lpthread
+    EXE_EXT := .exe
+else ifneq (,$(findstring MSYS,$(UNAME)))
+    # MSYS2 native shell
+    LDFLAGS_GUI := $(shell pkg-config --libs glfw3 2>/dev/null || echo "-lglfw3 -lopengl32 -lgdi32 -limm32")
+    CXXFLAGS += $(shell pkg-config --cflags glfw3 2>/dev/null)
+    LDFLAGS := -lpthread
+    EXE_EXT := .exe
+else
+    # Linux
+    LDFLAGS_GUI := -lGL -lglfw -ldl -lpthread
+    LDFLAGS := -lpthread
+    EXE_EXT :=
+endif
+
+# Directories
+OBJ_DIR := build/obj
+BIN_DIR := build/bin
+
+# Source files
+CORE_SRCS := src/types.cpp src/json.cpp src/rng.cpp src/context.cpp \
+             src/manifest.cpp src/scenario.cpp src/scheduler.cpp \
+             src/serialization.cpp src/terrain.cpp src/terrain_semantics.cpp \
+             src/pathfinding.cpp src/platform_loader.cpp src/environment.cpp
+
+SYSTEMS_SRCS := src/systems/movement.cpp src/systems/combat.cpp \
+                src/systems/logistics.cpp src/systems/detection.cpp \
+                src/systems/c2.cpp src/systems/tactical_ai.cpp \
+                src/systems/operational.cpp
+
+ANALYSIS_SRCS := src/analysis/montecarlo.cpp src/analysis/sobol.cpp \
+                 src/analysis/binary_output.cpp
+
+AI_SRCS := src/ai/doctrine.cpp
+
+REPORT_SRCS := src/report/pdf_report.cpp
+
+TUI_SRCS := src/tui/terminal.cpp src/tui/widgets.cpp src/tui/browser.cpp
+
+IMGUI_SRCS := external/imgui/imgui.cpp external/imgui/imgui_demo.cpp \
+              external/imgui/imgui_draw.cpp external/imgui/imgui_tables.cpp \
+              external/imgui/imgui_widgets.cpp \
+              external/imgui/backends/imgui_impl_glfw.cpp \
+              external/imgui/backends/imgui_impl_opengl3.cpp
+
+GUI_SRCS := src/gui/integrated_gui.cpp
+
+INTEGRATED_SRCS := src/integrated.cpp
+
+# Object files
+CORE_OBJS := $(patsubst src/%.cpp,$(OBJ_DIR)/%.o,$(CORE_SRCS))
+SYSTEMS_OBJS := $(patsubst src/%.cpp,$(OBJ_DIR)/%.o,$(SYSTEMS_SRCS))
+ANALYSIS_OBJS := $(patsubst src/%.cpp,$(OBJ_DIR)/%.o,$(ANALYSIS_SRCS))
+AI_OBJS := $(patsubst src/%.cpp,$(OBJ_DIR)/%.o,$(AI_SRCS))
+REPORT_OBJS := $(patsubst src/%.cpp,$(OBJ_DIR)/%.o,$(REPORT_SRCS))
+TUI_OBJS := $(patsubst src/%.cpp,$(OBJ_DIR)/%.o,$(TUI_SRCS))
+IMGUI_OBJS := $(patsubst %.cpp,$(OBJ_DIR)/%.o,$(IMGUI_SRCS))
+GUI_OBJS := $(patsubst src/%.cpp,$(OBJ_DIR)/%.o,$(GUI_SRCS))
+INTEGRATED_OBJS := $(patsubst src/%.cpp,$(OBJ_DIR)/%.o,$(INTEGRATED_SRCS))
+
+LIB_OBJS := $(CORE_OBJS) $(SYSTEMS_OBJS) $(ANALYSIS_OBJS) $(AI_OBJS) $(REPORT_OBJS) $(INTEGRATED_OBJS)
+
+.PHONY: all clean test dirs
+
+all: dirs athena athena-cli
+
+# Full GUI app (requires GLFW3)
+athena: dirs $(BIN_DIR)/athena$(EXE_EXT)
+$(BIN_DIR)/athena$(EXE_EXT): $(LIB_OBJS) $(GUI_OBJS) $(TUI_OBJS) $(IMGUI_OBJS) $(OBJ_DIR)/unified_main.o
+	@mkdir -p $(BIN_DIR)
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS) $(LDFLAGS_GUI)
+	@echo "Built: $@"
+
+# CLI only (no GLFW needed)
+athena-cli: dirs $(BIN_DIR)/athena-cli$(EXE_EXT)
+$(BIN_DIR)/athena-cli$(EXE_EXT): $(LIB_OBJS) $(OBJ_DIR)/main.o
+	@mkdir -p $(BIN_DIR)
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
+	@echo "Built: $@"
+
+dirs:
+	@mkdir -p $(OBJ_DIR)/systems $(OBJ_DIR)/analysis $(OBJ_DIR)/ai
+	@mkdir -p $(OBJ_DIR)/report $(OBJ_DIR)/tui $(OBJ_DIR)/gui
+	@mkdir -p $(OBJ_DIR)/external/imgui/backends $(BIN_DIR)
+
+$(OBJ_DIR)/%.o: src/%.cpp
+	@mkdir -p $(dir $@)
+	$(CXX) $(CXXFLAGS) -c -o $@ $<
+
+$(OBJ_DIR)/external/%.o: external/%.cpp
+	@mkdir -p $(dir $@)
+	$(CXX) $(CXXFLAGS) -I./external/imgui -c -o $@ $<
+
+# Tests
+test: dirs test-ai-doctrine $(BIN_DIR)/athena-cli
+	@echo "=== ATHENA Tests ==="
+	./$(BIN_DIR)/athena-cli --help && echo "CLI OK"
+
+test-ai-doctrine: dirs $(OBJ_DIR)/ai/doctrine.o $(OBJ_DIR)/rng.o $(OBJ_DIR)/types.o
+	@echo "Building AI/Doctrine tests..."
+	$(CXX) $(CXXFLAGS) -o $(BIN_DIR)/test_ai_doctrine \
+		test/test_ai_doctrine.cpp \
+		$(OBJ_DIR)/ai/doctrine.o $(OBJ_DIR)/rng.o $(OBJ_DIR)/types.o -lpthread
+	@echo "Running AI/Doctrine tests..."
+	./$(BIN_DIR)/test_ai_doctrine
+
+bench-mc: dirs $(CORE_OBJS) $(SYSTEMS_OBJS) $(ANALYSIS_OBJS) $(AI_OBJS) $(REPORT_OBJS)
+	@echo "Building MC benchmark..."
+	$(CXX) $(CXXFLAGS) -o $(BIN_DIR)/bench_mc \
+		tests/bench_mc.cpp \
+		$(CORE_OBJS) $(SYSTEMS_OBJS) $(ANALYSIS_OBJS) $(AI_OBJS) $(REPORT_OBJS) -lpthread
+	@echo "Running MC benchmark (100k)..."
+	./$(BIN_DIR)/bench_mc 100000
+
+clean:
+	rm -rf build/
+
+version:
+	@echo "ATHENA v1.1.2 (Database)"

@@ -1,0 +1,288 @@
+{
+  "category": "uav",
+  "subcategory": "china",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Defence",
+      "SIPRI"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "cn-ch6",
+      "name": "CASC CH-6 Rainbow",
+      "type": "male",
+      "country": "CN",
+      "year": 2022,
+      "manufacturer": "CASC",
+      "service_history": {
+        "introduced": 2022,
+        "first_flight": 2020,
+        "production_count": 30,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 20,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 10,
+            "status": "active"
+          }
+        ],
+        "notes": "High-speed MALE UAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 10.0,
+        "wingspan_m": 20.5,
+        "max_weight_kg": 3200,
+        "max_speed_kmh": 600,
+        "cruise_speed_kmh": 300,
+        "range_km": 12000,
+        "endurance_hours": 20,
+        "service_ceiling_m": 12000
+      },
+      "armament": {
+        "payload_kg": 400,
+        "hardpoints": 4,
+        "weapons": [
+          "AR-2 missiles",
+          "TL-2 guided bombs"
+        ]
+      }
+    },
+    {
+      "id": "cn-wingloong3",
+      "name": "AVIC Wing Loong 3",
+      "type": "hale",
+      "country": "CN",
+      "year": 2024,
+      "manufacturer": "AVIC Chengdu",
+      "service_history": {
+        "introduced": 2024,
+        "first_flight": 2023,
+        "production_count": 15,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 15,
+            "status": "active"
+          }
+        ],
+        "notes": "Latest Wing Loong variant"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 12.2,
+        "wingspan_m": 24.0,
+        "max_weight_kg": 6200,
+        "max_speed_kmh": 370,
+        "cruise_speed_kmh": 200,
+        "range_km": 10000,
+        "endurance_hours": 40,
+        "service_ceiling_m": 12000
+      },
+      "armament": {
+        "payload_kg": 2300,
+        "hardpoints": 8,
+        "weapons": [
+          "BA-7 missiles",
+          "YJ-9E anti-ship missiles",
+          "LS-6 guided bombs"
+        ]
+      }
+    },
+    {
+      "id": "cn-wz8",
+      "name": "WZ-8 (DR-8)",
+      "type": "reconnaissance",
+      "country": "CN",
+      "year": 2019,
+      "manufacturer": "Unknown",
+      "service_history": {
+        "introduced": 2019,
+        "first_flight": 2015,
+        "production_count": 30,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 30,
+            "status": "active",
+            "notes": "PLAAF high-altitude recon"
+          }
+        ],
+        "notes": "Supersonic reconnaissance UAV, air-launched from H-6"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 11.0,
+        "wingspan_m": 6.0,
+        "max_weight_kg": 5000,
+        "max_speed_kmh": 4000,
+        "cruise_speed_kmh": 3000,
+        "range_km": 2000,
+        "service_ceiling_m": 30000,
+        "powerplant": {
+          "type": "rocket/scramjet",
+          "notes": "Air-launched"
+        }
+      },
+      "sensors": {
+        "eo_ir": "High-resolution cameras",
+        "radar": "SAR"
+      }
+    },
+    {
+      "id": "cn-divine-eagle",
+      "name": "Divine Eagle (Shendiao)",
+      "type": "hale",
+      "country": "CN",
+      "year": 2018,
+      "manufacturer": "Shenyang",
+      "service_history": {
+        "introduced": 2018,
+        "first_flight": 2015,
+        "production_count": 20,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 20,
+            "status": "active",
+            "notes": "PLAAF strategic recon"
+          }
+        ],
+        "notes": "Large twin-fuselage HALE reconnaissance"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 15.0,
+        "wingspan_m": 50.0,
+        "max_weight_kg": 15000,
+        "max_speed_kmh": 600,
+        "cruise_speed_kmh": 400,
+        "range_km": 7000,
+        "endurance_hours": 24,
+        "service_ceiling_m": 25000
+      },
+      "sensors": {
+        "radar": "AESA radar arrays (multiple)",
+        "sigint": "ELINT/SIGINT suite",
+        "notes": "Counter-stealth detection mission"
+      }
+    },
+    {
+      "id": "cn-ch7",
+      "name": "CASC CH-7",
+      "type": "ucav",
+      "country": "CN",
+      "year": 2025,
+      "manufacturer": "CASC",
+      "service_history": {
+        "introduced": 2025,
+        "first_flight": 2022,
+        "production_count": 10,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 10,
+            "status": "testing"
+          }
+        ],
+        "notes": "Stealth flying wing UCAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 10.0,
+        "wingspan_m": 22.0,
+        "max_weight_kg": 13000,
+        "max_speed_kmh": 920,
+        "range_km": 4000,
+        "service_ceiling_m": 13000,
+        "radar_cross_section": "VLO"
+      },
+      "armament": {
+        "internal_payload_kg": 2000,
+        "weapons": [
+          "Air-to-ground missiles",
+          "Precision guided bombs"
+        ]
+      }
+    },
+    {
+      "id": "cn-fh97",
+      "name": "CASC FH-97",
+      "type": "loyal-wingman",
+      "country": "CN",
+      "year": 2023,
+      "manufacturer": "CASC",
+      "service_history": {
+        "introduced": 2023,
+        "first_flight": 2022,
+        "production_count": 20,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 20,
+            "status": "active",
+            "notes": "J-20 wingman concept"
+          }
+        ],
+        "notes": "Low-cost autonomous wingman"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 8.5,
+        "wingspan_m": 6.5,
+        "max_weight_kg": 4500,
+        "max_speed_kmh": 1100,
+        "range_km": 2000,
+        "radar_cross_section": "LO"
+      },
+      "armament": {
+        "internal_payload_kg": 400,
+        "weapons": [
+          "PL-15 AAM",
+          "PGMs"
+        ]
+      }
+    },
+    {
+      "id": "cn-bj1",
+      "name": "Beihang BJ-1",
+      "type": "tactical",
+      "country": "CN",
+      "year": 2020,
+      "manufacturer": "Beihang University",
+      "service_history": {
+        "introduced": 2020,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 500,
+            "status": "active",
+            "notes": "PLA swarm drone"
+          }
+        ],
+        "notes": "Small swarming drone"
+      },
+      "specifications": {
+        "crew": 0,
+        "wingspan_m": 0.8,
+        "max_weight_kg": 2,
+        "max_speed_kmh": 100,
+        "range_km": 20,
+        "endurance_hours": 1
+      },
+      "armament": {
+        "warhead_kg": 0.5,
+        "warhead_type": "EFP or HE"
+      }
+    }
+  ]
+}

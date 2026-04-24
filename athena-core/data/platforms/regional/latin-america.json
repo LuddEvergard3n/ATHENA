@@ -1,0 +1,256 @@
+{
+  "category": "regional",
+  "subcategory": "latin-america",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Defence"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "br-m113br",
+      "name": "M113BR",
+      "type": "apc",
+      "country": "BR",
+      "year": 2010,
+      "manufacturer": "BAE/EB",
+      "service_history": {
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 584,
+            "status": "active"
+          }
+        ]
+      },
+      "notes": "Brazilian M113 fleet"
+    },
+    {
+      "id": "br-mssp",
+      "name": "MSSP (Multi-purpose Armored Wheeled Platform)",
+      "type": "ifv",
+      "country": "BR",
+      "year": 2024,
+      "manufacturer": "EB",
+      "notes": "Brazilian Guarani IFV variant development"
+    },
+    {
+      "id": "br-mectron-maa1",
+      "name": "MAA-1B Piranha",
+      "type": "aam",
+      "country": "BR",
+      "year": 2008,
+      "manufacturer": "Mectron",
+      "specifications": {
+        "range_km": 8,
+        "seeker": "IR"
+      },
+      "notes": "Brazilian indigenous AAM"
+    },
+    {
+      "id": "br-mansup",
+      "name": "MANSUP anti-ship missile",
+      "type": "ashm",
+      "country": "BR",
+      "year": 2025,
+      "manufacturer": "Avibras/MB",
+      "specifications": {
+        "range_km": 180
+      },
+      "notes": "Brazilian indigenous anti-ship missile development"
+    },
+    {
+      "id": "br-tamandar\u00e9",
+      "name": "Tamandar\u00e9-class frigate",
+      "type": "frigate",
+      "country": "BR",
+      "year": 2025,
+      "manufacturer": "Thyssenkrupp/Embraer",
+      "specifications": {
+        "displacement_tons": 3455,
+        "length_m": 107.2
+      },
+      "armament": {
+        "ssm": "Exocet MM40 Block 3",
+        "sam": "Sea Ceptor"
+      },
+      "service_history": {
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 4,
+            "status": "building"
+          }
+        ]
+      },
+      "notes": "New Brazilian frigate program"
+    },
+    {
+      "id": "ar-tam2c",
+      "name": "TAM 2C",
+      "type": "medium-tank",
+      "country": "AR",
+      "year": 2013,
+      "manufacturer": "CITEFA",
+      "service_history": {
+        "operators": [
+          {
+            "country": "AR",
+            "quantity": 50,
+            "status": "active"
+          }
+        ]
+      },
+      "armament": {
+        "main_gun": "105mm FM K.4",
+        "fcs": "Upgraded Israeli FCS"
+      },
+      "notes": "Argentine TAM upgrade"
+    },
+    {
+      "id": "ar-vctp",
+      "name": "VCTP (TAM-derived IFV)",
+      "type": "ifv",
+      "country": "AR",
+      "year": 1986,
+      "manufacturer": "TAMSE",
+      "specifications": {
+        "combat_weight_kg": 28000,
+        "crew": 2,
+        "passengers": 10
+      },
+      "armament": {
+        "turret": "20mm Rheinmetall Rh 202"
+      },
+      "service_history": {
+        "operators": [
+          {
+            "country": "AR",
+            "quantity": 130,
+            "status": "active"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cl-type23chl",
+      "name": "Type 23 (Chilean)",
+      "type": "frigate",
+      "country": "CL",
+      "year": 2006,
+      "manufacturer": "BAE Systems",
+      "specifications": {
+        "displacement_tons": 4900
+      },
+      "service_history": {
+        "operators": [
+          {
+            "country": "CL",
+            "quantity": 3,
+            "status": "active"
+          }
+        ]
+      },
+      "notes": "Ex-UK Type 23 frigates"
+    },
+    {
+      "id": "pe-skorpion",
+      "name": "Scorpene SSK (Peru)",
+      "type": "submarine-ssk",
+      "country": "PE",
+      "year": 2024,
+      "manufacturer": "Naval Group",
+      "specifications": {
+        "displacement_tons": 2000
+      },
+      "service_history": {
+        "operators": [
+          {
+            "country": "PE",
+            "quantity": 2,
+            "status": "ordered"
+          }
+        ]
+      },
+      "notes": "Peruvian Scorp\u00e8ne submarines"
+    },
+    {
+      "id": "co-aw159",
+      "name": "AW159 Wildcat (Colombia)",
+      "type": "helicopter",
+      "country": "CO",
+      "year": 2018,
+      "manufacturer": "Leonardo",
+      "service_history": {
+        "operators": [
+          {
+            "country": "CO",
+            "quantity": 6,
+            "status": "active"
+          }
+        ]
+      },
+      "notes": "Colombian naval helicopters"
+    },
+    {
+      "id": "ec-dhruv",
+      "name": "HAL Dhruv (Ecuador)",
+      "type": "helicopter",
+      "country": "EC",
+      "year": 2009,
+      "manufacturer": "HAL",
+      "service_history": {
+        "operators": [
+          {
+            "country": "EC",
+            "quantity": 7,
+            "status": "active"
+          }
+        ]
+      },
+      "notes": "Indian helicopters for Ecuador"
+    },
+    {
+      "id": "ve-su30mkv",
+      "name": "Su-30MK2V Flanker-C",
+      "type": "multirole-fighter",
+      "country": "VE",
+      "year": 2006,
+      "manufacturer": "Sukhoi",
+      "service_history": {
+        "operators": [
+          {
+            "country": "VE",
+            "quantity": 23,
+            "status": "active"
+          }
+        ]
+      },
+      "notes": "Venezuelan Flankers"
+    },
+    {
+      "id": "mx-dn-xi",
+      "name": "DN-XI Caballo",
+      "type": "apc",
+      "country": "MX",
+      "year": 2010,
+      "manufacturer": "SEDENA",
+      "specifications": {
+        "combat_weight_kg": 15000
+      },
+      "service_history": {
+        "operators": [
+          {
+            "country": "MX",
+            "quantity": 100,
+            "status": "active"
+          }
+        ]
+      },
+      "notes": "Mexican indigenous armored vehicle"
+    }
+  ]
+}

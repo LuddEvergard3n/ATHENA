@@ -1,0 +1,228 @@
+{
+  "category": "ships",
+  "subcategory": "us-additional",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": [
+      "US Navy",
+      "IISS Military Balance 2024",
+      "Jane's Fighting Ships"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-cg47",
+      "name": "Ticonderoga-class (CG-47)",
+      "type": "cruiser",
+      "country": "US",
+      "year": 1983,
+      "manufacturer": "Ingalls Shipbuilding / Bath Iron Works",
+      "service_history": {
+        "introduced": 1983,
+        "commissioned": 1983,
+        "production_count": 27,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 17,
+            "status": "active",
+            "notes": "Decommissioning ongoing"
+          }
+        ],
+        "notes": "Only active US cruiser class, AEGIS equipped"
+      },
+      "specifications": {
+        "displacement_tons": 9800,
+        "length_m": 173,
+        "beam_m": 16.8,
+        "draft_m": 9.5,
+        "speed_knots": 32,
+        "range_nm": 6000,
+        "crew": 387,
+        "powerplant": {
+          "type": "gas turbine",
+          "model": "4× GE LM2500",
+          "power_hp": 80000
+        }
+      },
+      "armament": {
+        "missiles": {
+          "vls_cells": 122,
+          "types": ["SM-2", "SM-3", "SM-6", "Tomahawk", "ESSM"]
+        },
+        "guns": [
+          "2× 5-inch/54 Mk 45"
+        ],
+        "torpedoes": "2× Mk 32 triple tubes",
+        "ciws": "2× Phalanx CIWS"
+      },
+      "sensors": {
+        "radar": "AN/SPY-1A/B AEGIS",
+        "sonar": "AN/SQS-53C hull-mounted, AN/SQR-19 towed array"
+      },
+      "unit_cost_usd": 1000000000
+    },
+    {
+      "id": "us-ddg1000",
+      "name": "Zumwalt-class (DDG-1000)",
+      "type": "destroyer",
+      "country": "US",
+      "year": 2016,
+      "manufacturer": "Bath Iron Works",
+      "service_history": {
+        "introduced": 2016,
+        "commissioned": 2016,
+        "production_count": 3,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 3,
+            "status": "active",
+            "notes": "Converted to hypersonic strike role"
+          }
+        ],
+        "notes": "Stealth destroyer, tumblehome hull"
+      },
+      "specifications": {
+        "displacement_tons": 15656,
+        "length_m": 183,
+        "beam_m": 24.6,
+        "draft_m": 8.4,
+        "speed_knots": 30,
+        "range_nm": 10000,
+        "crew": 147,
+        "powerplant": {
+          "type": "integrated electric",
+          "model": "2× Rolls-Royce MT30, 2× RR4500",
+          "power_hp": 78000
+        }
+      },
+      "armament": {
+        "missiles": {
+          "vls_cells": 80,
+          "types": ["Conventional Prompt Strike hypersonic missiles", "SM-2", "ESSM", "Tomahawk"]
+        },
+        "guns": [
+          "2× 155mm AGS (being removed)",
+          "2× 30mm Mk 46"
+        ],
+        "ciws": "SeaRAM Block 2"
+      },
+      "sensors": {
+        "radar": "AN/SPY-3 MFR, AN/SPY-4 VSR",
+        "sonar": "AN/SQQ-90"
+      },
+      "radar_cross_section": "Equivalent to fishing boat",
+      "unit_cost_usd": 4400000000
+    },
+    {
+      "id": "us-lcs-freedom",
+      "name": "Freedom-class (LCS-1)",
+      "type": "littoral_combat_ship",
+      "country": "US",
+      "year": 2008,
+      "manufacturer": "Lockheed Martin / Marinette Marine",
+      "service_history": {
+        "introduced": 2008,
+        "production_count": 16,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 11,
+            "status": "active",
+            "notes": "Some decommissioned early"
+          }
+        ],
+        "notes": "Semi-planing monohull"
+      },
+      "specifications": {
+        "displacement_tons": 3500,
+        "length_m": 115,
+        "beam_m": 17.5,
+        "draft_m": 3.9,
+        "speed_knots": 47,
+        "range_nm": 3500,
+        "crew": 40
+      },
+      "armament": {
+        "guns": ["1× 57mm Mk 110"],
+        "missiles": ["RIM-116 RAM"],
+        "mission_modules": "Interchangeable ASW/MCM/SUW modules"
+      }
+    },
+    {
+      "id": "us-lcs-independence",
+      "name": "Independence-class (LCS-2)",
+      "type": "littoral_combat_ship",
+      "country": "US",
+      "year": 2010,
+      "manufacturer": "Austal USA",
+      "service_history": {
+        "introduced": 2010,
+        "production_count": 19,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 13,
+            "status": "active",
+            "notes": "Some decommissioned early"
+          }
+        ],
+        "notes": "Aluminum trimaran"
+      },
+      "specifications": {
+        "displacement_tons": 3100,
+        "length_m": 127.4,
+        "beam_m": 31.6,
+        "draft_m": 4.5,
+        "speed_knots": 44,
+        "range_nm": 4300,
+        "crew": 40
+      },
+      "armament": {
+        "guns": ["1× 57mm Mk 110"],
+        "missiles": ["RIM-116 RAM", "NSM (on some)"],
+        "mission_modules": "Interchangeable ASW/MCM/SUW modules"
+      }
+    },
+    {
+      "id": "us-ssn-virginia-blk5",
+      "name": "Virginia-class Block V",
+      "type": "submarine_ssn",
+      "country": "US",
+      "year": 2025,
+      "manufacturer": "General Dynamics / HII",
+      "service_history": {
+        "introduced": 2025,
+        "production_count": 10,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 10,
+            "status": "building/ordered"
+          }
+        ],
+        "notes": "Virginia Payload Module (VPM) equipped"
+      },
+      "specifications": {
+        "displacement_tons": 10200,
+        "length_m": 140,
+        "beam_m": 10.4,
+        "draft_m": 9.3,
+        "speed_knots": 25,
+        "depth_m": 490,
+        "crew": 135
+      },
+      "armament": {
+        "torpedo_tubes": 4,
+        "vpm_tubes": 28,
+        "weapons": [
+          "Mk 48 ADCAP torpedoes",
+          "Tomahawk cruise missiles",
+          "UGM-109 Block V"
+        ]
+      }
+    }
+  ]
+}

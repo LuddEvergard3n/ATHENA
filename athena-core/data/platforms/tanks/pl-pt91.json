@@ -1,0 +1,351 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "pl-pt91",
+      "name": "PT-91 Twardy",
+      "nato_designation": null,
+      "type": "mbt",
+      "country_of_origin": "PL",
+      "manufacturer": "Bumar-Labedy",
+      "service_history": {
+        "introduced": 1995,
+        "retired": null,
+        "production_count": 233,
+        "operators": [
+          {
+            "country": "PL",
+            "quantity": 233,
+            "variants": [
+              "PT-91",
+              "PT-91A"
+            ],
+            "status": "reserve",
+            "notes": "Being replaced by K2PL and Leopard 2"
+          },
+          {
+            "country": "MY",
+            "quantity": 48,
+            "variants": [
+              "PT-91M"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 45300,
+        "length_m": 6.95,
+        "length_gun_forward_m": 9.67,
+        "width_m": 3.59,
+        "height_m": 2.19,
+        "ground_clearance_m": 0.47
+      },
+      "mobility": {
+        "engine": {
+          "model": "PZL-Wola S-12U",
+          "type": "diesel_turbocharged",
+          "power_hp": 850,
+          "power_kw": 634
+        },
+        "power_to_weight_hp_ton": 18.8,
+        "transmission": "Manual, 7 forward, 1 reverse",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 60,
+        "max_speed_offroad_kmh": 40,
+        "max_speed_reverse_kmh": 8,
+        "range_road_km": 650,
+        "fuel_capacity_liters": 1000,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 2.8,
+        "vertical_obstacle_m": 0.85,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "2A46",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "autoloader_type": "carousel",
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1700,
+          "effective_range_m": 4000,
+          "ammunition_carried": 42,
+          "ammunition_ready": 22,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "Pronit Mk.1",
+              "penetration_mm_rha": 520,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "3BK18M",
+              "penetration_mm_rha": 550,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE-FRAG",
+              "designation": "3OF26",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 4000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "NSVT",
+            "caliber_mm": 12.7,
+            "mount": "commander_cupola",
+            "ammunition_carried": 300
+          },
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "T-72M1 base with ERAWA ERA",
+        "protection_front_turret_mm_rha": 600,
+        "protection_front_hull_mm_rha": 550,
+        "protection_side_mm_rha": 100,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 40,
+        "era_coverage": "ERAWA-1/ERAWA-2 ERA on frontal arc",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "hull_floor",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Drawa",
+        "commander_sight": {
+          "type": "POD-72",
+          "day_magnification": "5x",
+          "thermal": false,
+          "independent": true,
+          "hunter_killer": false
+        },
+        "gunner_sight": {
+          "type": "Drawa Primary",
+          "day_magnification": "3x/8x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 4000,
+        "ballistic_computer": true,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "81mm Tucha"
+      },
+      "unit_cost_usd": 2000000,
+      "cost_year": 1995,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia PT-91",
+        "Army Recognition PT-91",
+        "Military-Today PT-91"
+      ],
+      "notes": "Upgraded T-72M1 with Polish ERAWA ERA, Drawa FCS, and improved engine. Being phased out in favor of K2PL and Leopard 2A4/2PL. Many donated to Ukraine (2022-2023).",
+      "year": 1995
+    },
+    {
+      "id": "pl-pt91m",
+      "name": "PT-91M Pendekar",
+      "nato_designation": null,
+      "type": "mbt",
+      "country_of_origin": "PL",
+      "manufacturer": "Bumar-Labedy",
+      "service_history": {
+        "introduced": 2010,
+        "retired": null,
+        "production_count": 48,
+        "operators": [
+          {
+            "country": "MY",
+            "quantity": 48,
+            "variants": [
+              "PT-91M"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 48500,
+        "length_m": 6.95,
+        "length_gun_forward_m": 9.67,
+        "width_m": 3.59,
+        "height_m": 2.3,
+        "ground_clearance_m": 0.47
+      },
+      "mobility": {
+        "engine": {
+          "model": "PZL-Wola S-1000",
+          "type": "diesel_turbocharged",
+          "power_hp": 1000,
+          "power_kw": 746
+        },
+        "power_to_weight_hp_ton": 20.6,
+        "transmission": "SESM automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 45,
+        "max_speed_reverse_kmh": 25,
+        "range_road_km": 500,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 2.8,
+        "vertical_obstacle_m": 0.85,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "2A46MS",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "autoloader_type": "carousel",
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1700,
+          "effective_range_m": 5000,
+          "ammunition_carried": 42,
+          "ammunition_ready": 22,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "Pronit Mk.2",
+              "penetration_mm_rha": 580,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "3BK29M",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE-FRAG",
+              "designation": "3OF26",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 4000
+            },
+            {
+              "type": "ATGM",
+              "designation": "Kombat",
+              "penetration_mm_rha": 750,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "WKM-B RCWS",
+            "caliber_mm": 12.7,
+            "mount": "remote",
+            "ammunition_carried": 500
+          },
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "Kombat",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "Enhanced composite with ERAWA-2 ERA",
+        "protection_front_turret_mm_rha": 700,
+        "protection_front_hull_mm_rha": 620,
+        "protection_side_mm_rha": 150,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 45,
+        "era_coverage": "Full frontal and partial side ERAWA-2",
+        "aps": {
+          "system": "OBRA-3",
+          "type": "soft-kill",
+          "coverage_deg": 360
+        },
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "hull_floor",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "SAGEM SAVAN-15",
+        "commander_sight": {
+          "type": "SFIM HL-70",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "SAVAN Primary",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 8000,
+        "laser_warning_system": true,
+        "ballistic_computer": true,
+        "battle_management_system": true,
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "81mm Smoke/IR"
+      },
+      "unit_cost_usd": 4000000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia PT-91M",
+        "Army Recognition PT-91M",
+        "Malaysian Armed Forces"
+      ],
+      "notes": "Export variant for Malaysia. French SAGEM FCS, automatic transmission, 1000hp engine, RCWS, soft-kill APS. Significant improvement over base PT-91. 'Pendekar' means 'Warrior' in Malay.",
+      "year": 2003
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "platforms": [
+    {
+      "id": "au-bushmaster-pmv",
+      "name": "Bushmaster PMV",
+      "type": "protected_mobility_vehicle",
+      "country_of_origin": "AU",
+      "manufacturer": "Thales Australia",
+      "service_entry": 2005,
+      "specifications": {
+        "crew": 2,
+        "passengers": 9,
+        "weight_kg": 15400,
+        "length_m": 7.18,
+        "width_m": 2.48,
+        "height_m": 2.65,
+        "max_speed_kmh": 100,
+        "range_km": 800
+      },
+      "protection": {
+        "mine_protection": "STANAG 4569 Level 2a/2b",
+        "ballistic": "7.62mm AP",
+        "v_hull": true
+      },
+      "armament": {
+        "ring_mount": "7.62mm MAG-58 or 12.7mm M2HB"
+      },
+      "service_history": {
+        "introduced": 2005,
+        "status": "active",
+        "production_count": 1100,
+        "operators": [
+          {"country": "AU", "quantity": 1052},
+          {"country": "NL", "quantity": 98},
+          {"country": "JP", "quantity": 10},
+          {"country": "GB", "quantity": 24},
+          {"country": "JM", "quantity": 12},
+          {"country": "ID", "quantity": 50},
+          {"country": "FJ", "quantity": 2},
+          {"country": "UA", "quantity": 90}
+        ]
+      },
+      "combat_use": [
+        {"conflict": "Afghanistan", "year": 2005},
+        {"conflict": "Iraq", "year": 2006},
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "unit_cost_usd": 700000,
+      "notes": "Australian MRAP. Excellent mine protection proven in Afghanistan. Donated to Ukraine."
+    },
+    {
+      "id": "ru-kamaz-typhoon-k",
+      "name": "Kamaz Typhoon-K",
+      "type": "mrap",
+      "country_of_origin": "RU",
+      "manufacturer": "Kamaz",
+      "designation": "K-63968",
+      "service_entry": 2014,
+      "specifications": {
+        "crew": 2,
+        "passengers": 16,
+        "weight_kg": 24000,
+        "length_m": 8.99,
+        "width_m": 2.55,
+        "height_m": 3.30,
+        "max_speed_kmh": 100,
+        "range_km": 1200
+      },
+      "configuration": "6x6",
+      "protection": {
+        "ballistic": "GOST 6 (14.5mm)",
+        "mine_protection": "8kg TNT under wheel",
+        "blast": "2kg TNT under hull"
+      },
+      "armament": {
+        "turret": "Remote RCWS 12.7mm or 30mm"
+      },
+      "service_history": {
+        "introduced": 2014,
+        "status": "active",
+        "operators": [{"country": "RU", "quantity": 500}]
+      },
+      "combat_use": [
+        {"conflict": "Syria", "year": 2015},
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "notes": "Russian heavy MRAP. 6x6 configuration. Used extensively in Ukraine."
+    },
+    {
+      "id": "ru-gaz-tigr-m",
+      "name": "GAZ Tigr-M",
+      "type": "armored_car",
+      "country_of_origin": "RU",
+      "manufacturer": "GAZ Group (Military Industrial Company)",
+      "designation": "GAZ-233114",
+      "service_entry": 2013,
+      "specifications": {
+        "crew": 2,
+        "passengers": 6,
+        "weight_kg": 7800,
+        "length_m": 5.7,
+        "width_m": 2.4,
+        "height_m": 2.3,
+        "max_speed_kmh": 125,
+        "range_km": 1000
+      },
+      "configuration": "4x4",
+      "protection": {
+        "ballistic": "GOST 5 (7.62mm AP)",
+        "fragments": "155mm at 30m"
+      },
+      "armament": {
+        "options": [
+          "12.7mm Kord HMG",
+          "30mm AGS-17 AGL",
+          "Kornet-D ATGM"
+        ]
+      },
+      "variants": [
+        "Tigr-M - Base",
+        "Tigr-M SpN - Special forces",
+        "Kornet-D carrier - ATGM vehicle"
+      ],
+      "service_history": {
+        "introduced": 2013,
+        "status": "active",
+        "operators": [
+          {"country": "RU", "quantity": 2500},
+          {"country": "CN", "quantity": 100}
+        ]
+      },
+      "combat_use": [
+        {"conflict": "Syria", "year": 2015},
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "notes": "Russian equivalent to Humvee. Widespread use. Many variants including ATGM carrier."
+    },
+    {
+      "id": "de-fennek-recce",
+      "name": "Fennek LGS",
+      "type": "reconnaissance_vehicle",
+      "country_of_origin": "DE",
+      "manufacturer": "KMW/SP Aerospace",
+      "service_entry": 2003,
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 10500,
+        "length_m": 5.71,
+        "width_m": 2.49,
+        "height_m": 1.79,
+        "max_speed_kmh": 115,
+        "range_km": 860
+      },
+      "configuration": "4x4",
+      "sensors": {
+        "observation_mast": "MRAT 6m extendable",
+        "thermal": "Zeiss Optronik",
+        "laser_rangefinder": true,
+        "battlefield_radar": "optional"
+      },
+      "armament": {
+        "options": ["12.7mm M2HB", "40mm GMG", "Stinger MANPAD"]
+      },
+      "service_history": {
+        "introduced": 2003,
+        "status": "active",
+        "operators": [
+          {"country": "DE", "quantity": 202},
+          {"country": "NL", "quantity": 410}
+        ]
+      },
+      "combat_use": [
+        {"conflict": "Afghanistan", "year": 2006}
+      ],
+      "unit_cost_usd": 2000000,
+      "notes": "Dutch-German reconnaissance vehicle. 6m observation mast. Very low profile. MRAT sensor suite."
+    }
+  ]
+}

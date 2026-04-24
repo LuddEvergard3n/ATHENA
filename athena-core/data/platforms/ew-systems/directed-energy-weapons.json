@@ -1,0 +1,234 @@
+{
+  "platforms": [
+    {
+      "id": "il-iron-beam-laser",
+      "name": "Iron Beam",
+      "type": "laser_air_defense",
+      "country_of_origin": "IL",
+      "manufacturer": "Rafael Advanced Defense Systems",
+      "service_entry": 2025,
+      "specifications": {
+        "power_kw": 100,
+        "range_km": 7,
+        "targets": ["Rockets", "Mortars", "UAVs", "Drones"],
+        "engagement_time_sec": 4,
+        "cost_per_shot_usd": 3.50
+      },
+      "features": {
+        "fiber_laser": true,
+        "all_weather": "Limited by atmospheric conditions",
+        "unlimited_magazine": true,
+        "integration": "Iron Dome complement"
+      },
+      "service_history": {
+        "first_intercept": 2022,
+        "expected_service": 2025,
+        "status": "Final development"
+      },
+      "notes": "Israeli laser air defense. Designed to complement Iron Dome. Near-zero cost per intercept vs $50k Tamir missile."
+    },
+    {
+      "id": "ru-peresvet-laser",
+      "name": "Peresvet Combat Laser",
+      "type": "laser_weapon",
+      "country_of_origin": "RU",
+      "manufacturer": "Almaz-Antey (suspected)",
+      "nato_name": "Possibly SS-27 escort",
+      "service_entry": 2018,
+      "specifications": {
+        "power_mw": "Multi-megawatt (claimed)",
+        "range_km": "Classified",
+        "mission": "Counter-ISR satellite dazzling, drone defense"
+      },
+      "features": {
+        "mobile": true,
+        "nuclear_powered": "Suspected",
+        "anti_satellite": "Dazzling capability"
+      },
+      "service_history": {
+        "introduced": 2018,
+        "status": "Operational",
+        "deployment": "Strategic Rocket Forces"
+      },
+      "notes": "Russian mobile laser system. Believed to protect ICBM sites from ISR satellites. Little public information."
+    },
+    {
+      "id": "cn-silent-hunter-laser",
+      "name": "Silent Hunter / LW-30",
+      "type": "laser_air_defense",
+      "country_of_origin": "CN",
+      "manufacturer": "China Poly Group / CASIC",
+      "service_entry": 2018,
+      "specifications": {
+        "power_kw": 30,
+        "range_km": 4,
+        "targets": ["UAVs", "Small drones", "Optics"],
+        "engagement_time_sec": 8
+      },
+      "variants": [
+        {"name": "Silent Hunter", "power_kw": 30},
+        {"name": "LW-30", "power_kw": 30, "note": "Wheeled vehicle mounted"},
+        {"name": "ZKZM-500", "type": "Rifle", "note": "Personnel laser, disputed"}
+      ],
+      "service_history": {
+        "introduced": 2018,
+        "status": "Operational",
+        "export": "Saudi Arabia, UAE"
+      },
+      "notes": "Chinese counter-UAV laser. Exported to Middle East. Used against Houthi drones."
+    },
+    {
+      "id": "us-locust-laser",
+      "name": "LOCUST Laser (ATHENA)",
+      "type": "laser_weapon",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "full_name": "Area Defense Anti-Munitions / ATHENA",
+      "service_entry": 2017,
+      "specifications": {
+        "power_kw": 60,
+        "range_km": 5,
+        "targets": ["UAVs", "Boats", "Vehicles"],
+        "engagement_time_sec": 15
+      },
+      "tests": [
+        {"year": 2015, "target": "Truck engine at 1.6km"},
+        {"year": 2017, "target": "5 Outlaw drones"}
+      ],
+      "service_history": {
+        "status": "Testing/Limited deployment"
+      },
+      "notes": "Lockheed Martin ground-based laser. Accelerated Tactical High Energy Asset."
+    },
+    {
+      "id": "us-navy-railgun",
+      "name": "Electromagnetic Railgun (EMRG)",
+      "type": "railgun",
+      "country_of_origin": "US",
+      "manufacturer": "BAE Systems / General Atomics",
+      "service_entry": null,
+      "specifications": {
+        "muzzle_velocity_m_s": 2500,
+        "muzzle_energy_mj": 32,
+        "range_km": 185,
+        "projectile_kg": 10,
+        "rate_of_fire_rpm": 10
+      },
+      "features": {
+        "no_propellant": true,
+        "hypersonic_projectile": true,
+        "kinetic_energy_only": true
+      },
+      "service_history": {
+        "program_start": 2005,
+        "status": "Cancelled 2021",
+        "reason": "Barrel wear, power requirements"
+      },
+      "notes": "US Navy railgun program cancelled. Mach 7 projectiles. Issues: barrel erosion, power generation. Technology applied to hypersonic projectile artillery."
+    },
+    {
+      "id": "cn-naval-railgun",
+      "name": "Chinese Naval Railgun",
+      "type": "railgun",
+      "country_of_origin": "CN",
+      "manufacturer": "Unknown (PLA)",
+      "service_entry": null,
+      "specifications": {
+        "range_km": 200,
+        "muzzle_velocity_m_s": 2575
+      },
+      "testing": {
+        "platform": "Type 072III Haiyang Shan",
+        "first_sea_trials": 2018
+      },
+      "service_history": {
+        "status": "Testing"
+      },
+      "notes": "Chinese railgun tested on landing ship. Possibly world's first shipborne railgun sea trials."
+    },
+    {
+      "id": "us-champ-emp",
+      "name": "CHAMP (Counter-electronics HPM Advanced Missile Project)",
+      "type": "emp_weapon",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing / Raytheon",
+      "service_entry": 2019,
+      "specifications": {
+        "platform": "AGM-86 ALCM or JASSM",
+        "targets_per_mission": 7,
+        "effect": "Fries electronics without kinetic damage"
+      },
+      "features": {
+        "high_power_microwave": true,
+        "non_kinetic": true,
+        "precision_emp": true,
+        "reusable_carrier": "Possible"
+      },
+      "service_history": {
+        "first_test": 2012,
+        "operational": 2019,
+        "status": "Classified operational"
+      },
+      "notes": "US HPM weapon. Destroys electronics without physical damage. Tested successfully against building electronics."
+    },
+    {
+      "id": "ru-alabuga-emp",
+      "name": "Alabuga EMP Missile",
+      "type": "emp_weapon",
+      "country_of_origin": "RU",
+      "manufacturer": "KRET (claimed)",
+      "service_entry": null,
+      "specifications": {
+        "range_km": 300,
+        "effect_radius_km": 3.5,
+        "targets": "All electronics in radius"
+      },
+      "features": {
+        "cruise_missile_delivery": true,
+        "wide_area_effect": true
+      },
+      "service_history": {
+        "status": "Development/Claimed operational"
+      },
+      "notes": "Russian EMP weapon. Claims disputed by Western analysts. Would disable all electronics in 3.5km radius."
+    },
+    {
+      "id": "jp-type-12-railgun",
+      "name": "ATLA Railgun",
+      "type": "railgun",
+      "country_of_origin": "JP",
+      "manufacturer": "ATLA (Acquisition, Technology & Logistics Agency)",
+      "service_entry": null,
+      "specifications": {
+        "muzzle_velocity_m_s": 2230,
+        "muzzle_energy_mj": 5,
+        "range_km": "Development"
+      },
+      "service_history": {
+        "first_test": 2023,
+        "status": "Development",
+        "planned_deployment": "Destroyers for missile defense"
+      },
+      "notes": "Japanese railgun for naval air defense. Active development continues after US cancellation."
+    },
+    {
+      "id": "tr-siper-laser",
+      "name": "ALKA Laser System",
+      "type": "laser_air_defense",
+      "country_of_origin": "TR",
+      "manufacturer": "Roketsan",
+      "service_entry": 2024,
+      "specifications": {
+        "power_kw": 50,
+        "range_km": 4,
+        "targets": ["UAVs", "Mortar rounds", "Missiles"]
+      },
+      "service_history": {
+        "first_test": 2022,
+        "expected_service": 2024,
+        "status": "Final testing"
+      },
+      "notes": "Turkish laser air defense system. Part of layered air defense with SIPER SAM."
+    }
+  ]
+}

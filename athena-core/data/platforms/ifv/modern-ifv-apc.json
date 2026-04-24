@@ -1,0 +1,518 @@
+{
+  "platforms": [
+    {
+      "id": "de-puma-ifv",
+      "name": "Puma IFV",
+      "type": "ifv",
+      "country_of_origin": "DE",
+      "manufacturer": "PSM (Rheinmetall/KMW)",
+      "service_entry": 2015,
+      "specifications": {
+        "crew": 3,
+        "passengers": 6,
+        "weight_combat_kg": 43000,
+        "weight_air_transport_kg": 31450,
+        "length_m": 7.4,
+        "width_m": 3.7,
+        "height_m": 3.1,
+        "max_speed_kmh": 70,
+        "range_km": 600
+      },
+      "powerplant": {
+        "engine": "MTU V10 892",
+        "power_hp": 1073
+      },
+      "armament": {
+        "main": {
+          "type": "MK 30-2/ABM",
+          "caliber_mm": 30,
+          "airburst": true
+        },
+        "atgm": "MELLS (Spike LR)",
+        "secondary": "MG4 5.56mm"
+      },
+      "protection": {
+        "protection_level": "STANAG 4569 Level 6",
+        "mine_protection": "Level 4a/4b",
+        "aps": "MUSS soft-kill"
+      },
+      "service_history": {
+        "introduced": 2015,
+        "status": "active",
+        "operators": [
+          {
+            "country": "DE",
+            "quantity": 350
+          }
+        ]
+      },
+      "unit_cost_usd": 17000000,
+      "notes": "Most expensive IFV. Modular protection levels. Programmable airburst ammunition. Initial reliability issues resolved."
+    },
+    {
+      "id": "gb-ajax-ifv",
+      "name": "Ajax",
+      "type": "ifv",
+      "country_of_origin": "GB",
+      "manufacturer": "General Dynamics UK",
+      "service_entry": 2025,
+      "specifications": {
+        "crew": 3,
+        "passengers": 4,
+        "weight_kg": 42000,
+        "max_speed_kmh": 70,
+        "range_km": 500
+      },
+      "armament": {
+        "main": {
+          "type": "CTAI 40mm Case Telescoped",
+          "caliber_mm": 40,
+          "airburst": true
+        }
+      },
+      "protection": {
+        "protection_level": "STANAG 4569 Level 6",
+        "mine_protection": "Level 4a/4b"
+      },
+      "variants": [
+        "Ajax - Reconnaissance",
+        "Ares - APC",
+        "Athena - Command",
+        "Atlas - Recovery",
+        "Apollo - Repair",
+        "Argus - Engineer"
+      ],
+      "service_history": {
+        "expected_service": 2025,
+        "planned": 589,
+        "status": "delayed - vibration issues"
+      },
+      "notes": "Troubled development. Vibration and noise issues. 40mm CT cannon very capable. Delayed multiple times."
+    },
+    {
+      "id": "ru-bmp-3m",
+      "name": "BMP-3M",
+      "type": "ifv",
+      "country_of_origin": "RU",
+      "manufacturer": "Kurganmashzavod",
+      "service_entry": 2018,
+      "specifications": {
+        "crew": 3,
+        "passengers": 7,
+        "weight_kg": 21000,
+        "max_speed_kmh": 72,
+        "max_speed_water_kmh": 10,
+        "range_km": 600
+      },
+      "powerplant": {
+        "engine": "UTD-29M",
+        "power_hp": 660
+      },
+      "armament": {
+        "main": {
+          "type": "2A70 100mm gun/launcher",
+          "rounds": 40,
+          "atgm": "9M117M1 Arkan"
+        },
+        "coax": "2A72 30mm autocannon",
+        "secondary": "3x 7.62mm PKT"
+      },
+      "protection": {
+        "front_mm": 35,
+        "era": "Kaktus ERA optional"
+      },
+      "service_history": {
+        "introduced": 2018,
+        "status": "active",
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 500
+          },
+          {
+            "country": "AE",
+            "quantity": 680
+          },
+          {
+            "country": "KR",
+            "quantity": 70
+          }
+        ]
+      },
+      "combat_use": [
+        {
+          "conflict": "Ukraine",
+          "year": 2022
+        }
+      ],
+      "notes": "Upgraded BMP-3. 100mm gun fires ATGMs. Amphibious. Heavy losses in Ukraine but still effective."
+    },
+    {
+      "id": "ru-bmp-t-terminator",
+      "name": "BMPT Terminator",
+      "type": "tank_support",
+      "country_of_origin": "RU",
+      "manufacturer": "Uralvagonzavod",
+      "service_entry": 2018,
+      "specifications": {
+        "crew": 5,
+        "weight_kg": 48000,
+        "max_speed_kmh": 60,
+        "range_km": 550
+      },
+      "chassis": "T-72/T-90 based",
+      "armament": {
+        "autocannons": "2x 2A42 30mm",
+        "atgm": "4x 9M120 Ataka-T",
+        "grenade_launchers": "2x AG-17D 30mm",
+        "coax": "7.62mm PKT"
+      },
+      "service_history": {
+        "introduced": 2018,
+        "status": "active",
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 20
+          },
+          {
+            "country": "KZ",
+            "quantity": 10
+          }
+        ]
+      },
+      "combat_use": [
+        {
+          "conflict": "Ukraine",
+          "year": 2022
+        }
+      ],
+      "notes": "Tank support fighting vehicle. Designed to protect tanks in urban combat. Limited deployment in Ukraine."
+    },
+    {
+      "id": "kr-k21-ifv",
+      "name": "K21 IFV",
+      "type": "ifv",
+      "country_of_origin": "KR",
+      "manufacturer": "Doosan DST",
+      "service_entry": 2009,
+      "specifications": {
+        "crew": 3,
+        "passengers": 9,
+        "weight_kg": 26000,
+        "max_speed_kmh": 70,
+        "max_speed_water_kmh": 6,
+        "range_km": 450
+      },
+      "armament": {
+        "main": {
+          "type": "Bushmaster II",
+          "caliber_mm": 40
+        },
+        "atgm": "2x Raybolt (Spike derivative)",
+        "coax": "7.62mm"
+      },
+      "protection": {
+        "armor": "Fiberglass composite",
+        "protection_level": "14.5mm AP resistant"
+      },
+      "service_history": {
+        "introduced": 2009,
+        "status": "active",
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 500
+          }
+        ]
+      },
+      "notes": "Indigenous South Korean IFV. 40mm Bushmaster very capable. Amphibious with preparation."
+    },
+    {
+      "id": "cn-zbd-04a",
+      "name": "ZBD-04A",
+      "type": "ifv",
+      "country_of_origin": "CN",
+      "manufacturer": "Norinco",
+      "service_entry": 2010,
+      "specifications": {
+        "crew": 3,
+        "passengers": 7,
+        "weight_kg": 24500,
+        "max_speed_kmh": 65,
+        "max_speed_water_kmh": 8,
+        "range_km": 500
+      },
+      "armament": {
+        "main": "100mm gun/launcher",
+        "coax": "30mm autocannon",
+        "atgm": "HJ-73C"
+      },
+      "service_history": {
+        "introduced": 2010,
+        "status": "active",
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 2000
+          }
+        ]
+      },
+      "notes": "Main Chinese IFV. BMP-3 inspired design. Dual-feed 100mm and 30mm armament."
+    },
+    {
+      "id": "us-stryker-icv-dragoon",
+      "name": "Stryker ICV Dragoon",
+      "type": "apc",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics Land Systems",
+      "service_entry": 2018,
+      "specifications": {
+        "crew": 2,
+        "passengers": 9,
+        "weight_kg": 20185,
+        "max_speed_kmh": 97,
+        "range_km": 500
+      },
+      "armament": {
+        "main": {
+          "type": "Mk44 Bushmaster II",
+          "caliber_mm": 30,
+          "elevation_deg": 60
+        },
+        "secondary": "M240 7.62mm"
+      },
+      "variants": [
+        "ICV - Infantry Carrier",
+        "MGS - Mobile Gun System (105mm)",
+        "ATGM - TOW carrier",
+        "RV - Reconnaissance",
+        "NBCRV - Recon",
+        "M-SHORAD - Air Defense"
+      ],
+      "service_history": {
+        "introduced": 2018,
+        "status": "active",
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 4400
+          }
+        ]
+      },
+      "notes": "Dragoon adds 30mm cannon. 8x8 wheeled design. Rapid deployment capability. M-SHORAD adds Stingers and Hellfires."
+    },
+    {
+      "id": "fi-patria-amv-xp",
+      "name": "Patria AMV XP",
+      "type": "apc",
+      "country_of_origin": "FI",
+      "manufacturer": "Patria",
+      "service_entry": 2018,
+      "specifications": {
+        "crew": 2,
+        "passengers": 11,
+        "weight_gvw_kg": 30000,
+        "max_speed_kmh": 100,
+        "max_speed_water_kmh": 10,
+        "range_km": 800
+      },
+      "configuration": "8x8",
+      "powerplant": {
+        "engine": "Scania DI13",
+        "power_hp": 540
+      },
+      "protection": {
+        "protection_level": "STANAG 4569 Level 4+",
+        "mine_protection": "Level 4a/4b"
+      },
+      "service_history": {
+        "introduced": 2018,
+        "status": "active",
+        "operators": [
+          {
+            "country": "FI",
+            "quantity": 250
+          },
+          {
+            "country": "PL",
+            "quantity": 690,
+            "name": "Rosomak"
+          },
+          {
+            "country": "HR",
+            "quantity": 84
+          },
+          {
+            "country": "ZA",
+            "quantity": 264,
+            "name": "Badger"
+          },
+          {
+            "country": "AE",
+            "quantity": 1200
+          },
+          {
+            "country": "SI",
+            "quantity": 45
+          }
+        ]
+      },
+      "unit_cost_usd": 3000000,
+      "notes": "Very successful export vehicle. Multiple turret options. High protection for weight. Amphibious."
+    },
+    {
+      "id": "de-boxer-ifv",
+      "name": "Boxer IFV",
+      "type": "ifv",
+      "country_of_origin": "DE",
+      "manufacturer": "ARTEC (KMW/Rheinmetall)",
+      "service_entry": 2009,
+      "specifications": {
+        "crew": 3,
+        "passengers": 8,
+        "weight_kg": 38000,
+        "max_speed_kmh": 103,
+        "range_km": 1050
+      },
+      "configuration": "8x8",
+      "armament": {
+        "options": [
+          "Lance turret (30mm)",
+          "PUMA turret (30mm)",
+          "Remote 12.7mm",
+          "Spike ATGM"
+        ]
+      },
+      "protection": {
+        "protection_level": "STANAG 4569 Level 6",
+        "mine_protection": "Level 4"
+      },
+      "variants": [
+        "IFV - Infantry",
+        "CRV - Cavalry Reconnaissance (Australia)",
+        "Ambulance",
+        "Command",
+        "Artillery (RCH 155 self-propelled)"
+      ],
+      "service_history": {
+        "introduced": 2009,
+        "status": "active",
+        "operators": [
+          {
+            "country": "DE",
+            "quantity": 272
+          },
+          {
+            "country": "NL",
+            "quantity": 200
+          },
+          {
+            "country": "LT",
+            "quantity": 88
+          },
+          {
+            "country": "GB",
+            "quantity": 528,
+            "name": "Mechanised Infantry Vehicle"
+          },
+          {
+            "country": "AU",
+            "quantity": 211,
+            "name": "Combat Reconnaissance Vehicle"
+          }
+        ]
+      },
+      "unit_cost_usd": 5500000,
+      "notes": "Mission module system allows rapid reconfiguration. Very high protection. RCH 155 is 155mm SPH version."
+    },
+    {
+      "id": "tr-fnss-kaplan-20",
+      "name": "FNSS Kaplan-20",
+      "type": "ifv",
+      "country_of_origin": "TR",
+      "manufacturer": "FNSS",
+      "service_entry": 2022,
+      "specifications": {
+        "crew": 3,
+        "passengers": 9,
+        "weight_kg": 32000,
+        "max_speed_kmh": 70,
+        "range_km": 500
+      },
+      "armament": {
+        "main": {
+          "type": "Mk44 Bushmaster",
+          "caliber_mm": 30
+        },
+        "atgm": "Kornet-E or OMTAS"
+      },
+      "protection": {
+        "protection_level": "STANAG 4569 Level 5"
+      },
+      "service_history": {
+        "introduced": 2022,
+        "status": "active",
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 300,
+            "status": "ordered"
+          },
+          {
+            "country": "ID",
+            "quantity": 18,
+            "name": "Harimau"
+          }
+        ]
+      },
+      "notes": "Turkish modern IFV. Export to Indonesia. Can mount various turret systems."
+    },
+    {
+      "id": "il-namer-ifv",
+      "name": "Namer IFV",
+      "type": "heavy_ifv",
+      "country_of_origin": "IL",
+      "manufacturer": "Israel Military Industries",
+      "service_entry": 2008,
+      "specifications": {
+        "crew": 3,
+        "passengers": 9,
+        "weight_kg": 62000,
+        "max_speed_kmh": 60,
+        "range_km": 500
+      },
+      "chassis": "Merkava Mk4 based",
+      "armament": {
+        "main": "Remote 12.7mm or 30mm",
+        "aps": "Trophy APS"
+      },
+      "protection": {
+        "armor": "Merkava tank-level",
+        "aps": "Trophy",
+        "mine_protection": "V-hull"
+      },
+      "service_history": {
+        "introduced": 2008,
+        "status": "active",
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 200
+          }
+        ]
+      },
+      "combat_use": [
+        {
+          "conflict": "Gaza",
+          "year": 2014
+        },
+        {
+          "conflict": "Gaza",
+          "year": 2023
+        }
+      ],
+      "notes": "World's heaviest IFV. Tank-level protection. Trophy APS. Based on Merkava tank chassis."
+    }
+  ]
+}

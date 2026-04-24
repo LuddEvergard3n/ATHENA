@@ -1,0 +1,391 @@
+{
+  "category": "aircraft",
+  "subcategory": "additional-fighters",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-f35b",
+      "name": "F-35B Lightning II",
+      "type": "stovl-fighter",
+      "country": "US",
+      "year": 2015,
+      "manufacturer": "Lockheed Martin",
+      "service_history": {
+        "introduced": 2015,
+        "production_count": 300,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 160,
+            "status": "active",
+            "notes": "USMC"
+          },
+          {
+            "country": "GB",
+            "quantity": 32,
+            "status": "active",
+            "notes": "RAF/RN"
+          },
+          {
+            "country": "IT",
+            "quantity": 30,
+            "status": "active"
+          },
+          {
+            "country": "JP",
+            "quantity": 42,
+            "status": "ordered"
+          },
+          {
+            "country": "SG",
+            "quantity": 12,
+            "status": "ordered"
+          }
+        ],
+        "notes": "STOVL variant for amphibious carriers"
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 15.6,
+        "wingspan_m": 10.7,
+        "height_m": 4.4,
+        "empty_weight_kg": 14715,
+        "max_weight_kg": 27216,
+        "max_speed_mach": 1.6,
+        "combat_radius_km": 833,
+        "service_ceiling_m": 15240,
+        "powerplant": {
+          "type": "turbofan",
+          "model": "Pratt & Whitney F135-PW-600",
+          "thrust_kn": 191
+        },
+        "stovl_system": "Lift fan + 3-bearing swivel nozzle"
+      },
+      "armament": {
+        "internal_payload_kg": 2760,
+        "external_payload_kg": 6800,
+        "hardpoints_internal": 4,
+        "hardpoints_external": 6,
+        "gun": "25mm GAU-22/A (external pod)",
+        "weapons": [
+          "AIM-120 AMRAAM",
+          "AIM-9X Sidewinder",
+          "GBU-31/32 JDAM",
+          "GBU-12 Paveway II",
+          "JSOW",
+          "SDB"
+        ]
+      },
+      "sensors": {
+        "radar": "AN/APG-81 AESA",
+        "eo": "AN/AAQ-40 EOTS",
+        "dAS": "AN/AAQ-37 DAS"
+      },
+      "unit_cost_usd": 115500000
+    },
+    {
+      "id": "us-f35c",
+      "name": "F-35C Lightning II",
+      "type": "carrier-fighter",
+      "country": "US",
+      "year": 2019,
+      "manufacturer": "Lockheed Martin",
+      "service_history": {
+        "introduced": 2019,
+        "production_count": 150,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 150,
+            "status": "active",
+            "notes": "USN/USMC"
+          }
+        ],
+        "notes": "Carrier variant with larger wings"
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 15.7,
+        "wingspan_m": 13.1,
+        "height_m": 4.5,
+        "empty_weight_kg": 15785,
+        "max_weight_kg": 31800,
+        "max_speed_mach": 1.6,
+        "combat_radius_km": 1093,
+        "service_ceiling_m": 15240,
+        "powerplant": {
+          "type": "turbofan",
+          "model": "Pratt & Whitney F135-PW-400",
+          "thrust_kn": 191
+        }
+      },
+      "armament": {
+        "internal_payload_kg": 2760,
+        "external_payload_kg": 6800,
+        "hardpoints_internal": 4,
+        "hardpoints_external": 6,
+        "gun": "25mm GAU-22/A",
+        "weapons": [
+          "AIM-120 AMRAAM",
+          "AIM-9X Sidewinder",
+          "GBU-31/32 JDAM",
+          "LRASM",
+          "JSOW",
+          "SDB"
+        ]
+      },
+      "sensors": {
+        "radar": "AN/APG-81 AESA",
+        "eo": "AN/AAQ-40 EOTS"
+      },
+      "unit_cost_usd": 107700000
+    },
+    {
+      "id": "ru-mig31bm",
+      "name": "MiG-31BM Foxhound",
+      "type": "interceptor",
+      "country": "RU",
+      "year": 2011,
+      "manufacturer": "RAC MiG",
+      "service_history": {
+        "introduced": 2011,
+        "first_flight": 1975,
+        "production_count": 130,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 130,
+            "status": "active",
+            "notes": "VKS interceptor force"
+          },
+          {
+            "country": "KZ",
+            "quantity": 30,
+            "status": "active"
+          }
+        ],
+        "notes": "Modernized interceptor, Kinzhal carrier"
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 22.69,
+        "wingspan_m": 13.46,
+        "height_m": 6.15,
+        "empty_weight_kg": 21825,
+        "max_weight_kg": 46200,
+        "max_speed_mach": 2.83,
+        "combat_radius_km": 720,
+        "service_ceiling_m": 20600,
+        "powerplant": {
+          "type": "turbofan",
+          "model": "2× Aviadvigatel D-30F6",
+          "thrust_kn": 152
+        }
+      },
+      "armament": {
+        "hardpoints": 6,
+        "gun": "23mm GSh-6-23 (internal)",
+        "weapons": [
+          "R-33S (AA-9 Amos)",
+          "R-37M (AA-13 Arrow)",
+          "R-77-1 (AA-12 Adder)",
+          "R-73 (AA-11 Archer)",
+          "Kh-47M2 Kinzhal (hypersonic)"
+        ]
+      },
+      "sensors": {
+        "radar": "Zaslon-AM PESA",
+        "range_km": 320,
+        "targets_tracked": 24,
+        "targets_engaged": 8
+      }
+    },
+    {
+      "id": "us-f15e",
+      "name": "F-15E Strike Eagle",
+      "type": "strike-fighter",
+      "country": "US",
+      "year": 1988,
+      "manufacturer": "McDonnell Douglas/Boeing",
+      "service_history": {
+        "introduced": 1988,
+        "production_count": 236,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 218,
+            "status": "active",
+            "notes": "USAF primary strike aircraft"
+          },
+          {
+            "country": "SA",
+            "quantity": 70,
+            "status": "active",
+            "notes": "F-15S/SA"
+          },
+          {
+            "country": "SG",
+            "quantity": 40,
+            "status": "active",
+            "notes": "F-15SG"
+          },
+          {
+            "country": "KR",
+            "quantity": 61,
+            "status": "active",
+            "notes": "F-15K Slam Eagle"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 19.43,
+        "wingspan_m": 13.05,
+        "height_m": 5.63,
+        "empty_weight_kg": 14300,
+        "max_weight_kg": 36741,
+        "max_speed_mach": 2.5,
+        "combat_radius_km": 1270,
+        "service_ceiling_m": 18200,
+        "powerplant": {
+          "type": "turbofan",
+          "model": "2× P&W F100-PW-229",
+          "thrust_kn": 129
+        }
+      },
+      "armament": {
+        "payload_kg": 11000,
+        "hardpoints": 15,
+        "gun": "20mm M61A1 Vulcan",
+        "weapons": [
+          "AIM-120 AMRAAM",
+          "AIM-9X Sidewinder",
+          "GBU-31/38 JDAM",
+          "GBU-10/12/24 Paveway",
+          "AGM-130",
+          "AGM-158 JASSM",
+          "B61 nuclear bomb"
+        ]
+      },
+      "sensors": {
+        "radar": "AN/APG-82(V)1 AESA",
+        "targeting_pod": "AN/AAQ-33 Sniper"
+      }
+    },
+    {
+      "id": "cn-j15",
+      "name": "Shenyang J-15 Flying Shark",
+      "type": "carrier-fighter",
+      "country": "CN",
+      "year": 2013,
+      "manufacturer": "Shenyang Aircraft Corporation",
+      "service_history": {
+        "introduced": 2013,
+        "production_count": 60,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 60,
+            "status": "active",
+            "notes": "PLAN carrier air wings"
+          }
+        ],
+        "notes": "Based on Su-33, China's carrier fighter"
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 22.28,
+        "wingspan_m": 15.0,
+        "height_m": 5.92,
+        "empty_weight_kg": 17500,
+        "max_weight_kg": 33000,
+        "max_speed_mach": 2.4,
+        "combat_radius_km": 1200,
+        "service_ceiling_m": 20000,
+        "powerplant": {
+          "type": "turbofan",
+          "model": "2× Shenyang WS-10H",
+          "thrust_kn": 132
+        },
+        "ski_jump_capable": true
+      },
+      "armament": {
+        "hardpoints": 12,
+        "gun": "30mm GSh-30-1",
+        "weapons": [
+          "PL-12 (SD-10)",
+          "PL-15",
+          "PL-8",
+          "YJ-83K anti-ship",
+          "KD-88",
+          "LS-6 guided bomb"
+        ]
+      },
+      "sensors": {
+        "radar": "AESA (Type 1475)"
+      }
+    },
+    {
+      "id": "in-su30mki",
+      "name": "Sukhoi Su-30MKI Flanker-H",
+      "type": "multirole-fighter",
+      "country": "IN",
+      "year": 2002,
+      "manufacturer": "HAL (license)",
+      "service_history": {
+        "introduced": 2002,
+        "production_count": 272,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 272,
+            "status": "active",
+            "notes": "IAF primary air superiority"
+          }
+        ],
+        "notes": "Indian variant with Israeli and French avionics"
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 21.94,
+        "wingspan_m": 14.7,
+        "height_m": 6.36,
+        "empty_weight_kg": 18400,
+        "max_weight_kg": 34500,
+        "max_speed_mach": 2.0,
+        "combat_radius_km": 1500,
+        "service_ceiling_m": 17300,
+        "powerplant": {
+          "type": "turbofan",
+          "model": "2× Saturn AL-31FP",
+          "thrust_kn": 122.6,
+          "thrust_vectoring": true
+        }
+      },
+      "armament": {
+        "hardpoints": 12,
+        "gun": "30mm GSh-30-1",
+        "weapons": [
+          "R-77 (AA-12)",
+          "R-27 (AA-10)",
+          "R-73 (AA-11)",
+          "BrahMos-A (air-launched)",
+          "Kh-31",
+          "KAB-500/1500"
+        ]
+      },
+      "sensors": {
+        "radar": "N011M BARS PESA",
+        "irst": "OLS-30",
+        "ew": "Tarang RWR"
+      }
+    }
+  ]
+}

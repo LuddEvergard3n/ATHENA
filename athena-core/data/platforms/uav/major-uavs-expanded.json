@@ -1,0 +1,534 @@
+{
+  "platforms": [
+    {
+      "id": "us-mq-9b-reaper",
+      "name": "MQ-9B Reaper/SkyGuardian",
+      "type": "male_uav",
+      "country_of_origin": "US",
+      "manufacturer": "General Atomics",
+      "service_entry": 2007,
+      "specifications": {
+        "length_m": 11.0,
+        "wingspan_m": 20.0,
+        "height_m": 3.8,
+        "empty_weight_kg": 2223,
+        "max_takeoff_weight_kg": 4760,
+        "max_speed_kmh": 482,
+        "cruise_speed_kmh": 313,
+        "service_ceiling_m": 15240,
+        "endurance_hours": 27,
+        "range_km": 1850
+      },
+      "powerplant": {
+        "engine": "Honeywell TPE331-10GD",
+        "type": "turboprop",
+        "power_hp": 900
+      },
+      "payload": {
+        "internal_kg": 363,
+        "external_kg": 1361,
+        "hardpoints": 7
+      },
+      "armament": {
+        "missiles": ["AGM-114 Hellfire (8)", "AGM-179 JAGM"],
+        "bombs": ["GBU-12", "GBU-38 JDAM", "GBU-39 SDB"],
+        "max_weapons_kg": 1700
+      },
+      "sensors": {
+        "eo_ir": "MTS-B Multi-Spectral Targeting System",
+        "radar": "AN/APY-8 Lynx SAR/GMTI",
+        "sigint": "Optional SIGINT package"
+      },
+      "variants": [
+        "MQ-9A Reaper - USAF standard",
+        "MQ-9B SkyGuardian - Improved civil airspace",
+        "MQ-9B SeaGuardian - Maritime variant"
+      ],
+      "service_history": {
+        "introduced": 2007,
+        "status": "active",
+        "production_count": 400,
+        "operators": [
+          {"country": "US", "quantity": 300},
+          {"country": "GB", "quantity": 16},
+          {"country": "FR", "quantity": 12},
+          {"country": "IT", "quantity": 6},
+          {"country": "ES", "quantity": 4},
+          {"country": "NL", "quantity": 4},
+          {"country": "AU", "quantity": 12, "status": "ordered"},
+          {"country": "JP", "quantity": 8, "status": "ordered"}
+        ]
+      },
+      "combat_use": [
+        {"conflict": "Afghanistan", "year": 2007},
+        {"conflict": "Pakistan", "year": 2008},
+        {"conflict": "Yemen", "year": 2011},
+        {"conflict": "Syria/Iraq", "year": 2014}
+      ],
+      "unit_cost_usd": 30000000,
+      "notes": "World's most prolific armed UAV. Hunter-killer role. MQ-9B certified for civil airspace."
+    },
+    {
+      "id": "us-mq-1c-gray-eagle",
+      "name": "MQ-1C Gray Eagle",
+      "type": "male_uav",
+      "country_of_origin": "US",
+      "manufacturer": "General Atomics",
+      "service_entry": 2009,
+      "specifications": {
+        "length_m": 8.5,
+        "wingspan_m": 17.0,
+        "max_takeoff_weight_kg": 1633,
+        "max_speed_kmh": 280,
+        "endurance_hours": 25,
+        "service_ceiling_m": 8840
+      },
+      "armament": {
+        "missiles": "4x AGM-114 Hellfire",
+        "bombs": "GBU-44 Viper Strike"
+      },
+      "sensors": {
+        "eo_ir": "AN/AAS-52",
+        "radar": "SAR/GMTI"
+      },
+      "service_history": {
+        "introduced": 2009,
+        "status": "active",
+        "operators": [
+          {"country": "US", "service": "Army", "quantity": 200},
+          {"country": "UA", "quantity": 12}
+        ]
+      },
+      "notes": "US Army's primary armed UAV. Extended Range version 40+ hours endurance. Sent to Ukraine."
+    },
+    {
+      "id": "us-rq-4-global-hawk",
+      "name": "RQ-4B Global Hawk",
+      "type": "hale_uav",
+      "country_of_origin": "US",
+      "manufacturer": "Northrop Grumman",
+      "service_entry": 2001,
+      "specifications": {
+        "length_m": 14.5,
+        "wingspan_m": 39.9,
+        "height_m": 4.7,
+        "max_takeoff_weight_kg": 14628,
+        "max_speed_kmh": 629,
+        "cruise_altitude_m": 18288,
+        "endurance_hours": 34,
+        "range_km": 22780
+      },
+      "powerplant": {
+        "engine": "Rolls-Royce AE 3007H",
+        "thrust_kn": 34.5
+      },
+      "sensors": {
+        "radar": "AN/ZPY-2 MP-RTIP (Block 40)",
+        "eo_ir": "Enhanced Integrated Sensor Suite",
+        "sigint": "ASIP signals intelligence"
+      },
+      "variants": [
+        "RQ-4B Block 30 - ISR baseline",
+        "RQ-4B Block 40 - MP-RTIP radar",
+        "MQ-4C Triton - Naval maritime patrol"
+      ],
+      "service_history": {
+        "introduced": 2001,
+        "status": "active",
+        "operators": [
+          {"country": "US", "quantity": 36},
+          {"country": "JP", "quantity": 3},
+          {"country": "KR", "quantity": 4},
+          {"country": "NATO", "quantity": 5, "name": "AGS"}
+        ]
+      },
+      "unit_cost_usd": 130000000,
+      "notes": "Largest operational UAV. U-2 replacement role. Surveils 100,000 km² per day."
+    },
+    {
+      "id": "us-mq-4c-triton",
+      "name": "MQ-4C Triton",
+      "type": "hale_uav",
+      "country_of_origin": "US",
+      "manufacturer": "Northrop Grumman",
+      "service_entry": 2021,
+      "specifications": {
+        "length_m": 14.5,
+        "wingspan_m": 39.9,
+        "max_takeoff_weight_kg": 14628,
+        "max_speed_kmh": 611,
+        "endurance_hours": 24,
+        "altitude_m": 17000
+      },
+      "sensors": {
+        "radar": "AN/ZPY-3 MFAS",
+        "eo_ir": "MQ-4C EISS",
+        "ais": "Automatic Identification System"
+      },
+      "service_history": {
+        "introduced": 2021,
+        "status": "active",
+        "operators": [
+          {"country": "US", "service": "Navy", "quantity": 68, "status": "ordered"},
+          {"country": "AU", "quantity": 6}
+        ]
+      },
+      "unit_cost_usd": 180000000,
+      "notes": "Naval variant of Global Hawk. Maritime patrol role. P-8 Poseidon complement."
+    },
+    {
+      "id": "us-mq-25-stingray",
+      "name": "MQ-25A Stingray",
+      "type": "carrier_uav",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_entry": 2026,
+      "specifications": {
+        "length_m": 15.5,
+        "wingspan_m": 22.9,
+        "max_takeoff_weight_kg": 20215,
+        "fuel_offload_kg": 6800,
+        "range_nm": 500
+      },
+      "mission": "Aerial refueling tanker",
+      "features": {
+        "carrier_capable": true,
+        "catapult_launch": true,
+        "autonomous_ops": true
+      },
+      "service_history": {
+        "first_flight": 2019,
+        "expected_service": 2026,
+        "ordered": 76
+      },
+      "unit_cost_usd": 100000000,
+      "notes": "First operational carrier-based tanker UAV. Extends F/A-18 and F-35C range. ISR capability secondary."
+    },
+    {
+      "id": "tr-bayraktar-tb2",
+      "name": "Bayraktar TB2",
+      "type": "male_uav",
+      "country_of_origin": "TR",
+      "manufacturer": "Baykar",
+      "service_entry": 2014,
+      "specifications": {
+        "length_m": 6.5,
+        "wingspan_m": 12.0,
+        "height_m": 2.2,
+        "max_takeoff_weight_kg": 700,
+        "max_speed_kmh": 220,
+        "cruise_speed_kmh": 130,
+        "endurance_hours": 27,
+        "service_ceiling_m": 8230
+      },
+      "powerplant": {
+        "engine": "Rotax 912",
+        "power_hp": 100
+      },
+      "armament": {
+        "hardpoints": 4,
+        "payload_kg": 150,
+        "munitions": [
+          "MAM-L laser guided (22kg)",
+          "MAM-C (8kg)",
+          "UMTAS ATGM",
+          "Roketsan TEBER LGB kit"
+        ]
+      },
+      "sensors": {
+        "eo_ir": "WESCAM MX-15D or Aselsan CATS",
+        "laser": "Laser designator/range finder"
+      },
+      "service_history": {
+        "introduced": 2014,
+        "status": "active",
+        "production_count": 500,
+        "operators": [
+          {"country": "TR", "quantity": 120},
+          {"country": "UA", "quantity": 50},
+          {"country": "AZ", "quantity": 36},
+          {"country": "QA", "quantity": 6},
+          {"country": "PL", "quantity": 24},
+          {"country": "LY", "quantity": 20},
+          {"country": "ET", "quantity": 6}
+        ]
+      },
+      "combat_use": [
+        {"conflict": "Syria", "year": 2016},
+        {"conflict": "Libya", "year": 2020},
+        {"conflict": "Nagorno-Karabakh", "year": 2020},
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "unit_cost_usd": 5000000,
+      "notes": "Game-changer in modern warfare. Destroyed hundreds of vehicles in Karabakh. Symbol of Ukrainian resistance."
+    },
+    {
+      "id": "tr-bayraktar-akinci",
+      "name": "Bayraktar Akıncı",
+      "type": "hale_uav",
+      "country_of_origin": "TR",
+      "manufacturer": "Baykar",
+      "service_entry": 2021,
+      "specifications": {
+        "length_m": 12.2,
+        "wingspan_m": 20.0,
+        "max_takeoff_weight_kg": 5500,
+        "max_speed_kmh": 361,
+        "endurance_hours": 24,
+        "service_ceiling_m": 12192
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "AI-450C turboprop",
+        "power_hp": 450
+      },
+      "armament": {
+        "hardpoints": 6,
+        "payload_kg": 1350,
+        "munitions": [
+          "SOM-J cruise missile",
+          "MAM-L/MAM-T",
+          "Mk-82/83 bombs",
+          "ASELSAN GOKDOGAN AAM"
+        ]
+      },
+      "sensors": {
+        "radar": "AESA radar",
+        "eo_ir": "Aselsan CATS"
+      },
+      "service_history": {
+        "introduced": 2021,
+        "status": "active",
+        "operators": [
+          {"country": "TR", "quantity": 24},
+          {"country": "PK", "quantity": 12, "status": "ordered"}
+        ]
+      },
+      "unit_cost_usd": 25000000,
+      "notes": "Turkish HALE combat UAV. Can carry cruise missiles. Air-to-air missile capable."
+    },
+    {
+      "id": "tr-bayraktar-tb3",
+      "name": "Bayraktar TB3",
+      "type": "naval_uav",
+      "country_of_origin": "TR",
+      "manufacturer": "Baykar",
+      "service_entry": 2024,
+      "specifications": {
+        "length_m": 8.5,
+        "wingspan_m": 14.0,
+        "wingspan_folded_m": 4.0,
+        "max_takeoff_weight_kg": 1450,
+        "max_speed_kmh": 278,
+        "endurance_hours": 24,
+        "service_ceiling_m": 10600
+      },
+      "armament": {
+        "payload_kg": 280,
+        "hardpoints": 6
+      },
+      "features": {
+        "folding_wings": true,
+        "ship_based": true,
+        "stol_capable": true
+      },
+      "service_history": {
+        "introduced": 2024,
+        "status": "active",
+        "operators": [{"country": "TR", "ship": "TCG Anadolu"}]
+      },
+      "notes": "Naval variant with folding wings. Designed for TCG Anadolu. STOL from ski-jump."
+    },
+    {
+      "id": "tr-bayraktar-kizilelma",
+      "name": "Bayraktar Kızılelma",
+      "type": "ucav",
+      "country_of_origin": "TR",
+      "manufacturer": "Baykar",
+      "service_entry": 2025,
+      "specifications": {
+        "length_m": 14.7,
+        "wingspan_m": 10.0,
+        "max_takeoff_weight_kg": 6000,
+        "max_speed_mach": 0.9,
+        "service_ceiling_m": 10600
+      },
+      "powerplant": {
+        "engine": "AI-322F afterburning turbofan",
+        "thrust_kn": 52
+      },
+      "armament": {
+        "payload_kg": 1500,
+        "internal_bay": true,
+        "missiles": ["ASELSAN air-to-air", "SOM-J cruise"]
+      },
+      "stealth": {
+        "low_observable": true,
+        "internal_weapons": true
+      },
+      "service_history": {
+        "first_flight": 2022,
+        "expected_service": 2025,
+        "status": "flight testing"
+      },
+      "notes": "Jet-powered UCAV. Stealth features. Air-to-air combat capable. Will operate from TCG Anadolu."
+    },
+    {
+      "id": "ru-s-70-okhotnik",
+      "name": "S-70 Okhotnik-B",
+      "type": "ucav",
+      "country_of_origin": "RU",
+      "manufacturer": "Sukhoi",
+      "nato_name": "Hunter-B",
+      "service_entry": 2025,
+      "specifications": {
+        "length_m": 14.0,
+        "wingspan_m": 19.0,
+        "max_takeoff_weight_kg": 25000,
+        "max_speed_kmh": 1000,
+        "service_ceiling_m": 18000
+      },
+      "powerplant": {
+        "engine": "Saturn AL-31F derivative",
+        "type": "turbofan"
+      },
+      "armament": {
+        "internal_bay": true,
+        "payload_kg": 2000,
+        "weapons": ["Kh-38", "KAB-500"]
+      },
+      "stealth": {
+        "flying_wing": true,
+        "low_observable": true,
+        "internal_weapons": true
+      },
+      "features": {
+        "loyal_wingman": "Su-57 teaming",
+        "autonomous": true
+      },
+      "service_history": {
+        "first_flight": 2019,
+        "expected_service": 2025,
+        "status": "flight testing"
+      },
+      "notes": "Russian stealth UCAV. Flying wing design. Loyal wingman to Su-57. Weapons bay tested."
+    },
+    {
+      "id": "au-mq-28-ghost-bat",
+      "name": "MQ-28A Ghost Bat",
+      "type": "loyal_wingman",
+      "country_of_origin": "AU",
+      "manufacturer": "Boeing Australia",
+      "service_entry": 2026,
+      "specifications": {
+        "length_m": 11.7,
+        "wingspan_m": 7.3,
+        "max_speed_kmh": 1000,
+        "range_nm": 2000
+      },
+      "armament": {
+        "nose_bay": "Modular payload bay",
+        "options": ["ISR", "EW", "Strike"]
+      },
+      "features": {
+        "ai_autonomy": true,
+        "modular_nose": true,
+        "loyal_wingman": true
+      },
+      "service_history": {
+        "first_flight": 2021,
+        "expected_service": 2026,
+        "ordered": 6
+      },
+      "unit_cost_usd": 10000000,
+      "notes": "First Australian combat aircraft in 50 years. AI-enabled loyal wingman. Modular mission systems."
+    },
+    {
+      "id": "us-xq-58-valkyrie",
+      "name": "XQ-58A Valkyrie",
+      "type": "loyal_wingman",
+      "country_of_origin": "US",
+      "manufacturer": "Kratos",
+      "service_entry": 2026,
+      "specifications": {
+        "length_m": 9.14,
+        "wingspan_m": 8.23,
+        "max_takeoff_weight_kg": 2722,
+        "max_speed_mach": 0.85,
+        "range_nm": 1500,
+        "service_ceiling_m": 13700
+      },
+      "powerplant": {
+        "engine": "Williams FJ33",
+        "thrust_kn": 9
+      },
+      "armament": {
+        "internal_bay": true,
+        "payload_kg": 272,
+        "weapons": ["SDB", "AIM-120"]
+      },
+      "features": {
+        "autonomous": true,
+        "attritable": true,
+        "runway_independent": "Rocket launch"
+      },
+      "service_history": {
+        "first_flight": 2019,
+        "status": "testing"
+      },
+      "unit_cost_usd": 3000000,
+      "notes": "Low-cost attritable UAV. Internal weapons bay. Runway-independent launch. CCA program candidate."
+    },
+    {
+      "id": "cn-gj-11-sharp-sword",
+      "name": "GJ-11 Sharp Sword",
+      "type": "ucav",
+      "country_of_origin": "CN",
+      "manufacturer": "AVIC Hongdu",
+      "service_entry": 2021,
+      "specifications": {
+        "length_m": 10.0,
+        "wingspan_m": 14.0,
+        "max_takeoff_weight_kg": 10000,
+        "max_speed_kmh": 900
+      },
+      "stealth": {
+        "flying_wing": true,
+        "internal_weapons": true
+      },
+      "armament": {
+        "internal_bay": true,
+        "weapons": "Precision guided munitions"
+      },
+      "service_history": {
+        "introduced": 2021,
+        "status": "operational"
+      },
+      "notes": "Chinese stealth UCAV. Flying wing design. Internal weapons bay. Displayed at 2019 parade."
+    },
+    {
+      "id": "cn-wz-7-soaring-dragon",
+      "name": "WZ-7 Soaring Dragon",
+      "type": "hale_uav",
+      "country_of_origin": "CN",
+      "manufacturer": "Guizhou Aircraft",
+      "service_entry": 2018,
+      "specifications": {
+        "length_m": 14.3,
+        "wingspan_m": 24.9,
+        "max_takeoff_weight_kg": 7500,
+        "service_ceiling_m": 18000,
+        "endurance_hours": 10
+      },
+      "sensors": {
+        "radar": "SAR/GMTI",
+        "eo_ir": "Multi-spectral"
+      },
+      "service_history": {
+        "introduced": 2018,
+        "status": "active"
+      },
+      "notes": "Chinese HALE ISR UAV. Joined-wing design. Global Hawk equivalent."
+    }
+  ]
+}

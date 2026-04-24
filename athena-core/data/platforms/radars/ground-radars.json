@@ -1,0 +1,313 @@
+{
+  "category": "radars",
+  "subcategory": "ground-surveillance",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": ["Jane's Land-Based Air Defence", "IISS"]
+  },
+  "platforms": [
+    {
+      "id": "us-tps80",
+      "name": "AN/TPS-80 G/ATOR",
+      "type": "multi-mission-radar",
+      "country": "US",
+      "year": 2017,
+      "manufacturer": "Northrop Grumman",
+      "specifications": {
+        "type": "3D AESA",
+        "range_km": 370,
+        "modes": ["Air Defense", "Ground/Air Surveillance", "Air Traffic Control", "Counter-Fire"],
+        "weight_kg": 2495
+      },
+      "operators": ["US (USMC)"],
+      "notes": "Multi-role expeditionary radar"
+    },
+    {
+      "id": "us-tpq53",
+      "name": "AN/TPQ-53 Firefinder",
+      "type": "counter-battery",
+      "country": "US",
+      "year": 2012,
+      "manufacturer": "Lockheed Martin",
+      "specifications": {
+        "type": "AESA",
+        "range_km": 60,
+        "detection": "Mortars, artillery, rockets",
+        "tracking_capacity": 100,
+        "mobility": "HMMWV towed"
+      },
+      "operators": ["US", "SA", "AE", "QA", "EG"],
+      "notes": "Primary US counter-battery radar"
+    },
+    {
+      "id": "us-tpq36",
+      "name": "AN/TPQ-36 Firefinder",
+      "type": "counter-battery",
+      "country": "US",
+      "year": 1981,
+      "manufacturer": "Hughes/Raytheon",
+      "specifications": {
+        "range_mortars_km": 18,
+        "range_artillery_km": 24
+      },
+      "operators": ["US", "IL", "EG", "KR", "JP", "TW"],
+      "notes": "Legacy counter-battery, still widely used"
+    },
+    {
+      "id": "us-spy6",
+      "name": "AN/SPY-6(V) AMDR",
+      "type": "naval-radar",
+      "country": "US",
+      "year": 2024,
+      "manufacturer": "Raytheon",
+      "specifications": {
+        "type": "S-band AESA",
+        "detection_range_km": 500,
+        "tracking_capacity": 1000
+      },
+      "operators": ["US"],
+      "notes": "Burke Flight III, Ford-class radar"
+    },
+    {
+      "id": "us-spy1d",
+      "name": "AN/SPY-1D AEGIS",
+      "type": "naval-radar",
+      "country": "US",
+      "year": 1983,
+      "manufacturer": "Lockheed Martin",
+      "specifications": {
+        "type": "S-band PESA",
+        "detection_range_km": 450,
+        "tracking_capacity": 200
+      },
+      "operators": ["US", "JP", "KR", "ES", "NO", "AU"],
+      "notes": "Standard AEGIS radar"
+    },
+    {
+      "id": "ru-nebo-m",
+      "name": "Nebo-M (Sky-M)",
+      "type": "multi-band-radar",
+      "country": "RU",
+      "year": 2012,
+      "manufacturer": "NNIIRT",
+      "specifications": {
+        "bands": ["VHF", "L-band", "S/X-band"],
+        "range_km": 600,
+        "detection": "Stealth aircraft, ballistic missiles",
+        "mobile": true
+      },
+      "operators": ["RU", "CN", "IR"],
+      "notes": "Multi-band counter-stealth radar"
+    },
+    {
+      "id": "ru-rezonans-ne",
+      "name": "Rezonans-NE",
+      "type": "over-horizon-radar",
+      "country": "RU",
+      "year": 2014,
+      "manufacturer": "NNIIRT",
+      "specifications": {
+        "range_km": 1100,
+        "altitude_km": 100,
+        "type": "VHF AESA"
+      },
+      "operators": ["RU"],
+      "notes": "Russian OTH-B type radar"
+    },
+    {
+      "id": "ru-zoopark",
+      "name": "Zoopark-1M (1L260)",
+      "type": "counter-battery",
+      "country": "RU",
+      "year": 2008,
+      "manufacturer": "VNII Signal",
+      "specifications": {
+        "type": "Phased array",
+        "range_artillery_km": 40,
+        "range_mlrs_km": 60,
+        "tracking_capacity": 70
+      },
+      "operators": ["RU", "AZ", "KZ"],
+      "notes": "Russian counter-battery radar"
+    },
+    {
+      "id": "ru-podlet-k1",
+      "name": "Podlet-K1",
+      "type": "low-altitude",
+      "country": "RU",
+      "year": 2015,
+      "manufacturer": "LEMZ",
+      "specifications": {
+        "range_km": 100,
+        "type": "3D",
+        "detection": "Low-flying targets, drones"
+      },
+      "operators": ["RU"],
+      "notes": "Low-altitude gap filler radar"
+    },
+    {
+      "id": "cn-jy27a",
+      "name": "JY-27A",
+      "type": "vhf-radar",
+      "country": "CN",
+      "year": 2016,
+      "manufacturer": "CETC",
+      "specifications": {
+        "type": "VHF AESA",
+        "range_km": 500,
+        "detection": "Stealth aircraft"
+      },
+      "operators": ["CN"],
+      "notes": "Chinese counter-stealth radar"
+    },
+    {
+      "id": "cn-slc7",
+      "name": "SLC-7",
+      "type": "multi-mission-radar",
+      "country": "CN",
+      "year": 2018,
+      "manufacturer": "CETC",
+      "specifications": {
+        "type": "S-band AESA",
+        "range_km": 450,
+        "modes": ["Surveillance", "Tracking", "ABM"]
+      },
+      "operators": ["CN"],
+      "notes": "Export-oriented multi-role radar"
+    },
+    {
+      "id": "il-elta-2084",
+      "name": "EL/M-2084 MMR",
+      "type": "multi-mission-radar",
+      "country": "IL",
+      "year": 2009,
+      "manufacturer": "IAI Elta",
+      "specifications": {
+        "type": "S-band AESA",
+        "range_km": 450,
+        "modes": ["Air Defense", "Counter-Battery", "Fire Control (Iron Dome)"]
+      },
+      "operators": ["IL", "IN", "AZ", "SG"],
+      "notes": "Iron Dome radar, world-class performance"
+    },
+    {
+      "id": "il-green-pine",
+      "name": "Green Pine (EL/M-2080)",
+      "type": "ballistic-missile-defense",
+      "country": "IL",
+      "year": 2000,
+      "manufacturer": "IAI Elta",
+      "specifications": {
+        "type": "L-band AESA",
+        "range_km": 800,
+        "detection": "Ballistic missiles"
+      },
+      "operators": ["IL", "IN"],
+      "notes": "Arrow system radar"
+    },
+    {
+      "id": "uk-sampson",
+      "name": "BAE Sampson",
+      "type": "naval-radar",
+      "country": "GB",
+      "year": 2009,
+      "manufacturer": "BAE Systems",
+      "specifications": {
+        "type": "E/F-band AESA",
+        "range_km": 400,
+        "tracking_capacity": 1000
+      },
+      "operators": ["GB (Type 45)"],
+      "notes": "Type 45 destroyer primary radar"
+    },
+    {
+      "id": "fr-ground-master",
+      "name": "Ground Master 400",
+      "type": "air-defense-radar",
+      "country": "FR",
+      "year": 2010,
+      "manufacturer": "Thales",
+      "specifications": {
+        "type": "S-band AESA",
+        "range_km": 470,
+        "altitude_km": 30
+      },
+      "operators": ["FR", "FI", "IN", "UA"],
+      "notes": "French air defense radar"
+    },
+    {
+      "id": "de-trml4d",
+      "name": "TRML-4D",
+      "type": "air-defense-radar",
+      "country": "DE",
+      "year": 2019,
+      "manufacturer": "Hensoldt",
+      "specifications": {
+        "type": "C-band AESA",
+        "range_km": 250,
+        "rotation_rpm": 60
+      },
+      "operators": ["DE", "EE", "LV", "LT", "HU"],
+      "notes": "IRIS-T SLM fire control radar"
+    },
+    {
+      "id": "se-giraffe-4a",
+      "name": "Giraffe 4A",
+      "type": "multi-role-radar",
+      "country": "SE",
+      "year": 2014,
+      "manufacturer": "Saab",
+      "specifications": {
+        "type": "S-band AESA",
+        "range_km": 280,
+        "detection": "Fixed-wing, helicopters, UAV, rockets"
+      },
+      "operators": ["SE", "AU", "AE", "BR", "US (AN/TPS-80)"],
+      "notes": "Saab's latest Giraffe variant"
+    },
+    {
+      "id": "tr-kalkan",
+      "name": "ASELSAN Kalkan",
+      "type": "counter-battery",
+      "country": "TR",
+      "year": 2019,
+      "manufacturer": "ASELSAN",
+      "specifications": {
+        "type": "AESA",
+        "range_mortar_km": 50,
+        "range_rocket_km": 100
+      },
+      "operators": ["TR"],
+      "notes": "Turkish indigenous counter-battery"
+    },
+    {
+      "id": "in-rohini",
+      "name": "BEL Rohini",
+      "type": "3d-surveillance",
+      "country": "IN",
+      "year": 2015,
+      "manufacturer": "BEL",
+      "specifications": {
+        "type": "3D phased array",
+        "range_km": 200
+      },
+      "operators": ["IN"],
+      "notes": "Indian low-level surveillance radar"
+    },
+    {
+      "id": "kr-ags",
+      "name": "AN/PPS-5D Ground Surveillance",
+      "type": "man-portable",
+      "country": "US",
+      "year": 1990,
+      "specifications": {
+        "range_personnel_km": 10,
+        "range_vehicle_km": 20,
+        "weight_kg": 13
+      },
+      "operators": ["US", "KR", "JP"],
+      "notes": "Man-portable ground surveillance"
+    }
+  ]
+}

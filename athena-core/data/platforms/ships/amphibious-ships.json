@@ -1,0 +1,430 @@
+{
+  "platforms": [
+    {
+      "id": "us-lha-6-america",
+      "name": "America-class LHA",
+      "type": "lha",
+      "country_of_origin": "US",
+      "manufacturer": "Huntington Ingalls Industries",
+      "service_entry": 2014,
+      "specifications": {
+        "displacement_tons": 45000,
+        "length_m": 257.3,
+        "beam_m": 32.3,
+        "draft_m": 8.4,
+        "crew": 1059,
+        "marines": 1687,
+        "max_speed_knots": 22,
+        "range_nm": 9500
+      },
+      "propulsion": {
+        "type": "Gas turbines",
+        "engines": "2x GE LM2500+",
+        "power_shp": 70000
+      },
+      "aviation": {
+        "flight_deck": "Full-length",
+        "hangar_capacity": "Large",
+        "aircraft": [
+          "F-35B Lightning II (20+)",
+          "MV-22B Osprey (12)",
+          "AH-1Z/UH-1Y",
+          "CH-53K King Stallion"
+        ],
+        "well_deck": "None (LHA-6/7), Yes (LHA-8+)"
+      },
+      "armament": {
+        "sam": "2x RIM-116 RAM",
+        "ciws": "2x Phalanx CIWS",
+        "guns": "7x .50 cal MG"
+      },
+      "service_history": {
+        "introduced": 2014,
+        "status": "active",
+        "ships": [
+          {
+            "name": "USS America",
+            "hull": "LHA-6",
+            "commissioned": 2014
+          },
+          {
+            "name": "USS Tripoli",
+            "hull": "LHA-7",
+            "commissioned": 2020
+          },
+          {
+            "name": "USS Bougainville",
+            "hull": "LHA-8",
+            "status": "building"
+          }
+        ]
+      },
+      "unit_cost_usd": 3400000000,
+      "notes": "Aviation-centric LHA. LHA-6/7 lack well deck for max aviation. LHA-8+ restore well deck. Primary F-35B platform."
+    },
+    {
+      "id": "us-lhd-1-wasp",
+      "name": "Wasp-class LHD",
+      "type": "lhd",
+      "country_of_origin": "US",
+      "manufacturer": "Ingalls Shipbuilding",
+      "service_entry": 1989,
+      "specifications": {
+        "displacement_tons": 41150,
+        "length_m": 253,
+        "beam_m": 32.3,
+        "draft_m": 8.1,
+        "crew": 1208,
+        "marines": 1894,
+        "max_speed_knots": 22
+      },
+      "aviation": {
+        "aircraft_capacity": 42,
+        "spots": 9
+      },
+      "well_deck": {
+        "lcac": 3,
+        "lcm": 12,
+        "aav": 60
+      },
+      "service_history": {
+        "introduced": 1989,
+        "status": "active",
+        "built": 8
+      },
+      "notes": "Eight ships in service. Well deck for landing craft. Can operate F-35B. Backbone of amphibious fleet."
+    },
+    {
+      "id": "us-lpd-17-san-antonio",
+      "name": "San Antonio-class LPD",
+      "type": "lpd",
+      "country_of_origin": "US",
+      "manufacturer": "Huntington Ingalls Industries",
+      "service_entry": 2006,
+      "specifications": {
+        "displacement_tons": 25300,
+        "length_m": 208.5,
+        "beam_m": 31.9,
+        "draft_m": 7.0,
+        "crew": 363,
+        "marines": 699,
+        "max_speed_knots": 22
+      },
+      "well_deck": {
+        "lcac": 2,
+        "aav": 14
+      },
+      "aviation": {
+        "helicopters": 4,
+        "hangar": true,
+        "v22_capable": true
+      },
+      "service_history": {
+        "introduced": 2006,
+        "status": "active",
+        "built": 13,
+        "planned": 15
+      },
+      "unit_cost_usd": 1800000000,
+      "notes": "Primary USN amphibious transport dock. Advanced self-defense. LPD-17 Flight II with improved capabilities."
+    },
+    {
+      "id": "cn-type-075-lhd",
+      "name": "Type 075 LHD",
+      "type": "lhd",
+      "country_of_origin": "CN",
+      "manufacturer": "Hudong-Zhonghua Shipyard",
+      "service_entry": 2021,
+      "specifications": {
+        "displacement_tons": 40000,
+        "length_m": 237,
+        "beam_m": 36,
+        "draft_m": 8.2,
+        "crew": 1000,
+        "marines": 1200,
+        "max_speed_knots": 23
+      },
+      "aviation": {
+        "helicopters": 30,
+        "types": [
+          "Z-8L",
+          "Z-18",
+          "Z-20"
+        ],
+        "spots": 6
+      },
+      "well_deck": {
+        "capacity": "Significant",
+        "craft": [
+          "Type 726 LCAC",
+          "ZBD-05"
+        ]
+      },
+      "service_history": {
+        "introduced": 2021,
+        "status": "active",
+        "built": 3,
+        "ships": [
+          {
+            "name": "Hainan",
+            "hull": "31"
+          },
+          {
+            "name": "Guangxi",
+            "hull": "32"
+          },
+          {
+            "name": "Anhui",
+            "hull": "33"
+          }
+        ]
+      },
+      "notes": "PLAN's first large LHD. Three in service. Potential Taiwan invasion force. Future variants may carry J-35 STOVL."
+    },
+    {
+      "id": "cn-type-071-lpd",
+      "name": "Type 071 Yuzhao-class LPD",
+      "type": "lpd",
+      "country_of_origin": "CN",
+      "manufacturer": "Hudong-Zhonghua Shipyard",
+      "service_entry": 2007,
+      "specifications": {
+        "displacement_tons": 25000,
+        "length_m": 210,
+        "beam_m": 28,
+        "max_speed_knots": 20,
+        "marines": 600
+      },
+      "well_deck": {
+        "lcac": "4x Type 726 hovercraft"
+      },
+      "aviation": {
+        "helicopters": 4
+      },
+      "service_history": {
+        "introduced": 2007,
+        "status": "active",
+        "built": 8
+      },
+      "notes": "PLAN's main amphibious transport. Eight built. Precursor to Type 075 LHD."
+    },
+    {
+      "id": "es-juan-carlos-lhd",
+      "name": "Juan Carlos I-class LHD",
+      "type": "lhd",
+      "country_of_origin": "ES",
+      "manufacturer": "Navantia",
+      "service_entry": 2010,
+      "specifications": {
+        "displacement_tons": 27000,
+        "length_m": 231,
+        "beam_m": 32,
+        "draft_m": 6.9,
+        "crew": 261,
+        "marines": 913,
+        "max_speed_knots": 21
+      },
+      "aviation": {
+        "aircraft": [
+          "AV-8B Harrier II",
+          "NH90",
+          "SH-60"
+        ],
+        "ski_jump": true,
+        "spots": 6
+      },
+      "well_deck": {
+        "lcm": 4
+      },
+      "exports": [
+        {
+          "country": "AU",
+          "name": "Canberra-class",
+          "quantity": 2
+        },
+        {
+          "country": "TR",
+          "name": "TCG Anadolu",
+          "quantity": 1
+        }
+      ],
+      "service_history": {
+        "introduced": 2010,
+        "status": "active"
+      },
+      "notes": "Flexible design. Ski-jump for STOVL. Australia and Turkey exports. TCG Anadolu configured as drone carrier."
+    },
+    {
+      "id": "au-lhd-canberra",
+      "name": "Canberra-class LHD",
+      "type": "lhd",
+      "country_of_origin": "AU",
+      "manufacturer": "Navantia/BAE",
+      "base_design": "Juan Carlos I",
+      "service_entry": 2014,
+      "specifications": {
+        "displacement_tons": 27500,
+        "length_m": 230.8,
+        "beam_m": 32,
+        "crew": 358,
+        "troops": 1046,
+        "max_speed_knots": 20
+      },
+      "aviation": {
+        "helicopters": 24,
+        "types": [
+          "MRH-90",
+          "CH-47F",
+          "UH-60"
+        ]
+      },
+      "service_history": {
+        "introduced": 2014,
+        "status": "active",
+        "ships": [
+          {
+            "name": "HMAS Canberra",
+            "hull": "L02"
+          },
+          {
+            "name": "HMAS Adelaide",
+            "hull": "L01"
+          }
+        ]
+      },
+      "notes": "Australian Juan Carlos variant. No ski-jump fitted. No F-35B capability planned."
+    },
+    {
+      "id": "tr-tcg-anadolu-lhd",
+      "name": "TCG Anadolu",
+      "type": "lhd",
+      "country_of_origin": "TR",
+      "manufacturer": "Sedef Shipyard",
+      "base_design": "Juan Carlos I",
+      "service_entry": 2023,
+      "specifications": {
+        "displacement_tons": 27000,
+        "length_m": 231,
+        "beam_m": 32,
+        "max_speed_knots": 20.5
+      },
+      "aviation": {
+        "uavs": [
+          "Bayraktar TB3",
+          "Bayraktar K\u0131z\u0131lelma"
+        ],
+        "helicopters": [
+          "TAI T625",
+          "T-70"
+        ],
+        "configuration": "Drone carrier"
+      },
+      "service_history": {
+        "introduced": 2023,
+        "status": "active"
+      },
+      "notes": "Reconfigured as drone carrier after F-35 cancellation. TB3 folding-wing naval UAV. World's first dedicated drone carrier."
+    },
+    {
+      "id": "it-trieste-lhd",
+      "name": "Trieste LHD",
+      "type": "lhd",
+      "country_of_origin": "IT",
+      "manufacturer": "Fincantieri",
+      "service_entry": 2023,
+      "specifications": {
+        "displacement_tons": 38000,
+        "length_m": 245,
+        "beam_m": 36,
+        "max_speed_knots": 25,
+        "marines": 600
+      },
+      "aviation": {
+        "aircraft": "F-35B (8-10)",
+        "helicopters": 12,
+        "ski_jump": true
+      },
+      "well_deck": true,
+      "service_history": {
+        "introduced": 2023,
+        "status": "active"
+      },
+      "notes": "Italy's largest warship. Dual-purpose LHD/light carrier. F-35B capable. Replaces Garibaldi."
+    },
+    {
+      "id": "jp-izumo-ddh",
+      "name": "Izumo-class DDH",
+      "type": "helicopter_carrier",
+      "country_of_origin": "JP",
+      "manufacturer": "Japan Marine United",
+      "service_entry": 2015,
+      "specifications": {
+        "displacement_tons": 27000,
+        "length_m": 248,
+        "beam_m": 38,
+        "draft_m": 7.5,
+        "crew": 470,
+        "max_speed_knots": 30
+      },
+      "aviation": {
+        "helicopters": 14,
+        "f35b_capable": true,
+        "f35b_planned": true,
+        "note": "Being modified for F-35B"
+      },
+      "armament": {
+        "ciws": "2x Phalanx",
+        "sam": "2x SeaRAM"
+      },
+      "service_history": {
+        "introduced": 2015,
+        "status": "active",
+        "ships": [
+          {
+            "name": "JS Izumo",
+            "hull": "DDH-183"
+          },
+          {
+            "name": "JS Kaga",
+            "hull": "DDH-184"
+          }
+        ]
+      },
+      "notes": "Being converted to F-35B carriers. Heat-resistant deck coating added. First Japanese fixed-wing carriers since WWII."
+    },
+    {
+      "id": "kr-dokdo-lph",
+      "name": "Dokdo-class LPH",
+      "type": "lph",
+      "country_of_origin": "KR",
+      "manufacturer": "Hanjin Heavy Industries",
+      "service_entry": 2007,
+      "specifications": {
+        "displacement_tons": 18800,
+        "length_m": 199,
+        "beam_m": 31,
+        "max_speed_knots": 22,
+        "marines": 720
+      },
+      "aviation": {
+        "helicopters": 15,
+        "spots": 5
+      },
+      "service_history": {
+        "introduced": 2007,
+        "status": "active",
+        "ships": [
+          {
+            "name": "ROKS Dokdo",
+            "hull": "LPH-6111"
+          },
+          {
+            "name": "ROKS Marado",
+            "hull": "LPH-6112"
+          }
+        ]
+      },
+      "notes": "South Korean amphibious flagship. Potential light carrier conversion discussed."
+    }
+  ]
+}

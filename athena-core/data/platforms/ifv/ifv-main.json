@@ -1,0 +1,770 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "us-m2a3-bradley",
+      "name": "M2A3 Bradley",
+      "type": "ifv",
+      "country_of_origin": "US",
+      "manufacturer": "BAE Systems Land & Armaments",
+      "service_history": {
+        "introduced": 2000,
+        "retired": null,
+        "production_count": 6724,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 4285,
+            "variants": [
+              "M2A2 ODS",
+              "M2A3",
+              "M2A4"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 400,
+            "variants": [
+              "M2A2"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 300,
+            "variants": [
+              "M2A2 ODS"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "GR",
+            "quantity": 300,
+            "variants": [
+              "M2A2"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "HR",
+            "quantity": 84,
+            "variants": [
+              "M2A2"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "LB",
+            "quantity": 32,
+            "variants": [
+              "M2A2"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 6,
+        "weight_kg": 30500,
+        "length_m": 6.55,
+        "width_m": 3.6,
+        "height_m": 2.97,
+        "ground_clearance_m": 0.46
+      },
+      "mobility": {
+        "engine": {
+          "model": "Cummins VTA-903T",
+          "type": "diesel_turbocharged",
+          "power_hp": 600,
+          "power_kw": 447
+        },
+        "power_to_weight_hp_ton": 19.7,
+        "transmission": "HMPT-500-3 hydromechanical",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 66,
+        "max_speed_offroad_kmh": 40,
+        "range_road_km": 480,
+        "fuel_capacity_liters": 662,
+        "fording_depth_m": 1.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.54,
+        "vertical_obstacle_m": 0.91,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "M242 Bushmaster",
+          "caliber_mm": 25,
+          "barrel_length_calibers": 87,
+          "type": "autocannon",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 60,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 200,
+          "effective_range_m": 2500,
+          "ammunition_carried": 900,
+          "ammunition_types": [
+            {
+              "type": "APDS-T",
+              "designation": "M791",
+              "penetration_mm_rha": 50,
+              "penetration_range_m": 1000
+            },
+            {
+              "type": "HEI-T",
+              "designation": "M792"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "M240C",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2340
+          }
+        ],
+        "atgm": {
+          "designation": "BGM-71 TOW 2",
+          "missiles_carried": 7,
+          "launch_method": "dual launcher",
+          "range_m": 3750,
+          "penetration_mm_rha": 900
+        }
+      },
+      "protection": {
+        "armor_type": "aluminum_steel_era",
+        "armor_composition": "Aluminum 5083/7039 with steel applique and ERA",
+        "protection_front_mm_rha": 30,
+        "protection_side_mm_rha": 14,
+        "stanag_level": "4569 Level 4",
+        "era_coverage": "Hull sides, turret (BRAT tiles)",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Improved Bradley Acquisition System (IBAS)",
+        "commander_sight": {
+          "type": "CIV",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "IBAS",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true,
+        "automatic_target_tracker": true,
+        "battle_management_system": "FBCB2"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8
+      },
+      "unit_cost_usd": 5840000,
+      "cost_year": 2025,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia M2 Bradley",
+        "Army Recognition",
+        "Military Factory",
+        "FAS M2A3"
+      ],
+      "notes": "Digital IFV. Combat proven Gulf War, Iraq, Afghanistan. BUSK III armor upgrade. Ukraine received 300+ M2A2 ODS. M2A4 upgrade: 675hp engine.",
+      "year": 2000
+    },
+    {
+      "id": "ru-bmp2",
+      "name": "BMP-2",
+      "type": "ifv",
+      "country_of_origin": "SU",
+      "manufacturer": "Kurganmashzavod",
+      "service_history": {
+        "introduced": 1980,
+        "retired": null,
+        "production_count": 20000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 3000,
+            "variants": [
+              "BMP-2",
+              "BMP-2M"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 1500,
+            "variants": [
+              "BMP-2"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 1500,
+            "variants": [
+              "BMP-2 Sarath"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "quantity": 400,
+            "status": "active"
+          },
+          {
+            "country": "DZ",
+            "quantity": 260,
+            "variants": [
+              "BMP-2M"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "quantity": 500,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 7,
+        "weight_kg": 14300,
+        "length_m": 6.72,
+        "width_m": 3.15,
+        "height_m": 2.45,
+        "ground_clearance_m": 0.42
+      },
+      "mobility": {
+        "engine": {
+          "model": "UTD-20S1",
+          "type": "diesel",
+          "power_hp": 300,
+          "power_kw": 224
+        },
+        "power_to_weight_hp_ton": 21.0,
+        "transmission": "Manual 5F/1R",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 65,
+        "max_speed_offroad_kmh": 45,
+        "max_speed_water_kmh": 7,
+        "range_road_km": 600,
+        "fuel_capacity_liters": 460,
+        "amphibious": true
+      },
+      "armament": {
+        "main": {
+          "designation": "2A42",
+          "caliber_mm": 30,
+          "type": "autocannon",
+          "elevation_min_deg": -5,
+          "elevation_max_deg": 75,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 550,
+          "effective_range_m": 2000,
+          "ammunition_carried": 500
+        },
+        "secondary": [
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "9M113 Konkurs (AT-5)",
+          "missiles_carried": 4,
+          "range_m": 4000,
+          "penetration_mm_rha": 600
+        }
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 33,
+        "protection_side_mm_rha": 18,
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "BPK-2-42",
+        "commander_sight": {
+          "type": "TKN-3B",
+          "thermal": false
+        },
+        "gunner_sight": {
+          "type": "BPK-2-42",
+          "thermal": false
+        },
+        "laser_rangefinder": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 6
+      },
+      "unit_cost_usd": 300000,
+      "cost_year": 1990,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia BMP-2",
+        "Military Factory",
+        "Army Recognition"
+      ],
+      "notes": "+75\u00b0 elevation for anti-helicopter. Over 40 countries. BMP-2M Berezhok: Kornet ATGM, thermal, AGS-30.",
+      "year": 1980
+    },
+    {
+      "id": "ru-bmp3",
+      "name": "BMP-3",
+      "type": "ifv",
+      "country_of_origin": "SU",
+      "manufacturer": "Kurganmashzavod",
+      "service_history": {
+        "introduced": 1987,
+        "retired": null,
+        "production_count": 2000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 760,
+            "variants": [
+              "BMP-3",
+              "BMP-3M"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 600,
+            "status": "active"
+          },
+          {
+            "country": "KW",
+            "quantity": 225,
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "quantity": 300,
+            "variants": [
+              "BMP-3M"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "quantity": 40,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 7,
+        "weight_kg": 18700,
+        "length_m": 7.14,
+        "width_m": 3.15,
+        "height_m": 2.3,
+        "ground_clearance_m": 0.51
+      },
+      "mobility": {
+        "engine": {
+          "model": "UTD-29M",
+          "type": "diesel",
+          "power_hp": 500,
+          "power_kw": 373
+        },
+        "power_to_weight_hp_ton": 26.7,
+        "transmission": "Hydromechanical",
+        "suspension": "torsion bar hydraulic",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 45,
+        "max_speed_water_kmh": 10,
+        "range_road_km": 600,
+        "amphibious": true,
+        "propulsion_water": "twin waterjets"
+      },
+      "armament": {
+        "main": {
+          "designation": "2A70",
+          "caliber_mm": 100,
+          "type": "rifled_low_velocity",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 60,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 10,
+          "effective_range_m": 4000,
+          "ammunition_carried": 40,
+          "ammunition_ready": 22
+        },
+        "secondary": [
+          {
+            "designation": "2A72",
+            "caliber_mm": 30,
+            "mount": "coaxial",
+            "ammunition_carried": 500,
+            "notes": "Autocannon"
+          },
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          },
+          {
+            "designation": "PKT (bow)",
+            "caliber_mm": 7.62,
+            "mount": "bow",
+            "quantity": 2,
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "9M117 Bastion (AT-10)",
+          "missiles_carried": 8,
+          "launch_method": "gun-launched",
+          "range_m": 5000,
+          "penetration_mm_rha": 650
+        }
+      },
+      "protection": {
+        "armor_type": "aluminum_steel",
+        "protection_front_mm_rha": 50,
+        "protection_side_mm_rha": 25,
+        "protection_upgrade": "ERA and Arena APS available",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "SOZh",
+        "gunner_sight": {
+          "type": "SOZh",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 6
+      },
+      "unit_cost_usd": 2500000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia BMP-3",
+        "Army Technology",
+        "Military Factory"
+      ],
+      "notes": "Most heavily armed IFV. 100mm+30mm+2x bow MGs. Gun-launched ATGM. Excellent amphibious (10 km/h). AU-220M 57mm turret option. 798+ lost in Ukraine.",
+      "year": 1987
+    },
+    {
+      "id": "se-cv9040",
+      "name": "CV9040",
+      "type": "ifv",
+      "country_of_origin": "SE",
+      "manufacturer": "BAE Systems H\u00e4gglunds",
+      "service_history": {
+        "introduced": 1993,
+        "retired": null,
+        "production_count": 509,
+        "operators": [
+          {
+            "country": "SE",
+            "quantity": 509,
+            "variants": [
+              "CV9040A",
+              "CV9040B",
+              "CV9040C"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 8,
+        "weight_kg": 23000,
+        "length_m": 6.55,
+        "width_m": 3.1,
+        "height_m": 2.7
+      },
+      "mobility": {
+        "engine": {
+          "model": "Scania DSI 14",
+          "type": "diesel",
+          "power_hp": 550,
+          "power_kw": 410
+        },
+        "power_to_weight_hp_ton": 23.9,
+        "transmission": "Automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 50,
+        "range_road_km": 600,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "Bofors L/70",
+          "caliber_mm": 40,
+          "type": "autocannon",
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 300,
+          "effective_range_m": 4000,
+          "ammunition_carried": 234,
+          "ammunition_types": [
+            {
+              "type": "APFSDS-T",
+              "penetration_mm_rha": 140,
+              "penetration_range_m": 1000
+            },
+            {
+              "type": "3P Programmable",
+              "notes": "Airburst/proximity"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "Ksp 58",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2700
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 30,
+        "protection_upgrade": "Add-on resists 30mm APFSDS",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "UTAAS",
+        "commander_sight": {
+          "type": "CITV",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true
+        },
+        "gunner_sight": {
+          "type": "UTAAS",
+          "thermal": true
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 6,
+        "ir_signature_reduction": true
+      },
+      "unit_cost_usd": 4000000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia CV90",
+        "Army Technology",
+        "BAE Systems"
+      ],
+      "notes": "Swedish 40mm Bofors. Programmable 3P airburst. Nordic subarctic optimized. Low signature.",
+      "year": 1993
+    },
+    {
+      "id": "se-cv90-mkiv",
+      "name": "CV90 Mk IV",
+      "type": "ifv",
+      "country_of_origin": "SE",
+      "manufacturer": "BAE Systems H\u00e4gglunds",
+      "service_history": {
+        "introduced": 2017,
+        "retired": null,
+        "production_count": 1100,
+        "operators": [
+          {
+            "country": "SK",
+            "quantity": 152,
+            "variants": [
+              "CV9035 MkIV"
+            ],
+            "status": "ordered"
+          },
+          {
+            "country": "CZ",
+            "quantity": 246,
+            "variants": [
+              "CV9030 MkIV"
+            ],
+            "status": "ordered"
+          },
+          {
+            "country": "UA",
+            "quantity": 50,
+            "status": "active"
+          },
+          {
+            "country": "NL",
+            "quantity": 122,
+            "variants": [
+              "CV9035NL"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "NO",
+            "quantity": 164,
+            "variants": [
+              "CV9030N"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "FI",
+            "quantity": 102,
+            "variants": [
+              "CV9030FIN"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "DK",
+            "quantity": 45,
+            "variants": [
+              "CV9035DK"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "EE",
+            "quantity": 44,
+            "variants": [
+              "CV9035EE"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "CH",
+            "quantity": 186,
+            "variants": [
+              "CV9030CH"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 6,
+        "weight_kg": 37000,
+        "length_m": 6.8,
+        "width_m": 3.2,
+        "height_m": 2.8
+      },
+      "mobility": {
+        "engine": {
+          "model": "Scania DI16",
+          "type": "diesel",
+          "power_hp": 1000,
+          "power_kw": 746
+        },
+        "power_to_weight_hp_ton": 27.0,
+        "transmission": "X300 automatic",
+        "max_speed_road_kmh": 70,
+        "range_road_km": 600,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "Bushmaster III",
+          "caliber_mm": 35,
+          "type": "autocannon",
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 200,
+          "effective_range_m": 4000,
+          "ammunition_carried": 70,
+          "ammunition_types": [
+            {
+              "type": "APFSDS-T",
+              "penetration_mm_rha": 140
+            },
+            {
+              "type": "ABM Airburst",
+              "notes": "Programmable"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "FN MAG 58",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 3000
+          }
+        ],
+        "atgm": {
+          "designation": "Spike LR2 (optional)",
+          "missiles_carried": 2,
+          "range_m": 5500,
+          "penetration_mm_rha": 800
+        }
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 5",
+        "aps": {
+          "system": "Iron Fist",
+          "type": "hard-kill",
+          "coverage_deg": 360
+        },
+        "mine_protection": "Enhanced V-hull",
+        "nbc_protection": true,
+        "defensive_aids": "Automatic threat classification"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "4th gen digital",
+        "commander_sight": {
+          "type": "Panoramic",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true,
+        "battle_management_system": "iFighting AR"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "ir_signature_reduction": true
+      },
+      "unit_cost_usd": 8500000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia CV90",
+        "BAE Systems CV90 MkIV",
+        "Army Recognition"
+      ],
+      "notes": "5th gen IFV. First Western IFV with qualified APS (Iron Fist). iFighting AR system. 1000hp. \u20ac1.3B Slovak, \u20ac2.3B Czech contracts.",
+      "year": 2019
+    }
+  ]
+}

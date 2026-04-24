@@ -1,0 +1,358 @@
+{
+  "category": "uav",
+  "subcategory": "ucav-advanced",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "Official manufacturer announcements"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "ru-s70-okhotnik",
+      "name": "Sukhoi S-70 Okhotnik-B",
+      "nato_name": null,
+      "type": "ucav",
+      "country": "RU",
+      "year": 2024,
+      "manufacturer": "Sukhoi",
+      "service_history": {
+        "introduced": 2024,
+        "first_flight": 2019,
+        "production_count": 10,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 10,
+            "status": "testing",
+            "notes": "Initial batch for evaluation"
+          }
+        ],
+        "notes": "Heavy stealth UCAV, Su-57 wingman"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 14.0,
+        "wingspan_m": 19.0,
+        "height_m": 3.0,
+        "empty_weight_kg": 7000,
+        "max_weight_kg": 25000,
+        "max_speed_kmh": 1000,
+        "cruise_speed_kmh": 800,
+        "range_km": 6000,
+        "endurance_hours": 6,
+        "service_ceiling_m": 18000,
+        "radar_cross_section": "VLO",
+        "powerplant": {
+          "type": "turbofan",
+          "model": "AL-41F1S derivative",
+          "thrust_kn": 147
+        }
+      },
+      "armament": {
+        "internal_payload_kg": 2800,
+        "external_payload_kg": 0,
+        "hardpoints_internal": 2,
+        "weapons": [
+          "Kh-59MK2 cruise missiles",
+          "Kh-38 precision bombs",
+          "KAB-500 guided bombs"
+        ]
+      },
+      "sensors": {
+        "radar": "AESA (undisclosed)",
+        "eo_ir": "Internal targeting pod",
+        "datalink": "Su-57 compatible"
+      }
+    },
+    {
+      "id": "cn-gj11",
+      "name": "AVIC GJ-11 Sharp Sword",
+      "nato_name": null,
+      "type": "ucav",
+      "country": "CN",
+      "year": 2021,
+      "manufacturer": "AVIC/Hongdu",
+      "service_history": {
+        "introduced": 2021,
+        "first_flight": 2013,
+        "production_count": 30,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 30,
+            "status": "active",
+            "notes": "PLAAF operational testing"
+          }
+        ],
+        "notes": "Flying wing stealth UCAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 12.0,
+        "wingspan_m": 14.0,
+        "height_m": 2.5,
+        "empty_weight_kg": 4500,
+        "max_weight_kg": 10000,
+        "max_speed_kmh": 900,
+        "cruise_speed_kmh": 650,
+        "range_km": 4000,
+        "endurance_hours": 5,
+        "service_ceiling_m": 15000,
+        "radar_cross_section": "VLO"
+      },
+      "armament": {
+        "internal_payload_kg": 2000,
+        "hardpoints_internal": 2,
+        "weapons": [
+          "PGMs",
+          "Air-to-ground missiles"
+        ]
+      }
+    },
+    {
+      "id": "us-xq58a",
+      "name": "Kratos XQ-58A Valkyrie",
+      "nato_name": null,
+      "type": "loyal-wingman",
+      "country": "US",
+      "year": 2024,
+      "manufacturer": "Kratos Defense",
+      "service_history": {
+        "introduced": 2024,
+        "first_flight": 2019,
+        "production_count": 40,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 40,
+            "status": "testing",
+            "notes": "USAF Skyborg program"
+          }
+        ],
+        "notes": "Low-cost attritable UCAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 9.14,
+        "wingspan_m": 6.7,
+        "height_m": 2.4,
+        "empty_weight_kg": 1134,
+        "max_weight_kg": 2722,
+        "max_speed_kmh": 1050,
+        "cruise_speed_kmh": 800,
+        "range_km": 5556,
+        "endurance_hours": 4,
+        "service_ceiling_m": 13716,
+        "radar_cross_section": "LO"
+      },
+      "armament": {
+        "internal_payload_kg": 272,
+        "external_payload_kg": 272,
+        "hardpoints_internal": 2,
+        "hardpoints_external": 2,
+        "weapons": [
+          "GBU-39 SDB",
+          "AIM-120 AMRAAM",
+          "SUAS launch"
+        ]
+      },
+      "unit_cost_usd": 4000000
+    },
+    {
+      "id": "au-mq28",
+      "name": "Boeing MQ-28A Ghost Bat",
+      "nato_name": null,
+      "type": "loyal-wingman",
+      "country": "AU",
+      "year": 2024,
+      "manufacturer": "Boeing Australia",
+      "service_history": {
+        "introduced": 2024,
+        "first_flight": 2021,
+        "production_count": 6,
+        "operators": [
+          {
+            "country": "AU",
+            "quantity": 6,
+            "status": "testing",
+            "notes": "RAAF Loyal Wingman program"
+          },
+          {
+            "country": "US",
+            "quantity": 4,
+            "status": "ordered",
+            "notes": "USAF evaluation"
+          }
+        ],
+        "notes": "First AI-enabled Loyal Wingman"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 11.7,
+        "wingspan_m": 7.3,
+        "height_m": 2.5,
+        "empty_weight_kg": 2700,
+        "max_weight_kg": 6000,
+        "max_speed_kmh": 1000,
+        "cruise_speed_kmh": 800,
+        "range_km": 3700,
+        "endurance_hours": 3,
+        "service_ceiling_m": 12000,
+        "radar_cross_section": "LO"
+      },
+      "armament": {
+        "internal_payload_kg": 250,
+        "weapons": [
+          "ISR payloads",
+          "EW payloads",
+          "Strike packages (planned)"
+        ],
+        "modular_nose": true
+      },
+      "unit_cost_usd": 10000000
+    },
+    {
+      "id": "us-cca",
+      "name": "NGAD CCA (Collaborative Combat Aircraft)",
+      "nato_name": null,
+      "type": "loyal-wingman",
+      "country": "US",
+      "year": 2028,
+      "manufacturer": "Multiple vendors (Anduril, Boeing, GA, Lockheed, Northrop)",
+      "service_history": {
+        "introduced": 2028,
+        "first_flight": 2025,
+        "production_count": 0,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 1000,
+            "status": "planned",
+            "notes": "USAF goal: 1000+ CCAs"
+          }
+        ],
+        "notes": "Next-gen autonomous wingman for NGAD"
+      },
+      "specifications": {
+        "crew": 0,
+        "max_speed_kmh": 1500,
+        "range_km": 2800,
+        "radar_cross_section": "VLO"
+      },
+      "unit_cost_usd": 20000000
+    },
+    {
+      "id": "uk-mosquito",
+      "name": "Spirit AeroSystems Mosquito",
+      "nato_name": null,
+      "type": "loyal-wingman",
+      "country": "GB",
+      "year": 2026,
+      "manufacturer": "Spirit AeroSystems",
+      "service_history": {
+        "introduced": 2026,
+        "first_flight": 2023,
+        "production_count": 4,
+        "operators": [
+          {
+            "country": "GB",
+            "quantity": 4,
+            "status": "testing",
+            "notes": "RAF LANCA program"
+          }
+        ],
+        "notes": "UK loyal wingman demonstrator"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 10.0,
+        "wingspan_m": 9.0,
+        "max_speed_kmh": 900,
+        "range_km": 2500,
+        "radar_cross_section": "LO"
+      }
+    },
+    {
+      "id": "in-warrior",
+      "name": "HAL CATS Warrior",
+      "nato_name": null,
+      "type": "loyal-wingman",
+      "country": "IN",
+      "year": 2028,
+      "manufacturer": "HAL",
+      "service_history": {
+        "introduced": 2028,
+        "first_flight": 2024,
+        "production_count": 0,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 100,
+            "status": "development",
+            "notes": "CATS program"
+          }
+        ],
+        "notes": "Indian autonomous wingman"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 7.0,
+        "wingspan_m": 5.5,
+        "max_weight_kg": 1500,
+        "max_speed_kmh": 1000,
+        "range_km": 750,
+        "service_ceiling_m": 9000
+      },
+      "armament": {
+        "internal_payload_kg": 250,
+        "weapons": [
+          "Astra BVRAAM",
+          "PGMs"
+        ]
+      }
+    },
+    {
+      "id": "kr-kus-fc",
+      "name": "KAI KUS-FC",
+      "nato_name": null,
+      "type": "ucav",
+      "country": "KR",
+      "year": 2027,
+      "manufacturer": "KAI",
+      "service_history": {
+        "introduced": 2027,
+        "first_flight": 2024,
+        "production_count": 0,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 50,
+            "status": "development",
+            "notes": "KF-21 wingman"
+          }
+        ],
+        "notes": "Korean stealth UCAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 11.0,
+        "wingspan_m": 10.0,
+        "max_weight_kg": 6500,
+        "max_speed_kmh": 1000,
+        "range_km": 3000,
+        "radar_cross_section": "LO"
+      },
+      "armament": {
+        "internal_payload_kg": 1000,
+        "weapons": [
+          "AAM",
+          "PGMs"
+        ]
+      }
+    }
+  ]
+}

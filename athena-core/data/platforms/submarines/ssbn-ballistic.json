@@ -1,0 +1,563 @@
+{
+  "$schema": "../../schema/platform-naval.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-23",
+    "sources": ["IISS Military Balance 2024", "Jane's Fighting Ships", "FAS Nuclear Notebook", "SIPRI"]
+  },
+  "platforms": [
+    {
+      "id": "us-ssbn-ohio",
+      "name": "Ohio-class SSBN",
+      "nato_name": null,
+      "type": "ssbn",
+      "class": "Ohio",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics Electric Boat",
+      "service_history": {
+        "introduced": 1981,
+        "retired": null,
+        "production_count": 18,
+        "operators": [
+          { "country": "US", "quantity": 14, "status": "active", "notes": "SSBN role" },
+          { "country": "US", "quantity": 4, "status": "active", "notes": "SSGN conversion" }
+        ],
+        "notes": "US nuclear deterrent backbone"
+      },
+      "specifications": {
+        "crew": 155,
+        "displacement_surfaced_tons": 16764,
+        "displacement_submerged_tons": 18750,
+        "length_m": 170.7,
+        "beam_m": 12.8,
+        "draft_m": 11.1
+      },
+      "performance": {
+        "max_speed_submerged_knots": 25,
+        "max_depth_m": 400,
+        "range_nm": "unlimited",
+        "endurance_days": 90,
+        "notes": "Optimized for stealth, not speed"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactor": "S8G PWR",
+        "power_shp": 60000,
+        "notes": "Natural circulation reactor - very quiet"
+      },
+      "armament": {
+        "slbm_tubes": { "count": 24, "notes": "SSBN variant" },
+        "slbm": {
+          "type": "Trident II D5",
+          "quantity": 24,
+          "warheads_per_missile": 8,
+          "range_km": 12000,
+          "notes": "NEW START: max 20 missiles deployed"
+        },
+        "torpedo_tubes": { "count": 4, "caliber_mm": 533 },
+        "torpedoes": { "type": "Mk 48 ADCAP" }
+      },
+      "nuclear_role": {
+        "warheads_max": 192,
+        "warheads_deployed": 90,
+        "notes": "~70% of US deployed strategic warheads"
+      },
+      "variants": [
+        { "designation": "SSBN-726 to SSBN-743", "notes": "14 active SSBNs" },
+        { "designation": "SSGN-726 to SSGN-729", "notes": "4 converted to cruise missile subs (154 Tomahawks each)" }
+      ],
+      "unit_cost_usd": 2000000000,
+      "cost_year": 1997,
+      "confidence": "high",
+      "sources": ["USN", "FAS", "CBO"],
+      "notes": "Largest Western submarine. Carries 70% of US nuclear deterrent. 4 converted to SSGN (154 Tomahawks each). Being replaced by Columbia-class 2030s."
+    },
+    {
+      "id": "us-ssbn-columbia",
+      "name": "Columbia-class SSBN",
+      "nato_name": null,
+      "type": "ssbn",
+      "class": "Columbia",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics Electric Boat",
+      "service_history": {
+        "introduced": 2031,
+        "retired": null,
+        "production_count": 0,
+        "operators": [
+          { "country": "US", "quantity": 0, "status": "building", "notes": "12 planned" }
+        ],
+        "notes": "Ohio replacement"
+      },
+      "specifications": {
+        "crew": 155,
+        "displacement_submerged_tons": 20810,
+        "length_m": 171,
+        "beam_m": 13.1,
+        "notes": "Largest US submarine ever"
+      },
+      "performance": {
+        "max_speed_submerged_knots": 20,
+        "range_nm": "unlimited",
+        "notes": "42-year service life"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactor": "S1B life-of-ship reactor",
+        "propulsion": "Electric drive (X-stern)",
+        "notes": "No refueling needed for 42 years"
+      },
+      "armament": {
+        "slbm_tubes": { "count": 16 },
+        "slbm": {
+          "type": "Trident II D5LE",
+          "quantity": 16,
+          "range_km": 12000
+        },
+        "torpedo_tubes": { "count": 4, "caliber_mm": 533 }
+      },
+      "stealth": {
+        "features": [
+          "Electric drive",
+          "X-stern",
+          "Advanced quieting"
+        ],
+        "notes": "Quietest US submarine ever"
+      },
+      "unit_cost_usd": 9800000000,
+      "cost_year": 2024,
+      "confidence": "medium",
+      "sources": ["USN", "CBO", "GAO"],
+      "notes": "Most expensive sub program ever ($130B total). 12 planned. First delivery 2031. 16 missiles vs Ohio's 24. Life-of-ship reactor."
+    },
+    {
+      "id": "uk-ssbn-vanguard",
+      "name": "Vanguard-class",
+      "nato_name": null,
+      "type": "ssbn",
+      "class": "Vanguard",
+      "country_of_origin": "UK",
+      "manufacturer": "Vickers Shipbuilding (BAE)",
+      "service_history": {
+        "introduced": 1993,
+        "retired": null,
+        "production_count": 4,
+        "operators": [
+          { "country": "UK", "quantity": 4, "status": "active" }
+        ],
+        "notes": "UK's nuclear deterrent"
+      },
+      "specifications": {
+        "crew": 135,
+        "displacement_surfaced_tons": 15900,
+        "displacement_submerged_tons": 15980,
+        "length_m": 149.9,
+        "beam_m": 12.8,
+        "draft_m": 12
+      },
+      "performance": {
+        "max_speed_submerged_knots": 25,
+        "max_depth_m": 300,
+        "range_nm": "unlimited"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactor": "Rolls-Royce PWR2",
+        "propulsion": "Pump-jet"
+      },
+      "armament": {
+        "slbm_tubes": { "count": 16 },
+        "slbm": {
+          "type": "Trident II D5",
+          "quantity": 8,
+          "warheads_per_missile": 5,
+          "notes": "UK policy: max 8 missiles, 40 warheads per boat"
+        },
+        "torpedo_tubes": { "count": 4, "caliber_mm": 533 },
+        "torpedoes": { "type": "Spearfish" }
+      },
+      "nuclear_role": {
+        "warheads_deployed": 40,
+        "notes": "CASD - Continuous At-Sea Deterrence since 1969"
+      },
+      "unit_cost_usd": 1300000000,
+      "cost_year": 1993,
+      "confidence": "high",
+      "sources": ["Royal Navy", "IISS"],
+      "notes": "UK's sole nuclear deterrent. CASD since 1969. Uses US Trident missiles. Being replaced by Dreadnought-class 2030s."
+    },
+    {
+      "id": "uk-ssbn-dreadnought",
+      "name": "Dreadnought-class",
+      "nato_name": null,
+      "type": "ssbn",
+      "class": "Dreadnought",
+      "country_of_origin": "UK",
+      "manufacturer": "BAE Systems",
+      "service_history": {
+        "introduced": 2030,
+        "retired": null,
+        "production_count": 0,
+        "operators": [
+          { "country": "UK", "quantity": 0, "status": "building", "notes": "4 planned" }
+        ],
+        "notes": "Vanguard replacement"
+      },
+      "specifications": {
+        "crew": 130,
+        "displacement_submerged_tons": 17500,
+        "length_m": 152.9,
+        "beam_m": 12.8
+      },
+      "performance": {
+        "max_speed_submerged_knots": 25,
+        "range_nm": "unlimited"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactor": "Rolls-Royce PWR3",
+        "propulsion": "Electric drive",
+        "notes": "Shared reactor design with Columbia-class"
+      },
+      "armament": {
+        "slbm_tubes": { "count": 12 },
+        "slbm": { "type": "Trident II D5LE" },
+        "torpedo_tubes": { "count": 4, "caliber_mm": 533 }
+      },
+      "unit_cost_usd": 5000000000,
+      "cost_year": 2024,
+      "confidence": "medium",
+      "sources": ["Royal Navy", "BAE"],
+      "notes": "£31B program. 4 boats. Shared CMC with US Columbia-class. First delivery ~2030. 12 tubes vs Vanguard's 16."
+    },
+    {
+      "id": "ru-ssbn-borei",
+      "name": "Borei-class (Project 955/955A)",
+      "nato_name": "Dolgorukiy",
+      "type": "ssbn",
+      "class": "Borei",
+      "country_of_origin": "RU",
+      "manufacturer": "Sevmash",
+      "service_history": {
+        "introduced": 2013,
+        "retired": null,
+        "production_count": 5,
+        "operators": [
+          { "country": "RU", "quantity": 5, "status": "active", "notes": "10-12 planned" }
+        ],
+        "notes": "Russia's newest SSBN"
+      },
+      "specifications": {
+        "crew": 107,
+        "displacement_surfaced_tons": 14720,
+        "displacement_submerged_tons": 24000,
+        "length_m": 170,
+        "beam_m": 13.5,
+        "draft_m": 10
+      },
+      "performance": {
+        "max_speed_submerged_knots": 29,
+        "max_depth_m": 480,
+        "range_nm": "unlimited",
+        "endurance_days": 90
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactor": "OK-650V PWR",
+        "power_mw": 190,
+        "propulsion": "Pump-jet"
+      },
+      "armament": {
+        "slbm_tubes": { "count": 16 },
+        "slbm": {
+          "type": "RSM-56 Bulava",
+          "quantity": 16,
+          "warheads_per_missile": 6,
+          "range_km": 8300
+        },
+        "torpedo_tubes": { "count": 6, "caliber_mm": 533 },
+        "torpedoes": { "type": "Various", "quantity": 18 }
+      },
+      "stealth": {
+        "features": [
+          "Pump-jet propulsor",
+          "Anechoic coating",
+          "Reduced machinery noise"
+        ],
+        "notes": "Quieter than Typhoon/Delta IV"
+      },
+      "variants": [
+        { "designation": "Project 955", "notes": "First 3 boats" },
+        { "designation": "Project 955A (Borei-A)", "notes": "Improved, from 4th boat" }
+      ],
+      "unit_cost_usd": 890000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": ["Russian MoD", "Jane's", "FAS"],
+      "notes": "Replacing Typhoon/Delta IV. 5 in service, 10-12 planned. Bulava SLBM had troubled development. Much quieter than predecessors."
+    },
+    {
+      "id": "ru-ssbn-typhoon",
+      "name": "Typhoon-class (Project 941)",
+      "nato_name": "Typhoon",
+      "type": "ssbn",
+      "class": "Typhoon",
+      "country_of_origin": "SU",
+      "manufacturer": "Sevmash",
+      "service_history": {
+        "introduced": 1981,
+        "retired": null,
+        "production_count": 6,
+        "operators": [
+          { "country": "RU", "quantity": 1, "status": "reserve", "notes": "TK-208 Dmitry Donskoy (test platform)" }
+        ],
+        "notes": "World's largest submarine ever"
+      },
+      "specifications": {
+        "crew": 160,
+        "displacement_surfaced_tons": 23200,
+        "displacement_submerged_tons": 48000,
+        "length_m": 175,
+        "beam_m": 23,
+        "draft_m": 12,
+        "notes": "Largest submarine ever built"
+      },
+      "performance": {
+        "max_speed_submerged_knots": 27,
+        "max_depth_m": 400,
+        "range_nm": "unlimited"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactors": 2,
+        "reactor_type": "OK-650 PWR",
+        "power_mw": 380
+      },
+      "armament": {
+        "slbm_tubes": { "count": 20 },
+        "slbm": {
+          "type": "R-39 Rif (SS-N-20 Sturgeon)",
+          "quantity": 20,
+          "warheads_per_missile": 10,
+          "range_km": 8300,
+          "notes": "No longer in service - missiles expired"
+        },
+        "torpedo_tubes": { "count": 6, "caliber_mm": 533 }
+      },
+      "unit_cost_usd": 3000000000,
+      "cost_year": 1985,
+      "confidence": "high",
+      "sources": ["Russian MoD", "Jane's"],
+      "notes": "World's largest submarine (48,000t submerged). 6 built, only 1 remains (test platform). Featured in 'Hunt for Red October'. Swimming pool and sauna aboard."
+    },
+    {
+      "id": "fr-ssbn-triomphant",
+      "name": "Le Triomphant-class",
+      "nato_name": null,
+      "type": "ssbn",
+      "class": "Le Triomphant",
+      "country_of_origin": "FR",
+      "manufacturer": "DCNS (Naval Group)",
+      "service_history": {
+        "introduced": 1997,
+        "retired": null,
+        "production_count": 4,
+        "operators": [
+          { "country": "FR", "quantity": 4, "status": "active" }
+        ],
+        "notes": "French nuclear deterrent"
+      },
+      "specifications": {
+        "crew": 111,
+        "displacement_surfaced_tons": 12640,
+        "displacement_submerged_tons": 14335,
+        "length_m": 138,
+        "beam_m": 12.5,
+        "draft_m": 10.6
+      },
+      "performance": {
+        "max_speed_submerged_knots": 25,
+        "max_depth_m": 500,
+        "range_nm": "unlimited"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactor": "K15 PWR (150 MW)",
+        "propulsion": "Pump-jet"
+      },
+      "armament": {
+        "slbm_tubes": { "count": 16 },
+        "slbm": {
+          "type": "M51",
+          "quantity": 16,
+          "warheads_per_missile": 6,
+          "range_km": 10000,
+          "notes": "TN 75 warheads (upgraded to M51.3)"
+        },
+        "torpedo_tubes": { "count": 4, "caliber_mm": 533 },
+        "torpedoes": { "type": "F21 Artemis", "quantity": 18 }
+      },
+      "nuclear_role": {
+        "warheads_deployed": 48,
+        "notes": "Force Océanique Stratégique"
+      },
+      "unit_cost_usd": 2600000000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": ["French Navy", "Jane's"],
+      "notes": "France's SSBN (SNLE-NG). M51 SLBM indigenous. 4 boats ensure 1 always at sea. Will be replaced 2035+."
+    },
+    {
+      "id": "cn-ssbn-094",
+      "name": "Type 094 Jin-class",
+      "nato_name": "Jin",
+      "type": "ssbn",
+      "class": "Type 094",
+      "country_of_origin": "CN",
+      "manufacturer": "Bohai Shipyard",
+      "service_history": {
+        "introduced": 2010,
+        "retired": null,
+        "production_count": 6,
+        "operators": [
+          { "country": "CN", "quantity": 6, "status": "active" }
+        ],
+        "notes": "China's current SSBN"
+      },
+      "specifications": {
+        "crew": 120,
+        "displacement_surfaced_tons": 9000,
+        "displacement_submerged_tons": 11000,
+        "length_m": 135,
+        "beam_m": 12.5,
+        "draft_m": 8
+      },
+      "performance": {
+        "max_speed_submerged_knots": 22,
+        "max_depth_m": 300,
+        "range_nm": "unlimited"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactor": "PWR",
+        "power_mw": 150
+      },
+      "armament": {
+        "slbm_tubes": { "count": 12 },
+        "slbm": {
+          "type": "JL-2 (CSS-NX-14)",
+          "quantity": 12,
+          "warheads_per_missile": 1,
+          "range_km": 7400
+        },
+        "torpedo_tubes": { "count": 6, "caliber_mm": 533 }
+      },
+      "nuclear_role": {
+        "notes": "China's first credible sea-based deterrent"
+      },
+      "unit_cost_usd": 1500000000,
+      "cost_year": 2015,
+      "confidence": "low",
+      "sources": ["ONI", "CSIS", "DoD China report"],
+      "notes": "6 in service. Relatively noisy (large hump). JL-2 limited range forces Pacific patrols. Being replaced by Type 096."
+    },
+    {
+      "id": "cn-ssbn-096",
+      "name": "Type 096 (Project)",
+      "nato_name": null,
+      "type": "ssbn",
+      "class": "Type 096",
+      "country_of_origin": "CN",
+      "manufacturer": "Bohai Shipyard",
+      "service_history": {
+        "introduced": null,
+        "retired": null,
+        "production_count": 0,
+        "operators": [
+          { "country": "CN", "quantity": 0, "status": "development" }
+        ],
+        "notes": "China's next-gen SSBN"
+      },
+      "specifications": {
+        "displacement_submerged_tons": 16000,
+        "length_m": 150,
+        "notes": "Specifications estimated"
+      },
+      "armament": {
+        "slbm_tubes": { "count": 24 },
+        "slbm": {
+          "type": "JL-3",
+          "quantity": 24,
+          "range_km": 12000,
+          "warheads_per_missile": 10
+        }
+      },
+      "stealth": {
+        "notes": "Expected to be much quieter than Type 094"
+      },
+      "unit_cost_usd": 3000000000,
+      "cost_year": 2025,
+      "confidence": "low",
+      "sources": ["ONI", "DoD China report"],
+      "notes": "Will carry JL-3 (12,000km range - can hit all US from bastion). 24 tubes vs 094's 12. First expected late 2020s. Critical for Chinese nuclear triad."
+    },
+    {
+      "id": "in-ssbn-arihant",
+      "name": "Arihant-class",
+      "nato_name": null,
+      "type": "ssbn",
+      "class": "Arihant",
+      "country_of_origin": "IN",
+      "manufacturer": "Ship Building Centre, Visakhapatnam",
+      "service_history": {
+        "introduced": 2016,
+        "retired": null,
+        "production_count": 2,
+        "operators": [
+          { "country": "IN", "quantity": 2, "status": "active", "notes": "4 planned" }
+        ],
+        "notes": "India's indigenous SSBN"
+      },
+      "specifications": {
+        "crew": 100,
+        "displacement_surfaced_tons": 6000,
+        "displacement_submerged_tons": 6500,
+        "length_m": 111,
+        "beam_m": 11
+      },
+      "performance": {
+        "max_speed_submerged_knots": 24,
+        "max_depth_m": 300,
+        "range_nm": "unlimited"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactor": "83 MW PWR (indigenous)",
+        "notes": "Compact reactor design"
+      },
+      "armament": {
+        "slbm_tubes": { "count": 4 },
+        "slbm": {
+          "type": "K-15 Sagarika",
+          "quantity": 12,
+          "range_km": 750,
+          "notes": "Or 4x K-4 (3500km)"
+        },
+        "torpedo_tubes": { "count": 6, "caliber_mm": 533 }
+      },
+      "nuclear_role": {
+        "notes": "Completes India's nuclear triad"
+      },
+      "variants": [
+        { "designation": "S2 Arihant", "notes": "First boat" },
+        { "designation": "S3 Arighat", "notes": "Second boat, improved" },
+        { "designation": "S4/S5", "notes": "Larger S5-class planned" }
+      ],
+      "unit_cost_usd": 2900000000,
+      "cost_year": 2016,
+      "confidence": "medium",
+      "sources": ["Indian Navy", "Jane's"],
+      "notes": "India's first indigenous SSBN. Completes nuclear triad. Small missiles (K-15: 750km). K-4 gives 3500km. Larger S5-class planned."
+    }
+  ]
+}

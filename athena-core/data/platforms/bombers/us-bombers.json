@@ -1,0 +1,563 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-23",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "USAF",
+      "Northrop Grumman"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-b2",
+      "name": "B-2A Spirit",
+      "nato_name": null,
+      "type": "strategic_bomber",
+      "country_of_origin": "US",
+      "manufacturer": "Northrop Grumman",
+      "service_history": {
+        "introduced": 1997,
+        "first_flight": 1989,
+        "retired": null,
+        "production_count": 21,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 20,
+            "status": "active",
+            "notes": "509th Bomb Wing, Whiteman AFB"
+          }
+        ],
+        "notes": "World's only operational stealth bomber until B-21"
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 21.0,
+        "wingspan_m": 52.4,
+        "height_m": 5.18,
+        "empty_weight_kg": 71700,
+        "max_takeoff_weight_kg": 170600,
+        "internal_fuel_kg": 75750,
+        "wing_area_m2": 478
+      },
+      "performance": {
+        "max_speed_kmh": 1010,
+        "max_speed_mach": 0.95,
+        "cruise_speed_kmh": 900,
+        "cruise_speed_mach": 0.85,
+        "combat_radius_km": 5300,
+        "ferry_range_km": 11100,
+        "service_ceiling_m": 15200,
+        "rate_of_climb_mps": 30
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "General Electric F118-GE-100",
+        "thrust_dry_kn": 77,
+        "notes": "Non-afterburning turbofans for stealth"
+      },
+      "avionics": {
+        "radar": "AN/APQ-181 (LPI radar)",
+        "radar_range_km": 250,
+        "radar_notes": "Low Probability of Intercept AESA",
+        "ew_suite": "AN/APR-50 defensive management system",
+        "datalink": "Link 16",
+        "terrain_following": "GPS-aided targeting system (GATS)",
+        "notes": "Highly automated, reduced crew workload"
+      },
+      "armament": {
+        "internal_bays": 2,
+        "max_payload_kg": 27200,
+        "weapons": [
+          {
+            "type": "nuclear",
+            "designation": "B61-7/11",
+            "quantity": 16,
+            "notes": "Gravity nuclear bombs"
+          },
+          {
+            "type": "nuclear",
+            "designation": "B83-1",
+            "quantity": 16,
+            "notes": "Strategic nuclear bomb"
+          },
+          {
+            "type": "conventional",
+            "designation": "GBU-31 JDAM",
+            "quantity": 80,
+            "notes": "2000 lb GPS-guided"
+          },
+          {
+            "type": "conventional",
+            "designation": "GBU-38 JDAM",
+            "quantity": 216,
+            "notes": "500 lb GPS-guided"
+          },
+          {
+            "type": "conventional",
+            "designation": "GBU-57 MOP",
+            "quantity": 2,
+            "notes": "Massive Ordnance Penetrator (30,000 lb)"
+          },
+          {
+            "type": "standoff",
+            "designation": "AGM-158 JASSM-ER",
+            "quantity": 16,
+            "notes": "Stealth cruise missile"
+          }
+        ]
+      },
+      "stealth": {
+        "rcs_estimate_m2": 0.0001,
+        "rcs_notes": "Insect-sized radar signature",
+        "design_features": [
+          "Flying wing design",
+          "Radar absorbent materials (RAM)",
+          "Buried engines",
+          "Serrated trailing edges",
+          "Aligned edges"
+        ],
+        "ir_suppression": true
+      },
+      "survivability": {
+        "armor": "Minimal (reliance on stealth)",
+        "defensive_systems": "Passive only, no active jamming for stealth"
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Kosovo",
+            "year": 1999,
+            "notes": "Combat debut"
+          },
+          {
+            "conflict": "Afghanistan",
+            "year": 2001,
+            "notes": "First strikes"
+          },
+          {
+            "conflict": "Iraq",
+            "year": 2003,
+            "notes": "Opening strikes"
+          },
+          {
+            "conflict": "Libya",
+            "year": 2011,
+            "notes": "Stealth strikes"
+          }
+        ],
+        "notes": "Most expensive aircraft ever built. Flew 44-hour round-trip missions from Missouri to Afghanistan."
+      },
+      "unit_cost_usd": 2100000000,
+      "cost_year": 1997,
+      "confidence": "high",
+      "sources": [
+        "Northrop Grumman",
+        "USAF",
+        "Jane's"
+      ],
+      "notes": "World's only stealth bomber until B-21. Flying wing design. $2.1B per aircraft (1997). Global strike capability from CONUS. Highly classified systems. Being supplemented by B-21 Raider.",
+      "year": 1997
+    },
+    {
+      "id": "us-b1b",
+      "name": "B-1B Lancer",
+      "nato_name": null,
+      "type": "strategic_bomber",
+      "country_of_origin": "US",
+      "manufacturer": "Rockwell International (Boeing)",
+      "service_history": {
+        "introduced": 1986,
+        "first_flight": 1983,
+        "retired": null,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 45,
+            "status": "active",
+            "notes": "7th/28th Bomb Wings"
+          }
+        ],
+        "notes": "Heavy payload supersonic bomber"
+      },
+      "specifications": {
+        "crew": 4,
+        "length_m": 44.5,
+        "wingspan_m": 41.8,
+        "wingspan_swept_m": 23.8,
+        "height_m": 10.4,
+        "empty_weight_kg": 87100,
+        "max_takeoff_weight_kg": 216400,
+        "internal_fuel_kg": 88450,
+        "wing_sweep_range_deg": "15-67.5"
+      },
+      "performance": {
+        "max_speed_kmh": 1448,
+        "max_speed_mach": 1.25,
+        "cruise_speed_kmh": 965,
+        "cruise_speed_mach": 0.92,
+        "max_speed_low_level_kmh": 1130,
+        "max_speed_low_level_mach": 0.92,
+        "combat_radius_km": 5540,
+        "ferry_range_km": 11998,
+        "service_ceiling_m": 18290,
+        "rate_of_climb_mps": 61
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "General Electric F101-GE-102",
+        "thrust_afterburner_kn": 136,
+        "thrust_dry_kn": 77.4
+      },
+      "avionics": {
+        "radar": "AN/APQ-164 (passive AESA)",
+        "radar_range_km": 200,
+        "terrain_following": "AN/AAQ-33 Sniper ATP",
+        "ew_suite": "AN/ALQ-161A (comprehensive)",
+        "datalink": "Link 16",
+        "notes": "Highly integrated avionics suite"
+      },
+      "armament": {
+        "internal_bays": 3,
+        "max_payload_kg": 56700,
+        "weapons": [
+          {
+            "type": "conventional",
+            "designation": "GBU-31 JDAM",
+            "quantity": 24,
+            "notes": "Internal bays"
+          },
+          {
+            "type": "conventional",
+            "designation": "GBU-38 JDAM",
+            "quantity": 84,
+            "notes": "Internal bays"
+          },
+          {
+            "type": "standoff",
+            "designation": "AGM-158 JASSM",
+            "quantity": 24,
+            "notes": "Cruise missiles"
+          },
+          {
+            "type": "anti_ship",
+            "designation": "AGM-158C LRASM",
+            "quantity": 24,
+            "notes": "Anti-ship cruise missile"
+          },
+          {
+            "type": "conventional",
+            "designation": "Mk 82/84",
+            "quantity": 84,
+            "notes": "Unguided bombs"
+          }
+        ],
+        "notes": "Largest payload of any US bomber. No longer nuclear-certified (START treaty)."
+      },
+      "stealth": {
+        "rcs_estimate_m2": 2.5,
+        "design_features": [
+          "Blended wing-body",
+          "Radar-absorbing materials",
+          "Engine inlet baffles"
+        ],
+        "notes": "Reduced RCS vs B-52, not true stealth"
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Desert Fox",
+            "year": 1998,
+            "notes": "Combat debut"
+          },
+          {
+            "conflict": "Kosovo",
+            "year": 1999
+          },
+          {
+            "conflict": "Afghanistan",
+            "year": 2001,
+            "notes": "Heavy use"
+          },
+          {
+            "conflict": "Iraq",
+            "year": 2003
+          },
+          {
+            "conflict": "Syria/ISIS",
+            "year": 2015
+          }
+        ],
+        "notes": "Workhorse bomber. 60%+ of ordnance dropped in Afghanistan."
+      },
+      "unit_cost_usd": 283000000,
+      "cost_year": 1998,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "USAF",
+        "Jane's"
+      ],
+      "notes": "Variable-sweep wing supersonic bomber. 'Bone' (B-One). Largest payload of any bomber. No longer nuclear (START I). Being retired early 2030s for B-21.",
+      "year": 1986
+    },
+    {
+      "id": "us-b52h",
+      "name": "B-52H Stratofortress",
+      "nato_name": null,
+      "type": "strategic_bomber",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 1961,
+        "first_flight": 1952,
+        "retired": null,
+        "production_count": 744,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 76,
+            "status": "active",
+            "notes": "2nd/5th Bomb Wings"
+          }
+        ],
+        "notes": "Longest-serving bomber in history"
+      },
+      "specifications": {
+        "crew": 5,
+        "length_m": 49.05,
+        "wingspan_m": 56.39,
+        "height_m": 12.4,
+        "empty_weight_kg": 83250,
+        "max_takeoff_weight_kg": 220000,
+        "internal_fuel_kg": 141600,
+        "wing_area_m2": 370
+      },
+      "performance": {
+        "max_speed_kmh": 1000,
+        "max_speed_mach": 0.86,
+        "cruise_speed_kmh": 819,
+        "cruise_speed_mach": 0.77,
+        "combat_radius_km": 7210,
+        "ferry_range_km": 16232,
+        "service_ceiling_m": 15166,
+        "rate_of_climb_mps": 17.68
+      },
+      "powerplant": {
+        "engines": 8,
+        "type": "Pratt & Whitney TF33-P-3/103",
+        "thrust_dry_kn": 75.6,
+        "notes": "Re-engining with Rolls-Royce F130 planned (2030s)"
+      },
+      "avionics": {
+        "radar": "AN/APQ-166 (upgraded)",
+        "radar_range_km": 150,
+        "terrain_following": "Offensive avionics system",
+        "ew_suite": "AN/ALQ-172(V)2",
+        "datalink": "Link 16, AEHF SATCOM",
+        "notes": "Continuous modernization since 1961"
+      },
+      "armament": {
+        "internal_bay": true,
+        "external_pylons": 6,
+        "max_payload_kg": 31500,
+        "weapons": [
+          {
+            "type": "nuclear",
+            "designation": "AGM-86B ALCM",
+            "quantity": 20,
+            "notes": "Nuclear cruise missiles"
+          },
+          {
+            "type": "standoff",
+            "designation": "AGM-86C/D CALCM",
+            "quantity": 20,
+            "notes": "Conventional cruise missiles"
+          },
+          {
+            "type": "standoff",
+            "designation": "AGM-158 JASSM-ER",
+            "quantity": 20,
+            "notes": "Latest cruise missile"
+          },
+          {
+            "type": "conventional",
+            "designation": "GBU-31 JDAM",
+            "quantity": 20
+          },
+          {
+            "type": "conventional",
+            "designation": "Mk 82",
+            "quantity": 51,
+            "notes": "Iron bombs"
+          },
+          {
+            "type": "mine",
+            "designation": "Mk 62 Quickstrike",
+            "quantity": 45,
+            "notes": "Naval mines"
+          },
+          {
+            "type": "hypersonic",
+            "designation": "AGM-183A ARRW",
+            "quantity": 4,
+            "notes": "Hypersonic missile (in development)"
+          }
+        ]
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Vietnam",
+            "year": 1965,
+            "notes": "Arc Light operations"
+          },
+          {
+            "conflict": "Gulf War",
+            "year": 1991,
+            "notes": "35% of munitions dropped"
+          },
+          {
+            "conflict": "Afghanistan",
+            "year": 2001
+          },
+          {
+            "conflict": "Iraq",
+            "year": 2003
+          },
+          {
+            "conflict": "Syria/ISIS",
+            "year": 2016
+          }
+        ],
+        "notes": "Most combat experience of any US aircraft. Youngest B-52H built in 1962."
+      },
+      "variants": [
+        {
+          "designation": "B-52H",
+          "notes": "Current version, turbofan engines"
+        },
+        {
+          "designation": "B-52J",
+          "notes": "Future: re-engined with F130, AESA radar"
+        }
+      ],
+      "unit_cost_usd": 84000000,
+      "cost_year": 1962,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "USAF",
+        "Jane's"
+      ],
+      "notes": "Iconic 'BUFF' (Big Ugly Fat Fellow). Flying since 1955, expected to serve until 2050s (100 years!). Youngest airframe built 1962. Continuous upgrades. Re-engining with Rolls-Royce F130 approved. 8 engines \u2192 8 new engines.",
+      "year": 1961
+    },
+    {
+      "id": "us-b21",
+      "name": "B-21 Raider",
+      "nato_name": null,
+      "type": "strategic_bomber",
+      "country_of_origin": "US",
+      "manufacturer": "Northrop Grumman",
+      "service_history": {
+        "introduced": 2027,
+        "first_flight": 2023,
+        "retired": null,
+        "production_count": 6,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 6,
+            "status": "testing",
+            "notes": "100+ planned"
+          }
+        ],
+        "notes": "Next-generation stealth bomber"
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 16.0,
+        "wingspan_m": 52.0,
+        "height_m": 4.5,
+        "empty_weight_kg": 70000,
+        "max_takeoff_weight_kg": 150000,
+        "notes": "Specifications estimated, highly classified"
+      },
+      "performance": {
+        "max_speed_kmh": 1000,
+        "max_speed_mach": 0.95,
+        "cruise_speed_kmh": 900,
+        "cruise_speed_mach": 0.85,
+        "combat_radius_km": 4000,
+        "ferry_range_km": 9000,
+        "service_ceiling_m": 15000,
+        "notes": "Subsonic, optimized for stealth"
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Pratt & Whitney F135 derivative",
+        "thrust_dry_kn": 120,
+        "notes": "Estimated, classified"
+      },
+      "avionics": {
+        "radar": "Northrop Grumman AESA (classified)",
+        "radar_notes": "LPI, multi-function",
+        "ew_suite": "Advanced integrated EW",
+        "datalink": "Advanced Battle Management System",
+        "ai_systems": "Optional unmanned capability",
+        "notes": "Most advanced avionics suite ever fielded"
+      },
+      "armament": {
+        "internal_bays": 2,
+        "max_payload_kg": 13600,
+        "weapons": [
+          {
+            "type": "nuclear",
+            "designation": "B61-12",
+            "notes": "Primary nuclear weapon"
+          },
+          {
+            "type": "standoff",
+            "designation": "AGM-158 JASSM-ER",
+            "notes": "Cruise missiles"
+          },
+          {
+            "type": "conventional",
+            "designation": "GBU-31/38 JDAM",
+            "notes": "Precision guided munitions"
+          },
+          {
+            "type": "hypersonic",
+            "designation": "Future hypersonic weapons",
+            "notes": "Designed for integration"
+          }
+        ]
+      },
+      "stealth": {
+        "rcs_estimate_m2": 1e-05,
+        "rcs_notes": "Advanced stealth, smaller RCS than B-2",
+        "design_features": [
+          "Flying wing",
+          "Advanced RAM",
+          "Improved edge alignment",
+          "Reduced IR signature"
+        ]
+      },
+      "unit_cost_usd": 692000000,
+      "cost_year": 2022,
+      "confidence": "low",
+      "sources": [
+        "Northrop Grumman",
+        "USAF",
+        "Aviation Week"
+      ],
+      "notes": "Next-gen stealth bomber. First flight Nov 2023. Named after Doolittle Raiders. 100+ planned. $692M target cost (2022). Optional unmanned mode. Replace B-1B and B-2. IOC expected 2027.",
+      "year": 2023
+    }
+  ]
+}

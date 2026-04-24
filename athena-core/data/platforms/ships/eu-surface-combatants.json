@@ -1,0 +1,289 @@
+{
+  "platforms": [
+    {
+      "id": "gb-cvf-queen-elizabeth",
+      "name": "Queen Elizabeth-class",
+      "type": "aircraft_carrier",
+      "country_of_origin": "GB",
+      "manufacturer": "Aircraft Carrier Alliance",
+      "service_entry": 2017,
+      "specifications": {
+        "displacement_tons": 65000,
+        "length_m": 284,
+        "beam_m": 39,
+        "beam_flight_deck_m": 73,
+        "draft_m": 11,
+        "crew": 679,
+        "air_wing_crew": 900,
+        "max_speed_knots": 25,
+        "range_nm": 10000
+      },
+      "propulsion": {
+        "type": "IFEP (Integrated Full Electric)",
+        "engines": "2x Rolls-Royce MT30 gas turbines",
+        "diesels": "4x Wärtsilä diesel generators",
+        "power_mw": 109,
+        "motors": "4x 20MW azimuth thrusters"
+      },
+      "flight_operations": {
+        "type": "STOVL",
+        "ski_jump_angle_deg": 12.5,
+        "aircraft_capacity": 40,
+        "surge_capacity": 72,
+        "elevators": 2,
+        "typical_air_wing": [
+          "F-35B Lightning II (up to 36)",
+          "Merlin HM2 helicopters",
+          "Crowsnest AEW"
+        ]
+      },
+      "armament": {
+        "ciws": "3x Phalanx CIWS",
+        "guns": "4x DS30M Mk2 30mm",
+        "note": "Relies on escorts for AAW"
+      },
+      "service_history": {
+        "introduced": 2017,
+        "status": "active",
+        "ships": [
+          {"name": "HMS Queen Elizabeth", "hull": "R08", "commissioned": 2017},
+          {"name": "HMS Prince of Wales", "hull": "R09", "commissioned": 2019}
+        ]
+      },
+      "unit_cost_usd": 4100000000,
+      "notes": "Largest Royal Navy ships ever. Twin-island design. STOVL only - no catapults. CSG21 deployment 2021."
+    },
+    {
+      "id": "gb-type-45-daring",
+      "name": "Type 45 Daring-class",
+      "type": "destroyer",
+      "country_of_origin": "GB",
+      "manufacturer": "BAE Systems",
+      "service_entry": 2009,
+      "specifications": {
+        "displacement_tons": 8500,
+        "length_m": 152.4,
+        "beam_m": 21.2,
+        "draft_m": 7.4,
+        "crew": 191,
+        "max_speed_knots": 29,
+        "range_nm": 7000
+      },
+      "propulsion": {
+        "type": "IFEP",
+        "engines": "2x Rolls-Royce WR-21 gas turbines",
+        "diesels": "2x diesel generators",
+        "power_mw": 40
+      },
+      "armament": {
+        "vls": {
+          "type": "Sylver A50",
+          "cells": 48,
+          "missiles": ["Aster 15", "Aster 30 (120km range)"]
+        },
+        "gun": {
+          "type": "4.5 inch Mk 8 Mod 1",
+          "caliber": "114mm"
+        },
+        "ciws": "2x Phalanx CIWS",
+        "guns_secondary": "2x 30mm DS30M",
+        "helicopters": 1,
+        "helicopter_type": "Wildcat HMA2"
+      },
+      "sensors": {
+        "radar": "SAMPSON AESA (S-band)",
+        "radar_volume": "S1850M (L-band)",
+        "combat_system": "CMS-1"
+      },
+      "service_history": {
+        "introduced": 2009,
+        "status": "active",
+        "built": 6,
+        "ships": [
+          "HMS Daring", "HMS Dauntless", "HMS Diamond",
+          "HMS Dragon", "HMS Defender", "HMS Duncan"
+        ]
+      },
+      "unit_cost_usd": 1500000000,
+      "notes": "AAW destroyers. SAMPSON tracks 1000+ targets. Propulsion issues being fixed with additional diesels. No Tomahawk capability."
+    },
+    {
+      "id": "gb-type-26-city",
+      "name": "Type 26 City-class",
+      "type": "frigate",
+      "country_of_origin": "GB",
+      "manufacturer": "BAE Systems",
+      "service_entry": 2027,
+      "specifications": {
+        "displacement_tons": 8000,
+        "length_m": 149.9,
+        "beam_m": 20.8,
+        "draft_m": 7.5,
+        "crew": 157,
+        "max_speed_knots": 26,
+        "range_nm": 7000
+      },
+      "propulsion": {
+        "type": "CODLOG",
+        "gas_turbine": "1x Rolls-Royce MT30",
+        "diesels": "4x MTU diesel generators",
+        "electric_motors": "2x GE electric motors"
+      },
+      "armament": {
+        "vls": {
+          "type": "Mk 41 VLS",
+          "cells": 24,
+          "strike_cells": 24,
+          "missiles": ["Sea Ceptor (CAMM)", "Tomahawk", "FC/ASW"]
+        },
+        "sea_ceptor_cells": 48,
+        "gun": "5 inch/62 Mk 45 Mod 4",
+        "torpedoes": "Torpedo launch system"
+      },
+      "sensors": {
+        "radar": "Type 997 Artisan 3D",
+        "sonar": "2087 towed array",
+        "note": "Optimized for ASW"
+      },
+      "service_history": {
+        "first_ship": "HMS Glasgow",
+        "expected_service": 2027,
+        "planned": 8,
+        "export": [
+          {"country": "AU", "name": "Hunter-class", "quantity": 9},
+          {"country": "CA", "name": "Canadian Surface Combatant", "quantity": 15}
+        ]
+      },
+      "unit_cost_usd": 1300000000,
+      "notes": "Global Combat Ship. ASW focused. Exported to Australia and Canada. First steel cut 2017."
+    },
+    {
+      "id": "fr-fremm-aquitaine",
+      "name": "FREMM Aquitaine-class",
+      "type": "frigate",
+      "country_of_origin": "FR",
+      "manufacturer": "Naval Group",
+      "service_entry": 2012,
+      "specifications": {
+        "displacement_tons": 6000,
+        "length_m": 142,
+        "beam_m": 20,
+        "draft_m": 5.4,
+        "crew": 108,
+        "max_speed_knots": 27,
+        "range_nm": 6000
+      },
+      "propulsion": {
+        "type": "CODLOG",
+        "gas_turbine": "1x GE LM2500",
+        "diesels": "4x MTU diesels",
+        "power_hp": 47500
+      },
+      "armament": {
+        "vls": {
+          "type": "Sylver A70",
+          "cells": 16,
+          "missiles": ["MdCN cruise missile (1000km)"]
+        },
+        "sam": {
+          "type": "Sylver A43",
+          "cells": 16,
+          "missiles": ["Aster 15"]
+        },
+        "ascm": "8x MM40 Exocet Block 3",
+        "gun": "76mm OTO Melara",
+        "torpedoes": "2x twin MU90",
+        "helicopters": 1,
+        "helicopter_type": "NH90 Caïman"
+      },
+      "sensors": {
+        "radar": "Thales Herakles AESA",
+        "sonar": "CAPTAS-4 towed array"
+      },
+      "service_history": {
+        "introduced": 2012,
+        "status": "active",
+        "built_france": 8,
+        "operators": [
+          {"country": "FR", "quantity": 8},
+          {"country": "IT", "quantity": 10, "name": "Bergamini-class"},
+          {"country": "EG", "quantity": 1},
+          {"country": "MA", "quantity": 1}
+        ]
+      },
+      "unit_cost_usd": 750000000,
+      "notes": "Franco-Italian program. France has ASW and AAW variants. MdCN gives land attack capability. Very quiet for ASW."
+    },
+    {
+      "id": "it-fremm-bergamini",
+      "name": "FREMM Bergamini-class",
+      "type": "frigate",
+      "country_of_origin": "IT",
+      "manufacturer": "Fincantieri",
+      "service_entry": 2013,
+      "specifications": {
+        "displacement_tons": 6900,
+        "length_m": 144,
+        "beam_m": 19.7,
+        "draft_m": 5.5,
+        "crew": 200,
+        "max_speed_knots": 27
+      },
+      "armament": {
+        "vls": {
+          "type": "Sylver A50",
+          "cells": 16
+        },
+        "sam": "Aster 15/30",
+        "ascm": "8x Teseo Mk2/A OTOMAT",
+        "gun": "127mm/64 OTO",
+        "torpedoes": "MU90"
+      },
+      "service_history": {
+        "introduced": 2013,
+        "status": "active",
+        "built": 10,
+        "operators": [
+          {"country": "IT", "quantity": 10}
+        ]
+      },
+      "notes": "Italian FREMM variant. GP and ASW versions. 127mm gun for naval fire support."
+    },
+    {
+      "id": "de-f125-baden-wurttemberg",
+      "name": "F125 Baden-Württemberg-class",
+      "type": "frigate",
+      "country_of_origin": "DE",
+      "manufacturer": "ThyssenKrupp Marine Systems",
+      "service_entry": 2019,
+      "specifications": {
+        "displacement_tons": 7200,
+        "length_m": 149.5,
+        "beam_m": 18.8,
+        "draft_m": 5,
+        "crew": 190,
+        "max_speed_knots": 26,
+        "range_nm": 4000
+      },
+      "propulsion": {
+        "type": "CODLAG",
+        "gas_turbine": "1x GE LM2500",
+        "diesels": "4x MTU",
+        "motors": "2x electric"
+      },
+      "armament": {
+        "sam": "2x RIM-116 RAM",
+        "gun": "1x 127mm OTO Melara",
+        "guns_secondary": "2x 27mm MLG-27",
+        "helicopters": 2,
+        "note": "No VLS - limited AAW capability"
+      },
+      "service_history": {
+        "introduced": 2019,
+        "status": "active",
+        "built": 4
+      },
+      "notes": "Stabilization/peacekeeping focused. Criticized for limited combat capability. No VLS. 2-year autonomous deployment capability."
+    }
+  ]
+}

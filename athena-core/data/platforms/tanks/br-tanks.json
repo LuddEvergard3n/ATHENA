@@ -1,0 +1,479 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "br-leopard1a5br",
+      "name": "Leopard 1A5 BR",
+      "type": "mbt",
+      "country_of_origin": "DE",
+      "manufacturer": "Krauss-Maffei Wegmann (refurbished)",
+      "service_history": {
+        "introduced": 2009,
+        "retired": null,
+        "production_count": 220,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 220,
+            "variants": [
+              "Leopard 1A5 BR"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "passengers": 0,
+        "weight_kg": 42200,
+        "length_m": 7.09,
+        "length_gun_forward_m": 9.54,
+        "width_m": 3.41,
+        "height_m": 2.39,
+        "ground_clearance_m": 0.44
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU MB 838 CaM-500",
+          "type": "diesel",
+          "power_hp": 830,
+          "power_kw": 619
+        },
+        "power_to_weight_hp_ton": 19.7,
+        "transmission": "ZF 4HP-250",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 65,
+        "max_speed_offroad_kmh": 40,
+        "max_speed_reverse_kmh": 25,
+        "range_road_km": 600,
+        "fuel_capacity_liters": 985,
+        "fording_depth_m": 2.25,
+        "fording_depth_prepared_m": 4.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 3.0,
+        "vertical_obstacle_m": 1.15,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "L7A3",
+          "caliber_mm": 105,
+          "barrel_length_calibers": 51,
+          "type": "rifled",
+          "elevation_min_deg": -9,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1450,
+          "effective_range_m": 4000,
+          "ammunition_carried": 60,
+          "ammunition_ready": 13,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "DM63",
+              "penetration_mm_rha": 450,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "DM12",
+              "penetration_mm_rha": 400,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HESH",
+              "designation": "DM512",
+              "penetration_mm_rha": 150,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE",
+              "designation": "DM23",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 3000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "FN MAG 58",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 5000
+          },
+          {
+            "designation": "FN MAG 58",
+            "caliber_mm": 7.62,
+            "mount": "commander",
+            "ammunition_carried": 2000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "armor_composition": "Welded steel with spaced armor option",
+        "protection_front_turret_mm_rha": 180,
+        "protection_front_hull_mm_rha": 140,
+        "protection_side_mm_rha": 70,
+        "protection_rear_mm_rha": 35,
+        "protection_top_mm_rha": 25,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "hull_floor",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "EMES-18",
+        "commander_sight": {
+          "type": "PERI-R12",
+          "day_magnification": "2x/8x",
+          "thermal": false,
+          "independent": true,
+          "hunter_killer": false
+        },
+        "gunner_sight": {
+          "type": "EMES-18",
+          "day_magnification": "3x/8x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": false,
+        "cant_sensor": true,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8,
+        "smoke_grenade_type": "76mm"
+      },
+      "unit_cost_usd": 2500000,
+      "cost_year": 2009,
+      "confidence": "high",
+      "sources": [
+        "GlobalSecurity.org Brazilian Army Modernization",
+        "Army Recognition Leopard 1A5BR",
+        "Wikipedia List of modern equipment of the Brazilian Army",
+        "Revista Sociedade Militar"
+      ],
+      "notes": "Ex-German Army stock, refurbished by KMW. EMES-18 FCS from Leopard 2. Thermal imaging for night combat. Modernization program approved 2019 for 52 units (2024-2030): electric turret drive, RWS, add-on armor. Main battle tank of Brazilian Army.",
+      "year": 2009
+    },
+    {
+      "id": "br-m60a3-tts",
+      "name": "M60A3 TTS",
+      "type": "mbt",
+      "country_of_origin": "US",
+      "manufacturer": "Chrysler Defense / General Dynamics",
+      "service_history": {
+        "introduced": 1997,
+        "retired": null,
+        "production_count": 91,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 30,
+            "variants": [
+              "M60A3 TTS"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "passengers": 0,
+        "weight_kg": 52600,
+        "length_m": 6.95,
+        "length_gun_forward_m": 9.44,
+        "width_m": 3.63,
+        "height_m": 3.27,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "Continental AVDS-1790-2C",
+          "type": "diesel",
+          "power_hp": 750,
+          "power_kw": 559
+        },
+        "power_to_weight_hp_ton": 14.3,
+        "transmission": "CD-850-6A",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 48,
+        "max_speed_offroad_kmh": 30,
+        "max_speed_reverse_kmh": 9,
+        "range_road_km": 480,
+        "fuel_capacity_liters": 1420,
+        "fording_depth_m": 1.22,
+        "fording_depth_prepared_m": 2.4,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 2.59,
+        "vertical_obstacle_m": 0.91,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "M68A1",
+          "caliber_mm": 105,
+          "barrel_length_calibers": 51,
+          "type": "rifled",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 6,
+          "muzzle_velocity_ms": 1450,
+          "effective_range_m": 2000,
+          "ammunition_carried": 63,
+          "ammunition_ready": 13,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "M774",
+              "penetration_mm_rha": 350,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "M456A2",
+              "penetration_mm_rha": 400,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HESH",
+              "designation": "M393A2",
+              "penetration_mm_rha": 150,
+              "penetration_range_m": 2000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "M240",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 5950
+          },
+          {
+            "designation": "M85",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 900
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "armor_composition": "Cast and welded steel",
+        "protection_front_turret_mm_rha": 254,
+        "protection_front_hull_mm_rha": 143,
+        "protection_side_mm_rha": 76,
+        "protection_rear_mm_rha": 57,
+        "protection_top_mm_rha": 36,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "hull_floor",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "AN/VVG-2 LRF with TTS",
+        "commander_sight": {
+          "type": "AN/VSS-1",
+          "day_magnification": "7.5x",
+          "thermal": false,
+          "independent": false
+        },
+        "gunner_sight": {
+          "type": "AN/VSG-2 TTS",
+          "day_magnification": "8x",
+          "thermal": true,
+          "thermal_generation": "1st"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 5000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": false,
+        "cant_sensor": true,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 6,
+        "smoke_grenade_type": "M239"
+      },
+      "unit_cost_usd": 1000000,
+      "cost_year": 1997,
+      "confidence": "high",
+      "sources": [
+        "GlobalSecurity.org Brazilian Army Modernization",
+        "Zona Militar M60A3 Brazil",
+        "Wikipedia List of modern equipment of the Brazilian Army",
+        "19FortyFive Brazil M60A3"
+      ],
+      "notes": "Originally 91 units acquired (leased then purchased 1997). ~30 operational as of 2026. TTS = Tank Thermal Sight. Operation Patton 2025: 17 tanks restored. Assigned to 20th Armored Cavalry Regiment (Campo Grande). Western border defense.",
+      "year": 1996
+    },
+    {
+      "id": "br-ee-t1-osorio",
+      "name": "EE-T1 Osório",
+      "type": "mbt",
+      "country_of_origin": "BR",
+      "manufacturer": "Engesa",
+      "service_history": {
+        "introduced": 1985,
+        "retired": 1993,
+        "production_count": 2,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 2,
+            "variants": ["P1 (105mm)", "P2 (120mm)"],
+            "status": "prototype_only"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "passengers": 0,
+        "weight_kg": 43700,
+        "length_m": 7.13,
+        "length_gun_forward_m": 10.10,
+        "width_m": 3.26,
+        "height_m": 2.89,
+        "ground_clearance_m": 0.46
+      },
+      "mobility": {
+        "engine": {
+          "model": "MWM TBD 234 V12",
+          "type": "diesel_turbocharged",
+          "power_hp": 1040,
+          "power_kw": 776
+        },
+        "power_to_weight_hp_ton": 23.8,
+        "transmission": "ZF LSG 3000 automatic",
+        "suspension": "hydropneumatic",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 40,
+        "max_speed_reverse_kmh": 30,
+        "range_road_km": 550,
+        "fuel_capacity_liters": 1354,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 2.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 3.0,
+        "vertical_obstacle_m": 1.15,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "GIAT G1 CN120-25",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 52,
+          "type": "smoothbore",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1750,
+          "effective_range_m": 4000,
+          "ammunition_carried": 38,
+          "ammunition_ready": 12,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "OFL 120 F1",
+              "penetration_mm_rha": 550,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "OBUS G",
+              "penetration_mm_rha": 650,
+              "penetration_range_m": 2000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "M2HB",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 600
+          },
+          {
+            "designation": "FN MAG 58",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 4000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite",
+        "armor_composition": "Composite (aluminium/steel/carbon/ceramic) - Chobham-type concept",
+        "protection_front_turret_mm_rha": 500,
+        "protection_front_hull_mm_rha": 400,
+        "protection_side_mm_rha": 80,
+        "protection_rear_mm_rha": 30,
+        "protection_top_mm_rha": 25,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "turret_bustle",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "SFIM/Marconi integrated FCS",
+        "commander_sight": {
+          "type": "SFIM WS 580-10 panoramic",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "SFIM WS 580-19",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "1st"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": true,
+        "cant_sensor": true,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "76mm"
+      },
+      "unit_cost_usd": 3500000,
+      "cost_year": 1989,
+      "confidence": "medium",
+      "sources": [
+        "Army Guide EE-T1 Osorio",
+        "FPrado Armorsite EE-T1 Osorio",
+        "Grokipedia EE-T1 Osório",
+        "Tank Encyclopedia"
+      ],
+      "notes": "Prototype only - never entered production. Engesa went bankrupt 1993. P2 variant (120mm) competed in Saudi Arabian tank trials 1989 against M1A2 Abrams. Won technical trials but lost contract. GIAT 120mm gun same as Leclerc. Hydropneumatic suspension by Dunlop. Composite armor details classified. Specs listed are for P2 (120mm) variant. P1 had Royal Ordnance L7A3 105mm, 40900 kg, 45 rounds.",
+      "year": 1985
+    }
+  ]
+}

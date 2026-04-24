@@ -1,0 +1,426 @@
+{
+  "platforms": [
+    {
+      "id": "us-f-15ex-eagle-ii",
+      "name": "F-15EX Eagle II",
+      "type": "multirole_fighter",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_entry": 2021,
+      "specifications": {
+        "crew": 2,
+        "length_m": 19.43,
+        "wingspan_m": 13.05,
+        "height_m": 5.63,
+        "empty_weight_kg": 14300,
+        "max_takeoff_weight_kg": 36700,
+        "max_speed_mach": 2.5,
+        "combat_radius_km": 1270,
+        "ferry_range_km": 3900,
+        "service_ceiling_m": 18000,
+        "g_limit": 9
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "GE F110-GE-129",
+        "thrust_afterburner_kn": 131
+      },
+      "armament": {
+        "hardpoints": 23,
+        "max_payload_kg": 13400,
+        "gun": {"type": "M61A1 Vulcan", "caliber_mm": 20, "rounds": 500},
+        "missiles": ["AIM-120D AMRAAM (12)", "AIM-9X", "AGM-158 JASSM", "GBU-39 SDB"],
+        "max_air_to_air": 22
+      },
+      "avionics": {
+        "radar": "AN/APG-82(V)1 AESA",
+        "ew_suite": "EPAWSS",
+        "cockpit": "Large Area Display"
+      },
+      "service_history": {
+        "introduced": 2021,
+        "status": "active",
+        "ordered": 104,
+        "operators": [{"country": "US", "quantity": 104, "status": "delivering"}]
+      },
+      "unit_cost_usd": 88000000,
+      "notes": "Latest F-15 variant. Carries 22 air-to-air missiles. EPAWSS EW suite. Digital fly-by-wire. 20,000 hour airframe life."
+    },
+    {
+      "id": "us-f-16v-viper",
+      "name": "F-16V Viper",
+      "type": "multirole_fighter",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "service_entry": 2017,
+      "specifications": {
+        "crew": 1,
+        "length_m": 15.06,
+        "wingspan_m": 9.96,
+        "height_m": 4.88,
+        "empty_weight_kg": 9207,
+        "max_takeoff_weight_kg": 21772,
+        "max_speed_mach": 2.05,
+        "combat_radius_km": 550,
+        "service_ceiling_m": 15240
+      },
+      "powerplant": {
+        "engines": 1,
+        "model": "GE F110-GE-132 or P&W F100-PW-229",
+        "thrust_afterburner_kn": 144
+      },
+      "armament": {
+        "hardpoints": 11,
+        "gun": {"type": "M61A1 Vulcan", "caliber_mm": 20, "rounds": 511},
+        "missiles": ["AIM-120C-7 AMRAAM", "AIM-9X", "AGM-88 HARM", "GBU series"]
+      },
+      "avionics": {
+        "radar": "AN/APG-83 SABR AESA",
+        "ew_suite": "AN/ALQ-213",
+        "targeting_pod": "Sniper ATP"
+      },
+      "service_history": {
+        "introduced": 2017,
+        "status": "active",
+        "production_count": 300,
+        "operators": [
+          {"country": "TW", "quantity": 140},
+          {"country": "BH", "quantity": 16},
+          {"country": "SK", "quantity": 36},
+          {"country": "BG", "quantity": 8},
+          {"country": "GR", "quantity": 84, "status": "upgrade"}
+        ]
+      },
+      "unit_cost_usd": 63000000,
+      "notes": "Latest F-16 Block 70/72. AESA radar upgrade. Center Pedestal Display. Automatic GCAS. Major export success."
+    },
+    {
+      "id": "us-fa-18ef-super-hornet",
+      "name": "F/A-18E/F Super Hornet",
+      "type": "carrier_multirole",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_entry": 1999,
+      "specifications": {
+        "crew": 1,
+        "crew_f_variant": 2,
+        "length_m": 18.31,
+        "wingspan_m": 13.62,
+        "wingspan_folded_m": 9.32,
+        "height_m": 4.88,
+        "empty_weight_kg": 14552,
+        "max_takeoff_weight_kg": 29937,
+        "max_speed_mach": 1.8,
+        "combat_radius_km": 722,
+        "service_ceiling_m": 15000
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "GE F414-GE-400",
+        "thrust_afterburner_kn": 97.9
+      },
+      "armament": {
+        "hardpoints": 11,
+        "max_payload_kg": 8050,
+        "gun": {"type": "M61A2 Vulcan", "caliber_mm": 20, "rounds": 578},
+        "missiles": ["AIM-120D AMRAAM", "AIM-9X", "AGM-84 Harpoon", "AGM-88 HARM", "AGM-154 JSOW"]
+      },
+      "avionics": {
+        "radar": "AN/APG-79 AESA",
+        "irst": "IRST21 Block II",
+        "ew_suite": "AN/ALQ-214"
+      },
+      "service_history": {
+        "introduced": 1999,
+        "status": "active",
+        "production_count": 608,
+        "operators": [
+          {"country": "US", "quantity": 540},
+          {"country": "AU", "quantity": 24},
+          {"country": "KW", "quantity": 28}
+        ]
+      },
+      "unit_cost_usd": 67000000,
+      "notes": "USN workhorse carrier fighter. Block III with conformal fuel tanks and advanced cockpit. EA-18G Growler EW variant."
+    },
+    {
+      "id": "us-ea-18g-growler",
+      "name": "EA-18G Growler",
+      "type": "electronic_warfare",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_entry": 2009,
+      "specifications": {
+        "crew": 2,
+        "length_m": 18.31,
+        "wingspan_m": 13.62,
+        "max_takeoff_weight_kg": 29937,
+        "max_speed_mach": 1.8,
+        "combat_radius_km": 722
+      },
+      "armament": {
+        "missiles": ["AGM-88E AARGM", "AIM-120 AMRAAM"],
+        "ew_pods": ["AN/ALQ-99", "AN/ALQ-249 NGJ-MB"]
+      },
+      "avionics": {
+        "radar": "AN/APG-79 AESA",
+        "ew_suite": "AN/ALQ-218 receiver",
+        "jammer": "AN/ALQ-99 / NGJ"
+      },
+      "service_history": {
+        "introduced": 2009,
+        "status": "active",
+        "operators": [
+          {"country": "US", "quantity": 160},
+          {"country": "AU", "quantity": 12}
+        ]
+      },
+      "unit_cost_usd": 68000000,
+      "notes": "Replaced EA-6B Prowler. SEAD/DEAD mission. NGJ-MB pod in testing. Only Western tactical EW aircraft."
+    },
+    {
+      "id": "ru-mig-35-fulcrum-f",
+      "name": "MiG-35 Fulcrum-F",
+      "type": "multirole_fighter",
+      "country_of_origin": "RU",
+      "manufacturer": "RSK MiG",
+      "nato_name": "Fulcrum-F",
+      "service_entry": 2019,
+      "specifications": {
+        "crew": 1,
+        "length_m": 17.3,
+        "wingspan_m": 12.0,
+        "height_m": 4.73,
+        "max_takeoff_weight_kg": 29700,
+        "max_speed_mach": 2.25,
+        "combat_radius_km": 1000,
+        "service_ceiling_m": 17500
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "RD-33MK",
+        "thrust_afterburner_kn": 88.3,
+        "thrust_vectoring": "optional"
+      },
+      "armament": {
+        "hardpoints": 9,
+        "max_payload_kg": 7000,
+        "gun": {"type": "GSh-30-1", "caliber_mm": 30},
+        "missiles": ["R-77-1", "R-73", "Kh-31", "Kh-38"]
+      },
+      "avionics": {
+        "radar": "Zhuk-A AESA",
+        "irst": "OLS-K",
+        "ew_suite": "Khibiny-M"
+      },
+      "service_history": {
+        "introduced": 2019,
+        "status": "active",
+        "operators": [
+          {"country": "RU", "quantity": 6},
+          {"country": "EG", "quantity": 24, "status": "ordered"}
+        ]
+      },
+      "unit_cost_usd": 40000000,
+      "notes": "4++ generation MiG-29 evolution. AESA radar. Limited Russian adoption. Export focus."
+    },
+    {
+      "id": "ru-su-30sm2",
+      "name": "Su-30SM2",
+      "type": "multirole_fighter",
+      "country_of_origin": "RU",
+      "manufacturer": "Irkut (UAC)",
+      "nato_name": "Flanker-H",
+      "service_entry": 2021,
+      "specifications": {
+        "crew": 2,
+        "length_m": 21.9,
+        "wingspan_m": 14.7,
+        "height_m": 6.36,
+        "max_takeoff_weight_kg": 38800,
+        "max_speed_mach": 2.0,
+        "combat_radius_km": 1500,
+        "service_ceiling_m": 17300
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "AL-41F-1S (117S)",
+        "thrust_afterburner_kn": 142,
+        "thrust_vectoring": true
+      },
+      "armament": {
+        "hardpoints": 12,
+        "max_payload_kg": 8000,
+        "missiles": ["R-77-1", "R-73", "R-37M", "Kh-31", "Kh-59MK2", "KAB-500"]
+      },
+      "avionics": {
+        "radar": "N035 Irbis-E PESA",
+        "irst": "OLS-30"
+      },
+      "service_history": {
+        "introduced": 2021,
+        "status": "active",
+        "operators": [{"country": "RU", "quantity": 21}]
+      },
+      "notes": "Upgraded Su-30SM with Su-35 engines and avionics. AL-41F-1S provides supermaneuverability."
+    },
+    {
+      "id": "in-su-30mki-flanker-h",
+      "name": "Su-30MKI",
+      "type": "air_superiority",
+      "country_of_origin": "IN",
+      "manufacturer": "HAL (license)",
+      "original_design": "Sukhoi",
+      "service_entry": 2002,
+      "specifications": {
+        "crew": 2,
+        "length_m": 21.9,
+        "wingspan_m": 14.7,
+        "max_takeoff_weight_kg": 38800,
+        "max_speed_mach": 2.0,
+        "combat_radius_km": 1500,
+        "service_ceiling_m": 17300
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "AL-31FP",
+        "thrust_afterburner_kn": 122.6,
+        "thrust_vectoring": true
+      },
+      "armament": {
+        "hardpoints": 12,
+        "missiles": ["R-77", "R-73", "BrahMos-A", "Kh-59", "KAB-1500"]
+      },
+      "avionics": {
+        "radar": "N011M BARS PESA",
+        "israeli_systems": "EL/M-8222 jammer"
+      },
+      "service_history": {
+        "introduced": 2002,
+        "status": "active",
+        "operators": [{"country": "IN", "quantity": 272}]
+      },
+      "notes": "India's primary air superiority fighter. Canard+TVC. BrahMos integration. Super 30 upgrade ongoing."
+    },
+    {
+      "id": "pk-jf-17-thunder",
+      "name": "JF-17 Thunder Block III",
+      "type": "multirole_fighter",
+      "country_of_origin": "PK",
+      "manufacturer": "PAC/CAC",
+      "designation_alt": "FC-1 Xiaolong",
+      "service_entry": 2022,
+      "specifications": {
+        "crew": 1,
+        "length_m": 14.3,
+        "wingspan_m": 9.45,
+        "height_m": 4.77,
+        "empty_weight_kg": 6586,
+        "max_takeoff_weight_kg": 12700,
+        "max_speed_mach": 1.8,
+        "combat_radius_km": 1352,
+        "service_ceiling_m": 16920
+      },
+      "powerplant": {
+        "engines": 1,
+        "model": "RD-93MA",
+        "thrust_afterburner_kn": 93
+      },
+      "armament": {
+        "hardpoints": 7,
+        "gun": {"type": "GSh-23-2", "caliber_mm": 23},
+        "missiles": ["PL-15", "PL-10", "SD-10A", "C-802AK", "CM-400AKG"]
+      },
+      "avionics": {
+        "radar": "KLJ-7A AESA (Block III)",
+        "irst": "IRST",
+        "hmd": "Integrated HMD"
+      },
+      "service_history": {
+        "introduced": 2022,
+        "status": "active",
+        "operators": [
+          {"country": "PK", "quantity": 138},
+          {"country": "MM", "quantity": 16},
+          {"country": "NG", "quantity": 3}
+        ]
+      },
+      "unit_cost_usd": 32000000,
+      "notes": "Sino-Pakistani joint program. Block III has AESA radar. Low cost fighter. Export to Myanmar, Nigeria."
+    },
+    {
+      "id": "in-hal-tejas-mk1a",
+      "name": "HAL Tejas Mk.1A",
+      "type": "light_fighter",
+      "country_of_origin": "IN",
+      "manufacturer": "Hindustan Aeronautics Limited",
+      "service_entry": 2024,
+      "specifications": {
+        "crew": 1,
+        "length_m": 13.2,
+        "wingspan_m": 8.2,
+        "height_m": 4.4,
+        "empty_weight_kg": 6500,
+        "max_takeoff_weight_kg": 13500,
+        "max_speed_mach": 1.8,
+        "combat_radius_km": 500,
+        "service_ceiling_m": 15250
+      },
+      "powerplant": {
+        "engines": 1,
+        "model": "GE F404-GE-IN20",
+        "thrust_afterburner_kn": 90
+      },
+      "armament": {
+        "hardpoints": 8,
+        "gun": {"type": "GSh-23", "caliber_mm": 23},
+        "missiles": ["Derby BVRAAM", "Python-5", "R-73"]
+      },
+      "avionics": {
+        "radar": "EL/M-2052 AESA",
+        "ew_suite": "Mayavi EWSP"
+      },
+      "service_history": {
+        "introduced": 2024,
+        "status": "production",
+        "ordered": 83,
+        "operators": [{"country": "IN", "quantity": 83, "status": "ordered"}]
+      },
+      "unit_cost_usd": 42000000,
+      "notes": "Indigenous Indian light fighter. AESA radar in Mk.1A. Mk.2 with larger airframe in development."
+    },
+    {
+      "id": "cn-j-11bg-flanker",
+      "name": "J-11BG",
+      "type": "air_superiority",
+      "country_of_origin": "CN",
+      "manufacturer": "Shenyang Aircraft Corporation",
+      "service_entry": 2020,
+      "specifications": {
+        "crew": 1,
+        "length_m": 21.9,
+        "wingspan_m": 14.7,
+        "max_takeoff_weight_kg": 33000,
+        "max_speed_mach": 2.35,
+        "combat_radius_km": 1500
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "WS-10C",
+        "thrust_afterburner_kn": 145
+      },
+      "armament": {
+        "missiles": ["PL-15", "PL-10", "PL-12"]
+      },
+      "avionics": {
+        "radar": "AESA"
+      },
+      "service_history": {
+        "introduced": 2020,
+        "status": "active",
+        "operators": [{"country": "CN", "quantity": 350}]
+      },
+      "notes": "Latest J-11 upgrade with AESA radar and WS-10C engines. Indigenous Flanker derivative."
+    }
+  ]
+}

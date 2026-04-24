@@ -1,0 +1,468 @@
+{
+  "platforms": [
+    {
+      "id": "de-type-212a-ssk",
+      "name": "Type 212A",
+      "type": "ssk",
+      "country_of_origin": "DE",
+      "manufacturer": "ThyssenKrupp Marine Systems/HDW",
+      "service_entry": 2005,
+      "specifications": {
+        "displacement_surfaced_tons": 1830,
+        "displacement_submerged_tons": 2080,
+        "length_m": 56,
+        "beam_m": 7,
+        "draft_m": 6,
+        "crew": 27,
+        "max_speed_submerged_knots": 20,
+        "max_speed_snorkeling_knots": 12,
+        "range_snorkeling_nm": 8000,
+        "endurance_aip_days": 21,
+        "test_depth_m": 250
+      },
+      "propulsion": {
+        "diesel": "MTU 16V 396",
+        "aip": {
+          "type": "Siemens PEM Fuel Cells",
+          "capacity_kw": 306,
+          "hydrogen_storage": "Metal hydride"
+        },
+        "motor": "Permasyn electric motor",
+        "power_hp": 3875
+      },
+      "armament": {
+        "torpedo_tubes": "6x 533mm",
+        "weapons": 12,
+        "torpedoes": "DM2A4 Seehecht",
+        "mines": 24
+      },
+      "sensors": {
+        "sonar": "DBQS-40 cylindrical array",
+        "flank_array": true
+      },
+      "service_history": {
+        "introduced": 2005,
+        "status": "active",
+        "operators": [
+          {"country": "DE", "quantity": 6},
+          {"country": "IT", "quantity": 4, "name": "Todaro-class"}
+        ]
+      },
+      "unit_cost_usd": 550000000,
+      "notes": "First production AIP submarine. Fuel cell technology. Extremely quiet. Non-magnetic steel hull."
+    },
+    {
+      "id": "de-type-214-ssk",
+      "name": "Type 214",
+      "type": "ssk",
+      "country_of_origin": "DE",
+      "manufacturer": "HDW/TKMS",
+      "service_entry": 2004,
+      "specifications": {
+        "displacement_submerged_tons": 1860,
+        "length_m": 65,
+        "beam_m": 6.3,
+        "crew": 27,
+        "max_speed_submerged_knots": 20,
+        "range_snorkeling_nm": 12000,
+        "endurance_aip_days": 12
+      },
+      "propulsion": {
+        "aip": "HDW fuel cells",
+        "diesel": "MTU 16V 396"
+      },
+      "armament": {
+        "torpedo_tubes": "8x 533mm",
+        "missiles": "Sub-Harpoon capable"
+      },
+      "service_history": {
+        "introduced": 2004,
+        "status": "active",
+        "operators": [
+          {"country": "GR", "quantity": 4, "name": "Papanikolis-class"},
+          {"country": "KR", "quantity": 9, "name": "Son Won-il-class"},
+          {"country": "TR", "quantity": 6, "name": "Reis-class"},
+          {"country": "PT", "quantity": 2, "name": "Tridente-class"}
+        ]
+      },
+      "unit_cost_usd": 450000000,
+      "notes": "Export version of 212 technology. Major export success. Korean Son Won-il class most numerous."
+    },
+    {
+      "id": "ru-project-636-kilo",
+      "name": "Improved Kilo (Project 636.3)",
+      "type": "ssk",
+      "country_of_origin": "RU",
+      "manufacturer": "Admiralty Shipyards",
+      "nato_name": "Kilo-class",
+      "service_entry": 2014,
+      "specifications": {
+        "displacement_surfaced_tons": 2350,
+        "displacement_submerged_tons": 3950,
+        "length_m": 73.8,
+        "beam_m": 9.9,
+        "draft_m": 6.2,
+        "crew": 52,
+        "max_speed_submerged_knots": 20,
+        "range_snorkeling_nm": 7500,
+        "endurance_days": 45,
+        "test_depth_m": 300
+      },
+      "propulsion": {
+        "diesel": "2x diesel generators",
+        "motor": "Electric motor",
+        "power_hp": 5500
+      },
+      "armament": {
+        "torpedo_tubes": "6x 533mm",
+        "weapons": 18,
+        "cruise_missiles": "3M14 Kalibr (4 from tubes)",
+        "torpedoes": "TEST-71MKE, 53-65KE",
+        "mines": 24
+      },
+      "sensors": {
+        "sonar": "MGK-400EM",
+        "type": "Integrated digital"
+      },
+      "service_history": {
+        "introduced": 2014,
+        "status": "active",
+        "operators": [
+          {"country": "RU", "quantity": 12, "fleet": "Black Sea, Pacific"},
+          {"country": "VN", "quantity": 6},
+          {"country": "DZ", "quantity": 4},
+          {"country": "CN", "quantity": 12}
+        ]
+      },
+      "combat_use": [
+        {"conflict": "Syria", "year": 2015, "action": "Kalibr strikes"},
+        {"conflict": "Ukraine", "year": 2022, "action": "Kalibr strikes from Black Sea"}
+      ],
+      "unit_cost_usd": 300000000,
+      "notes": "One of quietest diesel subs. 'Black Hole' nickname. Kalibr capability. Combat-proven in Syria and Ukraine."
+    },
+    {
+      "id": "cn-type-039b-yuan",
+      "name": "Type 039B Yuan-class",
+      "type": "ssk",
+      "country_of_origin": "CN",
+      "manufacturer": "Wuchang Shipyard",
+      "nato_name": "Yuan-class",
+      "service_entry": 2010,
+      "specifications": {
+        "displacement_submerged_tons": 3600,
+        "length_m": 77.6,
+        "beam_m": 8.4,
+        "crew": 58,
+        "max_speed_submerged_knots": 20,
+        "endurance_submerged_days": 30
+      },
+      "propulsion": {
+        "aip": "Stirling AIP (Type 039A/B)",
+        "diesel": "MTU diesels"
+      },
+      "armament": {
+        "torpedo_tubes": "6x 533mm",
+        "weapons": 18,
+        "missiles": "YJ-18 AShM capable"
+      },
+      "service_history": {
+        "introduced": 2010,
+        "status": "active",
+        "operators": [
+          {"country": "CN", "quantity": 20}
+        ]
+      },
+      "notes": "PLAN's newest conventional submarine. AIP equipped. Type 039C even more advanced variant observed."
+    },
+    {
+      "id": "au-collins-ssk",
+      "name": "Collins-class",
+      "type": "ssk",
+      "country_of_origin": "AU",
+      "manufacturer": "ASC (Australian Submarine Corporation)",
+      "service_entry": 1996,
+      "specifications": {
+        "displacement_submerged_tons": 3407,
+        "length_m": 77.8,
+        "beam_m": 7.8,
+        "crew": 45,
+        "max_speed_submerged_knots": 20,
+        "range_snorkeling_nm": 11500,
+        "endurance_days": 70
+      },
+      "propulsion": {
+        "diesel": "3x Hedemora/Garden Island diesels",
+        "motor": "Jeumont-Schneider electric"
+      },
+      "armament": {
+        "torpedo_tubes": "6x 533mm",
+        "weapons": 22,
+        "torpedoes": "Mk 48 CBASS",
+        "missiles": "Sub-Harpoon"
+      },
+      "service_history": {
+        "introduced": 1996,
+        "status": "active",
+        "ships": 6
+      },
+      "notes": "Largest non-nuclear subs when built. Initial issues resolved. Being replaced by AUKUS nuclear subs."
+    },
+    {
+      "id": "se-gotland-ssk",
+      "name": "Gotland-class",
+      "type": "ssk",
+      "country_of_origin": "SE",
+      "manufacturer": "Kockums",
+      "service_entry": 1996,
+      "specifications": {
+        "displacement_submerged_tons": 1600,
+        "length_m": 60.4,
+        "beam_m": 6.2,
+        "crew": 25,
+        "max_speed_submerged_knots": 20,
+        "endurance_aip_weeks": 2
+      },
+      "propulsion": {
+        "aip": "Stirling engine (2x V4-275R)",
+        "diesel": "MTU 16V 396"
+      },
+      "armament": {
+        "torpedo_tubes": "4x 533mm + 2x 400mm",
+        "torpedoes": "Tp 62",
+        "mines": 48
+      },
+      "service_history": {
+        "introduced": 1996,
+        "status": "active",
+        "operators": [{"country": "SE", "quantity": 3}]
+      },
+      "notes": "First operational AIP submarine (Stirling). Leased to USN for exercises - 'sank' USS Reagan in exercise."
+    },
+    {
+      "id": "se-a26-blekinge",
+      "name": "A26 Blekinge-class",
+      "type": "ssk",
+      "country_of_origin": "SE",
+      "manufacturer": "Saab Kockums",
+      "service_entry": 2027,
+      "specifications": {
+        "displacement_submerged_tons": 2000,
+        "length_m": 63,
+        "beam_m": 6.4,
+        "crew": 26,
+        "max_speed_submerged_knots": 20,
+        "endurance_aip_days": 18
+      },
+      "propulsion": {
+        "aip": "Stirling Mk4",
+        "diesel": true,
+        "electric": true
+      },
+      "armament": {
+        "torpedo_tubes": "4x 533mm",
+        "payload_bay": "Multi-mission lock-out chamber"
+      },
+      "features": {
+        "ghost_technology": "Extreme stealth",
+        "modular": true,
+        "sof_capable": true
+      },
+      "service_history": {
+        "expected_service": 2027,
+        "ordered": 2,
+        "operators": [
+          {"country": "SE", "quantity": 2, "status": "building"},
+          {"country": "PL", "quantity": 3, "status": "ordered"}
+        ]
+      },
+      "unit_cost_usd": 600000000,
+      "notes": "Next-gen Swedish submarine. Ghost technology stealth. Modular design. Polish export success."
+    },
+    {
+      "id": "jp-taigei-ssk",
+      "name": "Taigei-class",
+      "type": "ssk",
+      "country_of_origin": "JP",
+      "manufacturer": "Mitsubishi Heavy Industries/Kawasaki",
+      "service_entry": 2022,
+      "specifications": {
+        "displacement_submerged_tons": 3000,
+        "length_m": 84,
+        "beam_m": 9.1,
+        "crew": 70,
+        "max_speed_submerged_knots": 20
+      },
+      "propulsion": {
+        "aip": "Lithium-ion batteries",
+        "diesel": "Kawasaki 12V 25/31 diesels"
+      },
+      "armament": {
+        "torpedo_tubes": "6x 533mm",
+        "torpedoes": "Type 89",
+        "missiles": "Sub-Harpoon"
+      },
+      "service_history": {
+        "introduced": 2022,
+        "status": "active",
+        "planned": 7
+      },
+      "notes": "Soryu successor. Lithium-ion batteries instead of Stirling. Higher submerged speeds and endurance."
+    },
+    {
+      "id": "jp-soryu-ssk",
+      "name": "Sōryū-class",
+      "type": "ssk",
+      "country_of_origin": "JP",
+      "manufacturer": "Mitsubishi/Kawasaki",
+      "service_entry": 2009,
+      "specifications": {
+        "displacement_submerged_tons": 4200,
+        "length_m": 84,
+        "beam_m": 9.1,
+        "crew": 65,
+        "max_speed_submerged_knots": 20
+      },
+      "propulsion": {
+        "aip": "Stirling engine (4x Kockums V4-275R)",
+        "diesel": "Kawasaki 12V 25/25S"
+      },
+      "armament": {
+        "torpedo_tubes": "6x 533mm",
+        "torpedoes": "Type 89",
+        "missiles": "UGM-84 Harpoon"
+      },
+      "service_history": {
+        "introduced": 2009,
+        "status": "active",
+        "built": 12
+      },
+      "notes": "Japan's largest post-WWII submarine when built. Stirling AIP. 12 in service."
+    },
+    {
+      "id": "kr-kss-iii-batch2",
+      "name": "KSS-III (Dosan Ahn Changho-class) Batch-II",
+      "type": "ssk",
+      "country_of_origin": "KR",
+      "manufacturer": "DSME/HHI",
+      "service_entry": 2024,
+      "specifications": {
+        "displacement_submerged_tons": 3700,
+        "length_m": 89,
+        "beam_m": 9.6,
+        "crew": 50,
+        "max_speed_submerged_knots": 20
+      },
+      "propulsion": {
+        "aip": "Lithium-ion batteries (Batch-II)",
+        "diesel": true
+      },
+      "armament": {
+        "torpedo_tubes": "6x 533mm",
+        "vls": "6x SLBM tubes",
+        "missiles": "Hyunmoo-4-4 SLBM",
+        "torpedoes": "K-745 Blue Shark"
+      },
+      "service_history": {
+        "introduced": 2024,
+        "status": "active",
+        "planned": 9
+      },
+      "unit_cost_usd": 850000000,
+      "notes": "South Korea's first indigenous SLBM submarine. VLS in sail. First non-nuclear SLBM submarine."
+    },
+    {
+      "id": "in-kalvari-scorpene",
+      "name": "Kalvari-class (Scorpène)",
+      "type": "ssk",
+      "country_of_origin": "IN",
+      "manufacturer": "MDL (license from Naval Group)",
+      "service_entry": 2017,
+      "specifications": {
+        "displacement_submerged_tons": 1775,
+        "length_m": 67.5,
+        "beam_m": 6.2,
+        "crew": 31,
+        "max_speed_submerged_knots": 20
+      },
+      "propulsion": {
+        "diesel": "MTU 12V 396",
+        "motor": "Permanently excited motor",
+        "aip": "DRDO AIP (future)"
+      },
+      "armament": {
+        "torpedo_tubes": "6x 533mm",
+        "weapons": 18,
+        "missiles": "SM39 Exocet"
+      },
+      "service_history": {
+        "introduced": 2017,
+        "status": "active",
+        "built": 6
+      },
+      "notes": "Indian license-built Scorpène. Six completed. Indigenous AIP being integrated."
+    },
+    {
+      "id": "fr-scorpene-ssk",
+      "name": "Scorpène-class",
+      "type": "ssk",
+      "country_of_origin": "FR",
+      "manufacturer": "Naval Group/Navantia",
+      "service_entry": 2005,
+      "specifications": {
+        "displacement_submerged_tons": 1870,
+        "length_m": 66.4,
+        "beam_m": 6.2,
+        "crew": 31,
+        "max_speed_submerged_knots": 20
+      },
+      "propulsion": {
+        "diesel": "MTU 16V 396",
+        "aip": "MESMA (optional)"
+      },
+      "armament": {
+        "torpedo_tubes": "6x 533mm",
+        "missiles": "Exocet SM39"
+      },
+      "service_history": {
+        "introduced": 2005,
+        "status": "active",
+        "operators": [
+          {"country": "CL", "quantity": 2},
+          {"country": "MY", "quantity": 2},
+          {"country": "BR", "quantity": 4},
+          {"country": "IN", "quantity": 6}
+        ]
+      },
+      "notes": "Franco-Spanish design. Major export success. Modular design. MESMA AIP available."
+    },
+    {
+      "id": "tr-type-214tn-reis",
+      "name": "Reis-class (Type 214TN)",
+      "type": "ssk",
+      "country_of_origin": "TR",
+      "manufacturer": "Gölcük Naval Shipyard",
+      "service_entry": 2022,
+      "specifications": {
+        "displacement_submerged_tons": 1860,
+        "length_m": 67,
+        "crew": 27,
+        "max_speed_submerged_knots": 20,
+        "endurance_aip_weeks": 2
+      },
+      "propulsion": {
+        "aip": "HDW fuel cells"
+      },
+      "armament": {
+        "torpedo_tubes": "8x 533mm",
+        "missiles": "Sub-Harpoon, AKYA (future)"
+      },
+      "service_history": {
+        "introduced": 2022,
+        "status": "active",
+        "planned": 6
+      },
+      "notes": "Turkish-built Type 214. Indigenous AKYA torpedo in development."
+    }
+  ]
+}

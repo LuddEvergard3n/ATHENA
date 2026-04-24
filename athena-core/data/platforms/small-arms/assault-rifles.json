@@ -1,0 +1,470 @@
+{
+  "category": "small-arms",
+  "subcategory": "assault-rifles",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": ["Jane's Infantry Weapons", "Small Arms Survey", "Official manufacturer data"]
+  },
+  "platforms": [
+    {
+      "id": "us-m4a1",
+      "name": "M4A1 Carbine",
+      "type": "assault-rifle",
+      "country": "US",
+      "year": 1994,
+      "manufacturer": "Colt/FN",
+      "specifications": {
+        "caliber": "5.56x45mm NATO",
+        "action": "Gas-operated, rotating bolt",
+        "rate_of_fire_rpm": 950,
+        "muzzle_velocity_mps": 910,
+        "effective_range_m": 500,
+        "weight_kg": 3.0,
+        "length_mm": 838,
+        "barrel_length_mm": 368,
+        "magazine_capacity": 30
+      },
+      "service_history": {
+        "operators": [
+          {"country": "US", "quantity": 500000, "status": "active"},
+          {"country": "AU", "quantity": 30000, "status": "active"},
+          {"country": "PH", "quantity": 50000, "status": "active"}
+        ]
+      },
+      "notes": "Standard US military carbine"
+    },
+    {
+      "id": "us-m16a4",
+      "name": "M16A4",
+      "type": "assault-rifle",
+      "country": "US",
+      "year": 1998,
+      "manufacturer": "Colt/FN",
+      "specifications": {
+        "caliber": "5.56x45mm NATO",
+        "rate_of_fire_rpm": 950,
+        "muzzle_velocity_mps": 948,
+        "effective_range_m": 550,
+        "weight_kg": 3.4,
+        "barrel_length_mm": 508,
+        "magazine_capacity": 30
+      },
+      "notes": "Full-length M16 variant, USMC primary until 2015"
+    },
+    {
+      "id": "us-hk416",
+      "name": "HK416A5",
+      "type": "assault-rifle",
+      "country": "US",
+      "year": 2004,
+      "manufacturer": "Heckler & Koch",
+      "specifications": {
+        "caliber": "5.56x45mm NATO",
+        "action": "Short-stroke gas piston",
+        "rate_of_fire_rpm": 900,
+        "muzzle_velocity_mps": 920,
+        "effective_range_m": 600,
+        "weight_kg": 3.5,
+        "barrel_length_mm": 419,
+        "magazine_capacity": 30
+      },
+      "service_history": {
+        "operators": [
+          {"country": "US", "quantity": 50000, "status": "active", "notes": "DEVGRU, Delta, Marines (M27 IAR)"},
+          {"country": "DE", "quantity": 120000, "status": "active", "notes": "G38"},
+          {"country": "FR", "quantity": 117000, "status": "active", "notes": "HK416F"},
+          {"country": "NO", "quantity": 50000, "status": "active"}
+        ]
+      },
+      "notes": "Premium AR-15 derivative, highly reliable"
+    },
+    {
+      "id": "us-sig-mcx",
+      "name": "SIG MCX SPEAR (XM7)",
+      "type": "assault-rifle",
+      "country": "US",
+      "year": 2022,
+      "manufacturer": "SIG Sauer",
+      "specifications": {
+        "caliber": "6.8x51mm (.277 Fury)",
+        "action": "Short-stroke gas piston",
+        "rate_of_fire_rpm": 750,
+        "muzzle_velocity_mps": 910,
+        "effective_range_m": 800,
+        "weight_kg": 4.0,
+        "barrel_length_mm": 330,
+        "magazine_capacity": 20
+      },
+      "service_history": {
+        "operators": [{"country": "US", "quantity": 10000, "status": "production", "notes": "NGSW program winner"}]
+      },
+      "notes": "Next Generation Squad Weapon, replaces M4"
+    },
+    {
+      "id": "ru-ak12",
+      "name": "AK-12",
+      "type": "assault-rifle",
+      "country": "RU",
+      "year": 2018,
+      "manufacturer": "Kalashnikov Concern",
+      "specifications": {
+        "caliber": "5.45x39mm",
+        "action": "Gas-operated, rotating bolt",
+        "rate_of_fire_rpm": 700,
+        "muzzle_velocity_mps": 900,
+        "effective_range_m": 500,
+        "weight_kg": 3.5,
+        "barrel_length_mm": 415,
+        "magazine_capacity": 30
+      },
+      "service_history": {
+        "operators": [{"country": "RU", "quantity": 150000, "status": "active", "notes": "Ratnik kit"}]
+      },
+      "notes": "Current Russian service rifle"
+    },
+    {
+      "id": "ru-ak74m",
+      "name": "AK-74M",
+      "type": "assault-rifle",
+      "country": "RU",
+      "year": 1991,
+      "manufacturer": "Kalashnikov Concern",
+      "specifications": {
+        "caliber": "5.45x39mm",
+        "rate_of_fire_rpm": 650,
+        "muzzle_velocity_mps": 900,
+        "effective_range_m": 500,
+        "weight_kg": 3.4,
+        "magazine_capacity": 30
+      },
+      "service_history": {
+        "operators": [
+          {"country": "RU", "quantity": 2000000, "status": "active"},
+          {"country": "UA", "quantity": 500000, "status": "active"}
+        ]
+      },
+      "notes": "Main Russian rifle until AK-12 adoption"
+    },
+    {
+      "id": "ru-ak103",
+      "name": "AK-103",
+      "type": "assault-rifle",
+      "country": "RU",
+      "year": 1994,
+      "manufacturer": "Kalashnikov Concern",
+      "specifications": {
+        "caliber": "7.62x39mm",
+        "rate_of_fire_rpm": 600,
+        "muzzle_velocity_mps": 715,
+        "effective_range_m": 400,
+        "weight_kg": 3.6,
+        "magazine_capacity": 30
+      },
+      "service_history": {
+        "operators": [
+          {"country": "RU", "quantity": 100000, "status": "active"},
+          {"country": "VE", "quantity": 100000, "status": "active"},
+          {"country": "IN", "quantity": 700000, "status": "ordered", "notes": "Local production"}
+        ]
+      },
+      "notes": "7.62mm export variant, popular worldwide"
+    },
+    {
+      "id": "de-g36",
+      "name": "HK G36",
+      "type": "assault-rifle",
+      "country": "DE",
+      "year": 1997,
+      "manufacturer": "Heckler & Koch",
+      "specifications": {
+        "caliber": "5.56x45mm NATO",
+        "action": "Short-stroke gas piston",
+        "rate_of_fire_rpm": 750,
+        "muzzle_velocity_mps": 920,
+        "effective_range_m": 500,
+        "weight_kg": 3.6,
+        "barrel_length_mm": 480,
+        "magazine_capacity": 30
+      },
+      "service_history": {
+        "operators": [
+          {"country": "DE", "quantity": 180000, "status": "retiring"},
+          {"country": "ES", "quantity": 115000, "status": "active"},
+          {"country": "LT", "quantity": 20000, "status": "active"}
+        ]
+      },
+      "notes": "Being replaced by HK416 in Germany"
+    },
+    {
+      "id": "be-fn-scar",
+      "name": "FN SCAR-L/H",
+      "type": "assault-rifle",
+      "country": "BE",
+      "year": 2009,
+      "manufacturer": "FN Herstal",
+      "specifications": {
+        "caliber": "5.56x45mm (L) / 7.62x51mm (H)",
+        "action": "Short-stroke gas piston",
+        "rate_of_fire_rpm": 625,
+        "muzzle_velocity_mps": 870,
+        "effective_range_m": 600,
+        "weight_kg": 3.5,
+        "magazine_capacity": 30
+      },
+      "service_history": {
+        "operators": [
+          {"country": "US", "quantity": 10000, "status": "active", "notes": "SOCOM Mk 16/17"},
+          {"country": "BE", "quantity": 50000, "status": "active"},
+          {"country": "PL", "quantity": 40000, "status": "ordered"}
+        ]
+      },
+      "notes": "Modular special operations rifle"
+    },
+    {
+      "id": "uk-sa80-a3",
+      "name": "L85A3 (SA80 A3)",
+      "type": "assault-rifle",
+      "country": "GB",
+      "year": 2018,
+      "manufacturer": "H&K/RSAF Enfield",
+      "specifications": {
+        "caliber": "5.56x45mm NATO",
+        "action": "Gas-operated, rotating bolt",
+        "rate_of_fire_rpm": 650,
+        "muzzle_velocity_mps": 940,
+        "effective_range_m": 500,
+        "weight_kg": 4.0,
+        "barrel_length_mm": 518,
+        "magazine_capacity": 30
+      },
+      "service_history": {
+        "operators": [{"country": "GB", "quantity": 300000, "status": "active"}]
+      },
+      "notes": "British bullpup, upgraded by H&K"
+    },
+    {
+      "id": "fr-famas-f1g2",
+      "name": "FAMAS F1/G2",
+      "type": "assault-rifle",
+      "country": "FR",
+      "year": 1978,
+      "manufacturer": "GIAT/Nexter",
+      "specifications": {
+        "caliber": "5.56x45mm NATO",
+        "action": "Delayed blowback",
+        "rate_of_fire_rpm": 1100,
+        "muzzle_velocity_mps": 960,
+        "effective_range_m": 450,
+        "weight_kg": 3.6,
+        "magazine_capacity": 25
+      },
+      "service_history": {
+        "operators": [{"country": "FR", "quantity": 400000, "status": "retiring", "notes": "Replaced by HK416F"}]
+      },
+      "notes": "French bullpup, high rate of fire"
+    },
+    {
+      "id": "il-tavor-tar21",
+      "name": "IWI Tavor TAR-21",
+      "type": "assault-rifle",
+      "country": "IL",
+      "year": 2001,
+      "manufacturer": "Israel Weapon Industries",
+      "specifications": {
+        "caliber": "5.56x45mm NATO",
+        "action": "Gas-operated, rotating bolt",
+        "rate_of_fire_rpm": 900,
+        "muzzle_velocity_mps": 910,
+        "effective_range_m": 500,
+        "weight_kg": 3.3,
+        "barrel_length_mm": 460,
+        "magazine_capacity": 30
+      },
+      "service_history": {
+        "operators": [
+          {"country": "IL", "quantity": 200000, "status": "active"},
+          {"country": "IN", "quantity": 30000, "status": "active"},
+          {"country": "UA", "quantity": 5000, "status": "active"}
+        ]
+      },
+      "notes": "Israeli bullpup, compact and reliable"
+    },
+    {
+      "id": "il-tavor-x95",
+      "name": "IWI Tavor X95 (MTAR-21)",
+      "type": "assault-rifle",
+      "country": "IL",
+      "year": 2009,
+      "manufacturer": "Israel Weapon Industries",
+      "specifications": {
+        "caliber": "5.56x45mm NATO",
+        "rate_of_fire_rpm": 800,
+        "muzzle_velocity_mps": 890,
+        "effective_range_m": 500,
+        "weight_kg": 3.2,
+        "barrel_length_mm": 419,
+        "magazine_capacity": 30
+      },
+      "service_history": {
+        "operators": [
+          {"country": "IL", "quantity": 50000, "status": "active", "notes": "IDF primary"}
+        ]
+      },
+      "notes": "Improved micro-Tavor"
+    },
+    {
+      "id": "cn-qbz95-1",
+      "name": "QBZ-95-1",
+      "type": "assault-rifle",
+      "country": "CN",
+      "year": 2010,
+      "manufacturer": "Norinco",
+      "specifications": {
+        "caliber": "5.8x42mm DBP10",
+        "action": "Short-stroke gas piston",
+        "rate_of_fire_rpm": 650,
+        "muzzle_velocity_mps": 930,
+        "effective_range_m": 400,
+        "weight_kg": 3.25,
+        "barrel_length_mm": 463,
+        "magazine_capacity": 30
+      },
+      "service_history": {
+        "operators": [{"country": "CN", "quantity": 3000000, "status": "active"}]
+      },
+      "notes": "PLA standard bullpup"
+    },
+    {
+      "id": "cn-qbz191",
+      "name": "QBZ-191",
+      "type": "assault-rifle",
+      "country": "CN",
+      "year": 2019,
+      "manufacturer": "Norinco",
+      "specifications": {
+        "caliber": "5.8x42mm DBP191",
+        "action": "Short-stroke gas piston",
+        "rate_of_fire_rpm": 750,
+        "muzzle_velocity_mps": 930,
+        "effective_range_m": 500,
+        "weight_kg": 3.2,
+        "barrel_length_mm": 368,
+        "magazine_capacity": 30
+      },
+      "service_history": {
+        "operators": [{"country": "CN", "quantity": 500000, "status": "production"}]
+      },
+      "notes": "New PLA standard rifle, conventional layout"
+    },
+    {
+      "id": "at-aug-a3",
+      "name": "Steyr AUG A3",
+      "type": "assault-rifle",
+      "country": "AT",
+      "year": 2005,
+      "manufacturer": "Steyr Mannlicher",
+      "specifications": {
+        "caliber": "5.56x45mm NATO",
+        "action": "Gas-operated, rotating bolt",
+        "rate_of_fire_rpm": 700,
+        "muzzle_velocity_mps": 970,
+        "effective_range_m": 500,
+        "weight_kg": 3.6,
+        "barrel_length_mm": 508,
+        "magazine_capacity": 30
+      },
+      "service_history": {
+        "operators": [
+          {"country": "AT", "quantity": 100000, "status": "active"},
+          {"country": "AU", "quantity": 65000, "status": "active", "notes": "EF88"},
+          {"country": "IE", "quantity": 7000, "status": "active"}
+        ]
+      },
+      "notes": "Pioneer bullpup design"
+    },
+    {
+      "id": "kr-k2",
+      "name": "Daewoo K2",
+      "type": "assault-rifle",
+      "country": "KR",
+      "year": 1984,
+      "manufacturer": "S&T Motiv",
+      "specifications": {
+        "caliber": "5.56x45mm NATO",
+        "rate_of_fire_rpm": 750,
+        "muzzle_velocity_mps": 920,
+        "effective_range_m": 460,
+        "weight_kg": 3.3,
+        "magazine_capacity": 30
+      },
+      "service_history": {
+        "operators": [{"country": "KR", "quantity": 1000000, "status": "active"}]
+      },
+      "notes": "ROK standard service rifle"
+    },
+    {
+      "id": "in-insas",
+      "name": "INSAS 1B1",
+      "type": "assault-rifle",
+      "country": "IN",
+      "year": 1998,
+      "manufacturer": "OFB",
+      "specifications": {
+        "caliber": "5.56x45mm NATO",
+        "rate_of_fire_rpm": 650,
+        "effective_range_m": 400,
+        "weight_kg": 3.2,
+        "magazine_capacity": 20
+      },
+      "service_history": {
+        "operators": [{"country": "IN", "quantity": 1000000, "status": "active"}]
+      },
+      "notes": "Indian standard rifle, being replaced"
+    },
+    {
+      "id": "cz-bren-2",
+      "name": "CZ BREN 2",
+      "type": "assault-rifle",
+      "country": "CZ",
+      "year": 2015,
+      "manufacturer": "Česká zbrojovka",
+      "specifications": {
+        "caliber": "5.56x45mm / 7.62x39mm",
+        "action": "Gas-operated, rotating bolt",
+        "rate_of_fire_rpm": 760,
+        "muzzle_velocity_mps": 886,
+        "effective_range_m": 500,
+        "weight_kg": 3.1,
+        "magazine_capacity": 30
+      },
+      "service_history": {
+        "operators": [
+          {"country": "CZ", "quantity": 30000, "status": "active"},
+          {"country": "FR", "quantity": 50000, "status": "ordered"},
+          {"country": "UA", "quantity": 10000, "status": "active"}
+        ]
+      },
+      "notes": "Modular modern rifle"
+    },
+    {
+      "id": "sg-sar21",
+      "name": "SAR 21",
+      "type": "assault-rifle",
+      "country": "SG",
+      "year": 1999,
+      "manufacturer": "ST Kinetics",
+      "specifications": {
+        "caliber": "5.56x45mm NATO",
+        "rate_of_fire_rpm": 700,
+        "effective_range_m": 460,
+        "weight_kg": 3.82,
+        "magazine_capacity": 30
+      },
+      "service_history": {
+        "operators": [{"country": "SG", "quantity": 100000, "status": "active"}]
+      },
+      "notes": "Singapore bullpup"
+    }
+  ]
+}

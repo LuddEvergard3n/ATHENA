@@ -1,0 +1,83 @@
+{
+  "actors": [
+    {
+      "health": 1,
+      "id": "blue-1",
+      "morale": 0.90000000000000002,
+      "name": "New Blue Unit",
+      "position": {
+        "alt": 0,
+        "lat": 55.286973534538078,
+        "lon": 20.585541600384769
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "light_infantry"
+    },
+    {
+      "health": 1,
+      "id": "blue-2",
+      "morale": 0.90000000000000002,
+      "name": "New Blue Unit",
+      "position": {
+        "alt": 0,
+        "lat": 55.104990311042336,
+        "lon": 20.682760289743488
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "mechanized"
+    },
+    {
+      "health": 1,
+      "id": "red-3",
+      "morale": 0.90000000000000002,
+      "name": "New Red Unit",
+      "position": {
+        "alt": 0,
+        "lat": 56.294880679745738,
+        "lon": 22.061729747352604
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "heavy_infantry"
+    },
+    {
+      "health": 1,
+      "id": "red-4",
+      "morale": 0.90000000000000002,
+      "name": "New Red Unit",
+      "position": {
+        "alt": 0,
+        "lat": 56.165392611771168,
+        "lon": 22.11289745625
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "light_infantry"
+    }
+  ],
+  "environment": {
+    "terrain": {
+      "base_type": "flat",
+      "forest_density": 0.05000000074505806,
+      "rivers": false,
+      "roughness": 0.20000000298023224,
+      "urban_density": 0.5
+    }
+  },
+  "id": "custom-scenario",
+  "name": "New Scenario",
+  "scale": "meso",
+  "spatial_bounds": {
+    "max_lat": 56.794880679745738,
+    "max_lon": 22.61289745625,
+    "min_lat": 54.604990311042336,
+    "min_lon": 20.085541600384769
+  },
+  "temporal": {
+    "max_ticks": 72,
+    "tick_duration_seconds": 3600
+  },
+  "version": "1.0.0"
+}

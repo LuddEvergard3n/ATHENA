@@ -1,0 +1,515 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-23",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "USAF",
+      "General Atomics"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-mq9",
+      "name": "MQ-9A Reaper",
+      "nato_name": null,
+      "type": "ucav",
+      "country_of_origin": "US",
+      "manufacturer": "General Atomics Aeronautical Systems",
+      "service_history": {
+        "introduced": 2007,
+        "first_flight": 2001,
+        "retired": null,
+        "production_count": 400,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 320,
+            "status": "active",
+            "notes": "USAF, DHS, NASA"
+          },
+          {
+            "country": "UK",
+            "quantity": 26,
+            "status": "active",
+            "notes": "Protector variant"
+          },
+          {
+            "country": "FR",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "NL",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "ES",
+            "quantity": 4,
+            "status": "ordered"
+          },
+          {
+            "country": "AE",
+            "quantity": 18,
+            "status": "ordered"
+          },
+          {
+            "country": "IN",
+            "quantity": 31,
+            "status": "ordered"
+          },
+          {
+            "country": "AU",
+            "quantity": 12,
+            "status": "ordered"
+          }
+        ],
+        "notes": "World's most successful UCAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "ground_crew": 2,
+        "length_m": 11.0,
+        "wingspan_m": 20.1,
+        "height_m": 3.8,
+        "empty_weight_kg": 2223,
+        "max_takeoff_weight_kg": 4760,
+        "internal_fuel_kg": 1361
+      },
+      "performance": {
+        "max_speed_kmh": 480,
+        "cruise_speed_kmh": 313,
+        "combat_radius_km": 1850,
+        "ferry_range_km": 5926,
+        "service_ceiling_m": 15240,
+        "endurance_hours": 27,
+        "max_altitude_armed_m": 7620
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Honeywell TPE331-10",
+        "power_shp": 900
+      },
+      "avionics": {
+        "radar": "AN/APY-8 Lynx SAR/GMTI",
+        "radar_range_km": 80,
+        "sensors": "MTS-B EO/IR turret",
+        "laser_designator": true,
+        "datalink": "Ku-band SATCOM, C-band LOS",
+        "notes": "Multi-spectral targeting system"
+      },
+      "armament": {
+        "hardpoints": 7,
+        "max_payload_kg": 1746,
+        "weapons": [
+          {
+            "type": "missile",
+            "designation": "AGM-114 Hellfire",
+            "quantity": 4
+          },
+          {
+            "type": "bomb",
+            "designation": "GBU-12 Paveway II",
+            "quantity": 2
+          },
+          {
+            "type": "bomb",
+            "designation": "GBU-38 JDAM",
+            "quantity": 2
+          },
+          {
+            "type": "bomb",
+            "designation": "GBU-49 Paveway II",
+            "quantity": 2
+          },
+          {
+            "type": "missile",
+            "designation": "AIM-9X Sidewinder",
+            "quantity": 2,
+            "notes": "Air-to-air capable"
+          }
+        ]
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Afghanistan",
+            "year": 2007,
+            "notes": "Combat debut"
+          },
+          {
+            "conflict": "Iraq",
+            "year": 2008
+          },
+          {
+            "conflict": "Yemen",
+            "year": 2009
+          },
+          {
+            "conflict": "Pakistan",
+            "year": 2009
+          },
+          {
+            "conflict": "Libya",
+            "year": 2011
+          },
+          {
+            "conflict": "Syria/ISIS",
+            "year": 2014
+          },
+          {
+            "conflict": "Ukraine",
+            "year": 2024,
+            "notes": "ISR support"
+          }
+        ],
+        "notes": "Over 2 million combat hours. Primary US strike UAV."
+      },
+      "variants": [
+        {
+          "designation": "MQ-9A Block 1",
+          "notes": "Original"
+        },
+        {
+          "designation": "MQ-9A Block 5",
+          "notes": "Current USAF"
+        },
+        {
+          "designation": "MQ-9B SkyGuardian",
+          "notes": "Improved endurance, auto land"
+        },
+        {
+          "designation": "MQ-9B SeaGuardian",
+          "notes": "Maritime patrol variant"
+        }
+      ],
+      "unit_cost_usd": 32000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "General Atomics",
+        "USAF",
+        "Jane's"
+      ],
+      "notes": "'Hunter-Killer'. 27-hour endurance. Primary US strike drone. Global deployment. Major export (UK, France, etc). Over 400 built.",
+      "year": 2007
+    },
+    {
+      "id": "us-rq4",
+      "name": "RQ-4B Global Hawk",
+      "nato_name": null,
+      "type": "reconnaissance",
+      "country_of_origin": "US",
+      "manufacturer": "Northrop Grumman",
+      "service_history": {
+        "introduced": 2001,
+        "first_flight": 1998,
+        "retired": null,
+        "production_count": 68,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 33,
+            "status": "active",
+            "notes": "USAF, Navy"
+          },
+          {
+            "country": "NATO",
+            "quantity": 5,
+            "status": "active",
+            "notes": "AGS program"
+          },
+          {
+            "country": "JP",
+            "quantity": 3,
+            "status": "active"
+          },
+          {
+            "country": "KR",
+            "quantity": 4,
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 7,
+            "variants": [
+              "MQ-4C Triton"
+            ],
+            "status": "ordered"
+          }
+        ],
+        "notes": "Largest UAV in Western service"
+      },
+      "specifications": {
+        "crew": 0,
+        "ground_crew": 3,
+        "length_m": 14.5,
+        "wingspan_m": 39.9,
+        "height_m": 4.7,
+        "empty_weight_kg": 6781,
+        "max_takeoff_weight_kg": 14628,
+        "internal_fuel_kg": 7847
+      },
+      "performance": {
+        "max_speed_kmh": 629,
+        "cruise_speed_kmh": 575,
+        "ferry_range_km": 22780,
+        "service_ceiling_m": 18288,
+        "endurance_hours": 34,
+        "notes": "Can image 100,000 sq km in 24 hours"
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Rolls-Royce F137-RR-100",
+        "thrust_dry_kn": 34
+      },
+      "avionics": {
+        "radar": "Northrop Grumman AN/ZPY-2 MP-RTIP",
+        "radar_range_km": 200,
+        "sensors": "EO/IR, SIGINT, SAR/MTI",
+        "datalink": "Ku/Ka-band SATCOM, CDL"
+      },
+      "armament": {
+        "weapons": "None (reconnaissance only)"
+      },
+      "variants": [
+        {
+          "designation": "RQ-4A",
+          "notes": "Block 10, retired"
+        },
+        {
+          "designation": "RQ-4B",
+          "notes": "Block 30/40, current"
+        },
+        {
+          "designation": "MQ-4C Triton",
+          "notes": "Navy maritime variant"
+        },
+        {
+          "designation": "EQ-4B",
+          "notes": "Communications relay"
+        }
+      ],
+      "unit_cost_usd": 131000000,
+      "cost_year": 2013,
+      "confidence": "high",
+      "sources": [
+        "Northrop Grumman",
+        "USAF",
+        "Jane's"
+      ],
+      "notes": "High-altitude, long-endurance (HALE) ISR. 34+ hour endurance. Can survey 100,000 km\u00b2 per day. Being replaced by RQ-180 (stealth).",
+      "year": 2001
+    },
+    {
+      "id": "us-mq1c",
+      "name": "MQ-1C Gray Eagle",
+      "nato_name": null,
+      "type": "ucav",
+      "country_of_origin": "US",
+      "manufacturer": "General Atomics",
+      "service_history": {
+        "introduced": 2009,
+        "first_flight": 2004,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 190,
+            "status": "active",
+            "notes": "US Army only"
+          }
+        ],
+        "notes": "US Army's primary UAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 8.0,
+        "wingspan_m": 17.0,
+        "height_m": 2.1,
+        "empty_weight_kg": 1633,
+        "max_takeoff_weight_kg": 3600
+      },
+      "performance": {
+        "max_speed_kmh": 280,
+        "cruise_speed_kmh": 222,
+        "combat_radius_km": 370,
+        "endurance_hours": 25,
+        "service_ceiling_m": 8839
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Thielert Centurion 1.7",
+        "power_hp": 165
+      },
+      "avionics": {
+        "sensors": "TCDL datalink, EO/IR",
+        "laser_designator": true,
+        "mum_t": "Manned-Unmanned Teaming with AH-64E"
+      },
+      "armament": {
+        "hardpoints": 4,
+        "max_payload_kg": 488,
+        "weapons": [
+          {
+            "type": "missile",
+            "designation": "AGM-114 Hellfire",
+            "quantity": 4
+          },
+          {
+            "type": "bomb",
+            "designation": "GBU-44/B Viper Strike",
+            "quantity": 8
+          }
+        ]
+      },
+      "unit_cost_usd": 21000000,
+      "cost_year": 2017,
+      "confidence": "high",
+      "sources": [
+        "General Atomics",
+        "US Army"
+      ],
+      "notes": "US Army version of Predator. Integrates with AH-64E Apache (MUM-T). Operates at division level. 190+ in service.",
+      "year": 2009
+    },
+    {
+      "id": "us-mq25",
+      "name": "MQ-25A Stingray",
+      "nato_name": null,
+      "type": "tanker_uav",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 2024,
+        "first_flight": 2019,
+        "retired": null,
+        "production_count": 7,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 7,
+            "status": "testing",
+            "notes": "USN, 76 planned"
+          }
+        ],
+        "notes": "First unmanned aerial tanker"
+      },
+      "specifications": {
+        "crew": 0,
+        "length_m": 15.5,
+        "wingspan_m": 22.9,
+        "max_takeoff_weight_kg": 20185,
+        "fuel_offload_kg": 6800
+      },
+      "performance": {
+        "combat_radius_km": 930,
+        "notes": "Carrier-based operations"
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Rolls-Royce AE 3007N",
+        "thrust_dry_kn": 44.5
+      },
+      "capabilities": {
+        "primary_role": "Aerial refueling",
+        "secondary_role": "ISR",
+        "refueling_system": "Buddy store/drogue"
+      },
+      "stealth": {
+        "design_features": [
+          "Low-observable design",
+          "Internal fuel"
+        ],
+        "notes": "Reduced RCS for survivability"
+      },
+      "unit_cost_usd": 120000000,
+      "cost_year": 2024,
+      "confidence": "medium",
+      "sources": [
+        "Boeing",
+        "USN",
+        "Aviation Week"
+      ],
+      "notes": "World's first carrier-based unmanned tanker. Extends F/A-18 and F-35C range. 76 planned. IOC 2024. Game-changer for carrier aviation.",
+      "year": 2024
+    },
+    {
+      "id": "us-rq170",
+      "name": "RQ-170 Sentinel",
+      "nato_name": null,
+      "type": "reconnaissance",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "service_history": {
+        "introduced": 2007,
+        "first_flight": 2006,
+        "retired": null,
+        "production_count": 30,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 30,
+            "status": "active",
+            "notes": "CIA, USAF"
+          }
+        ],
+        "notes": "Stealth reconnaissance UAV"
+      },
+      "specifications": {
+        "crew": 0,
+        "wingspan_m": 20,
+        "notes": "Highly classified"
+      },
+      "performance": {
+        "service_ceiling_m": 15000,
+        "notes": "Specifications largely classified"
+      },
+      "stealth": {
+        "design_features": [
+          "Flying wing",
+          "Composite structure",
+          "Buried engine"
+        ],
+        "notes": "Stealthy design confirmed"
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Afghanistan",
+            "year": 2007,
+            "notes": "First observed"
+          },
+          {
+            "conflict": "Iran",
+            "year": 2011,
+            "notes": "One captured after malfunction"
+          },
+          {
+            "conflict": "Bin Laden raid",
+            "year": 2011,
+            "notes": "Provided surveillance"
+          }
+        ]
+      },
+      "unit_cost_usd": 6000000,
+      "cost_year": 2009,
+      "confidence": "low",
+      "sources": [
+        "Aviation Week",
+        "DoD"
+      ],
+      "notes": "'Beast of Kandahar'. Stealth ISR drone. Iran captured one (2011). Used for bin Laden raid ISR. Highly classified.",
+      "year": 2007
+    }
+  ]
+}

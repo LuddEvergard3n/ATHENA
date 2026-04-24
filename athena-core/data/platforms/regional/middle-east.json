@@ -1,0 +1,234 @@
+{
+  "category": "regional",
+  "subcategory": "middle-east",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Defence"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "ir-saegheh",
+      "name": "HESA Saeqeh (Thunderbolt)",
+      "type": "fighter",
+      "country": "IR",
+      "year": 2007,
+      "manufacturer": "HESA",
+      "service_history": {
+        "operators": [
+          {
+            "country": "IR",
+            "quantity": 24,
+            "status": "active"
+          }
+        ]
+      },
+      "notes": "Twin-tail F-5 derivative"
+    },
+    {
+      "id": "ir-qaher313",
+      "name": "Qaher F-313",
+      "type": "stealth-fighter",
+      "country": "IR",
+      "year": 2024,
+      "manufacturer": "IAIO",
+      "service_history": {
+        "operators": [
+          {
+            "country": "IR",
+            "quantity": 2,
+            "status": "development"
+          }
+        ]
+      },
+      "notes": "Iranian stealth aircraft program - limited capability"
+    },
+    {
+      "id": "ir-fateh",
+      "name": "Fateh-class submarine",
+      "type": "submarine-ssk",
+      "country": "IR",
+      "year": 2019,
+      "manufacturer": "MODAFL",
+      "specifications": {
+        "displacement_tons": 593,
+        "length_m": 48
+      },
+      "service_history": {
+        "operators": [
+          {
+            "country": "IR",
+            "quantity": 1,
+            "status": "active"
+          }
+        ]
+      },
+      "notes": "Indigenous Iranian submarine"
+    },
+    {
+      "id": "ir-zolfaghar",
+      "name": "Zolfaghar tactical ballistic missile",
+      "type": "srbm",
+      "country": "IR",
+      "year": 2016,
+      "manufacturer": "AIO",
+      "specifications": {
+        "range_km": 700,
+        "warhead_kg": 579
+      },
+      "notes": "Iranian solid-fuel SRBM"
+    },
+    {
+      "id": "ir-bavar373",
+      "name": "Bavar-373",
+      "type": "sam",
+      "country": "IR",
+      "year": 2019,
+      "manufacturer": "Iranian MoD",
+      "specifications": {
+        "range_km": 200,
+        "altitude_km": 27
+      },
+      "service_history": {
+        "operators": [
+          {
+            "country": "IR",
+            "quantity": 4,
+            "status": "active"
+          }
+        ]
+      },
+      "notes": "Iranian S-300 equivalent"
+    },
+    {
+      "id": "ir-toofan",
+      "name": "Toofan (TOW copy)",
+      "type": "atgm",
+      "country": "IR",
+      "year": 1988,
+      "manufacturer": "DIO",
+      "specifications": {
+        "range_m": 3850
+      },
+      "notes": "Iranian TOW reverse-engineering"
+    },
+    {
+      "id": "ae-baynunah",
+      "name": "Baynunah-class corvette",
+      "type": "corvette",
+      "country": "AE",
+      "year": 2011,
+      "manufacturer": "CMN/ADSB",
+      "specifications": {
+        "displacement_tons": 915,
+        "length_m": 71.3
+      },
+      "armament": {
+        "ssm": "Exocet MM40 Block 3",
+        "sam": "RAM"
+      },
+      "service_history": {
+        "operators": [
+          {
+            "country": "AE",
+            "quantity": 6,
+            "status": "active"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ae-edge-hunter2",
+      "name": "EDGE Hunter 2",
+      "type": "ucav",
+      "country": "AE",
+      "year": 2023,
+      "manufacturer": "EDGE Group",
+      "specifications": {
+        "max_speed_kmh": 180,
+        "endurance_hours": 8
+      },
+      "notes": "UAE indigenous MALE UAV"
+    },
+    {
+      "id": "sa-hawksaw",
+      "name": "SAMI Hawksaw UAV",
+      "type": "ucav",
+      "country": "SA",
+      "year": 2024,
+      "manufacturer": "SAMI",
+      "notes": "Saudi indigenous armed UAV development"
+    },
+    {
+      "id": "eg-gowind2500",
+      "name": "Gowind 2500 (Egyptian)",
+      "type": "corvette",
+      "country": "EG",
+      "year": 2017,
+      "manufacturer": "Naval Group/ASW",
+      "specifications": {
+        "displacement_tons": 2600
+      },
+      "service_history": {
+        "operators": [
+          {
+            "country": "EG",
+            "quantity": 4,
+            "status": "active"
+          }
+        ]
+      },
+      "notes": "Egyptian-built Gowind corvettes"
+    },
+    {
+      "id": "eg-meko200",
+      "name": "MEKO A-200EN frigate",
+      "type": "frigate",
+      "country": "EG",
+      "year": 2020,
+      "manufacturer": "TKMS",
+      "specifications": {
+        "displacement_tons": 3700
+      },
+      "service_history": {
+        "operators": [
+          {
+            "country": "EG",
+            "quantity": 4,
+            "status": "building"
+          }
+        ]
+      },
+      "notes": "German frigates for Egyptian Navy"
+    },
+    {
+      "id": "jo-jlvm",
+      "name": "JLVM (Jordan Light Vehicle Manufacturing)",
+      "type": "armored-vehicle",
+      "country": "JO",
+      "year": 2015,
+      "manufacturer": "KADDB",
+      "notes": "Jordanian armored vehicle family"
+    },
+    {
+      "id": "qa-nh90qtr",
+      "name": "NH90 Qatar",
+      "type": "helicopter",
+      "country": "QA",
+      "year": 2022,
+      "manufacturer": "NHI",
+      "service_history": {
+        "operators": [
+          {
+            "country": "QA",
+            "quantity": 28,
+            "status": "active"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "actors": [
+    {
+      "health": 1,
+      "id": "blue-1",
+      "morale": 0.90000000000000002,
+      "name": "New Blue Unit",
+      "position": {
+        "alt": 0,
+        "lat": 55.123820751905441,
+        "lon": 20.47198274731636
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "unit"
+    },
+    {
+      "health": 1,
+      "id": "blue-2",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 54.908608496189117,
+        "lon": 20.689655184745789
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "unit"
+    },
+    {
+      "health": 1,
+      "id": "red-3",
+      "morale": 0.90000000000000002,
+      "name": "New Red Unit",
+      "position": {
+        "alt": 0,
+        "lat": 55.294811353087425,
+        "lon": 20.86637932062149
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "unit"
+    },
+    {
+      "health": 1,
+      "id": "red-4",
+      "morale": 0.90000000000000002,
+      "name": "New Red Unit",
+      "position": {
+        "alt": 0,
+        "lat": 55.179834887385368,
+        "lon": 20.997844845056534
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "unit"
+    }
+  ],
+  "environment": {
+    "terrain": {
+      "base_type": "flat",
+      "forest_density": 0,
+      "rivers": false,
+      "roughness": 0.29999999999999999,
+      "urban_density": 0
+    }
+  },
+  "id": "custom-scenario",
+  "name": "",
+  "scale": "meso",
+  "spatial_bounds": {
+    "max_lat": 55.794811353087425,
+    "max_lon": 21.497844845056534,
+    "min_lat": 54.408608496189117,
+    "min_lon": 19.97198274731636
+  },
+  "temporal": {
+    "max_ticks": 0,
+    "tick_duration_seconds": 0
+  },
+  "version": "1.0.0"
+}

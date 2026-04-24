@@ -1,0 +1,76 @@
+{
+  "category": "atgm",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-02-16",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Infantry Weapons",
+      "Mectron/Avibras"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "br-mss12-ac",
+      "name": "MSS 1.2 AC",
+      "type": "atgm",
+      "country_of_origin": "BR",
+      "manufacturer": "Mectron (Avibras)",
+      "year": 2015,
+      "service_history": {
+        "introduced": 2015,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 200,
+            "status": "active",
+            "notes": "Indigenous ATGM for Brazilian Army anti-tank platoons."
+          }
+        ]
+      },
+      "specifications": {
+        "guidance": "laser_beam_riding",
+        "range_min_m": 200,
+        "range_max_m": 3000,
+        "warhead_type": "tandem_heat",
+        "penetration_mm_rha": 550,
+        "missile_speed_mps": 230,
+        "weight_missile_kg": 15,
+        "weight_system_kg": 30,
+        "crew": 2
+      },
+      "notes": "Indigenous Brazilian ATGM. Laser beam-riding guidance (immune to IR countermeasures). Tandem HEAT warhead for ERA-equipped targets. Vehicle-mountable on Guarani APC."
+    },
+    {
+      "id": "br-eryx",
+      "name": "MBDA ERYX",
+      "type": "short_range_atgm",
+      "country_of_origin": "FR",
+      "manufacturer": "MBDA",
+      "year": 2000,
+      "service_history": {
+        "introduced": 2000,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 150,
+            "status": "active",
+            "notes": "Short-range ATGM for infantry squads."
+          }
+        ]
+      },
+      "specifications": {
+        "guidance": "saclos_wire",
+        "range_min_m": 50,
+        "range_max_m": 600,
+        "warhead_type": "tandem_heat",
+        "penetration_mm_rha": 900,
+        "missile_speed_mps": 18,
+        "weight_missile_kg": 10.2,
+        "weight_system_kg": 17,
+        "crew": 1
+      },
+      "notes": "Short-range wire-guided ATGM. Ideal for urban combat and close range anti-armor. Very high penetration for its size. Can be fired from enclosed spaces."
+    }
+  ]
+}

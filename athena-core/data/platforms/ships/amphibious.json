@@ -1,0 +1,764 @@
+{
+  "$schema": "../../schema/platform-naval.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-23",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Fighting Ships",
+      "Naval News"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-lha6",
+      "name": "America-class (LHA-6)",
+      "nato_name": null,
+      "type": "lha",
+      "class": "America",
+      "country_of_origin": "US",
+      "manufacturer": "Huntington Ingalls Industries",
+      "service_history": {
+        "introduced": 2014,
+        "retired": null,
+        "production_count": 4,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 3,
+            "status": "active",
+            "notes": "11 planned"
+          }
+        ],
+        "notes": "US assault carrier"
+      },
+      "specifications": {
+        "crew": 1059,
+        "marines": 1687,
+        "displacement_full_tons": 44971,
+        "length_m": 257.3,
+        "beam_m": 32.3,
+        "draft_m": 8.8
+      },
+      "performance": {
+        "max_speed_knots": 22,
+        "range_nm": 9500
+      },
+      "powerplant": {
+        "type": "Conventional",
+        "engines": "2x GE LM2500+ gas turbines",
+        "power_shp": 70000
+      },
+      "aviation": {
+        "aircraft_capacity": 38,
+        "air_wing_composition": [
+          {
+            "type": "F-35B Lightning II",
+            "quantity": 20
+          },
+          {
+            "type": "MV-22B Osprey",
+            "quantity": 12
+          },
+          {
+            "type": "CH-53K King Stallion",
+            "quantity": 4
+          },
+          {
+            "type": "MH-60S/UH-1Y",
+            "quantity": 2
+          }
+        ],
+        "notes": "Lightning Carrier concept"
+      },
+      "well_deck": {
+        "size": "None (LHA-6/7) / Present (LHA-8+)",
+        "landing_craft": "None / 2x LCAC (Flight I+)",
+        "notes": "LHA-6/7 aviation-focused, LHA-8+ restore well deck"
+      },
+      "armament": {
+        "sam": [
+          {
+            "type": "RIM-162 ESSM",
+            "launchers": 2
+          },
+          {
+            "type": "RIM-116 RAM",
+            "launchers": 2
+          }
+        ],
+        "ciws": {
+          "type": "Phalanx",
+          "quantity": 2
+        },
+        "guns": {
+          "type": "25mm Mk 38",
+          "quantity": 7
+        }
+      },
+      "unit_cost_usd": 3400000000,
+      "cost_year": 2017,
+      "confidence": "high",
+      "sources": [
+        "USN",
+        "HII"
+      ],
+      "notes": "Wasp replacement. LHA-6/7 no well deck (aviation-focused). LHA-8+ restore well deck. 'Lightning Carrier' with 20 F-35Bs.",
+      "year": 2014
+    },
+    {
+      "id": "us-lhd1",
+      "name": "Wasp-class (LHD-1)",
+      "nato_name": null,
+      "type": "lhd",
+      "class": "Wasp",
+      "country_of_origin": "US",
+      "manufacturer": "Ingalls Shipbuilding",
+      "service_history": {
+        "introduced": 1989,
+        "retired": null,
+        "production_count": 8,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 7,
+            "status": "active",
+            "notes": "LHD-8 forward deployed Japan"
+          }
+        ],
+        "notes": "US Navy's primary amphibious assault ship"
+      },
+      "specifications": {
+        "crew": 1108,
+        "marines": 1894,
+        "displacement_full_tons": 40530,
+        "length_m": 253.2,
+        "beam_m": 32.3,
+        "draft_m": 8.1
+      },
+      "performance": {
+        "max_speed_knots": 22,
+        "range_nm": 9500
+      },
+      "powerplant": {
+        "type": "Conventional",
+        "engines": "2x Westinghouse steam turbines",
+        "boilers": 2
+      },
+      "aviation": {
+        "aircraft_capacity": 31,
+        "air_wing_composition": [
+          {
+            "type": "AV-8B Harrier II / F-35B",
+            "quantity": 6
+          },
+          {
+            "type": "MV-22B Osprey",
+            "quantity": 12
+          },
+          {
+            "type": "CH-53E/K",
+            "quantity": 4
+          },
+          {
+            "type": "AH-1Z/UH-1Y",
+            "quantity": 9
+          }
+        ]
+      },
+      "well_deck": {
+        "size_m": "81 x 15.2",
+        "landing_craft": "3x LCAC or 12x LCM-6",
+        "notes": "Can also operate LCU"
+      },
+      "vehicles": {
+        "capacity": "5 M1 tanks + 25 AAVs + 68 trucks"
+      },
+      "armament": {
+        "sam": [
+          {
+            "type": "RIM-7 Sea Sparrow",
+            "launchers": 2
+          },
+          {
+            "type": "RIM-116 RAM",
+            "launchers": 2
+          }
+        ],
+        "ciws": {
+          "type": "Phalanx",
+          "quantity": 3
+        },
+        "guns": {
+          "type": "25mm Mk 38",
+          "quantity": 4
+        }
+      },
+      "unit_cost_usd": 750000000,
+      "cost_year": 1996,
+      "confidence": "high",
+      "sources": [
+        "USN",
+        "Jane's"
+      ],
+      "notes": "8 built. LHD-8 Makin Island has gas turbines. Forward deployed: LHD-7 in Japan. Being replaced by America-class.",
+      "year": 1989
+    },
+    {
+      "id": "us-lpd17",
+      "name": "San Antonio-class (LPD-17)",
+      "nato_name": null,
+      "type": "lpd",
+      "class": "San Antonio",
+      "country_of_origin": "US",
+      "manufacturer": "Huntington Ingalls Industries",
+      "service_history": {
+        "introduced": 2006,
+        "retired": null,
+        "production_count": 13,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 13,
+            "status": "active",
+            "notes": "15 planned"
+          }
+        ],
+        "notes": "US amphibious transport dock"
+      },
+      "specifications": {
+        "crew": 360,
+        "marines": 700,
+        "displacement_full_tons": 24900,
+        "length_m": 208.5,
+        "beam_m": 31.9,
+        "draft_m": 7
+      },
+      "performance": {
+        "max_speed_knots": 22,
+        "range_nm": 9500
+      },
+      "powerplant": {
+        "type": "Diesel-electric",
+        "engines": "4x Colt-Pielstick diesels"
+      },
+      "aviation": {
+        "spots": 2,
+        "hangar": "Enclosed (1 CH-53E / 2 MV-22)",
+        "helicopters": "4x CH-46 / 2x MV-22"
+      },
+      "well_deck": {
+        "size_m": "55 x 15",
+        "landing_craft": "2x LCAC or 1x LCU",
+        "aav": 14
+      },
+      "armament": {
+        "sam": {
+          "type": "RIM-116 RAM",
+          "launchers": 2
+        },
+        "guns": {
+          "type": "30mm Mk 46",
+          "quantity": 2
+        }
+      },
+      "unit_cost_usd": 1600000000,
+      "cost_year": 2012,
+      "confidence": "high",
+      "sources": [
+        "USN",
+        "HII"
+      ],
+      "notes": "Replaced Austin, Cleveland, Trenton classes. Stealthy design. Troubled early production. 15 planned total.",
+      "year": 2006
+    },
+    {
+      "id": "cn-type075",
+      "name": "Type 075",
+      "nato_name": null,
+      "type": "lhd",
+      "class": "Type 075",
+      "country_of_origin": "CN",
+      "manufacturer": "Hudong-Zhonghua Shipyard",
+      "service_history": {
+        "introduced": 2021,
+        "retired": null,
+        "production_count": 3,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 3,
+            "status": "active"
+          }
+        ],
+        "notes": "China's first large LHD"
+      },
+      "specifications": {
+        "crew": 1000,
+        "marines": 1200,
+        "displacement_full_tons": 40000,
+        "length_m": 237,
+        "beam_m": 36,
+        "draft_m": 8
+      },
+      "performance": {
+        "max_speed_knots": 23,
+        "range_nm": 10000
+      },
+      "powerplant": {
+        "type": "Diesel",
+        "engines": "4x SEMT Pielstick 16 PC2-6B diesels"
+      },
+      "aviation": {
+        "aircraft_capacity": 30,
+        "air_wing_composition": [
+          {
+            "type": "Z-8/Z-18",
+            "quantity": 20
+          },
+          {
+            "type": "Z-20",
+            "quantity": 10,
+            "notes": "Future: J-35 VSTOL?"
+          }
+        ],
+        "notes": "Largest Chinese amphib"
+      },
+      "well_deck": {
+        "landing_craft": "4x Type 726 (LCAC equivalent)",
+        "notes": "Can also carry AFVs"
+      },
+      "armament": {
+        "sam": {
+          "type": "HQ-10",
+          "launchers": 2
+        },
+        "ciws": {
+          "type": "H/PJ-11",
+          "quantity": 2
+        }
+      },
+      "unit_cost_usd": 700000000,
+      "cost_year": 2021,
+      "confidence": "medium",
+      "sources": [
+        "PLAN media",
+        "Jane's",
+        "CSIS"
+      ],
+      "notes": "3 commissioned rapidly (2021-2022). Taiwan invasion capability. No STOVL aircraft yet. Compares to Wasp-class.",
+      "year": 2021
+    },
+    {
+      "id": "cn-type071",
+      "name": "Type 071 Yuzhao-class",
+      "nato_name": "Yuzhao",
+      "type": "lpd",
+      "class": "Type 071",
+      "country_of_origin": "CN",
+      "manufacturer": "Hudong-Zhonghua Shipyard",
+      "service_history": {
+        "introduced": 2007,
+        "retired": null,
+        "production_count": 8,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 8,
+            "status": "active"
+          }
+        ],
+        "notes": "China's primary LPD"
+      },
+      "specifications": {
+        "crew": 120,
+        "marines": 800,
+        "displacement_full_tons": 25000,
+        "length_m": 210,
+        "beam_m": 28,
+        "draft_m": 7
+      },
+      "performance": {
+        "max_speed_knots": 25,
+        "range_nm": 10000
+      },
+      "aviation": {
+        "spots": 2,
+        "helicopters": 4,
+        "type": "Z-8/Z-18"
+      },
+      "well_deck": {
+        "landing_craft": "4x Type 726 LCAC or conventional LCM"
+      },
+      "armament": {
+        "ciws": {
+          "type": "Type 730",
+          "quantity": 1
+        },
+        "guns": {
+          "type": "76mm",
+          "quantity": 1
+        }
+      },
+      "unit_cost_usd": 350000000,
+      "cost_year": 2015,
+      "confidence": "medium",
+      "sources": [
+        "PLAN media",
+        "Jane's"
+      ],
+      "notes": "8 in service. Used for anti-piracy, HADR. Type 726 LCAC fits well deck. Supplements Type 075.",
+      "year": 2007
+    },
+    {
+      "id": "fr-mistral-lhd",
+      "name": "Mistral-class",
+      "nato_name": null,
+      "type": "lhd",
+      "class": "Mistral",
+      "country_of_origin": "FR",
+      "manufacturer": "STX France / Naval Group",
+      "service_history": {
+        "introduced": 2006,
+        "retired": null,
+        "production_count": 5,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 3,
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 2,
+            "status": "active",
+            "notes": "Originally for Russia"
+          }
+        ],
+        "notes": "French amphibious carrier"
+      },
+      "specifications": {
+        "crew": 160,
+        "marines": 450,
+        "displacement_full_tons": 21300,
+        "length_m": 199,
+        "beam_m": 32,
+        "draft_m": 6.3
+      },
+      "performance": {
+        "max_speed_knots": 19,
+        "range_nm": 11000
+      },
+      "powerplant": {
+        "type": "Diesel-electric",
+        "engines": "4x W\u00e4rtsil\u00e4 diesels"
+      },
+      "aviation": {
+        "spots": 6,
+        "hangar": true,
+        "aircraft_capacity": 16,
+        "types": "NH90, Tiger, Gazelle"
+      },
+      "well_deck": {
+        "size_m": "57 x 15.4",
+        "landing_craft": "4x LCM or 2x LCAC"
+      },
+      "vehicles": {
+        "capacity": "60 armored vehicles or 13 Leclerc tanks"
+      },
+      "armament": {
+        "sam": {
+          "type": "Mistral/Simbad",
+          "launchers": 2
+        },
+        "guns": {
+          "type": "30mm",
+          "quantity": 4
+        }
+      },
+      "unit_cost_usd": 600000000,
+      "cost_year": 2014,
+      "confidence": "high",
+      "sources": [
+        "French Navy",
+        "Naval Group"
+      ],
+      "notes": "Russia ordered 2 but cancelled (Crimea sanctions). Egypt bought them instead. Hospital ship capable.",
+      "year": 1988
+    },
+    {
+      "id": "es-juancarlos",
+      "name": "Juan Carlos I-class",
+      "nato_name": null,
+      "type": "lhd",
+      "class": "Juan Carlos I",
+      "country_of_origin": "ES",
+      "manufacturer": "Navantia",
+      "service_history": {
+        "introduced": 2010,
+        "retired": null,
+        "production_count": 3,
+        "operators": [
+          {
+            "country": "ES",
+            "quantity": 1,
+            "status": "active"
+          },
+          {
+            "country": "AU",
+            "quantity": 2,
+            "status": "active",
+            "notes": "Canberra-class"
+          },
+          {
+            "country": "TR",
+            "quantity": 1,
+            "status": "building",
+            "notes": "TCG Anadolu"
+          }
+        ],
+        "notes": "Multi-role carrier/LHD"
+      },
+      "specifications": {
+        "crew": 261,
+        "marines": 913,
+        "displacement_full_tons": 27079,
+        "length_m": 230.8,
+        "beam_m": 32,
+        "draft_m": 7.1
+      },
+      "performance": {
+        "max_speed_knots": 21,
+        "range_nm": 9000
+      },
+      "powerplant": {
+        "type": "COGAG",
+        "engines": "1x GE LM2500 + 2x Caterpillar diesels",
+        "pods": "2x azimuth thrusters"
+      },
+      "aviation": {
+        "spots": 6,
+        "aircraft_capacity": 30,
+        "types": "AV-8B/F-35B, NH90, CH-47",
+        "ski_jump": true,
+        "notes": "Can operate STOVL fighters"
+      },
+      "well_deck": {
+        "size_m": "69.3 x 16.8",
+        "landing_craft": "4x LCM-1E"
+      },
+      "armament": {
+        "guns": {
+          "type": "20mm Oerlikon",
+          "quantity": 4
+        }
+      },
+      "unit_cost_usd": 600000000,
+      "cost_year": 2009,
+      "confidence": "high",
+      "sources": [
+        "Spanish Navy",
+        "Navantia"
+      ],
+      "notes": "Ski-jump for Harrier/F-35B. Australia's Canberra-class based on this. Turkey's Anadolu modified for drones (no F-35 after removal from program).",
+      "year": 2010
+    },
+    {
+      "id": "jp-izumo",
+      "name": "Izumo-class",
+      "nato_name": null,
+      "type": "ddh",
+      "class": "Izumo",
+      "country_of_origin": "JP",
+      "manufacturer": "Japan Marine United",
+      "service_history": {
+        "introduced": 2015,
+        "retired": null,
+        "production_count": 2,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 2,
+            "status": "active"
+          }
+        ],
+        "notes": "Japan's largest warship since WWII"
+      },
+      "specifications": {
+        "crew": 470,
+        "displacement_full_tons": 27000,
+        "length_m": 248,
+        "beam_m": 38,
+        "draft_m": 7.5
+      },
+      "performance": {
+        "max_speed_knots": 30,
+        "range_nm": 6000
+      },
+      "powerplant": {
+        "type": "COGAG",
+        "engines": "4x GE LM2500 gas turbines"
+      },
+      "aviation": {
+        "spots": 5,
+        "aircraft_capacity": 28,
+        "types": "SH-60K, MCH-101, F-35B (after modification)",
+        "notes": "Being modified for F-35B (light carrier)"
+      },
+      "armament": {
+        "sam": {
+          "type": "SeaRAM",
+          "launchers": 2
+        },
+        "ciws": {
+          "type": "Phalanx",
+          "quantity": 2
+        }
+      },
+      "unit_cost_usd": 1200000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "JMSDF",
+        "Jane's"
+      ],
+      "notes": "Designated 'Helicopter Destroyer' (DDH). Being modified to operate F-35B. First Japanese carrier since WWII. 2 in service.",
+      "year": 2015
+    },
+    {
+      "id": "uk-albion",
+      "name": "Albion-class",
+      "nato_name": null,
+      "type": "lpd",
+      "class": "Albion",
+      "country_of_origin": "GB",
+      "manufacturer": "BAE Systems",
+      "service_history": {
+        "introduced": 2003,
+        "retired": null,
+        "production_count": 2,
+        "operators": [
+          {
+            "country": "UK",
+            "quantity": 2,
+            "status": "active"
+          }
+        ],
+        "notes": "Royal Navy LPD"
+      },
+      "specifications": {
+        "crew": 325,
+        "marines": 405,
+        "displacement_full_tons": 19560,
+        "length_m": 176,
+        "beam_m": 28.9,
+        "draft_m": 7.1
+      },
+      "performance": {
+        "max_speed_knots": 18,
+        "range_nm": 8000
+      },
+      "powerplant": {
+        "type": "Diesel-electric",
+        "engines": "2x Crossley diesels + 2x electric motors"
+      },
+      "aviation": {
+        "spots": 2,
+        "hangar": false,
+        "types": "Merlin, Chinook"
+      },
+      "well_deck": {
+        "landing_craft": "4x LCVP Mk 5 + 4x LCU Mk 10"
+      },
+      "vehicles": {
+        "capacity": "67 vehicles (6 Challenger 2)"
+      },
+      "armament": {
+        "ciws": {
+          "type": "Phalanx",
+          "quantity": 2
+        },
+        "guns": {
+          "type": "20mm Oerlikon",
+          "quantity": 2
+        }
+      },
+      "unit_cost_usd": 360000000,
+      "cost_year": 2003,
+      "confidence": "high",
+      "sources": [
+        "Royal Navy",
+        "Jane's"
+      ],
+      "notes": "2 in service (HMS Albion, HMS Bulwark). Amphibious command ships. One often in extended readiness.",
+      "year": 2003
+    },
+    {
+      "id": "ru-ivan_gren",
+      "name": "Ivan Gren-class (Project 11711)",
+      "nato_name": null,
+      "type": "lst",
+      "class": "Ivan Gren",
+      "country_of_origin": "RU",
+      "manufacturer": "Yantar Shipyard",
+      "service_history": {
+        "introduced": 2018,
+        "retired": null,
+        "production_count": 2,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 2,
+            "status": "active",
+            "notes": "4 planned"
+          }
+        ],
+        "notes": "Russia's newest landing ship"
+      },
+      "specifications": {
+        "crew": 100,
+        "marines": 300,
+        "displacement_full_tons": 6600,
+        "length_m": 120,
+        "beam_m": 16.5,
+        "draft_m": 3.6
+      },
+      "performance": {
+        "max_speed_knots": 18,
+        "range_nm": 3500
+      },
+      "aviation": {
+        "spots": 1,
+        "helicopters": 2,
+        "type": "Ka-29"
+      },
+      "cargo": {
+        "tanks": "13 MBT or 36 APCs",
+        "notes": "Bow and stern ramps"
+      },
+      "armament": {
+        "guns": {
+          "type": "AK-176 76mm",
+          "quantity": 1
+        },
+        "rockets": {
+          "type": "A-215 Grad-M",
+          "quantity": 2
+        },
+        "ciws": {
+          "type": "AK-630",
+          "quantity": 2
+        }
+      },
+      "unit_cost_usd": 200000000,
+      "cost_year": 2018,
+      "confidence": "medium",
+      "sources": [
+        "Russian MoD",
+        "Jane's"
+      ],
+      "notes": "Troubled, lengthy construction. Replaces aging Ropucha-class. Only 2 built (2 more building). Russia lacks major LHD.",
+      "year": 2018
+    }
+  ]
+}

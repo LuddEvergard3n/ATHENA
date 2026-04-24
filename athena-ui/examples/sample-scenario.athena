@@ -1,0 +1,55 @@
+{
+  "athena_version": "0.6.7",
+  "metadata": {
+    "name": "Central Europe Engagement",
+    "description": "Sample scenario demonstrating ATHENA force composition",
+    "author": "ATHENA",
+    "created": "2026-01-24T00:30:00Z",
+    "modified": "2026-01-24T00:30:00Z",
+    "version": "1.0"
+  },
+  "simulation": {
+    "max_ticks": 3600,
+    "default_iterations": 1000
+  },
+  "bounds": {
+    "min_lat": 49.0,
+    "max_lat": 51.0,
+    "min_lon": 9.0,
+    "max_lon": 11.0
+  },
+  "forces": {
+    "blufor": [
+      {
+        "platform_id": "m1a2-sep-v3",
+        "display_name": "M1A2 SEP v3 Abrams",
+        "quantity": 4,
+        "lat": 50.5,
+        "lon": 10.0
+      },
+      {
+        "platform_id": "m2a3-bradley",
+        "display_name": "M2A3 Bradley IFV",
+        "quantity": 8,
+        "lat": 50.45,
+        "lon": 10.1
+      }
+    ],
+    "opfor": [
+      {
+        "platform_id": "t-90m",
+        "display_name": "T-90M Proryv",
+        "quantity": 6,
+        "lat": 49.5,
+        "lon": 10.0
+      },
+      {
+        "platform_id": "bmp-3",
+        "display_name": "BMP-3 IFV",
+        "quantity": 12,
+        "lat": 49.55,
+        "lon": 10.1
+      }
+    ]
+  }
+}

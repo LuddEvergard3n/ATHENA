@@ -1,0 +1,84 @@
+{
+  "actors": [
+    {
+      "health": 1,
+      "id": "blue-1",
+      "morale": 0.90000000000000002,
+      "name": "EE-T1 Osório",
+      "platform_id": "br-ee-t1-osorio",
+      "position": {
+        "alt": 0,
+        "lat": 54.997051954269409,
+        "lon": 20.512931048870087
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "armor"
+    },
+    {
+      "health": 1,
+      "id": "blue-2",
+      "morale": 0.90000000000000002,
+      "name": "Infantaria Mecanizada",
+      "position": {
+        "alt": 0,
+        "lat": 55.082547143101692,
+        "lon": 20.413793116807938
+      },
+      "side": "blue",
+      "supply": 1,
+      "type": "mechanized"
+    },
+    {
+      "health": 1,
+      "id": "red-3",
+      "morale": 0.90000000000000002,
+      "name": "New Red Unit",
+      "position": {
+        "alt": 0,
+        "lat": 55.713443383574486,
+        "lon": 21.032327592372894
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "unit"
+    },
+    {
+      "health": 1,
+      "id": "red-4",
+      "morale": 0.90000000000000002,
+      "name": "New Red Unit",
+      "position": {
+        "alt": 0,
+        "lat": 55.577830225229263,
+        "lon": 21.129310369491577
+      },
+      "side": "red",
+      "supply": 1,
+      "type": "unit"
+    }
+  ],
+  "environment": {
+    "terrain": {
+      "base_type": "mountains",
+      "forest_density": 0,
+      "rivers": true,
+      "roughness": 0.10000000149011612,
+      "urban_density": 0
+    }
+  },
+  "id": "custom-scenario",
+  "name": "adsaf",
+  "scale": "meso",
+  "spatial_bounds": {
+    "max_lat": 56.213443383574486,
+    "max_lon": 21.629310369491577,
+    "min_lat": 54.497051954269409,
+    "min_lon": 19.913793116807938
+  },
+  "temporal": {
+    "max_ticks": 0,
+    "tick_duration_seconds": 0
+  },
+  "version": "1.0.0"
+}

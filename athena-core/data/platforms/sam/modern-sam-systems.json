@@ -1,0 +1,479 @@
+{
+  "platforms": [
+    {
+      "id": "ru-s-400-triumf",
+      "name": "S-400 Triumf",
+      "type": "long_range_sam",
+      "country_of_origin": "RU",
+      "manufacturer": "Almaz-Antey",
+      "nato_name": "SA-21 Growler",
+      "service_entry": 2007,
+      "specifications": {
+        "detection_range_km": 600,
+        "engagement_range_km": 400,
+        "altitude_max_m": 30000,
+        "targets_tracked": 300,
+        "targets_engaged": 72,
+        "reaction_time_s": 9
+      },
+      "missiles": [
+        {
+          "type": "40N6",
+          "range_km": 400,
+          "altitude_km": 30,
+          "speed_mach": 14
+        },
+        {
+          "type": "48N6E3",
+          "range_km": 250,
+          "altitude_km": 27
+        },
+        {
+          "type": "9M96E2",
+          "range_km": 120,
+          "altitude_km": 35
+        },
+        {
+          "type": "9M96E",
+          "range_km": 40,
+          "altitude_km": 20
+        }
+      ],
+      "components": [
+        "91N6E Big Bird radar (acquisition)",
+        "92N6E Grave Stone radar (engagement)",
+        "96L6E all-altitude radar",
+        "Multiple TELs (4 missiles each)"
+      ],
+      "battery_composition": {
+        "command_post": 1,
+        "radars": 3,
+        "tels": 8,
+        "missiles": 32
+      },
+      "service_history": {
+        "introduced": 2007,
+        "status": "active",
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 57,
+            "unit": "battalions"
+          },
+          {
+            "country": "CN",
+            "quantity": 6,
+            "unit": "battalions"
+          },
+          {
+            "country": "TR",
+            "quantity": 2,
+            "unit": "battalions"
+          },
+          {
+            "country": "IN",
+            "quantity": 5,
+            "unit": "battalions"
+          },
+          {
+            "country": "BY",
+            "quantity": 1,
+            "unit": "battalion"
+          }
+        ]
+      },
+      "unit_cost_usd": 500000000,
+      "notes": "Russia's premier air defense. Anti-ballistic missile capability. Controversial Turkish purchase caused US sanctions."
+    },
+    {
+      "id": "ru-s-500-prometheus",
+      "name": "S-500 Prometheus",
+      "type": "long_range_sam",
+      "country_of_origin": "RU",
+      "manufacturer": "Almaz-Antey",
+      "nato_name": "55R6M Triumfator-M",
+      "service_entry": 2021,
+      "specifications": {
+        "detection_range_km": 800,
+        "engagement_range_km": 600,
+        "altitude_max_m": 200000,
+        "targets_engaged": 10,
+        "abm_capable": true
+      },
+      "missiles": [
+        {
+          "type": "40N6M",
+          "range_km": 600,
+          "target": "aircraft/cruise missiles"
+        },
+        {
+          "type": "77N6",
+          "range_km": 600,
+          "target": "ballistic missiles/satellites"
+        }
+      ],
+      "capabilities": [
+        "Anti-ballistic missile defense",
+        "Anti-satellite capability",
+        "Hypersonic target intercept"
+      ],
+      "service_history": {
+        "introduced": 2021,
+        "status": "limited service",
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 10,
+            "unit": "batteries"
+          }
+        ]
+      },
+      "notes": "Strategic ABM system. Designed to intercept ICBMs and hypersonic weapons. Limited production."
+    },
+    {
+      "id": "us-mim-104-patriot-pac3-mse",
+      "name": "MIM-104 Patriot PAC-3 MSE",
+      "type": "long_range_sam",
+      "country_of_origin": "US",
+      "manufacturer": "Raytheon / Lockheed Martin",
+      "service_entry": 2015,
+      "specifications": {
+        "detection_range_km": 180,
+        "engagement_range_km": 35,
+        "altitude_max_m": 24000,
+        "targets_tracked": 100,
+        "targets_engaged": 9
+      },
+      "missiles": [
+        {
+          "type": "PAC-3 MSE",
+          "range_km": 35,
+          "hit_to_kill": true,
+          "maneuvering": true
+        },
+        {
+          "type": "PAC-2 GEM-T",
+          "range_km": 160,
+          "blast_frag": true
+        }
+      ],
+      "components": [
+        "AN/MPQ-65A radar (AESA upgrade)",
+        "ECS (Engagement Control Station)",
+        "M903 Launcher (16 PAC-3 or 4 GEM-T)"
+      ],
+      "battery_composition": {
+        "radar": 1,
+        "ecs": 1,
+        "launchers": 8,
+        "missiles_pac3": 128
+      },
+      "service_history": {
+        "introduced": 2015,
+        "status": "active",
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 60,
+            "unit": "batteries"
+          },
+          {
+            "country": "DE",
+            "quantity": 12
+          },
+          {
+            "country": "NL",
+            "quantity": 4
+          },
+          {
+            "country": "JP",
+            "quantity": 24
+          },
+          {
+            "country": "KR",
+            "quantity": 8
+          },
+          {
+            "country": "SA",
+            "quantity": 16
+          },
+          {
+            "country": "AE",
+            "quantity": 9
+          },
+          {
+            "country": "PL",
+            "quantity": 6
+          },
+          {
+            "country": "UA",
+            "quantity": 4
+          }
+        ]
+      },
+      "combat_use": [
+        {
+          "conflict": "Gulf War",
+          "year": 1991
+        },
+        {
+          "conflict": "Iraq",
+          "year": 2003
+        },
+        {
+          "conflict": "Yemen/Saudi",
+          "year": 2015
+        },
+        {
+          "conflict": "Ukraine",
+          "year": 2023
+        }
+      ],
+      "unit_cost_usd": 1100000000,
+      "notes": "Most combat-proven Western SAM. PAC-3 MSE has hit-to-kill for TBM intercept. Effective in Ukraine against Russian missiles."
+    },
+    {
+      "id": "us-aegis-ashore",
+      "name": "Aegis Ashore",
+      "type": "abm",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "service_entry": 2016,
+      "specifications": {
+        "radar": "AN/SPY-1D(V)",
+        "engagement_range_km": 500,
+        "altitude_max_km": 500
+      },
+      "missiles": [
+        {
+          "type": "SM-3 Block IIA",
+          "range_km": 2500,
+          "target": "IRBM/ICBM"
+        },
+        {
+          "type": "SM-3 Block IB",
+          "range_km": 700,
+          "target": "SRBM/MRBM"
+        }
+      ],
+      "components": {
+        "mk41_vls_cells": 24
+      },
+      "service_history": {
+        "introduced": 2016,
+        "status": "active",
+        "locations": [
+          {
+            "country": "RO",
+            "location": "Deveselu"
+          },
+          {
+            "country": "PL",
+            "location": "Redzikowo"
+          }
+        ]
+      },
+      "notes": "Land-based version of shipboard Aegis BMD. Part of NATO European missile shield. Russian objections."
+    },
+    {
+      "id": "eu-samp-t",
+      "name": "SAMP/T Aster 30",
+      "type": "medium_range_sam",
+      "country_of_origin": "EU",
+      "manufacturer": "Eurosam (MBDA/Thales)",
+      "service_entry": 2008,
+      "specifications": {
+        "detection_range_km": 100,
+        "engagement_range_km": 120,
+        "altitude_max_m": 25000,
+        "targets_tracked": 100,
+        "targets_engaged": 10
+      },
+      "missile": {
+        "type": "Aster 30 Block 1NT",
+        "range_km": 120,
+        "speed_mach": 4.5,
+        "hit_to_kill": true
+      },
+      "components": [
+        "Arabel AESA radar",
+        "Engagement Module",
+        "Vertical launchers (8 missiles)"
+      ],
+      "service_history": {
+        "introduced": 2008,
+        "status": "active",
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 8,
+            "unit": "batteries"
+          },
+          {
+            "country": "IT",
+            "quantity": 5,
+            "unit": "batteries"
+          },
+          {
+            "country": "SG",
+            "quantity": 2,
+            "unit": "batteries"
+          },
+          {
+            "country": "UA",
+            "quantity": 2,
+            "unit": "batteries"
+          }
+        ]
+      },
+      "unit_cost_usd": 700000000,
+      "notes": "European competitor to Patriot. Block 1NT adds anti-TBM capability. Supplied to Ukraine 2023."
+    },
+    {
+      "id": "us-nasams",
+      "name": "NASAMS",
+      "type": "medium_range_sam",
+      "country_of_origin": "NO",
+      "manufacturer": "Kongsberg/Raytheon",
+      "full_name": "National Advanced Surface-to-Air Missile System",
+      "service_entry": 1998,
+      "specifications": {
+        "engagement_range_km": 40,
+        "altitude_max_m": 15000
+      },
+      "missiles": [
+        {
+          "type": "AIM-120 AMRAAM",
+          "range_km": 25
+        },
+        {
+          "type": "AIM-9X Sidewinder",
+          "range_km": 10
+        },
+        {
+          "type": "AMRAAM-ER",
+          "range_km": 50
+        }
+      ],
+      "components": [
+        "AN/MPQ-64 Sentinel radar",
+        "Fire Distribution Center",
+        "Canister launchers"
+      ],
+      "service_history": {
+        "introduced": 1998,
+        "status": "active",
+        "operators": [
+          {
+            "country": "NO",
+            "quantity": 6,
+            "unit": "batteries"
+          },
+          {
+            "country": "US",
+            "quantity": 6,
+            "unit": "batteries"
+          },
+          {
+            "country": "FI",
+            "quantity": 3
+          },
+          {
+            "country": "NL",
+            "quantity": 3
+          },
+          {
+            "country": "ES",
+            "quantity": 4
+          },
+          {
+            "country": "LT",
+            "quantity": 2
+          },
+          {
+            "country": "AU",
+            "quantity": 4
+          },
+          {
+            "country": "UA",
+            "quantity": 8
+          }
+        ]
+      },
+      "combat_use": [
+        {
+          "conflict": "Ukraine",
+          "year": 2022
+        }
+      ],
+      "unit_cost_usd": 100000000,
+      "notes": "Uses AMRAAM missile in ground role. Modular and mobile. Highly effective in Ukraine. Protects Washington DC."
+    },
+    {
+      "id": "cn-hq-9b",
+      "name": "HQ-9B",
+      "type": "long_range_sam",
+      "country_of_origin": "CN",
+      "manufacturer": "CASIC/CPMIEC",
+      "export_name": "FD-2000",
+      "service_entry": 2018,
+      "specifications": {
+        "detection_range_km": 300,
+        "engagement_range_km": 250,
+        "altitude_max_m": 30000,
+        "targets_tracked": 100,
+        "targets_engaged": 50
+      },
+      "missile": {
+        "type": "HQ-9B",
+        "range_km": 250,
+        "speed_mach": 4.2,
+        "guidance": "TVM + active radar"
+      },
+      "service_history": {
+        "introduced": 2018,
+        "status": "active",
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 30,
+            "unit": "battalions"
+          }
+        ]
+      },
+      "notes": "Chinese S-300 derivative. HQ-9B has anti-TBM and anti-cruise missile capability. Export as FD-2000."
+    },
+    {
+      "id": "us-avenger-shorad",
+      "name": "AN/TWQ-1 Avenger",
+      "type": "short_range_sam",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_entry": 1989,
+      "specifications": {
+        "engagement_range_km": 5.5,
+        "altitude_max_m": 3800
+      },
+      "armament": {
+        "missiles": "8x FIM-92 Stinger",
+        "gun": "M3P .50 cal"
+      },
+      "chassis": "HMMWV",
+      "service_history": {
+        "introduced": 1989,
+        "status": "active",
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 700
+          },
+          {
+            "country": "EG",
+            "quantity": 50
+          }
+        ]
+      },
+      "notes": "Stinger-based SHORAD. Being supplemented by M-SHORAD Stryker. Still widely used."
+    }
+  ]
+}

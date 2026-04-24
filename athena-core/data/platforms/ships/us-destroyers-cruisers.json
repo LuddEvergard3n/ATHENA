@@ -1,0 +1,274 @@
+{
+  "platforms": [
+    {
+      "id": "us-ddg-51-arleigh-burke-flight-iia",
+      "name": "Arleigh Burke-class (Flight IIA)",
+      "type": "destroyer",
+      "country_of_origin": "US",
+      "manufacturer": "Bath Iron Works / Huntington Ingalls",
+      "service_entry": 2000,
+      "specifications": {
+        "displacement_tons": 9800,
+        "length_m": 155.3,
+        "beam_m": 20.4,
+        "draft_m": 9.4,
+        "crew": 323,
+        "max_speed_knots": 31,
+        "range_nm": 4400,
+        "range_speed_knots": 20
+      },
+      "propulsion": {
+        "type": "COGAG",
+        "engines": "4x GE LM2500-30 gas turbines",
+        "power_shp": 100000,
+        "shafts": 2
+      },
+      "armament": {
+        "vls": {
+          "type": "Mk 41 VLS",
+          "cells_forward": 32,
+          "cells_aft": 64,
+          "total_cells": 96,
+          "missiles": [
+            "RIM-66 SM-2MR",
+            "RIM-161 SM-3",
+            "RIM-174 SM-6",
+            "RIM-162 ESSM (quad-pack)",
+            "BGM-109 Tomahawk",
+            "RUM-139 VL-ASROC"
+          ]
+        },
+        "gun": {
+          "type": "Mk 45 Mod 4",
+          "caliber": "127mm/62",
+          "range_km": 37
+        },
+        "ciws": "2x Phalanx CIWS",
+        "torpedo_tubes": "2x Mk 32 triple (Mk 54)",
+        "helicopters": 2,
+        "helicopter_type": "MH-60R Seahawk"
+      },
+      "sensors": {
+        "radar_search": "AN/SPY-1D(V) PESA",
+        "radar_fire_control": "AN/SPG-62",
+        "sonar_hull": "AN/SQS-53C",
+        "sonar_towed": "AN/SQR-19 TACTAS"
+      },
+      "combat_system": "Aegis Baseline 9",
+      "service_history": {
+        "introduced": 2000,
+        "status": "active",
+        "built": 40,
+        "operators": [
+          {"country": "US", "quantity": 40, "status": "active"}
+        ]
+      },
+      "unit_cost_usd": 1850000000,
+      "notes": "Backbone of USN surface fleet. Flight IIA added helicopter hangar. AEGIS BMD capable. 40 Flight IIA built."
+    },
+    {
+      "id": "us-ddg-51-arleigh-burke-flight-iii",
+      "name": "Arleigh Burke-class (Flight III)",
+      "type": "destroyer",
+      "country_of_origin": "US",
+      "manufacturer": "Bath Iron Works / Huntington Ingalls",
+      "service_entry": 2024,
+      "specifications": {
+        "displacement_tons": 10400,
+        "length_m": 155.3,
+        "beam_m": 20.4,
+        "draft_m": 9.4,
+        "crew": 329,
+        "max_speed_knots": 30,
+        "range_nm": 4400
+      },
+      "propulsion": {
+        "type": "COGAG",
+        "engines": "4x GE LM2500-30 gas turbines",
+        "power_shp": 100000,
+        "power_generation_kw": 9000
+      },
+      "armament": {
+        "vls": {
+          "type": "Mk 41 VLS",
+          "total_cells": 96
+        },
+        "gun": {
+          "type": "Mk 45 Mod 4",
+          "caliber": "127mm/62"
+        },
+        "ciws": "2x Phalanx Block 1B / SeaRAM"
+      },
+      "sensors": {
+        "radar_search": "AN/SPY-6(V)1 AMDR AESA",
+        "radar_sensitivity_db": "+15 vs SPY-1D",
+        "radar_bmd_capable": true
+      },
+      "combat_system": "Aegis Baseline 10",
+      "service_history": {
+        "introduced": 2024,
+        "status": "active",
+        "lead_ship": "USS Jack H. Lucas (DDG-125)",
+        "planned": 22,
+        "operators": [
+          {"country": "US", "quantity": 22, "status": "building/planned"}
+        ]
+      },
+      "unit_cost_usd": 2200000000,
+      "notes": "Latest Burke variant. AN/SPY-6 AESA radar with 35x SPY-1 sensitivity. Enhanced BMD capability. First commissioned 2024."
+    },
+    {
+      "id": "us-cg-47-ticonderoga",
+      "name": "Ticonderoga-class",
+      "type": "cruiser",
+      "country_of_origin": "US",
+      "manufacturer": "Ingalls Shipbuilding / Bath Iron Works",
+      "service_entry": 1983,
+      "specifications": {
+        "displacement_tons": 9800,
+        "length_m": 172.8,
+        "beam_m": 16.8,
+        "draft_m": 9.5,
+        "crew": 387,
+        "max_speed_knots": 32.5,
+        "range_nm": 6000
+      },
+      "propulsion": {
+        "type": "COGAG",
+        "engines": "4x GE LM2500 gas turbines",
+        "power_shp": 80000
+      },
+      "armament": {
+        "vls": {
+          "type": "Mk 41 VLS",
+          "cells_forward": 61,
+          "cells_aft": 61,
+          "total_cells": 122
+        },
+        "guns": "2x Mk 45 127mm/54",
+        "ciws": "2x Phalanx CIWS",
+        "torpedo_tubes": "2x Mk 32 triple",
+        "helicopters": 2
+      },
+      "sensors": {
+        "radar_search": "AN/SPY-1A/B PESA",
+        "radar_fire_control": "4x AN/SPG-62",
+        "sonar": "AN/SQS-53B/C"
+      },
+      "combat_system": "Aegis Baseline 5/9",
+      "service_history": {
+        "introduced": 1983,
+        "status": "active",
+        "built": 27,
+        "remaining": 9,
+        "operators": [
+          {"country": "US", "quantity": 9, "status": "active"}
+        ],
+        "retirement": "All to retire by 2027"
+      },
+      "unit_cost_usd": 1000000000,
+      "notes": "First AEGIS cruisers. 122 VLS cells largest in USN. Being retired early - 9 remain active. No replacement class planned."
+    },
+    {
+      "id": "us-ddg-1000-zumwalt",
+      "name": "Zumwalt-class",
+      "type": "destroyer",
+      "country_of_origin": "US",
+      "manufacturer": "Bath Iron Works",
+      "service_entry": 2016,
+      "specifications": {
+        "displacement_tons": 15900,
+        "length_m": 182.9,
+        "beam_m": 24.6,
+        "draft_m": 8.4,
+        "crew": 147,
+        "max_speed_knots": 30,
+        "range_nm": 10000
+      },
+      "propulsion": {
+        "type": "IEP (Integrated Electric Propulsion)",
+        "power_mw": 78,
+        "engines": "2x Rolls-Royce MT30 gas turbines",
+        "motors": "2x 34.6 MW Advanced Induction Motors"
+      },
+      "armament": {
+        "vls": {
+          "type": "Mk 57 PVLS (Peripheral)",
+          "cells": 80,
+          "missiles": [
+            "BGM-109 Tomahawk",
+            "RIM-162 ESSM",
+            "Conventional Prompt Strike (planned)"
+          ]
+        },
+        "guns": "2x 155mm AGS (disabled)",
+        "current_gun": "None functional",
+        "planned_weapons": "Conventional Prompt Strike hypersonic"
+      },
+      "sensors": {
+        "radar": "AN/SPY-3 X-band AESA",
+        "radar_volume_search": "AN/SPY-4 S-band (deleted)",
+        "sonar": "AN/SQQ-90"
+      },
+      "stealth": {
+        "rcs_reduction": true,
+        "tumblehome_hull": true,
+        "composite_deckhouse": true,
+        "rcs_equivalent": "Fishing boat"
+      },
+      "service_history": {
+        "introduced": 2016,
+        "status": "active",
+        "built": 3,
+        "ships": [
+          "USS Zumwalt (DDG-1000)",
+          "USS Michael Monsoor (DDG-1001)",
+          "USS Lyndon B. Johnson (DDG-1002)"
+        ]
+      },
+      "unit_cost_usd": 4400000000,
+      "notes": "Most expensive destroyer ever built. Originally 32 planned, cut to 3. AGS guns disabled - no ammo produced. Converting to hypersonic strike platform."
+    },
+    {
+      "id": "us-ddg-x-next-gen-destroyer",
+      "name": "DDG(X)",
+      "type": "destroyer",
+      "country_of_origin": "US",
+      "manufacturer": "TBD",
+      "service_entry": 2032,
+      "specifications": {
+        "displacement_tons": 13500,
+        "length_m": 180,
+        "beam_m": 24,
+        "crew": 250,
+        "max_speed_knots": 30
+      },
+      "propulsion": {
+        "type": "IEP",
+        "power_mw": 96,
+        "note": "Supports directed energy weapons"
+      },
+      "armament": {
+        "vls_cells": 96,
+        "vls_type": "Mk 41 compatible",
+        "gun": "Mk 45 Mod 4 127mm",
+        "future_weapons": [
+          "HELIOS laser (60+ kW)",
+          "Conventional Prompt Strike hypersonic",
+          "SM-6 / SM-3"
+        ]
+      },
+      "sensors": {
+        "radar": "AN/SPY-6(V) variant",
+        "type": "AESA"
+      },
+      "service_history": {
+        "status": "development",
+        "first_delivery": 2032,
+        "planned_quantity": 20
+      },
+      "unit_cost_usd": 3200000000,
+      "notes": "Ticonderoga replacement. Burke Flight III derived hull. High power generation for directed energy. FY2028 start."
+    }
+  ]
+}

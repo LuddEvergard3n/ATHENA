@@ -1,0 +1,169 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "br-ee11-urutu",
+      "name": "EE-11 Urutu",
+      "type": "apc",
+      "country_of_origin": "BR",
+      "manufacturer": "Engesa",
+      "service_history": {
+        "introduced": 1974,
+        "retired": null,
+        "production_count": 1650,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 240,
+            "variants": ["Standard", "ET-20 turret"],
+            "status": "active"
+          },
+          {
+            "country": "LY",
+            "quantity": 300,
+            "variants": ["Standard"],
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "quantity": 400,
+            "variants": ["Standard"],
+            "status": "retired"
+          },
+          {
+            "country": "TN",
+            "quantity": 54,
+            "variants": ["ET-90"],
+            "status": "active"
+          },
+          {
+            "country": "CO",
+            "quantity": 60,
+            "variants": ["Standard"],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 12,
+        "weight_kg": 14000,
+        "length_m": 6.15,
+        "width_m": 2.65,
+        "height_m": 2.72,
+        "ground_clearance_m": 0.375
+      },
+      "mobility": {
+        "engine": {
+          "model": "Detroit Diesel 6V-53T",
+          "type": "diesel_turbocharged_two_stroke",
+          "power_hp": 260,
+          "power_kw": 194
+        },
+        "power_to_weight_hp_ton": 18.6,
+        "transmission": "Allison MT-643 automatic",
+        "suspension": "independent",
+        "max_speed_road_kmh": 105,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_water_kmh": 8,
+        "range_road_km": 850,
+        "fuel_capacity_liters": 380,
+        "fording_depth_m": 99.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "vertical_obstacle_m": 0.60,
+        "amphibious": true
+      },
+      "armament": {
+        "main": {
+          "designation": "Oerlikon KAD (ET-20 turret)",
+          "caliber_mm": 20,
+          "barrel_length_calibers": 85,
+          "type": "autocannon",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 55,
+          "traverse_deg": 360,
+          "stabilization": "none",
+          "autoloader": true,
+          "rate_of_fire_rpm": 1000,
+          "muzzle_velocity_ms": 1100,
+          "effective_range_m": 2000,
+          "ammunition_carried": 500,
+          "ammunition_ready": 120,
+          "ammunition_types": [
+            {
+              "type": "AP-T",
+              "designation": "20mm AP",
+              "penetration_mm_rha": 30,
+              "penetration_range_m": 1000
+            },
+            {
+              "type": "HEI",
+              "designation": "20mm HEI",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 2000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "FN MAG 58",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "armor_composition": "Welded dual-hardness bimetal steel (Engesa patent)",
+        "protection_front_turret_mm_rha": 20,
+        "protection_front_hull_mm_rha": 22,
+        "protection_side_mm_rha": 10,
+        "protection_rear_mm_rha": 6,
+        "protection_top_mm_rha": 6,
+        "nbc_protection": false,
+        "fire_suppression": false,
+        "ammunition_compartment": "hull_floor",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Optical direct",
+        "commander_sight": {
+          "type": "Periscopic",
+          "day_magnification": "1x",
+          "thermal": false,
+          "independent": false,
+          "hunter_killer": false
+        },
+        "gunner_sight": {
+          "type": "Telescopic",
+          "day_magnification": "4x",
+          "thermal": false
+        },
+        "laser_rangefinder": false,
+        "ballistic_computer": false,
+        "wind_sensor": false,
+        "muzzle_reference_system": false,
+        "cant_sensor": false,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 4,
+        "smoke_grenade_type": "76mm"
+      },
+      "unit_cost_usd": 200000,
+      "cost_year": 1985,
+      "confidence": "high",
+      "sources": [
+        "Army Guide EE-11 Urutu",
+        "Tank Encyclopedia EE-11 Urutu",
+        "Tank-afv.com EE-11 Urutu",
+        "Wikipedia EE-11 Urutu"
+      ],
+      "notes": "6x6 amphibious APC by Engesa. Fully amphibious with twin propellers and Kort nozzles, pneumatic trim vane, bilge pumps. Multiple turret options: ring mount .50 cal (standard), ET-20 (20mm Oerlikon), ET-25 (25mm), ET-90 (90mm, 48 rounds - Tunisia). Central tire inflation system. Combat service: Iran-Iraq War, Colombia counter-narcotics. Being replaced by VBTP-MR Guarani in Brazilian Army.",
+      "year": 1974
+    }
+  ]
+}

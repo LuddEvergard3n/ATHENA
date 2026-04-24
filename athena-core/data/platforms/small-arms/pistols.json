@@ -1,0 +1,237 @@
+{
+  "category": "small-arms",
+  "subcategory": "pistols",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31"
+  },
+  "platforms": [
+    {
+      "id": "us-m17",
+      "name": "SIG Sauer M17 (P320)",
+      "type": "pistol",
+      "country": "US",
+      "year": 2017,
+      "manufacturer": "SIG Sauer",
+      "specifications": {
+        "caliber": "9x19mm",
+        "action": "Striker-fired",
+        "muzzle_velocity_mps": 375,
+        "effective_range_m": 50,
+        "weight_kg": 0.83,
+        "magazine_capacity": 17
+      },
+      "operators": ["US"],
+      "variants": ["M17", "M18 (compact)"],
+      "notes": "US military standard sidearm, MHS winner"
+    },
+    {
+      "id": "us-m9",
+      "name": "Beretta M9",
+      "type": "pistol",
+      "country": "IT",
+      "year": 1985,
+      "manufacturer": "Beretta",
+      "specifications": {
+        "caliber": "9x19mm",
+        "action": "Short recoil, DA/SA",
+        "effective_range_m": 50,
+        "weight_kg": 0.95,
+        "magazine_capacity": 15
+      },
+      "operators": ["US (legacy)", "IT", "FR"],
+      "notes": "Former US military pistol (1985-2017)"
+    },
+    {
+      "id": "at-glock17",
+      "name": "Glock 17",
+      "type": "pistol",
+      "country": "AT",
+      "year": 1982,
+      "manufacturer": "Glock",
+      "specifications": {
+        "caliber": "9x19mm",
+        "action": "Striker-fired, Safe Action",
+        "muzzle_velocity_mps": 375,
+        "effective_range_m": 50,
+        "weight_kg": 0.63,
+        "magazine_capacity": 17
+      },
+      "operators": ["60+ countries", "Most NATO"],
+      "variants": ["G17", "G19", "G18 (auto)", "G26"],
+      "notes": "World's most popular military/police pistol"
+    },
+    {
+      "id": "at-glock19",
+      "name": "Glock 19",
+      "type": "pistol",
+      "country": "AT",
+      "year": 1988,
+      "manufacturer": "Glock",
+      "specifications": {
+        "caliber": "9x19mm",
+        "action": "Striker-fired",
+        "effective_range_m": 50,
+        "weight_kg": 0.60,
+        "magazine_capacity": 15
+      },
+      "operators": ["US-SOCOM", "Many others"],
+      "notes": "Compact Glock, SOF favorite"
+    },
+    {
+      "id": "de-hk45",
+      "name": "Heckler & Koch HK45",
+      "type": "pistol",
+      "country": "DE",
+      "year": 2007,
+      "manufacturer": "Heckler & Koch",
+      "specifications": {
+        "caliber": ".45 ACP",
+        "action": "Short recoil, DA/SA",
+        "effective_range_m": 50,
+        "weight_kg": 0.79,
+        "magazine_capacity": 10
+      },
+      "operators": ["DE", "US (various)"],
+      "notes": "H&K's .45 caliber pistol"
+    },
+    {
+      "id": "de-usp",
+      "name": "Heckler & Koch USP",
+      "type": "pistol",
+      "country": "DE",
+      "year": 1993,
+      "manufacturer": "Heckler & Koch",
+      "specifications": {
+        "caliber": "9x19mm / .45 ACP / .40 S&W",
+        "action": "Short recoil, DA/SA",
+        "effective_range_m": 50,
+        "weight_kg": 0.75,
+        "magazine_capacity": 15
+      },
+      "operators": ["DE (KSK)", "Many SOF"],
+      "variants": ["USP", "USP Compact", "USP Expert", "Mk23"],
+      "notes": "Legendary tactical pistol"
+    },
+    {
+      "id": "us-mk23",
+      "name": "H&K Mk 23 SOCOM",
+      "type": "pistol",
+      "country": "US",
+      "year": 1996,
+      "manufacturer": "Heckler & Koch",
+      "specifications": {
+        "caliber": ".45 ACP",
+        "action": "Short recoil, DA/SA",
+        "effective_range_m": 50,
+        "weight_kg": 1.21,
+        "magazine_capacity": 12
+      },
+      "operators": ["US-SOCOM"],
+      "notes": "SOCOM offensive handgun weapon"
+    },
+    {
+      "id": "ru-mp443",
+      "name": "MP-443 Grach",
+      "type": "pistol",
+      "country": "RU",
+      "year": 2003,
+      "manufacturer": "Izhmech",
+      "specifications": {
+        "caliber": "9x19mm",
+        "action": "Short recoil, DA/SA",
+        "effective_range_m": 50,
+        "weight_kg": 0.95,
+        "magazine_capacity": 18
+      },
+      "operators": ["RU"],
+      "notes": "Russian military standard pistol"
+    },
+    {
+      "id": "ru-pl15",
+      "name": "PL-15 Lebedev",
+      "type": "pistol",
+      "country": "RU",
+      "year": 2019,
+      "manufacturer": "Kalashnikov Concern",
+      "specifications": {
+        "caliber": "9x19mm",
+        "action": "Striker-fired",
+        "effective_range_m": 50,
+        "weight_kg": 0.72,
+        "magazine_capacity": 16
+      },
+      "operators": ["RU"],
+      "notes": "New Russian pistol, Grach replacement"
+    },
+    {
+      "id": "cn-qsz92",
+      "name": "QSZ-92",
+      "type": "pistol",
+      "country": "CN",
+      "year": 1998,
+      "manufacturer": "Norinco",
+      "specifications": {
+        "caliber": "5.8x21mm / 9x19mm",
+        "action": "Short recoil, DA/SA",
+        "effective_range_m": 50,
+        "weight_kg": 0.76,
+        "magazine_capacity": 20
+      },
+      "operators": ["CN"],
+      "notes": "PLA standard pistol"
+    },
+    {
+      "id": "il-jericho",
+      "name": "IWI Jericho 941",
+      "type": "pistol",
+      "country": "IL",
+      "year": 1990,
+      "manufacturer": "IMI/IWI",
+      "specifications": {
+        "caliber": "9x19mm / .40 S&W / .45 ACP",
+        "action": "Short recoil, DA/SA",
+        "effective_range_m": 50,
+        "weight_kg": 1.0,
+        "magazine_capacity": 16
+      },
+      "operators": ["IL", "BR", "MX", "GT"],
+      "notes": "Israeli service pistol"
+    },
+    {
+      "id": "it-beretta-apx",
+      "name": "Beretta APX",
+      "type": "pistol",
+      "country": "IT",
+      "year": 2015,
+      "manufacturer": "Beretta",
+      "specifications": {
+        "caliber": "9x19mm",
+        "action": "Striker-fired",
+        "effective_range_m": 50,
+        "weight_kg": 0.75,
+        "magazine_capacity": 17
+      },
+      "operators": ["IT"],
+      "notes": "Modern Beretta striker pistol"
+    },
+    {
+      "id": "be-fn-57",
+      "name": "FN Five-seveN",
+      "type": "pistol",
+      "country": "BE",
+      "year": 1998,
+      "manufacturer": "FN Herstal",
+      "specifications": {
+        "caliber": "5.7x28mm",
+        "action": "Delayed blowback",
+        "muzzle_velocity_mps": 650,
+        "effective_range_m": 50,
+        "weight_kg": 0.62,
+        "magazine_capacity": 20
+      },
+      "operators": ["US", "BE", "MX", "PE"],
+      "notes": "Armor-piercing capability, P90 companion"
+    }
+  ]
+}

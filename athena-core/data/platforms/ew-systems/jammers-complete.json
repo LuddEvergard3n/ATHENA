@@ -1,0 +1,203 @@
+{
+  "platforms": [
+    {
+      "id": "ru-tirada-2-satcom-jammer",
+      "name": "Tirada-2/2S",
+      "type": "satellite_communications_jammer",
+      "country_of_origin": "RU",
+      "manufacturer": "KRET",
+      "service_entry": 2018,
+      "specifications": {
+        "target": "SATCOM uplinks",
+        "frequencies": "Ku, X, Ka bands",
+        "range_km": "Regional coverage",
+        "platform": "Truck-mounted"
+      },
+      "capabilities": {
+        "satcom_jamming": true,
+        "gps_denial": true,
+        "data_link_disruption": true
+      },
+      "targets": ["Starlink", "VSAT terminals", "Military SATCOM"],
+      "service_history": {
+        "introduced": 2018,
+        "status": "active"
+      },
+      "combat_use": [
+        {"conflict": "Ukraine", "year": 2022, "note": "Attempted Starlink jamming"}
+      ],
+      "notes": "Russian satellite uplink jammer. Targets commercial and military SATCOM. Limited effectiveness vs Starlink due to frequency hopping."
+    },
+    {
+      "id": "ru-avtobaza-sigint",
+      "name": "1L222 Avtobaza",
+      "type": "sigint_ew_system",
+      "country_of_origin": "RU",
+      "manufacturer": "KNIRTI",
+      "service_entry": 1980,
+      "specifications": {
+        "frequency_range_ghz": "1-18",
+        "detection_range_km": 150,
+        "direction_finding": "Multi-baseline interferometer"
+      },
+      "capabilities": {
+        "radar_detection": true,
+        "emitter_location": true,
+        "uav_tracking": "Detect UAV control links",
+        "threat_library": true
+      },
+      "variants": [
+        {"name": "1L222", "note": "Original"},
+        {"name": "Avtobaza-M", "note": "Modernized, digital"}
+      ],
+      "service_history": {
+        "introduced": 1980,
+        "status": "active"
+      },
+      "claimed_captures": [
+        {"target": "RQ-170 Sentinel", "year": 2011, "location": "Iran", "note": "Disputed claim"}
+      ],
+      "notes": "Russian SIGINT/EW system. Iran claimed to use Russian tech to capture RQ-170. Detects and locates emitters."
+    },
+    {
+      "id": "us-anplq-25-modi",
+      "name": "AN/PLQ-25 MODI",
+      "type": "tactical_jammer",
+      "country_of_origin": "US",
+      "manufacturer": "SRC Inc",
+      "full_name": "Modular, Open-architecture, Digital-based, Interoperable",
+      "service_entry": 2015,
+      "specifications": {
+        "weight_kg": 4.5,
+        "coverage": "Directional/Omnidirectional",
+        "bands": "VHF, UHF, L, S"
+      },
+      "features": {
+        "software_defined": true,
+        "man_portable": true,
+        "modular": true
+      },
+      "service_history": {
+        "introduced": 2015,
+        "status": "active",
+        "operator": "US Army"
+      },
+      "notes": "US Army tactical jamming system. Software-defined for flexibility. Man-portable EW."
+    },
+    {
+      "id": "us-atermes-cyberspace",
+      "name": "Tactical Electronic Warfare System (TEWS)",
+      "type": "tactical_ew_suite",
+      "country_of_origin": "US",
+      "manufacturer": "Various",
+      "service_entry": 2010,
+      "specifications": {
+        "functions": ["Jamming", "Direction finding", "Signal exploitation"],
+        "platform": "Ground vehicle or fixed site"
+      },
+      "service_history": {
+        "status": "active"
+      },
+      "notes": "General category for US tactical ground EW systems used at brigade level and below."
+    },
+    {
+      "id": "il-scorpius-sp",
+      "name": "Scorpius-SP",
+      "type": "aesa_jammer",
+      "country_of_origin": "IL",
+      "manufacturer": "IAI Elta",
+      "service_entry": 2020,
+      "specifications": {
+        "type": "AESA-based EW",
+        "frequency": "Multi-band",
+        "platform": "Ground-based"
+      },
+      "features": {
+        "aesa_technology": true,
+        "multiple_threats": true,
+        "simultaneous_jamming": true,
+        "precision_jamming": true
+      },
+      "variants": [
+        {"name": "Scorpius-G", "platform": "Ground"},
+        {"name": "Scorpius-N", "platform": "Naval"},
+        {"name": "Scorpius-SP", "platform": "Self-protection pod"}
+      ],
+      "service_history": {
+        "introduced": 2020,
+        "status": "active"
+      },
+      "notes": "Israeli next-gen AESA jammer. Can jam multiple threats simultaneously with precision beams."
+    },
+    {
+      "id": "ru-r-934bm-jammer",
+      "name": "R-934UM Borisoglebsk-2 Component",
+      "type": "vhf_uhf_jammer",
+      "country_of_origin": "RU",
+      "manufacturer": "Sozvezdie",
+      "service_entry": 2013,
+      "specifications": {
+        "frequency_mhz": "100-2000",
+        "range_km": 100,
+        "simultaneous_targets": 24
+      },
+      "features": {
+        "automated": true,
+        "network_centric": true,
+        "rapid_frequency_hop": true
+      },
+      "service_history": {
+        "introduced": 2013,
+        "status": "active"
+      },
+      "combat_use": [
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "notes": "Component of Borisoglebsk-2 complex. Jams tactical communications."
+    },
+    {
+      "id": "ua-bukovel-ad-jammer",
+      "name": "Bukovel-AD",
+      "type": "drone_jammer",
+      "country_of_origin": "UA",
+      "manufacturer": "Proximus",
+      "service_entry": 2020,
+      "specifications": {
+        "range_km": 20,
+        "frequencies": ["GPS", "GLONASS", "2.4 GHz", "5.8 GHz", "433 MHz", "868 MHz", "915 MHz"],
+        "platform": "Vehicle-mounted"
+      },
+      "features": {
+        "360_coverage": true,
+        "ai_detection": true,
+        "automatic_response": true
+      },
+      "service_history": {
+        "introduced": 2020,
+        "status": "active"
+      },
+      "combat_use": [
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "notes": "Ukrainian C-UAS jammer. Developed from war experience. 20km detection range."
+    },
+    {
+      "id": "cn-yt-1802-jammer",
+      "name": "YT-1802 GPS/BeiDou Jammer",
+      "type": "navigation_jammer",
+      "country_of_origin": "CN",
+      "manufacturer": "Unknown PLA manufacturer",
+      "service_entry": 2015,
+      "specifications": {
+        "frequencies": ["GPS L1/L2/L5", "GLONASS", "BeiDou", "Galileo"],
+        "range_km": 50,
+        "platform": "Vehicle-mounted"
+      },
+      "service_history": {
+        "introduced": 2015,
+        "status": "active"
+      },
+      "notes": "Chinese GNSS denial system. Can jam all major navigation constellations."
+    }
+  ]
+}

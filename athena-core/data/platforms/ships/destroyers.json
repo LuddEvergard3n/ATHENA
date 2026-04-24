@@ -1,0 +1,592 @@
+{
+  "$schema": "../../schema/platform-naval.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-23",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Fighting Ships",
+      "Naval News"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-ddg51-fiii",
+      "name": "Arleigh Burke-class Flight III",
+      "nato_name": null,
+      "type": "destroyer",
+      "class": "Arleigh Burke",
+      "country_of_origin": "US",
+      "manufacturer": "Bath Iron Works / Ingalls Shipbuilding",
+      "service_history": {
+        "introduced": 2024,
+        "retired": null,
+        "production_count": 6,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 6,
+            "status": "active/building",
+            "notes": "22 planned"
+          }
+        ],
+        "notes": "Latest Arleigh Burke with SPY-6 radar"
+      },
+      "specifications": {
+        "crew": 329,
+        "displacement_full_tons": 9700,
+        "length_m": 155.3,
+        "beam_m": 20.4,
+        "draft_m": 9.4
+      },
+      "performance": {
+        "max_speed_knots": 30,
+        "range_nm": 4400,
+        "endurance_days": 45
+      },
+      "powerplant": {
+        "type": "COGAG",
+        "engines": "4x General Electric LM2500-30 gas turbines",
+        "power_shp": 100000
+      },
+      "armament": {
+        "vls": {
+          "type": "Mk 41 VLS",
+          "cells": 96,
+          "missiles": [
+            "SM-2",
+            "SM-3 Block IIA",
+            "SM-6",
+            "Tomahawk",
+            "ASROC"
+          ]
+        },
+        "guns": {
+          "type": "Mk 45 5in/62",
+          "quantity": 1
+        },
+        "ciws": {
+          "type": "Phalanx",
+          "quantity": 2
+        },
+        "torpedoes": {
+          "type": "Mk 32 tubes",
+          "quantity": 2
+        }
+      },
+      "sensors": {
+        "radar": "AN/SPY-6(V)1 AMDR (Flight III)",
+        "radar_notes": "35x more sensitive than SPY-1",
+        "sonar": "AN/SQS-53D hull-mounted"
+      },
+      "unit_cost_usd": 2200000000,
+      "cost_year": 2023,
+      "confidence": "high",
+      "sources": [
+        "USN",
+        "Jane's"
+      ],
+      "notes": "Latest Burke variant. SPY-6 AMDR radar is revolutionary upgrade. BMD capable. 22 Flight III planned.",
+      "year": 2024
+    },
+    {
+      "id": "us-ddg51-fiia",
+      "name": "Arleigh Burke-class Flight IIA",
+      "nato_name": null,
+      "type": "destroyer",
+      "class": "Arleigh Burke",
+      "country_of_origin": "US",
+      "manufacturer": "Bath Iron Works / Ingalls Shipbuilding",
+      "service_history": {
+        "introduced": 2000,
+        "retired": null,
+        "production_count": 40,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 40,
+            "status": "active"
+          }
+        ],
+        "notes": "Workhorse of US Navy"
+      },
+      "specifications": {
+        "crew": 323,
+        "displacement_full_tons": 9200,
+        "length_m": 155.3,
+        "beam_m": 20.4
+      },
+      "performance": {
+        "max_speed_knots": 30,
+        "range_nm": 4400
+      },
+      "powerplant": {
+        "type": "COGAG",
+        "engines": "4x General Electric LM2500"
+      },
+      "armament": {
+        "vls": {
+          "type": "Mk 41 VLS",
+          "cells": 96
+        },
+        "guns": {
+          "type": "Mk 45 5in/54",
+          "quantity": 1
+        }
+      },
+      "sensors": {
+        "radar": "AN/SPY-1D(V)",
+        "sonar": "AN/SQS-53C"
+      },
+      "aviation": {
+        "hangar": true,
+        "helicopters": 2,
+        "type": "MH-60R Seahawk"
+      },
+      "unit_cost_usd": 1800000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "USN",
+        "Jane's"
+      ],
+      "notes": "Flight IIA added helicopter hangar. 40+ in service. World's most numerous modern destroyer class.",
+      "year": 2000
+    },
+    {
+      "id": "cn-type055",
+      "name": "Type 055 Renhai-class",
+      "nato_name": "Renhai",
+      "type": "cruiser",
+      "class": "Type 055",
+      "country_of_origin": "CN",
+      "manufacturer": "Jiangnan Shipyard / Dalian Shipyard",
+      "service_history": {
+        "introduced": 2020,
+        "retired": null,
+        "production_count": 8,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 8,
+            "status": "active/building"
+          }
+        ],
+        "notes": "China's most powerful surface combatant"
+      },
+      "specifications": {
+        "crew": 310,
+        "displacement_full_tons": 13000,
+        "length_m": 180,
+        "beam_m": 20,
+        "draft_m": 6.6
+      },
+      "performance": {
+        "max_speed_knots": 30,
+        "range_nm": 5000
+      },
+      "powerplant": {
+        "type": "COGAG",
+        "engines": "4x QC-280 gas turbines",
+        "power_shp": 112000
+      },
+      "armament": {
+        "vls": {
+          "type": "Universal VLS",
+          "cells": 112,
+          "missiles": [
+            "YJ-18 AShM",
+            "HQ-9B SAM",
+            "CJ-10 LACM",
+            "Yu-8 ASROC"
+          ]
+        },
+        "guns": {
+          "type": "H/PJ-38 130mm",
+          "quantity": 1
+        },
+        "ciws": {
+          "type": "H/PJ-11",
+          "quantity": 1,
+          "notes": "11-barrel 30mm"
+        },
+        "torpedoes": {
+          "type": "324mm tubes",
+          "quantity": 2
+        }
+      },
+      "sensors": {
+        "radar": "Type 346B AESA (S-band + X-band)",
+        "radar_notes": "Integrated mast design",
+        "sonar": "Bow-mounted + towed array"
+      },
+      "unit_cost_usd": 920000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "PLAN media",
+        "Jane's",
+        "CSIS"
+      ],
+      "notes": "Largest non-US surface combatant. 112 VLS cells. US designates as 'cruiser'. 8 in service/building. Carrier escort role.",
+      "year": 2020
+    },
+    {
+      "id": "cn-type052d",
+      "name": "Type 052D Luyang III-class",
+      "nato_name": "Luyang III",
+      "type": "destroyer",
+      "class": "Type 052D",
+      "country_of_origin": "CN",
+      "manufacturer": "Jiangnan Shipyard",
+      "service_history": {
+        "introduced": 2014,
+        "retired": null,
+        "production_count": 25,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 25,
+            "status": "active"
+          }
+        ],
+        "notes": "PLAN workhorse destroyer"
+      },
+      "specifications": {
+        "crew": 280,
+        "displacement_full_tons": 7500,
+        "length_m": 157,
+        "beam_m": 18
+      },
+      "performance": {
+        "max_speed_knots": 30,
+        "range_nm": 4500
+      },
+      "armament": {
+        "vls": {
+          "type": "Universal VLS",
+          "cells": 64
+        },
+        "guns": {
+          "type": "H/PJ-45A 130mm",
+          "quantity": 1
+        }
+      },
+      "sensors": {
+        "radar": "Type 346A AESA"
+      },
+      "unit_cost_usd": 600000000,
+      "cost_year": 2018,
+      "confidence": "medium",
+      "sources": [
+        "PLAN media",
+        "Jane's"
+      ],
+      "notes": "'Chinese Aegis'. 25 in service. Rapid production. Backbone of PLAN surface fleet.",
+      "year": 2014
+    },
+    {
+      "id": "uk-type45",
+      "name": "Type 45 Daring-class",
+      "nato_name": null,
+      "type": "destroyer",
+      "class": "Daring",
+      "country_of_origin": "GB",
+      "manufacturer": "BAE Systems",
+      "service_history": {
+        "introduced": 2009,
+        "retired": null,
+        "production_count": 6,
+        "operators": [
+          {
+            "country": "UK",
+            "quantity": 6,
+            "status": "active"
+          }
+        ],
+        "notes": "Royal Navy air defense destroyers"
+      },
+      "specifications": {
+        "crew": 191,
+        "displacement_full_tons": 8500,
+        "length_m": 152.4,
+        "beam_m": 21.2
+      },
+      "performance": {
+        "max_speed_knots": 29,
+        "range_nm": 7000
+      },
+      "powerplant": {
+        "type": "IEP (Integrated Electric Propulsion)",
+        "engines": "2x Rolls-Royce WR-21 + 2x diesel"
+      },
+      "armament": {
+        "vls": {
+          "type": "Sylver A50",
+          "cells": 48,
+          "missiles": [
+            "Aster 15",
+            "Aster 30"
+          ]
+        },
+        "guns": {
+          "type": "4.5in Mk 8",
+          "quantity": 1
+        },
+        "ciws": {
+          "type": "Phalanx",
+          "quantity": 2
+        }
+      },
+      "sensors": {
+        "radar": "SAMPSON AESA (S1850M)",
+        "notes": "World's first operational naval AESA radar"
+      },
+      "unit_cost_usd": 1400000000,
+      "cost_year": 2009,
+      "confidence": "high",
+      "sources": [
+        "Royal Navy",
+        "Jane's"
+      ],
+      "notes": "First naval AESA radar. Troubled propulsion (WR-21 issues). Carrier escort role. Only 6 built (originally 12 planned).",
+      "year": 2009
+    },
+    {
+      "id": "jp-maya",
+      "name": "Maya-class",
+      "nato_name": null,
+      "type": "destroyer",
+      "class": "Maya",
+      "country_of_origin": "JP",
+      "manufacturer": "Japan Marine United",
+      "service_history": {
+        "introduced": 2020,
+        "retired": null,
+        "production_count": 2,
+        "operators": [
+          {
+            "country": "JP",
+            "quantity": 2,
+            "status": "active"
+          }
+        ],
+        "notes": "Japan's most advanced destroyers"
+      },
+      "specifications": {
+        "crew": 300,
+        "displacement_full_tons": 10250,
+        "length_m": 170,
+        "beam_m": 21
+      },
+      "performance": {
+        "max_speed_knots": 30,
+        "range_nm": 4500
+      },
+      "armament": {
+        "vls": {
+          "type": "Mk 41 VLS",
+          "cells": 96
+        },
+        "guns": {
+          "type": "Mk 45 5in",
+          "quantity": 1
+        }
+      },
+      "sensors": {
+        "radar": "AN/SPY-1D(V) + AN/SPQ-9B",
+        "notes": "Aegis BMD capable"
+      },
+      "unit_cost_usd": 1700000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "JMSDF",
+        "Jane's"
+      ],
+      "notes": "Improved Atago-class. SM-3 Block IIA BMD. NIFC-CA cooperative engagement. 2 in service.",
+      "year": 2020
+    },
+    {
+      "id": "kr-sejong",
+      "name": "Sejong the Great-class (KDX-III)",
+      "nato_name": null,
+      "type": "destroyer",
+      "class": "Sejong",
+      "country_of_origin": "KR",
+      "manufacturer": "Hyundai Heavy Industries",
+      "service_history": {
+        "introduced": 2008,
+        "retired": null,
+        "production_count": 3,
+        "operators": [
+          {
+            "country": "KR",
+            "quantity": 3,
+            "status": "active",
+            "notes": "3 more planned"
+          }
+        ],
+        "notes": "Korea's largest warships"
+      },
+      "specifications": {
+        "crew": 400,
+        "displacement_full_tons": 11000,
+        "length_m": 166,
+        "beam_m": 21.4
+      },
+      "performance": {
+        "max_speed_knots": 30,
+        "range_nm": 5500
+      },
+      "armament": {
+        "vls": {
+          "type": "Mk 41 VLS",
+          "cells": 80,
+          "notes": "+ 48 K-VLS"
+        },
+        "guns": {
+          "type": "Mk 45 5in",
+          "quantity": 1
+        },
+        "missiles": {
+          "type": "Haeseong (SSM-700K)",
+          "quantity": 16
+        }
+      },
+      "sensors": {
+        "radar": "AN/SPY-1D(V)",
+        "notes": "Korean Aegis"
+      },
+      "unit_cost_usd": 1000000000,
+      "cost_year": 2008,
+      "confidence": "high",
+      "sources": [
+        "ROKN",
+        "Jane's"
+      ],
+      "notes": "Korea's Aegis destroyers. 128 total VLS cells (most of any Aegis ship). 6 planned total.",
+      "year": 2008
+    },
+    {
+      "id": "in-kolkata",
+      "name": "Kolkata-class (Project 15A)",
+      "nato_name": null,
+      "type": "destroyer",
+      "class": "Kolkata",
+      "country_of_origin": "IN",
+      "manufacturer": "Mazagon Dock",
+      "service_history": {
+        "introduced": 2014,
+        "retired": null,
+        "production_count": 3,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 3,
+            "status": "active"
+          }
+        ],
+        "notes": "India's most advanced destroyers"
+      },
+      "specifications": {
+        "crew": 325,
+        "displacement_full_tons": 7400,
+        "length_m": 163,
+        "beam_m": 17.4
+      },
+      "performance": {
+        "max_speed_knots": 30,
+        "range_nm": 4000
+      },
+      "armament": {
+        "vls": {
+          "type": "Barak 8 VLS",
+          "cells": 32
+        },
+        "missiles": {
+          "type": "BrahMos",
+          "quantity": 16
+        },
+        "guns": {
+          "type": "OTO Melara 76mm",
+          "quantity": 1
+        }
+      },
+      "sensors": {
+        "radar": "IAI EL/M-2248 MF-STAR AESA",
+        "notes": "Israeli AESA radar"
+      },
+      "unit_cost_usd": 950000000,
+      "cost_year": 2014,
+      "confidence": "high",
+      "sources": [
+        "Indian Navy",
+        "Jane's"
+      ],
+      "notes": "BrahMos supersonic cruise missiles. Israeli MF-STAR radar. 3 in service. Followed by Visakhapatnam-class (Project 15B).",
+      "year": 2014
+    },
+    {
+      "id": "ru-gorshkov",
+      "name": "Admiral Gorshkov-class (Project 22350)",
+      "nato_name": null,
+      "type": "frigate",
+      "class": "Gorshkov",
+      "country_of_origin": "RU",
+      "manufacturer": "Severnaya Verf",
+      "service_history": {
+        "introduced": 2018,
+        "retired": null,
+        "production_count": 4,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 4,
+            "status": "active",
+            "notes": "8+ planned"
+          }
+        ],
+        "notes": "Russia's most modern surface combatant"
+      },
+      "specifications": {
+        "crew": 210,
+        "displacement_full_tons": 5400,
+        "length_m": 135,
+        "beam_m": 16
+      },
+      "performance": {
+        "max_speed_knots": 29,
+        "range_nm": 4500
+      },
+      "armament": {
+        "vls": {
+          "type": "3S14 UKSK",
+          "cells": 16,
+          "notes": "Kalibr, Oniks, Zircon"
+        },
+        "sam": {
+          "type": "Redut (3K96)",
+          "cells": 32
+        },
+        "guns": {
+          "type": "A-192M 130mm",
+          "quantity": 1
+        }
+      },
+      "sensors": {
+        "radar": "Poliment AESA",
+        "notes": "First Russian naval AESA"
+      },
+      "unit_cost_usd": 500000000,
+      "cost_year": 2018,
+      "confidence": "medium",
+      "sources": [
+        "Russian MoD",
+        "Jane's"
+      ],
+      "notes": "Russia's first post-Soviet major surface combatant. Zircon hypersonic missile capable. Slow production (Ukrainian engines issue). 4 in service.",
+      "year": 2018
+    }
+  ]
+}

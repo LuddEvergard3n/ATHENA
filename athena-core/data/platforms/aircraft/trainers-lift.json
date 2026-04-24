@@ -1,0 +1,331 @@
+{
+  "platforms": [
+    {
+      "id": "kr-t-50-golden-eagle",
+      "name": "KAI T-50 Golden Eagle",
+      "type": "trainer_lift",
+      "country_of_origin": "KR",
+      "manufacturer": "Korea Aerospace Industries",
+      "service_entry": 2005,
+      "specifications": {
+        "crew": 2,
+        "length_m": 13.14,
+        "wingspan_m": 9.45,
+        "height_m": 4.94,
+        "empty_weight_kg": 6454,
+        "max_takeoff_weight_kg": 12300,
+        "max_speed_mach": 1.5,
+        "combat_radius_km": 444,
+        "service_ceiling_m": 14630
+      },
+      "powerplant": {
+        "engines": 1,
+        "model": "GE F404-GE-102",
+        "thrust_afterburner_kn": 78.7
+      },
+      "armament": {
+        "hardpoints": 7,
+        "gun": {"type": "A-50 20mm (FA-50)", "caliber_mm": 20},
+        "missiles": ["AIM-9 Sidewinder", "AGM-65 Maverick"]
+      },
+      "variants": [
+        "T-50 - Advanced trainer",
+        "TA-50 - Lead-in fighter trainer",
+        "FA-50 - Light combat"
+      ],
+      "service_history": {
+        "introduced": 2005,
+        "status": "active",
+        "production_count": 200,
+        "operators": [
+          {"country": "KR", "quantity": 100},
+          {"country": "ID", "quantity": 16},
+          {"country": "PH", "quantity": 12},
+          {"country": "TH", "quantity": 12},
+          {"country": "IQ", "quantity": 24},
+          {"country": "PL", "quantity": 48}
+        ]
+      },
+      "unit_cost_usd": 30000000,
+      "notes": "First supersonic trainer developed in Asia. FA-50 is combat-capable variant. Major export success."
+    },
+    {
+      "id": "it-m-346-master",
+      "name": "Leonardo M-346 Master",
+      "type": "trainer_lift",
+      "country_of_origin": "IT",
+      "manufacturer": "Leonardo",
+      "service_entry": 2012,
+      "specifications": {
+        "crew": 2,
+        "length_m": 11.49,
+        "wingspan_m": 9.72,
+        "height_m": 4.76,
+        "empty_weight_kg": 4900,
+        "max_takeoff_weight_kg": 9500,
+        "max_speed_kmh": 1085,
+        "combat_radius_km": 556,
+        "service_ceiling_m": 13715
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "Honeywell F124-GA-200",
+        "thrust_kn": 28
+      },
+      "armament": {
+        "hardpoints": 7,
+        "max_payload_kg": 2155,
+        "gun": "Pod-mounted (optional)",
+        "missiles": ["AIM-9", "Brimstone", "laser guided bombs"]
+      },
+      "variants": [
+        "M-346 - Advanced trainer",
+        "M-346FA - Fighter Attack",
+        "M-346FT - Fighter Trainer"
+      ],
+      "service_history": {
+        "introduced": 2012,
+        "status": "active",
+        "operators": [
+          {"country": "IT", "quantity": 18},
+          {"country": "SG", "quantity": 12},
+          {"country": "IL", "quantity": 30},
+          {"country": "PL", "quantity": 16},
+          {"country": "GR", "quantity": 10},
+          {"country": "QA", "quantity": 6}
+        ]
+      },
+      "unit_cost_usd": 25000000,
+      "notes": "LIFT aircraft with embedded training system. Fly-by-wire. Yak-130 origin. M-346FA light attack variant."
+    },
+    {
+      "id": "ru-yak-130-mitten",
+      "name": "Yakovlev Yak-130",
+      "type": "trainer_lift",
+      "country_of_origin": "RU",
+      "manufacturer": "Irkut",
+      "nato_name": "Mitten",
+      "service_entry": 2010,
+      "specifications": {
+        "crew": 2,
+        "length_m": 11.49,
+        "wingspan_m": 9.72,
+        "height_m": 4.76,
+        "empty_weight_kg": 4600,
+        "max_takeoff_weight_kg": 10290,
+        "max_speed_kmh": 1060,
+        "combat_radius_km": 690,
+        "service_ceiling_m": 12500
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "AI-222-25",
+        "thrust_kn": 24.5
+      },
+      "armament": {
+        "hardpoints": 9,
+        "max_payload_kg": 3000,
+        "gun": "GSh-23L pod",
+        "missiles": ["R-73", "Kh-25", "KAB-500"]
+      },
+      "service_history": {
+        "introduced": 2010,
+        "status": "active",
+        "operators": [
+          {"country": "RU", "quantity": 106},
+          {"country": "DZ", "quantity": 16},
+          {"country": "BD", "quantity": 16},
+          {"country": "BY", "quantity": 8},
+          {"country": "MM", "quantity": 6},
+          {"country": "LA", "quantity": 4}
+        ]
+      },
+      "unit_cost_usd": 15000000,
+      "notes": "Joint development with Aermacchi (became M-346). Combat capable. Light attack role in some operators."
+    },
+    {
+      "id": "gb-bae-hawk-t2",
+      "name": "BAE Hawk T.2",
+      "type": "trainer_lift",
+      "country_of_origin": "GB",
+      "manufacturer": "BAE Systems",
+      "service_entry": 2012,
+      "specifications": {
+        "crew": 2,
+        "length_m": 12.43,
+        "wingspan_m": 9.94,
+        "height_m": 3.98,
+        "empty_weight_kg": 4450,
+        "max_takeoff_weight_kg": 9100,
+        "max_speed_kmh": 1028,
+        "range_km": 2520
+      },
+      "powerplant": {
+        "engines": 1,
+        "model": "Rolls-Royce Adour Mk.951",
+        "thrust_kn": 29.4
+      },
+      "armament": {
+        "hardpoints": 5,
+        "gun": "ADEN 30mm pod",
+        "missiles": ["AIM-9", "bombs"]
+      },
+      "variants": [
+        "Hawk T.2 - UK LIFT",
+        "Hawk Mk.127 - Australia",
+        "Hawk Mk.128 - UK Red Arrows",
+        "Hawk AJT - India (HAL)"
+      ],
+      "service_history": {
+        "introduced": 2012,
+        "status": "active",
+        "production_total": 1000,
+        "operators": [
+          {"country": "GB", "quantity": 28},
+          {"country": "IN", "quantity": 123},
+          {"country": "SA", "quantity": 70},
+          {"country": "AU", "quantity": 33},
+          {"country": "KW", "quantity": 12}
+        ]
+      },
+      "unit_cost_usd": 18000000,
+      "notes": "Over 1000 built worldwide. Red Arrows aerobatic team. Glass cockpit in T.2. HAL license production in India."
+    },
+    {
+      "id": "us-t-7a-red-hawk",
+      "name": "Boeing T-7A Red Hawk",
+      "type": "trainer_lift",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing/Saab",
+      "service_entry": 2026,
+      "specifications": {
+        "crew": 2,
+        "length_m": 14.15,
+        "wingspan_m": 10.05,
+        "height_m": 4.04,
+        "empty_weight_kg": 5000,
+        "max_takeoff_weight_kg": 10400,
+        "max_speed_mach": 1.2,
+        "service_ceiling_m": 15000
+      },
+      "powerplant": {
+        "engines": 1,
+        "model": "GE F404-GE-103",
+        "thrust_afterburner_kn": 79
+      },
+      "avionics": {
+        "cockpit": "Glass cockpit with large displays",
+        "ets": "Embedded Training System",
+        "simulation": "Live Virtual Constructive training"
+      },
+      "service_history": {
+        "expected_service": 2026,
+        "ordered": 351,
+        "operators": [{"country": "US", "quantity": 351, "status": "ordered"}]
+      },
+      "unit_cost_usd": 26000000,
+      "notes": "T-38 replacement. Model-based engineering. Twin-tail design. First USAF aircraft designed with digital thread."
+    },
+    {
+      "id": "cn-l-15-falcon",
+      "name": "Hongdu L-15 Falcon",
+      "type": "trainer_lift",
+      "country_of_origin": "CN",
+      "manufacturer": "Hongdu Aviation",
+      "export_name": "JL-10",
+      "service_entry": 2017,
+      "specifications": {
+        "crew": 2,
+        "length_m": 12.27,
+        "wingspan_m": 9.48,
+        "max_takeoff_weight_kg": 9800,
+        "max_speed_kmh": 1400,
+        "service_ceiling_m": 16000
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "AI-222K-25F",
+        "thrust_afterburner_kn": 41.6
+      },
+      "armament": {
+        "hardpoints": 9,
+        "max_payload_kg": 3000,
+        "missiles": ["PL-9", "LS-6 bombs"]
+      },
+      "variants": [
+        "L-15 - Advanced trainer",
+        "L-15B - Light combat"
+      ],
+      "service_history": {
+        "introduced": 2017,
+        "status": "active",
+        "operators": [
+          {"country": "CN", "quantity": 100},
+          {"country": "AE", "quantity": 36},
+          {"country": "ZM", "quantity": 6}
+        ]
+      },
+      "unit_cost_usd": 15000000,
+      "notes": "Chinese supersonic LIFT. AI-222 engines from Ukraine. Export as JL-10. UAE major customer."
+    },
+    {
+      "id": "cz-l-39ng-albatros",
+      "name": "Aero L-39NG Albatros",
+      "type": "trainer",
+      "country_of_origin": "CZ",
+      "manufacturer": "Aero Vodochody",
+      "service_entry": 2020,
+      "specifications": {
+        "crew": 2,
+        "length_m": 12.13,
+        "wingspan_m": 9.46,
+        "max_takeoff_weight_kg": 7000,
+        "max_speed_kmh": 780,
+        "range_km": 2570
+      },
+      "powerplant": {
+        "engines": 1,
+        "model": "Williams FJ44-4M",
+        "thrust_kn": 16.9
+      },
+      "armament": {
+        "hardpoints": 5,
+        "max_payload_kg": 1200
+      },
+      "service_history": {
+        "introduced": 2020,
+        "status": "active",
+        "operators": [
+          {"country": "CZ", "quantity": 4},
+          {"country": "VN", "quantity": 12},
+          {"country": "HU", "quantity": 12}
+        ]
+      },
+      "unit_cost_usd": 10000000,
+      "notes": "Next-gen L-39. New engine and avionics. Wet wing. 5 hardpoints. L-39 legacy over 3000 built."
+    },
+    {
+      "id": "es-casa-c-101-aviojet",
+      "name": "CASA C-101 Aviojet",
+      "type": "trainer",
+      "country_of_origin": "ES",
+      "manufacturer": "CASA (Airbus)",
+      "service_entry": 1980,
+      "specifications": {
+        "crew": 2,
+        "max_speed_kmh": 769,
+        "range_km": 3700
+      },
+      "service_history": {
+        "introduced": 1980,
+        "status": "active",
+        "operators": [
+          {"country": "ES", "quantity": 60},
+          {"country": "CL", "quantity": 14},
+          {"country": "HN", "quantity": 4}
+        ]
+      },
+      "notes": "Spanish Air Force primary trainer. Patrulla Águila aerobatic team. Being replaced."
+    }
+  ]
+}

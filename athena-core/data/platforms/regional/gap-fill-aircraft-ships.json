@@ -1,0 +1,76 @@
+{
+  "platforms": [
+    {
+      "id": "ru-il-38n-sea-dragon",
+      "name": "Il-38N Sea Dragon",
+      "type": "maritime_patrol",
+      "country_of_origin": "RU",
+      "manufacturer": "Ilyushin",
+      "nato_name": "May",
+      "service_entry": 2014,
+      "specifications": {
+        "crew": 7,
+        "length_m": 40.0,
+        "wingspan_m": 37.4,
+        "max_takeoff_weight_kg": 68000,
+        "max_speed_kmh": 650,
+        "range_km": 9500,
+        "endurance_hours": 12
+      },
+      "sensors": {
+        "radar": "Novella-P-38 (Sea Dragon)",
+        "sonobuoys": 72,
+        "mag_anomaly": "MAD boom"
+      },
+      "armament": {
+        "torpedoes": "APR-2/3",
+        "depth_charges": true,
+        "mines": true,
+        "internal_bay_kg": 5000
+      },
+      "service_history": {
+        "introduced": 2014,
+        "status": "active",
+        "operators": [{"country": "RU", "quantity": 15}]
+      },
+      "notes": "Upgraded Il-38 with Novella-P-38 system. Enhanced ASW capability. Pacific and Northern Fleets."
+    },
+    {
+      "id": "no-skjold-class-corvette",
+      "name": "Skjold-class Coastal Corvette",
+      "type": "missile_corvette",
+      "country_of_origin": "NO",
+      "manufacturer": "Umoe Mandal",
+      "service_entry": 1999,
+      "specifications": {
+        "displacement_tons": 274,
+        "length_m": 47.5,
+        "beam_m": 13.5,
+        "draft_m": 1.0,
+        "crew": 16,
+        "max_speed_knots": 60,
+        "range_nm": 800
+      },
+      "propulsion": {
+        "type": "Surface Effect Ship (SES)",
+        "engines": "Gas turbines + water jets",
+        "air_cushion": true
+      },
+      "armament": {
+        "ssm": "8x NSM",
+        "gun": "1x Oto Melara 76mm",
+        "sam": "Mistral PDMS"
+      },
+      "stealth": {
+        "composite_hull": true,
+        "low_rcs": true
+      },
+      "service_history": {
+        "introduced": 1999,
+        "status": "active",
+        "built": 6
+      },
+      "notes": "World's fastest combat vessel at 60 knots. Surface effect ship design. Extremely low RCS."
+    }
+  ]
+}

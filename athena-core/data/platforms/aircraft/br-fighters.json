@@ -1,0 +1,486 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-22",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "FAB Official",
+      "Saab",
+      "Embraer"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "br-gripen-e",
+      "name": "JAS 39E Gripen (F-39E)",
+      "nato_name": null,
+      "type": "multirole_fighter",
+      "generation": "4.5",
+      "country_of_origin": "SE",
+      "manufacturer": "Saab / Embraer",
+      "service_history": {
+        "introduced": 2022,
+        "first_flight": 2017,
+        "retired": null,
+        "production_count": 36,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 36,
+            "variants": [
+              "F-39E",
+              "F-39F"
+            ],
+            "status": "active",
+            "notes": "22 E + 14 F (two-seat), deliveries 2021-2027"
+          },
+          {
+            "country": "SE",
+            "quantity": 60,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 15.2,
+        "wingspan_m": 8.6,
+        "height_m": 4.5,
+        "wing_area_m2": 30.0,
+        "empty_weight_kg": 8000,
+        "max_takeoff_weight_kg": 16500,
+        "internal_fuel_kg": 3400,
+        "hardpoints": 10
+      },
+      "performance": {
+        "max_speed_kmh": 2200,
+        "max_speed_mach": 2.0,
+        "cruise_speed_kmh": 1400,
+        "combat_radius_km": 1300,
+        "ferry_range_km": 4000,
+        "service_ceiling_m": 16000,
+        "rate_of_climb_mps": 280,
+        "max_g_load": 9,
+        "thrust_to_weight": 0.97
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "General Electric F414G",
+        "thrust_dry_kn": 62,
+        "thrust_afterburner_kn": 98,
+        "notes": "22,000 lbf with afterburner"
+      },
+      "avionics": {
+        "radar": "Selex ES-05 Raven AESA",
+        "radar_range_km": 200,
+        "irst": "Selex Skyward-G",
+        "ew_suite": "Saab EWS-39",
+        "datalink": "Link 16, TIDLS",
+        "helmet_mounted_display": true,
+        "glass_cockpit": true,
+        "sensor_fusion": true,
+        "notes": "Wide Area Display, fully networked"
+      },
+      "armament": {
+        "gun": {
+          "type": "Mauser BK-27",
+          "caliber_mm": 27,
+          "rounds": 120
+        },
+        "air_to_air": [
+          "AIM-120C AMRAAM",
+          "IRIS-T",
+          "A-Darter",
+          "AIM-9X"
+        ],
+        "air_to_ground": [
+          "GBU-12",
+          "GBU-39 SDB",
+          "JDAM",
+          "Brimstone"
+        ],
+        "anti_ship": [
+          "RBS-15F Mk4"
+        ],
+        "max_payload_kg": 6000
+      },
+      "stealth": {
+        "rcs_estimate_m2": 1.0,
+        "ir_signature": "reduced",
+        "notes": "Low observable features, reduced RCS vs Gripen C"
+      },
+      "variants": [
+        {
+          "designation": "F-39E (JAS 39E)",
+          "crew": 1,
+          "notes": "Single-seat multirole"
+        },
+        {
+          "designation": "F-39F (JAS 39F)",
+          "crew": 2,
+          "notes": "Two-seat trainer/combat"
+        }
+      ],
+      "unit_cost_usd": 85000000,
+      "cost_year": 2023,
+      "cost_notes": "Flyaway cost, Brazil contract $4.68B for 36 aircraft + support",
+      "confidence": "high",
+      "sources": [
+        "Saab official",
+        "FAB",
+        "Jane's",
+        "Flight Global"
+      ],
+      "notes": "Brazil's new frontline fighter (Projeto FX-2). First Gripen E customer outside Sweden. Technology transfer to Embraer. Deliveries began 2021, operational 2023. 22 single-seat (E) + 14 two-seat (F). Replaces F-5EM and Mirage 2000. Most advanced fighter in South America.",
+      "year": 2019
+    },
+    {
+      "id": "br-amx",
+      "name": "AMX International A-1",
+      "nato_name": null,
+      "type": "ground_attack",
+      "generation": "4",
+      "country_of_origin": "BR",
+      "manufacturer": "Embraer / Alenia Aermacchi",
+      "service_history": {
+        "introduced": 1989,
+        "first_flight": 1984,
+        "retired": null,
+        "production_count": 187,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 43,
+            "variants": [
+              "A-1A",
+              "A-1B",
+              "A-1M",
+              "RA-1M"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "quantity": 0,
+            "status": "retired",
+            "notes": "Retired 2024"
+          }
+        ],
+        "notes": "Italy retired 2024, Brazil continues"
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 13.23,
+        "wingspan_m": 8.87,
+        "height_m": 4.55,
+        "wing_area_m2": 21.0,
+        "empty_weight_kg": 6700,
+        "max_takeoff_weight_kg": 13000,
+        "internal_fuel_kg": 3500,
+        "hardpoints": 7
+      },
+      "performance": {
+        "max_speed_kmh": 1160,
+        "max_speed_mach": 0.95,
+        "combat_radius_km": 890,
+        "ferry_range_km": 3150,
+        "service_ceiling_m": 13000,
+        "rate_of_climb_mps": 52,
+        "max_g_load": 8
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Rolls-Royce Spey Mk807",
+        "thrust_dry_kn": 49.1,
+        "thrust_afterburner_kn": null,
+        "notes": "Non-afterburning turbofan"
+      },
+      "avionics": {
+        "radar": "SCP-01 Scipio (A-1M)",
+        "ew_suite": "ALR-300",
+        "datalink": "Link BR-2",
+        "glass_cockpit": true,
+        "notes": "A-1M modernized with HUD, HOTAS, glass cockpit"
+      },
+      "armament": {
+        "gun": {
+          "type": "M61A1 Vulcan",
+          "caliber_mm": 20,
+          "rounds": 350
+        },
+        "air_to_air": [
+          "MAA-1 Piranha",
+          "AIM-9M"
+        ],
+        "air_to_ground": [
+          "Mk 82/83/84",
+          "CBU-87",
+          "BAFG-230",
+          "MAR-1"
+        ],
+        "anti_ship": null,
+        "max_payload_kg": 3800
+      },
+      "variants": [
+        {
+          "designation": "A-1A",
+          "crew": 1,
+          "notes": "Original single-seat"
+        },
+        {
+          "designation": "A-1B",
+          "crew": 2,
+          "notes": "Two-seat trainer"
+        },
+        {
+          "designation": "A-1M",
+          "crew": 1,
+          "notes": "Modernized, new avionics"
+        },
+        {
+          "designation": "RA-1M",
+          "crew": 1,
+          "notes": "Reconnaissance variant"
+        }
+      ],
+      "unit_cost_usd": 25000000,
+      "cost_year": 1995,
+      "confidence": "high",
+      "sources": [
+        "Jane's",
+        "FAB",
+        "Embraer"
+      ],
+      "notes": "Brazilian-Italian subsonic attack aircraft. Designed for close air support and interdiction. Low-level penetration. Operated by 1\u00ba/16\u00ba GAV 'Adelphi' and 3\u00ba/10\u00ba GAV 'Centauro'. Being supplemented by Gripen.",
+      "year": 1989
+    },
+    {
+      "id": "br-f5em",
+      "name": "F-5EM Tiger II",
+      "nato_name": null,
+      "type": "light_fighter",
+      "generation": "3",
+      "country_of_origin": "US",
+      "manufacturer": "Northrop / Embraer (upgrade)",
+      "service_history": {
+        "introduced": 1975,
+        "retired": null,
+        "production_count": 46,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 46,
+            "status": "retiring",
+            "notes": "Being replaced by Gripen"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 1,
+        "length_m": 14.45,
+        "wingspan_m": 8.13,
+        "height_m": 4.06,
+        "empty_weight_kg": 4410,
+        "max_takeoff_weight_kg": 11193,
+        "hardpoints": 7
+      },
+      "performance": {
+        "max_speed_kmh": 1700,
+        "max_speed_mach": 1.63,
+        "combat_radius_km": 890,
+        "ferry_range_km": 2594,
+        "service_ceiling_m": 15800,
+        "rate_of_climb_mps": 175,
+        "max_g_load": 7.33
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "General Electric J85-GE-21B",
+        "thrust_dry_kn": 15.5,
+        "thrust_afterburner_kn": 22.2
+      },
+      "avionics": {
+        "radar": "Grifo-F (Embraer upgrade)",
+        "ew_suite": "MAWS, RWR",
+        "helmet_mounted_display": true,
+        "glass_cockpit": true,
+        "notes": "Modernized 2000s with HOTAS, MFD, new radar"
+      },
+      "armament": {
+        "gun": {
+          "type": "M39A2",
+          "caliber_mm": 20,
+          "rounds": 280
+        },
+        "air_to_air": [
+          "MAA-1 Piranha",
+          "AIM-9M",
+          "Python 4"
+        ],
+        "air_to_ground": [
+          "Mk 82/83",
+          "BAFG-230"
+        ],
+        "max_payload_kg": 3200
+      },
+      "variants": [
+        {
+          "designation": "F-5EM",
+          "crew": 1,
+          "notes": "Single-seat modernized"
+        },
+        {
+          "designation": "F-5FM",
+          "crew": 2,
+          "notes": "Two-seat modernized"
+        }
+      ],
+      "unit_cost_usd": 5000000,
+      "cost_year": 2005,
+      "cost_notes": "Upgrade cost",
+      "confidence": "high",
+      "sources": [
+        "Jane's",
+        "FAB"
+      ],
+      "notes": "Modernized Brazilian F-5s. 'M' upgrade by Embraer (2001-2013). Grifo radar, new avionics, HOTAS. 1\u00ba/14\u00ba GAV 'Pampa'. Being replaced by Gripen E/F. Excellent adversary trainer.",
+      "year": 1975
+    },
+    {
+      "id": "br-a29",
+      "name": "A-29 Super Tucano (EMB 314)",
+      "nato_name": null,
+      "type": "light_attack_coin",
+      "generation": "turboprop",
+      "country_of_origin": "BR",
+      "manufacturer": "Embraer",
+      "service_history": {
+        "introduced": 2003,
+        "first_flight": 1999,
+        "retired": null,
+        "production_count": 260,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 99,
+            "status": "active"
+          },
+          {
+            "country": "US",
+            "quantity": 12,
+            "variants": [
+              "A-29B"
+            ],
+            "status": "active",
+            "notes": "Afghan training"
+          },
+          {
+            "country": "AF",
+            "quantity": 26,
+            "status": "active"
+          },
+          {
+            "country": "CO",
+            "quantity": 25,
+            "status": "active"
+          },
+          {
+            "country": "EC",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "ID",
+            "quantity": 16,
+            "status": "active"
+          },
+          {
+            "country": "NG",
+            "quantity": 12,
+            "status": "active"
+          },
+          {
+            "country": "PH",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "LB",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "GH",
+            "quantity": 5,
+            "status": "active"
+          }
+        ],
+        "notes": "15+ operators, major export success"
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 11.38,
+        "wingspan_m": 11.14,
+        "height_m": 3.97,
+        "empty_weight_kg": 3200,
+        "max_takeoff_weight_kg": 5400,
+        "hardpoints": 5
+      },
+      "performance": {
+        "max_speed_kmh": 590,
+        "cruise_speed_kmh": 520,
+        "combat_radius_km": 550,
+        "ferry_range_km": 1600,
+        "service_ceiling_m": 10668,
+        "endurance_hours": 8,
+        "max_g_load": 7
+      },
+      "powerplant": {
+        "engines": 1,
+        "type": "Pratt & Whitney Canada PT6A-68C",
+        "power_shp": 1600
+      },
+      "avionics": {
+        "radar": null,
+        "sensors": "FLIR, laser designator",
+        "ew_suite": "RWR, chaff/flare",
+        "glass_cockpit": true,
+        "night_vision_compatible": true
+      },
+      "armament": {
+        "gun": {
+          "type": "FN Herstal M3P",
+          "caliber_mm": 12.7,
+          "rounds": 200
+        },
+        "air_to_air": [
+          "MAA-1 Piranha",
+          "AIM-9L"
+        ],
+        "air_to_ground": [
+          "Mk 81/82",
+          "SBAT-70 rockets",
+          "gun pods"
+        ],
+        "guided_munitions": [
+          "GBU-12",
+          "AGM-114 Hellfire",
+          "Griffin"
+        ],
+        "max_payload_kg": 1550
+      },
+      "unit_cost_usd": 18000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Embraer",
+        "USAF",
+        "Jane's"
+      ],
+      "notes": "Brazil's most successful military aircraft export. Counter-insurgency (COIN), close air support, training. Combat in Colombia (FARC), Afghanistan, Nigeria (Boko Haram), Mali. Low operating cost ($500/hour). 260+ built.",
+      "year": 2003
+    }
+  ]
+}

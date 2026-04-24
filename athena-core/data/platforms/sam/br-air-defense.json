@@ -1,0 +1,111 @@
+{
+  "category": "sam",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-02-16",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land-Based Air Defence",
+      "Brazilian Army"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "br-gepard-1a2",
+      "name": "Gepard 1A2 SPAAG",
+      "type": "spaag",
+      "country": "BR",
+      "year": 2013,
+      "manufacturer": "Krauss-Maffei Wegmann",
+      "service_history": {
+        "introduced": 2013,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 34,
+            "status": "active",
+            "notes": "Acquired from German Bundeswehr surplus. Refurbished by KMW. 12th Anti-Aircraft Artillery Group."
+          }
+        ]
+      },
+      "specifications": {
+        "caliber_mm": 35,
+        "barrels": 2,
+        "rate_of_fire_rpm": 1100,
+        "effective_range_m": 5500,
+        "radar_range_km": 15,
+        "crew": 3,
+        "weight_kg": 47500,
+        "ammunition_carried": 680
+      },
+      "mobility": {
+        "engine": "MTU MB 838 CaM 500",
+        "power_hp": 830,
+        "max_speed_kmh": 65,
+        "range_km": 550
+      },
+      "protection": {
+        "armor_type": "welded steel",
+        "max_armor_mm": 40,
+        "nbc_protection": true
+      },
+      "notes": "Twin 35mm Oerlikon KDA autocannons. Pulse-Doppler search and tracking radar. Proven combat system (Ukraine conflict). Brazil acquired 34 units from German surplus in 2013."
+    },
+    {
+      "id": "br-igla-s",
+      "name": "9K338 Igla-S (SA-24 Grinch)",
+      "type": "manpads",
+      "country": "BR",
+      "year": 2015,
+      "manufacturer": "KBM (Russia)",
+      "service_history": {
+        "introduced": 2015,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 100,
+            "status": "active",
+            "notes": "MANPADS for Brazilian Army air defense platoons. Supplemented by RBS 70."
+          }
+        ]
+      },
+      "specifications": {
+        "caliber_mm": 72,
+        "range_km": 6,
+        "ceiling_m": 3500,
+        "warhead_kg": 2.5,
+        "missile_speed_mach": 1.9,
+        "weight_system_kg": 19
+      },
+      "notes": "Shoulder-fired SAM. IR seeker with UV discrimination. All-aspect engagement capability. Improved IRCCM vs Igla-1."
+    },
+    {
+      "id": "br-rbs70",
+      "name": "RBS 70 (Bofors)",
+      "type": "short_range_sam",
+      "country": "BR",
+      "year": 1996,
+      "manufacturer": "Bofors (Saab)",
+      "service_history": {
+        "introduced": 1996,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 72,
+            "status": "active",
+            "notes": "Laser beam-riding VSHORAD. Used by Anti-Aircraft Artillery battalions."
+          }
+        ]
+      },
+      "specifications": {
+        "range_km": 8,
+        "ceiling_m": 5000,
+        "warhead_kg": 1.1,
+        "guidance": "laser_beam_riding",
+        "weight_system_kg": 87,
+        "crew": 2
+      },
+      "notes": "Laser beam-riding short-range SAM. Immune to IR countermeasures. Can engage low-flying fast jets, helicopters, UAVs, and cruise missiles. Mk2 variant with improved Bolide missile."
+    }
+  ]
+}

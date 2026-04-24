@@ -1,0 +1,636 @@
+{
+  "$schema": "../../schema/platform-naval.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-23",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Fighting Ships",
+      "Naval News"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "us-cvn78",
+      "name": "USS Gerald R. Ford (CVN-78)",
+      "nato_name": null,
+      "type": "aircraft_carrier",
+      "class": "Ford",
+      "country_of_origin": "US",
+      "manufacturer": "Huntington Ingalls Industries",
+      "service_history": {
+        "introduced": 2017,
+        "commissioned": 2017,
+        "retired": null,
+        "production_count": 4,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 2,
+            "status": "active",
+            "notes": "CVN-78, CVN-79 (John F. Kennedy)"
+          },
+          {
+            "country": "US",
+            "quantity": 2,
+            "status": "building",
+            "notes": "CVN-80 (Enterprise), CVN-81 (Doris Miller)"
+          }
+        ],
+        "notes": "Most advanced carrier ever built"
+      },
+      "specifications": {
+        "crew": 4539,
+        "air_wing": 2480,
+        "displacement_full_tons": 100000,
+        "length_m": 337,
+        "beam_m": 78,
+        "draft_m": 12,
+        "flight_deck_m2": 25000
+      },
+      "performance": {
+        "max_speed_knots": 30,
+        "range_nm": "unlimited",
+        "notes": "Nuclear powered, unlimited range"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactors": 2,
+        "reactor_type": "A1B pressurized water",
+        "power_mw": 700,
+        "notes": "3x power output of Nimitz"
+      },
+      "aviation": {
+        "aircraft_capacity": 75,
+        "air_wing_composition": [
+          {
+            "type": "F-35C Lightning II",
+            "quantity": 20
+          },
+          {
+            "type": "F/A-18E/F Super Hornet",
+            "quantity": 24
+          },
+          {
+            "type": "EA-18G Growler",
+            "quantity": 5
+          },
+          {
+            "type": "E-2D Hawkeye",
+            "quantity": 5
+          },
+          {
+            "type": "CMV-22B Osprey",
+            "quantity": 2
+          },
+          {
+            "type": "MH-60S/R Seahawk",
+            "quantity": 19
+          }
+        ],
+        "catapults": {
+          "type": "EMALS (Electromagnetic)",
+          "quantity": 4,
+          "notes": "First EMALS carrier"
+        },
+        "arresting_gear": {
+          "type": "AAG (Advanced)",
+          "quantity": 3
+        },
+        "sortie_rate_per_day": 270
+      },
+      "armament": {
+        "sam": [
+          {
+            "type": "RIM-162 ESSM",
+            "launchers": 2
+          },
+          {
+            "type": "RIM-116 RAM",
+            "launchers": 2
+          }
+        ],
+        "ciws": {
+          "type": "Phalanx",
+          "quantity": 3
+        }
+      },
+      "sensors": {
+        "radar": "AN/SPY-3 (X-band), AN/SPY-4 (S-band)",
+        "notes": "Dual-band radar"
+      },
+      "unit_cost_usd": 13300000000,
+      "cost_year": 2017,
+      "confidence": "high",
+      "sources": [
+        "USN",
+        "Jane's",
+        "Naval News"
+      ],
+      "notes": "Most expensive warship ever. EMALS catapults, AAG arresting gear. 3x power generation vs Nimitz. 270 sorties/day. 4 planned, 2 active.",
+      "year": 2017
+    },
+    {
+      "id": "us-cvn68",
+      "name": "Nimitz-class",
+      "nato_name": null,
+      "type": "aircraft_carrier",
+      "class": "Nimitz",
+      "country_of_origin": "US",
+      "manufacturer": "Newport News Shipbuilding",
+      "service_history": {
+        "introduced": 1975,
+        "retired": null,
+        "production_count": 10,
+        "operators": [
+          {
+            "country": "US",
+            "quantity": 10,
+            "status": "active"
+          }
+        ],
+        "notes": "Backbone of US carrier fleet"
+      },
+      "specifications": {
+        "crew": 3200,
+        "air_wing": 2480,
+        "displacement_full_tons": 97000,
+        "length_m": 333,
+        "beam_m": 77,
+        "draft_m": 11.3
+      },
+      "performance": {
+        "max_speed_knots": 30,
+        "range_nm": "unlimited"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactors": 2,
+        "reactor_type": "A4W pressurized water",
+        "power_mw": 260
+      },
+      "aviation": {
+        "aircraft_capacity": 90,
+        "catapults": {
+          "type": "C-13-2 Steam",
+          "quantity": 4
+        },
+        "sortie_rate_per_day": 220
+      },
+      "armament": {
+        "sam": [
+          {
+            "type": "RIM-7 Sea Sparrow",
+            "launchers": 2
+          },
+          {
+            "type": "RIM-116 RAM",
+            "launchers": 2
+          }
+        ],
+        "ciws": {
+          "type": "Phalanx",
+          "quantity": 3
+        }
+      },
+      "unit_cost_usd": 8500000000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "USN",
+        "Jane's"
+      ],
+      "notes": "10 active ships. Nuclear powered. 50-year service life. Steam catapults. Being supplemented by Ford-class.",
+      "year": 1975
+    },
+    {
+      "id": "cn-fujian",
+      "name": "Fujian (CV-18)",
+      "nato_name": null,
+      "type": "aircraft_carrier",
+      "class": "Type 003",
+      "country_of_origin": "CN",
+      "manufacturer": "Jiangnan Shipyard",
+      "service_history": {
+        "introduced": 2024,
+        "commissioned": 2024,
+        "retired": null,
+        "production_count": 1,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 1,
+            "status": "fitting_out"
+          }
+        ],
+        "notes": "China's first CATOBAR carrier"
+      },
+      "specifications": {
+        "crew": 3000,
+        "displacement_full_tons": 80000,
+        "length_m": 316,
+        "beam_m": 76,
+        "draft_m": 11
+      },
+      "performance": {
+        "max_speed_knots": 28,
+        "range_nm": 8000
+      },
+      "powerplant": {
+        "type": "Conventional",
+        "propulsion": "COGAG",
+        "notes": "Not nuclear (first Chinese EMALS carrier)"
+      },
+      "aviation": {
+        "aircraft_capacity": 60,
+        "air_wing_composition": [
+          {
+            "type": "J-35",
+            "quantity": 24
+          },
+          {
+            "type": "J-15T",
+            "quantity": 12
+          },
+          {
+            "type": "KJ-600 AEW",
+            "quantity": 6
+          }
+        ],
+        "catapults": {
+          "type": "EMALS",
+          "quantity": 3
+        }
+      },
+      "unit_cost_usd": 5000000000,
+      "cost_year": 2022,
+      "confidence": "medium",
+      "sources": [
+        "PLA media",
+        "Jane's",
+        "CSIS"
+      ],
+      "notes": "China's largest and most advanced carrier. First non-US EMALS carrier. Conventional power (not nuclear). J-35 stealth fighter capable.",
+      "year": 2024
+    },
+    {
+      "id": "cn-liaoning",
+      "name": "Liaoning (CV-16)",
+      "nato_name": null,
+      "type": "aircraft_carrier",
+      "class": "Type 001",
+      "country_of_origin": "CN",
+      "manufacturer": "Dalian Shipyard (rebuilt)",
+      "service_history": {
+        "introduced": 2012,
+        "commissioned": 2012,
+        "retired": null,
+        "production_count": 1,
+        "operators": [
+          {
+            "country": "CN",
+            "quantity": 1,
+            "status": "active"
+          }
+        ],
+        "notes": "Former Soviet Varyag, rebuilt"
+      },
+      "specifications": {
+        "crew": 2000,
+        "displacement_full_tons": 60000,
+        "length_m": 305,
+        "beam_m": 75
+      },
+      "performance": {
+        "max_speed_knots": 29,
+        "range_nm": 7000
+      },
+      "powerplant": {
+        "type": "Steam turbine",
+        "boilers": 8
+      },
+      "aviation": {
+        "aircraft_capacity": 36,
+        "air_wing_composition": [
+          {
+            "type": "J-15 Flying Shark",
+            "quantity": 24
+          },
+          {
+            "type": "Z-18 helicopter",
+            "quantity": 12
+          }
+        ],
+        "catapults": {
+          "type": "STOBAR (ski-jump)",
+          "quantity": 0
+        }
+      },
+      "unit_cost_usd": 1500000000,
+      "cost_year": 2012,
+      "confidence": "high",
+      "sources": [
+        "PLA media",
+        "Jane's"
+      ],
+      "notes": "Ex-Soviet Varyag (Kuznetsov-class). Training carrier. Ski-jump launch. Limited combat capability vs US carriers.",
+      "year": 2012
+    },
+    {
+      "id": "uk-qec",
+      "name": "Queen Elizabeth-class",
+      "nato_name": null,
+      "type": "aircraft_carrier",
+      "class": "Queen Elizabeth",
+      "country_of_origin": "GB",
+      "manufacturer": "Aircraft Carrier Alliance",
+      "service_history": {
+        "introduced": 2017,
+        "retired": null,
+        "production_count": 2,
+        "operators": [
+          {
+            "country": "UK",
+            "quantity": 2,
+            "status": "active",
+            "notes": "R08, R09"
+          }
+        ],
+        "notes": "Largest Royal Navy ships ever"
+      },
+      "specifications": {
+        "crew": 679,
+        "air_wing": 900,
+        "displacement_full_tons": 65000,
+        "length_m": 284,
+        "beam_m": 73,
+        "draft_m": 11
+      },
+      "performance": {
+        "max_speed_knots": 25,
+        "range_nm": 10000
+      },
+      "powerplant": {
+        "type": "IFEP (Integrated Full Electric Propulsion)",
+        "engines": "2x Rolls-Royce MT30 gas turbines + 4x diesel"
+      },
+      "aviation": {
+        "aircraft_capacity": 40,
+        "air_wing_composition": [
+          {
+            "type": "F-35B Lightning II",
+            "quantity": 24
+          },
+          {
+            "type": "Merlin helicopter",
+            "quantity": 14
+          }
+        ],
+        "catapults": {
+          "type": "STOVL (ski-jump)",
+          "quantity": 0
+        }
+      },
+      "armament": {
+        "ciws": {
+          "type": "Phalanx",
+          "quantity": 3
+        }
+      },
+      "unit_cost_usd": 3900000000,
+      "cost_year": 2017,
+      "confidence": "high",
+      "sources": [
+        "Royal Navy",
+        "Jane's"
+      ],
+      "notes": "HMS Queen Elizabeth (R08), HMS Prince of Wales (R09). F-35B STOVL only. Ski-jump launch. Twin-island design.",
+      "year": 2017
+    },
+    {
+      "id": "ru-kuznetsov",
+      "name": "Admiral Kuznetsov",
+      "nato_name": null,
+      "type": "aircraft_carrier",
+      "class": "Kuznetsov",
+      "country_of_origin": "RU",
+      "manufacturer": "Chernomorsky Shipyard",
+      "service_history": {
+        "introduced": 1990,
+        "commissioned": 1990,
+        "retired": null,
+        "production_count": 1,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 1,
+            "status": "refit",
+            "notes": "Extended refit since 2017"
+          }
+        ],
+        "notes": "Russia's only carrier, troubled history"
+      },
+      "specifications": {
+        "crew": 1960,
+        "displacement_full_tons": 58600,
+        "length_m": 305,
+        "beam_m": 72
+      },
+      "performance": {
+        "max_speed_knots": 29,
+        "range_nm": 8500
+      },
+      "powerplant": {
+        "type": "Steam turbine",
+        "boilers": 8,
+        "notes": "Unreliable, requires tug escort"
+      },
+      "aviation": {
+        "aircraft_capacity": 33,
+        "air_wing_composition": [
+          {
+            "type": "Su-33 Flanker-D",
+            "quantity": 14
+          },
+          {
+            "type": "MiG-29K",
+            "quantity": 10
+          },
+          {
+            "type": "Ka-27/Ka-31",
+            "quantity": 9
+          }
+        ],
+        "catapults": {
+          "type": "STOBAR (ski-jump)",
+          "quantity": 0
+        }
+      },
+      "armament": {
+        "sam": {
+          "type": "Kinzhal (SA-N-9)",
+          "launchers": 4
+        },
+        "asw": {
+          "type": "P-700 Granit",
+          "launchers": 12
+        }
+      },
+      "operational_history": {
+        "notes": "Multiple fires during refit. 2 aircraft lost over Syria. Towed to/from Syria deployment."
+      },
+      "unit_cost_usd": 2000000000,
+      "cost_year": 1990,
+      "confidence": "high",
+      "sources": [
+        "Russian MoD",
+        "Jane's"
+      ],
+      "notes": "Russia's sole carrier. Plagued by mechanical issues. Syria deployment lost 2 aircraft. In extended refit (fires, dock collapse). May never return to service.",
+      "year": 1990
+    },
+    {
+      "id": "fr-cdg",
+      "name": "Charles de Gaulle (R91)",
+      "nato_name": null,
+      "type": "aircraft_carrier",
+      "class": "Charles de Gaulle",
+      "country_of_origin": "FR",
+      "manufacturer": "DCN Brest",
+      "service_history": {
+        "introduced": 2001,
+        "commissioned": 2001,
+        "retired": null,
+        "production_count": 1,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 1,
+            "status": "active"
+          }
+        ],
+        "notes": "Only non-US nuclear carrier outside Russia"
+      },
+      "specifications": {
+        "crew": 1350,
+        "air_wing": 550,
+        "displacement_full_tons": 42500,
+        "length_m": 262,
+        "beam_m": 64
+      },
+      "performance": {
+        "max_speed_knots": 27,
+        "range_nm": "unlimited"
+      },
+      "powerplant": {
+        "type": "Nuclear",
+        "reactors": 2,
+        "reactor_type": "K-15 PWR"
+      },
+      "aviation": {
+        "aircraft_capacity": 40,
+        "air_wing_composition": [
+          {
+            "type": "Rafale M",
+            "quantity": 24
+          },
+          {
+            "type": "E-2C Hawkeye",
+            "quantity": 3
+          },
+          {
+            "type": "NH90 Caiman",
+            "quantity": 4
+          }
+        ],
+        "catapults": {
+          "type": "C-13F Steam",
+          "quantity": 2
+        }
+      },
+      "armament": {
+        "sam": {
+          "type": "Aster 15",
+          "launchers": 4
+        }
+      },
+      "unit_cost_usd": 4000000000,
+      "cost_year": 2001,
+      "confidence": "high",
+      "sources": [
+        "French Navy",
+        "Jane's"
+      ],
+      "notes": "Only non-US nuclear CATOBAR carrier. Uses US catapults and E-2 Hawkeye. PANG replacement planned for 2038.",
+      "year": 2001
+    },
+    {
+      "id": "in-vikrant",
+      "name": "INS Vikrant (R11)",
+      "nato_name": null,
+      "type": "aircraft_carrier",
+      "class": "Vikrant",
+      "country_of_origin": "IN",
+      "manufacturer": "Cochin Shipyard",
+      "service_history": {
+        "introduced": 2022,
+        "commissioned": 2022,
+        "retired": null,
+        "production_count": 1,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 1,
+            "status": "active"
+          }
+        ],
+        "notes": "India's first indigenous carrier"
+      },
+      "specifications": {
+        "crew": 1700,
+        "displacement_full_tons": 45000,
+        "length_m": 262,
+        "beam_m": 62
+      },
+      "performance": {
+        "max_speed_knots": 28,
+        "range_nm": 7500
+      },
+      "powerplant": {
+        "type": "COGAG",
+        "engines": "4x General Electric LM2500"
+      },
+      "aviation": {
+        "aircraft_capacity": 30,
+        "air_wing_composition": [
+          {
+            "type": "MiG-29K",
+            "quantity": 16
+          },
+          {
+            "type": "HAL Tejas Mk2",
+            "quantity": 8,
+            "notes": "Future"
+          },
+          {
+            "type": "Kamov Ka-31",
+            "quantity": 6
+          }
+        ],
+        "catapults": {
+          "type": "STOBAR (ski-jump)",
+          "quantity": 0
+        }
+      },
+      "unit_cost_usd": 3000000000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "Indian Navy",
+        "Jane's"
+      ],
+      "notes": "India's first indigenous carrier. Ski-jump STOBAR. Future IAC-2 will be CATOBAR with EMALS.",
+      "year": 2022
+    }
+  ]
+}

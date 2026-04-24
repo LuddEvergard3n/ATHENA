@@ -1,0 +1,261 @@
+{
+  "category": "regional",
+  "subcategory": "africa",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Defence"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "za-rooikat",
+      "name": "Rooikat 105",
+      "type": "wheeled-tank-destroyer",
+      "country": "ZA",
+      "year": 1990,
+      "manufacturer": "Denel",
+      "specifications": {
+        "combat_weight_kg": 28000,
+        "max_speed_kmh": 120
+      },
+      "armament": {
+        "main_gun": "105mm GT-7"
+      },
+      "service_history": {
+        "operators": [
+          {
+            "country": "ZA",
+            "quantity": 42,
+            "status": "active"
+          }
+        ]
+      },
+      "notes": "South African 8x8 fire support vehicle"
+    },
+    {
+      "id": "za-g6",
+      "name": "G6 Rhino",
+      "type": "sph",
+      "country": "ZA",
+      "year": 1988,
+      "manufacturer": "Denel",
+      "specifications": {
+        "caliber_mm": 155,
+        "barrel_length": "L/45",
+        "range_km": 39
+      },
+      "service_history": {
+        "operators": [
+          {
+            "country": "ZA",
+            "quantity": 43,
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 78,
+            "status": "active"
+          },
+          {
+            "country": "OM",
+            "quantity": 24,
+            "status": "active"
+          }
+        ]
+      },
+      "notes": "6x6 wheeled SPH, excellent cross-country mobility"
+    },
+    {
+      "id": "za-badger",
+      "name": "Badger IFV",
+      "type": "ifv",
+      "country": "ZA",
+      "year": 2016,
+      "manufacturer": "Denel",
+      "specifications": {
+        "combat_weight_kg": 28000,
+        "crew": 3,
+        "passengers": 8
+      },
+      "armament": {
+        "turret": "LCT30 with 30mm"
+      },
+      "service_history": {
+        "operators": [
+          {
+            "country": "ZA",
+            "quantity": 60,
+            "status": "active"
+          }
+        ]
+      },
+      "notes": "8x8 IFV based on Patria AMV"
+    },
+    {
+      "id": "za-umkhonto",
+      "name": "Umkhonto SAM",
+      "type": "sam",
+      "country": "ZA",
+      "year": 2005,
+      "manufacturer": "Denel",
+      "specifications": {
+        "range_km": 12,
+        "altitude_km": 8
+      },
+      "service_history": {
+        "operators": [
+          {
+            "country": "ZA",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "FI",
+            "quantity": 100,
+            "status": "active"
+          }
+        ]
+      },
+      "notes": "South African naval/land SAM"
+    },
+    {
+      "id": "za-mokopa",
+      "name": "Mokopa ATGM",
+      "type": "atgm",
+      "country": "ZA",
+      "year": 2005,
+      "manufacturer": "Denel",
+      "specifications": {
+        "range_km": 10,
+        "guidance": "Laser beam-riding"
+      },
+      "notes": "South African long-range ATGM"
+    },
+    {
+      "id": "ng-vt4-ng",
+      "name": "VT-4 (Nigeria)",
+      "type": "mbt",
+      "country": "NG",
+      "year": 2020,
+      "manufacturer": "NORINCO",
+      "service_history": {
+        "operators": [
+          {
+            "country": "NG",
+            "quantity": 100,
+            "status": "active"
+          }
+        ]
+      },
+      "notes": "Nigerian Chinese tanks"
+    },
+    {
+      "id": "dz-t90sa",
+      "name": "T-90SA (Algeria)",
+      "type": "mbt",
+      "country": "DZ",
+      "year": 2016,
+      "manufacturer": "UVZ",
+      "service_history": {
+        "operators": [
+          {
+            "country": "DZ",
+            "quantity": 500,
+            "status": "active"
+          }
+        ]
+      },
+      "notes": "Algerian T-90 fleet"
+    },
+    {
+      "id": "dz-mig29smt",
+      "name": "MiG-29SMT (Algeria)",
+      "type": "fighter",
+      "country": "DZ",
+      "year": 2019,
+      "manufacturer": "RSK MiG",
+      "service_history": {
+        "operators": [
+          {
+            "country": "DZ",
+            "quantity": 16,
+            "status": "active"
+          }
+        ]
+      }
+    },
+    {
+      "id": "eg-rafale-eg",
+      "name": "Rafale (Egypt)",
+      "type": "multirole-fighter",
+      "country": "EG",
+      "year": 2017,
+      "manufacturer": "Dassault",
+      "service_history": {
+        "operators": [
+          {
+            "country": "EG",
+            "quantity": 54,
+            "status": "active"
+          }
+        ]
+      }
+    },
+    {
+      "id": "eg-ka52-eg",
+      "name": "Ka-52 (Egypt)",
+      "type": "attack-helicopter",
+      "country": "EG",
+      "year": 2017,
+      "manufacturer": "Russian Helicopters",
+      "service_history": {
+        "operators": [
+          {
+            "country": "EG",
+            "quantity": 46,
+            "status": "active"
+          }
+        ]
+      },
+      "notes": "First export customer for Ka-52"
+    },
+    {
+      "id": "et-su27",
+      "name": "Su-27 (Ethiopia)",
+      "type": "fighter",
+      "country": "ET",
+      "year": 2003,
+      "manufacturer": "Sukhoi",
+      "service_history": {
+        "operators": [
+          {
+            "country": "ET",
+            "quantity": 18,
+            "status": "active"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ma-vt1a",
+      "name": "VT-1A (Morocco)",
+      "type": "mbt",
+      "country": "MA",
+      "year": 2012,
+      "manufacturer": "NORINCO",
+      "service_history": {
+        "operators": [
+          {
+            "country": "MA",
+            "quantity": 150,
+            "status": "active"
+          }
+        ]
+      },
+      "notes": "Chinese MBT-2000 for Morocco"
+    }
+  ]
+}

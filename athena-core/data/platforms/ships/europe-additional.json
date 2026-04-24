@@ -1,0 +1,337 @@
+{
+  "category": "ships",
+  "subcategory": "europe-additional",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-31",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Fighting Ships"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "uk-type23",
+      "name": "Type 23 Duke-class",
+      "type": "frigate",
+      "country": "GB",
+      "year": 1990,
+      "manufacturer": "Various UK yards",
+      "service_history": {
+        "introduced": 1990,
+        "production_count": 16,
+        "operators": [
+          {
+            "country": "GB",
+            "quantity": 11,
+            "status": "active",
+            "notes": "Being replaced by Type 26/31"
+          },
+          {
+            "country": "CL",
+            "quantity": 3,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "displacement_tons": 4900,
+        "length_m": 133,
+        "beam_m": 16.1,
+        "draft_m": 5.5,
+        "speed_knots": 28,
+        "crew": 185
+      },
+      "armament": {
+        "missiles": {
+          "vls_cells": 32,
+          "types": ["Sea Ceptor CAMM"]
+        },
+        "ssm": "8× Harpoon",
+        "guns": ["1× 4.5-inch Mk 8"],
+        "torpedoes": "2× twin tubes"
+      }
+    },
+    {
+      "id": "fr-horizon",
+      "name": "Horizon-class (Forbin)",
+      "type": "destroyer",
+      "country": "FR",
+      "year": 2008,
+      "manufacturer": "DCNS / Fincantieri",
+      "service_history": {
+        "introduced": 2008,
+        "production_count": 4,
+        "operators": [
+          {
+            "country": "FR",
+            "quantity": 2,
+            "status": "active"
+          },
+          {
+            "country": "IT",
+            "quantity": 2,
+            "status": "active",
+            "notes": "Andrea Doria-class"
+          }
+        ],
+        "notes": "Franco-Italian AAW destroyers"
+      },
+      "specifications": {
+        "displacement_tons": 7050,
+        "length_m": 153,
+        "beam_m": 20.3,
+        "draft_m": 5.4,
+        "speed_knots": 29,
+        "crew": 195
+      },
+      "armament": {
+        "missiles": {
+          "vls_cells": 48,
+          "types": ["Aster 15", "Aster 30"]
+        },
+        "ssm": "8× Exocet MM40 Block 3",
+        "guns": ["2× 76mm OTO Melara"],
+        "helicopters": 1
+      },
+      "sensors": {
+        "radar": "Empar/HERAKLES multifunction"
+      }
+    },
+    {
+      "id": "es-bazan",
+      "name": "Álvaro de Bazán-class (F100)",
+      "type": "frigate",
+      "country": "ES",
+      "year": 2002,
+      "manufacturer": "Navantia",
+      "service_history": {
+        "introduced": 2002,
+        "production_count": 5,
+        "operators": [
+          {
+            "country": "ES",
+            "quantity": 5,
+            "status": "active"
+          }
+        ],
+        "notes": "Spanish AEGIS frigates"
+      },
+      "specifications": {
+        "displacement_tons": 5800,
+        "length_m": 147,
+        "beam_m": 18.6,
+        "draft_m": 4.9,
+        "speed_knots": 28,
+        "crew": 250
+      },
+      "armament": {
+        "missiles": {
+          "vls_cells": 48,
+          "types": ["SM-2MR", "ESSM"]
+        },
+        "ssm": "8× Harpoon",
+        "guns": ["1× 5-inch/54 Mk 45"],
+        "torpedoes": "2× twin tubes"
+      },
+      "sensors": {
+        "radar": "AN/SPY-1D AEGIS"
+      }
+    },
+    {
+      "id": "au-hobart",
+      "name": "Hobart-class (DDG)",
+      "type": "destroyer",
+      "country": "AU",
+      "year": 2017,
+      "manufacturer": "ASC / Navantia",
+      "service_history": {
+        "introduced": 2017,
+        "production_count": 3,
+        "operators": [
+          {
+            "country": "AU",
+            "quantity": 3,
+            "status": "active"
+          }
+        ],
+        "notes": "Australian AEGIS destroyers"
+      },
+      "specifications": {
+        "displacement_tons": 7000,
+        "length_m": 147,
+        "beam_m": 18.6,
+        "draft_m": 5.3,
+        "speed_knots": 28,
+        "crew": 202
+      },
+      "armament": {
+        "missiles": {
+          "vls_cells": 48,
+          "types": ["SM-2MR", "SM-6", "ESSM"]
+        },
+        "ssm": "8× Harpoon",
+        "guns": ["1× 5-inch/62 Mk 45 Mod 4"]
+      },
+      "sensors": {
+        "radar": "AN/SPY-1D(V) AEGIS",
+        "sonar": "Ultra Sonar Suite"
+      }
+    },
+    {
+      "id": "au-hunter",
+      "name": "Hunter-class (FFG)",
+      "type": "frigate",
+      "country": "AU",
+      "year": 2031,
+      "manufacturer": "BAE Systems / ASC",
+      "service_history": {
+        "introduced": 2031,
+        "production_count": 9,
+        "operators": [
+          {
+            "country": "AU",
+            "quantity": 0,
+            "status": "building",
+            "notes": "9 planned"
+          }
+        ],
+        "notes": "Based on Type 26"
+      },
+      "specifications": {
+        "displacement_tons": 8800,
+        "length_m": 149.9,
+        "beam_m": 20.8,
+        "draft_m": 7.1,
+        "speed_knots": 27,
+        "crew": 180
+      },
+      "armament": {
+        "missiles": {
+          "vls_cells": 32,
+          "types": ["SM-2", "ESSM", "Tomahawk (planned)"]
+        },
+        "guns": ["1× 5-inch Mk 45"]
+      }
+    },
+    {
+      "id": "de-sachsen",
+      "name": "Sachsen-class (F124)",
+      "type": "frigate",
+      "country": "DE",
+      "year": 2004,
+      "manufacturer": "ARGE F124",
+      "service_history": {
+        "introduced": 2004,
+        "production_count": 3,
+        "operators": [
+          {
+            "country": "DE",
+            "quantity": 3,
+            "status": "active"
+          }
+        ],
+        "notes": "German AAW frigates"
+      },
+      "specifications": {
+        "displacement_tons": 5690,
+        "length_m": 143,
+        "beam_m": 17.4,
+        "draft_m": 5,
+        "speed_knots": 29,
+        "crew": 255
+      },
+      "armament": {
+        "missiles": {
+          "vls_cells": 32,
+          "types": ["SM-2 Block IIIA", "ESSM"]
+        },
+        "ssm": "8× Harpoon",
+        "guns": ["1× 76mm OTO Melara"],
+        "ciws": "2× RAM"
+      },
+      "sensors": {
+        "radar": "APAR/SMART-L"
+      }
+    },
+    {
+      "id": "no-nansen",
+      "name": "Fridtjof Nansen-class",
+      "type": "frigate",
+      "country": "NO",
+      "year": 2006,
+      "manufacturer": "Navantia",
+      "service_history": {
+        "introduced": 2006,
+        "production_count": 5,
+        "operators": [
+          {
+            "country": "NO",
+            "quantity": 4,
+            "status": "active",
+            "notes": "One lost 2018"
+          }
+        ],
+        "notes": "Norwegian AEGIS frigates"
+      },
+      "specifications": {
+        "displacement_tons": 5290,
+        "length_m": 134,
+        "beam_m": 16.8,
+        "draft_m": 4.9,
+        "speed_knots": 26,
+        "crew": 120
+      },
+      "armament": {
+        "missiles": {
+          "vls_cells": 8,
+          "types": ["ESSM"]
+        },
+        "ssm": "8× NSM",
+        "guns": ["1× 76mm OTO Melara"]
+      },
+      "sensors": {
+        "radar": "AN/SPY-1F AEGIS"
+      }
+    },
+    {
+      "id": "tr-tf2000",
+      "name": "TF-2000 (I-class)",
+      "type": "destroyer",
+      "country": "TR",
+      "year": 2028,
+      "manufacturer": "STM",
+      "service_history": {
+        "introduced": 2028,
+        "production_count": 4,
+        "operators": [
+          {
+            "country": "TR",
+            "quantity": 0,
+            "status": "building",
+            "notes": "4 planned"
+          }
+        ],
+        "notes": "Turkish AAW destroyer program"
+      },
+      "specifications": {
+        "displacement_tons": 7000,
+        "length_m": 164,
+        "beam_m": 21,
+        "draft_m": 5.5,
+        "speed_knots": 29,
+        "crew": 250
+      },
+      "armament": {
+        "missiles": {
+          "vls_cells": 64,
+          "types": ["SIPER", "Hisar-D", "Atmaca"]
+        },
+        "guns": ["1× 127mm (planned)"]
+      },
+      "sensors": {
+        "radar": "Indigenous AESA"
+      }
+    }
+  ]
+}

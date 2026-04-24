@@ -1,0 +1,403 @@
+{
+  "platforms": [
+    {
+      "id": "us-ch-47f-chinook",
+      "name": "CH-47F Chinook",
+      "type": "heavy_transport",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_entry": 2007,
+      "specifications": {
+        "crew": 4,
+        "passengers": 33,
+        "length_m": 30.1,
+        "rotor_diameter_m": 18.3,
+        "height_m": 5.7,
+        "empty_weight_kg": 12210,
+        "max_takeoff_weight_kg": 22680,
+        "sling_load_kg": 12700,
+        "max_speed_kmh": 315,
+        "cruise_speed_kmh": 291,
+        "range_km": 741,
+        "service_ceiling_m": 5640
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "Honeywell T55-GA-714A",
+        "power_shp": 4733
+      },
+      "service_history": {
+        "introduced": 2007,
+        "status": "active",
+        "operators": [
+          {"country": "US", "quantity": 500},
+          {"country": "GB", "quantity": 60},
+          {"country": "NL", "quantity": 20},
+          {"country": "AU", "quantity": 12},
+          {"country": "JP", "quantity": 55},
+          {"country": "KR", "quantity": 30}
+        ]
+      },
+      "unit_cost_usd": 39000000,
+      "notes": "Tandem rotor heavy lift. CH-47F Block II with upgraded engines. Workhorse of special operations and logistics."
+    },
+    {
+      "id": "us-uh-60m-black-hawk",
+      "name": "UH-60M Black Hawk",
+      "type": "utility_helicopter",
+      "country_of_origin": "US",
+      "manufacturer": "Sikorsky",
+      "service_entry": 2007,
+      "specifications": {
+        "crew": 4,
+        "passengers": 11,
+        "length_m": 19.76,
+        "rotor_diameter_m": 16.36,
+        "height_m": 5.13,
+        "empty_weight_kg": 5224,
+        "max_takeoff_weight_kg": 10660,
+        "external_load_kg": 4082,
+        "max_speed_kmh": 295,
+        "cruise_speed_kmh": 278,
+        "range_km": 592,
+        "service_ceiling_m": 5790
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "GE T700-GE-701D",
+        "power_shp": 2000
+      },
+      "variants": [
+        "UH-60M - Standard utility",
+        "HH-60M - MEDEVAC",
+        "HH-60W - Combat Rescue (Jolly Green II)",
+        "MH-60M - Special Operations",
+        "SH-60 Seahawk - Naval"
+      ],
+      "service_history": {
+        "introduced": 2007,
+        "status": "active",
+        "production_total": 4500,
+        "operators_count": 30
+      },
+      "unit_cost_usd": 22000000,
+      "notes": "Most produced US military helicopter since Vietnam. Glass cockpit. 4,500+ built across all variants."
+    },
+    {
+      "id": "us-mh-60r-seahawk",
+      "name": "MH-60R Seahawk",
+      "type": "naval_helicopter",
+      "country_of_origin": "US",
+      "manufacturer": "Sikorsky/Lockheed Martin",
+      "service_entry": 2006,
+      "specifications": {
+        "crew": 4,
+        "max_takeoff_weight_kg": 10659,
+        "max_speed_kmh": 267,
+        "range_km": 834,
+        "endurance_hours": 3.5
+      },
+      "armament": {
+        "torpedoes": "Mk 54 MAKO",
+        "missiles": "AGM-114 Hellfire",
+        "gun": "M240 7.62mm"
+      },
+      "avionics": {
+        "radar": "AN/APS-153 search radar",
+        "sonar": "AN/AQS-22 dipping sonar",
+        "sonobuoys": 25,
+        "ew": "AN/ALQ-210 ESM"
+      },
+      "service_history": {
+        "introduced": 2006,
+        "status": "active",
+        "operators": [
+          {"country": "US", "quantity": 291},
+          {"country": "AU", "quantity": 24},
+          {"country": "DK", "quantity": 9},
+          {"country": "SA", "quantity": 10}
+        ]
+      },
+      "unit_cost_usd": 43000000,
+      "notes": "Primary USN ASW helicopter. 'Romeo' variant. Multi-mission: ASW, ASUW, SAR, logistics."
+    },
+    {
+      "id": "us-v-22-osprey",
+      "name": "V-22 Osprey",
+      "type": "tiltrotor",
+      "country_of_origin": "US",
+      "manufacturer": "Bell/Boeing",
+      "service_entry": 2007,
+      "specifications": {
+        "crew": 4,
+        "passengers": 24,
+        "length_m": 17.48,
+        "rotor_diameter_m": 11.58,
+        "wingspan_m": 14.12,
+        "height_m": 6.73,
+        "empty_weight_kg": 15032,
+        "max_takeoff_weight_kg": 27443,
+        "max_speed_kmh": 509,
+        "cruise_speed_kmh": 446,
+        "combat_radius_km": 722,
+        "ferry_range_km": 3892
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "Rolls-Royce AE 1107C-Liberty",
+        "power_shp": 6150
+      },
+      "variants": [
+        "MV-22B - USMC assault",
+        "CV-22B - USAF special operations",
+        "CMV-22B - USN carrier logistics"
+      ],
+      "service_history": {
+        "introduced": 2007,
+        "status": "active",
+        "built": 400,
+        "operators": [
+          {"country": "US", "quantity": 360},
+          {"country": "JP", "quantity": 17}
+        ]
+      },
+      "unit_cost_usd": 72000000,
+      "notes": "Only production tiltrotor. Twice the speed of helicopters. Carrier-capable COD variant."
+    },
+    {
+      "id": "eu-nh90-tth",
+      "name": "NH90 TTH",
+      "type": "medium_transport",
+      "country_of_origin": "EU",
+      "manufacturer": "NHIndustries (Airbus/Leonardo/Fokker)",
+      "service_entry": 2007,
+      "specifications": {
+        "crew": 2,
+        "passengers": 20,
+        "length_m": 16.13,
+        "rotor_diameter_m": 16.3,
+        "height_m": 5.44,
+        "empty_weight_kg": 6400,
+        "max_takeoff_weight_kg": 10600,
+        "sling_load_kg": 4000,
+        "max_speed_kmh": 300,
+        "cruise_speed_kmh": 262,
+        "range_km": 800
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "Rolls-Royce Turbomeca RTM322",
+        "power_shp": 2230
+      },
+      "variants": [
+        "TTH - Tactical Transport",
+        "NFH - NATO Frigate Helicopter (naval)"
+      ],
+      "service_history": {
+        "introduced": 2007,
+        "status": "active",
+        "built": 450,
+        "operators": [
+          {"country": "FR", "quantity": 74},
+          {"country": "DE", "quantity": 82},
+          {"country": "IT", "quantity": 60},
+          {"country": "NL", "quantity": 20},
+          {"country": "AU", "quantity": 47},
+          {"country": "NZ", "quantity": 8},
+          {"country": "ES", "quantity": 45},
+          {"country": "NO", "quantity": 14}
+        ]
+      },
+      "unit_cost_usd": 32000000,
+      "notes": "European collaborative program. All-composite airframe. Fly-by-wire. Some nations have reliability issues."
+    },
+    {
+      "id": "ru-mi-8amtsh-terminator",
+      "name": "Mi-8AMTSh Terminator",
+      "type": "armed_transport",
+      "country_of_origin": "RU",
+      "manufacturer": "Ulan-Ude Aviation Plant",
+      "nato_name": "Hip-H",
+      "service_entry": 2009,
+      "specifications": {
+        "crew": 3,
+        "passengers": 36,
+        "length_m": 18.2,
+        "rotor_diameter_m": 21.3,
+        "max_takeoff_weight_kg": 13000,
+        "max_speed_kmh": 250,
+        "range_km": 620,
+        "service_ceiling_m": 6000
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "Klimov VK-2500-03",
+        "power_shp": 2200
+      },
+      "armament": {
+        "missiles": ["Ataka ATGM", "S-8 rockets", "S-13 rockets"],
+        "guns": "7.62mm or 12.7mm door guns",
+        "bombs": "250kg / 500kg"
+      },
+      "service_history": {
+        "introduced": 2009,
+        "status": "active",
+        "operators": [
+          {"country": "RU", "quantity": 200}
+        ]
+      },
+      "combat_use": [
+        {"conflict": "Syria", "year": 2015},
+        {"conflict": "Ukraine", "year": 2022}
+      ],
+      "notes": "Heavily armed Hip variant. VK-2500 high-altitude engines. Vitebsk EW suite. Extensively used in Ukraine."
+    },
+    {
+      "id": "ru-mi-26t2",
+      "name": "Mi-26T2",
+      "type": "super_heavy_transport",
+      "country_of_origin": "RU",
+      "manufacturer": "Rostvertol",
+      "nato_name": "Halo",
+      "service_entry": 2018,
+      "specifications": {
+        "crew": 5,
+        "passengers": 90,
+        "length_m": 40.0,
+        "rotor_diameter_m": 32.0,
+        "height_m": 8.1,
+        "empty_weight_kg": 28200,
+        "max_takeoff_weight_kg": 56000,
+        "sling_load_kg": 20000,
+        "internal_cargo_kg": 20000,
+        "max_speed_kmh": 295,
+        "range_km": 620,
+        "service_ceiling_m": 4600
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "Motor Sich D-136",
+        "power_shp": 11400
+      },
+      "service_history": {
+        "introduced": 2018,
+        "status": "active",
+        "operators": [
+          {"country": "RU", "quantity": 40},
+          {"country": "CN", "quantity": 6},
+          {"country": "IN", "quantity": 3}
+        ]
+      },
+      "unit_cost_usd": 25000000,
+      "notes": "World's largest production helicopter. Can carry BMP inside. Glass cockpit in T2 variant."
+    },
+    {
+      "id": "cn-z-20-utility",
+      "name": "Harbin Z-20",
+      "type": "utility_helicopter",
+      "country_of_origin": "CN",
+      "manufacturer": "Harbin Aircraft Industry Group",
+      "service_entry": 2019,
+      "specifications": {
+        "crew": 2,
+        "passengers": 12,
+        "length_m": 20.0,
+        "rotor_diameter_m": 16.4,
+        "max_takeoff_weight_kg": 10000,
+        "max_speed_kmh": 280,
+        "range_km": 700
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "WZ-10",
+        "power_shp": 1600
+      },
+      "variants": [
+        "Z-20 - Utility",
+        "Z-20F - Naval (shipborne)",
+        "Z-20J - SAR"
+      ],
+      "service_history": {
+        "introduced": 2019,
+        "status": "active",
+        "operators": [
+          {"country": "CN", "quantity": 200}
+        ]
+      },
+      "notes": "Chinese Black Hawk equivalent. Indigenous development. Naval Z-20F with folding rotors."
+    },
+    {
+      "id": "it-aw101-merlin",
+      "name": "AW101 Merlin",
+      "type": "medium_transport",
+      "country_of_origin": "IT",
+      "manufacturer": "Leonardo (AgustaWestland)",
+      "service_entry": 1999,
+      "specifications": {
+        "crew": 4,
+        "passengers": 30,
+        "length_m": 22.8,
+        "rotor_diameter_m": 18.6,
+        "max_takeoff_weight_kg": 15600,
+        "max_speed_kmh": 309,
+        "range_km": 1389
+      },
+      "powerplant": {
+        "engines": 3,
+        "model": "GE CT7-8E",
+        "power_shp": 2500
+      },
+      "variants": [
+        "Merlin HM2 - Royal Navy ASW",
+        "Merlin HC4 - Royal Marines",
+        "VH-71 Kestrel - US Presidential (cancelled)"
+      ],
+      "service_history": {
+        "introduced": 1999,
+        "status": "active",
+        "operators": [
+          {"country": "GB", "quantity": 44},
+          {"country": "IT", "quantity": 22},
+          {"country": "DK", "quantity": 14},
+          {"country": "PT", "quantity": 12},
+          {"country": "JP", "quantity": 14}
+        ]
+      },
+      "unit_cost_usd": 50000000,
+      "notes": "Three-engine safety. UK primary SAR/ASW/transport. Crowsnest AEW variant for carriers."
+    },
+    {
+      "id": "fr-h160m-guepard",
+      "name": "Airbus H160M Guépard",
+      "type": "light_utility",
+      "country_of_origin": "FR",
+      "manufacturer": "Airbus Helicopters",
+      "service_entry": 2027,
+      "specifications": {
+        "crew": 2,
+        "passengers": 10,
+        "max_takeoff_weight_kg": 6050,
+        "max_speed_kmh": 290,
+        "range_km": 850
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "Safran Arrano",
+        "power_shp": 1300
+      },
+      "variants": [
+        "HIL - Light Interservice Helicopter",
+        "HM - Maritime",
+        "HSO - Special Operations"
+      ],
+      "service_history": {
+        "expected_service": 2027,
+        "planned": 169,
+        "operators": [
+          {"country": "FR", "quantity": 169, "status": "ordered"}
+        ]
+      },
+      "notes": "French light helicopter replacement program. Canted Fenestron, Blue Edge blades. Civil H160 basis."
+    }
+  ]
+}

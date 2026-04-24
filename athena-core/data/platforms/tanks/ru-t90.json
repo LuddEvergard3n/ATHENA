@@ -1,0 +1,727 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "ru-t90",
+      "name": "T-90",
+      "nato_designation": "T-90",
+      "type": "mbt",
+      "country_of_origin": "RU",
+      "manufacturer": "Uralvagonzavod",
+      "service_history": {
+        "introduced": 1992,
+        "retired": null,
+        "production_count": 1000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 350,
+            "variants": [
+              "T-90",
+              "T-90A"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 1100,
+            "variants": [
+              "T-90S Bhishma"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "DZ",
+            "quantity": 500,
+            "variants": [
+              "T-90SA"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "AZ",
+            "quantity": 100,
+            "variants": [
+              "T-90S"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "quantity": 73,
+            "variants": [
+              "T-90S"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "quantity": 30,
+            "variants": [
+              "T-90A"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "VN",
+            "quantity": 64,
+            "variants": [
+              "T-90S/SK"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 46500,
+        "length_m": 6.86,
+        "length_gun_forward_m": 9.53,
+        "width_m": 3.78,
+        "height_m": 2.22,
+        "ground_clearance_m": 0.49
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-84MS",
+          "type": "diesel",
+          "power_hp": 840,
+          "power_kw": 626
+        },
+        "power_to_weight_hp_ton": 18.1,
+        "transmission": "Manual, 7 forward, 1 reverse",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 60,
+        "max_speed_offroad_kmh": 45,
+        "max_speed_reverse_kmh": 5,
+        "range_road_km": 550,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.8,
+        "vertical_obstacle_m": 0.85,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "2A46M",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1800,
+          "effective_range_m": 4000,
+          "ammunition_carried": 43,
+          "ammunition_ready": 22,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "3BM42 Mango",
+              "penetration_mm_rha": 460,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "3BK29",
+              "penetration_mm_rha": 600,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "ATGM",
+              "designation": "9M119 Svir",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 4000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "NSVT",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 300
+          },
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "9K119 Svir",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "Composite with Kontakt-5 ERA",
+        "protection_front_turret_mm_rha": 800,
+        "protection_front_hull_mm_rha": 600,
+        "protection_side_mm_rha": 150,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 40,
+        "era_coverage": "Turret front, glacis, hull sides",
+        "aps": {
+          "system": "Shtora-1",
+          "type": "soft-kill",
+          "coverage_deg": 360
+        },
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "turret_ring",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "1A45T Irtysh",
+        "commander_sight": {
+          "type": "TKN-4S Agat",
+          "day_magnification": "7.5x",
+          "thermal": false,
+          "independent": false
+        },
+        "gunner_sight": {
+          "type": "1G46",
+          "day_magnification": "2.7x/12x",
+          "thermal": false
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 5000,
+        "ballistic_computer": true,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "902B Tucha"
+      },
+      "unit_cost_usd": 2500000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia T-90",
+        "Army Recognition T-90",
+        "GlobalSecurity T-90",
+        "Military Factory T-90"
+      ],
+      "notes": "Based on T-72BU. Shtora-1 EOCMDAS provides laser warning and IR jamming. Cast turret.",
+      "year": 1992
+    },
+    {
+      "id": "ru-t90a",
+      "name": "T-90A Vladimir",
+      "nato_designation": "T-90A",
+      "type": "mbt",
+      "country_of_origin": "RU",
+      "manufacturer": "Uralvagonzavod",
+      "service_history": {
+        "introduced": 2005,
+        "retired": null,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 350,
+            "variants": [
+              "T-90A",
+              "T-90AK"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 46500,
+        "length_m": 6.86,
+        "length_gun_forward_m": 9.53,
+        "width_m": 3.78,
+        "height_m": 2.22,
+        "ground_clearance_m": 0.49
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-92S2",
+          "type": "diesel",
+          "power_hp": 1000,
+          "power_kw": 746
+        },
+        "power_to_weight_hp_ton": 21.5,
+        "transmission": "Manual, 7 forward, 1 reverse",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 60,
+        "max_speed_offroad_kmh": 45,
+        "max_speed_reverse_kmh": 5,
+        "range_road_km": 550,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.8,
+        "vertical_obstacle_m": 0.85,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "2A46M-5",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1800,
+          "effective_range_m": 4000,
+          "ammunition_carried": 43,
+          "ammunition_ready": 22,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "3BM44 Lekalo",
+              "penetration_mm_rha": 550,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "APFSDS",
+              "designation": "3BM59 Svinets-1",
+              "penetration_mm_rha": 650,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "ATGM",
+              "designation": "9M119M Refleks-M",
+              "penetration_mm_rha": 750,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "Kord",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 300
+          },
+          {
+            "designation": "PKTM",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "9K119M Refleks-M",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "Welded turret with Kontakt-5 ERA",
+        "protection_front_turret_mm_rha": 850,
+        "protection_front_hull_mm_rha": 650,
+        "protection_side_mm_rha": 150,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 40,
+        "era_coverage": "Turret front/sides, glacis, hull sides",
+        "aps": {
+          "system": "Shtora-1",
+          "type": "soft-kill",
+          "coverage_deg": 360
+        },
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "turret_ring",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "1A45T Irtysh",
+        "commander_sight": {
+          "type": "TKN-4S",
+          "day_magnification": "7.5x",
+          "thermal": false,
+          "independent": false
+        },
+        "gunner_sight": {
+          "type": "ESSA (Thales Catherine)",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 5000,
+        "ballistic_computer": true,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "902B Tucha"
+      },
+      "unit_cost_usd": 3500000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia T-90",
+        "Army Recognition T-90A",
+        "GlobalSecurity T-90"
+      ],
+      "notes": "Welded turret (vs cast on T-90). ESSA thermal sight with French Catherine-FC. V-92S2 engine (+160hp).",
+      "year": 2004
+    },
+    {
+      "id": "ru-t90m",
+      "name": "T-90M Proryv-3",
+      "nato_designation": "T-90M",
+      "type": "mbt",
+      "country_of_origin": "RU",
+      "manufacturer": "Uralvagonzavod",
+      "service_history": {
+        "introduced": 2020,
+        "retired": null,
+        "production_count": 600,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 500,
+            "variants": [
+              "T-90M"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 50000,
+        "length_m": 6.86,
+        "length_gun_forward_m": 9.8,
+        "width_m": 3.78,
+        "height_m": 2.22,
+        "ground_clearance_m": 0.49
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-92S2F",
+          "type": "diesel",
+          "power_hp": 1130,
+          "power_kw": 843
+        },
+        "power_to_weight_hp_ton": 22.6,
+        "transmission": "Automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 10,
+        "range_road_km": 550,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.8,
+        "vertical_obstacle_m": 0.85,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "2A82-1M",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 55,
+          "type": "smoothbore",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 15,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "rate_of_fire_rpm": 10,
+          "muzzle_velocity_ms": 1900,
+          "effective_range_m": 5000,
+          "ammunition_carried": 45,
+          "ammunition_ready": 22,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "3BM59 Svinets-1",
+              "penetration_mm_rha": 650,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "APFSDS",
+              "designation": "3BM60 Svinets-2",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "APFSDS",
+              "designation": "Vacuum-1",
+              "penetration_mm_rha": 900,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "ATGM",
+              "designation": "9M119M1 Invar-M",
+              "penetration_mm_rha": 900,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "Kord (RWS)",
+            "caliber_mm": 12.7,
+            "mount": "remote",
+            "ammunition_carried": 300
+          },
+          {
+            "designation": "PKTM",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "9K119M Refleks-M",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "New turret module with Relikt ERA",
+        "protection_front_turret_mm_rha": 1000,
+        "protection_front_hull_mm_rha": 750,
+        "protection_side_mm_rha": 250,
+        "protection_rear_mm_rha": 60,
+        "protection_top_mm_rha": 50,
+        "era_coverage": "Full turret, glacis, hull sides with Relikt ERA",
+        "aps": {
+          "system": "Arena-M (optional)",
+          "type": "hard-kill",
+          "coverage_deg": 270
+        },
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "bustle",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Kalina",
+        "commander_sight": {
+          "type": "PK PAN",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "Sosna-U",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 7500,
+        "ballistic_computer": true,
+        "battle_management_system": "ESU TZ",
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true,
+        "driver_vision": {
+          "thermal": true
+        }
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "902B Tucha",
+        "ir_signature_reduction": true
+      },
+      "unit_cost_usd": 4500000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia T-90",
+        "Army Recognition T-90M",
+        "GlobalSecurity T-90M Proryv-3",
+        "Sputnik T-90M analysis"
+      ],
+      "notes": "Major upgrade. 2A82-1M gun (same as T-14 Armata). New turret with ammo bustle (blow-out panels). Relikt ERA. Kalina FCS. Automatic transmission. Production ~300/year as of 2025. Most advanced Russian MBT in mass production.",
+      "year": 2020
+    },
+    {
+      "id": "ru-t90ms",
+      "name": "T-90MS (Proryv-2)",
+      "nato_designation": "T-90MS",
+      "type": "mbt",
+      "country_of_origin": "RU",
+      "manufacturer": "Uralvagonzavod",
+      "service_history": {
+        "introduced": 2011,
+        "retired": null,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 464,
+            "variants": [
+              "T-90MS"
+            ],
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 48000,
+        "length_m": 6.86,
+        "length_gun_forward_m": 9.53,
+        "width_m": 3.78,
+        "height_m": 2.22,
+        "ground_clearance_m": 0.49
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-92S2F",
+          "type": "diesel",
+          "power_hp": 1130,
+          "power_kw": 843
+        },
+        "power_to_weight_hp_ton": 23.5,
+        "transmission": "Automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 10,
+        "range_road_km": 550,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.8,
+        "vertical_obstacle_m": 0.85,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "2A46M-5",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1800,
+          "effective_range_m": 4000,
+          "ammunition_carried": 51,
+          "ammunition_ready": 22,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "3BM59 Svinets-1",
+              "penetration_mm_rha": 650,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "ATGM",
+              "designation": "9M119M Refleks-M",
+              "penetration_mm_rha": 750,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "UDP T05BV-1 (RWS)",
+            "caliber_mm": 7.62,
+            "mount": "remote",
+            "ammunition_carried": 800
+          },
+          {
+            "designation": "PKTM",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ],
+        "atgm": {
+          "designation": "9K119M Refleks-M",
+          "missiles_carried": 4,
+          "launch_method": "gun-launched"
+        }
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "Composite with Relikt ERA",
+        "protection_front_turret_mm_rha": 900,
+        "protection_front_hull_mm_rha": 700,
+        "protection_side_mm_rha": 200,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 45,
+        "era_coverage": "Turret, glacis, hull sides with Relikt ERA",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "bustle",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Kalina",
+        "commander_sight": {
+          "type": "PK PAN",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "Sosna-U",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 7500,
+        "ballistic_computer": true,
+        "battle_management_system": "Yes",
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "902B Tucha",
+        "ir_signature_reduction": true
+      },
+      "unit_cost_usd": 4200000,
+      "cost_year": 2019,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia T-90",
+        "Army Recognition T-90MS"
+      ],
+      "notes": "Export variant with Relikt ERA, removable turret bustle (+8 rounds). India ordered 464 units in 2019 ($1.93B). 360\u00b0 camera coverage.",
+      "year": 2011
+    }
+  ]
+}

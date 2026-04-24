@@ -1,0 +1,814 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "ru-bm21",
+      "name": "BM-21 Grad",
+      "type": "mlrs",
+      "country_of_origin": "SU",
+      "manufacturer": "Splav State Research",
+      "service_history": {
+        "introduced": 1963,
+        "retired": null,
+        "production_count": 8000,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 550,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 120,
+            "status": "active"
+          },
+          {
+            "country": "CN",
+            "quantity": 1000,
+            "variants": [
+              "Type 81"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "EG",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 150,
+            "status": "active"
+          },
+          {
+            "country": "IR",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "quantity": 280,
+            "status": "active"
+          },
+          {
+            "country": "PK",
+            "quantity": 45,
+            "status": "active"
+          },
+          {
+            "country": "KP",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "VN",
+            "quantity": 350,
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 75,
+            "status": "active"
+          },
+          {
+            "country": "CU",
+            "quantity": 100,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 13700,
+        "length_m": 7.35,
+        "width_m": 2.4,
+        "height_m": 2.85,
+        "notes": "Most produced MLRS in history"
+      },
+      "mobility": {
+        "engine": {
+          "model": "ZIL-375",
+          "type": "gasoline",
+          "power_hp": 180,
+          "power_kw": 134
+        },
+        "power_to_weight_hp_ton": 13.1,
+        "drivetrain": "6x6",
+        "chassis": "Ural-375D",
+        "max_speed_road_kmh": 75,
+        "max_speed_offroad_kmh": 40,
+        "range_road_km": 750,
+        "gradient_percent": 60,
+        "fording_depth_m": 1.5
+      },
+      "armament": {
+        "main": {
+          "designation": "BM-21 Launcher",
+          "type": "mlrs",
+          "tubes": 40,
+          "traverse_deg": 120,
+          "elevation_min_deg": 0,
+          "elevation_max_deg": 55,
+          "rocket_options": [
+            {
+              "designation": "9M22U",
+              "caliber_mm": 122,
+              "rockets": 40,
+              "range_min_km": 5,
+              "range_max_km": 20,
+              "warhead_kg": 18.4,
+              "warhead_type": "HE-FRAG",
+              "guidance": "unguided"
+            },
+            {
+              "designation": "9M521",
+              "caliber_mm": 122,
+              "rockets": 40,
+              "range_max_km": 40,
+              "warhead_kg": 25,
+              "guidance": "unguided",
+              "notes": "Extended range"
+            },
+            {
+              "designation": "9M522",
+              "caliber_mm": 122,
+              "rockets": 40,
+              "range_max_km": 37,
+              "warhead_type": "Thermobaric",
+              "guidance": "unguided"
+            }
+          ],
+          "salvo_time_sec": 20,
+          "reload_time_minutes": 10
+        }
+      },
+      "protection": {
+        "armor_type": "soft_skin",
+        "armor_composition": "None",
+        "crew_protection": "Cab only"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Basic mechanical",
+        "navigation": "Manual",
+        "notes": "Simple, rugged design"
+      },
+      "unit_cost_usd": 200000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia BM-21 Grad",
+        "Army Recognition",
+        "Military Factory"
+      ],
+      "notes": "Most widely used MLRS. 50+ countries. 40 rockets in 20 seconds. Simple, cheap, effective. Ukraine: used by both sides extensively. Countless conflicts since 1960s. Civilian casualties concern due to inaccuracy.",
+      "year": 1963
+    },
+    {
+      "id": "ru-tornado-g",
+      "name": "9A52-4 Tornado-G",
+      "type": "mlrs",
+      "country_of_origin": "RU",
+      "manufacturer": "Splav State Research",
+      "service_history": {
+        "introduced": 2014,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 200,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "weight_kg": 14000,
+        "length_m": 7.8,
+        "width_m": 2.55,
+        "height_m": 3.0
+      },
+      "mobility": {
+        "engine": {
+          "model": "YaMZ-238",
+          "type": "diesel_turbocharged",
+          "power_hp": 330,
+          "power_kw": 246
+        },
+        "power_to_weight_hp_ton": 23.6,
+        "drivetrain": "6x6",
+        "chassis": "Ural-4320",
+        "max_speed_road_kmh": 80,
+        "range_road_km": 650
+      },
+      "armament": {
+        "main": {
+          "designation": "9A52-4 Launcher",
+          "type": "mlrs",
+          "tubes": 40,
+          "traverse_deg": 180,
+          "elevation_max_deg": 55,
+          "rocket_options": [
+            {
+              "designation": "9M539",
+              "caliber_mm": 122,
+              "rockets": 40,
+              "range_max_km": 40,
+              "warhead_kg": 25,
+              "guidance": "GLONASS/INS",
+              "cep_m": 30
+            },
+            {
+              "designation": "9M538",
+              "caliber_mm": 122,
+              "rockets": 40,
+              "range_max_km": 100,
+              "guidance": "GLONASS/INS",
+              "cep_m": 30,
+              "notes": "Extended range"
+            }
+          ],
+          "salvo_time_sec": 20,
+          "reload_time_minutes": 8,
+          "reload_method": "automatic"
+        }
+      },
+      "protection": {
+        "armor_type": "armored_cab",
+        "stanag_level": "4569 Level 1"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Digital automated",
+        "navigation": "GLONASS/INS",
+        "ballistic_computer": true,
+        "automatic_gun_laying": true,
+        "shoot_and_scoot": true
+      },
+      "unit_cost_usd": 2000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Tornado-G",
+        "Army Recognition"
+      ],
+      "notes": "BM-21 replacement. GPS-guided rockets. Automated FCS. 2-man crew. Automatic reload. 100km range with extended rockets. Ukraine deployment.",
+      "year": 2012
+    },
+    {
+      "id": "ru-bm27",
+      "name": "BM-27 Uragan",
+      "type": "mlrs",
+      "country_of_origin": "SU",
+      "manufacturer": "Splav State Research",
+      "service_history": {
+        "introduced": 1977,
+        "retired": null,
+        "production_count": 1200,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 70,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 36,
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "quantity": 36,
+            "status": "active"
+          },
+          {
+            "country": "UZ",
+            "quantity": 48,
+            "status": "active"
+          },
+          {
+            "country": "TM",
+            "quantity": 60,
+            "status": "active"
+          },
+          {
+            "country": "AZ",
+            "quantity": 42,
+            "status": "active"
+          },
+          {
+            "country": "KZ",
+            "quantity": 18,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 20200,
+        "weight_combat_kg": 24000,
+        "length_m": 9.63,
+        "width_m": 2.85,
+        "height_m": 3.22
+      },
+      "mobility": {
+        "engine": {
+          "model": "D-12A-525A",
+          "type": "diesel",
+          "power_hp": 525,
+          "power_kw": 391
+        },
+        "power_to_weight_hp_ton": 26.0,
+        "drivetrain": "8x8",
+        "chassis": "ZIL-135LM",
+        "max_speed_road_kmh": 65,
+        "range_road_km": 570,
+        "gradient_percent": 58,
+        "fording_depth_m": 1.2
+      },
+      "armament": {
+        "main": {
+          "designation": "9P140 Launcher",
+          "type": "mlrs",
+          "tubes": 16,
+          "traverse_deg": 60,
+          "elevation_min_deg": 5,
+          "elevation_max_deg": 55,
+          "rocket_options": [
+            {
+              "designation": "9M27F",
+              "caliber_mm": 220,
+              "rockets": 16,
+              "range_min_km": 10,
+              "range_max_km": 35,
+              "warhead_kg": 100,
+              "warhead_type": "HE-FRAG",
+              "guidance": "unguided"
+            },
+            {
+              "designation": "9M27K",
+              "caliber_mm": 220,
+              "rockets": 16,
+              "range_max_km": 35,
+              "warhead_type": "DPICM (30 submunitions)",
+              "guidance": "unguided"
+            },
+            {
+              "designation": "9M27K2",
+              "caliber_mm": 220,
+              "rockets": 16,
+              "range_max_km": 35,
+              "warhead_type": "Scatterable mines",
+              "guidance": "unguided"
+            },
+            {
+              "designation": "9M51",
+              "caliber_mm": 220,
+              "rockets": 16,
+              "range_max_km": 35,
+              "warhead_type": "Thermobaric",
+              "guidance": "unguided"
+            }
+          ],
+          "salvo_time_sec": 20,
+          "reload_time_minutes": 20
+        }
+      },
+      "protection": {
+        "armor_type": "soft_skin",
+        "crew_protection": "Cab only"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "1V126 Kapustnik",
+        "navigation": "Manual"
+      },
+      "unit_cost_usd": 800000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia BM-27 Uragan",
+        "Army Recognition"
+      ],
+      "notes": "220mm medium MLRS. 16 tubes vs Grad's 40. Larger warhead. Afghanistan, Chechnya, Ukraine combat. Being replaced by Tornado-U/S.",
+      "year": 1977
+    },
+    {
+      "id": "ru-bm30",
+      "name": "BM-30 Smerch",
+      "type": "mlrs",
+      "country_of_origin": "SU",
+      "manufacturer": "Splav State Research",
+      "service_history": {
+        "introduced": 1989,
+        "retired": null,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 80,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 36,
+            "status": "active"
+          },
+          {
+            "country": "IN",
+            "quantity": 62,
+            "status": "active"
+          },
+          {
+            "country": "AZ",
+            "quantity": 30,
+            "status": "active"
+          },
+          {
+            "country": "KW",
+            "quantity": 27,
+            "status": "active"
+          },
+          {
+            "country": "AE",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "KZ",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "TM",
+            "quantity": 6,
+            "status": "active"
+          },
+          {
+            "country": "AL",
+            "quantity": 18,
+            "status": "active"
+          },
+          {
+            "country": "PE",
+            "quantity": 12,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 33700,
+        "weight_combat_kg": 43700,
+        "length_m": 12.1,
+        "width_m": 3.05,
+        "height_m": 3.05
+      },
+      "mobility": {
+        "engine": {
+          "model": "YaMZ-8424",
+          "type": "diesel_turbocharged",
+          "power_hp": 520,
+          "power_kw": 388
+        },
+        "power_to_weight_hp_ton": 15.4,
+        "drivetrain": "8x8",
+        "chassis": "MAZ-543M",
+        "max_speed_road_kmh": 60,
+        "range_road_km": 850,
+        "gradient_percent": 60,
+        "fording_depth_m": 1.1
+      },
+      "armament": {
+        "main": {
+          "designation": "9A52-2 Launcher",
+          "type": "mlrs",
+          "tubes": 12,
+          "traverse_deg": 60,
+          "elevation_min_deg": 0,
+          "elevation_max_deg": 55,
+          "rocket_options": [
+            {
+              "designation": "9M55K",
+              "caliber_mm": 300,
+              "rockets": 12,
+              "range_min_km": 25,
+              "range_max_km": 70,
+              "warhead_kg": 243,
+              "warhead_type": "DPICM (72 submunitions)",
+              "guidance": "inertial + spin stabilized"
+            },
+            {
+              "designation": "9M55F",
+              "caliber_mm": 300,
+              "rockets": 12,
+              "range_max_km": 70,
+              "warhead_kg": 243,
+              "warhead_type": "HE-FRAG",
+              "guidance": "inertial"
+            },
+            {
+              "designation": "9M55K1",
+              "caliber_mm": 300,
+              "rockets": 12,
+              "range_max_km": 70,
+              "warhead_type": "SFM top-attack (5 submunitions)",
+              "guidance": "inertial",
+              "notes": "Anti-armor"
+            },
+            {
+              "designation": "9M528",
+              "caliber_mm": 300,
+              "rockets": 12,
+              "range_max_km": 90,
+              "warhead_kg": 150,
+              "guidance": "GLONASS/inertial",
+              "cep_m": 30
+            },
+            {
+              "designation": "9M542",
+              "caliber_mm": 300,
+              "rockets": 12,
+              "range_max_km": 120,
+              "warhead_kg": 150,
+              "guidance": "GLONASS/inertial",
+              "cep_m": 30
+            }
+          ],
+          "salvo_time_sec": 38,
+          "reload_time_minutes": 36,
+          "notes": "12 rockets in 38 seconds"
+        }
+      },
+      "protection": {
+        "armor_type": "soft_skin",
+        "armor_composition": "Armored cab",
+        "stanag_level": "4569 Level 1"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "1K123 Vivary",
+        "navigation": "GLONASS/INS",
+        "ballistic_computer": true
+      },
+      "unit_cost_usd": 3000000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia BM-30 Smerch",
+        "Army Recognition",
+        "Military Factory"
+      ],
+      "notes": "Long-range heavy MLRS. 300mm. 70-120km range. Most capable Soviet MLRS. Used extensively in Ukraine by both sides. Guided variants (9M542) have 30m CEP.",
+      "year": 1989
+    },
+    {
+      "id": "ru-tornado-s",
+      "name": "9A54 Tornado-S",
+      "type": "mlrs",
+      "country_of_origin": "RU",
+      "manufacturer": "Splav State Research",
+      "service_history": {
+        "introduced": 2017,
+        "retired": null,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 100,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 34000,
+        "weight_combat_kg": 44000,
+        "length_m": 12.2,
+        "width_m": 3.05,
+        "height_m": 3.05
+      },
+      "mobility": {
+        "engine": {
+          "model": "YaMZ-8424.10",
+          "type": "diesel_turbocharged",
+          "power_hp": 520,
+          "power_kw": 388
+        },
+        "power_to_weight_hp_ton": 15.3,
+        "drivetrain": "8x8",
+        "chassis": "MAZ-543M",
+        "max_speed_road_kmh": 60,
+        "range_road_km": 850
+      },
+      "armament": {
+        "main": {
+          "designation": "9A54 Launcher",
+          "type": "mlrs",
+          "tubes": 12,
+          "traverse_deg": 180,
+          "elevation_max_deg": 55,
+          "rocket_options": [
+            {
+              "designation": "9M542",
+              "caliber_mm": 300,
+              "rockets": 12,
+              "range_max_km": 120,
+              "warhead_kg": 150,
+              "guidance": "GLONASS/INS",
+              "cep_m": 30
+            },
+            {
+              "designation": "9M544",
+              "caliber_mm": 300,
+              "rockets": 12,
+              "range_max_km": 120,
+              "warhead_type": "DPICM",
+              "guidance": "GLONASS/INS"
+            },
+            {
+              "designation": "9M549",
+              "caliber_mm": 300,
+              "rockets": 12,
+              "range_max_km": 200,
+              "guidance": "GLONASS/INS",
+              "cep_m": 20,
+              "notes": "Extended range guided"
+            }
+          ],
+          "salvo_time_sec": 38,
+          "reload_time_minutes": 20,
+          "reload_method": "automatic"
+        }
+      },
+      "protection": {
+        "armor_type": "armored_cab",
+        "stanag_level": "4569 Level 2"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Digital automated",
+        "navigation": "GLONASS/INS",
+        "ballistic_computer": true,
+        "automatic_gun_laying": true,
+        "data_link": true,
+        "shoot_and_scoot": true
+      },
+      "unit_cost_usd": 5000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Tornado-S",
+        "Army Recognition"
+      ],
+      "notes": "Smerch replacement. All-guided rockets. 120-200km range. Automated FCS. Ukraine combat deployed. Claimed 20m CEP with latest rockets.",
+      "year": 2012
+    },
+    {
+      "id": "ru-tos1a",
+      "name": "TOS-1A Solntsepyok",
+      "type": "thermobaric_mlrs",
+      "country_of_origin": "RU",
+      "manufacturer": "Omsk Transmash",
+      "service_history": {
+        "introduced": 2001,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "IQ",
+            "quantity": 36,
+            "status": "active"
+          },
+          {
+            "country": "SY",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "AZ",
+            "quantity": 18,
+            "status": "active"
+          },
+          {
+            "country": "KZ",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 40,
+            "status": "ordered"
+          },
+          {
+            "country": "EG",
+            "quantity": 30,
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 44300,
+        "length_m": 6.86,
+        "width_m": 3.46,
+        "height_m": 2.6,
+        "notes": "T-72 tank chassis"
+      },
+      "mobility": {
+        "engine": {
+          "model": "V-84MS",
+          "type": "diesel",
+          "power_hp": 840,
+          "power_kw": 627
+        },
+        "power_to_weight_hp_ton": 19.0,
+        "transmission": "Manual",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 60,
+        "max_speed_offroad_kmh": 35,
+        "range_road_km": 550,
+        "fording_depth_m": 1.2,
+        "gradient_percent": 60,
+        "notes": "T-72 chassis for protection"
+      },
+      "armament": {
+        "main": {
+          "designation": "TOS-1A Launcher",
+          "type": "thermobaric_mlrs",
+          "tubes": 24,
+          "traverse_deg": 180,
+          "elevation_min_deg": -3,
+          "elevation_max_deg": 60,
+          "rocket_options": [
+            {
+              "designation": "MO.1.01.04",
+              "caliber_mm": 220,
+              "rockets": 24,
+              "range_min_km": 0.4,
+              "range_max_km": 6,
+              "warhead_kg": 45,
+              "warhead_type": "Thermobaric (fuel-air explosive)",
+              "guidance": "unguided",
+              "notes": "Devastating against fortifications"
+            }
+          ],
+          "salvo_time_sec": 12,
+          "reload_time_minutes": 30,
+          "area_coverage_m2": 40000
+        }
+      },
+      "protection": {
+        "armor_type": "steel",
+        "armor_composition": "T-72 hull armor",
+        "protection_front_mm_rha": 100,
+        "protection_side_mm_rha": 80,
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Mechanical with rangefinder",
+        "ballistic_computer": true
+      },
+      "unit_cost_usd": 4000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia TOS-1",
+        "Army Recognition"
+      ],
+      "notes": "Heavy thermobaric system. Short range (6km) but devastating effect. T-72 chassis for frontline use. Chechnya, Syria, Ukraine combat. Area denial weapon. TOS-2 Tosochka on truck chassis in development.",
+      "year": 2001
+    }
+  ]
+}

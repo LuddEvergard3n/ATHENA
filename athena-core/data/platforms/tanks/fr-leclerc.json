@@ -1,0 +1,408 @@
+{
+  "platforms": [
+    {
+      "id": "leclerc-sxxi",
+      "name": "AMX-56 Leclerc SXXI",
+      "country": "FR",
+      "manufacturer": "Nexter Systems",
+      "type": "main_battle_tank",
+      "role": "armored warfare",
+      "introduced": 2006,
+      "status": "active",
+      "crew": 3,
+      "specifications": {
+        "weight": {"value": 57.4, "unit": "tons"},
+        "length": {"value": 9.87, "unit": "m", "note": "with gun forward"},
+        "width": {"value": 3.60, "unit": "m"},
+        "height": {"value": 2.53, "unit": "m"},
+        "ground_clearance": {"value": 0.50, "unit": "m"},
+        "track_width": {"value": 635, "unit": "mm"}
+      },
+      "mobility": {
+        "engine": "V8X-1500 Hyperbar diesel",
+        "power": {"value": 1500, "unit": "hp"},
+        "power_to_weight": {"value": 26.1, "unit": "hp/ton"},
+        "transmission": "SESM ESM 500 automatic, 5 forward, 2 reverse",
+        "max_speed_road": {"value": 72, "unit": "km/h"},
+        "max_speed_offroad": {"value": 50, "unit": "km/h"},
+        "max_speed_reverse": {"value": 38, "unit": "km/h"},
+        "range_road": {"value": 550, "unit": "km"},
+        "range_offroad": {"value": 350, "unit": "km"},
+        "fuel_capacity": {"value": 1300, "unit": "liters"},
+        "gradient": {"value": 60, "unit": "%"},
+        "side_slope": {"value": 30, "unit": "%"},
+        "vertical_obstacle": {"value": 1.25, "unit": "m"},
+        "trench": {"value": 3.0, "unit": "m"},
+        "fording": {"value": 1.0, "unit": "m"},
+        "fording_prepared": {"value": 4.0, "unit": "m", "note": "with kit"}
+      },
+      "armament": {
+        "main_gun": {
+          "designation": "CN120-26/52",
+          "caliber": {"value": 120, "unit": "mm"},
+          "length": "L/52",
+          "elevation": {"min": -8, "max": 15, "unit": "degrees"},
+          "traverse": {"value": 360, "unit": "degrees"},
+          "rotation_speed": {"value": 30, "unit": "deg/s"},
+          "rate_of_fire": {"value": 12, "unit": "rounds/min"},
+          "ammunition_stowage": 40,
+          "ammunition_types": ["OFL 120 F2 APFSDS", "OCC 120 F1 HEAT", "OECC 120 HE", "3BM42 APFSDS"],
+          "autoloader": true,
+          "autoloader_type": "bustle-mounted, 22 ready rounds"
+        },
+        "secondary": [
+          {
+            "designation": "12.7mm M2HB",
+            "caliber": {"value": 12.7, "unit": "mm"},
+            "mount": "coaxial",
+            "ammunition": 950
+          },
+          {
+            "designation": "ANF1",
+            "caliber": {"value": 7.62, "unit": "mm"},
+            "mount": "commander's cupola",
+            "ammunition": 3000
+          }
+        ],
+        "smoke_grenade_launchers": {
+          "type": "Galix combat system",
+          "quantity": 18,
+          "capabilities": ["smoke", "decoy", "antipersonnel grenades"]
+        }
+      },
+      "protection": {
+        "armor_type": "modular composite armor with tungsten and titanium",
+        "frontal_arc": {"value": "650-750", "unit": "mm RHAe", "note": "vs APFSDS"},
+        "turret_front": {"value": "800-900", "unit": "mm RHAe", "note": "with AZUR kit"},
+        "hull_front": {"value": "600-700", "unit": "mm RHAe"},
+        "turret_sides": {"value": "400-500", "unit": "mm RHAe", "note": "with side modules"},
+        "hull_sides": {"value": "150-200", "unit": "mm RHAe"},
+        "roof_armor": {"value": "150", "unit": "mm RHAe", "note": "reinforced vs top attack"},
+        "active_protection": null,
+        "reactive_armor": "AZUR kit with slat armor and ERA blocks",
+        "nbc_protection": true,
+        "laser_warning": true,
+        "special_features": [
+          "ICONE TIS (Tactical Information System)",
+          "Blue Force Tracking",
+          "Enhanced IED protection"
+        ]
+      },
+      "sensors": {
+        "fire_control": "HL-120 digital FCS",
+        "gunner_sight": {
+          "designation": "SAVAN 20",
+          "magnification": "3x/10x",
+          "stabilized": true
+        },
+        "commander_sight": {
+          "designation": "SXXI panoramic",
+          "independent": true,
+          "thermal": true,
+          "laser_rangefinder": true
+        },
+        "thermal_imaging": {
+          "gunner": "3rd gen IRIS thermal camera",
+          "commander": "3rd gen ATHOS thermal"
+        },
+        "laser_rangefinder": {
+          "type": "Nd:YAG",
+          "range": {"value": 10000, "unit": "m"}
+        },
+        "ballistic_computer": true,
+        "hunter_killer": true,
+        "battlefield_management": "SCORPION SICS"
+      },
+      "operational": {
+        "unit_cost": {"value": 9.3, "unit": "million USD", "year": 2020},
+        "units_produced": 132,
+        "operators": ["France"],
+        "combat_history": ["Afghanistan (2011-2012)", "Mali (2013-present)", "Sahel operations"],
+        "notes": [
+          "SXXI = Série XXI (21st century series)",
+          "Improved armor protection over base Leclerc",
+          "AZUR kit adds urban warfare protection",
+          "Integrated with SCORPION program",
+          "Combat proven in Afghanistan and Sahel"
+        ]
+      },
+      "sources": [
+        "Jane's Main Battle Tanks",
+        "French Army official data",
+        "Nexter Systems specifications",
+        "RETEX Afghanistan 2011-2012"
+      ]
+    },
+    {
+      "id": "leclerc-tropicalise",
+      "name": "AMX-56 Leclerc Tropicalisé (UAE)",
+      "country": "AE",
+      "manufacturer": "Nexter Systems/GIAT Industries",
+      "type": "main_battle_tank",
+      "role": "desert warfare",
+      "introduced": 1996,
+      "status": "active",
+      "crew": 3,
+      "specifications": {
+        "weight": {"value": 59.5, "unit": "tons", "note": "with tropical modifications"},
+        "length": {"value": 9.87, "unit": "m", "note": "with gun forward"},
+        "width": {"value": 3.60, "unit": "m"},
+        "height": {"value": 2.92, "unit": "m", "note": "with APU"},
+        "ground_clearance": {"value": 0.50, "unit": "m"},
+        "track_width": {"value": 635, "unit": "mm"}
+      },
+      "mobility": {
+        "engine": "MTU 883 Ka-501 diesel",
+        "power": {"value": 1500, "unit": "hp"},
+        "power_to_weight": {"value": 25.2, "unit": "hp/ton"},
+        "transmission": "Renk HSWL 295 TM automatic",
+        "max_speed_road": {"value": 71, "unit": "km/h"},
+        "max_speed_offroad": {"value": 50, "unit": "km/h"},
+        "max_speed_reverse": {"value": 38, "unit": "km/h"},
+        "range_road": {"value": 500, "unit": "km"},
+        "range_offroad": {"value": 300, "unit": "km"},
+        "fuel_capacity": {"value": 1300, "unit": "liters"},
+        "gradient": {"value": 60, "unit": "%"},
+        "side_slope": {"value": 30, "unit": "%"},
+        "vertical_obstacle": {"value": 1.25, "unit": "m"},
+        "trench": {"value": 3.0, "unit": "m"},
+        "fording": {"value": 1.0, "unit": "m"},
+        "fording_prepared": {"value": 4.0, "unit": "m"},
+        "special_features": [
+          "Enhanced cooling system for desert ops",
+          "Sand filters",
+          "APU for stationary operations"
+        ]
+      },
+      "armament": {
+        "main_gun": {
+          "designation": "CN120-26/52",
+          "caliber": {"value": 120, "unit": "mm"},
+          "length": "L/52",
+          "elevation": {"min": -8, "max": 15, "unit": "degrees"},
+          "traverse": {"value": 360, "unit": "degrees"},
+          "rotation_speed": {"value": 30, "unit": "deg/s"},
+          "rate_of_fire": {"value": 12, "unit": "rounds/min"},
+          "ammunition_stowage": 46,
+          "ammunition_types": ["OFL 120 F1 APFSDS", "OCC 120 F1 HEAT", "OECC 120 HE"],
+          "autoloader": true,
+          "autoloader_type": "bustle-mounted, 22 ready rounds"
+        },
+        "secondary": [
+          {
+            "designation": "FN MAG 58",
+            "caliber": {"value": 7.62, "unit": "mm"},
+            "mount": "coaxial",
+            "ammunition": 3000
+          },
+          {
+            "designation": "FN MAG 58",
+            "caliber": {"value": 7.62, "unit": "mm"},
+            "mount": "commander's cupola",
+            "ammunition": 2000
+          }
+        ],
+        "smoke_grenade_launchers": {
+          "type": "Galix",
+          "quantity": 18
+        }
+      },
+      "protection": {
+        "armor_type": "modular composite",
+        "frontal_arc": {"value": "600-700", "unit": "mm RHAe", "note": "vs APFSDS"},
+        "turret_front": {"value": "700-800", "unit": "mm RHAe"},
+        "hull_front": {"value": "600-700", "unit": "mm RHAe"},
+        "turret_sides": {"value": "300-400", "unit": "mm RHAe"},
+        "hull_sides": {"value": "150-200", "unit": "mm RHAe"},
+        "active_protection": null,
+        "reactive_armor": null,
+        "nbc_protection": true,
+        "laser_warning": true,
+        "special_desert_features": [
+          "Enhanced air filtration",
+          "Improved crew cooling",
+          "Dust sealing"
+        ]
+      },
+      "sensors": {
+        "fire_control": "HL-120",
+        "gunner_sight": {
+          "designation": "SAVAN 15",
+          "magnification": "3x/10x",
+          "stabilized": true
+        },
+        "commander_sight": {
+          "designation": "panoramic HL-70",
+          "independent": true,
+          "thermal": true
+        },
+        "thermal_imaging": {
+          "gunner": "ATHOS thermal camera",
+          "commander": "ATHOS thermal"
+        },
+        "laser_rangefinder": {
+          "type": "Nd:YAG",
+          "range": {"value": 8000, "unit": "m"}
+        },
+        "ballistic_computer": true,
+        "hunter_killer": true,
+        "battlefield_management": "Finabel compatible"
+      },
+      "operational": {
+        "unit_cost": {"value": 7.0, "unit": "million USD", "year": 1995},
+        "units_produced": 388,
+        "operators": ["United Arab Emirates"],
+        "combat_history": ["Yemen (2015-present)"],
+        "notes": [
+          "Modified for desert operations",
+          "German powerpack instead of French Hyperbar",
+          "Increased ammunition storage (46 vs 40 rounds)",
+          "Used in Yemen conflict with mixed results",
+          "Several losses to ATGMs reported"
+        ]
+      },
+      "sources": [
+        "UAE Land Forces documentation",
+        "Military Balance Middle East",
+        "Combat footage analysis Yemen"
+      ]
+    },
+    {
+      "id": "embt",
+      "name": "Enhanced Main Battle Tank (EMBT)",
+      "country": "FR/DE",
+      "manufacturer": "KNDS (Nexter + KMW)",
+      "type": "main_battle_tank",
+      "role": "technology demonstrator",
+      "introduced": 2022,
+      "status": "prototype",
+      "crew": 3,
+      "specifications": {
+        "weight": {"value": 61.5, "unit": "tons"},
+        "length": {"value": 10.60, "unit": "m", "note": "with gun forward"},
+        "width": {"value": 3.74, "unit": "m"},
+        "height": {"value": 3.30, "unit": "m", "note": "with Trophy APS"},
+        "ground_clearance": {"value": 0.50, "unit": "m"},
+        "track_width": {"value": 635, "unit": "mm"}
+      },
+      "mobility": {
+        "engine": "MTU 883 Ka-501 diesel",
+        "power": {"value": 1500, "unit": "hp"},
+        "power_to_weight": {"value": 24.4, "unit": "hp/ton"},
+        "transmission": "Renk HSWL 295 TM automatic",
+        "max_speed_road": {"value": 65, "unit": "km/h"},
+        "max_speed_offroad": {"value": 45, "unit": "km/h"},
+        "range_road": {"value": 500, "unit": "km"},
+        "range_offroad": {"value": 320, "unit": "km"},
+        "fuel_capacity": {"value": 1160, "unit": "liters"},
+        "gradient": {"value": 60, "unit": "%"},
+        "side_slope": {"value": 30, "unit": "%"},
+        "vertical_obstacle": {"value": 1.0, "unit": "m"},
+        "trench": {"value": 3.0, "unit": "m"},
+        "fording": {"value": 1.2, "unit": "m"},
+        "fording_prepared": {"value": 4.0, "unit": "m"}
+      },
+      "armament": {
+        "main_gun": {
+          "designation": "ASCALON 140mm (alternate: Rh-120 L/55A1)",
+          "caliber": {"value": 140, "unit": "mm", "note": "or 120mm option"},
+          "length": "L/52",
+          "elevation": {"min": -9, "max": 20, "unit": "degrees"},
+          "traverse": {"value": 360, "unit": "degrees"},
+          "rotation_speed": {"value": 40, "unit": "deg/s"},
+          "rate_of_fire": {"value": 10, "unit": "rounds/min"},
+          "ammunition_stowage": 30,
+          "ammunition_types": ["Next-gen APFSDS", "Programmable HE", "HEAT-MP"],
+          "autoloader": true,
+          "autoloader_type": "Leclerc-derived bustle autoloader"
+        },
+        "secondary": [
+          {
+            "designation": "ARX-30 RWS",
+            "caliber": {"value": 30, "unit": "mm"},
+            "mount": "remote turret",
+            "ammunition": 200,
+            "capabilities": "anti-drone, anti-helicopter"
+          },
+          {
+            "designation": "FN MAG",
+            "caliber": {"value": 7.62, "unit": "mm"},
+            "mount": "coaxial",
+            "ammunition": 2500
+          }
+        ],
+        "smoke_grenade_launchers": {
+          "type": "ROSY rapid obscuration",
+          "quantity": 40
+        }
+      },
+      "protection": {
+        "armor_type": "next-gen modular composite",
+        "frontal_arc": {"value": "800-1000", "unit": "mm RHAe", "note": "estimated"},
+        "turret_front": {"value": "1000+", "unit": "mm RHAe", "note": "with modules"},
+        "hull_front": {"value": "800-900", "unit": "mm RHAe"},
+        "turret_sides": {"value": "500-600", "unit": "mm RHAe"},
+        "hull_sides": {"value": "300-400", "unit": "mm RHAe"},
+        "active_protection": "Trophy HV",
+        "reactive_armor": "latest gen ERA option",
+        "nbc_protection": true,
+        "laser_warning": true,
+        "special_features": [
+          "360° situational awareness system",
+          "Acoustic shot detection",
+          "IED jammers",
+          "Signature management"
+        ]
+      },
+      "sensors": {
+        "fire_control": "next-gen digital FCS",
+        "gunner_sight": {
+          "designation": "PASEO stabilized sight",
+          "magnification": "variable",
+          "stabilized": true
+        },
+        "commander_sight": {
+          "designation": "panoramic with AI",
+          "independent": true,
+          "thermal": true,
+          "ai_features": "automatic target recognition"
+        },
+        "thermal_imaging": {
+          "gunner": "3rd gen high-resolution",
+          "commander": "3rd gen high-resolution"
+        },
+        "laser_rangefinder": {
+          "type": "eye-safe multi-pulse",
+          "range": {"value": 12000, "unit": "m"}
+        },
+        "ballistic_computer": true,
+        "hunter_killer": true,
+        "battlefield_management": "MGCS architecture compatible",
+        "ai_assistance": [
+          "Target classification",
+          "Threat prioritization",
+          "Route planning"
+        ]
+      },
+      "operational": {
+        "unit_cost": {"value": 15.0, "unit": "million USD", "year": 2023, "note": "estimated if produced"},
+        "units_produced": 2,
+        "operators": [],
+        "combat_history": [],
+        "notes": [
+          "Franco-German technology demonstrator",
+          "Combines Leopard 2A7 hull with Leclerc turret",
+          "Testbed for MGCS technologies",
+          "ASCALON 140mm gun for future threats",
+          "Not intended for production, tech demonstrator only"
+        ]
+      },
+      "sources": [
+        "Eurosatory 2022 presentation",
+        "KNDS press releases",
+        "Defense News coverage",
+        "Army Recognition analysis"
+      ]
+    }
+  ]
+}

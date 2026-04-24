@@ -1,0 +1,258 @@
+{
+  "platforms": [
+    {
+      "id": "us-f-35a-lightning-ii",
+      "name": "F-35A Lightning II",
+      "type": "stealth_multirole",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "nato_name": "Lightning II",
+      "service_entry": 2016,
+      "specifications": {
+        "crew": 1,
+        "length_m": 15.67,
+        "wingspan_m": 10.7,
+        "height_m": 4.38,
+        "wing_area_m2": 42.7,
+        "empty_weight_kg": 13290,
+        "max_takeoff_weight_kg": 31800,
+        "internal_fuel_kg": 8278,
+        "max_speed_kmh": 1960,
+        "max_speed_mach": 1.6,
+        "cruise_speed_kmh": 1050,
+        "combat_radius_km": 1093,
+        "ferry_range_km": 2220,
+        "service_ceiling_m": 15240,
+        "rate_of_climb_m_s": 254,
+        "g_limit": 9,
+        "thrust_to_weight": 0.87
+      },
+      "powerplant": {
+        "engines": 1,
+        "model": "Pratt & Whitney F135-PW-100",
+        "type": "turbofan",
+        "thrust_dry_kn": 128,
+        "thrust_afterburner_kn": 191
+      },
+      "armament": {
+        "internal_stations": 4,
+        "external_stations": 6,
+        "internal_payload_kg": 2600,
+        "max_payload_kg": 8160,
+        "gun": {
+          "type": "GAU-22/A",
+          "caliber_mm": 25,
+          "rounds": 182,
+          "rate_of_fire_rpm": 3300
+        },
+        "typical_loadout": [
+          "2x AIM-120 AMRAAM (internal)",
+          "2x GBU-31 JDAM (internal)",
+          "4x AIM-120 AMRAAM (external)",
+          "2x AIM-9X Sidewinder (external)"
+        ]
+      },
+      "avionics": {
+        "radar": "AN/APG-81 AESA",
+        "radar_range_km": 150,
+        "irst": "AN/AAQ-40 EOTS",
+        "ew_suite": "AN/ASQ-239 EW",
+        "helmet": "Gen III HMDS",
+        "data_link": "MADL, Link 16"
+      },
+      "stealth": {
+        "rcs_m2": 0.005,
+        "rcs_category": "very_low",
+        "ir_suppression": true
+      },
+      "service_history": {
+        "introduced": 2016,
+        "status": "active",
+        "production_count": 1000,
+        "operators": [
+          {"country": "US", "quantity": 630, "variants": ["F-35A", "F-35B", "F-35C"]},
+          {"country": "GB", "quantity": 48, "variants": ["F-35B"]},
+          {"country": "IT", "quantity": 30, "variants": ["F-35A", "F-35B"]},
+          {"country": "NL", "quantity": 52, "variants": ["F-35A"]},
+          {"country": "AU", "quantity": 72, "variants": ["F-35A"]},
+          {"country": "NO", "quantity": 52, "variants": ["F-35A"]},
+          {"country": "JP", "quantity": 147, "variants": ["F-35A", "F-35B"]},
+          {"country": "KR", "quantity": 60, "variants": ["F-35A"]},
+          {"country": "IL", "quantity": 50, "variants": ["F-35I Adir"]},
+          {"country": "PL", "quantity": 32, "variants": ["F-35A"]}
+        ]
+      },
+      "unit_cost_usd": 80000000,
+      "notes": "Fifth-generation stealth multirole. CTOL variant. Most produced 5th gen fighter. Block 4 upgrade ongoing with TR-3 processor."
+    },
+    {
+      "id": "us-f-35b-lightning-ii",
+      "name": "F-35B Lightning II",
+      "type": "stealth_stovl",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "service_entry": 2015,
+      "specifications": {
+        "crew": 1,
+        "length_m": 15.61,
+        "wingspan_m": 10.7,
+        "height_m": 4.36,
+        "empty_weight_kg": 14715,
+        "max_takeoff_weight_kg": 27200,
+        "internal_fuel_kg": 6125,
+        "max_speed_kmh": 1960,
+        "max_speed_mach": 1.6,
+        "combat_radius_km": 833,
+        "service_ceiling_m": 15240
+      },
+      "powerplant": {
+        "engines": 1,
+        "model": "Pratt & Whitney F135-PW-600",
+        "type": "turbofan_stovl",
+        "thrust_afterburner_kn": 182,
+        "lift_fan": "Rolls-Royce LiftSystem"
+      },
+      "armament": {
+        "internal_stations": 4,
+        "external_stations": 6,
+        "max_payload_kg": 6800,
+        "gun": {
+          "type": "GAU-22/A",
+          "caliber_mm": 25,
+          "rounds": 220,
+          "note": "External pod"
+        }
+      },
+      "service_history": {
+        "introduced": 2015,
+        "status": "active",
+        "operators": [
+          {"country": "US", "service": "USMC", "quantity": 160},
+          {"country": "GB", "quantity": 48},
+          {"country": "IT", "quantity": 15},
+          {"country": "JP", "quantity": 42}
+        ]
+      },
+      "unit_cost_usd": 108000000,
+      "notes": "STOVL variant for amphibious assault ships. Lift fan provides 18,000 lbf vertical thrust. Can operate from LHDs and ski-jump carriers."
+    },
+    {
+      "id": "us-f-35c-lightning-ii",
+      "name": "F-35C Lightning II",
+      "type": "stealth_carrier",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "service_entry": 2019,
+      "specifications": {
+        "crew": 1,
+        "length_m": 15.67,
+        "wingspan_m": 13.1,
+        "height_m": 4.48,
+        "wing_area_m2": 62.1,
+        "empty_weight_kg": 15785,
+        "max_takeoff_weight_kg": 31800,
+        "internal_fuel_kg": 8960,
+        "max_speed_kmh": 1960,
+        "combat_radius_km": 1100,
+        "service_ceiling_m": 15240
+      },
+      "powerplant": {
+        "engines": 1,
+        "model": "Pratt & Whitney F135-PW-400",
+        "thrust_afterburner_kn": 191
+      },
+      "armament": {
+        "internal_stations": 4,
+        "external_stations": 6,
+        "max_payload_kg": 8160
+      },
+      "service_history": {
+        "introduced": 2019,
+        "status": "active",
+        "operators": [
+          {"country": "US", "service": "USN", "quantity": 90}
+        ]
+      },
+      "unit_cost_usd": 94000000,
+      "notes": "Carrier variant with larger wings for slower approach speeds. Reinforced landing gear. Wingtip fold for carrier storage."
+    },
+    {
+      "id": "us-f-22-raptor",
+      "name": "F-22 Raptor",
+      "type": "air_superiority_stealth",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin / Boeing",
+      "service_entry": 2005,
+      "specifications": {
+        "crew": 1,
+        "length_m": 18.92,
+        "wingspan_m": 13.56,
+        "height_m": 5.08,
+        "wing_area_m2": 78.04,
+        "empty_weight_kg": 19700,
+        "max_takeoff_weight_kg": 38000,
+        "internal_fuel_kg": 8200,
+        "max_speed_kmh": 2410,
+        "max_speed_mach": 2.25,
+        "supercruise_mach": 1.82,
+        "combat_radius_km": 759,
+        "ferry_range_km": 2960,
+        "service_ceiling_m": 19812,
+        "rate_of_climb_m_s": 315,
+        "g_limit": 9,
+        "thrust_to_weight": 1.08
+      },
+      "powerplant": {
+        "engines": 2,
+        "model": "Pratt & Whitney F119-PW-100",
+        "type": "turbofan",
+        "thrust_dry_kn": 116,
+        "thrust_afterburner_kn": 156,
+        "thrust_vectoring": true,
+        "vector_range_deg": 20
+      },
+      "armament": {
+        "internal_stations": 6,
+        "external_stations": 4,
+        "internal_payload_kg": 2270,
+        "gun": {
+          "type": "M61A2 Vulcan",
+          "caliber_mm": 20,
+          "rounds": 480,
+          "rate_of_fire_rpm": 6000
+        },
+        "typical_loadout_a2a": [
+          "6x AIM-120 AMRAAM (internal)",
+          "2x AIM-9M/X Sidewinder (internal)"
+        ],
+        "typical_loadout_strike": [
+          "2x AIM-120 AMRAAM",
+          "2x AIM-9 Sidewinder",
+          "2x GBU-32 JDAM 1000lb"
+        ]
+      },
+      "avionics": {
+        "radar": "AN/APG-77 AESA",
+        "radar_range_km": 240,
+        "ew_suite": "AN/ALR-94",
+        "data_link": "IFDL, Link 16"
+      },
+      "stealth": {
+        "rcs_m2": 0.0001,
+        "rcs_category": "extremely_low",
+        "ir_suppression": true,
+        "radar_absorbent_materials": true
+      },
+      "service_history": {
+        "introduced": 2005,
+        "status": "active",
+        "production_count": 195,
+        "operators": [
+          {"country": "US", "quantity": 186, "status": "active"}
+        ]
+      },
+      "unit_cost_usd": 150000000,
+      "notes": "World's first operational fifth-generation air superiority fighter. Production ended 2011. Export prohibited by law. Supercruise capable without afterburner."
+    }
+  ]
+}

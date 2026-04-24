@@ -1,0 +1,302 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition",
+      "UK MoD"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "uk-warrior",
+      "name": "FV510 Warrior",
+      "type": "ifv",
+      "country_of_origin": "GB",
+      "manufacturer": "GKN Defence / BAE Systems",
+      "service_history": {
+        "introduced": 1987,
+        "retired": null,
+        "production_count": 789,
+        "operators": [
+          {
+            "country": "UK",
+            "quantity": 650,
+            "variants": [
+              "FV510",
+              "FV511",
+              "FV512"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 40,
+            "variants": [
+              "FV510"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "KW",
+            "quantity": 254,
+            "variants": [
+              "Desert Warrior"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 7,
+        "weight_kg": 25700,
+        "length_m": 6.34,
+        "width_m": 3.03,
+        "height_m": 2.78,
+        "ground_clearance_m": 0.49
+      },
+      "mobility": {
+        "engine": {
+          "model": "Perkins CV-8 Condor",
+          "type": "diesel",
+          "power_hp": 550,
+          "power_kw": 410
+        },
+        "power_to_weight_hp_ton": 21.4,
+        "transmission": "Perkins X-300-4B automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 75,
+        "max_speed_offroad_kmh": 50,
+        "range_road_km": 660,
+        "fuel_capacity_liters": 770,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "fording_depth_m": 1.3,
+        "trench_crossing_m": 2.5,
+        "vertical_obstacle_m": 0.75,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "L21A1 RARDEN",
+          "caliber_mm": 30,
+          "type": "autocannon",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 45,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "rate_of_fire_rpm": 80,
+          "effective_range_m": 1500,
+          "ammunition_carried": 228,
+          "ammunition_types": [
+            {
+              "type": "APDS",
+              "penetration_mm_rha": 40,
+              "penetration_range_m": 1000
+            },
+            {
+              "type": "APSE",
+              "notes": "Armor-piercing special effects"
+            },
+            {
+              "type": "HE"
+            }
+          ],
+          "notes": "Slow ROF but accurate"
+        },
+        "secondary": [
+          {
+            "designation": "L94A1 Chain Gun",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "aluminum_applique",
+        "armor_composition": "Aluminum with steel applique",
+        "protection_front_mm_rha": 25,
+        "protection_side_mm_rha": 10,
+        "protection_upgrade": "WRAP 2 add-on armor package",
+        "stanag_level": "4569 Level 3",
+        "mine_protection": "Enhanced belly",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "BGT TOGS II",
+        "commander_sight": {
+          "type": "Day/night",
+          "thermal": false,
+          "independent": false
+        },
+        "gunner_sight": {
+          "type": "TOGS II",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "ballistic_computer": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8
+      },
+      "unit_cost_usd": 2000000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia FV510 Warrior",
+        "Army Recognition",
+        "UK MoD"
+      ],
+      "notes": "Gulf War, Iraq, Afghanistan veteran. RARDEN low ROF but highly accurate. 40 donated to Ukraine 2023. WCSP upgrade cancelled 2021.",
+      "year": 1987
+    },
+    {
+      "id": "uk-ajax",
+      "name": "Ajax",
+      "type": "ifv",
+      "country_of_origin": "GB",
+      "manufacturer": "General Dynamics Land Systems UK",
+      "service_history": {
+        "introduced": 2024,
+        "retired": null,
+        "production_count": 589,
+        "operators": [
+          {
+            "country": "UK",
+            "quantity": 589,
+            "variants": [
+              "Ajax",
+              "Ares",
+              "Athena",
+              "Apollo",
+              "Atlas",
+              "Argus"
+            ],
+            "status": "entering service"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 4,
+        "weight_kg": 42500,
+        "length_m": 7.36,
+        "width_m": 3.5,
+        "height_m": 2.83,
+        "ground_clearance_m": 0.45,
+        "notes": "Reconnaissance variant; Ares APC carries 6 dismounts"
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU 8V199 TE20",
+          "type": "diesel_turbocharged",
+          "power_hp": 800,
+          "power_kw": 597
+        },
+        "power_to_weight_hp_ton": 18.8,
+        "transmission": "Renk 256B automatic",
+        "suspension": "hydropneumatic",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 45,
+        "range_road_km": 500,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "fording_depth_m": 1.5,
+        "trench_crossing_m": 2.5,
+        "vertical_obstacle_m": 0.85,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "CTA International 40mm",
+          "caliber_mm": 40,
+          "type": "cased_telescoped_autocannon",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 45,
+          "traverse_deg": 360,
+          "stabilization": "two-axis electric",
+          "rate_of_fire_rpm": 200,
+          "effective_range_m": 4000,
+          "ammunition_carried": 170,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "penetration_mm_rha": 140,
+              "penetration_range_m": 1500
+            },
+            {
+              "type": "GPR-AB-T",
+              "notes": "General Purpose Round - Airburst"
+            },
+            {
+              "type": "GPR-PD-T",
+              "notes": "Point Detonating"
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "L94A1 Chain Gun",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel_composite",
+        "stanag_level": "4569 Level 6",
+        "mine_protection": "STANAG 4569 Level 4a/4b",
+        "ied_protection": "Enhanced belly V-hull",
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "spall_liner": true,
+        "acoustic_signature_reduction": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Leonardo Hitfist",
+        "commander_sight": {
+          "type": "Panoramic SVAN",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "Primary",
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_warning_receiver": true,
+        "ballistic_computer": true,
+        "automatic_target_tracker": true,
+        "acoustic_shot_detection": true,
+        "battle_management_system": "BOWMAN"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "ir_signature_reduction": true,
+        "radar_absorbent_materials": true
+      },
+      "unit_cost_usd": 10000000,
+      "cost_year": 2023,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Ajax AFV",
+        "Army Recognition",
+        "UK MoD",
+        "GDLS"
+      ],
+      "notes": "Troubled program with noise/vibration issues. ASCOD 2 based. CTA 40mm cased telescoped ammunition. Scout Strike Brigade vehicle. 6 variants total.",
+      "year": 2024
+    }
+  ]
+}

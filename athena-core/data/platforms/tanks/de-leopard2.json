@@ -1,0 +1,749 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "de-leopard2a4",
+      "name": "Leopard 2A4",
+      "type": "mbt",
+      "country_of_origin": "DE",
+      "manufacturer": "Krauss-Maffei Wegmann",
+      "service_history": {
+        "introduced": 1985,
+        "retired": null,
+        "production_count": 2125,
+        "operators": [
+          {
+            "country": "DE",
+            "quantity": 0,
+            "status": "retired"
+          },
+          {
+            "country": "TR",
+            "quantity": 298,
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 142,
+            "status": "active"
+          },
+          {
+            "country": "GR",
+            "quantity": 183,
+            "status": "active"
+          },
+          {
+            "country": "CL",
+            "quantity": 132,
+            "status": "active"
+          },
+          {
+            "country": "ID",
+            "quantity": 42,
+            "status": "active"
+          },
+          {
+            "country": "CH",
+            "quantity": 134,
+            "variants": [
+              "Pz 87"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 55150,
+        "length_m": 7.72,
+        "length_gun_forward_m": 9.97,
+        "width_m": 3.74,
+        "height_m": 2.48,
+        "ground_clearance_m": 0.5
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU MB 873 Ka-501",
+          "type": "diesel",
+          "power_hp": 1500,
+          "power_kw": 1103
+        },
+        "power_to_weight_hp_ton": 27.2,
+        "transmission": "Renk HSWL 354",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 72,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 31,
+        "range_road_km": 550,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.0,
+        "fording_depth_prepared_m": 4.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 3.0,
+        "vertical_obstacle_m": 1.1,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "Rheinmetall Rh-120 L/44",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 44,
+          "type": "smoothbore",
+          "elevation_min_deg": -9,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1650,
+          "effective_range_m": 4000,
+          "ammunition_carried": 42,
+          "ammunition_ready": 15,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "DM33",
+              "penetration_mm_rha": 560,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "APFSDS",
+              "designation": "DM53",
+              "penetration_mm_rha": 640,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT-MP",
+              "designation": "DM12",
+              "penetration_mm_rha": 480,
+              "penetration_range_m": 2000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "MG3",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 4750
+          },
+          {
+            "designation": "MG3",
+            "caliber_mm": 7.62,
+            "mount": "commander",
+            "ammunition_carried": 2000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite",
+        "armor_composition": "Steel/tungsten/ceramic composite",
+        "protection_front_turret_mm_rha": 700,
+        "protection_front_hull_mm_rha": 600,
+        "protection_side_mm_rha": 150,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 50,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "bustle",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "EMES 15",
+        "commander_sight": {
+          "type": "PERI-R17",
+          "day_magnification": "2x/8x",
+          "thermal": false,
+          "independent": false
+        },
+        "gunner_sight": {
+          "type": "EMES 15",
+          "day_magnification": "3x/12x",
+          "thermal": true,
+          "thermal_generation": "1st"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": true,
+        "cant_sensor": true,
+        "gps": false,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 16,
+        "smoke_grenade_type": "76mm"
+      },
+      "unit_cost_usd": 5740000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Leopard 2",
+        "Army Recognition Leopard 2A4",
+        "Army Technology Leopard 2"
+      ],
+      "notes": "Most widespread version. Added digital FCS, automatic fire suppression, improved turret armor.",
+      "year": 1985
+    },
+    {
+      "id": "de-leopard2a5",
+      "name": "Leopard 2A5",
+      "type": "mbt",
+      "country_of_origin": "DE",
+      "manufacturer": "Krauss-Maffei Wegmann",
+      "service_history": {
+        "introduced": 1995,
+        "retired": null,
+        "production_count": 350,
+        "operators": [
+          {
+            "country": "DE",
+            "quantity": 0,
+            "status": "retired"
+          },
+          {
+            "country": "NL",
+            "quantity": 0,
+            "status": "retired"
+          },
+          {
+            "country": "SE",
+            "quantity": 120,
+            "variants": [
+              "Strv 122"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "DK",
+            "quantity": 57,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 62500,
+        "length_m": 7.72,
+        "length_gun_forward_m": 9.97,
+        "width_m": 3.74,
+        "height_m": 2.64,
+        "ground_clearance_m": 0.5
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU MB 873 Ka-501",
+          "type": "diesel",
+          "power_hp": 1500,
+          "power_kw": 1103
+        },
+        "power_to_weight_hp_ton": 24.0,
+        "transmission": "Renk HSWL 354",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 68,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 31,
+        "range_road_km": 500,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.0,
+        "fording_depth_prepared_m": 4.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 3.0,
+        "vertical_obstacle_m": 1.1,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "Rheinmetall Rh-120 L/44",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 44,
+          "type": "smoothbore",
+          "elevation_min_deg": -9,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1650,
+          "effective_range_m": 4000,
+          "ammunition_carried": 42,
+          "ammunition_ready": 15,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "DM53",
+              "penetration_mm_rha": 640,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "APFSDS",
+              "designation": "DM63",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT-MP",
+              "designation": "DM12",
+              "penetration_mm_rha": 480,
+              "penetration_range_m": 2000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "MG3",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 4750
+          },
+          {
+            "designation": "MG3",
+            "caliber_mm": 7.62,
+            "mount": "commander",
+            "ammunition_carried": 2000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite",
+        "armor_composition": "3rd gen composite with wedge add-on modules",
+        "protection_front_turret_mm_rha": 920,
+        "protection_front_hull_mm_rha": 620,
+        "protection_side_mm_rha": 200,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 60,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "bustle",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "EMES 15 (upgraded)",
+        "commander_sight": {
+          "type": "PERI-R17 A2",
+          "day_magnification": "2x/8x",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "EMES 15",
+          "day_magnification": "3x/12x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": true,
+        "cant_sensor": true,
+        "driver_vision": {
+          "thermal": false
+        },
+        "gps": true,
+        "inertial_navigation": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 16,
+        "smoke_grenade_type": "76mm"
+      },
+      "unit_cost_usd": 6500000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Leopard 2",
+        "Army Recognition Leopard 2A5",
+        "Defence Express"
+      ],
+      "notes": "Wedge-shaped add-on armor, electric drives, CITV for hunter-killer. Weight +7.5t over 2A4.",
+      "year": 1995
+    },
+    {
+      "id": "de-leopard2a6",
+      "name": "Leopard 2A6",
+      "type": "mbt",
+      "country_of_origin": "DE",
+      "manufacturer": "Krauss-Maffei Wegmann",
+      "service_history": {
+        "introduced": 2001,
+        "retired": null,
+        "production_count": 650,
+        "operators": [
+          {
+            "country": "DE",
+            "quantity": 225,
+            "status": "active"
+          },
+          {
+            "country": "NL",
+            "quantity": 18,
+            "status": "active"
+          },
+          {
+            "country": "GR",
+            "quantity": 170,
+            "variants": [
+              "Leopard 2A6 HEL"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "ES",
+            "quantity": 219,
+            "variants": [
+              "Leopard 2E"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "PT",
+            "quantity": 37,
+            "status": "active"
+          },
+          {
+            "country": "FI",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "CA",
+            "quantity": 42,
+            "variants": [
+              "Leopard 2A6M CAN"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 62300,
+        "length_m": 7.72,
+        "length_gun_forward_m": 10.97,
+        "width_m": 3.74,
+        "height_m": 2.64,
+        "ground_clearance_m": 0.5
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU MB 873 Ka-501",
+          "type": "diesel",
+          "power_hp": 1500,
+          "power_kw": 1103
+        },
+        "power_to_weight_hp_ton": 24.1,
+        "transmission": "Renk HSWL 354",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 68,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 31,
+        "range_road_km": 500,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.0,
+        "fording_depth_prepared_m": 4.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 3.0,
+        "vertical_obstacle_m": 1.1,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "Rheinmetall Rh-120 L/55",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 55,
+          "type": "smoothbore",
+          "elevation_min_deg": -9,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1750,
+          "effective_range_m": 5000,
+          "ammunition_carried": 42,
+          "ammunition_ready": 15,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "DM53",
+              "penetration_mm_rha": 750,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "APFSDS",
+              "designation": "DM63",
+              "penetration_mm_rha": 800,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT-MP",
+              "designation": "DM11",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 4500
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "MG3",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 4750
+          },
+          {
+            "designation": "MG3",
+            "caliber_mm": 7.62,
+            "mount": "commander",
+            "ammunition_carried": 2000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite",
+        "armor_composition": "3rd gen composite with wedge modules",
+        "protection_front_turret_mm_rha": 920,
+        "protection_front_hull_mm_rha": 620,
+        "protection_side_mm_rha": 200,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 60,
+        "mine_protection_kg_tnt": 10,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "bustle",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "EMES 15 A2",
+        "commander_sight": {
+          "type": "PERI-R17 A2",
+          "day_magnification": "2x/8x",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "EMES 15",
+          "day_magnification": "3x/12x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": true,
+        "cant_sensor": true,
+        "battle_management_system": "IFIS",
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 16,
+        "smoke_grenade_type": "76mm"
+      },
+      "unit_cost_usd": 7800000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Leopard 2",
+        "Army Recognition Leopard 2A6",
+        "Army Technology"
+      ],
+      "notes": "L/55 gun (+1.3m barrel), improved penetration. 2A6M adds mine protection.",
+      "year": 2001
+    },
+    {
+      "id": "de-leopard2a7",
+      "name": "Leopard 2A7",
+      "type": "mbt",
+      "country_of_origin": "DE",
+      "manufacturer": "Krauss-Maffei Wegmann",
+      "service_history": {
+        "introduced": 2014,
+        "retired": null,
+        "production_count": 350,
+        "operators": [
+          {
+            "country": "DE",
+            "quantity": 104,
+            "variants": [
+              "Leopard 2A7V"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "QA",
+            "quantity": 62,
+            "status": "active"
+          },
+          {
+            "country": "HU",
+            "quantity": 44,
+            "status": "active"
+          },
+          {
+            "country": "NO",
+            "quantity": 54,
+            "variants": [
+              "Leopard 2A8"
+            ],
+            "status": "ordered"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 67500,
+        "length_m": 7.72,
+        "length_gun_forward_m": 10.97,
+        "width_m": 3.74,
+        "height_m": 2.79,
+        "ground_clearance_m": 0.5
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU MB 873 Ka-501",
+          "type": "diesel",
+          "power_hp": 1500,
+          "power_kw": 1103
+        },
+        "power_to_weight_hp_ton": 22.2,
+        "transmission": "Renk HSWL 354",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 68,
+        "max_speed_offroad_kmh": 45,
+        "max_speed_reverse_kmh": 31,
+        "range_road_km": 450,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.0,
+        "fording_depth_prepared_m": 4.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 3.0,
+        "vertical_obstacle_m": 1.1,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "Rheinmetall Rh-120 L/55A1",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 55,
+          "type": "smoothbore",
+          "elevation_min_deg": -9,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1750,
+          "effective_range_m": 5000,
+          "ammunition_carried": 42,
+          "ammunition_ready": 15,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "DM73",
+              "penetration_mm_rha": 850,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE-ABM",
+              "designation": "DM11",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "MG5",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 4750
+          },
+          {
+            "designation": "FLW 200 (RWS)",
+            "caliber_mm": 12.7,
+            "mount": "remote",
+            "ammunition_carried": 500
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite_reactive",
+        "armor_composition": "Modular AMAP composite + CLARA ERA option",
+        "protection_front_turret_mm_rha": 1000,
+        "protection_front_hull_mm_rha": 700,
+        "protection_side_mm_rha": 350,
+        "protection_rear_mm_rha": 100,
+        "protection_top_mm_rha": 100,
+        "era_coverage": "Hull/turret sides (optional)",
+        "aps": {
+          "system": "Trophy (optional)",
+          "type": "hard-kill",
+          "coverage_deg": 360
+        },
+        "mine_protection_kg_tnt": 10,
+        "ied_protection_kg_tnt": 25,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "bustle",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "EMES 15 A3",
+        "commander_sight": {
+          "type": "PERI-R17 A3",
+          "day_magnification": "2x/8x/24x",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "EMES 15 A3",
+          "day_magnification": "3x/12x",
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": true,
+        "cant_sensor": true,
+        "battle_management_system": "IFIS 2.0",
+        "data_link": true,
+        "gps": true,
+        "inertial_navigation": true,
+        "driver_vision": {
+          "thermal": true
+        }
+      },
+      "signature": {
+        "smoke_grenade_launchers": 16,
+        "smoke_grenade_type": "76mm",
+        "ir_signature_reduction": true,
+        "radar_signature_reduction": true
+      },
+      "unit_cost_usd": 12000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia Leopard 2",
+        "Army Technology Leopard 2",
+        "Military Factory"
+      ],
+      "notes": "Latest production variant. Modular armor for urban/COIN ops, RWS, APU, 3rd gen thermals, optional Trophy APS. 2A7V = German Army standard.",
+      "year": 2014
+    }
+  ]
+}

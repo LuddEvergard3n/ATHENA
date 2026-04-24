@@ -1,0 +1,495 @@
+{
+  "platforms": [
+    {
+      "id": "ru-9k720-iskander-m",
+      "name": "9K720 Iskander-M",
+      "type": "srbm",
+      "country_of_origin": "RU",
+      "manufacturer": "KBM (Konstruktorskoe Byuro Mashinostroeniya)",
+      "nato_name": "SS-26 Stone",
+      "service_entry": 2006,
+      "specifications": {
+        "length_m": 7.3,
+        "diameter_m": 0.92,
+        "weight_kg": 3800,
+        "warhead_kg": 480,
+        "range_km": 500,
+        "cep_m": 5,
+        "speed_mach": 6
+      },
+      "guidance": {
+        "inertial": true,
+        "glonass": true,
+        "terminal": "Active radar or optical"
+      },
+      "launch_platform": "MZKT-7930 TEL (2 missiles)",
+      "variants": [
+        "9M723 - Quasi-ballistic",
+        "9M728 (R-500) - Cruise missile"
+      ],
+      "service_history": {
+        "introduced": 2006,
+        "status": "active",
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 180,
+            "unit": "launchers"
+          },
+          {
+            "country": "AM",
+            "quantity": 4
+          },
+          {
+            "country": "BY",
+            "quantity": 4
+          },
+          {
+            "country": "DZ",
+            "quantity": 4
+          }
+        ]
+      },
+      "combat_use": [
+        {
+          "conflict": "Georgia",
+          "year": 2008
+        },
+        {
+          "conflict": "Ukraine",
+          "year": 2022
+        }
+      ],
+      "unit_cost_usd": 3000000,
+      "notes": "Primary Russian tactical missile. Quasi-ballistic trajectory defeats ABM. Heavy use in Ukraine."
+    },
+    {
+      "id": "cn-df-17-hypersonic",
+      "name": "DF-17",
+      "type": "hypersonic_glide_vehicle",
+      "country_of_origin": "CN",
+      "manufacturer": "CASIC",
+      "service_entry": 2019,
+      "specifications": {
+        "range_km": 2500,
+        "speed_mach": 10,
+        "warhead": "Conventional or nuclear"
+      },
+      "guidance": {
+        "type": "Hypersonic glide vehicle (DF-ZF)",
+        "terminal": "Maneuvering"
+      },
+      "features": {
+        "hgv": true,
+        "abm_evasion": true
+      },
+      "service_history": {
+        "introduced": 2019,
+        "status": "active"
+      },
+      "notes": "World's first operational hypersonic glide vehicle. Displayed at 70th anniversary parade. ABM-defeating."
+    },
+    {
+      "id": "cn-df-21d-carrier-killer",
+      "name": "DF-21D",
+      "type": "asbm",
+      "country_of_origin": "CN",
+      "manufacturer": "CASIC",
+      "service_entry": 2010,
+      "specifications": {
+        "length_m": 10.7,
+        "weight_kg": 14700,
+        "range_km": 1500,
+        "speed_mach": 10
+      },
+      "guidance": {
+        "inertial": true,
+        "terminal": "Active radar seeker",
+        "otr_targeting": "OTH radar, satellites"
+      },
+      "features": {
+        "anti_carrier": true,
+        "maneuvering_warhead": true
+      },
+      "service_history": {
+        "introduced": 2010,
+        "status": "active"
+      },
+      "notes": "World's first anti-ship ballistic missile. 'Carrier Killer'. A2/AD cornerstone."
+    },
+    {
+      "id": "cn-df-26b-guam-killer",
+      "name": "DF-26B",
+      "type": "irbm",
+      "country_of_origin": "CN",
+      "manufacturer": "CASIC",
+      "service_entry": 2018,
+      "specifications": {
+        "range_km": 4000,
+        "warhead": "Conventional or nuclear",
+        "warhead_kg": 1800
+      },
+      "guidance": {
+        "inertial": true,
+        "beidou": true,
+        "terminal": "Active radar (anti-ship variant)"
+      },
+      "variants": [
+        "DF-26 - Land attack",
+        "DF-26B - Anti-ship capable"
+      ],
+      "service_history": {
+        "introduced": 2018,
+        "status": "active"
+      },
+      "notes": "'Guam Killer'. Hot-swappable warheads. Dual nuclear/conventional capability."
+    },
+    {
+      "id": "us-trident-ii-d5le",
+      "name": "Trident II D5LE",
+      "type": "slbm",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "service_entry": 2017,
+      "specifications": {
+        "length_m": 13.42,
+        "diameter_m": 2.11,
+        "weight_kg": 59000,
+        "range_km": 12000,
+        "warheads": "8-14 W76/W88 MIRV",
+        "cep_m": 90
+      },
+      "guidance": {
+        "inertial": "Mk 6 GPS-aided",
+        "stellar": "Stars sighting"
+      },
+      "platforms": [
+        "Ohio-class SSBN",
+        "Vanguard-class SSBN",
+        "Columbia-class (future)"
+      ],
+      "service_history": {
+        "introduced": 2017,
+        "status": "active",
+        "note": "Life extension to 2042"
+      },
+      "notes": "US/UK strategic deterrent. LE extends life 25 years. Most tested SLBM in history."
+    },
+    {
+      "id": "us-agm-84-harpoon",
+      "name": "AGM-84 Harpoon",
+      "type": "anti_ship_missile",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_entry": 1977,
+      "specifications": {
+        "length_m": 4.6,
+        "diameter_m": 0.34,
+        "weight_kg": 691,
+        "warhead_kg": 221,
+        "range_km": 280,
+        "speed_mach": 0.9
+      },
+      "guidance": {
+        "midcourse": "INS + GPS",
+        "terminal": "Active radar"
+      },
+      "variants": [
+        "AGM-84D - Air launched",
+        "RGM-84 - Ship launched",
+        "UGM-84 - Sub launched",
+        "AGM-84H/K SLAM-ER - Land attack"
+      ],
+      "service_history": {
+        "introduced": 1977,
+        "status": "active",
+        "operators_count": 30
+      },
+      "combat_use": [
+        {
+          "conflict": "Praying Mantis",
+          "year": 1988
+        },
+        {
+          "conflict": "Libya",
+          "year": 1986
+        }
+      ],
+      "unit_cost_usd": 1500000,
+      "notes": "Western standard anti-ship missile. Block II+ with GPS. SLAM-ER for land attack."
+    },
+    {
+      "id": "fr-mm40-exocet-block3",
+      "name": "MM40 Exocet Block 3",
+      "type": "anti_ship_missile",
+      "country_of_origin": "FR",
+      "manufacturer": "MBDA",
+      "service_entry": 2008,
+      "specifications": {
+        "length_m": 5.8,
+        "diameter_m": 0.35,
+        "weight_kg": 870,
+        "warhead_kg": 165,
+        "range_km": 200,
+        "speed_mach": 0.93
+      },
+      "guidance": {
+        "midcourse": "INS + GPS",
+        "terminal": "Active radar J-band"
+      },
+      "variants": [
+        "AM39 - Air launched",
+        "MM40 - Ship launched",
+        "SM39 - Submarine launched"
+      ],
+      "service_history": {
+        "introduced": 2008,
+        "status": "active",
+        "operators_count": 40
+      },
+      "combat_use": [
+        {
+          "conflict": "Falklands",
+          "year": 1982
+        }
+      ],
+      "notes": "Iconic anti-ship missile. Sank HMS Sheffield. Block 3 adds land attack. 3c 400km range."
+    },
+    {
+      "id": "cn-yj-18a-ascm",
+      "name": "YJ-18A",
+      "type": "anti_ship_missile",
+      "country_of_origin": "CN",
+      "manufacturer": "CASIC",
+      "service_entry": 2015,
+      "specifications": {
+        "length_m": 8.2,
+        "weight_kg": 2500,
+        "warhead_kg": 300,
+        "range_km": 540,
+        "cruise_speed_mach": 0.8,
+        "terminal_speed_mach": 3
+      },
+      "guidance": {
+        "midcourse": "INS + Beidou",
+        "terminal": "Active radar"
+      },
+      "platforms": [
+        "Type 052D",
+        "Type 055",
+        "Type 093A",
+        "H-6"
+      ],
+      "service_history": {
+        "introduced": 2015,
+        "status": "active"
+      },
+      "notes": "Chinese Kalibr equivalent. Subsonic cruise, supersonic terminal. VLS compatible."
+    },
+    {
+      "id": "cn-yj-12b-ascm",
+      "name": "YJ-12B",
+      "type": "anti_ship_missile",
+      "country_of_origin": "CN",
+      "manufacturer": "CASIC",
+      "service_entry": 2015,
+      "specifications": {
+        "length_m": 6.3,
+        "weight_kg": 2500,
+        "warhead_kg": 500,
+        "range_km": 400,
+        "speed_mach": 4
+      },
+      "guidance": {
+        "terminal": "Active/passive radar"
+      },
+      "platforms": [
+        "H-6K/J/N bombers",
+        "Ground based"
+      ],
+      "service_history": {
+        "introduced": 2015,
+        "status": "active"
+      },
+      "notes": "Chinese supersonic heavy anti-ship missile. Deployed in South China Sea. Very high kinetic energy."
+    },
+    {
+      "id": "de-taurus-kepd-350",
+      "name": "TAURUS KEPD 350",
+      "type": "cruise_missile",
+      "country_of_origin": "DE",
+      "manufacturer": "MBDA/Saab",
+      "service_entry": 2005,
+      "specifications": {
+        "length_m": 5.1,
+        "weight_kg": 1400,
+        "warhead_kg": 481,
+        "range_km": 500,
+        "speed_mach": 0.95
+      },
+      "guidance": {
+        "midcourse": "INS + GPS + TERCOM + IBN",
+        "terminal": "IR imaging"
+      },
+      "warhead": {
+        "type": "MEPHISTO tandem penetrator",
+        "layers": 2,
+        "bunker_penetration": true
+      },
+      "platforms": [
+        "Tornado",
+        "Eurofighter",
+        "F/A-18",
+        "Gripen"
+      ],
+      "service_history": {
+        "introduced": 2005,
+        "status": "active",
+        "operators": [
+          {
+            "country": "DE",
+            "quantity": 600
+          },
+          {
+            "country": "ES",
+            "quantity": 43
+          },
+          {
+            "country": "KR",
+            "quantity": 170
+          }
+        ]
+      },
+      "unit_cost_usd": 1000000,
+      "notes": "German-Swedish cruise missile. MEPHISTO warhead defeats hardened bunkers. Refused for Ukraine transfer."
+    },
+    {
+      "id": "us-agm-183a-arrw",
+      "name": "AGM-183A ARRW",
+      "type": "hypersonic_missile",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "full_name": "Air-Launched Rapid Response Weapon",
+      "service_entry": 2025,
+      "specifications": {
+        "length_m": 6.5,
+        "weight_kg": 1000,
+        "range_km": 1600,
+        "speed_mach": 20
+      },
+      "guidance": {
+        "type": "Hypersonic boost-glide",
+        "terminal": "GPS/INS"
+      },
+      "platforms": [
+        "B-52H",
+        "B-1B",
+        "F-15E"
+      ],
+      "service_history": {
+        "first_successful_test": 2022,
+        "expected_service": 2025,
+        "status": "testing"
+      },
+      "notes": "US air-launched hypersonic weapon. Troubled development. Mach 20 speed. Limited production approved."
+    },
+    {
+      "id": "us-lrhw-dark-eagle",
+      "name": "LRHW Dark Eagle",
+      "type": "hypersonic_missile",
+      "country_of_origin": "US",
+      "manufacturer": "Lockheed Martin",
+      "full_name": "Long Range Hypersonic Weapon",
+      "service_entry": 2024,
+      "specifications": {
+        "range_km": 2775,
+        "speed_mach": 17,
+        "warhead": "Common Hypersonic Glide Body"
+      },
+      "platform": "Ground-based launcher",
+      "service_history": {
+        "introduced": 2024,
+        "status": "active",
+        "deployed": "Operational 2024"
+      },
+      "notes": "US Army hypersonic weapon. First operational US hypersonic system. Deployed to Indo-Pacific."
+    },
+    {
+      "id": "in-brahmos-er",
+      "name": "BrahMos-ER",
+      "type": "cruise_missile",
+      "country_of_origin": "IN",
+      "manufacturer": "BrahMos Aerospace (India-Russia JV)",
+      "service_entry": 2022,
+      "specifications": {
+        "length_m": 8.4,
+        "diameter_m": 0.6,
+        "weight_kg": 2500,
+        "warhead_kg": 300,
+        "range_km": 800,
+        "speed_mach": 2.8
+      },
+      "guidance": {
+        "midcourse": "INS + GPS/GLONASS",
+        "terminal": "Active radar"
+      },
+      "platforms": [
+        "Ships",
+        "Submarines",
+        "Su-30MKI",
+        "Ground TEL"
+      ],
+      "variants": [
+        "Block I - Ship/Ground",
+        "Block II - Land attack",
+        "Block III-A - Air launched",
+        "BrahMos-NG - Compact version"
+      ],
+      "service_history": {
+        "introduced": 2022,
+        "status": "active",
+        "operators": [
+          {
+            "country": "IN",
+            "quantity": 600
+          },
+          {
+            "country": "PH",
+            "quantity": 3,
+            "unit": "batteries"
+          }
+        ]
+      },
+      "unit_cost_usd": 3000000,
+      "notes": "World's fastest cruise missile. Extended range version 800km. BrahMos-II hypersonic in development."
+    },
+    {
+      "id": "jp-type-12-ssm",
+      "name": "Type 12 SSM (Improved)",
+      "type": "anti_ship_missile",
+      "country_of_origin": "JP",
+      "manufacturer": "Mitsubishi Heavy Industries",
+      "service_entry": 2024,
+      "specifications": {
+        "range_km": 1500,
+        "speed": "Subsonic",
+        "warhead_kg": 200
+      },
+      "guidance": {
+        "midcourse": "INS + GPS",
+        "terminal": "Active radar + IIR"
+      },
+      "platforms": [
+        "Ground TEL",
+        "Ships",
+        "F-15J",
+        "F-2"
+      ],
+      "service_history": {
+        "introduced": 2024,
+        "status": "active"
+      },
+      "notes": "Major range extension from 200km to 1500km. Standoff strike capability. Counter-China focus."
+    }
+  ]
+}

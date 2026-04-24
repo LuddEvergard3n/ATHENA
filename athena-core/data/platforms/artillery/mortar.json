@@ -1,0 +1,585 @@
+{
+  "$schema": "../../schema/platform-ground.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-18",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's Land Warfare Platforms",
+      "Army Recognition"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "ru-2s9",
+      "name": "2S9 Nona-S",
+      "type": "spm",
+      "country_of_origin": "SU",
+      "manufacturer": "Motovilikha Plants",
+      "service_history": {
+        "introduced": 1981,
+        "retired": null,
+        "production_count": 1500,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 500,
+            "status": "active"
+          },
+          {
+            "country": "UA",
+            "quantity": 100,
+            "status": "active"
+          },
+          {
+            "country": "BY",
+            "quantity": 54,
+            "status": "active"
+          },
+          {
+            "country": "UZ",
+            "quantity": 24,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 8700,
+        "length_m": 6.02,
+        "width_m": 2.63,
+        "height_m": 2.3,
+        "ground_clearance_m": 0.3
+      },
+      "mobility": {
+        "engine": {
+          "model": "5D20",
+          "type": "diesel",
+          "power_hp": 240,
+          "power_kw": 179
+        },
+        "power_to_weight_hp_ton": 27.6,
+        "max_speed_road_kmh": 60,
+        "max_speed_water_kmh": 9,
+        "range_road_km": 500,
+        "amphibious": true,
+        "propulsion_water": "waterjets",
+        "notes": "BTR-D airborne chassis"
+      },
+      "armament": {
+        "main": {
+          "designation": "2A51",
+          "caliber_mm": 120,
+          "type": "gun_mortar",
+          "elevation_min_deg": -4,
+          "elevation_max_deg": 80,
+          "traverse_deg": 70,
+          "loading": "manual",
+          "rate_of_fire_rpm": 8,
+          "range_standard_km": 8.8,
+          "range_rap_km": 12.8,
+          "range_direct_fire_m": 1000,
+          "ammunition_carried": 40,
+          "ammunition_types": [
+            {
+              "type": "HE-FRAG",
+              "designation": "3OF49",
+              "range_km": 8.8
+            },
+            {
+              "type": "RAP",
+              "range_km": 12.8
+            },
+            {
+              "type": "HEAT",
+              "designation": "3BK19M",
+              "penetration_mm": 600
+            },
+            {
+              "type": "Smoke"
+            }
+          ],
+          "notes": "Gun-mortar hybrid - breech and muzzle loading"
+        }
+      },
+      "protection": {
+        "armor_type": "aluminum",
+        "protection_front_mm_rha": 15,
+        "protection_side_mm_rha": 7,
+        "nbc_protection": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "1P8",
+        "direct_fire_sight": "1P8"
+      },
+      "unit_cost_usd": 800000,
+      "cost_year": 2000,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia 2S9 Nona",
+        "Army Recognition"
+      ],
+      "notes": "Airborne gun-mortar. 120mm breech-loading. Can fire standard 120mm mortar rounds. VDV (airborne) equipment. Amphibious. Direct-fire AT capability.",
+      "year": 1981
+    },
+    {
+      "id": "ru-2s23",
+      "name": "2S23 Nona-SVK",
+      "type": "spm",
+      "country_of_origin": "RU",
+      "manufacturer": "Motovilikha Plants",
+      "service_history": {
+        "introduced": 1990,
+        "retired": null,
+        "production_count": 200,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 150,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 14500,
+        "length_m": 7.5,
+        "width_m": 2.9,
+        "height_m": 2.95
+      },
+      "mobility": {
+        "engine": {
+          "model": "KamAZ-7403",
+          "type": "diesel_turbocharged",
+          "power_hp": 260,
+          "power_kw": 194
+        },
+        "power_to_weight_hp_ton": 17.9,
+        "drivetrain": "8x8",
+        "max_speed_road_kmh": 80,
+        "max_speed_water_kmh": 10,
+        "range_road_km": 600,
+        "amphibious": true,
+        "notes": "BTR-80 chassis"
+      },
+      "armament": {
+        "main": {
+          "designation": "2A60",
+          "caliber_mm": 120,
+          "type": "gun_mortar",
+          "elevation_min_deg": -4,
+          "elevation_max_deg": 80,
+          "traverse_deg": 70,
+          "loading": "semi-automatic",
+          "rate_of_fire_rpm": 10,
+          "range_standard_km": 8.8,
+          "range_rap_km": 12.8,
+          "ammunition_carried": 40
+        },
+        "secondary": [
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "turret",
+            "ammunition_carried": 500
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel",
+        "protection_front_mm_rha": 10,
+        "nbc_protection": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "1P40"
+      },
+      "unit_cost_usd": 1200000,
+      "cost_year": 2010,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia 2S23 Nona-SVK",
+        "Army Recognition"
+      ],
+      "notes": "Wheeled Nona variant. BTR-80 based. Same armament as 2S9. Higher mobility on roads. Semi-automatic loading.",
+      "year": 1990
+    },
+    {
+      "id": "ru-2s31",
+      "name": "2S31 Vena",
+      "type": "spm",
+      "country_of_origin": "RU",
+      "manufacturer": "NIMI",
+      "service_history": {
+        "introduced": 2010,
+        "retired": null,
+        "production_count": 50,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 50,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "weight_kg": 19500,
+        "length_m": 6.7,
+        "width_m": 3.35,
+        "height_m": 2.9
+      },
+      "mobility": {
+        "engine": {
+          "model": "UTD-29",
+          "type": "diesel",
+          "power_hp": 500,
+          "power_kw": 373
+        },
+        "power_to_weight_hp_ton": 25.6,
+        "max_speed_road_kmh": 70,
+        "max_speed_water_kmh": 7,
+        "range_road_km": 600,
+        "amphibious": true,
+        "notes": "BMP-3 chassis"
+      },
+      "armament": {
+        "main": {
+          "designation": "2A80-1",
+          "caliber_mm": 120,
+          "type": "gun_mortar",
+          "elevation_min_deg": -4,
+          "elevation_max_deg": 80,
+          "traverse_deg": 360,
+          "loading": "automatic",
+          "rate_of_fire_rpm": 12,
+          "range_standard_km": 13,
+          "range_kitolov_km": 9,
+          "ammunition_carried": 70,
+          "ammunition_types": [
+            {
+              "type": "HE-FRAG",
+              "range_km": 13
+            },
+            {
+              "type": "Laser-guided",
+              "designation": "Kitolov-2M",
+              "range_km": 9,
+              "cep_m": 2
+            },
+            {
+              "type": "HEAT",
+              "penetration_mm": 650
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "aluminum_steel",
+        "protection_front_mm_rha": 18,
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Digital automated",
+        "navigation": "GLONASS",
+        "automatic_gun_laying": true
+      },
+      "unit_cost_usd": 2500000,
+      "cost_year": 2015,
+      "confidence": "medium",
+      "sources": [
+        "Wikipedia 2S31 Vena",
+        "Army Recognition"
+      ],
+      "notes": "Modern gun-mortar. BMP-3 based. Autoloader. Kitolov laser-guided rounds. 360\u00b0 turret traverse. Limited production.",
+      "year": 2010
+    },
+    {
+      "id": "fi-amos",
+      "name": "AMOS 120mm",
+      "type": "spm",
+      "country_of_origin": "FI",
+      "manufacturer": "Patria / BAE Systems H\u00e4gglunds",
+      "service_history": {
+        "introduced": 2006,
+        "retired": null,
+        "production_count": 100,
+        "operators": [
+          {
+            "country": "FI",
+            "quantity": 24,
+            "status": "active"
+          },
+          {
+            "country": "SE",
+            "quantity": 40,
+            "status": "active"
+          },
+          {
+            "country": "SI",
+            "quantity": 30,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_kg": 28000,
+        "length_m": 7.5,
+        "width_m": 3.4,
+        "height_m": 2.9,
+        "notes": "Twin 120mm mortar turret"
+      },
+      "mobility": {
+        "engine": {
+          "model": "Scania DS14",
+          "type": "diesel_turbocharged",
+          "power_hp": 680,
+          "power_kw": 507
+        },
+        "power_to_weight_hp_ton": 24.3,
+        "max_speed_road_kmh": 70,
+        "range_road_km": 600,
+        "notes": "CV90 or AMV chassis options"
+      },
+      "armament": {
+        "main": {
+          "designation": "Twin AMOS 120mm",
+          "caliber_mm": 120,
+          "type": "mortar",
+          "barrels": 2,
+          "elevation_min_deg": -3,
+          "elevation_max_deg": 85,
+          "traverse_deg": 360,
+          "loading": "automatic",
+          "rate_of_fire_rpm": 26,
+          "rate_of_fire_mrsi_rpm": 16,
+          "range_standard_km": 10,
+          "range_extended_km": 13,
+          "ammunition_carried": 50,
+          "ammunition_types": [
+            {
+              "type": "HE",
+              "range_km": 10
+            },
+            {
+              "type": "Smoke"
+            },
+            {
+              "type": "Illumination"
+            },
+            {
+              "type": "Guided",
+              "notes": "Strix top-attack option"
+            }
+          ],
+          "mrsi_capability": {
+            "rounds": 6,
+            "notes": "3 per barrel MRSI"
+          }
+        }
+      },
+      "protection": {
+        "armor_type": "steel",
+        "stanag_level": "4569 Level 4",
+        "nbc_protection": true,
+        "fire_suppression": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Patria FCS",
+        "navigation": "GPS/INS",
+        "automatic_gun_laying": true,
+        "mrsi_capability": {
+          "rounds": 6
+        },
+        "direct_fire_mode": true
+      },
+      "unit_cost_usd": 5000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia AMOS mortar system",
+        "Army Recognition",
+        "Patria"
+      ],
+      "notes": "Twin-barrel 120mm. 26 rpm combined ROF. MRSI 6 rounds. Direct fire capable. CV90 (tracked) or AMV (wheeled) chassis. NEMO is single-barrel version.",
+      "year": 2007
+    },
+    {
+      "id": "fi-nemo",
+      "name": "NEMO 120mm",
+      "type": "spm",
+      "country_of_origin": "FI",
+      "manufacturer": "Patria",
+      "service_history": {
+        "introduced": 2010,
+        "retired": null,
+        "production_count": 150,
+        "operators": [
+          {
+            "country": "AE",
+            "quantity": 52,
+            "status": "active"
+          },
+          {
+            "country": "SA",
+            "quantity": 36,
+            "status": "active"
+          },
+          {
+            "country": "PL",
+            "quantity": 64,
+            "variants": [
+              "Rak"
+            ],
+            "status": "active"
+          },
+          {
+            "country": "SK",
+            "quantity": 8,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "weight_turret_kg": 1750,
+        "notes": "Single 120mm turret module - various chassis"
+      },
+      "mobility": {
+        "notes": "Mounted on various chassis: 8x8 APC, 4x4 vehicles, naval vessels"
+      },
+      "armament": {
+        "main": {
+          "designation": "NEMO 120mm",
+          "caliber_mm": 120,
+          "type": "mortar",
+          "barrels": 1,
+          "elevation_min_deg": -3,
+          "elevation_max_deg": 85,
+          "traverse_deg": 360,
+          "loading": "automatic",
+          "rate_of_fire_rpm": 10,
+          "range_standard_km": 10,
+          "range_extended_km": 13,
+          "ammunition_carried": 40,
+          "mrsi_capability": {
+            "rounds": 4
+          }
+        }
+      },
+      "protection": {
+        "armor_type": "depends_on_chassis",
+        "notes": "Turret provides ballistic protection for crew"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Patria digital FCS",
+        "navigation": "GPS/INS",
+        "automatic_gun_laying": true
+      },
+      "unit_cost_usd": 2000000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia NEMO mortar system",
+        "Army Recognition",
+        "Patria"
+      ],
+      "notes": "Single-barrel version of AMOS. Lighter turret for smaller chassis. Polish Rak on Rosomak chassis. Direct fire capability. Export success.",
+      "year": 2006
+    },
+    {
+      "id": "il-cardom",
+      "name": "Cardom 120mm",
+      "type": "spm",
+      "country_of_origin": "IL",
+      "manufacturer": "Elbit Soltam",
+      "service_history": {
+        "introduced": 2008,
+        "retired": null,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 200,
+            "status": "active"
+          },
+          {
+            "country": "US",
+            "quantity": 300,
+            "variants": [
+              "M1129"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "notes": "Recoiling mortar system - various chassis"
+      },
+      "mobility": {
+        "notes": "Mounted on M113, Stryker (M1129), Namer, various 8x8s"
+      },
+      "armament": {
+        "main": {
+          "designation": "Soltam K6",
+          "caliber_mm": 120,
+          "type": "mortar",
+          "elevation_min_deg": 45,
+          "elevation_max_deg": 85,
+          "traverse_deg": 40,
+          "loading": "semi-automatic",
+          "rate_of_fire_rpm": 16,
+          "rate_of_fire_sustained_rpm": 4,
+          "range_standard_km": 7,
+          "range_extended_km": 10,
+          "ammunition_types": [
+            {
+              "type": "HE",
+              "range_km": 7
+            },
+            {
+              "type": "Smoke"
+            },
+            {
+              "type": "Illumination"
+            },
+            {
+              "type": "Guided",
+              "designation": "Fireball/Iron Sting",
+              "notes": "GPS/laser guided"
+            }
+          ],
+          "notes": "Soft-recoil allows firing from light vehicles"
+        }
+      },
+      "protection": {
+        "notes": "Depends on carrier vehicle"
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Elbit digital",
+        "navigation": "GPS/INS",
+        "automatic_gun_laying": true
+      },
+      "unit_cost_usd": 1500000,
+      "cost_year": 2015,
+      "confidence": "high",
+      "sources": [
+        "Wikipedia Cardom",
+        "Army Recognition",
+        "Elbit"
+      ],
+      "notes": "Soft-recoil 120mm. M1129 Stryker uses Cardom. 16 rpm burst. Iron Sting GPS/laser rounds. IDF and US Army primary mortar carrier.",
+      "year": 2008
+    }
+  ]
+}

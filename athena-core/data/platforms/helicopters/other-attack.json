@@ -1,0 +1,596 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-22",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "br-ah2",
+      "name": "AH-2 Sabre (Mi-35M)",
+      "nato_name": "Hind",
+      "type": "attack_transport",
+      "country_of_origin": "RU",
+      "manufacturer": "Rostvertol",
+      "service_history": {
+        "introduced": 2014,
+        "retired": null,
+        "production_count": 12,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 12,
+            "status": "active",
+            "notes": "FAB, based at Porto Velho"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "passengers": 8,
+        "length_m": 17.5,
+        "rotor_diameter_m": 17.2,
+        "height_m": 5.2,
+        "empty_weight_kg": 8360,
+        "max_takeoff_weight_kg": 11500
+      },
+      "performance": {
+        "max_speed_kmh": 310,
+        "cruise_speed_kmh": 260,
+        "combat_radius_km": 450,
+        "ferry_range_km": 950,
+        "service_ceiling_m": 5400
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Klimov VK-2500",
+        "power_shp": 2200
+      },
+      "avionics": {
+        "targeting": "OPS-24N day/night sight",
+        "flir": "Thermal imaging",
+        "ew_suite": "Basic IR countermeasures",
+        "glass_cockpit": true
+      },
+      "armament": {
+        "gun": {
+          "type": "GSh-23V twin-barrel",
+          "caliber_mm": 23,
+          "rounds": 450
+        },
+        "missiles": {
+          "atgm": [
+            "9M120 Ataka (8)"
+          ],
+          "aam": [
+            "9M39 Igla-V (4)"
+          ]
+        },
+        "rockets": {
+          "type": "S-8 80mm",
+          "total_rockets": 80
+        },
+        "hardpoints": 4
+      },
+      "unit_cost_usd": 15000000,
+      "cost_year": 2014,
+      "confidence": "high",
+      "sources": [
+        "FAB",
+        "Rostvertol"
+      ],
+      "notes": "Brazil's attack helicopter fleet. Mi-35M designated AH-2 Sabre. Amazon jungle operations, border security. Based at Porto Velho (1\u00ba/8\u00ba GAV). Can transport troops while armed. Contract 2008, deliveries 2014.",
+      "year": 2014
+    },
+    {
+      "id": "il-ah64d-saraf",
+      "name": "AH-64D Saraf (Israel)",
+      "nato_name": null,
+      "type": "attack_helicopter",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 1990,
+        "retired": null,
+        "production_count": 48,
+        "operators": [
+          {
+            "country": "IL",
+            "quantity": 48,
+            "status": "active",
+            "notes": "IAF 113 Squadron"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 17.73,
+        "rotor_diameter_m": 14.63,
+        "max_takeoff_weight_kg": 10433
+      },
+      "performance": {
+        "max_speed_kmh": 293,
+        "combat_radius_km": 480,
+        "service_ceiling_m": 6400
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "General Electric T700-GE-701C",
+        "power_shp": 1890
+      },
+      "avionics": {
+        "radar": "Longbow FCR",
+        "targeting": "Israeli-modified TADS",
+        "ew_suite": "Israeli EW systems",
+        "datalink": "Israeli C4I integration",
+        "notes": "Significant Israeli systems integration"
+      },
+      "armament": {
+        "gun": {
+          "type": "M230",
+          "caliber_mm": 30,
+          "rounds": 1200
+        },
+        "missiles": {
+          "atgm": [
+            "AGM-114 Hellfire (16)",
+            "Spike-ER"
+          ],
+          "aam": [
+            "Stinger",
+            "Python (possible)"
+          ]
+        },
+        "rockets": {
+          "type": "Hydra 70mm",
+          "total_rockets": 76
+        }
+      },
+      "unit_cost_usd": 35000000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "IAF",
+        "Jane's"
+      ],
+      "notes": "'Saraf' = Venomous Snake. Extensive combat: Lebanon 2006, Gaza operations. Israeli modifications include Spike integration and indigenous EW. 48 in IAF service.",
+      "year": 2005
+    },
+    {
+      "id": "eg-ka52",
+      "name": "Ka-52 (Egypt)",
+      "nato_name": "Hokum-B",
+      "type": "attack_helicopter",
+      "country_of_origin": "RU",
+      "manufacturer": "Russian Helicopters",
+      "service_history": {
+        "introduced": 2017,
+        "retired": null,
+        "production_count": 46,
+        "operators": [
+          {
+            "country": "EG",
+            "quantity": 46,
+            "status": "active",
+            "notes": "Egyptian Air Force"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "seating_configuration": "side-by-side",
+        "length_m": 16.0,
+        "rotor_diameter_m": 14.5,
+        "max_takeoff_weight_kg": 12200
+      },
+      "performance": {
+        "max_speed_kmh": 310,
+        "combat_radius_km": 520,
+        "service_ceiling_m": 5500
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Klimov VK-2500",
+        "power_shp": 2400
+      },
+      "armament": {
+        "gun": {
+          "type": "2A42",
+          "caliber_mm": 30,
+          "rounds": 460
+        },
+        "missiles": {
+          "atgm": [
+            "9K121 Vikhr (12)"
+          ],
+          "aam": [
+            "Igla-V"
+          ]
+        },
+        "rockets": {
+          "type": "S-8 80mm",
+          "total_rockets": 80
+        }
+      },
+      "unit_cost_usd": 16000000,
+      "cost_year": 2017,
+      "confidence": "high",
+      "sources": [
+        "Russian Helicopters",
+        "Jane's"
+      ],
+      "notes": "Egypt is first and only Ka-52 export customer. 46 delivered 2017-2020. Sinai counter-terrorism operations.",
+      "year": 2017
+    },
+    {
+      "id": "tw-ah64e-tw",
+      "name": "AH-64E Apache (Taiwan)",
+      "nato_name": null,
+      "type": "attack_helicopter",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 2014,
+        "retired": null,
+        "production_count": 30,
+        "operators": [
+          {
+            "country": "TW",
+            "quantity": 29,
+            "status": "active",
+            "notes": "ROCA Aviation, 1 crashed"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 17.73,
+        "rotor_diameter_m": 14.63,
+        "max_takeoff_weight_kg": 10432
+      },
+      "performance": {
+        "max_speed_kmh": 293,
+        "combat_radius_km": 480,
+        "service_ceiling_m": 6400
+      },
+      "armament": {
+        "gun": {
+          "type": "M230",
+          "caliber_mm": 30,
+          "rounds": 1200
+        },
+        "missiles": {
+          "atgm": [
+            "AGM-114L Longbow Hellfire (16)"
+          ],
+          "aam": [
+            "Stinger"
+          ]
+        },
+        "rockets": {
+          "type": "Hydra 70mm",
+          "total_rockets": 76
+        }
+      },
+      "unit_cost_usd": 35500000,
+      "cost_year": 2014,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "ROCA"
+      ],
+      "notes": "Taiwan defense against PLA invasion. 30 ordered, 29 active (1 crashed 2014 during training). Beach defense, anti-armor role.",
+      "year": 2014
+    },
+    {
+      "id": "pk-t129-pk",
+      "name": "T129 ATAK (Pakistan)",
+      "nato_name": null,
+      "type": "attack_helicopter",
+      "country_of_origin": "TR",
+      "manufacturer": "TAI",
+      "service_history": {
+        "introduced": 2022,
+        "retired": null,
+        "production_count": 30,
+        "operators": [
+          {
+            "country": "PK",
+            "quantity": 30,
+            "status": "active",
+            "notes": "Pakistan Army Aviation"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 14.6,
+        "rotor_diameter_m": 11.9,
+        "max_takeoff_weight_kg": 5000
+      },
+      "performance": {
+        "max_speed_kmh": 278,
+        "combat_radius_km": 561,
+        "service_ceiling_m": 6096
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "LHTEC CTS800-4A",
+        "power_shp": 1360
+      },
+      "armament": {
+        "gun": {
+          "type": "M621",
+          "caliber_mm": 20,
+          "rounds": 500
+        },
+        "missiles": {
+          "atgm": [
+            "UMTAS (8)",
+            "Cirit guided rocket"
+          ]
+        },
+        "rockets": {
+          "type": "Hydra 70mm",
+          "total_rockets": 76
+        }
+      },
+      "unit_cost_usd": 35000000,
+      "cost_year": 2022,
+      "confidence": "high",
+      "sources": [
+        "TAI",
+        "Pakistan Army"
+      ],
+      "notes": "Pakistan's primary attack helicopter. 30 delivered. COIN operations in tribal areas. Turkish weapons (UMTAS, Cirit).",
+      "year": 2018
+    },
+    {
+      "id": "sa-ah64d-sa",
+      "name": "AH-64D/E Apache (Saudi Arabia)",
+      "nato_name": null,
+      "type": "attack_helicopter",
+      "country_of_origin": "US",
+      "manufacturer": "Boeing",
+      "service_history": {
+        "introduced": 1993,
+        "retired": null,
+        "production_count": 70,
+        "operators": [
+          {
+            "country": "SA",
+            "quantity": 70,
+            "variants": [
+              "AH-64D",
+              "AH-64E"
+            ],
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 17.73,
+        "rotor_diameter_m": 14.63,
+        "max_takeoff_weight_kg": 10433
+      },
+      "performance": {
+        "max_speed_kmh": 293,
+        "combat_radius_km": 480,
+        "service_ceiling_m": 6400
+      },
+      "armament": {
+        "gun": {
+          "type": "M230",
+          "caliber_mm": 30,
+          "rounds": 1200
+        },
+        "missiles": {
+          "atgm": [
+            "AGM-114 Hellfire (16)"
+          ],
+          "aam": [
+            "Stinger"
+          ]
+        },
+        "rockets": {
+          "type": "Hydra 70mm",
+          "total_rockets": 76
+        }
+      },
+      "unit_cost_usd": 35000000,
+      "cost_year": 2020,
+      "confidence": "high",
+      "sources": [
+        "Boeing",
+        "RSAF"
+      ],
+      "notes": "Saudi Arabia operates 70 Apaches. Yemen conflict: extensive combat. Multiple losses to Houthi SAMs. High operational tempo.",
+      "year": 1993
+    },
+    {
+      "id": "iq-mi28ne-iq",
+      "name": "Mi-28NE Night Hunter (Iraq)",
+      "nato_name": "Havoc",
+      "type": "attack_helicopter",
+      "country_of_origin": "RU",
+      "manufacturer": "Russian Helicopters",
+      "service_history": {
+        "introduced": 2014,
+        "retired": null,
+        "production_count": 15,
+        "operators": [
+          {
+            "country": "IQ",
+            "quantity": 15,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 17.0,
+        "rotor_diameter_m": 17.2,
+        "max_takeoff_weight_kg": 12100
+      },
+      "performance": {
+        "max_speed_kmh": 324,
+        "combat_radius_km": 450,
+        "service_ceiling_m": 5700
+      },
+      "armament": {
+        "gun": {
+          "type": "2A42",
+          "caliber_mm": 30,
+          "rounds": 250
+        },
+        "missiles": {
+          "atgm": [
+            "9M120 Ataka (16)"
+          ],
+          "aam": [
+            "Igla-V"
+          ]
+        },
+        "rockets": {
+          "type": "S-8 / S-13",
+          "total_rockets": 80
+        }
+      },
+      "unit_cost_usd": 18000000,
+      "cost_year": 2014,
+      "confidence": "high",
+      "sources": [
+        "Russian Helicopters",
+        "Iraqi MoD"
+      ],
+      "notes": "Iraq operates 15 Mi-28NE. Delivered 2014 for ISIS combat. Mosul, Tikrit, Fallujah operations.",
+      "year": 2013
+    },
+    {
+      "id": "au-arh-tiger",
+      "name": "ARH Tiger (Australia)",
+      "nato_name": null,
+      "type": "attack_helicopter",
+      "country_of_origin": "EU",
+      "manufacturer": "Airbus Helicopters",
+      "service_history": {
+        "introduced": 2004,
+        "retired": 2027,
+        "production_count": 22,
+        "operators": [
+          {
+            "country": "AU",
+            "quantity": 22,
+            "status": "retiring",
+            "notes": "Replacing with AH-64E"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 15.8,
+        "rotor_diameter_m": 13.0,
+        "max_takeoff_weight_kg": 6100
+      },
+      "performance": {
+        "max_speed_kmh": 290,
+        "combat_radius_km": 800,
+        "service_ceiling_m": 4000
+      },
+      "armament": {
+        "gun": {
+          "type": "30M781",
+          "caliber_mm": 30,
+          "rounds": 450
+        },
+        "missiles": {
+          "atgm": [
+            "AGM-114 Hellfire (8)"
+          ],
+          "aam": [
+            "Mistral"
+          ]
+        },
+        "rockets": {
+          "type": "70mm",
+          "total_rockets": 68
+        }
+      },
+      "unit_cost_usd": 48000000,
+      "cost_year": 2004,
+      "confidence": "high",
+      "sources": [
+        "Airbus",
+        "ADF",
+        "Jane's"
+      ],
+      "notes": "Australia retiring Tigers due to reliability and maintenance issues. 29 AH-64E Apache replacing them. Controversial acquisition. Afghanistan operations.",
+      "year": 2004
+    },
+    {
+      "id": "dz-mi28ne-dz",
+      "name": "Mi-28NE (Algeria)",
+      "nato_name": "Havoc",
+      "type": "attack_helicopter",
+      "country_of_origin": "RU",
+      "manufacturer": "Russian Helicopters",
+      "service_history": {
+        "introduced": 2016,
+        "retired": null,
+        "production_count": 42,
+        "operators": [
+          {
+            "country": "DZ",
+            "quantity": 42,
+            "status": "active"
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 17.0,
+        "rotor_diameter_m": 17.2,
+        "max_takeoff_weight_kg": 12100
+      },
+      "performance": {
+        "max_speed_kmh": 324,
+        "combat_radius_km": 450,
+        "service_ceiling_m": 5700
+      },
+      "armament": {
+        "gun": {
+          "type": "2A42",
+          "caliber_mm": 30,
+          "rounds": 250
+        },
+        "missiles": {
+          "atgm": [
+            "9M120 Ataka"
+          ],
+          "aam": [
+            "Igla-V"
+          ]
+        },
+        "rockets": {
+          "type": "S-8 / S-13",
+          "total_rockets": 80
+        }
+      },
+      "unit_cost_usd": 18000000,
+      "cost_year": 2016,
+      "confidence": "high",
+      "sources": [
+        "Russian Helicopters",
+        "Jane's"
+      ],
+      "notes": "Algeria is largest Mi-28NE operator. 42 aircraft. Border security, counter-terrorism. Major Russian arms customer.",
+      "year": 2016
+    }
+  ]
+}

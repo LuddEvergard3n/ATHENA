@@ -1,0 +1,498 @@
+{
+  "$schema": "../../schema/platform-air.schema.json",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-01-23",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "Russian MoD",
+      "Tupolev"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "ru-tu160",
+      "name": "Tu-160 Blackjack",
+      "nato_name": "Blackjack",
+      "type": "strategic_bomber",
+      "country_of_origin": "RU",
+      "manufacturer": "Tupolev",
+      "service_history": {
+        "introduced": 1987,
+        "first_flight": 1981,
+        "retired": null,
+        "production_count": 36,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 17,
+            "status": "active",
+            "notes": "Long-Range Aviation"
+          }
+        ],
+        "notes": "World's largest and heaviest combat aircraft"
+      },
+      "specifications": {
+        "crew": 4,
+        "length_m": 54.1,
+        "wingspan_m": 55.7,
+        "wingspan_swept_m": 35.6,
+        "height_m": 13.1,
+        "empty_weight_kg": 110000,
+        "max_takeoff_weight_kg": 275000,
+        "internal_fuel_kg": 148000,
+        "wing_sweep_range_deg": "20-65"
+      },
+      "performance": {
+        "max_speed_kmh": 2200,
+        "max_speed_mach": 2.05,
+        "cruise_speed_kmh": 960,
+        "cruise_speed_mach": 0.9,
+        "combat_radius_km": 7300,
+        "ferry_range_km": 12300,
+        "service_ceiling_m": 15000,
+        "rate_of_climb_mps": 70
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "NK-32-02 (Tu-160M)",
+        "thrust_afterburner_kn": 245,
+        "thrust_dry_kn": 137,
+        "notes": "Most powerful military jet engines"
+      },
+      "avionics": {
+        "radar": "Novella NV1.70 (Tu-160M)",
+        "radar_range_km": 300,
+        "terrain_following": "Obzor-K attack radar",
+        "navigation": "Sprut-SM (Tu-160M)",
+        "ew_suite": "Comprehensive ECM suite",
+        "datalink": "Encrypted satellite comms"
+      },
+      "armament": {
+        "internal_bays": 2,
+        "max_payload_kg": 45000,
+        "weapons": [
+          {
+            "type": "nuclear",
+            "designation": "Kh-55SM",
+            "quantity": 12,
+            "range_km": 2500,
+            "notes": "Nuclear cruise missiles"
+          },
+          {
+            "type": "conventional",
+            "designation": "Kh-101",
+            "quantity": 12,
+            "range_km": 4500,
+            "notes": "Stealth cruise missile"
+          },
+          {
+            "type": "nuclear",
+            "designation": "Kh-102",
+            "quantity": 12,
+            "range_km": 4500,
+            "notes": "Nuclear variant of Kh-101"
+          },
+          {
+            "type": "standoff",
+            "designation": "Kh-555",
+            "quantity": 12,
+            "range_km": 2000,
+            "notes": "Conventional cruise missile"
+          },
+          {
+            "type": "hypersonic",
+            "designation": "Kh-BD",
+            "quantity": 4,
+            "notes": "Hypersonic missile (development)"
+          }
+        ]
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Syria",
+            "year": 2015,
+            "notes": "Kh-101 cruise missiles"
+          },
+          {
+            "conflict": "Ukraine",
+            "year": 2022,
+            "notes": "Extensive cruise missile strikes"
+          }
+        ],
+        "notes": "Putin personally flew in one. Ukraine: launches cruise missiles from safe distances."
+      },
+      "variants": [
+        {
+          "designation": "Tu-160",
+          "notes": "Original production (16 built)"
+        },
+        {
+          "designation": "Tu-160M",
+          "notes": "Modernized, new engines, avionics"
+        },
+        {
+          "designation": "Tu-160M2",
+          "notes": "New production aircraft (from 2022)"
+        }
+      ],
+      "unit_cost_usd": 250000000,
+      "cost_year": 2020,
+      "confidence": "medium",
+      "sources": [
+        "Tupolev",
+        "Russian MoD",
+        "Jane's"
+      ],
+      "notes": "'White Swan'. World's largest combat aircraft. Supersonic, swing-wing. 17 in service. Production restarted (Tu-160M2). Ukraine: primary cruise missile carrier. Impressive but aging fleet.",
+      "year": 1987
+    },
+    {
+      "id": "ru-tu95ms",
+      "name": "Tu-95MS Bear-H",
+      "nato_name": "Bear-H",
+      "type": "strategic_bomber",
+      "country_of_origin": "SU",
+      "manufacturer": "Tupolev",
+      "service_history": {
+        "introduced": 1981,
+        "first_flight": 1952,
+        "retired": null,
+        "production_count": 500,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 42,
+            "status": "active",
+            "notes": "Long-Range Aviation"
+          }
+        ],
+        "notes": "World's only turboprop bomber still operational"
+      },
+      "specifications": {
+        "crew": 7,
+        "length_m": 46.2,
+        "wingspan_m": 50.04,
+        "height_m": 12.12,
+        "empty_weight_kg": 90000,
+        "max_takeoff_weight_kg": 188000,
+        "internal_fuel_kg": 87000
+      },
+      "performance": {
+        "max_speed_kmh": 920,
+        "cruise_speed_kmh": 710,
+        "combat_radius_km": 6400,
+        "ferry_range_km": 15000,
+        "service_ceiling_m": 12000,
+        "endurance_hours": 20,
+        "notes": "Turboprop allows extreme range and endurance"
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "Kuznetsov NK-12MP",
+        "power_shp": 15000,
+        "notes": "Most powerful turboprops ever built. Contra-rotating props."
+      },
+      "avionics": {
+        "radar": "Obzor-MS",
+        "radar_range_km": 200,
+        "navigation": "Sprut-SM",
+        "ew_suite": "SPS-100 Rezeda",
+        "datalink": "Satellite communications"
+      },
+      "armament": {
+        "internal_bay": true,
+        "external_pylons": 4,
+        "max_payload_kg": 15000,
+        "weapons": [
+          {
+            "type": "nuclear",
+            "designation": "Kh-55SM",
+            "quantity": 6,
+            "range_km": 2500,
+            "notes": "Internal rotary launcher"
+          },
+          {
+            "type": "conventional",
+            "designation": "Kh-101",
+            "quantity": 8,
+            "range_km": 4500,
+            "notes": "6 internal + 2 external (MS-16 variant)"
+          },
+          {
+            "type": "nuclear",
+            "designation": "Kh-102",
+            "quantity": 8,
+            "range_km": 4500
+          }
+        ],
+        "defensive": {
+          "gun": "GSh-23 twin-barrel 23mm (tail turret)",
+          "notes": "Defensive tail gun still fitted"
+        }
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Syria",
+            "year": 2015,
+            "notes": "Kh-101 strikes"
+          },
+          {
+            "conflict": "Ukraine",
+            "year": 2022,
+            "notes": "Cruise missile carrier"
+          }
+        ],
+        "notes": "Oldest design still in combat service. Regular patrols near NATO airspace."
+      },
+      "variants": [
+        {
+          "designation": "Tu-95MS",
+          "notes": "Cruise missile carrier"
+        },
+        {
+          "designation": "Tu-95MSM",
+          "notes": "Modernized, Kh-101 capable"
+        },
+        {
+          "designation": "Tu-142",
+          "notes": "Maritime patrol variant (separate)"
+        }
+      ],
+      "unit_cost_usd": 50000000,
+      "cost_year": 1990,
+      "confidence": "medium",
+      "sources": [
+        "Tupolev",
+        "Russian MoD",
+        "Jane's"
+      ],
+      "notes": "'Bear'. Flying since 1956. Loudest military aircraft (heard on sonar). Contra-rotating propellers. 42 in service. Ukraine: regular cruise missile strikes. Expected service until 2040.",
+      "year": 1981
+    },
+    {
+      "id": "ru-tu22m3",
+      "name": "Tu-22M3 Backfire-C",
+      "nato_name": "Backfire-C",
+      "type": "medium_bomber",
+      "country_of_origin": "SU",
+      "manufacturer": "Tupolev",
+      "service_history": {
+        "introduced": 1983,
+        "first_flight": 1977,
+        "retired": null,
+        "production_count": 268,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 60,
+            "status": "active"
+          }
+        ],
+        "notes": "Supersonic swing-wing medium bomber"
+      },
+      "specifications": {
+        "crew": 4,
+        "length_m": 42.46,
+        "wingspan_m": 34.28,
+        "wingspan_swept_m": 23.3,
+        "height_m": 11.05,
+        "empty_weight_kg": 54000,
+        "max_takeoff_weight_kg": 124000,
+        "internal_fuel_kg": 53550,
+        "wing_sweep_range_deg": "20-65"
+      },
+      "performance": {
+        "max_speed_kmh": 2300,
+        "max_speed_mach": 2.17,
+        "cruise_speed_kmh": 900,
+        "combat_radius_km": 2400,
+        "ferry_range_km": 7000,
+        "service_ceiling_m": 13300,
+        "rate_of_climb_mps": 15
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "NK-25",
+        "thrust_afterburner_kn": 245,
+        "thrust_dry_kn": 137
+      },
+      "avionics": {
+        "radar": "Leninets PN-AD (Tu-22M3M)",
+        "radar_range_km": 250,
+        "terrain_following": "NK-45",
+        "ew_suite": "Active ECM"
+      },
+      "armament": {
+        "internal_bay": true,
+        "external_pylons": 4,
+        "max_payload_kg": 24000,
+        "weapons": [
+          {
+            "type": "anti_ship",
+            "designation": "Kh-22 (AS-4 Kitchen)",
+            "quantity": 3,
+            "range_km": 600,
+            "notes": "Supersonic anti-ship missile"
+          },
+          {
+            "type": "anti_ship",
+            "designation": "Kh-32",
+            "quantity": 3,
+            "range_km": 1000,
+            "notes": "Improved Kh-22"
+          },
+          {
+            "type": "hypersonic",
+            "designation": "Kh-47M2 Kinzhal",
+            "quantity": 1,
+            "range_km": 2000,
+            "notes": "Tu-22M3M only"
+          },
+          {
+            "type": "conventional",
+            "designation": "FAB-250/500/1500",
+            "quantity": 69,
+            "notes": "Free-fall bombs (internal bay)"
+          }
+        ],
+        "defensive": {
+          "gun": "GSh-23 twin 23mm (tail)",
+          "notes": "Radar-directed tail turret"
+        }
+      },
+      "operational_history": {
+        "combat": [
+          {
+            "conflict": "Afghanistan",
+            "year": 1988
+          },
+          {
+            "conflict": "Chechnya",
+            "year": 1995
+          },
+          {
+            "conflict": "Georgia",
+            "year": 2008,
+            "notes": "1 shot down by SA-11"
+          },
+          {
+            "conflict": "Syria",
+            "year": 2016
+          },
+          {
+            "conflict": "Ukraine",
+            "year": 2022,
+            "notes": "Kh-22 strikes, losses"
+          }
+        ],
+        "notes": "Ukraine: Kh-22 strikes on cities, several shot down by S-300/Patriot."
+      },
+      "variants": [
+        {
+          "designation": "Tu-22M3",
+          "notes": "Standard"
+        },
+        {
+          "designation": "Tu-22M3M",
+          "notes": "Modernized, new avionics, Kinzhal capable"
+        }
+      ],
+      "unit_cost_usd": 45000000,
+      "cost_year": 1985,
+      "confidence": "medium",
+      "sources": [
+        "Tupolev",
+        "Jane's"
+      ],
+      "notes": "Medium-range bomber/missile carrier. Anti-ship role vs carrier groups. 60 in service. Ukraine: heavy use with losses. Tu-22M3M upgrade ongoing.",
+      "year": 1989
+    },
+    {
+      "id": "ru-pakda",
+      "name": "PAK DA",
+      "nato_name": null,
+      "type": "strategic_bomber",
+      "country_of_origin": "RU",
+      "manufacturer": "Tupolev",
+      "service_history": {
+        "introduced": null,
+        "first_flight": null,
+        "retired": null,
+        "production_count": 0,
+        "operators": [
+          {
+            "country": "RU",
+            "quantity": 0,
+            "status": "development"
+          }
+        ],
+        "notes": "Next-generation stealth bomber in development"
+      },
+      "specifications": {
+        "crew": 2,
+        "wingspan_m": 40,
+        "max_takeoff_weight_kg": 145000,
+        "notes": "All specifications estimated, highly classified"
+      },
+      "performance": {
+        "max_speed_kmh": 1190,
+        "max_speed_mach": 1.0,
+        "combat_radius_km": 6000,
+        "ferry_range_km": 12000,
+        "notes": "Subsonic stealth design"
+      },
+      "powerplant": {
+        "engines": 4,
+        "type": "Product 80 derivative",
+        "notes": "New engines in development"
+      },
+      "avionics": {
+        "radar": "AESA (new design)",
+        "ew_suite": "Integrated stealth suite"
+      },
+      "armament": {
+        "internal_bays": true,
+        "max_payload_kg": 30000,
+        "weapons": [
+          {
+            "type": "nuclear",
+            "designation": "Kh-102",
+            "notes": "Nuclear cruise missiles"
+          },
+          {
+            "type": "conventional",
+            "designation": "Kh-101",
+            "notes": "Stealth cruise missiles"
+          },
+          {
+            "type": "hypersonic",
+            "designation": "Kh-BD",
+            "notes": "Hypersonic missiles"
+          }
+        ]
+      },
+      "stealth": {
+        "design_features": [
+          "Flying wing",
+          "Radar absorbent materials",
+          "Buried engines"
+        ],
+        "notes": "Russian B-2/B-21 equivalent concept"
+      },
+      "unit_cost_usd": 500000000,
+      "cost_year": 2025,
+      "confidence": "low",
+      "sources": [
+        "TASS",
+        "Russian media",
+        "Jane's"
+      ],
+      "notes": "Prospective Aviation Complex for Long-Range Aviation. Flying wing stealth bomber. First flight repeatedly delayed (2025-2027?). Replace Tu-95/Tu-160 long-term. Uncertain timeline.",
+      "year": 2030
+    }
+  ]
+}

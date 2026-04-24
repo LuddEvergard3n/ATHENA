@@ -1,0 +1,144 @@
+{
+  "platforms": [
+    {
+      "id": "us-cvn-68-nimitz-class",
+      "name": "Nimitz-class",
+      "type": "aircraft_carrier",
+      "country_of_origin": "US",
+      "manufacturer": "Newport News Shipbuilding",
+      "service_entry": 1975,
+      "specifications": {
+        "displacement_tons": 101600,
+        "length_m": 332.8,
+        "beam_m": 40.8,
+        "beam_flight_deck_m": 76.8,
+        "draft_m": 11.3,
+        "crew": 3200,
+        "air_wing": 2480,
+        "total_complement": 5680,
+        "max_speed_knots": 31.5,
+        "range": "Unlimited (nuclear)"
+      },
+      "propulsion": {
+        "type": "Nuclear",
+        "reactors": "2x Westinghouse A4W PWR",
+        "power_shp": 260000,
+        "shafts": 4,
+        "refueling_interval_years": 25
+      },
+      "flight_operations": {
+        "catapults": "4x C-13-2 steam",
+        "catapult_capacity_kg": 36300,
+        "arrestor_wires": 4,
+        "aircraft_capacity": 90,
+        "typical_air_wing": 75,
+        "elevators": 4,
+        "sortie_rate_per_day": 120
+      },
+      "air_wing_typical": {
+        "fighters": "44x F/A-18E/F Super Hornet",
+        "electronic_attack": "5x EA-18G Growler",
+        "aew": "5x E-2D Advanced Hawkeye",
+        "helicopters": "6x MH-60R/S Seahawk",
+        "logistics": "2x C-2A Greyhound or CMV-22B"
+      },
+      "armament": {
+        "sam": "2x RIM-162 ESSM launchers",
+        "ciws": "2x Phalanx CIWS",
+        "ram": "2x RIM-116 RAM"
+      },
+      "sensors": {
+        "radar_search": "AN/SPS-48E 3D",
+        "radar_surface": "AN/SPS-67",
+        "radar_air_traffic": "AN/SPN-46"
+      },
+      "service_history": {
+        "introduced": 1975,
+        "status": "active",
+        "built": 10,
+        "ships": [
+          {"name": "Nimitz", "hull": "CVN-68", "commissioned": 1975},
+          {"name": "Dwight D. Eisenhower", "hull": "CVN-69", "commissioned": 1977},
+          {"name": "Carl Vinson", "hull": "CVN-70", "commissioned": 1982},
+          {"name": "Theodore Roosevelt", "hull": "CVN-71", "commissioned": 1986},
+          {"name": "Abraham Lincoln", "hull": "CVN-72", "commissioned": 1989},
+          {"name": "George Washington", "hull": "CVN-73", "commissioned": 1992},
+          {"name": "John C. Stennis", "hull": "CVN-74", "commissioned": 1995},
+          {"name": "Harry S. Truman", "hull": "CVN-75", "commissioned": 1998},
+          {"name": "Ronald Reagan", "hull": "CVN-76", "commissioned": 2003},
+          {"name": "George H.W. Bush", "hull": "CVN-77", "commissioned": 2009}
+        ]
+      },
+      "unit_cost_usd": 6200000000,
+      "notes": "World's largest warships until Ford class. Nuclear powered - unlimited range. 25-year refueling cycle. All 10 ships active."
+    },
+    {
+      "id": "us-cvn-78-gerald-r-ford-class",
+      "name": "Gerald R. Ford-class",
+      "type": "aircraft_carrier",
+      "country_of_origin": "US",
+      "manufacturer": "Huntington Ingalls Industries",
+      "service_entry": 2017,
+      "specifications": {
+        "displacement_tons": 100000,
+        "length_m": 337,
+        "beam_m": 41,
+        "beam_flight_deck_m": 78,
+        "draft_m": 12,
+        "crew": 2600,
+        "air_wing": 1800,
+        "total_complement": 4660,
+        "max_speed_knots": 30,
+        "range": "Unlimited"
+      },
+      "propulsion": {
+        "type": "Nuclear",
+        "reactors": "2x Bechtel A1B PWR",
+        "power_shp": 260000,
+        "power_generation_mw": 250,
+        "shafts": 4,
+        "refueling_interval_years": 50
+      },
+      "flight_operations": {
+        "catapults": "4x EMALS (Electromagnetic)",
+        "catapult_type": "Electromagnetic Aircraft Launch System",
+        "catapult_advantages": "30% more launches, less maintenance",
+        "arrestor": "AAG (Advanced Arresting Gear)",
+        "aircraft_capacity": 90,
+        "elevators": 3,
+        "elevator_type": "Advanced Weapons Elevators",
+        "sortie_rate_per_day": 160
+      },
+      "air_wing_typical": {
+        "fighters": "44x F/A-18E/F Super Hornet",
+        "stealth": "F-35C Lightning II (integrating)",
+        "electronic_attack": "5x EA-18G Growler",
+        "aew": "5x E-2D Advanced Hawkeye",
+        "uav": "MQ-25 Stingray tanker",
+        "helicopters": "MH-60R/S"
+      },
+      "armament": {
+        "sam": "2x RIM-162 ESSM (32 cells)",
+        "ciws": "3x Phalanx CIWS",
+        "ram": "2x RIM-116 RAM"
+      },
+      "sensors": {
+        "radar": "Dual Band Radar (AN/SPY-3 + AN/SPY-4)",
+        "radar_note": "SPY-4 deleted in cost cuts"
+      },
+      "service_history": {
+        "introduced": 2017,
+        "status": "active",
+        "planned": 4,
+        "ships": [
+          {"name": "Gerald R. Ford", "hull": "CVN-78", "commissioned": 2017},
+          {"name": "John F. Kennedy", "hull": "CVN-79", "launched": 2019, "status": "fitting out"},
+          {"name": "Enterprise", "hull": "CVN-80", "status": "building"},
+          {"name": "Doris Miller", "hull": "CVN-81", "status": "building"}
+        ]
+      },
+      "unit_cost_usd": 13000000000,
+      "notes": "Most expensive warship ever. EMALS allows heavier/lighter aircraft. 50-year reactor core. Reduced crew vs Nimitz. First combat deployment 2023."
+    }
+  ]
+}

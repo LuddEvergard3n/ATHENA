@@ -1,0 +1,1137 @@
+{
+  "$schema": "../schema/platform-ground.schema.json",
+  "platforms": [
+    {
+      "id": "ar-tam-2c",
+      "name": "TAM 2C",
+      "type": "mbt",
+      "country_of_origin": "AR",
+      "manufacturer": "TAMSE / Elbit Systems",
+      "service_history": {
+        "introduced": 2023,
+        "retired": null,
+        "production_count": 74,
+        "operators": [
+          {
+            "country": "AR",
+            "quantity": 74,
+            "variants": ["TAM 2C", "TAM 2C-A2"],
+            "status": "active",
+            "notes": "2 prototypes delivered, 72 in production. Elbit COAPS upgrade. $111M program."
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "passengers": 0,
+        "weight_kg": 31000,
+        "length_m": 6.77,
+        "length_gun_forward_m": 8.23,
+        "width_m": 3.29,
+        "height_m": 2.71,
+        "ground_clearance_m": 0.44
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU MB 833 Ka-500",
+          "type": "diesel_turbocharged",
+          "power_hp": 720,
+          "power_kw": 537
+        },
+        "power_to_weight_hp_ton": 23.2,
+        "transmission": "HSWL 194 automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 75,
+        "max_speed_offroad_kmh": 40,
+        "max_speed_reverse_kmh": 25,
+        "range_road_km": 500,
+        "fuel_capacity_liters": 640,
+        "fording_depth_m": 1.4,
+        "fording_depth_prepared_m": 2.25,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 2.50,
+        "vertical_obstacle_m": 1.0,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "FM K.4 (Rheinmetall Rh-105-30 derivative)",
+          "caliber_mm": 105,
+          "barrel_length_calibers": 51,
+          "type": "rifled",
+          "elevation_min_deg": -7,
+          "elevation_max_deg": 18,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1455,
+          "effective_range_m": 3500,
+          "ammunition_carried": 50,
+          "ammunition_ready": 20,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "DM63-type",
+              "penetration_mm_rha": 450,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "I-HEAT-T",
+              "penetration_mm_rha": 400,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HE",
+              "designation": "DM12A1",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 3000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "FN MAG 60-40",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 5000
+          },
+          {
+            "designation": "M2HB",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 1000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "steel_welded",
+        "armor_composition": "Welded steel (Marder-derived hull). No add-on armor on TAM 2C (TAM 2IP with IMI Iron Wall NOT adopted).",
+        "protection_front_turret_mm_rha": 100,
+        "protection_front_hull_mm_rha": 50,
+        "protection_side_mm_rha": 25,
+        "protection_rear_mm_rha": 15,
+        "protection_top_mm_rha": 15,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "hull_floor",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Elbit COAPS architecture",
+        "commander_sight": {
+          "type": "Elbit COAPS-L stabilized panoramic",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "Elbit thermal day/night with integrated LRF",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": true,
+        "cant_sensor": true,
+        "gps": true,
+        "inertial_navigation": true,
+        "laser_warning": "Elbit E-LAWS (TAM 2C-A2 only) - 4 receivers, 360 deg 3D"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 8,
+        "smoke_grenade_type": "76mm"
+      },
+      "unit_cost_usd": 1500000,
+      "cost_year": 2023,
+      "confidence": "medium",
+      "sources": [
+        "Army Recognition TAM 2C",
+        "Tank Encyclopedia TAM 2C",
+        "Wikipedia Tanque Argentino Mediano",
+        "Polygonjournal TAM 2C-A2"
+      ],
+      "notes": "Elbit Systems modernization of original TAM. Electric turret drive replaces hydraulic. Thermal driver camera. APU mounted externally at hull rear. TAM 2C-A2 adds E-LAWS laser warning. LAHAT missile-through-gun capability theoretically available but missiles not confirmed procured. Base hull/armor unchanged from original TAM. Marder IFV-derived chassis.",
+      "year": 2023
+    },
+    {
+      "id": "cz-t72m4cz",
+      "name": "T-72M4CZ",
+      "type": "mbt",
+      "country_of_origin": "CZ",
+      "manufacturer": "VOP 025 Nový Jičín",
+      "service_history": {
+        "introduced": 2003,
+        "retired": null,
+        "production_count": 30,
+        "operators": [
+          {
+            "country": "CZ",
+            "quantity": 30,
+            "variants": ["Combat (27)", "Command (3)"],
+            "status": "active",
+            "notes": "Original plan 355 tanks, cut to 30. All 30 being prepared for donation to Ukraine (Oct 2025)."
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 48000,
+        "length_m": 6.86,
+        "length_gun_forward_m": 9.88,
+        "width_m": 3.755,
+        "height_m": 2.18,
+        "ground_clearance_m": 0.43
+      },
+      "mobility": {
+        "engine": {
+          "model": "Perkins Condor CV12-1000 TCA",
+          "type": "diesel_turbocharged",
+          "power_hp": 1000,
+          "power_kw": 746
+        },
+        "power_to_weight_hp_ton": 20.8,
+        "transmission": "Allison XTG-411-6N automatic",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 64,
+        "max_speed_offroad_kmh": 44,
+        "max_speed_reverse_kmh": 25,
+        "range_road_km": 500,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 5.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 2.80,
+        "vertical_obstacle_m": 0.85,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "2A46M",
+          "caliber_mm": 125,
+          "barrel_length_calibers": 48,
+          "type": "smoothbore",
+          "elevation_min_deg": -6,
+          "elevation_max_deg": 14,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1700,
+          "effective_range_m": 4000,
+          "ammunition_carried": 37,
+          "ammunition_ready": 22,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "Czech Synthesia enhanced",
+              "penetration_mm_rha": 500,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT",
+              "designation": "3VBK16",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 4000
+            },
+            {
+              "type": "HE-FRAG",
+              "designation": "3VOF36",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 4000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "PKT",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 2000
+          },
+          {
+            "designation": "NSVT",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 720
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite_era",
+        "armor_composition": "Cast turret with DYNA-72 ERA (Czech-manufactured). ERA covers turret front, glacis, turret roof.",
+        "protection_front_turret_mm_rha": 550,
+        "protection_front_hull_mm_rha": 500,
+        "protection_side_mm_rha": 80,
+        "protection_rear_mm_rha": 45,
+        "protection_top_mm_rha": 30,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "carousel",
+        "blowout_panels": false
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Leonardo TURMS-T",
+        "commander_sight": {
+          "type": "TURMS-T stabilized panoramic (thermal)",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "TURMS-T stabilized day/thermal + integrated LRF",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": true,
+        "cant_sensor": true,
+        "gps": true,
+        "inertial_navigation": true,
+        "laser_warning": "PCO SSC-1 (Polish OBRA) - laser direction detection"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "81mm"
+      },
+      "unit_cost_usd": 3500000,
+      "cost_year": 2003,
+      "confidence": "high",
+      "sources": [
+        "CZDEFENCE T-72M4CZ evaluation",
+        "Wikipedia T-72M4CZ",
+        "Jane's Land Warfare Platforms"
+      ],
+      "notes": "Most extensively modernized T-72 variant. Western powerpack (Perkins CV12-1000 from Challenger + Allison auto gearbox). Italian TURMS-T FCS provides genuine hunter-killer capability. DYNA-72 ERA. Weight increased from 41t to 48t. Only 30 built due to Czech budget cuts. Anti-mine: Metra Blansko SP magnetic fuse neutralizer. Fire suppression: Kidde Deugra automatic. Powerpack removal: ~60 minutes.",
+      "year": 2003
+    },
+    {
+      "id": "pl-k2pl",
+      "name": "K2PL Black Panther",
+      "type": "mbt",
+      "country_of_origin": "KR",
+      "manufacturer": "Hyundai Rotem / PGZ Bumar-Łabędy",
+      "service_history": {
+        "introduced": 2028,
+        "retired": null,
+        "production_count": 820,
+        "operators": [
+          {
+            "country": "PL",
+            "quantity": 820,
+            "variants": ["K2PL"],
+            "status": "in_development",
+            "notes": "Framework: 180 K2GF (delivered from Korea) + 820 K2PL (Polish-built at Gliwice). 64 K2PL in first batch (2028-2030). Total 1000 tanks."
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "passengers": 0,
+        "weight_kg": 59000,
+        "length_m": 7.50,
+        "length_gun_forward_m": 10.80,
+        "width_m": 3.60,
+        "height_m": 2.40,
+        "ground_clearance_m": 0.45
+      },
+      "mobility": {
+        "engine": {
+          "model": "HD Hyundai DV27K",
+          "type": "diesel_turbocharged",
+          "power_hp": 1500,
+          "power_kw": 1119
+        },
+        "power_to_weight_hp_ton": 25.4,
+        "transmission": "RENK HSWL 295 TM automatic",
+        "suspension": "hydropneumatic_isu",
+        "max_speed_road_kmh": 70,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 35,
+        "range_road_km": 450,
+        "fuel_capacity_liters": 1200,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 4.1,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 2.80,
+        "vertical_obstacle_m": 1.0,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "CN08 (Hyundai WIA) L/55",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 55,
+          "type": "smoothbore",
+          "elevation_min_deg": -10,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": true,
+          "rate_of_fire_rpm": 12,
+          "muzzle_velocity_ms": 1760,
+          "effective_range_m": 5000,
+          "ammunition_carried": 40,
+          "ammunition_ready": 16,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "K279 (DM53/DM63 compatible)",
+              "penetration_mm_rha": 700,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT-MP",
+              "designation": "K274",
+              "penetration_mm_rha": 600,
+              "penetration_range_m": 4000
+            },
+            {
+              "type": "HE-FRAG",
+              "designation": "K275",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 5000
+            },
+            {
+              "type": "Smart_top_attack",
+              "designation": "KSTAM-II",
+              "penetration_mm_rha": 200,
+              "penetration_range_m": 8000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "WKM RCWS (Polish)",
+            "caliber_mm": 12.7,
+            "mount": "rcws",
+            "ammunition_carried": 1200
+          },
+          {
+            "designation": "K-6 coaxial",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 4000
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite_era_aps",
+        "armor_composition": "Modular composite ceramic + ERA panels. Enhanced add-on composite/ERA and bar armor vs K2GF. Trophy-type ASOP hard-kill APS. EW anti-drone system.",
+        "protection_front_turret_mm_rha": 700,
+        "protection_front_hull_mm_rha": 600,
+        "protection_side_mm_rha": 150,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 40,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "turret_bustle_autoloader",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "Korean FCS (Polish BMS integration)",
+        "commander_sight": {
+          "type": "KCPS stabilized panoramic (thermal + LRF)",
+          "day_magnification": "3x/12x",
+          "thermal": true,
+          "thermal_generation": "3rd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "KGPS stabilized (thermal + LRF, 9.8 km tracking)",
+          "day_magnification": "4x/12x",
+          "thermal": true,
+          "thermal_generation": "3rd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": true,
+        "cant_sensor": true,
+        "gps": true,
+        "inertial_navigation": true,
+        "laser_warning": "mm-wave radar MAWS + ASOP hard-kill APS",
+        "360_deg_awareness": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "76mm"
+      },
+      "unit_cost_usd": 8500000,
+      "cost_year": 2024,
+      "confidence": "medium",
+      "sources": [
+        "Defence24 K2PL programme",
+        "Meta-defense K2PL analysis",
+        "Wikipedia K2 Black Panther",
+        "Bulgarian Military K2PL"
+      ],
+      "notes": "Polish variant of Korean K2 Black Panther. Framework: 1000 tanks total. K2PL adds: Trophy-type ASOP hard-kill APS, EW anti-drone system, full 360-deg observation, enhanced composite/ERA armor, Polish WKM RCWS, Polish-developed BMS (M1A2 compatible), reinforced ISU suspension. CN08 L/55 gun fires KSTAM-II top-attack smart munitions (2-8 km range) and K279 APFSDS (1,760 m/s). Bustle autoloader with barcode ammo ID. Hydropneumatic ISU suspension: kneel/sit/lean (+6 deg depression via hull). Production at Bumar-Łabędy Gliwice.",
+      "year": 2028
+    },
+    {
+      "id": "eg-m1a1-factory200",
+      "name": "M1A1 Abrams (Egypt - Factory 200)",
+      "type": "mbt",
+      "country_of_origin": "US",
+      "manufacturer": "Factory 200 Cairo (General Dynamics co-production)",
+      "service_history": {
+        "introduced": 1992,
+        "retired": null,
+        "production_count": 1200,
+        "operators": [
+          {
+            "country": "EG",
+            "quantity": 1200,
+            "variants": ["M1A1 (export)", "M1A1SA (555 being upgraded)"],
+            "status": "active",
+            "notes": "Co-produced at Factory 200 since 1988. 555 tank M1A1SA upgrade approved Dec 2024 ($4.69B)."
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "passengers": 0,
+        "weight_kg": 55500,
+        "length_m": 7.92,
+        "length_gun_forward_m": 9.77,
+        "width_m": 3.66,
+        "height_m": 2.44,
+        "ground_clearance_m": 0.48
+      },
+      "mobility": {
+        "engine": {
+          "model": "Honeywell AGT-1500C",
+          "type": "gas_turbine",
+          "power_hp": 1500,
+          "power_kw": 1119
+        },
+        "power_to_weight_hp_ton": 27.0,
+        "transmission": "Allison X-1100-3B",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 67,
+        "max_speed_offroad_kmh": 42,
+        "max_speed_reverse_kmh": 35,
+        "range_road_km": 426,
+        "fuel_capacity_liters": 1907,
+        "fording_depth_m": 1.22,
+        "fording_depth_prepared_m": 2.36,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.74,
+        "vertical_obstacle_m": 1.07,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "M256 (Rh-120/L44)",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 44,
+          "type": "smoothbore",
+          "elevation_min_deg": -9,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 6,
+          "muzzle_velocity_ms": 1575,
+          "effective_range_m": 4000,
+          "ammunition_carried": 40,
+          "ammunition_ready": 18,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "KE-WA2 (Egyptian-produced)",
+              "penetration_mm_rha": 540,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT-MP",
+              "designation": "M830",
+              "penetration_mm_rha": 650,
+              "penetration_range_m": 3000
+            },
+            {
+              "type": "HE-OR",
+              "designation": "M908",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 3000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "M2HB",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 1000
+          },
+          {
+            "designation": "M240",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 10400
+          },
+          {
+            "designation": "M240",
+            "caliber_mm": 7.62,
+            "mount": "loader",
+            "ammunition_carried": 0
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite_export",
+        "armor_composition": "Export composite (steel/ceramic/rubber NERA). NO DEPLETED URANIUM. ~30-40% reduced KE protection vs US M1A1HA.",
+        "protection_front_turret_mm_rha": 420,
+        "protection_front_hull_mm_rha": 380,
+        "protection_side_mm_rha": 100,
+        "protection_rear_mm_rha": 35,
+        "protection_top_mm_rha": 30,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "turret_bustle",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "M1A1 FCS (1st gen FLIR)",
+        "commander_sight": {
+          "type": "GPSE (no CITV)",
+          "day_magnification": "3x/10x",
+          "thermal": false,
+          "independent": false,
+          "hunter_killer": false
+        },
+        "gunner_sight": {
+          "type": "GPS (1st gen FLIR)",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "thermal_generation": "1st"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 8000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": false,
+        "cant_sensor": true,
+        "gps": false,
+        "inertial_navigation": false,
+        "citv": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "M250"
+      },
+      "unit_cost_usd": 4800000,
+      "cost_year": 2010,
+      "confidence": "high",
+      "sources": [
+        "EDEX 2018 Factory 200",
+        "Army Recognition Egypt M1A1 upgrade",
+        "Military Africa Egypt tank refurbishment",
+        "DSCA press release Dec 2024"
+      ],
+      "notes": "CRITICAL: NO depleted uranium armor. Export composite only. Frontal turret ~420mm RHA eq. vs KE (vs ~600mm on US M1A1HA with DU). NO CITV (Commander's Independent Thermal Viewer). M1A1SA upgrade ($4.69B, 555 tanks) adds: AN/VAS-5B driver vision, improved thermal sights, FBCB2 C2, Blue Force Tracking — but still NO DU armor. Egyptian-produced KE-WA2 APFSDS instead of restricted M829-series DU rounds.",
+      "year": 1992
+    },
+    {
+      "id": "sa-m1a2s-abrams",
+      "name": "M1A2S Abrams (Saudi)",
+      "type": "mbt",
+      "country_of_origin": "US",
+      "manufacturer": "General Dynamics Land Systems",
+      "service_history": {
+        "introduced": 2014,
+        "retired": null,
+        "production_count": 575,
+        "operators": [
+          {
+            "country": "SA",
+            "quantity": 575,
+            "variants": ["M1A2S"],
+            "status": "active",
+            "notes": "~575 delivered. 300 additional tanks ordered Nov 2025 (likely M1A2 SEPv3). Multiple losses in Yemen to Houthi ATGMs."
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "passengers": 0,
+        "weight_kg": 61000,
+        "length_m": 7.92,
+        "length_gun_forward_m": 9.77,
+        "width_m": 3.66,
+        "height_m": 2.44,
+        "ground_clearance_m": 0.48
+      },
+      "mobility": {
+        "engine": {
+          "model": "Honeywell AGT-1500C",
+          "type": "gas_turbine",
+          "power_hp": 1500,
+          "power_kw": 1119
+        },
+        "power_to_weight_hp_ton": 24.6,
+        "transmission": "Allison X-1100-3B",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 67,
+        "max_speed_offroad_kmh": 42,
+        "max_speed_reverse_kmh": 35,
+        "range_road_km": 426,
+        "fuel_capacity_liters": 1907,
+        "fording_depth_m": 1.22,
+        "fording_depth_prepared_m": 2.36,
+        "gradient_percent": 60,
+        "side_slope_percent": 40,
+        "trench_crossing_m": 2.74,
+        "vertical_obstacle_m": 1.07,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "M256 (Rh-120/L44)",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 44,
+          "type": "smoothbore",
+          "elevation_min_deg": -9,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 6,
+          "muzzle_velocity_ms": 1575,
+          "effective_range_m": 4000,
+          "ammunition_carried": 42,
+          "ammunition_ready": 18,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "M829A2",
+              "penetration_mm_rha": 620,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT-MP",
+              "designation": "M830A1",
+              "penetration_mm_rha": 650,
+              "penetration_range_m": 4000
+            },
+            {
+              "type": "Canister",
+              "designation": "M1028",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 500
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "M2HB",
+            "caliber_mm": 12.7,
+            "mount": "commander",
+            "ammunition_carried": 1000
+          },
+          {
+            "designation": "M240",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 10400
+          },
+          {
+            "designation": "M240",
+            "caliber_mm": 7.62,
+            "mount": "loader",
+            "ammunition_carried": 0
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite_export",
+        "armor_composition": "Export composite (most likely NO depleted uranium). M1A2 SEP turret technologies. AN/VLQ-6 Missile Countermeasure Device.",
+        "protection_front_turret_mm_rha": 500,
+        "protection_front_hull_mm_rha": 450,
+        "protection_side_mm_rha": 110,
+        "protection_rear_mm_rha": 35,
+        "protection_top_mm_rha": 30,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "turret_bustle",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "M1A2 FCS (2nd gen FLIR)",
+        "commander_sight": {
+          "type": "CITV (Commander's Independent Thermal Viewer)",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "GPS (2nd gen FLIR)",
+          "day_magnification": "3x/10x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 8000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": true,
+        "cant_sensor": true,
+        "gps": true,
+        "inertial_navigation": true,
+        "citv": true
+      },
+      "signature": {
+        "smoke_grenade_launchers": 12,
+        "smoke_grenade_type": "M250"
+      },
+      "unit_cost_usd": 6000000,
+      "cost_year": 2014,
+      "confidence": "medium",
+      "sources": [
+        "Army Recognition M1A2S focus",
+        "Army Recognition Saudi 300 Abrams 2025",
+        "Shephard IDEX 2023",
+        "Wikipedia M1 Abrams exports"
+      ],
+      "notes": "Saudi-specific M1A2 variant. 'S' = Saudi configuration. M1A2 SEP turret tech + simplified desert-optimized chassis. MOST LIKELY NO DU armor (export restriction). Has CITV (unlike Egyptian M1A1). AN/VLQ-6 Missile Countermeasure Device. SOTAS/Thales comms. Multiple M1A2S destroyed by Houthi ATGMs (Konkurs/Kornet-type) in Yemen — poor crew training and lack of APS contributed. 300 additional tanks ordered Nov 2025.",
+      "year": 2014
+    },
+    {
+      "id": "gr-leopard2a6hel-detail",
+      "name": "Leopard 2A6 HEL (Hellenic)",
+      "type": "mbt",
+      "country_of_origin": "DE",
+      "manufacturer": "Krauss-Maffei Wegmann / ELBO (Greek assembly)",
+      "service_history": {
+        "introduced": 2006,
+        "retired": null,
+        "production_count": 170,
+        "operators": [
+          {
+            "country": "GR",
+            "quantity": 170,
+            "variants": ["Standard (114)", "Command (56)"],
+            "status": "active",
+            "notes": "30 built by KMW, 140 assembled by ELBO (Greece). Delivered 2006-2009."
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "passengers": 0,
+        "weight_kg": 62500,
+        "length_m": 7.722,
+        "length_gun_forward_m": 10.97,
+        "width_m": 3.76,
+        "height_m": 2.48,
+        "ground_clearance_m": 0.49
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU MB 873 Ka-501",
+          "type": "diesel_turbocharged",
+          "power_hp": 1500,
+          "power_kw": 1103
+        },
+        "power_to_weight_hp_ton": 24.0,
+        "transmission": "Renk HSWL 354",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 68,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 31,
+        "range_road_km": 550,
+        "fuel_capacity_liters": 1160,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 4.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 3.0,
+        "vertical_obstacle_m": 1.10,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "Rh-120 L/55",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 55,
+          "type": "smoothbore",
+          "elevation_min_deg": -9,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1750,
+          "effective_range_m": 5000,
+          "ammunition_carried": 42,
+          "ammunition_ready": 15,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "DM53 / DM63",
+              "penetration_mm_rha": 640,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT-MP",
+              "designation": "DM12A1",
+              "penetration_mm_rha": 480,
+              "penetration_range_m": 4000
+            },
+            {
+              "type": "HE",
+              "designation": "DM11 programmable",
+              "penetration_mm_rha": 0,
+              "penetration_range_m": 5000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "MG3",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 4750
+          },
+          {
+            "designation": "MG3",
+            "caliber_mm": 7.62,
+            "mount": "commander",
+            "ammunition_carried": 0
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite_3rd_gen",
+        "armor_composition": "3rd-gen composite wedge armor (turret). Additional armor modules on hull front and turret roof (similar to Strv 122/Leopard 2E). Enhanced mine protection. Dynamic driver safety seat.",
+        "protection_front_turret_mm_rha": 800,
+        "protection_front_hull_mm_rha": 620,
+        "protection_side_mm_rha": 150,
+        "protection_rear_mm_rha": 50,
+        "protection_top_mm_rha": 40,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "turret_bustle",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "EMES-15A2 (enhanced)",
+        "commander_sight": {
+          "type": "PERI-R17A2 stabilized panoramic (armored)",
+          "day_magnification": "2x/8x",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "Zeiss Ophelios-P (enhanced WBG-X)",
+          "day_magnification": "3x/12x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": true,
+        "cant_sensor": true,
+        "gps": true,
+        "inertial_navigation": true,
+        "meteorology_sensor": true,
+        "c2_system": "Rheinmetall Iniochos BMS",
+        "intercom": "WISPR wireless digital encrypted"
+      },
+      "signature": {
+        "smoke_grenade_launchers": 16,
+        "smoke_grenade_type": "76mm individually controlled"
+      },
+      "unit_cost_usd": 7500000,
+      "cost_year": 2006,
+      "confidence": "high",
+      "sources": [
+        "Army Recognition Leopard 2A6 HEL",
+        "Jane's Land Warfare Platforms",
+        "Greek Army official",
+        "KMW brochure"
+      ],
+      "notes": "Most capable Leopard 2 variant in NATO. HEL-unique features: roof-mounted meteorology/wind sensor feeding FCS (removed from all other Leo 2 variants after prototype), Zeiss Ophelios-P enhanced thermal, Rheinmetall Iniochos C2 system with terrain-referenced displays, WISPR wireless encrypted digital intercom (unique to HEL). Additional turret roof and hull front armor modules (Strv 122 standard). Dynamic safety driver seat. APU for silent operations. Electrical air conditioning (Aegean summer). Rear-view camera. 56 of 170 are command variants with extra comms.",
+      "year": 2006
+    },
+    {
+      "id": "cl-leopard2a4chl-detail",
+      "name": "Leopard 2A4CHL (Chilean)",
+      "type": "mbt",
+      "country_of_origin": "DE",
+      "manufacturer": "Krauss-Maffei Wegmann / FAMAE",
+      "service_history": {
+        "introduced": 2007,
+        "retired": null,
+        "production_count": 140,
+        "operators": [
+          {
+            "country": "CL",
+            "quantity": 115,
+            "variants": ["Leopard 2A4CHL", "Leopard 2A4CHL Proaco (future)"],
+            "status": "active",
+            "notes": "140 purchased (115 operational + 25 parts/training). First South American Leopard 2 operator. Aselsan Proaco upgrade signed Jul 2023 ($123.5M)."
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "passengers": 0,
+        "weight_kg": 55150,
+        "length_m": 7.72,
+        "length_gun_forward_m": 9.97,
+        "width_m": 3.70,
+        "height_m": 2.48,
+        "ground_clearance_m": 0.49
+      },
+      "mobility": {
+        "engine": {
+          "model": "MTU MB 873 Ka-501",
+          "type": "diesel_turbocharged",
+          "power_hp": 1500,
+          "power_kw": 1103
+        },
+        "power_to_weight_hp_ton": 27.2,
+        "transmission": "Renk HSWL 354",
+        "suspension": "torsion bar",
+        "max_speed_road_kmh": 68,
+        "max_speed_offroad_kmh": 50,
+        "max_speed_reverse_kmh": 31,
+        "range_road_km": 500,
+        "fuel_capacity_liters": 1160,
+        "fording_depth_m": 1.2,
+        "fording_depth_prepared_m": 4.0,
+        "gradient_percent": 60,
+        "side_slope_percent": 30,
+        "trench_crossing_m": 3.0,
+        "vertical_obstacle_m": 1.10,
+        "amphibious": false
+      },
+      "armament": {
+        "main": {
+          "designation": "Rh-120 L/44",
+          "caliber_mm": 120,
+          "barrel_length_calibers": 44,
+          "type": "smoothbore",
+          "elevation_min_deg": -9,
+          "elevation_max_deg": 20,
+          "traverse_deg": 360,
+          "stabilization": "two-axis",
+          "autoloader": false,
+          "rate_of_fire_rpm": 8,
+          "muzzle_velocity_ms": 1650,
+          "effective_range_m": 4000,
+          "ammunition_carried": 42,
+          "ammunition_ready": 15,
+          "ammunition_types": [
+            {
+              "type": "APFSDS",
+              "designation": "DM33 / DM53",
+              "penetration_mm_rha": 560,
+              "penetration_range_m": 2000
+            },
+            {
+              "type": "HEAT-MP",
+              "designation": "DM12A1",
+              "penetration_mm_rha": 480,
+              "penetration_range_m": 4000
+            }
+          ]
+        },
+        "secondary": [
+          {
+            "designation": "MG3",
+            "caliber_mm": 7.62,
+            "mount": "coaxial",
+            "ammunition_carried": 4750
+          },
+          {
+            "designation": "MG3",
+            "caliber_mm": 7.62,
+            "mount": "commander",
+            "ammunition_carried": 0
+          }
+        ]
+      },
+      "protection": {
+        "armor_type": "composite",
+        "armor_composition": "Standard Leopard 2A4 composite armor. FibroTex multispectral camouflage.",
+        "protection_front_turret_mm_rha": 620,
+        "protection_front_hull_mm_rha": 500,
+        "protection_side_mm_rha": 120,
+        "protection_rear_mm_rha": 40,
+        "protection_top_mm_rha": 30,
+        "nbc_protection": true,
+        "fire_suppression": true,
+        "ammunition_compartment": "turret_bustle",
+        "blowout_panels": true
+      },
+      "sensors_and_fcs": {
+        "fire_control_system": "EMES-15 (Aselsan VOLKAN-II in Proaco upgrade)",
+        "commander_sight": {
+          "type": "PERI-R17 (Aselsan optoelectronic in Proaco)",
+          "day_magnification": "2x/8x",
+          "thermal": true,
+          "thermal_generation": "2nd",
+          "independent": true,
+          "hunter_killer": true
+        },
+        "gunner_sight": {
+          "type": "EMES-15 / WBG-X",
+          "day_magnification": "3x/12x",
+          "thermal": true,
+          "thermal_generation": "2nd"
+        },
+        "laser_rangefinder": true,
+        "laser_rangefinder_range_m": 10000,
+        "ballistic_computer": true,
+        "wind_sensor": true,
+        "muzzle_reference_system": true,
+        "cant_sensor": true,
+        "gps": true,
+        "inertial_navigation": false
+      },
+      "signature": {
+        "smoke_grenade_launchers": 16,
+        "smoke_grenade_type": "76mm"
+      },
+      "unit_cost_usd": 5000000,
+      "cost_year": 2007,
+      "confidence": "high",
+      "sources": [
+        "Army Recognition Chilean Leopard 2A4",
+        "Army Recognition Aselsan Chile contract",
+        "Defense Mirror Aselsan FAMAE",
+        "Wikipedia Leopard 2 variants"
+      ],
+      "notes": "Ex-German Army surplus (KMW refurbished). CHL modifications: turbocharger impellers redesigned for high-altitude (Atacama >4300m), temperature sensors, GPS, FibroTex multispectral camo. Proaco upgrade ($123.5M, signed Jul 2023 with Aselsan/FAMAE): VOLKAN-II FCS, new optoelectronic gunner/commander sights, SARP-type RCWS, electric turret drives, 360-deg situational awareness, BMS, LWS. Future phase may add Pulat/AKKOR APS. Retains L/44 gun (L55 not yet installed despite some claims).",
+      "year": 2007
+    }
+  ]
+}

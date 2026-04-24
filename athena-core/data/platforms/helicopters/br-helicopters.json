@@ -1,0 +1,219 @@
+{
+  "category": "helicopter",
+  "metadata": {
+    "file_version": "1.0",
+    "last_updated": "2026-02-16",
+    "sources": [
+      "IISS Military Balance 2024",
+      "Jane's All The World's Aircraft",
+      "Brazilian Army Aviation (AvEx)",
+      "Helibras / Airbus Helicopters",
+      "Russian Helicopters"
+    ]
+  },
+  "platforms": [
+    {
+      "id": "br-ah2-sabre",
+      "name": "AH-2 Sabre (Mi-35M)",
+      "type": "attack_helicopter",
+      "country_of_origin": "RU",
+      "manufacturer": "Rostvertol / Russian Helicopters",
+      "year": 2014,
+      "service_history": {
+        "introduced": 2014,
+        "retired": null,
+        "production_count": 12,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 12,
+            "status": "active",
+            "notes": "Brazilian Army Aviation (AvEx). 2nd Attack/Recon Helicopter Sqn. Based at Taubate, SP."
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 3,
+        "length_m": 21.6,
+        "rotor_diameter_m": 17.2,
+        "height_m": 6.5,
+        "empty_weight_kg": 8570,
+        "max_takeoff_weight_kg": 12000,
+        "troop_capacity": 8
+      },
+      "performance": {
+        "max_speed_kmh": 310,
+        "cruise_speed_kmh": 260,
+        "combat_radius_km": 225,
+        "ferry_range_km": 460,
+        "service_ceiling_m": 5400,
+        "rate_of_climb_mps": 12.4,
+        "endurance_hours": 2.0
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Klimov VK-2500",
+        "power_shp": 2200,
+        "notes": "2x 2,200 shp. Improved hot-and-high performance vs TV3-117."
+      },
+      "avionics": {
+        "radar": null,
+        "sensors": "OPS-24N nose-mounted radar, thermal FLIR, TV camera",
+        "ew_suite": "President-S DIRCM, UV/IR MAWS, chaff/flare",
+        "glass_cockpit": true,
+        "night_vision_compatible": true,
+        "notes": "GOES-342 stabilized EO/IR turret. Digital cockpit with MFDs."
+      },
+      "armament": {
+        "gun": {
+          "type": "GSh-23V twin-barrel autocannon",
+          "caliber_mm": 23,
+          "rounds": 450
+        },
+        "air_to_air": [],
+        "air_to_ground": [
+          "9M120 Ataka-V ATGM (8x)",
+          "B-8V20A 80mm rocket pods (40x S-8)",
+          "FAB-250 bombs"
+        ],
+        "max_payload_kg": 2400
+      },
+      "unit_cost_usd": 36000000,
+      "cost_year": 2013,
+      "confidence": "high",
+      "sources": ["Russian Helicopters", "IISS", "AvEx"],
+      "notes": "Export variant of Mi-24 family. Brazil's primary attack helicopter. Upgraded avionics and engines vs classic Hind. Used for Amazon region patrol and rapid reaction. 8 troops can be carried in cabin (unique for attack helo)."
+    },
+    {
+      "id": "br-h225m-jaguar",
+      "name": "H225M Caracal (HM-4 Jaguar)",
+      "type": "medium_utility_helicopter",
+      "country_of_origin": "FR",
+      "manufacturer": "Helibras (Airbus Helicopters license)",
+      "year": 2012,
+      "service_history": {
+        "introduced": 2012,
+        "retired": null,
+        "production_count": 16,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 16,
+            "variants": ["EC725", "H225M"],
+            "status": "active",
+            "notes": "Brazilian Navy (HM-4 Jaguar). CSAR, ASW, troop transport. Locally assembled by Helibras in Itajuba, MG."
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 2,
+        "length_m": 19.5,
+        "rotor_diameter_m": 16.2,
+        "height_m": 4.6,
+        "empty_weight_kg": 5330,
+        "max_takeoff_weight_kg": 11000,
+        "troop_capacity": 29
+      },
+      "performance": {
+        "max_speed_kmh": 324,
+        "cruise_speed_kmh": 260,
+        "combat_radius_km": 400,
+        "ferry_range_km": 920,
+        "service_ceiling_m": 6095,
+        "endurance_hours": 4.5
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "Turbomeca Makila 2A1",
+        "power_shp": 2382,
+        "notes": "Full FADEC. Hot-and-high optimized."
+      },
+      "avionics": {
+        "radar": "Thales Searchmaster (naval variant)",
+        "sensors": "FLIR, EO turret, dipping sonar (ASW role)",
+        "ew_suite": "RWR, MAWS, chaff/flare",
+        "glass_cockpit": true,
+        "night_vision_compatible": true,
+        "notes": "Fully NVG-compatible. Self-protection suite. Datalink."
+      },
+      "armament": {
+        "gun": null,
+        "air_to_air": [],
+        "air_to_ground": [
+          "AM39 Exocet ASM (naval variant)",
+          "MK46/MU90 torpedo (ASW)",
+          "7.62mm door guns",
+          "12.7mm door gun"
+        ],
+        "max_payload_kg": 4750
+      },
+      "unit_cost_usd": 40000000,
+      "cost_year": 2014,
+      "confidence": "high",
+      "sources": ["Airbus Helicopters", "Helibras", "Brazilian Navy"],
+      "notes": "Brazil's primary medium helicopter. Assembled locally by Helibras (Airbus subsidiary) in Itajuba, MG. Technology transfer program. Multi-role: CSAR, ASW, troop transport, MEDEVAC, VIP. Operated by Brazilian Navy and Army."
+    },
+    {
+      "id": "br-uh60l-black-hawk",
+      "name": "UH-60L Black Hawk (HM-2)",
+      "type": "utility_helicopter",
+      "country_of_origin": "US",
+      "manufacturer": "Sikorsky",
+      "year": 1997,
+      "service_history": {
+        "introduced": 1997,
+        "retired": null,
+        "production_count": 16,
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 16,
+            "status": "active",
+            "notes": "Brazilian Army Aviation. Troop transport and special operations."
+          }
+        ]
+      },
+      "specifications": {
+        "crew": 4,
+        "length_m": 19.76,
+        "rotor_diameter_m": 16.36,
+        "height_m": 5.13,
+        "empty_weight_kg": 5118,
+        "max_takeoff_weight_kg": 10660,
+        "troop_capacity": 14
+      },
+      "performance": {
+        "max_speed_kmh": 296,
+        "cruise_speed_kmh": 280,
+        "combat_radius_km": 370,
+        "ferry_range_km": 592,
+        "service_ceiling_m": 5790,
+        "endurance_hours": 2.3
+      },
+      "powerplant": {
+        "engines": 2,
+        "type": "General Electric T700-GE-701C",
+        "power_shp": 1800,
+        "notes": "Two turboshaft engines"
+      },
+      "avionics": {
+        "glass_cockpit": false,
+        "night_vision_compatible": true,
+        "notes": "Standard UH-60L avionics. NVG-compatible."
+      },
+      "armament": {
+        "gun": null,
+        "air_to_ground": [
+          "M134 7.62mm minigun (door)",
+          "M60D 7.62mm door gun"
+        ],
+        "max_payload_kg": 4082
+      },
+      "unit_cost_usd": 21000000,
+      "cost_year": 1998,
+      "confidence": "high",
+      "sources": ["Sikorsky", "IISS", "Brazilian Army"],
+      "notes": "Standard utility helicopter for Brazilian Army. Used in troop transport, special operations, and Amazon region patrol."
+    }
+  ]
+}

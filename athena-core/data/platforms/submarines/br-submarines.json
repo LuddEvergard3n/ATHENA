@@ -1,0 +1,113 @@
+{
+  "platforms": [
+    {
+      "id": "br-riachuelo-ssk",
+      "name": "Riachuelo-class (Scorpène BR)",
+      "type": "ssk",
+      "country_of_origin": "FR",
+      "manufacturer": "Naval Group / ICN (Itaguaí Construções Navais)",
+      "service_entry": 2022,
+      "specifications": {
+        "displacement_surfaced_tons": 1870,
+        "displacement_submerged_tons": 2000,
+        "length_m": 70.62,
+        "beam_m": 6.2,
+        "draft_m": 5.8,
+        "crew": 32,
+        "max_speed_submerged_knots": 20,
+        "max_speed_snorkeling_knots": 12,
+        "range_snorkeling_nm": 6500,
+        "endurance_days": 50,
+        "test_depth_m": 300
+      },
+      "propulsion": {
+        "diesel": "4x MTU 12V 396 SE84 (1,500 hp each)",
+        "aip": null,
+        "motor": "1x Jeumont EPM permanent-magnet motor",
+        "power_hp": 3909,
+        "notes": "Stretched hull (70.62m vs standard 61.7m Scorpène) — extra volume for batteries instead of MESMA AIP"
+      },
+      "armament": {
+        "torpedo_tubes": "6x 533mm",
+        "weapons": 18,
+        "torpedoes": "F21 heavyweight torpedo",
+        "missiles": "SM-39 Exocet Block 2 (sub-launched, up to 8)",
+        "mines": 30
+      },
+      "sensors": {
+        "sonar": "Thales TSM 2233 Eledone (hull + flank passive array)",
+        "active_sonar": "Thales Safare",
+        "esm": "Thales DR 3000",
+        "cms": "Naval Group SUBTICS",
+        "periscopes": "Optronic mast + attack periscope",
+        "flank_array": true
+      },
+      "service_history": {
+        "introduced": 2022,
+        "status": "active",
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 4,
+            "notes": "S-40 Riachuelo (commissioned Sep 2022), S-41 Humaitá (Jan 2024), S-42 Tonelero (sea trials 2025), S-43 Angostura (launched Nov 2025)"
+          }
+        ]
+      },
+      "unit_cost_usd": 800000000,
+      "notes": "PROSUB program ($9.3B total including infrastructure). Largest variant of Scorpène design at 70.62m. Brazilian-built at Itaguaí Naval Base shipyard. Technology transfer from Naval Group. No AIP — extended battery capacity instead. Built alongside nuclear submarine program."
+    },
+    {
+      "id": "br-sn10-alvaro-alberto",
+      "name": "SN-10 Álvaro Alberto (Nuclear SSN)",
+      "type": "ssn",
+      "country_of_origin": "BR",
+      "manufacturer": "ICN / Brazilian Navy (CTMSP reactor)",
+      "service_entry": 2034,
+      "specifications": {
+        "displacement_surfaced_tons": 4000,
+        "displacement_submerged_tons": 6000,
+        "length_m": 100,
+        "beam_m": 9.8,
+        "draft_m": 7.0,
+        "crew": 100,
+        "max_speed_submerged_knots": 25,
+        "max_speed_snorkeling_knots": 15,
+        "range_snorkeling_nm": 0,
+        "endurance_days": 90,
+        "test_depth_m": 350
+      },
+      "propulsion": {
+        "reactor": "1x PWR, 48 MW thermal, LEU ~20% enrichment",
+        "motor": "Nuclear steam turbine + electric motor",
+        "power_hp": 47000,
+        "notes": "Entirely indigenous Brazilian reactor design by CTMSP. Non-nuclear systems by Naval Group. First steel cut June 2024. Brazil will become 7th nation with nuclear submarines."
+      },
+      "armament": {
+        "torpedo_tubes": "6x 533mm (estimated)",
+        "weapons": 24,
+        "torpedoes": "F21 heavyweight torpedo (likely)",
+        "missiles": "SM-39 Exocet (likely)",
+        "mines": 0
+      },
+      "sensors": {
+        "sonar": "TBD - likely Thales-derived hull/flank array",
+        "cms": "SUBTICS-derived (likely)",
+        "flank_array": true
+      },
+      "service_history": {
+        "introduced": 2034,
+        "status": "under_construction",
+        "operators": [
+          {
+            "country": "BR",
+            "quantity": 1,
+            "notes": "Expected commissioning 2032-2034. Under construction at Itaguaí"
+          }
+        ]
+      },
+      "unit_cost_usd": 3000000000,
+      "confidence": "low",
+      "notes": "PROSUB program Phase 2. Most specs are estimated/speculative. Reactor is entirely Brazilian design (CTMSP/Centro Tecnológico da Marinha em São Paulo). Naval Group contracted for non-nuclear hull/systems integration. 100m hull, ~6,000t submerged. Will make Brazil 7th nuclear submarine nation. Originally designated S-N Álvaro Alberto, now SN-10."
+    }
+  ]
+}

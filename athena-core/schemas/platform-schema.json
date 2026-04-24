@@ -1,0 +1,130 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "athena-platform-schema-v1",
+  "title": "ATHENA Platform Database Schema",
+  "description": "JSON Schema for validating ATHENA platform database files",
+  "type": "object",
+  "required": ["platforms"],
+  "properties": {
+    "category": {
+      "type": "string",
+      "description": "Category of platforms in this file"
+    },
+    "subcategory": {
+      "type": "string",
+      "description": "Subcategory within the main category"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "file_version": {"type": "string"},
+        "last_updated": {"type": "string", "format": "date"},
+        "sources": {
+          "type": "array",
+          "items": {"type": "string"}
+        }
+      }
+    },
+    "platforms": {
+      "type": "array",
+      "items": {"$ref": "#/definitions/platform"},
+      "minItems": 1
+    }
+  },
+  "definitions": {
+    "platform": {
+      "type": "object",
+      "required": ["id", "name"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z]{2,3}-[a-z0-9-]+$",
+          "description": "Unique identifier (format: country-name)"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 2,
+          "description": "Display name"
+        },
+        "type": {
+          "type": "string",
+          "description": "Platform type within category"
+        },
+        "country": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$",
+          "description": "ISO 3166-1 alpha-2 country code"
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 1900,
+          "maximum": 2035,
+          "description": "Service entry year"
+        },
+        "manufacturer": {
+          "type": "string"
+        },
+        "specifications": {
+          "$ref": "#/definitions/specifications"
+        },
+        "operators": {
+          "oneOf": [
+            {"type": "array", "items": {"type": "string"}},
+            {"type": "array", "items": {"$ref": "#/definitions/operator"}}
+          ]
+        },
+        "variants": {
+          "type": "array",
+          "items": {"type": "string"}
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "specifications": {
+      "type": "object",
+      "properties": {
+        "caliber": {"type": "string"},
+        "action": {"type": "string"},
+        "rate_of_fire_rpm": {"type": "number", "minimum": 0},
+        "muzzle_velocity_mps": {"type": "number", "minimum": 0},
+        "muzzle_velocity_ms": {"type": "number", "minimum": 0},
+        "effective_range_m": {"type": "number", "minimum": 0},
+        "max_range_m": {"type": "number", "minimum": 0},
+        "magazine_capacity": {"type": "integer", "minimum": 1},
+        "weight_kg": {"type": "number", "minimum": 0},
+        "length_mm": {"type": "number", "minimum": 0},
+        "barrel_length_mm": {"type": "number", "minimum": 0},
+        "range_km": {"type": "number", "minimum": 0},
+        "detection_range_km": {"type": "number", "minimum": 0},
+        "type": {"type": "string"},
+        "band": {"type": "string"},
+        "tracking_capacity": {"type": "integer", "minimum": 0},
+        "modes": {"type": "array", "items": {"type": "string"}},
+        "targets": {"type": "array", "items": {"type": "string"}},
+        "defeat_methods": {"type": "array", "items": {"type": "string"}},
+        "sensors": {"type": "array", "items": {"type": "string"}},
+        "frequency": {"type": "string"},
+        "frequency_range": {"type": "string"},
+        "waveforms": {"type": "array", "items": {"type": "string"}},
+        "power_w": {"type": "number", "minimum": 0},
+        "protection_level": {"type": "string"},
+        "material": {"type": "string"},
+        "generation": {"type": "integer", "minimum": 0},
+        "magnification": {"type": ["number", "string"]},
+        "fov_degrees": {"type": "number", "minimum": 0},
+        "mobile": {"type": "boolean"}
+      }
+    },
+    "operator": {
+      "type": "object",
+      "properties": {
+        "country": {"type": "string"},
+        "quantity": {"type": "integer", "minimum": 0},
+        "status": {"type": "string", "enum": ["active", "reserve", "retired", "production", "ordered"]},
+        "notes": {"type": "string"}
+      }
+    }
+  }
+}
