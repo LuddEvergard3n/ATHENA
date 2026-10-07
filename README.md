@@ -1,21 +1,37 @@
 # ATHENA Core
 
+Deterministic C++17 wargaming engine for auditable military scenario analysis and Monte Carlo simulation.
+
+[![C++17](https://img.shields.io/badge/C%2B%2B-17-00599C?logo=cplusplus&logoColor=white)](https://isocpp.org/)
+[![CMake](https://img.shields.io/badge/CMake-Build-064F8C?logo=cmake&logoColor=white)](https://cmake.org/)
+[![ImGui](https://img.shields.io/badge/ImGui-Interface-1F6FEB)](https://github.com/ocornut/imgui)
+[![License](https://img.shields.io/badge/License-Proprietary-lightgrey)](#license)
+
 **Advanced Tactical & Heuristic Engagement & Network Analyzer**
 
-Motor de wargaming determinístico para análise de cenários militares via simulação Monte Carlo.
+## Overview
 
-**Versão:** 1.1.2 "Database"  
-**Licença:** Proprietary  
-**Build:** Linux x86_64 (g++ 13.3, -O2)
+ATHENA models military scenarios through explicit, inspectable rules. A fixed seed produces bit-exact results, making simulations reproducible and suitable for comparison, debugging, and audit.
 
----
+**Version:** 1.1.2 "Database"
+**Reference build:** Linux x86_64, g++ 13.3, `-O2`
 
-## Execução Imediata (Binários Pré-compilados)
+## Highlights
 
-Binários Linux x86_64 incluídos em `build/bin/`. Sem necessidade de compilação.
+- Deterministic, bit-exact simulation from a fixed seed.
+- 1,238 military platforms across 25 categories.
+- Monte Carlo analysis with Sobol indices and automatic convergence.
+- Movement, combat, logistics, detection, command-and-control, and tactical AI systems.
+- Terrain effects integrated into movement, combat, detection, and AI decisions.
+- Dependency-free PDF reports and per-iteration profiling.
+- Self-contained C++17 core with embedded ImGui.
+
+## Run the prebuilt binaries
+
+Linux x86_64 binaries are included in `build/bin/`.
 
 ```bash
-# GUI (requer: libGL, libglfw3, X11/Wayland)
+# GUI: requires libGL, libglfw3, and X11 or Wayland
 ./build/bin/athena
 
 # CLI
@@ -23,35 +39,24 @@ Binários Linux x86_64 incluídos em `build/bin/`. Sem necessidade de compilaç�
 ./build/bin/athena-cli -s 12345 -n 100 athena-core/examples/test-scenario.json
 ```
 
-**Dependências runtime (GUI):** `sudo apt install libglfw3 libgl1-mesa-glx`
+GUI runtime dependencies on Debian-based systems:
 
----
+```bash
+sudo apt install libglfw3 libgl1-mesa-glx
+```
 
-## Características
-
-- **Simulação Determinística** — Mesma seed = mesmos resultados, bit-exact
-- **1,238 Plataformas Militares** — Tanques, aviões, navios, mísseis, submarinos, helicópteros
-- **Monte Carlo Analysis** — Análise estatística com Sobol indices e convergência automática
-- **6 Sistemas de Simulação** — Movement, Combat, Logistics, Detection, C2, Tactical AI
-- **Terrain Semantics** — Terreno com impacto em movimento, combate e detecção
-- **PDF Reports** — Geração de relatórios PDF sem dependências externas
-- **MC Profiling** — Cronometragem por iteração (chrono timing)
-- **Zero Dependências Externas** — C++17 autocontido, ImGui embutido
-
----
-
-## Compilação (Opcional)
+## Build
 
 ### Linux
 
 ```bash
 sudo apt install build-essential g++ make libglfw3-dev libgl-dev
-make -f Makefile.unified athena athena-cli    # GUI + CLI
-make -f Makefile.unified athena-cli           # CLI apenas
-make -f Makefile.unified test                 # Testes
+make -f Makefile.unified athena athena-cli
+make -f Makefile.unified athena-cli
+make -f Makefile.unified test
 ```
 
-### Windows (MinGW/MSYS2)
+### Windows with MinGW/MSYS2
 
 ```cmd
 pacman -S mingw-w64-x86_64-glfw
@@ -66,81 +71,52 @@ brew install glfw
 make -f Makefile.unified athena athena-cli
 ```
 
----
+## Project structure
 
-## Estrutura
-
-```
+```text
 ATHENA/
-├── build/bin/                # Binários pré-compilados (Linux x86_64)
-│   ├── athena                # GUI (2.2 MB, stripped)
-│   └── athena-cli            # CLI (707 KB, stripped)
-├── athena-core/
-│   ├── include/athena/       # Headers públicos
-│   ├── src/                  # Implementações C++
-│   ├── data/
-│   │   ├── platforms/        # 1,238 plataformas (168 JSONs, 25 categorias)
-│   │   ├── nations/          # Dados nacionais
-│   │   ├── schema/           # Schemas JSON
-│   │   ├── units/            # Tipos de unidade
-│   │   └── weapons/          # Sistemas de armas
-│   ├── examples/             # Cenários de exemplo
-│   ├── external/imgui/       # ImGui (embutido)
-│   └── test/                 # Testes
-├── Makefile.unified          # Build Linux/macOS
-├── Makefile.mingw            # Build Windows
-├── BUILDING.md               # Instruções detalhadas
-├── CONTINUATION.md           # Estado e roadmap
-└── README.md                 # Este arquivo
+|-- build/bin/                 Prebuilt Linux x86_64 binaries
+|-- athena-core/
+|   |-- include/athena/        Public headers
+|   |-- src/                   C++ implementations
+|   |-- data/                  Platforms, nations, schemas, units, and weapons
+|   |-- examples/              Example scenarios
+|   |-- external/imgui/        Embedded ImGui source
+|   `-- test/                  Tests
+|-- athena-ui/                 Graphical interface
+|-- Makefile.unified           Linux and macOS build
+|-- Makefile.mingw             Windows build
+|-- BUILDING.md                Detailed build instructions
+`-- CONTINUATION.md            Current state and roadmap
 ```
 
----
+## Dataset
 
-## Plataformas Militares (1,238 total)
-
-| Categoria | Qtd | Destaques |
-|-----------|-----|-----------|
+| Category | Count | Examples |
+|---|---:|---|
 | Aircraft | 112 | F-35, Gripen E, KC-390, Su-57 |
-| Ships | 111 | Tamandaré, Constellation, Type 055 |
-| Tanks | 102 | Osório, K2PL, Leopard 2A6 HEL, T-72M4CZ |
-| Small Arms | 89 | |
-| Submarines | 89 | Riachuelo, SN-10 Álvaro Alberto, Columbia |
-| UAV | 85 | |
-| Regional | 75 | 20+ países |
-| Helicopters | 60 | AH-11B Super Lynx, Z-10, Apache |
-| Missiles | 56 | |
-| Artillery | 52 | |
-| SAM | 46 | |
-| EW Systems | 45 | |
-| IFV | 44 | EE-9 Cascavel |
-| APC | 40 | EE-11 Urutu, Guaraní |
-| ATGM | 39 | |
-| Outros | 193 | Munições, radares, MANPADS, C-UAS |
+| Ships | 111 | Tamandare, Constellation, Type 055 |
+| Tanks | 102 | Osorio, K2PL, Leopard 2A6 HEL, T-72M4CZ |
+| Small arms | 89 | Various systems |
+| Submarines | 89 | Riachuelo, SN-10 Alvaro Alberto, Columbia |
+| UAVs | 85 | Multiple classes |
+| Regional systems | 75 | More than 20 countries |
+| Other categories | 575 | Helicopters, missiles, artillery, air defense, EW, IFVs, APCs, and ATGMs |
 
-**Cobertura: US 183 | RU 132 | CN 106 | DE 34 | GB 33 | FR 32 | BR 26 | KR 18 | IL 15**
+Country coverage includes the United States, Russia, China, Germany, the United Kingdom, France, Brazil, South Korea, and Israel.
 
----
+## Design principles
 
-## Versões
+1. **Bit-exact determinism:** identical seed and input produce identical output.
+2. **No machine learning:** behavior comes from explicit and auditable rules.
+3. **Native C++17:** no interpreted runtime dependency.
+4. **Strict IEEE-754 behavior:** builds do not use fast-math.
+5. **Auditable data:** documented sources include Jane's, IISS, and SIPRI.
 
-| Versão | Codename | Data | Features |
-|--------|----------|------|----------|
-| 1.1.2 | Database | 2026-02-15 | +15 plataformas (8 nações), export Abrams armor fix |
-| 1.1.1 | Terrain | 2026-02-13 | MC profiling, terrain AI avoidance, PDF reports |
-| 1.1.0 | Terrain | 2026-02-13 | Terrain semantics full integration |
-| 1.0.0 | Athena | 2026-02-10 | Release candidate |
-| 0.9.3 | Doctrine | 2026-02-09 | AI/Doctrine system |
+## Limitations
 
----
+ATHENA is a scenario-analysis and educational engine. Its data and rules do not predict real-world outcomes, and the repository should not be treated as an operational military system.
 
-## Princípios de Design
+## License
 
-1. **Determinismo bit-exact** — Reproducibilidade garantida
-2. **Zero machine learning** — Regras explícitas e auditáveis
-3. **C++17 puro** — Performance nativa, zero dependências interpretadas
-4. **IEEE-754 strict** — Sem fast-math
-5. **Dados auditáveis** — Fontes documentadas (Jane's, IISS, SIPRI)
-
----
-
-Proprietary — Copyright (c) 2026 ATHENA Project
+Proprietary. Copyright (c) 2026 ATHENA Project.
